@@ -1,0 +1,4753 @@
+1
+00:00:05,670 --> 00:00:07,358
+Daniel, you will introduce yourself.
+Sure. Good.
+
+2
+00:00:07,359 --> 00:00:09,678
+Sure. Good.
+So I'm Daniel Hardman and I'm the
+
+3
+00:00:09,679 --> 00:00:12,959
+So I'm Daniel Hardman and I'm the
+CTO of company called Provenant.
+
+4
+00:00:12,960 --> 00:00:15,439
+CTO of company called Provenant.
+You've heard a couple of
+
+5
+00:00:15,440 --> 00:00:17,439
+You've heard a couple of
+references to work that we're doing in
+
+6
+00:00:17,440 --> 00:00:19,118
+references to work that we're doing in
+telco. And I'm here to explain a little
+
+7
+00:00:19,119 --> 00:00:25,830
+telco. And I'm here to explain a little
+bit more about that.
+
+8
+00:00:28,950 --> 00:00:32,558
+all of us have been impacted by scamming
+in telco. Usually a day doesn't go
+
+9
+00:00:32,559 --> 00:00:34,558
+in telco. Usually a day doesn't go
+by that I don't get some kind of a
+
+10
+00:00:34,559 --> 00:00:37,279
+by that I don't get some kind of a
+message. This morning it was
+
+11
+00:00:37,280 --> 00:00:39,039
+message. This morning it was
+somebody running for Congress in some
+
+12
+00:00:39,040 --> 00:00:40,639
+somebody running for Congress in some
+state that I've never lived in telling
+
+13
+00:00:40,640 --> 00:00:42,718
+state that I've never lived in telling  
+me how important it was that I donate $3
+
+14
+00:00:42,719 --> 00:00:45,759
+me how important it was that I donate $3
+to his campaign. But all of us get these
+
+15
+00:00:45,760 --> 00:00:49,279
+to his campaign. But all of us get these
+kinds of things. And many of us who
+
+16
+00:00:49,280 --> 00:00:52,558
+kinds of things. And many of us who
+work in cyber security sensitive areas
+
+17
+00:00:52,559 --> 00:00:55,999
+ work in cyber security sensitive areas
+are pretty well aware of how scammy
+
+18
+00:00:56,000 --> 00:00:58,959
+are pretty well aware of how scammy
+and fraudulent a lot of it is.
+
+19
+00:00:58,960 --> 00:01:00,558
+and fraudulent a lot of it is.
+Even people who don't know anything
+
+20
+00:01:00,559 --> 00:01:02,878
+Even people who don't know anything
+about tech know that this is scammy and
+
+21
+00:01:02,879 --> 00:01:05,599
+about tech know that this is scammy and
+and full of fraud to the point where
+
+22
+00:01:05,600 --> 00:01:07,118
+and full of fraud to the point where
+this is the answer they're coming up
+
+23
+00:01:07,119 --> 00:01:10,798
+this is the answer they're coming up
+with. Just don't answer your phone,
+
+24
+00:01:10,799 --> 00:01:14,798
+with. Just don't answer your phone,
+right? Or just stop sending texts.
+
+25
+00:01:14,799 --> 00:01:16,798
+right? Or just stop sending texts.
+That's actually a pretty bad indictment
+
+26
+00:01:16,799 --> 00:01:19,999
+That's actually a pretty bad indictment
+of a technical infrastructure when
+
+27
+00:01:20,000 --> 00:01:22,399
+of a technical infrastructure when
+the best advice we can give is just stop
+
+28
+00:01:22,400 --> 00:01:24,559
+the best advice we can give is just stop
+using it.
+
+29
+00:01:24,560 --> 00:01:26,639
+using it.
+But that's kind of the state of affairs
+
+30
+00:01:26,640 --> 00:01:30,158
+But that's kind of the state of affairs
+right now. And that constitutes an
+
+31
+00:01:30,159 --> 00:01:32,798
+right now. And that constitutes an
+existential threat for an entire
+
+32
+00:01:32,799 --> 00:01:35,679
+existential threat for an entire
+market vertical.
+
+33
+00:01:35,680 --> 00:01:37,999
+market vertical.
+There are billion-dollar companies
+
+34
+00:01:38,000 --> 00:01:41,359
+There are billion-dollar companies
+that make their money off of phone
+
+35
+00:01:41,360 --> 00:01:42,879
+that make their money off of phone
+calls
+
+36
+00:01:42,880 --> 00:01:45,919
+calls
+or make their money off of texting.
+
+37
+00:01:45,920 --> 00:01:51,039
+or make their money off of texting.
+And so if you have entire influential
+
+38
+00:01:51,040 --> 00:01:53,199
+And so if you have entire influential
+voices, segments in an industry that are
+
+39
+00:01:53,200 --> 00:01:54,798
+voices, segments in an industry that are
+saying just stop using that tech
+
+40
+00:01:54,799 --> 00:02:00,230
+saying just stop using that tech
+entirely, there's panic going on.
+
+41
+00:02:01,190 --> 00:02:05,393
+Microsoft is an interesting example
+of this and so I'm going to use them
+
+42
+00:02:05,439 --> 00:02:07,758
+of this and so I'm going to use them
+because I know some details about their
+
+43
+00:02:07,759 --> 00:02:12,479
+because I know some details about their
+world. One of the common scams is
+
+44
+00:02:12,480 --> 00:02:14,238
+world. One of the common scams is
+maybe you've had a grandparent who says,
+
+45
+00:02:14,239 --> 00:02:16,238
+maybe you've had a grandparent who says,
+"Oh, I got a call from Microsoft tech
+
+46
+00:02:16,239 --> 00:02:18,238
+"Oh, I got a call from Microsoft tech
+support."
+
+47
+00:02:18,239 --> 00:02:21,039
+support."
+The reason that scam is
+
+48
+00:02:21,040 --> 00:02:23,598
+The reason that scam is
+dangerous is because Microsoft does have
+
+49
+00:02:23,599 --> 00:02:25,839
+dangerous is because Microsoft does have
+a tech support staff and they do
+
+50
+00:02:25,840 --> 00:02:27,999
+a tech support staff and they do
+sometimes call people. They don't
+
+51
+00:02:28,000 --> 00:02:29,839
+sometimes call people. They don't
+spontaneously call people, which is the
+
+52
+00:02:29,840 --> 00:02:32,479
+spontaneously call people, which is the
+way the scam usually works. But if a
+
+53
+00:02:32,480 --> 00:02:34,479
+way the scam usually works. But if a
+person calls Microsoft tech support and
+
+54
+00:02:34,480 --> 00:02:36,799
+person calls Microsoft tech support and
+they get disconnected,
+
+55
+00:02:36,800 --> 00:02:38,559
+they get disconnected,
+Or if they call and they have the
+
+56
+00:02:38,560 --> 00:02:40,479
+Or if they call and they have the
+end of the current conversation, but
+
+57
+00:02:40,480 --> 00:02:42,399
+end of the current conversation, but
+there needs to be follow-up, Microsoft
+
+58
+00:02:42,400 --> 00:02:44,639
+there needs to be follow-up, Microsoft
+does call people.
+
+59
+00:02:44,640 --> 00:02:46,878
+does call people.
+The problem is people don't want to
+
+60
+00:02:46,879 --> 00:02:48,559
+The problem is people don't want to
+answer.
+
+61
+00:02:48,560 --> 00:02:51,119
+answer.
+And that's a serious pain point for
+
+62
+00:02:51,120 --> 00:02:53,279
+And that's a serious pain point for
+Microsoft.
+
+63
+00:02:53,280 --> 00:02:55,999
+Microsoft.
+And regulators are getting involved
+
+64
+00:02:56,000 --> 00:03:00,318
+And regulators are getting involved
+in this now because Microsoft has
+
+65
+00:03:00,319 --> 00:03:01,999
+in this now because Microsoft has
+another characteristic that's kind of
+
+66
+00:03:02,000 --> 00:03:03,359
+another characteristic that's kind of
+complicated that would be true of
+
+67
+00:03:03,360 --> 00:03:05,039
+complicated that would be true of
+anybody who's a giant global
+
+68
+00:03:05,040 --> 00:03:07,439
+anybody who's a giant global
+conglomerate, which is they put their
+
+69
+00:03:07,440 --> 00:03:09,598
+conglomerate, which is they put their
+people in the most strategic places they
+
+70
+00:03:09,599 --> 00:03:13,598
+people in the most strategic places they
+can for cost reasons and so forth. So
+
+71
+00:03:13,599 --> 00:03:17,359
+can for cost reasons and so forth. So
+particular case in point in the UK
+
+72
+00:03:17,360 --> 00:03:19,679
+particular case in point in the UK
+Microsoft has plenty of customers
+
+73
+00:03:19,680 --> 00:03:22,238
+Microsoft has plenty of customers
+that they interact with but Microsoft
+
+74
+00:03:22,239 --> 00:03:24,639
+that they interact with but Microsoft
+doesn't put their call center staff in
+
+75
+00:03:24,640 --> 00:03:27,279
+doesn't put their call center staff in
+the UK. They put their call center staff
+
+76
+00:03:27,280 --> 00:03:30,238
+the UK. They put their call center staff
+in Bulgaria or some other lowcost
+
+77
+00:03:30,239 --> 00:03:32,798
+in Bulgaria or some other lowcost
+center that can you know make a cheap
+
+78
+00:03:32,799 --> 00:03:35,839
+center that can you know make a cheap
+call into the UK. But Offcom, which is
+
+79
+00:03:35,840 --> 00:03:39,518
+call into the UK. But Offcom, which is
+the equivalent of the FCC in the UK
+
+80
+00:03:39,519 --> 00:03:41,919
+the equivalent of the FCC in the UK
+has some problems with that because they
+
+81
+00:03:41,920 --> 00:03:44,399
+has some problems with that because they
+don't want a phone call to be
+
+82
+00:03:44,400 --> 00:03:46,479
+don't want a phone call to be
+claiming that it's coming from the UK
+
+83
+00:03:46,480 --> 00:03:49,199
+claiming that it's coming from the UK
+and from Microsoft when it's coming
+
+84
+00:03:49,200 --> 00:03:51,759
+and from Microsoft when it's coming
+from Bulgaria.
+
+85
+00:03:51,760 --> 00:03:55,598
+from Bulgaria.
+And so they have said, you may not
+
+86
+00:03:55,599 --> 00:03:58,958
+And so they have said, you may not
+attribute this phone call to a UK
+
+87
+00:03:58,959 --> 00:04:01,919
+attribute this phone call to a UK
+number unless you can prove it.
+
+88
+00:04:01,920 --> 00:04:03,438
+number unless you can prove it.
+You have to prove that it's really
+
+89
+00:04:03,439 --> 00:04:05,759
+You have to prove that it's really
+coming from Microsoft
+
+90
+00:04:05,760 --> 00:04:09,039
+coming from Microsoft
+and this is creating a lot of pain for
+
+91
+00:04:09,040 --> 00:04:11,438
+and this is creating a lot of pain for
+Microsoft.
+
+92
+00:04:11,439 --> 00:04:16,159
+Microsoft.
+So what Microsoft wants is a
+
+93
+00:04:16,160 --> 00:04:18,958
+So what Microsoft wants is a
+transformation of the customer
+
+94
+00:04:18,959 --> 00:04:21,679
+transformation of the customer
+experience from the phone on the left to
+
+95
+00:04:21,680 --> 00:04:23,999
+experience from the phone on the left to
+the phone on the right. They'd like it
+
+96
+00:04:24,000 --> 00:04:25,359
+the phone on the right. They'd like it
+to be the case that when the phone
+
+97
+00:04:25,360 --> 00:04:29,198
+to be the case that when the phone
+rings, it shows the Microsoft logo. It
+
+98
+00:04:29,199 --> 00:04:31,918
+rings, it shows the Microsoft logo. It
+shows the Microsoft name
+
+99
+00:04:31,919 --> 00:04:34,478
+shows the Microsoft name
+and it shows why they're calling. Oh,
+
+100
+00:04:34,479 --> 00:04:35,999
+and it shows why they're calling. Oh,
+they're calling because they're customer
+
+101
+00:04:36,000 --> 00:04:38,719
+they're calling because they're customer
+support representative and they want to
+
+102
+00:04:38,720 --> 00:04:41,679
+support representative and they want to
+be able to prove it.
+
+103
+00:04:41,680 --> 00:04:44,079
+be able to prove it.
+It's not hard to make a phone show
+
+104
+00:04:44,080 --> 00:04:45,839
+It's not hard to make a phone show
+logos.
+
+105
+00:04:45,840 --> 00:04:47,999
+logos.
+What's hard is to be able to prove why
+
+106
+00:04:48,000 --> 00:04:50,478
+What's hard is to be able to prove why
+you're showing the logo.
+
+107
+00:04:50,479 --> 00:04:51,918
+you're showing the logo.
+And this is the requirement that
+
+108
+00:04:51,919 --> 00:04:54,638
+And this is the requirement that
+Microsoft has.
+
+109
+00:04:54,639 --> 00:04:56,319
+Microsoft has.
+So,
+
+110
+00:04:56,320 --> 00:05:00,079
+So, what I'm here to talk about
+
+111
+00:05:00,080 --> 00:05:02,239
+what I'm here to talk about
+is I'm just going to let this narrator
+
+112
+00:05:02,240 --> 00:05:03,839
+is I'm just going to let this narrator
+take over for a minute and we'll watch
+
+113
+00:05:03,840 --> 00:05:07,038
+take over for a minute and we'll watch
+this demo. This was presented at
+
+114
+00:05:07,039 --> 00:05:09,758
+this demo. This was presented at
+Mobile World Congress about a month
+
+115
+00:05:09,759 --> 00:05:11,679
+Mobile World Congress about a month
+ago,
+
+116
+00:05:11,680 --> 00:05:13,839
+ago,
+a three person consultancy who wish to
+
+117
+00:05:13,840 --> 00:05:17,038
+a three person consultancy who wish to
+make outbound calls to their customers.
+
+118
+00:05:17,039 --> 00:05:19,519
+make outbound calls to their customers.
+We then move to a larger organization
+
+119
+00:05:19,520 --> 00:05:21,999
+We then move to a larger organization
+Microsoft. Their outbound contact
+
+120
+00:05:22,000 --> 00:05:23,679
+Microsoft. Their outbound contact
+centers need to be able to make calls to
+
+121
+00:05:23,680 --> 00:05:25,758
+centers need to be able to make calls to
+customers, but increasingly find that
+
+122
+00:05:25,759 --> 00:05:27,599
+customers, but increasingly find that
+their calls are impacted by incountry
+
+123
+00:05:27,600 --> 00:05:30,559
+their calls are impacted by incountry
+regulation, get spamm or simply not
+
+124
+00:05:30,560 --> 00:05:32,239
+regulation, get spamm or simply not
+answered because customers do not know
+
+125
+00:05:32,240 --> 00:05:35,679
+answered because customers do not know
+it's Microsoft calling.
+
+126
+00:05:35,680 --> 00:05:37,359
+it's Microsoft calling.
+What you will see looks like a branded
+
+127
+00:05:37,360 --> 00:05:39,519
+What you will see looks like a branded
+call. However, it is a little bit
+
+128
+00:05:39,520 --> 00:05:42,478
+call. However, it is a little bit
+different. With OBC, the information
+
+129
+00:05:42,479 --> 00:05:44,319
+different. With OBC, the information
+displayed on the handset is based on a
+
+130
+00:05:44,320 --> 00:05:46,799
+displayed on the handset is based on a
+set of credentials which prove certain
+
+131
+00:05:46,800 --> 00:05:49,839
+set of credentials which prove certain
+things about the origin of the call.
+
+132
+00:05:49,840 --> 00:05:51,519
+things about the origin of the call.
+They prove that Microsoft has the right
+
+133
+00:05:51,520 --> 00:05:53,359
+They prove that Microsoft has the right
+to the telephone number that is being
+
+134
+00:05:53,360 --> 00:05:55,599
+to the telephone number that is being
+displayed, that it is Microsoft
+
+135
+00:05:55,600 --> 00:05:57,679
+displayed, that it is Microsoft
+Corporation that is calling you, linked
+
+136
+00:05:57,680 --> 00:05:59,279
+Corporation that is calling you, linked
+back to the Axel legal entity
+
+137
+00:05:59,280 --> 00:06:01,038
+back to the Axel legal entity
+responsible for the call using a
+
+138
+00:06:01,039 --> 00:06:03,999
+responsible for the call using a
+globally unique legal identifier, and
+
+139
+00:06:04,000 --> 00:06:05,359
+globally unique legal identifier, and
+that they have the right to use the
+
+140
+00:06:05,360 --> 00:06:07,839
+that they have the right to use the
+brand that is being displayed to you.
+
+141
+00:06:07,840 --> 00:06:09,439
+brand that is being displayed to you.
+These credentials have all been issued
+
+142
+00:06:09,440 --> 00:06:12,959
+These credentials have all been issued
+to Microsoft and are in their control.
+
+143
+00:06:12,960 --> 00:06:14,719
+to Microsoft and are in their control.
+Microsoft could use these three
+
+144
+00:06:14,720 --> 00:06:16,239
+Microsoft could use these three
+credentials to originate calls
+
+145
+00:06:16,240 --> 00:06:18,159
+credentials to originate calls
+themselves, but there is a fourth
+
+146
+00:06:18,160 --> 00:06:19,918
+themselves, but there is a fourth
+credential which allows Microsoft to
+
+147
+00:06:19,919 --> 00:06:21,679
+credential which allows Microsoft to
+delegate the right to sign on their
+
+148
+00:06:21,680 --> 00:06:24,239
+delegate the right to sign on their
+behalf to another platform. For the
+
+149
+00:06:24,240 --> 00:06:26,318
+behalf to another platform. For the
+project, we've worked with Info Bit,
+
+150
+00:06:26,319 --> 00:06:28,959
+project, we've worked with Info Bit,
+Twilio, and Vonnage as platforms that
+
+151
+00:06:28,960 --> 00:06:30,719
+Twilio, and Vonnage as platforms that
+could be used to sign traffic on behalf
+
+152
+00:06:30,720 --> 00:06:32,959
+could be used to sign traffic on behalf
+of an enterprise and they do not wish to
+
+153
+00:06:32,960 --> 00:06:35,038
+of an enterprise and they do not wish to
+make their own calls.
+
+154
+00:06:35,039 --> 00:06:36,799
+make their own calls.
+The call you see will leave the platform
+
+155
+00:06:36,800 --> 00:06:38,879
+The call you see will leave the platform
+onto a network where it will be verified
+
+156
+00:06:38,880 --> 00:06:41,439
+onto a network where it will be verified
+by a transit operator before it has
+
+157
+00:06:41,440 --> 00:06:43,999
+by a transit operator before it has
+arrived. handset and the outcome of the
+
+158
+00:06:44,000 --> 00:06:46,879
+arrived. handset and the outcome of the
+verification is displayed. Let's go and
+
+159
+00:06:46,880 --> 00:06:49,839
+verification is displayed. Let's go and
+make a call. For this example, we're
+
+160
+00:06:49,840 --> 00:06:53,279
+make a call. For this example, we're
+going to make a call from Info BIP.
+
+161
+00:06:53,280 --> 00:06:54,879
+going to make a call from Info BIP.
+We are logged in as Microsoft and we'll
+
+162
+00:06:54,880 --> 00:06:56,638
+We are logged in as Microsoft and we'll
+send a call from this US telephone
+
+163
+00:06:56,639 --> 00:06:59,038
+send a call from this US telephone
+number which has been allocated to them.
+
+164
+00:06:59,039 --> 00:07:00,959
+number which has been allocated to them.
+We will call this Spanish number which
+
+165
+00:07:00,960 --> 00:07:02,959
+We will call this Spanish number which
+is a prepaid SIM we bought in Spain for
+
+166
+00:07:02,960 --> 00:07:05,359
+is a prepaid SIM we bought in Spain for
+the demonstration and is in the handset
+
+167
+00:07:05,360 --> 00:07:07,679
+the demonstration and is in the handset
+which is mirrored to the right. Let's go
+
+168
+00:07:07,680 --> 00:07:14,070
+which is mirrored to the right. Let's go
+ahead and make a call.
+
+169
+00:07:16,469 --> 00:07:19,038
+You can see here the name, telephone
+number and brand along with a verified
+
+170
+00:07:19,039 --> 00:07:21,679
+number and brand along with a verified
+tick are displayed.
+
+171
+00:07:21,680 --> 00:07:23,119
+tick are displayed.
+These are displayed based on a
+
+172
+00:07:23,120 --> 00:07:25,038
+These are displayed based on a
+successful verification of the evidence
+
+173
+00:07:25,039 --> 00:07:28,079
+successful verification of the evidence
+provided in the communication.
+
+174
+00:07:28,080 --> 00:07:29,918
+provided in the communication.
+What we'll do next is have a look at the
+
+175
+00:07:29,919 --> 00:07:31,519
+What we'll do next is have a look at the
+governance model that underpins this
+
+176
+00:07:31,520 --> 00:07:35,029
+governance model that underpins this
+evidence.
+
+177
+00:07:36,469 --> 00:07:38,638
+One of the biggest challenges with
+global verifiable communications is
+
+178
+00:07:38,639 --> 00:07:39,999
+global verifiable communications is
+ensuring there is thorough and
+
+179
+00:07:40,000 --> 00:07:41,999
+ensuring there is thorough and
+consistent vetting of original parties
+
+180
+00:07:42,000 --> 00:07:43,439
+consistent vetting of original parties
+that can work in many different
+
+181
+00:07:43,440 --> 00:07:45,279
+that can work in many different
+circumstances.
+
+182
+00:07:45,280 --> 00:07:48,318
+circumstances.
+OBC has rich governance model and
+
+183
+00:07:48,319 --> 00:07:50,159
+OBC has rich governance model and
+provable chain of evidence to support
+
+184
+00:07:50,160 --> 00:07:52,959
+provable chain of evidence to support
+this. It starts with a local governance
+
+185
+00:07:52,960 --> 00:07:55,359
+this. It starts with a local governance
+authority that sets the vetting
+
+186
+00:07:55,360 --> 00:07:57,918
+authority that sets the vetting
+standards for OBC.
+
+187
+00:07:57,919 --> 00:08:00,719
+standards for OBC.
+We next have policy administrators who
+
+188
+00:08:00,720 --> 00:08:02,559
+We next have policy administrators who
+appointed by the government's authority
+
+189
+00:08:02,560 --> 00:08:04,478
+appointed by the government's authority
+to apply these vetting standards in a
+
+190
+00:08:04,479 --> 00:08:07,198
+to apply these vetting standards in a
+given jurisdiction. It's important as
+
+191
+00:08:07,199 --> 00:08:08,399
+given jurisdiction. It's important as
+there are many differences of
+
+192
+00:08:08,400 --> 00:08:10,239
+there are many differences of
+regulations and vetting processes in
+
+193
+00:08:10,240 --> 00:08:12,559
+regulations and vetting processes in
+different countries. They're responsible
+
+194
+00:08:12,560 --> 00:08:14,478
+different countries. They're responsible
+for certifying vetting agents to be able
+
+195
+00:08:14,479 --> 00:08:16,318
+for certifying vetting agents to be able
+to vet in these jurisdictions for
+
+196
+00:08:16,319 --> 00:08:19,359
+to vet in these jurisdictions for
+different communications channels.
+
+197
+00:08:19,360 --> 00:08:21,359
+different communications channels.
+Once credentials been issued to betting
+
+198
+00:08:21,360 --> 00:08:23,679
+Once credentials been issued to betting
+agents, they're able to bet enterprises
+
+199
+00:08:23,680 --> 00:08:25,918
+agents, they're able to bet enterprises
+in specific regions and for specific
+
+200
+00:08:25,919 --> 00:08:28,079
+in specific regions and for specific
+communications channels. In the trial,
+
+201
+00:08:28,080 --> 00:08:30,799
+communications channels. In the trial,
+we've had brand numerical and easing
+
+202
+00:08:30,800 --> 00:08:33,278
+we've had brand numerical and easing
+enterprises.
+
+203
+00:08:33,279 --> 00:08:35,679
+enterprises.
+The vetting agents verify enterprises to
+
+204
+00:08:35,680 --> 00:08:38,239
+The vetting agents verify enterprises to
+prove rights to telephone numbers, that
+
+205
+00:08:38,240 --> 00:08:40,239
+prove rights to telephone numbers, that
+they are the legal entity they say they
+
+206
+00:08:40,240 --> 00:08:42,079
+they are the legal entity they say they
+are, and that they have the rights to
+
+207
+00:08:42,080 --> 00:08:44,479
+are, and that they have the rights to
+use the brand, and then issue the
+
+208
+00:08:44,480 --> 00:08:45,759
+use the brand, and then issue the
+enterprises with appropriate
+
+209
+00:08:45,760 --> 00:08:48,079
+enterprises with appropriate
+credentials. This process can support
+
+210
+00:08:48,080 --> 00:08:50,159
+credentials. This process can support
+support both small businesses and large
+
+211
+00:08:50,160 --> 00:08:52,319
+support both small businesses and large
+corporations.
+
+212
+00:08:52,320 --> 00:08:53,919
+corporations.
+It's important to note that these
+
+213
+00:08:53,920 --> 00:08:55,439
+It's important to note that these
+credentials are chained all the way back
+
+214
+00:08:55,440 --> 00:08:57,838
+credentials are chained all the way back
+to the governance authority providing a
+
+215
+00:08:57,839 --> 00:09:00,398
+to the governance authority providing a
+provable chain of trust. It is also
+
+216
+00:09:00,399 --> 00:09:01,999
+provable chain of trust. It is also
+means that it's possible for credentials
+
+217
+00:09:02,000 --> 00:09:04,398
+means that it's possible for credentials
+to be revoked at any point in the chain.
+
+218
+00:09:04,399 --> 00:09:06,398
+to be revoked at any point in the chain.
+So if for example a vtor does not follow
+
+219
+00:09:06,399 --> 00:09:08,719
+So if for example a vtor does not follow
+the rules and bets bad actors, it's
+
+220
+00:09:08,720 --> 00:09:10,719
+the rules and bets bad actors, it's
+possible for a policy administrator to
+
+221
+00:09:10,720 --> 00:09:12,559
+possible for a policy administrator to
+revoke their credential and have a
+
+222
+00:09:12,560 --> 00:09:14,559
+revoke their credential and have a
+cascade impact on the credential set
+
+223
+00:09:14,560 --> 00:09:16,079
+cascade impact on the credential set
+issue.
+
+224
+00:09:16,080 --> 00:09:17,919
+issue.
+The credentials are held in wallets by
+
+225
+00:09:17,920 --> 00:09:19,439
+The credentials are held in wallets by
+enterprises to whom they have been
+
+226
+00:09:19,440 --> 00:09:21,518
+enterprises to whom they have been
+issued. While the focus of the
+
+227
+00:09:21,519 --> 00:09:23,679
+issued. While the focus of the
+demonstration has been on voice, these
+
+228
+00:09:23,680 --> 00:09:25,599
+demonstration has been on voice, these
+credentials can also prove other
+
+229
+00:09:25,600 --> 00:09:28,398
+credentials can also prove other
+communication channels such as RCS, SMS
+
+230
+00:09:28,399 --> 00:09:31,518
+communication channels such as RCS, SMS
+or APIs. The final credential which can
+
+231
+00:09:31,519 --> 00:09:34,159
+or APIs. The final credential which can
+be created if needed is a delegated sign
+
+232
+00:09:34,160 --> 00:09:36,719
+be created if needed is a delegated sign
+credential which we discussed earlier.
+
+233
+00:09:36,720 --> 00:09:38,319
+credential which we discussed earlier.
+What we'll look at now is how the
+
+234
+00:09:38,320 --> 00:09:46,320
+What we'll look at now is how the
+evidence looks for a real call.
+
+235
+00:09:48,070 --> 00:09:49,838
+First, we're going to make another call,
+but this time from another one. One of
+
+236
+00:09:49,839 --> 00:09:51,518
+but this time from another one. One of
+the credentials has been removed by
+
+237
+00:09:51,519 --> 00:09:55,269
+the credentials has been removed by
+Microsoft.
+
+238
+00:10:02,310 --> 00:10:04,559
+As you can see, in this instance, the
+call fails. This is because the transit
+
+239
+00:10:04,560 --> 00:10:06,639
+call fails. This is because the transit
+operator verifying the network attempted
+
+240
+00:10:06,640 --> 00:10:08,398
+operator verifying the network attempted
+to verify the call and found that one of
+
+241
+00:10:08,399 --> 00:10:10,398
+to verify the call and found that one of
+the credentials had been revoked and
+
+242
+00:10:10,399 --> 00:10:13,199
+the credentials had been revoked and
+therefore rejected the call.
+
+243
+00:10:13,200 --> 00:10:14,719
+therefore rejected the call.
+We will now go and look at the evidence
+
+244
+00:10:14,720 --> 00:10:19,829
+We will now go and look at the evidence
+detail for this call.
+
+245
+00:10:21,990 --> 00:10:23,919
+We can see the call here. Evidence
+detail records refer back to the
+
+246
+00:10:23,920 --> 00:10:25,838
+detail records refer back to the
+evidence and provide a permanent record
+
+247
+00:10:25,839 --> 00:10:31,030
+evidence and provide a permanent record
+of the evidence accompanying the call.
+
+248
+00:10:32,870 --> 00:10:35,518
+We can see the three credentials here.
+The identity credential, the TN
+
+249
+00:10:35,519 --> 00:10:38,159
+The identity credential, the TN
+credential, and the brand credential.
+
+250
+00:10:38,160 --> 00:10:39,919
+credential, and the brand credential.
+And we can see here that the TN
+
+251
+00:10:39,920 --> 00:10:42,239
+And we can see here that the TN
+credential has been revoked.
+
+252
+00:10:42,240 --> 00:10:44,159
+credential has been revoked.
+We can also look into the evidence in
+
+253
+00:10:44,160 --> 00:10:47,518
+We can also look into the evidence in
+more detail and see who has vetted
+
+254
+00:10:47,519 --> 00:10:49,999
+more detail and see who has vetted
+Microsoft. In this case, it was Eegis
+
+255
+00:10:50,000 --> 00:10:52,559
+Microsoft. In this case, it was Eegis
+and even how they gained their authority
+
+256
+00:10:52,560 --> 00:10:55,599
+and even how they gained their authority
+to be a veter. We can also then see the
+
+257
+00:10:55,600 --> 00:10:57,599
+to be a veter. We can also then see the
+policy administrator and the
+
+258
+00:10:57,600 --> 00:10:59,759
+policy administrator and the
+government's authority for the trial.
+
+259
+00:10:59,760 --> 00:11:02,078
+government's authority for the trial.
+These were just placeholders.
+
+260
+00:11:02,079 --> 00:11:03,838
+These were just placeholders.
+We'll now move on to look at the actual
+
+261
+00:11:03,839 --> 00:11:06,479
+We'll now move on to look at the actual
+call flow for the call that you've
+
+262
+00:11:06,480 --> 00:11:14,480
+call flow for the call that you've
+seen.
+
+263
+00:11:17,829 --> 00:11:19,599
+We started with a set of credentials
+that have been issued to the enterprise
+
+264
+00:11:19,600 --> 00:11:22,479
+that have been issued to the enterprise
+and delegated to an originator so they
+
+265
+00:11:22,480 --> 00:11:25,838
+and delegated to an originator so they
+can make calls on their behalf.
+
+266
+00:11:25,839 --> 00:11:27,999
+can make calls on their behalf.
+When the call is made, the originator
+
+267
+00:11:28,000 --> 00:11:29,759
+When the call is made, the originator
+calls out to a signing service from
+
+268
+00:11:29,760 --> 00:11:31,999
+calls out to a signing service from
+Provenant, the technology provider for
+
+269
+00:11:32,000 --> 00:11:34,559
+Provenant, the technology provider for
+this project. The service returns a
+
+270
+00:11:34,560 --> 00:11:38,319
+this project. The service returns a
+compact passport, a stir passport and
+
+271
+00:11:38,320 --> 00:11:40,319
+compact passport, a stir passport and
+also replicates this passport from out
+
+272
+00:11:40,320 --> 00:11:42,639
+also replicates this passport from out
+of bank hash. The passport is not a
+
+273
+00:11:42,640 --> 00:11:45,359
+of bank hash. The passport is not a
+shaken passport but a verifiable voice
+
+274
+00:11:45,360 --> 00:11:48,159
+shaken passport but a verifiable voice
+protocol passport.
+
+275
+00:11:48,160 --> 00:11:50,799
+protocol passport.
+Once signed, the originating party sends
+
+276
+00:11:50,800 --> 00:11:53,278
+Once signed, the originating party sends
+the phone onto the PSTN.
+
+277
+00:11:53,279 --> 00:11:55,759
+the phone onto the PSTN.
+Here it is received by transit oper
+
+278
+00:11:55,760 --> 00:11:58,239
+Here it is received by transit oper
+operator Wrestle
+
+279
+00:11:58,240 --> 00:12:00,159
+operator Wrestle
+and uses a verification service to
+
+280
+00:12:00,160 --> 00:12:02,879
+and uses a verification service to
+verify the pool. Verification can happen
+
+281
+00:12:02,880 --> 00:12:05,039
+verify the pool. Verification can happen
+anywhere in the call flow. The RB
+
+282
+00:12:05,040 --> 00:12:07,199
+anywhere in the call flow. The RB
+scenario verification takes place in the
+
+283
+00:12:07,200 --> 00:12:09,838
+scenario verification takes place in the
+terminating network. In the case of the
+
+284
+00:12:09,839 --> 00:12:11,439
+terminating network. In the case of the
+good call, wave press will pass this
+
+285
+00:12:11,440 --> 00:12:13,599
+good call, wave press will pass this
+call to the terminating operator. And in
+
+286
+00:12:13,600 --> 00:12:16,159
+call to the terminating operator. And in
+the case of a bad call, Wress rejected
+
+287
+00:12:16,160 --> 00:12:18,159
+the case of a bad call, Wress rejected
+the call.
+
+288
+00:12:18,160 --> 00:12:19,919
+the call.
+When the call arrives on the handset, it
+
+289
+00:12:19,920 --> 00:12:21,359
+When the call arrives on the handset, it
+does a look up to an out ofbound
+
+290
+00:12:21,360 --> 00:12:24,319
+does a look up to an out ofbound
+passport cache. If a passport is found,
+
+291
+00:12:24,320 --> 00:12:27,119
+passport cache. If a passport is found,
+a verification again takes place and if
+
+292
+00:12:27,120 --> 00:12:28,958
+a verification again takes place and if
+successful, the result is returned to
+
+293
+00:12:28,959 --> 00:12:30,879
+successful, the result is returned to
+the handset. The outcome of the
+
+294
+00:12:30,880 --> 00:12:33,359
+the handset. The outcome of the
+verification is then displayed as the
+
+295
+00:12:33,360 --> 00:12:35,278
+verification is then displayed as the
+phone rings.
+
+296
+00:12:35,279 --> 00:12:37,199
+phone rings.
+In our trial, we relied on verification
+
+297
+00:12:37,200 --> 00:12:39,199
+In our trial, we relied on verification
+on the handset using a modified version
+
+298
+00:12:39,200 --> 00:12:41,119
+on the handset using a modified version
+of the standard Android dialer provided
+
+299
+00:12:41,120 --> 00:12:43,679
+of the standard Android dialer provided
+by Google for this project and a lookup
+
+300
+00:12:43,680 --> 00:12:46,799
+by Google for this project and a lookup
+was to a public outbound service. In an
+
+301
+00:12:46,800 --> 00:12:48,719
+was to a public outbound service. In an
+ideal scenario, the verification would
+
+302
+00:12:48,720 --> 00:12:50,638
+ideal scenario, the verification would
+take place in the terminating operator's
+
+303
+00:12:50,639 --> 00:12:52,879
+take place in the terminating operator's
+network with the cryptographic evidence
+
+304
+00:12:52,880 --> 00:12:55,359
+network with the cryptographic evidence
+being passed directly to the handset or
+
+305
+00:12:55,360 --> 00:12:57,679
+being passed directly to the handset or
+to the antibb service to be deployed in
+
+306
+00:12:57,680 --> 00:13:01,430
+to the antibb service to be deployed in
+the operator's network.
+
+307
+00:13:03,910 --> 00:13:05,599
+This concludes the demonstration.
+This project has been supported by the
+
+308
+00:13:05,600 --> 00:13:08,159
+This project has been supported by the
+GSMA Foundry and has had participation
+
+309
+00:13:08,160 --> 00:13:10,159
+GSMA Foundry and has had participation
+from the following companies. If you
+
+310
+00:13:10,160 --> 00:13:11,759
+from the following companies. If you
+would like to find out more, please
+
+311
+00:13:11,760 --> 00:13:16,870
+would like to find out more, please
+follow the QR code.
+
+312
+00:13:19,509 --> 00:13:21,679
+Okay. So there was a lot of detail
+in that and I'm going to try to pull out
+
+313
+00:13:21,680 --> 00:13:25,359
+in that and I'm going to try to pull out
+of what you saw a few points here.
+
+314
+00:13:25,360 --> 00:13:27,439
+of what you saw a few points here.
+The first one in the view that you
+
+315
+00:13:27,440 --> 00:13:31,199
+The first one in the view that you
+saw that was like this anybody who
+
+316
+00:13:31,200 --> 00:13:34,078
+saw that was like this anybody who
+has seen that telephone call transit
+
+317
+00:13:34,079 --> 00:13:36,638
+has seen that telephone call transit
+their network has the ability to prove
+
+318
+00:13:36,639 --> 00:13:38,879
+their network has the ability to prove
+certain things about it. This will
+
+319
+00:13:38,880 --> 00:13:41,119
+certain things about it. This will
+satisfy a regulator.
+
+320
+00:13:41,120 --> 00:13:43,679
+satisfy a regulator.
+It will satisfy an IT team that's
+
+321
+00:13:43,680 --> 00:13:46,479
+It will satisfy an IT team that's
+worried about regulatory compliance.
+
+322
+00:13:46,480 --> 00:13:49,359
+worried about regulatory compliance.
+It will satisfy an end user and all of
+
+323
+00:13:49,360 --> 00:13:53,039
+It will satisfy an end user and all of
+those stakeholders matter. just
+
+324
+00:13:53,040 --> 00:13:55,199
+those stakeholders matter. just
+making the end user comfortable isn't
+
+325
+00:13:55,200 --> 00:13:57,039
+making the end user comfortable isn't
+the only goal here. We had to make
+
+326
+00:13:57,040 --> 00:13:59,278
+the only goal here. We had to make
+Offcom comfortable.
+
+327
+00:13:59,279 --> 00:14:03,039
+Offcom comfortable.
+And so be being able to drill in and
+
+328
+00:14:03,040 --> 00:14:05,039
+And so be being able to drill in and
+say for this call, what are the
+
+329
+00:14:05,040 --> 00:14:07,119
+say for this call, what are the
+credentials that were available and what
+
+330
+00:14:07,120 --> 00:14:09,759
+credentials that were available and what
+can I know about the party that made the
+
+331
+00:14:09,760 --> 00:14:12,398
+can I know about the party that made the
+call at that time and I need to be able
+
+332
+00:14:12,399 --> 00:14:14,638
+call at that time and I need to be able
+to have real time reaction to
+
+333
+00:14:14,639 --> 00:14:16,239
+to have real time reaction to
+revocation.
+
+334
+00:14:16,240 --> 00:14:20,159
+revocation.
+if Microsoft is doing something funny
+
+335
+00:14:20,160 --> 00:14:22,559
+if Microsoft is doing something funny
+and a regulator says don't let that kind
+
+336
+00:14:22,560 --> 00:14:24,958
+and a regulator says don't let that kind
+of call through be anymore and we
+
+337
+00:14:24,959 --> 00:14:27,198
+of call through be anymore and we
+revoke one of the credentials the
+
+338
+00:14:27,199 --> 00:14:28,958
+revoke one of the credentials the
+system has to react in real time to
+
+339
+00:14:28,959 --> 00:14:31,518
+system has to react in real time to
+that. So that's one of the things I
+
+340
+00:14:31,519 --> 00:14:35,518
+that. So that's one of the things I
+wanted to call out.
+
+341
+00:14:35,519 --> 00:14:38,958
+wanted to call out.
+Oh did I just oh I guess I pushed a turn
+
+342
+00:14:38,959 --> 00:14:42,159
+oh did I just oh I guess I pushed a turn
+off the button. Okay. Being able to
+
+343
+00:14:42,160 --> 00:14:44,958
+off the button. Okay. Being able to
+drill in deeper so it's not just a
+
+344
+00:14:44,959 --> 00:14:47,039
+drill in deeper so it's not just a
+badge but you can you drill into the
+
+345
+00:14:47,040 --> 00:14:48,958
+badge but you can you drill into the
+individual pieces of evidence and look
+
+346
+00:14:48,959 --> 00:14:51,679
+individual pieces of evidence and look
+at their status and you can do this
+
+347
+00:14:51,680 --> 00:14:55,198
+at their status and you can do this
+historically too. So at the time the
+
+348
+00:14:55,199 --> 00:14:57,439
+historically too. So at the time the
+call is made you can look at it but you
+
+349
+00:14:57,440 --> 00:15:01,198
+call is made you can look at it but you
+can also go back a week or a year
+
+350
+00:15:01,199 --> 00:15:03,999
+can also go back a week or a year
+later on a particular call and say what
+
+351
+00:15:04,000 --> 00:15:05,599
+later on a particular call and say what
+was the state of the credentials at this
+
+352
+00:15:05,600 --> 00:15:08,398
+was the state of the credentials at this
+time? what was a justified conclusion
+
+353
+00:15:08,399 --> 00:15:10,078
+time? what was a justified conclusion
+based on what the evidence looked like
+
+354
+00:15:10,079 --> 00:15:12,799
+based on what the evidence looked like
+then.
+
+355
+00:15:12,800 --> 00:15:16,719
+then.
+Now Sam's talked about tipping point.
+
+356
+00:15:16,720 --> 00:15:19,278
+Now Sam's talked about tipping point.
+I really hope that the telco thing is a
+
+357
+00:15:19,279 --> 00:15:22,559
+I really hope that the telco thing is a
+tipping point. You know it's it ain't
+
+358
+00:15:22,560 --> 00:15:24,638
+tipping point. You know it's it ain't
+over till it's over but we have made a
+
+359
+00:15:24,639 --> 00:15:26,239
+over till it's over but we have made a
+lot of progress here. So I want to just
+
+360
+00:15:26,240 --> 00:15:27,999
+lot of progress here. So I want to just
+highlight a few of the things that were
+
+361
+00:15:28,000 --> 00:15:32,479
+highlight a few of the things that were
+kind of touched on briefly. VVP is an
+
+362
+00:15:32,480 --> 00:15:34,719
+kind of touched on briefly. VVP is an
+acronym. It stands for verifiable voice
+
+363
+00:15:34,720 --> 00:15:37,759
+acronym. It stands for verifiable voice
+protocol. That's an IETF draft spec
+
+364
+00:15:37,760 --> 00:15:40,479
+protocol. That's an IETF draft spec
+right now. For those of you who
+
+365
+00:15:40,480 --> 00:15:42,479
+right now. For those of you who
+don't work in telco, I've gone through
+
+366
+00:15:42,480 --> 00:15:45,439
+don't work in telco, I've gone through
+this learning curve recently. Stir
+
+367
+00:15:45,440 --> 00:15:49,518
+this learning curve recently. Stir
+is a technology that is used in VoIP.
+
+368
+00:15:49,519 --> 00:15:52,638
+is a technology that is used in VoIP.
+Voice over IP
+
+369
+00:15:52,639 --> 00:15:55,198
+Voice over IP
+and basically a stir passport is a
+
+370
+00:15:55,199 --> 00:15:57,198
+and basically a stir passport is a
+JWT.
+
+371
+00:15:57,199 --> 00:16:00,159
+JWT.
+So many of you know what a JWT is
+
+372
+00:16:00,160 --> 00:16:04,319
+So many of you know what a JWT is
+and how it works. So a JWT carries a
+
+373
+00:16:04,320 --> 00:16:05,999
+and how it works. So a JWT carries a
+small amount of information and the
+
+374
+00:16:06,000 --> 00:16:07,999
+small amount of information and the
+world's VOIPE systems already know how
+
+375
+00:16:08,000 --> 00:16:10,879
+world's VOIPE systems already know how
+to KERI these JWTs.
+
+376
+00:16:10,880 --> 00:16:13,518
+to KERI these JWTs.
+What VVP does is it says we're going to
+
+377
+00:16:13,519 --> 00:16:15,439
+What VVP does is it says we're going to
+put a little bit of extra information in
+
+378
+00:16:15,440 --> 00:16:17,999
+put a little bit of extra information in
+that JWT. And I'm going to show you how
+
+379
+00:16:18,000 --> 00:16:20,239
+that JWT. And I'm going to show you how
+little I really mean when I say a little
+
+380
+00:16:20,240 --> 00:16:23,039
+little I really mean when I say a little
+bit. It's actually remarkable how rich
+
+381
+00:16:23,040 --> 00:16:25,599
+bit. It's actually remarkable how rich
+we can make this with a very tiny
+
+382
+00:16:25,600 --> 00:16:28,559
+we can make this with a very tiny
+addition. And because the world systems
+
+383
+00:16:28,560 --> 00:16:29,919
+addition. And because the world systems
+already know how to KERI this
+
+384
+00:16:29,920 --> 00:16:32,398
+already know how to KERI this
+information, we don't have to modify the
+
+385
+00:16:32,399 --> 00:16:35,278
+information, we don't have to modify the
+infrastructure. In the narrator in that
+
+386
+00:16:35,279 --> 00:16:37,838
+infrastructure. In the narrator in that
+video mentioned just in passing that we
+
+387
+00:16:37,839 --> 00:16:40,958
+video mentioned just in passing that we
+were calling a Spanish SIM card that
+
+388
+00:16:40,959 --> 00:16:43,679
+were calling a Spanish SIM card that
+we had bought off the street, literally
+
+389
+00:16:43,680 --> 00:16:45,599
+we had bought off the street, literally
+we flew into Spain for this conference,
+
+390
+00:16:45,600 --> 00:16:48,319
+we flew into Spain for this conference,
+which was a month ago in Barcelona. We
+
+391
+00:16:48,320 --> 00:16:50,398
+which was a month ago in Barcelona. We
+flew in, we walked into a shop on the
+
+392
+00:16:50,399 --> 00:16:52,239
+flew in, we walked into a shop on the
+street, a random one, and we bought a
+
+393
+00:16:52,240 --> 00:16:54,159
+street, a random one, and we bought a
+SIM card and stuck it in, and we got a
+
+394
+00:16:54,160 --> 00:16:57,119
+SIM card and stuck it in, and we got a
+call to work. And that's important
+
+395
+00:16:57,120 --> 00:16:59,039
+call to work. And that's important
+because we're not talking about
+
+396
+00:16:59,040 --> 00:17:01,278
+because we're not talking about
+proposing to the world that they go
+
+397
+00:17:01,279 --> 00:17:02,559
+proposing to the world that they go
+deploy a whole bunch of new
+
+398
+00:17:02,560 --> 00:17:04,399
+deploy a whole bunch of new
+infrastructure.
+
+399
+00:17:04,400 --> 00:17:07,599
+infrastructure.
+The networks that carried this call
+
+400
+00:17:07,600 --> 00:17:10,318
+The networks that carried this call
+with this information had no notice that
+
+401
+00:17:10,319 --> 00:17:12,879
+with this information had no notice that
+we were doing this. We just did it and
+
+402
+00:17:12,880 --> 00:17:15,359
+we were doing this. We just did it and
+it worked. So, that's really important
+
+403
+00:17:15,360 --> 00:17:17,999
+it worked. So, that's really important
+to the adoption story.
+
+404
+00:17:18,000 --> 00:17:20,719
+to the adoption story.
+This is the events that are
+
+405
+00:17:20,720 --> 00:17:23,198
+This is the events that are
+listed here are kind of in
+
+406
+00:17:23,199 --> 00:17:25,678
+listed here are kind of in
+chronological order.
+
+407
+00:17:25,679 --> 00:17:30,719
+chronological order.
+The GSMA is the world's basically
+
+408
+00:17:30,720 --> 00:17:33,038
+The GSMA is the world's basically
+the arbiter of mobile technology in the
+
+409
+00:17:33,039 --> 00:17:36,079
+the arbiter of mobile technology in the
+world. And so this is important that
+
+410
+00:17:36,080 --> 00:17:38,798
+world. And so this is important that
+they convened this project
+
+411
+00:17:38,799 --> 00:17:41,279
+they convened this project
+and those names that are listed there
+
+412
+00:17:41,280 --> 00:17:43,359
+and those names that are listed there
+are all big names. They all
+
+413
+00:17:43,360 --> 00:17:45,999
+are all big names. They all
+participated in one degree or another.
+
+414
+00:17:46,000 --> 00:17:49,119
+participated in one degree or another.
+Google was the handset manufacturer
+
+415
+00:17:49,120 --> 00:17:52,479
+Google was the handset manufacturer
+who got their dialer modified fastest
+
+416
+00:17:52,480 --> 00:17:54,159
+who got their dialer modified fastest
+and that's why we used the Google
+
+417
+00:17:54,160 --> 00:17:58,798
+and that's why we used the Google
+handset to do the demos. But Apple
+
+418
+00:17:58,799 --> 00:18:00,558
+handset to do the demos. But Apple
+We had good conversations with them.
+
+419
+00:18:00,559 --> 00:18:04,639
+We had good conversations with them.
+Samsung was there, Cisco was there.
+
+420
+00:18:04,640 --> 00:18:07,279
+Samsung was there, Cisco was there.
+All of these companies participating
+
+421
+00:18:07,280 --> 00:18:09,918
+all of these companies participating
+together and Microsoft is going to
+
+422
+00:18:09,919 --> 00:18:13,519
+together and Microsoft is going to
+production in right now as we speak
+
+423
+00:18:13,520 --> 00:18:16,159
+production in right now as we speak
+in various parts of the world. It's
+
+424
+00:18:16,160 --> 00:18:18,639
+in various parts of the world. It's
+not a single big bang. It's a series of
+
+425
+00:18:18,640 --> 00:18:20,399
+not a single big bang. It's a series of
+going to production things in different
+
+426
+00:18:20,400 --> 00:18:21,918
+going to production things in different
+jurisdictions
+
+427
+00:18:21,919 --> 00:18:24,239
+jurisdictions
+and with different kinds of evidence. In
+
+428
+00:18:24,240 --> 00:18:26,239
+and with different kinds of evidence. In
+the UK, they don't need the branded
+
+429
+00:18:26,240 --> 00:18:28,239
+the UK, they don't need the branded
+calling right now. They just need the
+
+430
+00:18:28,240 --> 00:18:31,199
+calling right now. They just need the
+name Microsoft to appear. So, they don't
+
+431
+00:18:31,200 --> 00:18:33,519
+name Microsoft to appear. So, they don't
+care about the logos. They're going
+
+432
+00:18:33,520 --> 00:18:35,599
+care about the logos. They're going
+live in the UK first because they have
+
+433
+00:18:35,600 --> 00:18:38,319
+live in the UK first because they have
+to satisfy offcom in the UK. Then
+
+434
+00:18:38,320 --> 00:18:40,239
+to satisfy offcom in the UK. Then
+they're going to other places. So
+
+435
+00:18:40,240 --> 00:18:41,999
+they're going to other places. So
+anyway, there's some real live in
+
+436
+00:18:42,000 --> 00:18:43,999
+anyway, there's some real live in
+production stuff by companies that you
+
+437
+00:18:44,000 --> 00:18:48,558
+production stuff by companies that you
+know that are doing this and the GSMA
+
+438
+00:18:48,559 --> 00:18:54,319
+know that are doing this and the GSMA
+completed this OBVC project in March,
+
+439
+00:18:54,320 --> 00:18:56,798
+completed this OBVC project in March,
+just a month ago. So now they've
+
+440
+00:18:56,799 --> 00:18:57,760
+just a month ago. So now they've
+announced that they're going to have
+
+441
+00:18:57,761 --> 00:19:01,439
+announced that they're going to have
+some follow-on projects. One of them
+
+442
+00:19:01,440 --> 00:19:04,399
+some follow-on projects. One of them
+is going to focus on governance.
+
+443
+00:19:04,400 --> 00:19:07,999
+is going to focus on governance.
+And this gets to the whole LEI and
+
+444
+00:19:08,000 --> 00:19:10,159
+And this gets to the whole LEI and
+vLEI topic.
+
+445
+00:19:10,160 --> 00:19:13,759
+vLEI topic.
+During the proof of concept
+
+446
+00:19:13,760 --> 00:19:16,719
+During the proof of concept
+stuff that we did, we were using an LEI
+
+447
+00:19:16,720 --> 00:19:18,719
+stuff that we did, we were using an LEI
+to identify the companies and everybody
+
+448
+00:19:18,720 --> 00:19:21,279
+to identify the companies and everybody
+agreed that was vital.
+
+449
+00:19:21,280 --> 00:19:23,918
+agreed that was vital.
+And so now they're looking to extend
+
+450
+00:19:23,919 --> 00:19:27,918
+And so now they're looking to extend
+that and fit into the vLEI family.
+
+451
+00:19:27,919 --> 00:19:29,839
+that and fit into the vLEI family.
+That's part of the follow-on governance
+
+452
+00:19:29,840 --> 00:19:31,759
+That's part of the follow-on governance
+work.
+
+453
+00:19:31,760 --> 00:19:33,999
+work.
+The other thing is that they explicitly
+
+454
+00:19:34,000 --> 00:19:37,359
+The other thing is that they explicitly
+want to make this technology usable in
+
+455
+00:19:37,360 --> 00:19:40,159
+want to make this technology usable in
+multiple channels. So the channel
+
+456
+00:19:40,160 --> 00:19:43,519
+multiple channels. So the channel
+that we focused on in this ex first
+
+457
+00:19:43,520 --> 00:19:47,918
+that we focused on in this ex first
+experience was voice calls. But they
+
+458
+00:19:47,919 --> 00:19:51,439
+experience was voice calls. But they
+Care very much since their mobile
+
+459
+00:19:51,440 --> 00:19:53,918
+Care very much since their mobile
+the world's mobile technology
+
+460
+00:19:53,919 --> 00:19:56,639
+the world's mobile technology
+providers. They care about texting
+
+461
+00:19:56,640 --> 00:19:58,239
+providers. They care about texting
+just as much as they care about phone
+
+462
+00:19:58,240 --> 00:20:01,199
+just as much as they care about phone
+calls. They care about rich chat and how
+
+463
+00:20:01,200 --> 00:20:03,519
+calls. They care about rich chat and how
+iMessage works and bunch of things like
+
+464
+00:20:03,520 --> 00:20:07,199
+iMessage works and bunch of things like
+that. And so when I say multi-channel,
+
+465
+00:20:07,200 --> 00:20:09,839
+that. And so when I say multi-channel,
+that's what I'm talking about. Now, I
+
+466
+00:20:09,840 --> 00:20:12,639
+that's what I'm talking about. Now, I
+never explained the acronym OVC. So, let
+
+467
+00:20:12,640 --> 00:20:15,119
+never explained the acronym OVC. So, let
+me just spend a minute. OBVC originally
+
+468
+00:20:15,120 --> 00:20:18,639
+me just spend a minute. OBVC originally
+meant open verifiable calling.
+
+469
+00:20:18,640 --> 00:20:21,038
+meant open verifiable calling.
+But during this foundry project, people
+
+470
+00:20:21,039 --> 00:20:23,119
+But during this foundry project, people
+said, "Well, wait a minute. There's no
+
+471
+00:20:23,120 --> 00:20:24,558
+said, "Well, wait a minute. There's no
+reason why we couldn't take this
+
+472
+00:20:24,559 --> 00:20:26,959
+reason why we couldn't take this
+evidence that we've built into these
+
+473
+00:20:26,960 --> 00:20:30,399
+evidence that we've built into these
+other channels." Right? So OBC has now
+
+474
+00:20:30,400 --> 00:20:32,959
+other channels." Right? So OBC has now
+become in the minds and in the
+
+475
+00:20:32,960 --> 00:20:36,079
+become in the minds and in the
+communications that go on in GSMA
+
+476
+00:20:36,080 --> 00:20:39,279
+communications that go on in GSMA
+channels like their mailing list and the
+
+477
+00:20:39,280 --> 00:20:40,719
+channels like their mailing list and the
+meetings that they have. They've started
+
+478
+00:20:40,720 --> 00:20:44,719
+meetings that they have. They've started
+calling it open verifiable communication
+
+479
+00:20:44,720 --> 00:20:48,319
+calling it open verifiable communication
+and that's what OBVC now means with
+
+480
+00:20:48,320 --> 00:20:49,999
+and that's what OBVC now means with
+this check mark. They're they're
+
+481
+00:20:50,000 --> 00:20:52,719
+this check mark. They're they're
+explicitly pursuing communication as a
+
+482
+00:20:52,720 --> 00:20:56,399
+explicitly pursuing communication as a
+general goal, not just calling. So I
+
+483
+00:20:56,400 --> 00:20:57,918
+general goal, not just calling. So I
+have a little bit more information about
+
+484
+00:20:57,919 --> 00:21:00,239
+have a little bit more information about
+that in a second.
+
+485
+00:21:00,240 --> 00:21:03,519
+that in a second.
+This you know Sam made a point in his
+
+486
+00:21:03,520 --> 00:21:06,319
+This you know Sam made a point in his
+presentation that we don't want to
+
+487
+00:21:06,320 --> 00:21:09,279
+presentation that we don't want to
+have a single vendor solution.
+
+488
+00:21:09,280 --> 00:21:11,599
+have a single vendor solution.
+Provenant was kind of the enabler of
+
+489
+00:21:11,600 --> 00:21:14,639
+Provenant was kind of the enabler of
+this whole thing. And of course
+
+490
+00:21:14,640 --> 00:21:16,798
+this whole thing. And of course
+proven is a for-profit company and we
+
+491
+00:21:16,799 --> 00:21:18,399
+proven is a for-profit company and we
+hope we can sell lots of people on what
+
+492
+00:21:18,400 --> 00:21:20,879
+hope we can sell lots of people on what
+we've built. But it's important for it
+
+493
+00:21:20,880 --> 00:21:23,678
+we've built. But it's important for it
+to be open and we believe in that. And
+
+494
+00:21:23,679 --> 00:21:26,239
+to be open and we believe in that. And
+So here's some kind of proof
+
+495
+00:21:26,240 --> 00:21:29,759
+So here's some kind of proof
+points about how open verifiable
+
+496
+00:21:29,760 --> 00:21:32,959
+points about how open verifiable
+calling and the verifiable voice posture
+
+497
+00:21:32,960 --> 00:21:36,798
+calling and the verifiable voice posture
+Ver verifiable voice protocol work
+
+498
+00:21:36,799 --> 00:21:39,359
+Ver verifiable voice protocol work
+and thank you to this is a shout out
+
+499
+00:21:39,360 --> 00:21:42,798
+and thank you to this is a shout out
+to the Trust over IP folks who've let us
+
+500
+00:21:42,799 --> 00:21:46,079
+to the Trust over IP folks who've let us
+Build a dossier specification at
+
+501
+00:21:46,080 --> 00:21:47,839
+Build a dossier specification at
+trustover IP and I'm going to talk about
+
+502
+00:21:47,840 --> 00:21:49,759
+trustover IP and I'm going to talk about
+what a dossier is in just a minute. It's
+
+503
+00:21:49,760 --> 00:21:54,069
+what a dossier is in just a minute. It's
+it's important to this whole concept and
+
+504
+00:21:54,070 --> 00:21:54,080
+
+
+505
+00:21:54,081 --> 00:21:58,558
+Also to the folks over at IETF that
+we're working with.
+
+506
+00:21:58,559 --> 00:22:01,119
+we're working with.
+Okay. Let me talk a little bit since
+
+507
+00:22:01,120 --> 00:22:03,199
+Okay. Let me talk a little bit since
+this is a more geeky audience. It's not
+
+508
+00:22:03,200 --> 00:22:05,519
+this is a more geeky audience. It's not
+just pure business people. I want to
+
+509
+00:22:05,520 --> 00:22:06,959
+just pure business people. I want to
+talk about what's going on underneath
+
+510
+00:22:06,960 --> 00:22:08,639
+talk about what's going on underneath
+here.
+
+511
+00:22:08,640 --> 00:22:11,439
+here.
+When we looked at what we had to
+
+512
+00:22:11,440 --> 00:22:13,359
+When we looked at what we had to
+build, these are the kinds of
+
+513
+00:22:13,360 --> 00:22:15,519
+build, these are the kinds of
+requirements that we felt we were
+
+514
+00:22:15,520 --> 00:22:19,279
+requirements that we felt we were
+getting from the business side
+
+515
+00:22:19,280 --> 00:22:22,479
+getting from the business side
+and the regulatory side. And I'm not
+
+516
+00:22:22,480 --> 00:22:24,798
+and the regulatory side. And I'm not
+going to read all of them out loud, but
+
+517
+00:22:24,799 --> 00:22:26,639
+going to read all of them out loud, but
+I hope when you look at that you say,
+
+518
+00:22:26,640 --> 00:22:28,479
+I hope when you look at that you say,
+"Well, that's a pretty ambitious list
+
+519
+00:22:28,480 --> 00:22:30,239
+"Well, that's a pretty ambitious list
+because it felt kind of overwhelming to
+
+520
+00:22:30,240 --> 00:22:33,119
+because it felt kind of overwhelming to
+us." building half of those would be
+
+521
+00:22:33,120 --> 00:22:34,879
+us." building half of those would be
+pretty easy, but when you start having
+
+522
+00:22:34,880 --> 00:22:36,639
+pretty easy, but when you start having
+to build all of those things in or
+
+523
+00:22:36,640 --> 00:22:38,959
+to build all of those things in or
+address all those requirements, as Sam
+
+524
+00:22:38,960 --> 00:22:41,119
+address all those requirements, as Sam
+said, you get into a very hard trade
+
+525
+00:22:41,120 --> 00:22:43,439
+said, you get into a very hard trade
+space where you're making trade-offs and
+
+526
+00:22:43,440 --> 00:22:45,839
+space where you're making trade-offs and
+some of them are hard. And we didn't
+
+527
+00:22:45,840 --> 00:22:47,439
+some of them are hard. And we didn't
+want to trade away any of these
+
+528
+00:22:47,440 --> 00:22:49,918
+want to trade away any of these
+requirements. And because we're here at
+
+529
+00:22:49,919 --> 00:22:52,158
+requirements. And because we're here at
+a KERI conference, I will just say I
+
+530
+00:22:52,159 --> 00:22:54,319
+a KERI conference, I will just say I
+don't believe we could have built this
+
+531
+00:22:54,320 --> 00:22:57,038
+don't believe we could have built this
+with any other technology. there were a
+
+532
+00:22:57,039 --> 00:23:00,319
+with any other technology. there were a
+number of reasons why you end up at a
+
+533
+00:23:00,320 --> 00:23:02,319
+number of reasons why you end up at a
+dead end if you try to solve it any
+
+534
+00:23:02,320 --> 00:23:03,999
+dead end if you try to solve it any
+other way.
+
+535
+00:23:04,000 --> 00:23:06,798
+other way.
+So
+
+536
+00:23:06,799 --> 00:23:09,199
+So
+without belaboring that, let me say also
+
+537
+00:23:09,200 --> 00:23:10,798
+without belaboring that, let me say also
+it was important to identify some things
+
+538
+00:23:10,799 --> 00:23:15,279
+it was important to identify some things
+we did not have to do. And this is
+
+539
+00:23:15,280 --> 00:23:18,639
+we did not have to do. And this is
+important because there are calling
+
+540
+00:23:18,640 --> 00:23:21,038
+important because there are calling
+solutions that deliver significant
+
+541
+00:23:21,039 --> 00:23:22,798
+solutions that deliver significant
+value
+
+542
+00:23:22,799 --> 00:23:25,279
+value
+that have some of these requirements and
+
+543
+00:23:25,280 --> 00:23:26,879
+that have some of these requirements and
+we were not asked to address some of
+
+544
+00:23:26,880 --> 00:23:30,479
+we were not asked to address some of
+these. The most interesting one I'll
+
+545
+00:23:30,480 --> 00:23:32,158
+these. The most interesting one I'll
+just mention the bottom one here.
+
+546
+00:23:32,159 --> 00:23:33,439
+just mention the bottom one here.
+Somebody said, "Oh, well, this is all
+
+547
+00:23:33,440 --> 00:23:35,999
+Somebody said, "Oh, well, this is all
+well and good, but how do I know that an
+
+548
+00:23:36,000 --> 00:23:40,798
+well and good, but how do I know that an
+AI is not, you know, sending me words
+
+549
+00:23:40,799 --> 00:23:42,239
+AI is not, you know, sending me words
+and pretending that it's coming from
+
+550
+00:23:42,240 --> 00:23:44,719
+and pretending that it's coming from
+another person?" And the answer is we're
+
+551
+00:23:44,720 --> 00:23:47,279
+another person?" And the answer is we're
+not trying to solve that problem.
+
+552
+00:23:47,280 --> 00:23:48,558
+not trying to solve that problem.
+The reason we're not trying to solve
+
+553
+00:23:48,559 --> 00:23:50,399
+The reason we're not trying to solve
+that problem is because for us, the
+
+554
+00:23:50,400 --> 00:23:53,519
+that problem is because for us, the
+issue is about accountability.
+
+555
+00:23:53,520 --> 00:23:58,479
+issue is about accountability.
+If Microsoft connects to you, then
+
+556
+00:23:58,480 --> 00:24:00,558
+If Microsoft connects to you, then
+it's on Microsoft if they once they're
+
+557
+00:24:00,559 --> 00:24:02,158
+it's on Microsoft if they once they're
+connected with you and you know you're
+
+558
+00:24:02,159 --> 00:24:03,918
+connected with you and you know you're
+really dealing with Microsoft who made
+
+559
+00:24:03,919 --> 00:24:07,038
+really dealing with Microsoft who made
+the call. If Microsoft then sticks an AI
+
+560
+00:24:07,039 --> 00:24:08,639
+the call. If Microsoft then sticks an AI
+on the call, that's their problem and
+
+561
+00:24:08,640 --> 00:24:10,879
+on the call, that's their problem and
+your problem, but it's not the problem
+
+562
+00:24:10,880 --> 00:24:12,719
+your problem, but it's not the problem
+of the technology that connected you and
+
+563
+00:24:12,720 --> 00:24:14,558
+of the technology that connected you and
+proved that Microsoft was accountable in
+
+564
+00:24:14,559 --> 00:24:16,479
+proved that Microsoft was accountable in
+the first place. So, it's about
+
+565
+00:24:16,480 --> 00:24:18,079
+the first place. So, it's about
+accountability
+
+566
+00:24:18,080 --> 00:24:20,319
+accountability
+Not about whether it's human or not.
+
+567
+00:24:20,320 --> 00:24:23,999
+Not about whether it's human or not.
+However, however, we could certainly
+
+568
+00:24:24,000 --> 00:24:26,239
+However, however, we could certainly
+prove that the party who dialed you was
+
+569
+00:24:26,240 --> 00:24:29,359
+prove that the party who dialed you was
+an actual human being versus an AI if we
+
+570
+00:24:29,360 --> 00:24:31,278
+an actual human being versus an AI if we
+needed to. And I'll I'll show you where
+
+571
+00:24:31,279 --> 00:24:33,278
+needed to. And I'll I'll show you where
+that fits if that became
+
+572
+00:24:33,279 --> 00:24:35,359
+that fits if that became
+interesting.
+
+573
+00:24:35,360 --> 00:24:37,278
+interesting.
+So, these are some of the things that
+
+574
+00:24:37,279 --> 00:24:38,798
+So, these are some of the things that
+were the places where maybe the
+
+575
+00:24:38,799 --> 00:24:40,879
+were the places where maybe the
+trade-offs manifest and it would be
+
+576
+00:24:40,880 --> 00:24:42,719
+trade-offs manifest and it would be
+hard to address some of these
+
+577
+00:24:42,720 --> 00:24:44,239
+hard to address some of these
+requirements.
+
+578
+00:24:44,240 --> 00:24:47,439
+requirements.
+The top one is the maybe the biggest.
+
+579
+00:24:47,440 --> 00:24:50,079
+The top one is the maybe the biggest.
+Okay, how do you do all of this? but you
+
+580
+00:24:50,080 --> 00:24:53,278
+Okay, how do you do all of this? but you
+do it with a commodity SIM card over
+
+581
+00:24:53,279 --> 00:24:55,839
+do it with a commodity SIM card over
+networks that haven't been modified. If
+
+582
+00:24:55,840 --> 00:24:59,759
+networks that haven't been modified. If
+you can do that, that's a big deal.
+
+583
+00:24:59,760 --> 00:25:01,918
+you can do that, that's a big deal.
+Anyway, there another one, the third one
+
+584
+00:25:01,919 --> 00:25:03,918
+Anyway, there another one, the third one
+there, I just want to mention, it's
+
+585
+00:25:03,919 --> 00:25:05,839
+there, I just want to mention, it's
+possible to prove things between a
+
+586
+00:25:05,840 --> 00:25:09,999
+possible to prove things between a
+caller and a colleague using classic
+
+587
+00:25:10,000 --> 00:25:13,119
+caller and a colleague using classic
+The classic u trust triangle that
+
+588
+00:25:13,120 --> 00:25:14,558
+The classic u trust triangle that
+we've talked about for years using
+
+589
+00:25:14,559 --> 00:25:16,798
+we've talked about for years using
+verifiable credentials.
+
+590
+00:25:16,799 --> 00:25:18,319
+verifiable credentials.
+However,
+
+591
+00:25:18,320 --> 00:25:22,239
+However,
+In that kind of a model, the parties
+
+592
+00:25:22,240 --> 00:25:25,439
+In that kind of a model, the parties
+have to know who they're talking to
+
+593
+00:25:25,440 --> 00:25:28,319
+have to know who they're talking to
+in a sense before you can prove
+
+594
+00:25:28,320 --> 00:25:31,359
+in a sense before you can prove
+because you have to
+
+595
+00:25:31,360 --> 00:25:34,079
+because you have to
+yeah basically you have to have a
+
+596
+00:25:34,080 --> 00:25:36,798
+yeah basically you have to have a
+connection with the other party in
+
+597
+00:25:36,799 --> 00:25:38,719
+connection with the other party in
+some kind of an outofband way before you
+
+598
+00:25:38,720 --> 00:25:41,678
+some kind of an outofband way before you
+can then prove with your credentials.
+
+599
+00:25:41,679 --> 00:25:43,918
+can then prove with your credentials.
+And the specific characteristic we
+
+600
+00:25:43,919 --> 00:25:46,399
+And the specific characteristic we
+needed for this solution
+
+601
+00:25:46,400 --> 00:25:49,759
+needed for this solution
+was that a stranger could call you. You
+
+602
+00:25:49,760 --> 00:25:52,798
+was that a stranger could call you. You
+haven't had any prior knowledge about
+
+603
+00:25:52,799 --> 00:25:54,798
+haven't had any prior knowledge about
+who these parties might be that are
+
+604
+00:25:54,799 --> 00:25:57,439
+who these parties might be that are
+reaching out to you.
+
+605
+00:25:57,440 --> 00:25:59,839
+reaching out to you.
+Okay.
+
+606
+00:25:59,840 --> 00:26:01,678
+Okay.
+What does this look like? If I gave you
+
+607
+00:26:01,679 --> 00:26:04,558
+what does this look like? If I gave you a
+really high-level architecture diagram, it
+
+608
+00:26:04,559 --> 00:26:06,959
+a really high-level architecture diagram,
+it might look like this. You have a party
+
+609
+00:26:06,960 --> 00:26:09,599
+might look like this. You have a party
+like Acme Corporation that wants to make
+
+610
+00:26:09,600 --> 00:26:13,999
+like Acme Corporation that wants to make
+a call. sometime near when the call
+
+611
+00:26:14,000 --> 00:26:16,639
+a call. sometime near when the call
+originates like right at the same time
+
+612
+00:26:16,640 --> 00:26:19,038
+originates like right at the same time
+or within milliseconds afterwards if
+
+613
+00:26:19,039 --> 00:26:20,719
+or within milliseconds afterwards if
+they're putting traffic on a network and
+
+614
+00:26:20,720 --> 00:26:23,519
+they're putting traffic on a network and
+they're were you using like a
+
+615
+00:26:23,520 --> 00:26:26,239
+they're were you using like a
+cloud provider or whatever as the call
+
+616
+00:26:26,240 --> 00:26:29,278
+cloud provider or whatever as the call
+originates a signing event occurs the
+
+617
+00:26:29,279 --> 00:26:30,959
+originates a signing event occurs the
+signing that we're talking about is a
+
+618
+00:26:30,960 --> 00:26:35,669
+signing that we're talking about is a
+signing of the JWT
+
+619
+00:26:39,110 --> 00:26:43,278
+and the JWT is this thing that's called
+a passport That term passport is a term
+
+620
+00:26:43,279 --> 00:26:50,158
+a passport That term passport is a term
+of art in the IETF specification
+
+621
+00:26:50,159 --> 00:26:53,439
+of art in the IETF specification
+for these JWTs.
+
+622
+00:26:53,440 --> 00:26:57,038
+for these JWTs.
+So this passport contains
+
+623
+00:26:57,039 --> 00:26:58,879
+So this passport contains
+and the blue with the underscore
+
+624
+00:26:58,880 --> 00:27:00,639
+and the blue with the underscore
+here is supposed to suggest this to you.
+
+625
+00:27:00,640 --> 00:27:02,959
+here is supposed to suggest this to you.
+It contains a hyperlink
+
+626
+00:27:02,960 --> 00:27:06,079
+It contains a hyperlink
+to what we're calling a dossier.
+
+627
+00:27:06,080 --> 00:27:08,158
+to what we're calling a dossier.
+The dossier is the collection of rich
+
+628
+00:27:08,159 --> 00:27:10,239
+The dossier is the collection of rich
+evidence.
+
+629
+00:27:10,240 --> 00:27:12,639
+evidence.
+So all we're adding to this passport
+
+630
+00:27:12,640 --> 00:27:15,519
+So all we're adding to this passport
+that it didn't have before is a field
+
+631
+00:27:15,520 --> 00:27:21,189
+that it didn't have before is a field
+that has a hyperlink in it.
+
+632
+00:27:21,190 --> 00:27:21,200
+
+
+633
+00:27:21,201 --> 00:27:26,319
+the relationship between the signer of
+the passport and the and the passport
+
+634
+00:27:26,320 --> 00:27:30,158
+the passport and the and the passport
+itself is crucial and we could talk
+
+635
+00:27:30,159 --> 00:27:32,079
+itself is crucial and we could talk
+about that offline. I probably won't go
+
+636
+00:27:32,080 --> 00:27:34,558
+about that offline. I probably won't go
+into it in my talk that much. Suffice it
+
+637
+00:27:34,559 --> 00:27:36,399
+into it in my talk that much. Suffice it
+to say that you have to prove that the
+
+638
+00:27:36,400 --> 00:27:39,119
+to say that you have to prove that the
+party signing has some relationship of
+
+639
+00:27:39,120 --> 00:27:41,599
+party signing has some relationship of
+delegated authority with the party that
+
+640
+00:27:41,600 --> 00:27:44,399
+delegated authority with the party that
+is originating the call. It could be the
+
+641
+00:27:44,400 --> 00:27:46,079
+is originating the call. It could be the
+one in the same party, but it doesn't
+
+642
+00:27:46,080 --> 00:27:47,599
+one in the same party, but it doesn't
+have to be. And that's important because
+
+643
+00:27:47,600 --> 00:27:49,519
+have to be. And that's important because
+you have to support things like call
+
+644
+00:27:49,520 --> 00:27:51,199
+you have to support things like call
+centers
+
+645
+00:27:51,200 --> 00:27:53,678
+centers
+That are other businesses. The call
+
+646
+00:27:53,679 --> 00:27:56,079
+That are other businesses. The call
+center is not Microsoft and a regulator
+
+647
+00:27:56,080 --> 00:27:57,439
+center is not Microsoft and a regulator
+needs to be able to tell those two
+
+648
+00:27:57,440 --> 00:27:59,999
+needs to be able to tell those two
+parties apart. But you have to be able
+
+649
+00:28:00,000 --> 00:28:01,519
+parties apart. But you have to be able
+to prove that the call center is acting
+
+650
+00:28:01,520 --> 00:28:03,678
+to prove that the call center is acting
+on Microsoft's behalf. they can't just
+
+651
+00:28:03,679 --> 00:28:07,190
+on Microsoft's behalf. they can't just
+assert it.
+
+652
+00:28:10,230 --> 00:28:12,319
+There's a whole story about how
+evidence is built and I'm not going to
+
+653
+00:28:12,320 --> 00:28:15,599
+evidence is built and I'm not going to
+go into it in detail, but essentially
+
+654
+00:28:15,600 --> 00:28:18,558
+go into it in detail, but essentially
+you start out with a cryptographic
+
+655
+00:28:18,559 --> 00:28:21,519
+you start out with a cryptographic
+identifier for the company
+
+656
+00:28:21,520 --> 00:28:24,079
+identifier for the company and
+
+657
+00:28:24,080 --> 00:28:25,839
+and
+and a control mechanism. Those two
+
+658
+00:28:25,840 --> 00:28:28,319
+and a control mechanism. Those two
+things go to go together. And once you
+
+659
+00:28:28,320 --> 00:28:30,079
+things go to go together. And once you
+have those two, then you build an
+
+660
+00:28:30,080 --> 00:28:31,519
+have those two, then you build an
+identity credential. And for those of
+
+661
+00:28:31,520 --> 00:28:35,038
+identity credential. And for those of
+you who know how VLES work, this is
+
+662
+00:28:35,039 --> 00:28:37,759
+you who know how VLES work, this is
+straight out of
+
+663
+00:28:37,760 --> 00:28:40,319
+straight out of
+straight out of Carla's thinking.
+
+664
+00:28:40,320 --> 00:28:44,398
+straight out of Carla's thinking.
+It's exactly how VLES are built.
+
+665
+00:28:44,399 --> 00:28:46,558
+it's exactly how VLES are built.
+Basically steps one through four are
+
+666
+00:28:46,559 --> 00:28:49,359
+basically steps one through four are
+the journey of getting a vLEI.
+
+667
+00:28:49,360 --> 00:28:51,759
+the journey of getting a vLEI.
+And then you add to that a bunch of
+
+668
+00:28:51,760 --> 00:28:53,439
+And then you add to that a bunch of
+other credentials.
+
+669
+00:28:53,440 --> 00:28:55,278
+other credentials.
+Importantly, the credentials are issued
+
+670
+00:28:55,279 --> 00:28:57,839
+Importantly, the credentials are issued
+by different parties.
+
+671
+00:28:57,840 --> 00:29:01,038
+by different parties.
+So you have a collection of issuers.
+
+672
+00:29:01,039 --> 00:29:02,879
+So you have a collection of issuers.
+They all have their own revocation
+
+673
+00:29:02,880 --> 00:29:04,959
+They all have their own revocation
+criteria and their own revocation
+
+674
+00:29:04,960 --> 00:29:07,918
+criteria and their own revocation
+SLAs's. So we can't put all of this in a
+
+675
+00:29:07,919 --> 00:29:10,639
+SLAs's. So we can't put all of this in a
+single credential.
+
+676
+00:29:10,640 --> 00:29:12,639
+single credential.
+And then you bundle all the
+
+677
+00:29:12,640 --> 00:29:14,479
+And then you bundle all the
+credentials together in a dossier. And
+
+678
+00:29:14,480 --> 00:29:16,719
+credentials together in a dossier. And
+the dossier includes a last thing which
+
+679
+00:29:16,720 --> 00:29:18,879
+the dossier includes a last thing which
+has to be a credential issued by the
+
+680
+00:29:18,880 --> 00:29:21,199
+has to be a credential issued by the
+actual company that we're talking about
+
+681
+00:29:21,200 --> 00:29:23,359
+actual company that we're talking about
+declaring their intentions to make this
+
+682
+00:29:23,360 --> 00:29:27,359
+declaring their intentions to make this
+kind of traffic flow.
+
+683
+00:29:27,360 --> 00:29:30,158
+kind of traffic flow.
+And then you can use it in ongoing
+
+684
+00:29:30,159 --> 00:29:33,678
+And then you can use it in ongoing
+use. Now some of you may be wondering
+
+685
+00:29:33,679 --> 00:29:36,319
+use. Now some of you may be wondering
+here we are at a KERI conference can
+
+686
+00:29:36,320 --> 00:29:39,839
+here we are at a KERI conference can
+this technique be used without
+
+687
+00:29:39,840 --> 00:29:45,519
+this technique be used without
+ACDC's without KERI no it can't you
+
+688
+00:29:45,520 --> 00:29:47,519
+ACDC's without KERI no it can't you
+can't build this whole solution but you
+
+689
+00:29:47,520 --> 00:29:50,319
+can't build this whole solution but you
+can interoperate with other kinds of
+
+690
+00:29:50,320 --> 00:29:52,879
+can interoperate with other kinds of
+credentials quite nicely. So if a
+
+691
+00:29:52,880 --> 00:29:55,359
+credentials quite nicely. So if a
+company has a credential and the format
+
+692
+00:29:55,360 --> 00:29:57,678
+company has a credential and the format
+of this credential is a format that's
+
+693
+00:29:57,679 --> 00:30:00,319
+of this credential is a format that's
+required by the EU to prove something
+
+694
+00:30:00,320 --> 00:30:01,999
+required by the EU to prove something
+about the company and they want to use
+
+695
+00:30:02,000 --> 00:30:03,519
+about the company and they want to use
+that to prove one of the logical
+
+696
+00:30:03,520 --> 00:30:05,519
+that to prove one of the logical
+propositions in the dossier, you can do
+
+697
+00:30:05,520 --> 00:30:07,999
+propositions in the dossier, you can do
+that. You could accept a credential that
+
+698
+00:30:08,000 --> 00:30:10,479
+that. You could accept a credential that
+is a W3C verifiable credential. You can
+
+699
+00:30:10,480 --> 00:30:15,119
+is a W3C verifiable credential. You can
+accept an SD jot. can accept a signed
+
+700
+00:30:15,120 --> 00:30:18,879
+accept an SD jot. can accept a signed
+PDF if you want as evidence, but you
+
+701
+00:30:18,880 --> 00:30:21,839
+PDF if you want as evidence, but you
+have to wrap it somehow because unless
+
+702
+00:30:21,840 --> 00:30:23,839
+have to wrap it somehow because unless
+you can put it in a verifiable data
+
+703
+00:30:23,840 --> 00:30:28,079
+you can put it in a verifiable data
+graph and you can reason about it
+
+704
+00:30:28,080 --> 00:30:30,639
+graph and you can reason about it
+in a particular way, the solution falls
+
+705
+00:30:30,640 --> 00:30:32,798
+in a particular way, the solution falls
+apart. You can't end up generating that
+
+706
+00:30:32,799 --> 00:30:34,239
+apart. You can't end up generating that
+view that I was showing you in the
+
+707
+00:30:34,240 --> 00:30:36,239
+view that I was showing you in the
+evidence that has the badges and stuff
+
+708
+00:30:36,240 --> 00:30:38,558
+evidence that has the badges and stuff
+like that. So, there's two basic ways
+
+709
+00:30:38,559 --> 00:30:41,199
+like that. So, there's two basic ways
+that you can deal with that. You can
+
+710
+00:30:41,200 --> 00:30:43,439
+that you can deal with that. You can
+either use wrapped mode, which is where
+
+711
+00:30:43,440 --> 00:30:45,759
+either use wrapped mode, which is where
+I take a foreign piece of evidence and
+
+712
+00:30:45,760 --> 00:30:47,839
+I take a foreign piece of evidence and
+put an ACDC around it, and literally
+
+713
+00:30:47,840 --> 00:30:51,918
+put an ACDC around it, and literally
+the ACDC has the content of the
+
+714
+00:30:51,919 --> 00:30:54,558
+the ACDC has the content of the
+other piece of evidence right inside it.
+
+715
+00:30:54,559 --> 00:30:58,719
+other piece of evidence right inside it.
+And it's a reissuance essentially.
+
+716
+00:30:58,720 --> 00:31:00,558
+And it's a reissuance essentially.
+So, you have an issuer of an ACDC
+
+717
+00:31:00,559 --> 00:31:02,879
+So, you have an issuer of an ACDC
+that's saying, "I looked at this other
+
+718
+00:31:02,880 --> 00:31:06,319
+that's saying, "I looked at this other
+piece of evidence and I used its native
+
+719
+00:31:06,320 --> 00:31:09,038
+piece of evidence and I used its native
+technology, whatever it is W3C
+
+720
+00:31:09,039 --> 00:31:10,719
+technology, whatever it is W3C
+verifiable credential stack or
+
+721
+00:31:10,720 --> 00:31:14,879
+verifiable credential stack or
+something, and I verified it on date X."
+
+722
+00:31:14,880 --> 00:31:17,199
+something, and I verified it on date X."
+And so now I'm issuing an ACDC that
+
+723
+00:31:17,200 --> 00:31:19,599
+And so now I'm issuing an ACDC that
+says on date X, this credential was
+
+724
+00:31:19,600 --> 00:31:22,558
+says on date X, this credential was
+verified and it was true. That's wrapped
+
+725
+00:31:22,559 --> 00:31:24,319
+verified and it was true. That's wrapped
+mode.
+
+726
+00:31:24,320 --> 00:31:26,959
+mode.
+And you can see that wrapped mode
+
+727
+00:31:26,960 --> 00:31:28,719
+And you can see that wrapped mode
+has some good things about it. and some
+
+728
+00:31:28,720 --> 00:31:30,639
+has some good things about it. and some
+bad things about it. The good things are
+
+729
+00:31:30,640 --> 00:31:32,398
+bad things about it. The good things are
+that a party on the other end doesn't
+
+730
+00:31:32,399 --> 00:31:35,038
+that a party on the other end doesn't
+have to know about any other stacks
+
+731
+00:31:35,039 --> 00:31:36,879
+have to know about any other stacks
+or technology types. It only has to
+
+732
+00:31:36,880 --> 00:31:38,398
+or technology types. It only has to
+verify
+
+733
+00:31:38,399 --> 00:31:40,959
+verify ACDC's.
+
+734
+00:31:40,960 --> 00:31:44,719
+ACDC's.
+But you have a revocation issue. Does
+
+735
+00:31:44,720 --> 00:31:46,398
+But you have a revocation issue. Does
+the party who's doing the reissuance
+
+736
+00:31:46,399 --> 00:31:49,918
+the party who's doing the reissuance
+sign up to also track the
+
+737
+00:31:49,919 --> 00:31:51,678
+sign up to also track the
+revocation?
+
+738
+00:31:51,679 --> 00:31:54,959
+revocation?
+To be determined, right? The other
+
+739
+00:31:54,960 --> 00:31:57,119
+To be determined, right? The other
+one is you can have embedded mode and in
+
+740
+00:31:57,120 --> 00:31:59,359
+one is you can have embedded mode and in
+that mode the party that's creating
+
+741
+00:31:59,360 --> 00:32:01,199
+that mode the party that's creating
+the ACDC doesn't take a lot of
+
+742
+00:32:01,200 --> 00:32:03,359
+the ACDC doesn't take a lot of
+responsibility. They basically say
+
+743
+00:32:03,360 --> 00:32:06,479
+responsibility. They basically say
+here's an ACDC envelope
+
+744
+00:32:06,480 --> 00:32:08,959
+here's an ACDC envelope
+around data but what it means is up to
+
+745
+00:32:08,960 --> 00:32:11,678
+around data but what it means is up to
+you to determine and so you have to have
+
+746
+00:32:11,679 --> 00:32:13,599
+you to determine and so you have to have
+a stack that can look and understand
+
+747
+00:32:13,600 --> 00:32:15,359
+a stack that can look and understand
+this other evidence format and decide
+
+748
+00:32:15,360 --> 00:32:17,599
+this other evidence format and decide
+whether it agrees with the guarantees
+
+749
+00:32:17,600 --> 00:32:19,918
+whether it agrees with the guarantees
+that it provides. I don't think that
+
+750
+00:32:19,919 --> 00:32:21,999
+that it provides. I don't think that
+embedded mode is a good idea because it
+
+751
+00:32:22,000 --> 00:32:25,199
+embedded mode is a good idea because it
+fragments the verification space.
+
+752
+00:32:25,200 --> 00:32:28,798
+fragments the verification space.
+But anyway, enough about that. I won't
+
+753
+00:32:28,799 --> 00:32:30,959
+but anyway, enough about that. I won't
+go into great detail on this diagram. I
+
+754
+00:32:30,960 --> 00:32:32,239
+go into great detail on this diagram. I
+could talk about it for a very long
+
+755
+00:32:32,240 --> 00:32:34,639
+could talk about it for a very long
+time, but I'll simply say this. The way
+
+756
+00:32:34,640 --> 00:32:38,239
+time, but I'll simply say this. The way
+that passports in stir were conceived of
+
+757
+00:32:38,240 --> 00:32:40,319
+that passports in stir were conceived of
+is that a passport was supposed to
+
+758
+00:32:40,320 --> 00:32:45,199
+is that a passport was supposed to
+include an X5U field that was a
+
+759
+00:32:45,200 --> 00:32:47,678
+include an X5U field that was a
+hyperlink to the certificate of the
+
+760
+00:32:47,679 --> 00:32:50,558
+hyperlink to the certificate of the
+signer of the passport.
+
+761
+00:32:50,559 --> 00:32:52,319
+signer of the passport.
+Okay. And when you went and looked up
+
+762
+00:32:52,320 --> 00:32:55,678
+Okay. And when you went and looked up
+that signer certificate, you would see
+
+763
+00:32:55,679 --> 00:32:59,999
+that signer certificate, you would see
+That the certificate included
+
+764
+00:33:00,000 --> 00:33:02,319
+That the certificate included
+proof of a cryptographic identity. that
+
+765
+00:33:02,320 --> 00:33:04,558
+proof of a cryptographic identity. that
+would be their public key and it
+
+766
+00:33:04,559 --> 00:33:08,079
+would be their public key and it
+included information about the
+
+767
+00:33:08,080 --> 00:33:11,038
+included information about the
+attributes of this party. So that'd be
+
+768
+00:33:11,039 --> 00:33:13,759
+attributes of this party. So that'd be
+like the common name of the company and
+
+769
+00:33:13,760 --> 00:33:15,999
+like the common name of the company and
+their organizational unit or you know
+
+770
+00:33:16,000 --> 00:33:18,639
+their organizational unit or you know
+all that other stuff. What we've done is
+
+771
+00:33:18,640 --> 00:33:21,999
+all that other stuff. What we've done is
+we've split that apart and said
+
+772
+00:33:22,000 --> 00:33:24,719
+we've split that apart and said
+information about identity and
+
+773
+00:33:24,720 --> 00:33:27,439
+information about identity and
+information about attributes need to be
+
+774
+00:33:27,440 --> 00:33:29,439
+information about attributes need to be
+handled differently because identity can
+
+775
+00:33:29,440 --> 00:33:31,839
+handled differently because identity can
+be permanent.
+
+776
+00:33:31,840 --> 00:33:35,038
+be permanent.
+There's no reason on this model. How
+
+777
+00:33:35,039 --> 00:33:39,038
+There's no reason on this model. How
+often do you have to replace this
+
+778
+00:33:39,039 --> 00:33:41,439
+often do you have to replace this
+all the stinking time? I don't know
+
+779
+00:33:41,440 --> 00:33:42,719
+all the stinking time? I don't know
+exactly what number you're going to come
+
+780
+00:33:42,720 --> 00:33:44,398
+exactly what number you're going to come
+up with, but I guarantee it's a number I
+
+781
+00:33:44,399 --> 00:33:46,558
+up with, but I guarantee it's a number I
+don't like. Right? If it's once a month
+
+782
+00:33:46,559 --> 00:33:48,959
+don't like. Right? If it's once a month
+or once every three months or once a
+
+783
+00:33:48,960 --> 00:33:50,479
+or once every three months or once a
+week,
+
+784
+00:33:50,480 --> 00:33:53,599
+week,
+Shaken in the United States mandated
+
+785
+00:33:53,600 --> 00:33:57,439
+Shaken in the United States mandated
+by the FCC calls for three-month
+
+786
+00:33:57,440 --> 00:34:00,479
+by the FCC calls for three-month
+rotations in their guidance. I think
+
+787
+00:34:00,480 --> 00:34:02,558
+rotations in their guidance. I think
+they enforce a higher number than that,
+
+788
+00:34:02,559 --> 00:34:07,599
+they enforce a higher number than that,
+but okay. Anyway they're only
+
+789
+00:34:07,600 --> 00:34:09,439
+but okay. Anyway they're only
+doing it right now. The certificates
+
+790
+00:34:09,440 --> 00:34:12,239
+doing it right now. The certificates
+that shake and use are only for big
+
+791
+00:34:12,240 --> 00:34:13,999
+that shake and use are only for big
+companies like Twilio and whatever.
+
+792
+00:34:14,000 --> 00:34:15,439
+companies like Twilio and whatever.
+They're not for the millions of little
+
+793
+00:34:15,440 --> 00:34:17,838
+They're not for the millions of little
+companies around the world. So, they
+
+794
+00:34:17,839 --> 00:34:19,759
+companies around the world. So, they
+said, "Well, let's go to let's take this
+
+795
+00:34:19,760 --> 00:34:21,439
+said, "Well, let's go to let's take this
+thing and we'll start using certificates
+
+796
+00:34:21,440 --> 00:34:23,039
+thing and we'll start using certificates
+on all the little companies around the
+
+797
+00:34:23,040 --> 00:34:25,279
+on all the little companies around the
+world." Can you imagine if every little
+
+798
+00:34:25,280 --> 00:34:27,279
+world." Can you imagine if every little
+company around the world has to replace
+
+799
+00:34:27,280 --> 00:34:30,239
+company around the world has to replace
+Proof of who they are? Let's say
+
+800
+00:34:30,240 --> 00:34:32,479
+Proof of who they are? Let's say
+there's 30 million businesses in the
+
+801
+00:34:32,480 --> 00:34:35,439
+there's 30 million businesses in the
+United States alone. And so you're
+
+802
+00:34:35,440 --> 00:34:37,199
+United States alone. And so you're
+going to be maintaining a fabric of 30
+
+803
+00:34:37,200 --> 00:34:39,039
+going to be maintaining a fabric of 30
+million certificates that rotate once a
+
+804
+00:34:39,040 --> 00:34:41,279
+million certificates that rotate once a
+month.
+
+805
+00:34:41,280 --> 00:34:43,759
+month.
+It's completely impractical. And so
+
+806
+00:34:43,760 --> 00:34:48,869
+It's completely impractical. And so
+here, how often do we rotate this?
+
+807
+00:34:51,669 --> 00:34:53,519
+Zero times. I really love that answer.
+You can rotate the keys as often as you
+
+808
+00:34:53,520 --> 00:34:56,719
+You can rotate the keys as often as you
+want, but I don't have to replace the
+
+809
+00:34:56,720 --> 00:34:59,199
+want, but I don't have to replace the
+identifier ever.
+
+810
+00:34:59,200 --> 00:35:01,199
+identifier ever.
+And I can't tell you how profound the
+
+811
+00:35:01,200 --> 00:35:04,239
+And I can't tell you how profound the
+difference in cost is and the difference
+
+812
+00:35:04,240 --> 00:35:06,719
+difference in cost is and the difference
+in infrastructure lift when you don't
+
+813
+00:35:06,720 --> 00:35:10,719
+in infrastructure lift when you don't
+have to replace anything. It's huge.
+
+814
+00:35:10,720 --> 00:35:14,639
+have to replace anything. It's huge.
+Now, we do have to change attributes,
+
+815
+00:35:14,640 --> 00:35:16,239
+Now, we do have to change attributes,
+but we only have to change them as often
+
+816
+00:35:16,240 --> 00:35:18,879
+but we only have to change them as often
+as the attributes change,
+
+817
+00:35:18,880 --> 00:35:20,639
+as the attributes change,
+right? If your company doesn't rename
+
+818
+00:35:20,640 --> 00:35:22,879
+right? If your company doesn't rename
+itself, you don't need a new proof of
+
+819
+00:35:22,880 --> 00:35:25,199
+itself, you don't need a new proof of
+what its name is. And if it doesn't lose
+
+820
+00:35:25,200 --> 00:35:27,598
+what its name is. And if it doesn't lose
+the ability to use a logo in a
+
+821
+00:35:27,599 --> 00:35:28,959
+the ability to use a logo in a
+particular jurisdiction, you don't need
+
+822
+00:35:28,960 --> 00:35:31,439
+particular jurisdiction, you don't need
+to replace that either. So again, the
+
+823
+00:35:31,440 --> 00:35:35,439
+to replace that either. So again, the
+maintenance is dramatically different.
+
+824
+00:35:35,440 --> 00:35:37,999
+maintenance is dramatically different.
+This is how we it actually looks on the
+
+825
+00:35:38,000 --> 00:35:41,118
+This is how we it actually looks on the
+wire today. On the left is a standard
+
+826
+00:35:41,119 --> 00:35:44,159
+wire today. On the left is a standard
+shaken passport. This is what
+
+827
+00:35:44,160 --> 00:35:47,358
+shaken passport. This is what
+actually flows over the wire right now.
+
+828
+00:35:47,359 --> 00:35:49,519
+actually flows over the wire right now.
+And the reason that we could deploy this
+
+829
+00:35:49,520 --> 00:35:51,439
+And the reason that we could deploy this
+with no changes in infrastructure is
+
+830
+00:35:51,440 --> 00:35:53,999
+with no changes in infrastructure is
+because this is how different it looks
+
+831
+00:35:54,000 --> 00:35:56,879
+because this is how different it looks
+over here.
+
+832
+00:35:56,880 --> 00:36:03,109
+over here.
+None of the infrastructure cares.
+
+833
+00:36:05,349 --> 00:36:07,598
+The only real in that I'll highlight
+these two lines. So this is the
+
+834
+00:36:07,599 --> 00:36:10,078
+these two lines. So this is the
+hyperlink in a traditional shaken
+
+835
+00:36:10,079 --> 00:36:12,319
+hyperlink in a traditional shaken
+passport that says here's how I can find
+
+836
+00:36:12,320 --> 00:36:14,959
+passport that says here's how I can find
+the certificate of the party that
+
+837
+00:36:14,960 --> 00:36:16,799
+the certificate of the party that
+signed this.
+
+838
+00:36:16,800 --> 00:36:19,519
+signed this.
+And here we have a link. This is an OOBI
+
+839
+00:36:19,520 --> 00:36:21,759
+And here we have a link. This is an OOBI
+to a KEL.
+
+840
+00:36:21,760 --> 00:36:25,919
+to a KEL.
+Okay. And down here we have an
+
+841
+00:36:25,920 --> 00:36:28,239
+Okay. And down here we have an
+unsupported assertion from somebody
+
+842
+00:36:28,240 --> 00:36:31,279
+unsupported assertion from somebody
+saying, I think that this is an A-level
+
+843
+00:36:31,280 --> 00:36:34,319
+saying, I think that this is an A-level
+call. I believe in this call. Here we
+
+844
+00:36:34,320 --> 00:36:39,670
+call. I believe in this call. Here we
+have hyperlink to evidence.
+
+845
+00:36:42,230 --> 00:36:44,229
+It's really simple.
+
+846
+00:36:44,230 --> 00:36:44,240
+
+
+847
+00:36:44,241 --> 00:36:47,838
+let's see.
+I'm not going to I'm about out of time.
+
+848
+00:36:47,839 --> 00:36:50,159
+I'm not going to I'm about out of time.
+So, I'll just say that Dossias can
+
+849
+00:36:50,160 --> 00:36:51,999
+So, I'll just say that Dossias can
+prove lots and lots of logical
+
+850
+00:36:52,000 --> 00:36:55,439
+prove lots and lots of logical
+propositions, not just one.
+
+851
+00:36:55,440 --> 00:36:57,759
+propositions, not just one.
+And the list of things that you can
+
+852
+00:36:57,760 --> 00:36:59,598
+And the list of things that you can
+prove under the previous model had one
+
+853
+00:36:59,599 --> 00:37:02,399
+prove under the previous model had one
+bullet on it. You can prove the opinion
+
+854
+00:37:02,400 --> 00:37:05,039
+bullet on it. You can prove the opinion
+of the company that signed the J JWT
+
+855
+00:37:05,040 --> 00:37:07,598
+of the company that signed the J JWT
+about whether it was a good call.
+
+856
+00:37:07,599 --> 00:37:10,959
+about whether it was a good call.
+That's not a very long list.
+
+857
+00:37:10,960 --> 00:37:13,838
+That's not a very long list.
+I mentioned this that OVC is coming
+
+858
+00:37:13,839 --> 00:37:16,399
+I mentioned this that OVC is coming
+to mean something different. There are
+
+859
+00:37:16,400 --> 00:37:19,039
+to mean something different. There are
+active there's active work now going on
+
+860
+00:37:19,040 --> 00:37:22,719
+active there's active work now going on
+on a variation of this for SMS, a
+
+861
+00:37:22,720 --> 00:37:25,919
+on a variation of this for SMS, a
+variation of it for rich chat. So
+
+862
+00:37:25,920 --> 00:37:29,279
+variation of it for rich chat. So
+proving who sends you an iMessage or
+
+863
+00:37:29,280 --> 00:37:31,598
+proving who sends you an iMessage or
+the equivalent in the message app on
+
+864
+00:37:31,599 --> 00:37:34,239
+the equivalent in the message app on
+Android and web meetings. Wouldn't you
+
+865
+00:37:34,240 --> 00:37:35,999
+Android and web meetings. Wouldn't you
+like it if when you showed up to a Zoom
+
+866
+00:37:36,000 --> 00:37:39,439
+like it if when you showed up to a Zoom
+meeting you actually had proof of who
+
+867
+00:37:39,440 --> 00:37:42,239
+meeting you actually had proof of who
+you were and everybody else did too? And
+
+868
+00:37:42,240 --> 00:37:43,838
+you were and everybody else did too? And
+there are some other transports that I
+
+869
+00:37:43,839 --> 00:37:45,838
+there are some other transports that I
+won't announce today, but there's cool
+
+870
+00:37:45,839 --> 00:37:48,319
+won't announce today, but there's cool
+stuff going on with those two.
+
+871
+00:37:48,320 --> 00:37:52,879
+stuff going on with those two.
+So if you want more information, the
+
+872
+00:37:52,880 --> 00:37:55,598
+So if you want more information, the
+spec for the verifiable voice
+
+873
+00:37:55,599 --> 00:37:57,999
+spec for the verifiable voice
+protocol is at this one and the demo
+
+874
+00:37:58,000 --> 00:38:00,559
+protocol is at this one and the demo
+that I showed you is at that QR code.
+
+875
+00:38:00,560 --> 00:38:08,560
+that I showed you is at that QR code.
+You can watch it again. Any questions?
+
+876
+00:38:11,349 --> 00:38:14,559
+We got time for two questions.
+Yeah. You mentioned that you were using
+
+877
+00:38:14,560 --> 00:38:19,279
+Yeah. You mentioned that you were using
+the Google dialer. So, was that
+
+878
+00:38:19,280 --> 00:38:21,679
+the Google dialer. So, was that
+deployed?
+
+879
+00:38:21,680 --> 00:38:24,239
+deployed?
+So, Google's dialer is it was actually
+
+880
+00:38:24,240 --> 00:38:27,358
+So, Google's dialer is it was actually
+signed by Google and so forth, but it
+
+881
+00:38:27,359 --> 00:38:30,719
+signed by Google and so forth, but it
+it's not in the mainstream distribution.
+
+882
+00:38:30,720 --> 00:38:33,039
+it's not in the mainstream distribution.
+Google is still debating whether
+
+883
+00:38:33,040 --> 00:38:36,239
+Google is still debating whether
+they want to put it in.
+
+884
+00:38:36,240 --> 00:38:38,399
+they want to put it in.
+Another question
+
+885
+00:38:38,400 --> 00:38:41,358
+Another question
+about the security of the URL that goes
+
+886
+00:38:41,359 --> 00:38:44,879
+about the security of the URL that goes
+to the dossier. So obviously if it's
+
+887
+00:38:44,880 --> 00:38:47,838
+to the dossier. So obviously if it's
+wrapped and signed then the URL is safe.
+
+888
+00:38:47,839 --> 00:38:51,598
+wrapped and signed then the URL is safe.
+The URL itself is safe but at the
+
+889
+00:38:51,599 --> 00:38:53,999
+The URL itself is safe but at the
+target there that's where something can
+
+890
+00:38:54,000 --> 00:38:56,319
+target there that's where something can
+change and be malleable. So how are
+
+891
+00:38:56,320 --> 00:38:58,559
+change and be malleable. So how are
+what's what are you doing to secure the
+
+892
+00:38:58,560 --> 00:39:01,439
+what's what are you doing to secure the
+endpoint where the URL goes?
+
+893
+00:39:01,440 --> 00:39:03,838
+endpoint where the URL goes?
+Well, the URL is an OOBI. So it's it's
+
+894
+00:39:03,839 --> 00:39:07,358
+Well, the URL is an OOBI. So it's it's
+not a generic URL, meaning that when
+
+895
+00:39:07,359 --> 00:39:10,399
+not a generic URL, meaning that when
+you go there, you must see a signed
+
+896
+00:39:10,400 --> 00:39:13,199
+you go there, you must see a signed
+sequence of events that proves the
+
+897
+00:39:13,200 --> 00:39:17,358
+sequence of events that proves the
+its evolution from its origin
+
+898
+00:39:17,359 --> 00:39:21,519
+its evolution from its origin
+moment, its inception moment. So you
+
+899
+00:39:21,520 --> 00:39:25,358
+moment, its inception moment. So you
+could have somebody who
+
+900
+00:39:25,359 --> 00:39:28,319
+could have somebody who
+tries to replace the content at that
+
+901
+00:39:28,320 --> 00:39:30,959
+tries to replace the content at that
+location, but if they did, they would
+
+902
+00:39:30,960 --> 00:39:33,279
+location, but if they did, they would
+have to come up with content that still
+
+903
+00:39:33,280 --> 00:39:35,519
+have to come up with content that still
+evolved from scratch and was still
+
+904
+00:39:35,520 --> 00:39:38,479
+evolved from scratch and was still
+related to the identifier in
+
+905
+00:39:38,480 --> 00:39:41,358
+related to the identifier in
+question, and that would be detected
+
+906
+00:39:41,359 --> 00:39:43,679
+question, and that would be detected
+then by the watcher network and so
+
+907
+00:39:43,680 --> 00:39:47,039
+then by the watcher network and so
+forth. So, KERI prevents a bunch of
+
+908
+00:39:47,040 --> 00:39:49,679
+forth. So, KERI prevents a bunch of
+monkeying with that. And interestingly
+
+909
+00:39:49,680 --> 00:39:51,199
+monkeying with that. And interestingly
+enough, this is one of the debates that
+
+910
+00:39:51,200 --> 00:39:53,439
+enough, this is one of the debates that
+I've been having in the stir working
+
+911
+00:39:53,440 --> 00:39:55,759
+I've been having in the stir working
+group at IETF because people said, "Oh,
+
+912
+00:39:55,760 --> 00:39:57,039
+group at IETF because people said, "Oh,
+this is a great idea. We'll put a
+
+913
+00:39:57,040 --> 00:39:59,118
+this is a great idea. We'll put a
+hyperlink in there. We'll just accept
+
+914
+00:39:59,119 --> 00:40:01,039
+hyperlink in there. We'll just accept
+any hyperlink."
+
+915
+00:40:01,040 --> 00:40:03,999
+any hyperlink."
+And I said, "No, that's not quite a good
+
+916
+00:40:04,000 --> 00:40:06,239
+And I said, "No, that's not quite a good
+idea." For the very concern that
+
+917
+00:40:06,240 --> 00:40:08,399
+idea." For the very concern that
+you're talking about, we'll see if I can
+
+918
+00:40:08,400 --> 00:40:10,639
+you're talking about, we'll see if I can
+convince them. They might just modify
+
+919
+00:40:10,640 --> 00:40:13,039
+convince them. They might just modify
+the spec and say any hyperlink will do.
+
+920
+00:40:13,040 --> 00:40:15,598
+the spec and say any hyperlink will do.
+In which case there
+
+921
+00:40:15,599 --> 00:40:17,358
+In which case there
+that immediately becomes the
+
+922
+00:40:17,359 --> 00:40:18,799
+that immediately becomes the
+sensitive attack surface.
+
+923
+00:40:18,800 --> 00:40:21,279
+sensitive attack surface.
+Exactly.
+
+924
+00:40:21,280 --> 00:40:23,598
+Exactly.
+One more question.
+
+925
+00:40:23,599 --> 00:40:27,439
+One more question.
+Could you grab the mic?
+
+926
+00:40:27,440 --> 00:40:29,358
+Could you grab the mic?
+In your architecture, you showed a
+
+927
+00:40:29,359 --> 00:40:31,679
+In your architecture, you showed a
+couple of phone home paths. What
+
+928
+00:40:31,680 --> 00:40:34,559
+couple of phone home paths. What
+are the implications of privacy on that?
+
+929
+00:40:34,560 --> 00:40:38,479
+are the implications of privacy on that?
+So the phone home path is not
+
+930
+00:40:38,480 --> 00:40:40,719
+So the phone home path is not
+a phone home to another party. It's a
+
+931
+00:40:40,720 --> 00:40:43,999
+a phone home to another party. It's a
+phone home to the originating party. So,
+
+932
+00:40:44,000 --> 00:40:46,719
+phone home to the originating party. So,
+Basically the party that made the
+
+933
+00:40:46,720 --> 00:40:51,039
+Basically the party that made the
+call might have somebody call them back,
+
+934
+00:40:51,040 --> 00:40:53,679
+call might have somebody call them back,
+Or it call their watchers and
+
+935
+00:40:53,680 --> 00:40:56,318
+Or it call their watchers and
+witnesses back. But these are
+
+936
+00:40:56,319 --> 00:40:58,159
+witnesses back. But these are
+entities that they control and have
+
+937
+00:40:58,160 --> 00:41:02,879
+entities that they control and have
+chosen. So it's not calling home or
+
+938
+00:41:02,880 --> 00:41:04,959
+chosen. So it's not calling home or
+phoning home to a central registry. it's
+
+939
+00:41:04,960 --> 00:41:07,199
+phoning home to a central registry. it's
+phoning home to it would be the
+
+940
+00:41:07,200 --> 00:41:10,879
+phoning home to it would be the
+equivalent of on the web calling the
+
+941
+00:41:10,880 --> 00:41:13,679
+equivalent of on the web calling the
+name server for Microsoft.com that
+
+942
+00:41:13,680 --> 00:41:16,639
+name server for Microsoft.com that
+Microsoft chose. So you're tracing data
+
+943
+00:41:16,640 --> 00:41:19,279
+Microsoft chose. So you're tracing data
+back to a server Microsoft set up and
+
+944
+00:41:19,280 --> 00:41:20,000
+back to a server Microsoft set up and
+empowered.
+
+945
+00:41:20,001 --> 00:41:21,598
+empowered.
+So it doesn't have to be provenant in
+
+946
+00:41:21,599 --> 00:41:22,079
+So it doesn't have to be provenant in
+every case.
+
+947
+00:41:22,080 --> 00:41:24,639
+every case.
+Oh no, no, no, no. Provenant
+
+948
+00:41:24,640 --> 00:41:27,439
+Oh no, no, no, no. Provenant
+implemented this system. But the spec
+
+949
+00:41:27,440 --> 00:41:29,199
+implemented this system. But the spec
+is open and anybody could implement the
+
+950
+00:41:29,200 --> 00:41:32,639
+is open and anybody could implement the
+system. Yeah, there's no lock in
+
+951
+00:41:32,640 --> 00:41:34,959
+system. Yeah, there's no lock in
+about that.
+
+952
+00:41:34,960 --> 00:41:39,880
+about that.
+Okay, thank you very much once again.
+
