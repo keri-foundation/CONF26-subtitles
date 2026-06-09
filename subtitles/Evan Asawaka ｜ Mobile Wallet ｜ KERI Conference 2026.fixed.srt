@@ -1,6 +1,6 @@
 1
-00:00:07,749 --> 00:00:11,679
-Yeah. So we have been developing a web
+00:00:04,150 --> 00:00:11,679
+So we have been developing a web
 wallet for KERI essentially just as
 
 2
@@ -50,11 +50,11 @@ KERIpy on the back end. Which,
 
 13
 00:00:44,000 --> 00:00:46,879
-Proved to be a challenge in fact.
+proved to be a challenge in fact.
 
 14
 00:00:46,879 --> 00:00:48,879
-Yeah. So again, we wanted everything to
+So again, we wanted everything to
 
 15
 00:00:48,879 --> 00:00:50,160
@@ -82,7 +82,7 @@ this application and you would get your
 
 21
 00:01:02,160 --> 00:01:05,600
-Your in browser wallet
+your in-browser wallet
 
 22
 00:01:05,600 --> 00:01:06,799
@@ -102,7 +102,7 @@ So some challenges running Python in a
 
 26
 00:01:13,280 --> 00:01:18,149
-web assembly was the first big hurdle.
+WebAssembly was the first big hurdle.
 
 27
 00:01:18,149 --> 00:01:18,159
@@ -111,7 +111,7 @@ web assembly was the first big hurdle.
 28
 00:01:18,159 --> 00:01:23,520
 because currently
-yeah Python is run on CPython which is a
+Python is run on CPython which is a
 
 29
 00:01:23,520 --> 00:01:26,960
@@ -143,7 +143,7 @@ assembly.
 
 36
 00:01:41,360 --> 00:01:43,920
-And yeah, again, we want this to be
+And, again, we want this to be
 
 37
 00:01:43,920 --> 00:01:45,520
@@ -199,7 +199,7 @@ essentially the Python interpreter
 
 50
 00:02:12,319 --> 00:02:14,720
-compiled to web assembly which allows it
+compiled to WebAssembly which allows it
 
 51
 00:02:14,720 --> 00:02:18,239
@@ -279,7 +279,7 @@ a C library. So I had to take lib sodium
 
 70
 00:02:57,120 --> 00:03:00,480
-compile it to target web assembly and
+compile it to target WebAssembly and
 
 71
 00:03:00,480 --> 00:03:03,040
@@ -299,7 +299,7 @@ chloride because it's like you know
 
 75
 00:03:09,440 --> 00:03:12,560
-sodium chloride yeah that was Sam's idea
+sodium chloride that was Sam's idea
 
 76
 00:03:12,560 --> 00:03:15,200
@@ -311,7 +311,7 @@ is written in rust I had to compile this
 
 78
 00:03:18,080 --> 00:03:22,159
-web assembly and also in the in an
+WebAssembly and also in the in an
 
 79
 00:03:22,159 --> 00:03:24,239
@@ -323,7 +323,7 @@ we took this PIQS which is an open
 
 81
 00:03:27,760 --> 00:03:32,560
-quantum secure safety yeah library for
+quantum secure safety library for
 
 82
 00:03:32,560 --> 00:03:35,840
@@ -331,7 +331,7 @@ key creation and
 
 83
 00:03:35,840 --> 00:03:37,599
-made it web assembly compatible. So that
+made it WebAssembly compatible. So that
 
 84
 00:03:37,599 --> 00:03:40,000
@@ -343,7 +343,7 @@ before quantum computers.
 
 86
 00:03:43,519 --> 00:03:45,440
-All right. Yes. Yeah. So we had to so in
+All right. Yes. So we had to so in
 
 87
 00:03:45,440 --> 00:03:47,599
@@ -580,7 +580,7 @@ Okay.
 
 145
 00:05:44,000 --> 00:05:45,840
-Yeah. This is like basically the
+This is like basically the
 
 146
 00:05:45,840 --> 00:05:46,479
@@ -620,7 +620,7 @@ used.
 
 155
 00:06:02,080 --> 00:06:04,560
-Yeah. And Sam had to extend HIO actually
+And Sam had to extend HIO actually
 
 156
 00:06:04,560 --> 00:06:07,120
@@ -660,11 +660,11 @@ car pie?
 
 165
 00:06:25,440 --> 00:06:30,230
-It's on a branch but yeah
+It's on a branch but
 
 166
 00:06:31,350 --> 00:06:34,400
-let's see. Yeah. So this is how it
+let's see. So this is how it
 works. We have the UI. It's just like a
 
 167
@@ -713,7 +713,7 @@ Before you get the demo guys
 
 178
 00:06:59,840 --> 00:07:01,520
-Yeah. Shoot.
+Shoot.
 
 179
 00:07:01,520 --> 00:07:03,919
@@ -766,7 +766,7 @@ duct type class for another data store.
 
 191
 00:07:35,199 --> 00:07:39,199
-Correct. Yeah. And then you'd have to
+Correct. And then you'd have to
 
 192
 00:07:39,199 --> 00:07:41,919
@@ -930,7 +930,7 @@ different providers plugins and get oh
 
 231
 00:09:27,040 --> 00:09:31,760
-it worked nice yeah so it works
+it worked nice so it works
 
 232
 00:09:31,760 --> 00:09:34,720
@@ -1027,7 +1027,7 @@ plugins as well that they can provide.
 
 255
 00:10:15,360 --> 00:10:16,480
-Yeah. So we're going to host all of
+So we're going to host all of
 
 256
 00:10:16,480 --> 00:10:19,040
@@ -1039,7 +1039,7 @@ services on Digital Ocean.
 
 258
 00:10:20,320 --> 00:10:22,480
-Yeah. I'm doing this all running locally
+I'm doing this all running locally
 
 259
 00:10:22,480 --> 00:10:24,640
@@ -1371,7 +1371,7 @@ that as a plugin.
 
 339
 00:13:50,320 --> 00:13:52,720
-Totally. Yeah. And you probably want to
+Totally. And you probably want to
 
 340
 00:13:52,720 --> 00:13:54,480
@@ -1408,7 +1408,7 @@ application.
 348
 00:14:06,000 --> 00:14:10,240
 yeah.
-Okay. Yeah. Yeah. And so just as an
+Okay. And so just as an
 
 349
 00:14:10,240 --> 00:14:12,480
@@ -1468,7 +1468,7 @@ long as you're like writing Python and
 
 363
 00:14:36,720 --> 00:14:40,880
-pass six. Yeah. Oh, yeah.
+pass six.
 
 364
 00:14:40,880 --> 00:14:45,509
@@ -1476,8 +1476,7 @@ Or like a cloth.
 
 365
 00:14:47,509 --> 00:14:49,680
-Yeah. As long as you can. I don't like
-it.
+As long as you can. I don't like it.
 
 366
 00:14:49,680 --> 00:14:52,000
@@ -1884,7 +1883,7 @@ So it's the web essentially version.
 
 465
 00:19:05,440 --> 00:19:07,440
-Yeah. And yeah, it's it's pretty much
+And, it's it's pretty much
 
 466
 00:19:07,440 --> 00:19:09,760
@@ -1968,7 +1967,7 @@ to your witnesses or something.
 
 486
 00:19:53,840 --> 00:19:55,440
-Yeah. So that's a common misconception.
+So that's a common misconception.
 
 487
 00:19:55,440 --> 00:19:57,120
@@ -2084,7 +2083,7 @@ Yep. Yeah.
 
 515
 00:20:38,559 --> 00:20:41,120
-Yeah. Yeah. Again, we got this code
+Again, we got this code
 
 516
 00:20:41,120 --> 00:20:43,440
@@ -2210,7 +2209,7 @@ they should be.
 
 546
 00:21:48,159 --> 00:21:50,000
-True. Yeah. Well, yeah. If there's
+True. Well. If there's
 
 547
 00:21:50,000 --> 00:21:51,280
@@ -2222,7 +2221,7 @@ yeah, absolutely.
 
 549
 00:21:52,480 --> 00:21:54,400
-Yeah. Sam's recommendation was
+Sam's recommendation was
 
 550
 00:21:54,400 --> 00:21:55,280
@@ -2234,7 +2233,7 @@ It was either one or four
 
 552
 00:21:58,400 --> 00:22:00,640
-with a Yeah. cuz he says three when you
+with a cuz he says three when you
 
 553
 00:22:00,640 --> 00:22:02,480
@@ -2270,7 +2269,7 @@ okay
 
 561
 00:22:11,120 --> 00:22:13,520
-yeah I think a mission of the KERI
+I think a mission of the KERI
 
 562
 00:22:13,520 --> 00:22:15,679
@@ -2576,7 +2575,7 @@ Those are separate UI implementations.
 
 637
 00:25:18,640 --> 00:25:21,039
-Yeah. that could come slightly opposite
+That could come slightly opposite
 
 638
 00:25:21,039 --> 00:25:22,799
