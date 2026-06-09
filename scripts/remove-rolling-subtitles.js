@@ -6,6 +6,14 @@
  * - If a cue has 2+ non-empty content lines and its first content line equals
  *   the previous cue's last content line, remove that first line.
  * - If a cue has only 1 non-empty content line, keep it.
+ * 
+ * Rolling captions scroll up two to three lines at a time. The top line 
+ * disappears as a new bottom line appears in sync with the audio. They can 
+ * be placed at the top, bottom, or about one-third from the bottom of the screen.
+ * 
+ * Pop-on captions appear and disappear in sync with the audio in blocks of 1-3 lines.
+ * The captions can be placed almost anywhere on the screen to avoid covering graphics
+ * and faces, and to identify speakers.
  */
 
 import { readFile, writeFile, readdir } from "node:fs/promises";
@@ -101,7 +109,10 @@ export async function removeRollingSubtitles() {
 
         let nextLines = lines;
 
+        // Only remove the first line if it matches the previous cue's last line
+        // and there are multiple non-empty lines in this cue
         if (previousCueLastLine !== "" && firstLine === previousCueLastLine) {
+          // Remove only the first content line, not the entire line
           nextLines = [
             ...lines.slice(0, firstContentIndex),
             ...lines.slice(firstContentIndex + 1),
