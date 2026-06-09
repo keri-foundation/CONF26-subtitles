@@ -1,4 +1,4 @@
-﻿1
+1
 00:00:04,950 --> 00:00:06,910
 Okay, well, let's get started everybody.
 
@@ -13,12 +13,10 @@ Hopefully, you'll find it interesting.
 
 4
 00:00:12,200 --> 00:00:14,320
-Hopefully, you'll find it interesting.
 Let's see if I can get my cur- whoa,
 
 5
 00:00:14,320 --> 00:00:20,950
-Let's see if I can get my cur- whoa,
 my cursor. There we go.
 
 6
@@ -32,7 +30,6 @@ So, my presentation is on did:webs.
 
 8
 00:00:30,120 --> 00:00:33,630
-So, my presentation is on did:webs.
 My name's Jonathan Rayback.
 
 9
@@ -46,62 +43,50 @@ a co-chair on the did:webs task force
 
 11
 00:00:40,440 --> 00:00:42,480
-a co-chair on the did:webs task force
 underneath the KERI stack working group
 
 12
 00:00:42,480 --> 00:00:43,880
-underneath the KERI stack working group
 at Trust over IP.
 
 13
 00:00:43,880 --> 00:00:46,240
-at Trust over IP.
 My other co-chair is Kent Bull here's
 
 14
 00:00:46,240 --> 00:00:47,640
-My other co-chair is Kent Bull here's
 here with me.
 
 15
 00:00:47,640 --> 00:00:49,560
-here with me.
 And I'm going to be talking about DID
 
 16
 00:00:49,560 --> 00:00:50,840
-And I'm going to be talking about DID
 Web S.
 
 17
 00:00:50,840 --> 00:00:55,240
-Web S.
 I also am a chair of the DID methods
 
 18
 00:00:55,240 --> 00:00:57,200
-I also am a chair of the DID methods
 working group at Decentralized Identity
 
 19
 00:00:57,200 --> 00:01:00,800
-working group at Decentralized Identity
 Foundation. So, I am squarely in the DID
 
 20
 00:01:00,800 --> 00:01:02,960
-Foundation. So, I am squarely in the DID
 ecosystem and community.
 
 21
 00:01:02,960 --> 00:01:04,760
-ecosystem and community.
 And
 
 22
 00:01:04,760 --> 00:01:07,350
-And
 the
 
 23
@@ -111,67 +96,54 @@ about did:webs, which is the KERI entry
 
 24
 00:01:13,680 --> 00:01:16,400
-about did:webs, which is the KERI entry
 into the DID Web X
 
 25
 00:01:16,400 --> 00:01:19,680
-into the DID Web X
 Genre of decentralized identifier.
 
 26
 00:01:19,680 --> 00:01:23,760
-Genre of decentralized identifier.
 So, the talk today is going to be
 
 27
 00:01:23,760 --> 00:01:25,160
-So, the talk today is going to be
 I would say pretty technical, and I'm
 
 28
 00:01:25,160 --> 00:01:28,000
-I would say pretty technical, and I'm
 going to really assume that the audience
 
 29
 00:01:28,000 --> 00:01:30,880
-going to really assume that the audience
 is fairly familiar with KERI. I'm not
 
 30
 00:01:30,880 --> 00:01:32,040
-is fairly familiar with KERI. I'm not
 going to assume that the audience is
 
 31
 00:01:32,040 --> 00:01:34,640
-going to assume that the audience is
 familiar with DIDs. I'm going to sort of
 
 32
 00:01:34,640 --> 00:01:36,040
-familiar with DIDs. I'm going to sort of
 that's kind of the point of the talk is
 
 33
 00:01:36,040 --> 00:01:38,480
-that's kind of the point of the talk is
 a little bit to describe DIDs and
 
 34
 00:01:38,480 --> 00:01:41,040
-a little bit to describe DIDs and
 why we have did:webs and how it relates
 
 35
 00:01:41,040 --> 00:01:42,480
-why we have did:webs and how it relates
 to KERI.
 
 36
 00:01:42,480 --> 00:01:47,470
-to KERI.
 So, that's kind of I guess my prelude.
 
 37
@@ -185,77 +157,62 @@ So, we're going to go through a little
 
 39
 00:01:57,120 --> 00:01:59,080
-So, we're going to go through a little
 bit about DIDs. We're going to do a
 
 40
 00:01:59,080 --> 00:02:01,600
-bit about DIDs. We're going to do a
 brief discussion on DID KERI itself cuz
 
 41
 00:02:01,600 --> 00:02:03,560
-brief discussion on DID KERI itself cuz
 there is DID KERI came before did:webs
 
 42
 00:02:03,560 --> 00:02:06,240
-there is DID KERI came before did:webs
 and it is another DID method. We'll talk
 
 43
 00:02:06,240 --> 00:02:07,800
-and it is another DID method. We'll talk
 about DID web,
 
 44
 00:02:07,800 --> 00:02:10,000
-about DID web,
 the original DID web at W3C. We'll talk
 
 45
 00:02:10,000 --> 00:02:12,480
-the original DID web at W3C. We'll talk
 about did:webs and why it exists
 
 46
 00:02:12,480 --> 00:02:14,320
-about did:webs and why it exists
 when DID web exists.
 
 47
 00:02:14,320 --> 00:02:16,040
-when DID web exists.
 Then, we'll do a little bit of a
 
 48
 00:02:16,040 --> 00:02:17,640
-Then, we'll do a little bit of a
 conversation about the relationship
 
 49
 00:02:17,640 --> 00:02:19,520
-conversation about the relationship
 between did:webs and DID web. We'll
 
 50
 00:02:19,520 --> 00:02:21,520
-between did:webs and DID web. We'll
 talk about some other DID web X methods,
 
 51
 00:02:21,520 --> 00:02:23,720
-talk about some other DID web X methods,
 the status of did:webs from a standards
 
 52
 00:02:23,720 --> 00:02:25,040
-the status of did:webs from a standards
 point of view, and then I'll do a little
 
 53
 00:02:25,040 --> 00:02:28,550
-point of view, and then I'll do a little
 demo.
 
 54
@@ -265,202 +222,162 @@ It is a W3C
 
 55
 00:02:33,959 --> 00:02:36,280
-It is a W3C
 official recommendation
 
 56
 00:02:36,280 --> 00:02:39,280
-official recommendation
 As of several years ago. There
 
 57
 00:02:39,280 --> 00:02:41,560
-As of several years ago. There
 There's a 1.0 core spec and I think
 
 58
 00:02:41,560 --> 00:02:44,280
-There's a 1.0 core spec and I think
 they're working on a 2.0 spec now.
 
 59
 00:02:44,280 --> 00:02:47,440
-they're working on a 2.0 spec now.
 You can click through to the actual
 
 60
 00:02:47,440 --> 00:02:49,160
-You can click through to the actual
 specification there at on that
 
 61
 00:02:49,160 --> 00:02:50,600
-specification there at on that
 hyperlink.
 
 62
 00:02:50,600 --> 00:02:52,560
-hyperlink.
 It's a type of identifier. It's It's
 
 63
 00:02:52,560 --> 00:02:55,800
-It's a type of identifier. It's It's
 formally a URI identifier that allows an
 
 64
 00:02:55,800 --> 00:02:57,160
-formally a URI identifier that allows an
 entity to communicate things like
 
 65
 00:02:57,160 --> 00:02:59,600
-entity to communicate things like
 cryptographic material keys,
 
 66
 00:02:59,600 --> 00:03:01,920
-cryptographic material keys,
 Verification methods, and or service
 
 67
 00:03:01,920 --> 00:03:05,120
-Verification methods, and or service
 endpoints like say an authorized agent.
 
 68
 00:03:05,120 --> 00:03:07,720
-endpoints like say an authorized agent.
 And this communication happens by
 
 69
 00:03:07,720 --> 00:03:10,320
-And this communication happens by
 resolving is the term the DID. So, you
 
 70
 00:03:10,320 --> 00:03:11,920
-resolving is the term the DID. So, you
 resolve the DID like you would resolve a
 
 71
 00:03:11,920 --> 00:03:14,440
-resolve the DID like you would resolve a
 URL. And when you resolve a URL, you get
 
 72
 00:03:14,440 --> 00:03:16,040
-URL. And when you resolve a URL, you get
 back a usually a
 
 73
 00:03:16,040 --> 00:03:17,640
-back a usually a
 chunk of HTML like a webpage or
 
 74
 00:03:17,640 --> 00:03:20,160
-chunk of HTML like a webpage or
 something like that, some resource. When
 
 75
 00:03:20,160 --> 00:03:21,680
-something like that, some resource. When
 you resolve a DID, what you get back is
 
 76
 00:03:21,680 --> 00:03:23,640
-you resolve a DID, what you get back is
 a DID document and the DID document will
 
 77
 00:03:23,640 --> 00:03:25,800
-a DID document and the DID document will
 contain information like what are your
 
 78
 00:03:25,800 --> 00:03:27,880
-contain information like what are your
 current public keys, do you have any
 
 79
 00:03:27,880 --> 00:03:30,480
-current public keys, do you have any
 authorized agents, etc. etc.
 
 80
 00:03:30,480 --> 00:03:32,440
-authorized agents, etc. etc.
 So, the scheme
 
 81
 00:03:32,440 --> 00:03:35,600
-So, the scheme
 for a DID is you have
 
 82
 00:03:35,600 --> 00:03:38,760
-for a DID is you have
 the mandatory URI scheme
 
 83
 00:03:38,760 --> 00:03:41,120
-the mandatory URI scheme
 prefix, which is DID,
 
 84
 00:03:41,120 --> 00:03:43,600
-prefix, which is DID,
 the colon, similar to a URL.
 
 85
 00:03:43,600 --> 00:03:45,640
-the colon, similar to a URL.
 So, like in a URL if it's the HTTP, you
 
 86
 00:03:45,640 --> 00:03:46,920
-So, like in a URL if it's the HTTP, you
 know, and then whatever. This is in this
 
 87
 00:03:46,920 --> 00:03:48,840
-know, and then whatever. This is in this
 case it's DID, whatever.
 
 88
 00:03:48,840 --> 00:03:50,880
-case it's DID, whatever.
 The DID method name, so in the case of
 
 89
 00:03:50,880 --> 00:03:53,080
-The DID method name, so in the case of
 did:webs this would be webas. And then
 
 90
 00:03:53,080 --> 00:03:55,280
-did:webs this would be webas. And then
 each did method has its own method
 
 91
 00:03:55,280 --> 00:03:58,040
-each did method has its own method
 specific identifier that's determined by
 
 92
 00:03:58,040 --> 00:03:59,480
-specific identifier that's determined by
 the designers of the specification for
 
 93
 00:03:59,480 --> 00:04:01,160
-the designers of the specification for
 that did method. This is an example of
 
 94
 00:04:01,160 --> 00:04:04,430
-that did method. This is an example of
 an imaginary one.
 
 95
@@ -474,42 +391,34 @@ document, the did method itself
 
 97
 00:04:07,920 --> 00:04:10,480
-document, the did method itself
 describes how do you create, update,
 
 98
 00:04:10,480 --> 00:04:12,560
-describes how do you create, update,
 delete, you know, etc.
 
 99
 00:04:12,560 --> 00:04:14,959
-delete, you know, etc.
 the did documents, and every did method
 
 100
 00:04:14,959 --> 00:04:16,959
-the did documents, and every did method
 has its own mechanism for that, along
 
 101
 00:04:16,959 --> 00:04:19,079
-has its own mechanism for that, along
 with its own method specific identifier.
 
 102
 00:04:19,079 --> 00:04:20,600
-with its own method specific identifier.
 There are currently hundreds of did
 
 103
 00:04:20,600 --> 00:04:24,560
-There are currently hundreds of did
 methods out there in various states of
 
 104
 00:04:24,560 --> 00:04:27,830
-methods out there in various states of
 standardization.
 
 105
@@ -523,127 +432,102 @@ blockchain technologies.
 
 107
 00:04:32,400 --> 00:04:34,720
-blockchain technologies.
 There are lots of other creative ones.
 
 108
 00:04:34,720 --> 00:04:37,480
-There are lots of other creative ones.
 There are a few that deal specifically
 
 109
 00:04:37,480 --> 00:04:39,640
-There are a few that deal specifically
 with web and web protocols and web
 
 110
 00:04:39,640 --> 00:04:42,160
-with web and web protocols and web
 infrastructure, of which didwebas is
 
 111
 00:04:42,160 --> 00:04:44,200
-infrastructure, of which didwebas is
 one.
 
 112
 00:04:44,200 --> 00:04:46,600
-one.
 If anybody has questions, by the way,
 
 113
 00:04:46,600 --> 00:04:48,680
-If anybody has questions, by the way,
 at any point, feel free. Oh, there'll be
 
 114
 00:04:48,680 --> 00:04:49,440
-at any point, feel free. Oh, there'll be
 time for questions at the end,
 
 115
 00:04:49,440 --> 00:04:50,840
-time for questions at the end,
 hopefully, but if you just want to ask a
 
 116
 00:04:50,840 --> 00:04:53,480
-hopefully, but if you just want to ask a
 question, ask a question.
 
 117
 00:04:53,480 --> 00:04:55,200
-question, ask a question.
 Okay, cool. So, decentralized
 
 118
 00:04:55,200 --> 00:04:57,320
-Okay, cool. So, decentralized
 identifiers, as I mentioned, there are
 
 119
 00:04:57,320 --> 00:04:59,480
-identifiers, as I mentioned, there are
 four method operations that every did
 
 120
 00:04:59,480 --> 00:05:01,320
-four method operations that every did
 method must explain. So, if you're going
 
 121
 00:05:01,320 --> 00:05:02,880
-method must explain. So, if you're going
 to create a new did and then have a new
 
 122
 00:05:02,880 --> 00:05:04,840
-to create a new did and then have a new
 did method, you have to explain at least
 
 123
 00:05:04,840 --> 00:05:06,560
-did method, you have to explain at least
 how to do these four things. How do you
 
 124
 00:05:06,560 --> 00:05:08,360
-how to do these four things. How do you
 create them? How do you resolve them?
 
 125
 00:05:08,360 --> 00:05:09,280
-create them? How do you resolve them?
 How do you update them? How do you
 
 126
 00:05:09,280 --> 00:05:10,800
-How do you update them? How do you
 deactivate them?
 
 127
 00:05:10,800 --> 00:05:16,320
-deactivate them?
 Then the did document itself is
 
 128
 00:05:16,320 --> 00:05:19,280
-Then the did document itself is
 always called did.json, so it's a JSON
 
 129
 00:05:19,280 --> 00:05:21,720
-always called did.json, so it's a JSON
 format following the specific did core
 
 130
 00:05:21,720 --> 00:05:24,320
-format following the specific did core
 JSON scheme.
 
 131
 00:05:24,320 --> 00:05:26,510
-JSON scheme.
 And
 
 132
@@ -657,197 +541,158 @@ spec is going to have a did document
 
 134
 00:05:32,120 --> 00:05:34,280
-spec is going to have a did document
 did.json, and it's going to follow that
 
 135
 00:05:34,280 --> 00:05:36,440
-did.json, and it's going to follow that
 particular scheme, right?
 
 136
 00:05:36,440 --> 00:05:38,360
-particular scheme, right?
 Including didwebas.
 
 137
 00:05:38,360 --> 00:05:41,400
-Including didwebas.
 Did document has specified
 
 138
 00:05:41,400 --> 00:05:43,560
-Did document has specified
 properties, including
 
 139
 00:05:43,560 --> 00:05:45,400
-properties, including
 and I'm I listed these out cuz these are
 
 140
 00:05:45,400 --> 00:05:46,480
-and I'm I listed these out cuz these are
 the ones that are particularly relevant
 
 141
 00:05:46,480 --> 00:05:47,800
-the ones that are particularly relevant
 for didweb.es.
 
 142
 00:05:47,800 --> 00:05:51,360
-for didweb.es.
 The subject of the did is in the ID
 
 143
 00:05:51,360 --> 00:05:52,680
-The subject of the did is in the ID
 field.
 
 144
 00:05:52,680 --> 00:05:55,880
-field.
 The did can have other identifiers that
 
 145
 00:05:55,880 --> 00:05:58,760
-The did can have other identifiers that
 it calls out as equivalent IDs
 
 146
 00:05:58,760 --> 00:06:01,000
-it calls out as equivalent IDs
 basically, also known as
 
 147
 00:06:01,000 --> 00:06:03,920
-basically, also known as
 You'll see that in a minute. It has
 
 148
 00:06:03,920 --> 00:06:05,960
-You'll see that in a minute. It has
 Verification methods
 
 149
 00:06:05,960 --> 00:06:07,440
-Verification methods
 Which is basically, you know, the
 
 150
 00:06:07,440 --> 00:06:10,440
-Which is basically, you know, the
 list of the keys that the
 
 151
 00:06:10,440 --> 00:06:12,240
-list of the keys that the
 did controller is publishing the did
 
 152
 00:06:12,240 --> 00:06:14,320
-did controller is publishing the did
 document. It can have verification
 
 153
 00:06:14,320 --> 00:06:16,200
-document. It can have verification
 relationships, for example,
 
 154
 00:06:16,200 --> 00:06:18,440
-relationships, for example,
 authentication saying this key is
 
 155
 00:06:18,440 --> 00:06:20,760
-authentication saying this key is
 authorized to authenticate for me or
 
 156
 00:06:20,760 --> 00:06:23,360
-authorized to authenticate for me or
 this key is authorized to sign on my
 
 157
 00:06:23,360 --> 00:06:26,080
-this key is authorized to sign on my
 behalf in these two cases.
 
 158
 00:06:26,080 --> 00:06:28,360
-behalf in these two cases.
 You can also list out various services
 
 159
 00:06:28,360 --> 00:06:29,560
-You can also list out various services
 that are relevant to you as a
 
 160
 00:06:29,560 --> 00:06:30,919
-that are relevant to you as a
 controller.
 
 161
 00:06:30,919 --> 00:06:33,400
-controller.
 Dids
 
 162
 00:06:33,400 --> 00:06:35,440
-Dids
 did identifiers do support parameters
 
 163
 00:06:35,440 --> 00:06:38,000
-did identifiers do support parameters
 like URLs do, so you can have a did and
 
 164
 00:06:38,000 --> 00:06:39,240
-like URLs do, so you can have a did and
 then like a question mark and a
 
 165
 00:06:39,240 --> 00:06:41,560
-then like a question mark and a
 parameter on the end that
 
 166
 00:06:41,560 --> 00:06:43,240
-parameter on the end that
 allows you to, you know, adjust the kind
 
 167
 00:06:43,240 --> 00:06:44,280
-allows you to, you know, adjust the kind
 of information you're going to get back
 
 168
 00:06:44,280 --> 00:06:45,600
-of information you're going to get back
 from the resolver.
 
 169
 00:06:45,600 --> 00:06:47,720
-from the resolver.
 And there's also metadata that comes
 
 170
 00:06:47,720 --> 00:06:49,600
-And there's also metadata that comes
 back when you resolve a did. You'll see
 
 171
 00:06:49,600 --> 00:06:51,360
-back when you resolve a did. You'll see
 that later when we do the
 
 172
 00:06:51,360 --> 00:06:54,270
-that later when we do the
 demo.
 
 173
@@ -857,42 +702,34 @@ is pulled from the core did spec.
 
 174
 00:06:58,440 --> 00:07:00,240
-is pulled from the core did spec.
 You can see in this case
 
 175
 00:07:00,240 --> 00:07:03,320
-You can see in this case
 the subject is this did.
 
 176
 00:07:03,320 --> 00:07:05,520
-the subject is this did.
 And this particular the controller of
 
 177
 00:07:05,520 --> 00:07:09,320
-And this particular the controller of
 this did has authorized this key
 
 178
 00:07:09,320 --> 00:07:11,840
-this did has authorized this key
 which is an ED25519
 
 179
 00:07:11,840 --> 00:07:13,400
-which is an ED25519
 key.
 
 180
 00:07:13,400 --> 00:07:14,924
-key.
 This one in particular.
 
 181
 00:07:14,924 --> 00:07:16,310
-This one in particular.
 [laughter]
 
 182
@@ -906,42 +743,34 @@ authentication method.
 
 184
 00:07:20,840 --> 00:07:22,000
-authentication method.
 It's basically what this did document
 
 185
 00:07:22,000 --> 00:07:23,200
-It's basically what this did document
 says.
 
 186
 00:07:23,200 --> 00:07:24,040
-says.
 Okay?
 
 187
 00:07:24,040 --> 00:07:25,880
-Okay?
 Questions so far?
 
 188
 00:07:25,880 --> 00:07:27,760
-Questions so far?
 Yes. Yeah.
 
 189
 00:07:27,760 --> 00:07:30,600
-Yes. Yeah.
 There's no also known as In this one,
 
 190
 00:07:30,600 --> 00:07:33,360
-There's no also known as In this one,
 yeah. Also known as is a optional field
 
 191
 00:07:33,360 --> 00:07:36,510
-yeah. Also known as is a optional field
 in the core spec. Yeah.
 
 192
@@ -955,82 +784,66 @@ also an optional field. But yeah.
 
 194
 00:07:43,080 --> 00:07:45,400
-also an optional field. But yeah.
 In didweb.es is not an optional field,
 
 195
 00:07:45,400 --> 00:07:46,880
-In didweb.es is not an optional field,
 and that's why I called it out earlier
 
 196
 00:07:46,880 --> 00:07:49,240
-and that's why I called it out earlier
 cuz DID web asset does makes, you know,
 
 197
 00:07:49,240 --> 00:07:51,760
-cuz DID web asset does makes, you know,
 has certain
 
 198
 00:07:51,760 --> 00:07:53,960
-has certain
 additional requirements above and beyond
 
 199
 00:07:53,960 --> 00:07:56,760
-additional requirements above and beyond
 the core spec, okay?
 
 200
 00:07:56,760 --> 00:07:58,280
-the core spec, okay?
 So, I just wanted to cover this really
 
 201
 00:07:58,280 --> 00:07:59,760
-So, I just wanted to cover this really
 quickly. I added this morning cuz
 
 202
 00:07:59,760 --> 00:08:01,680
-quickly. I added this morning cuz
 like if I was in a DID KERI conference,
 
 203
 00:08:01,680 --> 00:08:02,640
-like if I was in a DID KERI conference,
 I thought someone would ask what do I
 
 204
 00:08:02,640 --> 00:08:04,480
-I thought someone would ask what do I
 DID KERI. There absolutely is a DID
 
 205
 00:08:04,480 --> 00:08:06,840
-DID KERI. There absolutely is a DID
 KERI, okay? There's a specification for
 
 206
 00:08:06,840 --> 00:08:08,000
-KERI, okay? There's a specification for
 it. It is
 
 207
 00:08:08,000 --> 00:08:11,080
-it. It is
 hasn't been touched in 4 years.
 
 208
 00:08:11,080 --> 00:08:13,680
-hasn't been touched in 4 years.
 It's mostly
 
 209
 00:08:13,680 --> 00:08:16,390
-It's mostly
 stub, I would say.
 
 210
@@ -1044,22 +857,18 @@ but each section kind of says, "Need to
 
 212
 00:08:20,360 --> 00:08:21,760
-but each section kind of says, "Need to
 fill this in," right? Like it hasn't
 
 213
 00:08:21,760 --> 00:08:23,600
-fill this in," right? Like it hasn't
 really been filled in yet. It's it's
 
 214
 00:08:23,600 --> 00:08:24,960
-really been filled in yet. It's it's
 very
 
 215
 00:08:24,960 --> 00:08:27,870
-very
 early draft, very draft, right?
 
 216
@@ -1082,127 +891,102 @@ the name of the DID method, which is
 
 220
 00:08:36,800 --> 00:08:39,159
-the name of the DID method, which is
 KERI, and then the AID. That's a DID
 
 221
 00:08:39,159 --> 00:08:40,200
-KERI, and then the AID. That's a DID
 KERI.
 
 222
 00:08:40,200 --> 00:08:42,240
-KERI.
 The thing about DID KERI is it is
 
 223
 00:08:42,240 --> 00:08:44,600
-The thing about DID KERI is it is
 entirely silent on the topic of discover
 
 224
 00:08:44,600 --> 00:08:46,760
-entirely silent on the topic of discover
 discovery. How do you discover
 
 225
 00:08:46,760 --> 00:08:49,400
-discovery. How do you discover
 the ver the KEL essentially? How do
 
 226
 00:08:49,400 --> 00:08:51,400
-the ver the KEL essentially? How do
 you cuz like if you know the KEL, this
 
 227
 00:08:51,400 --> 00:08:53,200
-you cuz like if you know the KEL, this
 is totally sufficient for you to go do
 
 228
 00:08:53,200 --> 00:08:54,480
-is totally sufficient for you to go do
 whatever you need to do, right? You just
 
 229
 00:08:54,480 --> 00:08:56,760
-whatever you need to do, right? You just
 you have the AID, you go to the, you
 
 230
 00:08:56,760 --> 00:08:58,160
-you have the AID, you go to the, you
 know, Key Event Log, you can do whatever
 
 231
 00:08:58,160 --> 00:09:00,280
-know, Key Event Log, you can do whatever
 you need for validation. But the but the
 
 232
 00:09:00,280 --> 00:09:01,880
-you need for validation. But the but the
 DID method itself doesn't give you any
 
 233
 00:09:01,880 --> 00:09:03,480
-DID method itself doesn't give you any
 hint on like how am I supposed to get
 
 234
 00:09:03,480 --> 00:09:05,839
-hint on like how am I supposed to get
 this KEL? And I and I think this
 
 235
 00:09:05,839 --> 00:09:07,839
-this KEL? And I and I think this
 spec was actually written pre-OOBI world.
 
 236
 00:09:07,839 --> 00:09:09,240
-spec was actually written pre-OOBI world.
 So, like they didn't have the idea of
 
 237
 00:09:09,240 --> 00:09:12,120
-So, like they didn't have the idea of
 OOBIs even yet. So, now you would say
 
 238
 00:09:12,120 --> 00:09:13,200
-OOBIs even yet. So, now you would say
 you're probably just going to get an OOBI
 
 239
 00:09:13,200 --> 00:09:14,800
-you're probably just going to get an OOBI
 or something, right? But
 
 240
 00:09:14,800 --> 00:09:17,080
-or something, right? But
 it in the day, you know, we just
 
 241
 00:09:17,080 --> 00:09:18,800
-it in the day, you know, we just
 don't have this. So, it has limited
 
 242
 00:09:18,800 --> 00:09:20,440
-don't have this. So, it has limited
 practical use is what I'm saying, right?
 
 243
 00:09:20,440 --> 00:09:22,040
-practical use is what I'm saying, right?
 In the real world today.
 
 244
 00:09:22,040 --> 00:09:23,950
-In the real world today.
 Because
 
 245
@@ -1216,92 +1000,74 @@ to
 
 247
 00:09:27,440 --> 00:09:30,600
-to
 Discover the
 
 248
 00:09:30,600 --> 00:09:33,600
-Discover the
 verifiable history
 
 249
 00:09:33,600 --> 00:09:37,920
-verifiable history
 outside of the method itself.
 
 250
 00:09:37,920 --> 00:09:40,400
-outside of the method itself.
 Okay, so did web going to the other side
 
 251
 00:09:40,400 --> 00:09:42,840
-Okay, so did web going to the other side
 of the world. So in the W3C, right, it's
 
 252
 00:09:42,840 --> 00:09:44,360
-of the world. So in the W3C, right, it's
 the
 
 253
 00:09:44,360 --> 00:09:46,800
-the
 web specification, web standards
 
 254
 00:09:46,800 --> 00:09:48,760
-web specification, web standards
 organization, they thought, "Well, if
 
 255
 00:09:48,760 --> 00:09:49,560
-organization, they thought, "Well, if
 we're going to have these DIDs, we
 
 256
 00:09:49,560 --> 00:09:50,920
-we're going to have these DIDs, we
 should have a did web. That would be
 
 257
 00:09:50,920 --> 00:09:52,400
-should have a did web. That would be
 amazing, right?" So yes, there is a did
 
 258
 00:09:52,400 --> 00:09:55,000
-amazing, right?" So yes, there is a did
 web and it's an unofficial draft right
 
 259
 00:09:55,000 --> 00:09:56,720
-web and it's an unofficial draft right
 now at the W3C, but
 
 260
 00:09:56,720 --> 00:09:58,480
-now at the W3C, but
 it's it's used and it's used in
 
 261
 00:09:58,480 --> 00:10:00,440
-it's it's used and it's used in
 production. People use did web. When
 
 262
 00:10:00,440 --> 00:10:02,320
-production. People use did web. When
 when I was at Gen
 
 263
 00:10:02,320 --> 00:10:04,400
-when I was at Gen
 Digital, the solution we were
 
 264
 00:10:04,400 --> 00:10:09,230
-Digital, the solution we were
 developing was built around did web.
 
 265
@@ -1315,142 +1081,114 @@ all web technology, it's all web
 
 267
 00:10:14,200 --> 00:10:16,000
-all web technology, it's all web
 infrastructure. So,
 
 268
 00:10:16,000 --> 00:10:18,680
-infrastructure. So,
 the way that you get to the way that you
 
 269
 00:10:18,680 --> 00:10:21,960
-the way that you get to the way that you
 resolve a did web is you turn it into a
 
 270
 00:10:21,960 --> 00:10:25,880
-resolve a did web is you turn it into a
 URL and resolve the URL in your browser,
 
 271
 00:10:25,880 --> 00:10:28,160
-URL and resolve the URL in your browser,
 with KERL, you know, programmatically,
 
 272
 00:10:28,160 --> 00:10:30,080
-with KERL, you know, programmatically,
 with a headless
 
 273
 00:10:30,080 --> 00:10:31,520
-with a headless
 browser, whatever,
 
 274
 00:10:31,520 --> 00:10:35,200
-browser, whatever,
 And you get back did.json. And that's
 
 275
 00:10:35,200 --> 00:10:38,680
-And you get back did.json. And that's
 amazing. It is extremely It's a very
 
 276
 00:10:38,680 --> 00:10:41,080
-amazing. It is extremely It's a very
 very extremely limited practical use
 
 277
 00:10:41,080 --> 00:10:42,560
-very extremely limited practical use
 because
 
 278
 00:10:42,560 --> 00:10:44,680
-because
 there's no history of that did document.
 
 279
 00:10:44,680 --> 00:10:45,960
-there's no history of that did document.
 That did document could change at any
 
 280
 00:10:45,960 --> 00:10:48,080
-That did document could change at any
 time. It's subject to any of the
 
 281
 00:10:48,080 --> 00:10:49,720
-time. It's subject to any of the
 exploits that are common on the web,
 
 282
 00:10:49,720 --> 00:10:52,080
-exploits that are common on the web,
 man-in-the-middle attacks, hijacking,
 
 283
 00:10:52,080 --> 00:10:54,480
-man-in-the-middle attacks, hijacking,
 you know, DNS, like any of these things.
 
 284
 00:10:54,480 --> 00:10:56,320
-you know, DNS, like any of these things.
 It's completely subject to
 
 285
 00:10:56,320 --> 00:10:58,800
-It's completely subject to
 all those problems. When you get a
 
 286
 00:10:58,800 --> 00:11:00,560
-all those problems. When you get a
 did document, you have no way of knowing
 
 287
 00:11:00,560 --> 00:11:02,880
-did document, you have no way of knowing
 that the key that's published here now,
 
 288
 00:11:02,880 --> 00:11:06,040
-that the key that's published here now,
 frankly, is the key. But you also have
 
 289
 00:11:06,040 --> 00:11:08,320
-frankly, is the key. But you also have
 no idea of knowing this controller at
 
 290
 00:11:08,320 --> 00:11:09,440
-no idea of knowing this controller at
 some point in the past may have had
 
 291
 00:11:09,440 --> 00:11:11,000
-some point in the past may have had
 other keys, may have signed things with
 
 292
 00:11:11,000 --> 00:11:12,760
-other keys, may have signed things with
 other keys.
 
 293
 00:11:12,760 --> 00:11:14,280
-other keys.
 Don't know. None of that. You know You
 
 294
 00:11:14,280 --> 00:11:18,190
-Don't know. None of that. You know You
 know none of that with a did web. Yes.
 
 295
@@ -1464,12 +1202,10 @@ wanted to plus one and add a bit of
 
 297
 00:11:22,240 --> 00:11:23,440
-wanted to plus one and add a bit of
 bit of history. So, I was one of the
 
 298
 00:11:23,440 --> 00:11:26,870
-bit of history. So, I was one of the
 co-creators of the did web
 
 299
@@ -1483,57 +1219,46 @@ training wheels.
 
 301
 00:11:30,800 --> 00:11:32,880
-training wheels.
 Right? This was like, "Hey, you're just
 
 302
 00:11:32,880 --> 00:11:35,560
-Right? This was like, "Hey, you're just
 dipping your toe into did web. You're
 
 303
 00:11:35,560 --> 00:11:37,360
-dipping your toe into did web. You're
 going to try to do key
 
 304
 00:11:37,360 --> 00:11:40,120
-going to try to do key
 and then, you know, try did web like to
 
 305
 00:11:40,120 --> 00:11:42,160
-and then, you know, try did web like to
 resolve it over the network."
 
 306
 00:11:42,160 --> 00:11:44,600
-resolve it over the network."
 But, it has all of the all of the
 
 307
 00:11:44,600 --> 00:11:46,640
-But, it has all of the all of the
 downsides that you just mentioned.
 
 308
 00:11:46,640 --> 00:11:48,800
-downsides that you just mentioned.
 Right? There's no key history.
 
 309
 00:11:48,800 --> 00:11:50,920
-Right? There's no key history.
 There's no cryptographic binding of that
 
 310
 00:11:50,920 --> 00:11:53,280
-There's no cryptographic binding of that
 identifier to the key, all that stuff.
 
 311
 00:11:53,280 --> 00:11:56,710
-identifier to the key, all that stuff.
 The funny part is, so
 
 312
@@ -1543,67 +1268,54 @@ to it.
 
 313
 00:12:00,240 --> 00:12:02,840
-to it.
 But, what happened was so I was I was
 
 314
 00:12:02,840 --> 00:12:04,920
-But, what happened was so I was I was
 one of the authors of this back.
 
 315
 00:12:04,920 --> 00:12:07,040
-one of the authors of this back.
 And I opened an issue like, "Okay, now
 
 316
 00:12:07,040 --> 00:12:09,400
-And I opened an issue like, "Okay, now
 that we've gotten it out there, let's
 
 317
 00:12:09,400 --> 00:12:10,800
-that we've gotten it out there, let's
 add cryptographic binding. Let's add key
 
 318
 00:12:10,800 --> 00:12:12,120
-add cryptographic binding. Let's add key
 history."
 
 319
 00:12:12,120 --> 00:12:14,280
-history."
 And the other developers were like,
 
 320
 00:12:14,280 --> 00:12:15,840
-And the other developers were like,
 "Nope." And I was like, so basically
 
 321
 00:12:15,840 --> 00:12:16,960
-"Nope." And I was like, so basically
 there was a lot of pushback against
 
 322
 00:12:16,960 --> 00:12:17,880
-there was a lot of pushback against
 that. They're like, "We're going to keep
 
 323
 00:12:17,880 --> 00:12:20,480
-that. They're like, "We're going to keep
 it super basic. We're going to we're
 
 324
 00:12:20,480 --> 00:12:22,120
-it super basic. We're going to we're
 going to leave the binding and the
 
 325
 00:12:22,120 --> 00:12:24,550
-going to leave the binding and the
 history to other methods."
 
 326
@@ -1617,32 +1329,26 @@ Yeah.
 
 328
 00:12:26,720 --> 00:12:27,360
-Yeah.
 So.
 
 329
 00:12:27,360 --> 00:12:29,040
-So.
 that's that's basically what ended up
 
 330
 00:12:29,040 --> 00:12:31,960
-that's that's basically what ended up
 happening. Hence, did web
 
 331
 00:12:31,960 --> 00:12:32,440
-happening. Hence, did web
 and all that stuff.
 
 332
 00:12:32,440 --> 00:12:33,800
-and all that stuff.
 Yeah. Yeah, thanks. Appreciate the
 
 333
 00:12:33,800 --> 00:12:35,320
-Yeah. Yeah, thanks. Appreciate the
 history. So,
 
 334
@@ -1660,327 +1366,262 @@ to show here was kind of just give a bit
 
 337
 00:12:39,839 --> 00:12:41,920
-to show here was kind of just give a bit
 of background, but then
 
 338
 00:12:41,920 --> 00:12:45,720
-of background, but then
 if you look at the syntax of a did web,
 
 339
 00:12:45,720 --> 00:12:47,160
-if you look at the syntax of a did web,
 this is like relevant as we move
 
 340
 00:12:47,160 --> 00:12:49,440
-this is like relevant as we move
 into did:webs and other did web X
 
 341
 00:12:49,440 --> 00:12:52,320
-into did:webs and other did web X
 methods. So, you're going to have
 
 342
 00:12:52,320 --> 00:12:55,200
-methods. So, you're going to have
 basically the method specific
 
 343
 00:12:55,200 --> 00:12:57,800
-basically the method specific
 identifier for a did web is looks very
 
 344
 00:12:57,800 --> 00:12:59,440
-identifier for a did web is looks very
 much like a URL. So, you're going to
 
 345
 00:12:59,440 --> 00:13:02,560
-much like a URL. So, you're going to
 have your you know, host information.
 
 346
 00:13:02,560 --> 00:13:04,640
-have your you know, host information.
 You can have an optional port
 
 347
 00:13:04,640 --> 00:13:06,120
-You can have an optional port
 information. It has to be percent
 
 348
 00:13:06,120 --> 00:13:08,880
-information. It has to be percent
 encoded like this with URL safe.
 
 349
 00:13:08,880 --> 00:13:11,120
-encoded like this with URL safe.
 And then some path to whatever the
 
 350
 00:13:11,120 --> 00:13:13,680
-And then some path to whatever the
 document is. This would then translate
 
 351
 00:13:13,680 --> 00:13:16,000
-document is. This would then translate
 into a URL that looks like this, right?
 
 352
 00:13:16,000 --> 00:13:17,000
-into a URL that looks like this, right?
 So,
 
 353
 00:13:17,000 --> 00:13:20,880
-So,
 your host is example.com on port 3000,
 
 354
 00:13:20,880 --> 00:13:23,640
-your host is example.com on port 3000,
 path to document did.json. You resolve
 
 355
 00:13:23,640 --> 00:13:26,080
-path to document did.json. You resolve
 this, you're going to get back that JSON
 
 356
 00:13:26,080 --> 00:13:28,080
-this, you're going to get back that JSON
 did document.
 
 357
 00:13:28,080 --> 00:13:29,440
-did document.
 So,
 
 358
 00:13:29,440 --> 00:13:32,040
-So,
 there because of did web having the
 
 359
 00:13:32,040 --> 00:13:35,360
-there because of did web having the
 shortcomings that it has, a number of
 
 360
 00:13:35,360 --> 00:13:38,400
-shortcomings that it has, a number of
 designers have proposed solutions. Did
 
 361
 00:13:38,400 --> 00:13:40,200
-designers have proposed solutions. Did
 web S is one of them.
 
 362
 00:13:40,200 --> 00:13:42,280
-web S is one of them.
 I think it was really the first,
 
 363
 00:13:42,280 --> 00:13:44,120
-I think it was really the first,
 honestly, and then some others spun off,
 
 364
 00:13:44,120 --> 00:13:45,920
-honestly, and then some others spun off,
 but
 
 365
 00:13:45,920 --> 00:13:48,160
-but
 did:webs has a specification. Kent and
 
 366
 00:13:48,160 --> 00:13:50,280
-did:webs has a specification. Kent and
 I are responsible for it. We're working
 
 367
 00:13:50,280 --> 00:13:51,204
-I are responsible for it. We're working
 on it.
 
 368
 00:13:51,204 --> 00:13:51,720
-on it.
 [laughter and gasps]
 
 369
 00:13:51,720 --> 00:13:55,960
-[laughter and gasps]
 But what did:webs does
 
 370
 00:13:55,960 --> 00:13:58,320
-But what did:webs does
 is it separates discoverability from
 
 371
 00:13:58,320 --> 00:14:02,840
-is it separates discoverability from
 verifiability. So we use the web to
 
 372
 00:14:02,840 --> 00:14:06,280
-verifiability. So we use the web to
 discover the information about the
 
 373
 00:14:06,280 --> 00:14:08,640
-discover the information about the
 identifier, and you can use the did
 
 374
 00:14:08,640 --> 00:14:10,120
-identifier, and you can use the did
 document to get the keys and all of
 
 375
 00:14:10,120 --> 00:14:12,840
-document to get the keys and all of
 that. But, if you want to verify the
 
 376
 00:14:12,840 --> 00:14:16,160
-that. But, if you want to verify the
 information in the did document, you do
 
 377
 00:14:16,160 --> 00:14:20,200
-information in the did document, you do
 that via KERI events
 
 378
 00:14:20,200 --> 00:14:23,280
-that via KERI events
 through something we call the KERI
 
 379
 00:14:23,280 --> 00:14:26,360
-through something we call the KERI
 event stream, the KERI event stream,
 
 380
 00:14:26,360 --> 00:14:27,960
-event stream, the KERI event stream,
 which is kind of an
 
 381
 00:14:27,960 --> 00:14:31,000
-which is kind of an
 aggregation of various KERI events from
 
 382
 00:14:31,000 --> 00:14:32,880
-aggregation of various KERI events from
 various sources that the control that
 
 383
 00:14:32,880 --> 00:14:34,839
-various sources that the control that
 may be relevant to the controller, and
 
 384
 00:14:34,839 --> 00:14:36,520
-may be relevant to the controller, and
 that's aggregated into this KERI event
 
 385
 00:14:36,520 --> 00:14:39,040
-that's aggregated into this KERI event
 stream. So, to resolve a did:webs, you
 
 386
 00:14:39,040 --> 00:14:41,240
-stream. So, to resolve a did:webs, you
 actually are resolving two resources,
 
 387
 00:14:41,240 --> 00:14:44,000
-actually are resolving two resources,
 two endpoints. You resolve the did.json
 
 388
 00:14:44,000 --> 00:14:45,880
-two endpoints. You resolve the did.json
 and get the did document, but then you
 
 389
 00:14:45,880 --> 00:14:48,520
-and get the did document, but then you
 also resolve the KERI CESR, and you
 
 390
 00:14:48,520 --> 00:14:49,839
-also resolve the KERI CESR, and you
 have to validate that just like you
 
 391
 00:14:49,839 --> 00:14:52,720
-have to validate that just like you
 would any other KERI event stream. We
 
 392
 00:14:52,720 --> 00:14:54,800
-would any other KERI event stream. We
 have a question back here. Yeah, I just
 
 393
 00:14:54,800 --> 00:14:56,839
-have a question back here. Yeah, I just
 wanted to ask you is it possible to get
 
 394
 00:14:56,839 --> 00:14:59,960
-wanted to ask you is it possible to get
 the copy of the slides? Yeah. There's a
 
 395
 00:14:59,960 --> 00:15:02,600
-the copy of the slides? Yeah. There's a
 Yes. There's a little QR code at the
 
 396
 00:15:02,600 --> 00:15:04,520
-Yes. There's a little QR code at the
 end if you want to just scan it. Yeah.
 
 397
 00:15:04,520 --> 00:15:06,040
-end if you want to just scan it. Yeah.
 Yeah. Yeah.
 
 398
 00:15:06,040 --> 00:15:07,839
-Yeah. Yeah.
 Yep.
 
 399
 00:15:07,839 --> 00:15:11,600
-Yep.
 Oh, all slides all presentation
 
 400
 00:15:11,600 --> 00:15:12,760
-Oh, all slides all presentation
 Well, I must have missed that in the
 
 401
 00:15:12,760 --> 00:15:16,150
-Well, I must have missed that in the
 beginning.
 
 402
@@ -1990,177 +1631,142 @@ adoptable than did KERI because, you
 
 403
 00:15:22,440 --> 00:15:23,360
-adoptable than did KERI because, you
 know, it's got existing web
 
 404
 00:15:23,360 --> 00:15:24,600
-know, it's got existing web
 infrastructure. It solves the problem of
 
 405
 00:15:24,600 --> 00:15:26,320
-infrastructure. It solves the problem of
 how you discoverability.
 
 406
 00:15:26,320 --> 00:15:28,520
-how you discoverability.
 And it keeps the security cloud
 
 407
 00:15:28,520 --> 00:15:30,080
-And it keeps the security cloud
 properties of KERL.
 
 408
 00:15:30,080 --> 00:15:32,080
-properties of KERL.
 It provides way better verifiability
 
 409
 00:15:32,080 --> 00:15:34,480
-It provides way better verifiability
 than did web did web certainly, but
 
 410
 00:15:34,480 --> 00:15:36,240
-than did web did web certainly, but
 also than other did web X methods. And
 
 411
 00:15:36,240 --> 00:15:37,960
-also than other did web X methods. And
 we'll talk about did web versus other
 
 412
 00:15:37,960 --> 00:15:39,880
-we'll talk about did web versus other
 did web X methods a little bit at the
 
 413
 00:15:39,880 --> 00:15:41,920
-did web X methods a little bit at the
 end. But there are properties you get
 
 414
 00:15:41,920 --> 00:15:43,360
-end. But there are properties you get
 from did:webs that you don't get from
 
 415
 00:15:43,360 --> 00:15:48,280
-from did:webs that you don't get from
 any other did web X method.
 
 416
 00:15:48,280 --> 00:15:50,360
-any other did web X method.
 This is a did:webs identifier. You can
 
 417
 00:15:50,360 --> 00:15:52,160
-This is a did:webs identifier. You can
 see it looks super similar to a did web
 
 418
 00:15:52,160 --> 00:15:54,440
-see it looks super similar to a did web
 identifier. The only difference is
 
 419
 00:15:54,440 --> 00:15:57,520
-identifier. The only difference is
 the last segment of the method
 
 420
 00:15:57,520 --> 00:15:59,160
-the last segment of the method
 specific identifier is always the
 
 421
 00:15:59,160 --> 00:16:00,720
-specific identifier is always the
 autonomic identifier. It's always the
 
 422
 00:16:00,720 --> 00:16:03,240
-autonomic identifier. It's always the
 AID of the controller.
 
 423
 00:16:03,240 --> 00:16:04,320
-AID of the controller.
 So
 
 424
 00:16:04,320 --> 00:16:05,600
-So
 da
 
 425
 00:16:05,600 --> 00:16:07,680
-da
 path. You know, you've got the host,
 
 426
 00:16:07,680 --> 00:16:09,120
-path. You know, you've got the host,
 you've got the port, optional port,
 
 427
 00:16:09,120 --> 00:16:11,800
-you've got the port, optional port,
 you've got the path, and then at the end
 
 428
 00:16:11,800 --> 00:16:13,560
-you've got the path, and then at the end
 you've got the identifier.
 
 429
 00:16:13,560 --> 00:16:15,160
-you've got the identifier.
 In order to resolve this, you're going
 
 430
 00:16:15,160 --> 00:16:18,080
-In order to resolve this, you're going
 to turn this into essentially a URL up
 
 431
 00:16:18,080 --> 00:16:19,840
-to turn this into essentially a URL up
 to the path, and you're going to go get
 
 432
 00:16:19,840 --> 00:16:22,840
-to the path, and you're going to go get
 the \{{}slash} did.json and the \{{}slash}
 
 433
 00:16:22,840 --> 00:16:24,440
-the \{{}slash} did.json and the \{{}slash}
 KERL.cesr,
 
 434
 00:16:24,440 --> 00:16:25,920
-KERL.cesr,
 and the very first thing you better see
 
 435
 00:16:25,920 --> 00:16:29,120
-and the very first thing you better see
 in that KERL cesr is the inception event
 
 436
 00:16:29,120 --> 00:16:31,000
-in that KERL cesr is the inception event
 for that AID.
 
 437
 00:16:31,000 --> 00:16:34,550
-for that AID.
 If you don't see that, you're already
 
 438
@@ -2170,197 +1776,158 @@ So that path is not is just to a web
 
 439
 00:16:41,640 --> 00:16:43,560
-So that path is not is just to a web
 server that's serving the redirect. It's
 
 440
 00:16:43,560 --> 00:16:46,280
-server that's serving the redirect. It's
 not necessarily the KERL watcher.
 
 441
 00:16:46,280 --> 00:16:48,680
-not necessarily the KERL watcher.
 It's not the KERL watcher. 100% not the
 
 442
 00:16:48,680 --> 00:16:51,000
-It's not the KERL watcher. 100% not the
 KERL watcher. It is where you go to get
 
 443
 00:16:51,000 --> 00:16:52,120
-KERL watcher. It is where you go to get
 the
 
 444
 00:16:52,120 --> 00:16:53,600
-the
 Ultimately, it's where you go to get the
 
 445
 00:16:53,600 --> 00:16:56,000
-Ultimately, it's where you go to get the
 KERL.cesr stream.
 
 446
 00:16:56,000 --> 00:16:57,040
-KERL.cesr stream.
 But it's also where you can for
 
 447
 00:16:57,040 --> 00:16:59,040
-But it's also where you can for
 convenience get the did.json file,
 
 448
 00:16:59,040 --> 00:17:01,440
-convenience get the did.json file,
 because it's a did. By specification,
 
 449
 00:17:01,440 --> 00:17:03,400
-because it's a did. By specification,
 you have to have a did.json file there
 
 450
 00:17:03,400 --> 00:17:05,240
-you have to have a did.json file there
 at that endpoint as well. And then with
 
 451
 00:17:05,240 --> 00:17:08,640
-at that endpoint as well. And then with
 that did.KERL stream, that's where
 
 452
 00:17:08,640 --> 00:17:09,839
-that did.KERL stream, that's where
 you're going to confirm against the
 
 453
 00:17:09,839 --> 00:17:12,040
-you're going to confirm against the
 watcher to make sure that it verifies
 
 454
 00:17:12,040 --> 00:17:13,959
-watcher to make sure that it verifies
 correctly. Sure. KERL.cesr, you're going
 
 455
 00:17:13,959 --> 00:17:15,560
-correctly. Sure. KERL.cesr, you're going
 to take the information from
 
 456
 00:17:15,560 --> 00:17:16,800
-to take the information from
 the
 
 457
 00:17:16,800 --> 00:17:19,520
-the
 KERL event stream With the file is
 
 458
 00:17:19,520 --> 00:17:21,520
-KERL event stream With the file is
 called KERI.cesr.
 
 459
 00:17:21,520 --> 00:17:22,920
-called KERI.cesr.
 It's a cesr encoded stream of KERI
 
 460
 00:17:22,920 --> 00:17:24,680
-It's a cesr encoded stream of KERI
 events and you're going to use that,
 
 461
 00:17:24,680 --> 00:17:26,079
-events and you're going to use that,
 yeah, sure, against the watcher or
 
 462
 00:17:26,079 --> 00:17:27,240
-yeah, sure, against the watcher or
 whatever validation you're
 
 463
 00:17:27,240 --> 00:17:28,120
-whatever validation you're
 going to do. What's going to happen
 
 464
 00:17:28,120 --> 00:17:30,120
-going to do. What's going to happen
 first is your did resolver is going
 
 465
 00:17:30,120 --> 00:17:32,280
-first is your did resolver is going
 to validate that. That's what a did webs
 
 466
 00:17:32,280 --> 00:17:34,640
-to validate that. That's what a did webs
 resolver is supposed to do is check
 
 467
 00:17:34,640 --> 00:17:36,360
-resolver is supposed to do is check
 that.
 
 468
 00:17:36,360 --> 00:17:38,160
-that.
 So, I mean I'm I'm not hearing so I'm
 
 469
 00:17:38,160 --> 00:17:40,240
-So, I mean I'm I'm not hearing so I'm
 trying to understand.
 
 470
 00:17:40,240 --> 00:17:42,840
-trying to understand.
 The cesr file is the source of truth for
 
 471
 00:17:42,840 --> 00:17:46,360
-The cesr file is the source of truth for
 that Key Event Log? Yes. Okay, it's a
 
 472
 00:17:46,360 --> 00:17:48,840
-that Key Event Log? Yes. Okay, it's a
 Yes. The cesr is the credential is the
 
 473
 00:17:48,840 --> 00:17:50,680
-Yes. The cesr is the credential is the
 credential encoding format used by
 
 474
 00:17:50,680 --> 00:17:51,680
-credential encoding format used by
 KERI.
 
 475
 00:17:51,680 --> 00:17:54,320
-KERI.
 Okay. Correct? Cesr is a it's an it's a
 
 476
 00:17:54,320 --> 00:17:56,360
-Okay. Correct? Cesr is a it's an it's a
 streaming yeah, it's a streaming
 
 477
 00:17:56,360 --> 00:17:58,990
-streaming yeah, it's a streaming
 protocol.
 
 478
@@ -2370,182 +1937,146 @@ So, so given that we are reversing we're
 
 479
 00:18:04,480 --> 00:18:07,360
-So, so given that we are reversing we're
 giving responsibility to the controller
 
 480
 00:18:07,360 --> 00:18:10,760
-giving responsibility to the controller
 for his her keys? Yeah.
 
 481
 00:18:10,760 --> 00:18:13,920
-for his her keys? Yeah.
 Is there a protocol that given
 
 482
 00:18:13,920 --> 00:18:14,960
-Is there a protocol that given
 this
 
 483
 00:18:14,960 --> 00:18:17,800
-this
 exception log gets pushed to the domain
 
 484
 00:18:17,800 --> 00:18:20,560
-exception log gets pushed to the domain
 of some
 
 485
 00:18:20,560 --> 00:18:22,840
-of some
 DNS host
 
 486
 00:18:22,840 --> 00:18:25,040
-DNS host
 or I mean a website?
 
 487
 00:18:25,040 --> 00:18:25,800
-or I mean a website?
 Or
 
 488
 00:18:25,800 --> 00:18:26,680
-Or
 Yeah. I'm
 
 489
 00:18:26,680 --> 00:18:28,480
-Yeah. I'm
 I'm I'm looking at it from the custodian
 
 490
 00:18:28,480 --> 00:18:30,200
-I'm I'm looking at it from the custodian
 perspective. So, I have my customers, I
 
 491
 00:18:30,200 --> 00:18:33,800
-perspective. So, I have my customers, I
 assign them a did webs did. Mhm. But
 
 492
 00:18:33,800 --> 00:18:34,640
-assign them a did webs did. Mhm. But
 then
 
 493
 00:18:34,640 --> 00:18:36,680
-then
 it breaks the whole purpose of KERI,
 
 494
 00:18:36,680 --> 00:18:38,720
-it breaks the whole purpose of KERI,
 right? Where my controller is
 
 495
 00:18:38,720 --> 00:18:39,720
-right? Where my controller is
 No, we'll talk about that in a minute,
 
 496
 00:18:39,720 --> 00:18:42,240
-No, we'll talk about that in a minute,
 actually. Okay. But
 
 497
 00:18:42,240 --> 00:18:44,080
-actually. Okay. But
 theoretically you could provide a
 
 498
 00:18:44,080 --> 00:18:45,680
-theoretically you could provide a
 hosting
 
 499
 00:18:45,680 --> 00:18:48,920
-hosting
 platform for individuals to have a did
 
 500
 00:18:48,920 --> 00:18:51,640
-platform for individuals to have a did
 webs. You could certainly do that. And
 
 501
 00:18:51,640 --> 00:18:53,560
-webs. You could certainly do that. And
 the individuals have to push their own
 
 502
 00:18:53,560 --> 00:18:54,240
-the individuals have to push their own
 Well, they wouldn't have to push their
 
 503
 00:18:54,240 --> 00:18:56,520
-Well, they wouldn't have to push their
 own. You could do that for them, but
 
 504
 00:18:56,520 --> 00:18:58,720
-own. You could do that for them, but
 but there's a mechanism that did webs
 
 505
 00:18:58,720 --> 00:19:01,560
-but there's a mechanism that did webs
 has that is intrinsic to KERI that
 
 506
 00:19:01,560 --> 00:19:05,040
-has that is intrinsic to KERI that
 allows the controller to authorize that
 
 507
 00:19:05,040 --> 00:19:07,800
-allows the controller to authorize that
 endpoint as the definitive endpoint for
 
 508
 00:19:07,800 --> 00:19:09,400
-endpoint as the definitive endpoint for
 their did.
 
 509
 00:19:09,400 --> 00:19:10,200
-their did.
 And we'll talk about that in just a
 
 510
 00:19:10,200 --> 00:19:11,920
-And we'll talk about that in just a
 minute. And that's actually one of the
 
 511
 00:19:11,920 --> 00:19:13,520
-minute. And that's actually one of the
 unique features of did:webs that other
 
 512
 00:19:13,520 --> 00:19:15,760
-unique features of did:webs that other
 did:webs methods do not have. And this
 
 513
 00:19:15,760 --> 00:19:17,240
-did:webs methods do not have. And this
 is maybe a good point, too, to bring out
 
 514
 00:19:17,240 --> 00:19:19,670
-is maybe a good point, too, to bring out
 the fact that
 
 515
@@ -2559,22 +2090,18 @@ like a minor kind of detail, but it's
 
 517
 00:19:24,360 --> 00:19:27,120
-like a minor kind of detail, but it's
 actually functionally has some pretty
 
 518
 00:19:27,120 --> 00:19:29,440
-actually functionally has some pretty
 important ramifications.
 
 519
 00:19:29,440 --> 00:19:33,040
-important ramifications.
 did:webs, the DID document is always a
 
 520
 00:19:33,040 --> 00:19:39,070
-did:webs, the DID document is always a
 derivative of some KERI event stream.
 
 521
@@ -2584,87 +2111,70 @@ So, there's no idea of like
 
 522
 00:19:42,600 --> 00:19:44,040
-So, there's no idea of like
 I'm going to go write this
 
 523
 00:19:44,040 --> 00:19:45,760
-I'm going to go write this
 like type out my DID document or
 
 524
 00:19:45,760 --> 00:19:47,440
-like type out my DID document or
 something like that, right?
 
 525
 00:19:47,440 --> 00:19:48,520
-something like that, right?
 Like
 
 526
 00:19:48,520 --> 00:19:50,200
-Like
 the DID document should always be
 
 527
 00:19:50,200 --> 00:19:52,480
-the DID document should always be
 generated from some KERI event stream,
 
 528
 00:19:52,480 --> 00:19:54,480
-generated from some KERI event stream,
 and the current key state and all of the
 
 529
 00:19:54,480 --> 00:19:56,800
-and the current key state and all of the
 other events that have happened in that
 
 530
 00:19:56,800 --> 00:19:59,160
-other events that have happened in that
 have a consequence on what shows up in
 
 531
 00:19:59,160 --> 00:20:02,560
-have a consequence on what shows up in
 the DID document. This is reversed from
 
 532
 00:20:02,560 --> 00:20:05,720
-the DID document. This is reversed from
 other did:webs methods like DID Web VH,
 
 533
 00:20:05,720 --> 00:20:07,480
-other did:webs methods like DID Web VH,
 where it's kind of the other way around.
 
 534
 00:20:07,480 --> 00:20:09,320
-where it's kind of the other way around.
 The DID document and the state of the
 
 535
 00:20:09,320 --> 00:20:11,400
-The DID document and the state of the
 DID document creates the verifiable
 
 536
 00:20:11,400 --> 00:20:14,640
-DID document creates the verifiable
 history as hashes.
 
 537
 00:20:14,640 --> 00:20:16,880
-history as hashes.
 It's the other way around. And
 
 538
 00:20:16,880 --> 00:20:19,750
-It's the other way around. And
 there are some ramifications for this
 
 539
@@ -2674,657 +2184,526 @@ come up.
 
 540
 00:20:22,160 --> 00:20:26,240
-come up.
 It's it's less it's a less nuanced
 
 541
 00:20:26,240 --> 00:20:28,560
-It's it's less it's a less nuanced
 differentiation than you might think.
 
 542
 00:20:28,560 --> 00:20:29,840
-differentiation than you might think.
 Are you going to cover those
 
 543
 00:20:29,840 --> 00:20:31,240
-Are you going to cover those
 ramifications? At the end, yeah. We'll
 
 544
 00:20:31,240 --> 00:20:32,400
-ramifications? At the end, yeah. We'll
 talk about it for a little bit, yeah.
 
 545
 00:20:32,400 --> 00:20:33,379
-talk about it for a little bit, yeah.
 You just piqued my interest.
 
 546
 00:20:33,379 --> 00:20:34,840
-You just piqued my interest.
 [laughter]
 
 547
 00:20:34,840 --> 00:20:37,560
-[laughter]
 So did:webs has some features that
 
 548
 00:20:37,560 --> 00:20:39,360
-So did:webs has some features that
 just come because it's KERI based. You
 
 549
 00:20:39,360 --> 00:20:41,480
-just come because it's KERI based. You
 get multi-party signatures.
 
 550
 00:20:41,480 --> 00:20:43,760
-get multi-party signatures.
 You get delegation. I want to be
 
 551
 00:20:43,760 --> 00:20:46,080
-You get delegation. I want to be
 clear this is really clear for
 
 552
 00:20:46,080 --> 00:20:47,440
-clear this is really clear for
 people who are in KERI land, there's
 
 553
 00:20:47,440 --> 00:20:48,920
-people who are in KERI land, there's
 kind of there's two kinds of delegation
 
 554
 00:20:48,920 --> 00:20:50,600
-kind of there's two kinds of delegation
 we can talk about, right? There's
 
 555
 00:20:50,600 --> 00:20:53,120
-we can talk about, right? There's
 ACDC-based delegation that you get
 
 556
 00:20:53,120 --> 00:20:55,160
-ACDC-based delegation that you get
 through like VE LI, where you get, you
 
 557
 00:20:55,160 --> 00:20:56,160
-through like VE LI, where you get, you
 know,
 
 558
 00:20:56,160 --> 00:20:58,680
-know,
 this hierarchy of credentials that
 
 559
 00:20:58,680 --> 00:21:01,320
-this hierarchy of credentials that
 go back to a root credential. That's not
 
 560
 00:21:01,320 --> 00:21:02,880
-go back to a root credential. That's not
 what we're talking about here. This is
 
 561
 00:21:02,880 --> 00:21:05,200
-what we're talking about here. This is
 AID delegation. This is where my
 
 562
 00:21:05,200 --> 00:21:08,320
-AID delegation. This is where my
 identifier is specifically saying, "And
 
 563
 00:21:08,320 --> 00:21:10,320
-identifier is specifically saying, "And
 this identifier is allowed to act on my
 
 564
 00:21:10,320 --> 00:21:12,640
-this identifier is allowed to act on my
 behalf. Okay? That's a different kind of
 
 565
 00:21:12,640 --> 00:21:14,760
-behalf. Okay? That's a different kind of
 delegation. We can we can encode that
 
 566
 00:21:14,760 --> 00:21:17,000
-delegation. We can we can encode that
 into a did:webs did document. It
 
 567
 00:21:17,000 --> 00:21:18,840
-into a did:webs did document. It
 supports services that are relevant to
 
 568
 00:21:18,840 --> 00:21:21,280
-supports services that are relevant to
 KERI like OOBI endpoints, witnesses,
 
 569
 00:21:21,280 --> 00:21:23,760
-KERI like OOBI endpoints, witnesses,
 agents, mailboxes, and it supports
 
 570
 00:21:23,760 --> 00:21:26,400
-agents, mailboxes, and it supports
 designated aliases
 
 571
 00:21:26,400 --> 00:21:28,680
-designated aliases
 through ACDCs. So this is an ACDC
 
 572
 00:21:28,680 --> 00:21:31,600
-through ACDCs. So this is an ACDC
 delegation concept, but this is where
 
 573
 00:21:31,600 --> 00:21:33,280
-delegation concept, but this is where
 for example
 
 574
 00:21:33,280 --> 00:21:35,680
-for example
 it's required in the did:webs spec that
 
 575
 00:21:35,680 --> 00:21:39,040
-it's required in the did:webs spec that
 if I'm going to have my did web
 
 576
 00:21:39,040 --> 00:21:40,640
-if I'm going to have my did web
 I
 
 577
 00:21:40,640 --> 00:22:07,080
-I
 I says example.com in it
 
 578
 00:22:07,080 --> 00:22:08,840
-I says example.com in it
 implicitly I'm telling you I've
 
 579
 00:22:08,840 --> 00:22:11,400
-implicitly I'm telling you I've
 authorized this. In a did:webs when I
 
 580
 00:22:11,400 --> 00:22:12,760
-authorized this. In a did:webs when I
 give you
 
 581
 00:22:12,760 --> 00:22:15,120
-give you
 you know, Moisey's service.com
 
 582
 00:22:15,120 --> 00:22:16,160
-you know, Moisey's service.com
 or whatever it is you're hosting for
 
 583
 00:22:16,160 --> 00:22:17,320
-or whatever it is you're hosting for
 people
 
 584
 00:22:17,320 --> 00:22:18,280
-people
 like
 
 585
 00:22:18,280 --> 00:22:20,840
-like
 the person who's verifying my did gets
 
 586
 00:22:20,840 --> 00:22:22,840
-the person who's verifying my did gets
 to go through my KEL and gets to see
 
 587
 00:22:22,840 --> 00:22:25,040
-to go through my KEL and gets to see
 that I actually did at one point give
 
 588
 00:22:25,040 --> 00:22:26,840
-that I actually did at one point give
 you the authorization to host that at
 
 589
 00:22:26,840 --> 00:22:29,080
-you the authorization to host that at
 this location. This is the only did web
 
 590
 00:22:29,080 --> 00:22:31,640
-this location. This is the only did web
 S method that provides that capability.
 
 591
 00:22:31,640 --> 00:22:33,600
-S method that provides that capability.
 Sorry. Did I control their scale? Where
 
 592
 00:22:33,600 --> 00:22:35,240
-Sorry. Did I control their scale? Where
 where do those live?
 
 593
 00:22:35,240 --> 00:22:38,640
-where do those live?
 They live in the authorization.
 
 594
 00:22:38,640 --> 00:22:40,320
-They live in the authorization.
 Are you asking where does what live? The
 
 595
 00:22:40,320 --> 00:22:42,920
-Are you asking where does what live? The
 the controller's KEL live.
 
 596
 00:22:42,920 --> 00:22:45,880
-the controller's KEL live.
 The controller's KEL lives wherever
 
 597
 00:22:45,880 --> 00:22:47,840
-The controller's KEL lives wherever
 the controller's KEL lives cuz it's
 
 598
 00:22:47,840 --> 00:22:50,880
-the controller's KEL lives cuz it's
 KERI, but the information from that KEL
 
 599
 00:22:50,880 --> 00:22:54,200
-KERI, but the information from that KEL
 that's relevant to the did:webs is
 
 600
 00:22:54,200 --> 00:22:56,800
-that's relevant to the did:webs is
 aggregated into this KERI event stream
 
 601
 00:22:56,800 --> 00:22:58,960
-aggregated into this KERI event stream
 and encoded in a KERI.CESR file which
 
 602
 00:22:58,960 --> 00:23:02,200
-and encoded in a KERI.CESR file which
 lives on your server cuz hosting it.
 
 603
 00:23:02,200 --> 00:23:04,400
-lives on your server cuz hosting it.
 Yeah, Ken. So I want to I want to
 
 604
 00:23:04,400 --> 00:23:05,760
-Yeah, Ken. So I want to I want to
 May I add something to
 
 605
 00:23:05,760 --> 00:23:07,680
-May I add something to
 Sure. what you said earlier?
 
 606
 00:23:07,680 --> 00:23:09,120
-Sure. what you said earlier?
 So, earlier you said, and this is
 
 607
 00:23:09,120 --> 00:23:10,480
-So, earlier you said, and this is
 important
 
 608
 00:23:10,480 --> 00:23:11,680
-important
 for those that are new to DID Web As,
 
 609
 00:23:11,680 --> 00:23:13,000
-for those that are new to DID Web As,
 you said
 
 610
 00:23:13,000 --> 00:23:16,120
-you said
 the DID Web As DID document is always
 
 611
 00:23:16,120 --> 00:23:18,160
-the DID Web As DID document is always
 derived from the KERI event stream.
 
 612
 00:23:18,160 --> 00:23:20,720
-derived from the KERI event stream.
 Mhm. And I think it's worth
 
 613
 00:23:20,720 --> 00:23:22,320
-Mhm. And I think it's worth
 highlighting the fact
 
 614
 00:23:22,320 --> 00:23:23,920
-highlighting the fact
 that based on what you just barely said
 
 615
 00:23:23,920 --> 00:23:25,880
-that based on what you just barely said
 about the path information being in an
 
 616
 00:23:25,880 --> 00:23:27,160
-about the path information being in an
 ACDC,
 
 617
 00:23:27,160 --> 00:23:30,200
-ACDC,
 that the DID document will always be
 
 618
 00:23:30,200 --> 00:23:31,520
-that the DID document will always be
 derived
 
 619
 00:23:31,520 --> 00:23:34,120
-derived
 from an ACDC as well. You've got the
 
 620
 00:23:34,120 --> 00:23:35,360
-from an ACDC as well. You've got the
 KERI event stream with the KERI
 
 621
 00:23:35,360 --> 00:23:38,160
-KERI event stream with the KERI
 event logs, and actually the tail and
 
 622
 00:23:38,160 --> 00:23:40,440
-event logs, and actually the tail and
 ACDC. So,
 
 623
 00:23:40,440 --> 00:23:41,560
-ACDC. So,
 cuz when I was first learning the DID
 
 624
 00:23:41,560 --> 00:23:44,080
-cuz when I was first learning the DID
 Web As spec, I was like, oh, is there a
 
 625
 00:23:44,080 --> 00:23:45,960
-Web As spec, I was like, oh, is there a
 is it Does it make sense to just have a
 
 626
 00:23:45,960 --> 00:23:47,360
-is it Does it make sense to just have a
 KERI event as it cuz I you know, that
 
 627
 00:23:47,360 --> 00:23:48,840
-KERI event as it cuz I you know, that
 was simpler, I thought. I thought it
 
 628
 00:23:48,840 --> 00:23:50,800
-was simpler, I thought. I thought it
 was a good idea at the beginning.
 
 629
 00:23:50,800 --> 00:23:52,320
-was a good idea at the beginning.
 Then as I got more familiar, I thought,
 
 630
 00:23:52,320 --> 00:23:54,080
-Then as I got more familiar, I thought,
 you know what? Actually,
 
 631
 00:23:54,080 --> 00:23:56,000
-you know what? Actually,
 cuz my goal was maybe we can have a DID
 
 632
 00:23:56,000 --> 00:23:58,400
-cuz my goal was maybe we can have a DID
 Web As version that only depends on
 
 633
 00:23:58,400 --> 00:24:00,200
-Web As version that only depends on
 KERI, not KERI and ACDC. I tried
 
 634
 00:24:00,200 --> 00:24:01,440
-KERI, not KERI and ACDC. I tried
 to simplify it.
 
 635
 00:24:01,440 --> 00:24:02,440
-to simplify it.
 But actually, when you look at the
 
 636
 00:24:02,440 --> 00:24:03,960
-But actually, when you look at the
 security characteristics that you're
 
 637
 00:24:03,960 --> 00:24:05,440
-security characteristics that you're
 going to get into in just a minute,
 
 638
 00:24:05,440 --> 00:24:06,280
-going to get into in just a minute,
 Jonathan,
 
 639
 00:24:06,280 --> 00:24:09,160
-Jonathan,
 you want there to be an explicit
 
 640
 00:24:09,160 --> 00:24:10,680
-you want there to be an explicit
 authorization
 
 641
 00:24:10,680 --> 00:24:13,960
-authorization
 of the path segments of the whole DID.
 
 642
 00:24:13,960 --> 00:24:15,920
-of the path segments of the whole DID.
 So, it's important to realize that
 
 643
 00:24:15,920 --> 00:24:17,640
-So, it's important to realize that
 the KERI event stream I think it
 
 644
 00:24:17,640 --> 00:24:19,200
-the KERI event stream I think it
 bears repeating that the KERI event
 
 645
 00:24:19,200 --> 00:24:22,040
-bears repeating that the KERI event
 stream will always include at least one
 
 646
 00:24:22,040 --> 00:24:24,680
-stream will always include at least one
 ACDC. It has to have one ACDC. You
 
 647
 00:24:24,680 --> 00:24:25,960
-ACDC. It has to have one ACDC. You
 cannot have a DID Web As unless there's
 
 648
 00:24:25,960 --> 00:24:28,440
-cannot have a DID Web As unless there's
 at least one ACDC because at the very
 
 649
 00:24:28,440 --> 00:24:30,840
-at least one ACDC because at the very
 least, you have to authorize the host
 
 650
 00:24:30,840 --> 00:24:33,640
-least, you have to authorize the host
 and path information for the DID Web As.
 
 651
 00:24:33,640 --> 00:24:37,880
-and path information for the DID Web As.
 Period. That's all. Why is DID Web VH
 
 652
 00:24:37,880 --> 00:24:40,080
-Period. That's all. Why is DID Web VH
 inherently unsafe? Well, it's not
 
 653
 00:24:40,080 --> 00:24:41,560
-inherently unsafe? Well, it's not
 inherently unsafe. It does a lot of
 
 654
 00:24:41,560 --> 00:24:44,000
-inherently unsafe. It does a lot of
 things fine. One thing it does not do is
 
 655
 00:24:44,000 --> 00:24:45,880
-things fine. One thing it does not do is
 it doesn't let you as a controller
 
 656
 00:24:45,880 --> 00:24:48,560
-it doesn't let you as a controller
 explicitly
 
 657
 00:24:48,560 --> 00:24:51,320
-explicitly
 authorize host and path information for
 
 658
 00:24:51,320 --> 00:24:53,840
-authorize host and path information for
 your identifier. It's always implicit
 
 659
 00:24:53,840 --> 00:24:56,240
-your identifier. It's always implicit
 because like I'm going to give you my
 
 660
 00:24:56,240 --> 00:24:58,600
-because like I'm going to give you my
 DID web VH and it's going to say
 
 661
 00:24:58,600 --> 00:25:01,280
-DID web VH and it's going to say
 rayback.com and because I gave that to
 
 662
 00:25:01,280 --> 00:25:03,360
-rayback.com and because I gave that to
 you by whatever mechanism, you're going
 
 663
 00:25:03,360 --> 00:25:04,600
-you by whatever mechanism, you're going
 to assume implicitly that I've
 
 664
 00:25:04,600 --> 00:25:06,920
-to assume implicitly that I've
 authorized that.
 
 665
 00:25:06,920 --> 00:25:09,160
-authorized that.
 KERI says no, I'm going to actually
 
 666
 00:25:09,160 --> 00:25:11,240
-KERI says no, I'm going to actually
 validate that because I'm going to check
 
 667
 00:25:11,240 --> 00:25:14,480
-validate that because I'm going to check
 to see if you issued an ACDC authorizing
 
 668
 00:25:14,480 --> 00:25:16,280
-to see if you issued an ACDC authorizing
 this cryptographically. That's an
 
 669
 00:25:16,280 --> 00:25:19,600
-this cryptographically. That's an
 explicit authorization versus implicit.
 
 670
 00:25:19,600 --> 00:25:24,470
-explicit authorization versus implicit.
 So that makes sense. I just want to add
 
 671
@@ -3334,447 +2713,358 @@ by handing over but by
 
 672
 00:25:30,880 --> 00:25:32,680
-by handing over but by
 signing. Right? There's an The
 
 673
 00:25:32,680 --> 00:25:33,560
-signing. Right? There's an The
 identifier.
 
 674
 00:25:33,560 --> 00:25:34,760
-identifier.
 The identifier. There's there's an
 
 675
 00:25:34,760 --> 00:25:36,480
-The identifier. There's there's an
 implicit authorization
 
 676
 00:25:36,480 --> 00:25:38,680
-implicit authorization
 signed with the user keys
 
 677
 00:25:38,680 --> 00:25:40,120
-signed with the user keys
 that serves as a
 
 678
 00:25:40,120 --> 00:25:41,160
-that serves as a
 Yeah.
 
 679
 00:25:41,160 --> 00:25:43,200
-Yeah.
 Yeah. True.
 
 680
 00:25:43,200 --> 00:25:44,040
-Yeah. True.
 And I might as well just get to the
 
 681
 00:25:44,040 --> 00:25:45,760
-And I might as well just get to the
 point cuz I may not get to the slide
 
 682
 00:25:45,760 --> 00:25:47,040
-point cuz I may not get to the slide
 cuz I realize I'm running out of time.
 
 683
 00:25:47,040 --> 00:25:49,240
-cuz I realize I'm running out of time.
 But like the other thing that did web VH
 
 684
 00:25:49,240 --> 00:25:52,080
-But like the other thing that did web VH
 does not do as well as did:webs is the
 
 685
 00:25:52,080 --> 00:25:54,360
-does not do as well as did:webs is the
 long-term long-term long-lived
 
 686
 00:25:54,360 --> 00:25:56,000
-long-term long-term long-lived
 multi-decade
 
 687
 00:25:56,000 --> 00:25:58,320
-multi-decade
 identifier problem.
 
 688
 00:25:58,320 --> 00:26:00,520
-identifier problem.
 The spec really tries to make sure that
 
 689
 00:26:00,520 --> 00:26:02,720
-The spec really tries to make sure that
 it's possible to do that but it gets
 
 690
 00:26:02,720 --> 00:26:05,120
-it's possible to do that but it gets
 quite awkward. If you're going to change
 
 691
 00:26:05,120 --> 00:26:07,560
-quite awkward. If you're going to change
 like hosting, you're going to you're
 
 692
 00:26:07,560 --> 00:26:10,440
-like hosting, you're going to you're
 going to change path websites over time.
 
 693
 00:26:10,440 --> 00:26:12,160
-going to change path websites over time.
 And this is where I think that stems
 
 694
 00:26:12,160 --> 00:26:14,520
-And this is where I think that stems
 from the fundamental difference. Like
 
 695
 00:26:14,520 --> 00:26:15,720
-from the fundamental difference. Like
 you're essentially going to publish a
 
 696
 00:26:15,720 --> 00:26:16,640
-you're essentially going to publish a
 new
 
 697
 00:26:16,640 --> 00:26:18,680
-new
 did document with new
 
 698
 00:26:18,680 --> 00:26:21,040
-did document with new
 location information in it and then you
 
 699
 00:26:21,040 --> 00:26:22,520
-location information in it and then you
 have to kind of go and make sure that
 
 700
 00:26:22,520 --> 00:26:24,320
-have to kind of go and make sure that
 your verify history A got transferred
 
 701
 00:26:24,320 --> 00:26:26,480
-your verify history A got transferred
 from one domain to another, B that it
 
 702
 00:26:26,480 --> 00:26:28,160
-from one domain to another, B that it
 like has all of the steps in it, that
 
 703
 00:26:28,160 --> 00:26:29,680
-like has all of the steps in it, that
 nothing got missed. Like that's all
 
 704
 00:26:29,680 --> 00:26:31,440
-nothing got missed. Like that's all
 really important. Managing that over
 
 705
 00:26:31,440 --> 00:26:34,280
-really important. Managing that over
 time is much less practical than a did
 
 706
 00:26:34,280 --> 00:26:36,200
-time is much less practical than a did
 web S because it's the other way around.
 
 707
 00:26:36,200 --> 00:26:38,280
-web S because it's the other way around.
 In did:webs all of this is happening by
 
 708
 00:26:38,280 --> 00:26:40,480
-In did:webs all of this is happening by
 stuff in the in the KEL or the tel or
 
 709
 00:26:40,480 --> 00:26:42,560
-stuff in the in the KEL or the tel or
 one of the KERI artifacts which ends up
 
 710
 00:26:42,560 --> 00:26:44,680
-one of the KERI artifacts which ends up
 in the KERI.CESR and therefore your did
 
 711
 00:26:44,680 --> 00:26:46,280
-in the KERI.CESR and therefore your did
 document is always going to be like
 
 712
 00:26:46,280 --> 00:26:48,080
-document is always going to be like
 reflective of the actual current state
 
 713
 00:26:48,080 --> 00:26:51,080
-reflective of the actual current state
 of things cuz it's derived from the
 
 714
 00:26:51,080 --> 00:26:53,040
-of things cuz it's derived from the
 KERI event information. So they did
 
 715
 00:26:53,040 --> 00:26:54,880
-KERI event information. So they did
 tried to do KERI light and now they
 
 716
 00:26:54,880 --> 00:26:56,760
-tried to do KERI light and now they
 have to bolt on.
 
 717
 00:26:56,760 --> 00:26:57,880
-have to bolt on.
 I mean, they have a whole section on
 
 718
 00:26:57,880 --> 00:26:59,960
-I mean, they have a whole section on
 witnesses and watchers now, so yeah, you
 
 719
 00:26:59,960 --> 00:27:01,720
-witnesses and watchers now, so yeah, you
 know, but
 
 720
 00:27:01,720 --> 00:27:04,000
-know, but
 So, this is the also known as I want
 
 721
 00:27:04,000 --> 00:27:05,960
-So, this is the also known as I want
 to get into this really quick.
 
 722
 00:27:05,960 --> 00:27:07,800
-to get into this really quick.
 The spec requires there to be an also
 
 723
 00:27:07,800 --> 00:27:09,200
-The spec requires there to be an also
 known as section in every did web to
 
 724
 00:27:09,200 --> 00:27:11,760
-known as section in every did web to
 document. You must list the equivalent
 
 725
 00:27:11,760 --> 00:27:14,440
-document. You must list the equivalent
 did KERI as part of the also known as.
 
 726
 00:27:14,440 --> 00:27:16,120
-did KERI as part of the also known as.
 So, at least there's going to be a did
 
 727
 00:27:16,120 --> 00:27:18,080
-So, at least there's going to be a did
 KERI in every did web to document cuz
 
 728
 00:27:18,080 --> 00:27:19,760
-KERI in every did web to document cuz
 that's considered an also known it's
 
 729
 00:27:19,760 --> 00:27:22,000
-that's considered an also known it's
 always by definition
 
 730
 00:27:22,000 --> 00:27:24,160
-always by definition
 any did web is also known as did KERI
 
 731
 00:27:24,160 --> 00:27:26,240
-any did web is also known as did KERI
 whatever the ID is.
 
 732
 00:27:26,240 --> 00:27:29,640
-whatever the ID is.
 You may, if you choose
 
 733
 00:27:29,640 --> 00:27:32,440
-You may, if you choose
 authorize a did web endpoint.
 
 734
 00:27:32,440 --> 00:27:34,600
-authorize a did web endpoint.
 So, that would happen by ACDC, the same
 
 735
 00:27:34,600 --> 00:27:37,160
-So, that would happen by ACDC, the same
 ACDC that the did:webs identifier shows
 
 736
 00:27:37,160 --> 00:27:39,200
-ACDC that the did:webs identifier shows
 up in. You can authorize a did web
 
 737
 00:27:39,200 --> 00:27:41,280
-up in. You can authorize a did web
 endpoint, which means you're authorizing
 
 738
 00:27:41,280 --> 00:27:44,040
-endpoint, which means you're authorizing
 a did web resolver to go resolve the did
 
 739
 00:27:44,040 --> 00:27:46,960
-a did web resolver to go resolve the did
 web version of the
 
 740
 00:27:46,960 --> 00:27:49,160
-web version of the
 Identifier
 
 741
 00:27:49,160 --> 00:27:50,480
-Identifier
 for interoperability or for whatever
 
 742
 00:27:50,480 --> 00:27:52,840
-for interoperability or for whatever
 reasons you want to you want, but like
 
 743
 00:27:52,840 --> 00:27:54,640
-reasons you want to you want, but like
 you have to explicitly authorize that
 
 744
 00:27:54,640 --> 00:27:57,120
-you have to explicitly authorize that
 and you if you don't authorize it
 
 745
 00:27:57,120 --> 00:27:59,040
-and you if you don't authorize it
 nobody should assume that like it's did
 
 746
 00:27:59,040 --> 00:28:00,680
-nobody should assume that like it's did
 web resolvable. You have to look for the
 
 747
 00:28:00,680 --> 00:28:02,480
-web resolvable. You have to look for the
 actual identifier in the did document to
 
 748
 00:28:02,480 --> 00:28:04,280
-actual identifier in the did document to
 know that.
 
 749
 00:28:04,280 --> 00:28:07,640
-know that.
 Verification method. Okay, so
 
 750
 00:28:07,640 --> 00:28:09,960
-Verification method. Okay, so
 this is
 
 751
 00:28:09,960 --> 00:28:11,520
-this is
 what a verification method looks like in
 
 752
 00:28:11,520 --> 00:28:14,040
-what a verification method looks like in
 a did:webs did document. This is all
 
 753
 00:28:14,040 --> 00:28:15,640
-a did:webs did document. This is all
 standard, you know, one of the various
 
 754
 00:28:15,640 --> 00:28:17,880
-standard, you know, one of the various
 options that's in the did standard.
 
 755
 00:28:17,880 --> 00:28:20,680
-options that's in the did standard.
 We support JSON web keys. We support
 
 756
 00:28:20,680 --> 00:28:23,840
-We support JSON web keys. We support
 ED25519. There are two or three other
 
 757
 00:28:23,840 --> 00:28:27,120
-ED25519. There are two or three other
 you know, what whatever key
 
 758
 00:28:27,120 --> 00:28:28,800
-you know, what whatever key
 public key
 
 759
 00:28:28,800 --> 00:28:30,440
-public key
 are supported in KERI, we support in
 
 760
 00:28:30,440 --> 00:28:33,590
-are supported in KERI, we support in
 did:webs.
 
 761
@@ -3788,67 +3078,54 @@ optional. It's optional to have this in
 
 763
 00:28:36,880 --> 00:28:39,200
-optional. It's optional to have this in
 your did:webs, but did web the did web
 
 764
 00:28:39,200 --> 00:28:41,440
-your did:webs, but did web the did web
 S spec does say specifically if you are
 
 765
 00:28:41,440 --> 00:28:43,640
-S spec does say specifically if you are
 going to include verification
 
 766
 00:28:43,640 --> 00:28:45,280
-going to include verification
 relationship
 
 767
 00:28:45,280 --> 00:28:47,680
-relationship
 the keys any key that you publish as a
 
 768
 00:28:47,680 --> 00:28:49,800
-the keys any key that you publish as a
 public key must be authorized both for
 
 769
 00:28:49,800 --> 00:28:51,680
-public key must be authorized both for
 authentication and assertion. That's the
 
 770
 00:28:51,680 --> 00:28:52,960
-authentication and assertion. That's the
 one thing. If you're going to have it,
 
 771
 00:28:52,960 --> 00:28:54,520
-one thing. If you're going to have it,
 you have to have both.
 
 772
 00:28:54,520 --> 00:28:55,800
-you have to have both.
 So,
 
 773
 00:28:55,800 --> 00:28:58,120
-So,
 again, because KERI itself
 
 774
 00:28:58,120 --> 00:29:01,080
-again, because KERI itself
 any keys that you publish are for either
 
 775
 00:29:01,080 --> 00:29:05,310
-any keys that you publish are for either
 either authentication or assertion.
 
 776
@@ -3858,27 +3135,22 @@ KERI services, which would look
 
 777
 00:29:09,160 --> 00:29:11,200
-KERI services, which would look
 familiar, I think, probably. Looks
 
 778
 00:29:11,200 --> 00:29:14,160
-familiar, I think, probably. Looks
 something like this in the
 
 779
 00:29:14,160 --> 00:29:16,760
-something like this in the
 in the did document. So, this service
 
 780
 00:29:16,760 --> 00:29:18,920
-in the did document. So, this service
 is a witness service. You can get to it
 
 781
 00:29:18,920 --> 00:29:25,950
-is a witness service. You can get to it
 at this URL or this TCP endpoint.
 
 782
@@ -3888,47 +3160,38 @@ parameters on the end of a did
 
 783
 00:29:30,040 --> 00:29:32,560
-parameters on the end of a did
 identifier, just like any other URI. So,
 
 784
 00:29:32,560 --> 00:29:34,800
-identifier, just like any other URI. So,
 for example, this one has a version ID
 
 785
 00:29:34,800 --> 00:29:36,600
-for example, this one has a version ID
 parameter on the end.
 
 786
 00:29:36,600 --> 00:29:38,920
-parameter on the end.
 This lets you tell the resolver
 
 787
 00:29:38,920 --> 00:29:40,880
-This lets you tell the resolver
 that you want version one of the So, you
 
 788
 00:29:40,880 --> 00:29:42,760
-that you want version one of the So, you
 can go back in time and derive the did
 
 789
 00:29:42,760 --> 00:29:45,240
-can go back in time and derive the did
 document that existed after
 
 790
 00:29:45,240 --> 00:29:47,240
-document that existed after
 event with sequence number one occurred
 
 791
 00:29:47,240 --> 00:29:52,230
-event with sequence number one occurred
 in the in the KEL, right?
 
 792
@@ -3938,247 +3201,198 @@ extension, which just
 
 793
 00:29:57,520 --> 00:29:58,480
-extension, which just
 I don't actually think we have this
 
 794
 00:29:58,480 --> 00:30:00,280
-I don't actually think we have this
 implemented in the resolver right now,
 
 795
 00:30:00,280 --> 00:30:01,680
-implemented in the resolver right now,
 but like theoretically, the spec says we
 
 796
 00:30:01,680 --> 00:30:03,520
-but like theoretically, the spec says we
 should support this. This basically just
 
 797
 00:30:03,520 --> 00:30:06,520
-should support this. This basically just
 means if you pass this in as part of the
 
 798
 00:30:06,520 --> 00:30:08,440
-means if you pass this in as part of the
 parameter, we're going to transform all
 
 799
 00:30:08,440 --> 00:30:11,680
-parameter, we're going to transform all
 the keys in the document to that format
 
 800
 00:30:11,680 --> 00:30:13,440
-the keys in the document to that format
 for convenience. This is for convenience
 
 801
 00:30:13,440 --> 00:30:14,440
-for convenience. This is for convenience
 for people who when they resolve the
 
 802
 00:30:14,440 --> 00:30:16,200
-for people who when they resolve the
 did.
 
 803
 00:30:16,200 --> 00:30:17,600
-did.
 What other formats would you use besides
 
 804
 00:30:17,600 --> 00:30:19,040
-What other formats would you use besides
 CESR?
 
 805
 00:30:19,040 --> 00:30:20,880
-CESR?
 I mean, they're like the native
 
 806
 00:30:20,880 --> 00:30:23,120
-I mean, they're like the native
 format that we support is this JWK.
 
 807
 00:30:23,120 --> 00:30:24,120
-format that we support is this JWK.
 Okay.
 
 808
 00:30:24,120 --> 00:30:25,240
-Okay.
 JSON web key, right?
 
 809
 00:30:25,240 --> 00:30:27,160
-JSON web key, right?
 think I opened an issue on this. There's
 
 810
 00:30:27,160 --> 00:30:28,920
-think I opened an issue on this. There's
 public key JWK and public key
 
 811
 00:30:28,920 --> 00:30:31,400
-public key JWK and public key
 multi-base. Yeah, those are the two. I'm
 
 812
 00:30:31,400 --> 00:30:33,000
-multi-base. Yeah, those are the two. I'm
 already using public key multi-base in
 
 813
 00:30:33,000 --> 00:30:34,800
-already using public key multi-base in
 the W3C cross walk, and so it's going to
 
 814
 00:30:34,800 --> 00:30:37,120
-the W3C cross walk, and so it's going to
 be added to the resolver. And
 
 815
 00:30:37,120 --> 00:30:38,440
-be added to the resolver. And
 the spec says we should be supporting
 
 816
 00:30:38,440 --> 00:30:41,200
-the spec says we should be supporting
 public key CESR as well. But,
 
 817
 00:30:41,200 --> 00:30:43,240
-public key CESR as well. But,
 then there's document metadata.
 
 818
 00:30:43,240 --> 00:30:45,360
-then there's document metadata.
 This is where you get into some like
 
 819
 00:30:45,360 --> 00:30:46,400
-This is where you get into some like
 I'm not going to get into much detail
 
 820
 00:30:46,400 --> 00:30:48,160
-I'm not going to get into much detail
 here, but the main one has to do with
 
 821
 00:30:48,160 --> 00:30:50,320
-here, but the main one has to do with
 this equivalent ID. There's a bit of a
 
 822
 00:30:50,320 --> 00:30:52,440
-this equivalent ID. There's a bit of a
 distinction, but the idea is anything
 
 823
 00:30:52,440 --> 00:30:53,960
-distinction, but the idea is anything
 that should show up in the equivalent ID
 
 824
 00:30:53,960 --> 00:30:55,200
-that should show up in the equivalent ID
 in the metadata. This is not in the DID
 
 825
 00:30:55,200 --> 00:30:56,360
-in the metadata. This is not in the DID
 document itself, it's in the document
 
 826
 00:30:56,360 --> 00:30:57,560
-document itself, it's in the document
 metadata.
 
 827
 00:30:57,560 --> 00:30:59,920
-metadata.
 Should be other did:webs's that
 
 828
 00:30:59,920 --> 00:31:01,000
-Should be other did:webs's that
 you've authorized. And again, this is
 
 829
 00:31:01,000 --> 00:31:03,200
-you've authorized. And again, this is
 going to happen via some ACDC. But, it's
 
 830
 00:31:03,200 --> 00:31:04,320
-going to happen via some ACDC. But, it's
 possible you have a did:webs
 
 831
 00:31:04,320 --> 00:31:06,320
-possible you have a did:webs
 example.com, but there's an equivalent
 
 832
 00:31:06,320 --> 00:31:09,480
-example.com, but there's an equivalent
 did:webs foo.com. That's fine. You can
 
 833
 00:31:09,480 --> 00:31:11,320
-did:webs foo.com. That's fine. You can
 have that. You just need to
 
 834
 00:31:11,320 --> 00:31:12,440
-have that. You just need to
 definitely call it You have to have to
 
 835
 00:31:12,440 --> 00:31:15,800
-definitely call it You have to have to
 be authorized by ACDC. Yeah. Mhm.
 
 836
 00:31:15,800 --> 00:31:19,280
-be authorized by ACDC. Yeah. Mhm.
 Why equivalent ID and not put it in also
 
 837
 00:31:19,280 --> 00:31:20,520
-Why equivalent ID and not put it in also
 known as?
 
 838
 00:31:20,520 --> 00:31:23,280
-known as?
 This goes to This goes back to the DID
 
 839
 00:31:23,280 --> 00:31:26,400
-This goes to This goes back to the DID
 core spec. So, the idea is
 
 840
 00:31:26,400 --> 00:31:29,680
-core spec. So, the idea is
 equivalent ID are equivalent ID of the
 
 841
 00:31:29,680 --> 00:31:33,910
-equivalent ID are equivalent ID of the
 same DID method.
 
 842
@@ -4188,67 +3402,54 @@ any other did:webs identifier that I
 
 843
 00:31:39,720 --> 00:31:40,920
-any other did:webs identifier that I
 want to call equivalent ID goes in
 
 844
 00:31:40,920 --> 00:31:42,840
-want to call equivalent ID goes in
 equivalent ID.
 
 845
 00:31:42,840 --> 00:31:46,000
-equivalent ID.
 If I have a did:webs identifier, it
 
 846
 00:31:46,000 --> 00:31:47,960
-If I have a did:webs identifier, it
 might also be known as a DID KERI DID
 
 847
 00:31:47,960 --> 00:31:49,320
-might also be known as a DID KERI DID
 method, it might also be known as a DID
 
 848
 00:31:49,320 --> 00:31:51,360
-method, it might also be known as a DID
 web DID method. You have It's more
 
 849
 00:31:51,360 --> 00:31:52,960
-web DID method. You have It's more
 inclusive. The also known as section is
 
 850
 00:31:52,960 --> 00:31:54,520
-inclusive. The also known as section is
 meant to be more inclusive. The
 
 851
 00:31:54,520 --> 00:31:56,320
-meant to be more inclusive. The
 equivalent ID is meant to be within the
 
 852
 00:31:56,320 --> 00:31:58,800
-equivalent ID is meant to be within the
 scope of that DID method because it's
 
 853
 00:31:58,800 --> 00:32:00,840
-scope of that DID method because it's
 meant to be processed by a specific
 
 854
 00:32:00,840 --> 00:32:02,880
-meant to be processed by a specific
 resolver. That's going to be a did:webs
 
 855
 00:32:02,880 --> 00:32:09,390
-resolver. That's going to be a did:webs
 resolver, right?
 
 856
@@ -4258,127 +3459,102 @@ It could be for any other any number of
 
 857
 00:32:12,120 --> 00:32:13,960
-It could be for any other any number of
 reasons, but
 
 858
 00:32:13,960 --> 00:32:16,440
-reasons, but
 I can give an example there.
 
 859
 00:32:16,440 --> 00:32:19,040
-I can give an example there.
 So, we like to do some work that's
 
 860
 00:32:19,040 --> 00:32:20,920
-So, we like to do some work that's
 called up with
 
 861
 00:32:20,920 --> 00:32:24,320
-called up with
 DID IOTA and the twin. So, they did
 
 862
 00:32:24,320 --> 00:32:26,760
-DID IOTA and the twin. So, they did
 IOTA Foundation. And the integration
 
 863
 00:32:26,760 --> 00:32:28,360
-IOTA Foundation. And the integration
 point The initial integration point
 
 864
 00:32:28,360 --> 00:32:31,160
-point The initial integration point
 between DID IOTA and did:webs was just
 
 865
 00:32:31,160 --> 00:32:33,040
-between DID IOTA and did:webs was just
 through mutual also known as. So, from
 
 866
 00:32:33,040 --> 00:32:34,680
-through mutual also known as. So, from
 their DID document, they put the DID web
 
 867
 00:32:34,680 --> 00:32:36,880
-their DID document, they put the DID web
 S. And from our DID document, we put the
 
 868
 00:32:36,880 --> 00:32:39,640
-S. And from our DID document, we put the
 DID IOTA in the also known as sections.
 
 869
 00:32:39,640 --> 00:32:40,360
-DID IOTA in the also known as sections.
 So, I'm going to go through this really
 
 870
 00:32:40,360 --> 00:32:41,560
-So, I'm going to go through this really
 quickly cuz I want to do the little demo
 
 871
 00:32:41,560 --> 00:32:43,680
-quickly cuz I want to do the little demo
 and I'm like about 5 minutes. So,
 
 872
 00:32:43,680 --> 00:32:45,440
-and I'm like about 5 minutes. So,
 This is important though because this
 
 873
 00:32:45,440 --> 00:32:47,040
-This is important though because this
 is something we had to like deal with
 
 874
 00:32:47,040 --> 00:32:48,640
-is something we had to like deal with
 because of KERI cuz there was no way to
 
 875
 00:32:48,640 --> 00:32:51,800
-because of KERI cuz there was no way to
 deal with this in the did document. So,
 
 876
 00:32:51,800 --> 00:32:53,240
-deal with this in the did document. So,
 when you have
 
 877
 00:32:53,240 --> 00:32:57,080
-when you have
 multi-signature. So, this particular
 
 878
 00:32:57,080 --> 00:33:00,000
-multi-signature. So, this particular
 Verification method type, conditional
 
 879
 00:33:00,000 --> 00:33:01,640
-Verification method type, conditional
 proof 2022, there's a spec for it at
 
 880
 00:33:01,640 --> 00:33:03,040
-proof 2022, there's a spec for it at
 W3C.
 
 881
 00:33:03,040 --> 00:33:06,270
-W3C.
 That's what it looks like. This is the
 
 882
@@ -4392,42 +3568,34 @@ stream. So, you can see here that
 
 884
 00:33:10,440 --> 00:33:12,080
-stream. So, you can see here that
 there's a threshold. It's a two out of
 
 885
 00:33:12,080 --> 00:33:14,600
-there's a threshold. It's a two out of
 three threshold involving these three
 
 886
 00:33:14,600 --> 00:33:15,880
-three threshold involving these three
 keys.
 
 887
 00:33:15,880 --> 00:33:17,600
-keys.
 When you get to the did document itself,
 
 888
 00:33:17,600 --> 00:33:19,080
-When you get to the did document itself,
 it looks like
 
 889
 00:33:19,080 --> 00:33:20,480
-it looks like
 Oh, this is delegation. When you get to
 
 890
 00:33:20,480 --> 00:33:21,960
-Oh, this is delegation. When you get to
 the did document itself, it looks like
 
 891
 00:33:21,960 --> 00:33:23,390
-the did document itself, it looks like
 this.
 
 892
@@ -4441,127 +3609,102 @@ conditional proof 2022. Says there's a
 
 894
 00:33:26,800 --> 00:33:28,520
-conditional proof 2022. Says there's a
 threshold of two, here are the keys, and
 
 895
 00:33:28,520 --> 00:33:30,200
-threshold of two, here are the keys, and
 then here are the keys listed. We'll
 
 896
 00:33:30,200 --> 00:33:32,480
-then here are the keys listed. We'll
 look at that more detailed later.
 
 897
 00:33:32,480 --> 00:33:33,840
-look at that more detailed later.
 And then this is a delegation of the AID
 
 898
 00:33:33,840 --> 00:33:35,400
-And then this is a delegation of the AID
 itself. It just basically you have to
 
 899
 00:33:35,400 --> 00:33:37,880
-itself. It just basically you have to
 provide the delegator OOBI so that the
 
 900
 00:33:37,880 --> 00:33:39,720
-provide the delegator OOBI so that the
 person can go look up the delegator's
 
 901
 00:33:39,720 --> 00:33:41,920
-person can go look up the delegator's
 KEL and validate that the delegation
 
 902
 00:33:41,920 --> 00:33:44,120
-KEL and validate that the delegation
 event is in that
 
 903
 00:33:44,120 --> 00:33:45,560
-event is in that
 doc. Okay.
 
 904
 00:33:45,560 --> 00:33:48,360
-doc. Okay.
 I'm going to really quickly.
 
 905
 00:33:48,360 --> 00:33:49,920
-I'm going to really quickly.
 Specification status, there's a bunch of
 
 906
 00:33:49,920 --> 00:33:51,400
-Specification status, there's a bunch of
 stuff we've done. We've registered it
 
 907
 00:33:51,400 --> 00:33:53,200
-stuff we've done. We've registered it
 all the right places. There's a bunch of
 
 908
 00:33:53,200 --> 00:33:55,280
-all the right places. There's a bunch of
 like There's a draft final draft version
 
 909
 00:33:55,280 --> 00:33:57,040
-like There's a draft final draft version
 that's being reviewed at under the KERI
 
 910
 00:33:57,040 --> 00:33:59,600
-that's being reviewed at under the KERI
 stack working group. There's an I a
 
 911
 00:33:59,600 --> 00:34:02,720
-stack working group. There's an I a
 new IANA media type registered. We also
 
 912
 00:34:02,720 --> 00:34:04,800
-new IANA media type registered. We also
 are in the final review stage at DIF to
 
 913
 00:34:04,800 --> 00:34:06,960
-are in the final review stage at DIF to
 become a DIF recommended did method.
 
 914
 00:34:06,960 --> 00:34:08,919
-become a DIF recommended did method.
 Okay. We're going to do the demo here
 
 915
 00:34:08,919 --> 00:34:11,399
-Okay. We're going to do the demo here
 now really quick. So,
 
 916
 00:34:11,399 --> 00:34:13,399
-now really quick. So,
 Yeah, that's why I want to do this. This
 
 917
 00:34:13,399 --> 00:34:14,960
-Yeah, that's why I want to do this. This
 is pretty This is This is more like an
 
 918
 00:34:14,960 --> 00:34:27,669
-is pretty This is This is more like an
 illustrative demo.
 
 919
@@ -4576,27 +3719,22 @@ we're just going to kind of start doing
 
 921
 00:34:44,080 --> 00:34:45,440
-we're just going to kind of start doing
 some KERI stuff. So, the first thing
 
 922
 00:34:45,440 --> 00:34:46,159
-some KERI stuff. So, the first thing
 I'm going to do is I'm just going to
 
 923
 00:34:46,159 --> 00:34:48,800
-I'm going to do is I'm just going to
 accept an AID, right? So, I've I've
 
 924
 00:34:48,800 --> 00:34:50,560
-accept an AID, right? So, I've I've
 created this AID.
 
 925
 00:34:50,560 --> 00:34:53,990
-created this AID.
 It has that public key.
 
 926
@@ -4606,212 +3744,170 @@ KEL looks like. This is what the KERI
 
 927
 00:34:58,720 --> 00:35:01,160
-KEL looks like. This is what the KERI
 event stream looks like.
 
 928
 00:35:01,160 --> 00:35:04,280
-event stream looks like.
 Okay? So, you've got the
 
 929
 00:35:04,280 --> 00:35:06,440
-Okay? So, you've got the
 the AID, you've got the key.
 
 930
 00:35:06,440 --> 00:35:08,400
-the AID, you've got the key.
 At this point,
 
 931
 00:35:08,400 --> 00:35:10,880
-At this point,
 I cannot have a did:webs.
 
 932
 00:35:10,880 --> 00:35:13,040
-I cannot have a did:webs.
 Why?
 
 933
 00:35:13,040 --> 00:35:15,080
-Why?
 There's no ACDC authorizing the host and
 
 934
 00:35:15,080 --> 00:35:16,960
-There's no ACDC authorizing the host and
 path information. So, that's the next
 
 935
 00:35:16,960 --> 00:35:19,000
-path information. So, that's the next
 thing I have to do. I have to issue the
 
 936
 00:35:19,000 --> 00:35:21,640
-thing I have to do. I have to issue the
 the ACDC.
 
 937
 00:35:21,640 --> 00:35:24,320
-the ACDC.
 Here's the ACDC that I just issued
 
 938
 00:35:24,320 --> 00:35:27,400
-Here's the ACDC that I just issued
 that's authorizing for this identifier
 
 939
 00:35:27,400 --> 00:35:29,720
-that's authorizing for this identifier
 these two
 
 940
 00:35:29,720 --> 00:35:31,880
-these two
 identifiers. For this AID
 
 941
 00:35:31,880 --> 00:35:34,200
-identifiers. For this AID
 identifier, these two did:webs or DID
 
 942
 00:35:34,200 --> 00:35:36,000
-identifier, these two did:webs or DID
 identifiers. One is a DID Web In this
 
 943
 00:35:36,000 --> 00:35:37,560
-identifiers. One is a DID Web In this
 case, I'm authorizing a DID Web endpoint
 
 944
 00:35:37,560 --> 00:35:40,120
-case, I'm authorizing a DID Web endpoint
 as well in the correct format.
 
 945
 00:35:40,120 --> 00:35:44,160
-as well in the correct format.
 So, now I have this key event
 
 946
 00:35:44,160 --> 00:35:47,200
-So, now I have this key event
 log, this KERI event stream
 
 947
 00:35:47,200 --> 00:35:49,800
-log, this KERI event stream
 that includes
 
 948
 00:35:49,800 --> 00:35:51,760
-that includes
 the ACDC right here.
 
 949
 00:35:51,760 --> 00:35:54,600
-the ACDC right here.
 Right? That has my
 
 950
 00:35:54,600 --> 00:35:56,480
-Right? That has my
 host and path information
 
 951
 00:35:56,480 --> 00:35:59,280
-host and path information
 committed to, right? Now, I can create a
 
 952
 00:35:59,280 --> 00:36:00,920
-committed to, right? Now, I can create a
 DID document.
 
 953
 00:36:00,920 --> 00:36:03,080
-DID document.
 So, this is what a DID a what did:webs
 
 954
 00:36:03,080 --> 00:36:04,760
-So, this is what a DID a what did:webs
 DID document would look like. This is
 
 955
 00:36:04,760 --> 00:36:06,760
-DID document would look like. This is
 almost the most simple possible DID Web
 
 956
 00:36:06,760 --> 00:36:08,560
-almost the most simple possible DID Web
 S DID document.
 
 957
 00:36:08,560 --> 00:36:09,960
-S DID document.
 I don't have to have a witness service
 
 958
 00:36:09,960 --> 00:36:11,720
-I don't have to have a witness service
 if I'm working in direct mode. So,
 
 959
 00:36:11,720 --> 00:36:14,400
-if I'm working in direct mode. So,
 that's optional. I don't have to have a
 
 960
 00:36:14,400 --> 00:36:16,600
-that's optional. I don't have to have a
 DID Web identifier.
 
 961
 00:36:16,600 --> 00:36:18,200
-DID Web identifier.
 Beyond those two things, this is about
 
 962
 00:36:18,200 --> 00:36:19,720
-Beyond those two things, this is about
 the most simple possible did:webs DID
 
 963
 00:36:19,720 --> 00:36:21,120
-the most simple possible did:webs DID
 document you could have.
 
 964
 00:36:21,120 --> 00:36:22,360
-document you could have.
 Okay?
 
 965
 00:36:22,360 --> 00:36:23,400
-Okay?
 Now, let me show you a multisig
 
 966
 00:36:23,400 --> 00:36:25,240
-Now, let me show you a multisig
 example.
 
 967
 00:36:25,240 --> 00:36:26,320
-example.
 So, I'm going to set up a multisig
 
 968
 00:36:26,320 --> 00:36:30,670
-So, I'm going to set up a multisig
 group.
 
 969
@@ -4821,7 +3917,6 @@ back and forth to get each other's
 
 970
 00:36:33,400 --> 00:36:36,590
-back and forth to get each other's
 kills.
 
 971
@@ -4831,7 +3926,6 @@ group. It involves three identifiers
 
 972
 00:36:42,280 --> 00:36:48,910
-group. It involves three identifiers
 with each key each one having one key.
 
 973
@@ -4841,37 +3935,30 @@ each one half weight. So, this is
 
 974
 00:36:53,960 --> 00:36:55,520
-each one half weight. So, this is
 fractional weight using very fractional
 
 975
 00:36:55,520 --> 00:36:57,800
-fractional weight using very fractional
 weights. That means that there are three
 
 976
 00:36:57,800 --> 00:37:00,640
-weights. That means that there are three
 keys and each key gets half a vote.
 
 977
 00:37:00,640 --> 00:37:02,520
-keys and each key gets half a vote.
 So, in order to have a full vote, two of
 
 978
 00:37:02,520 --> 00:37:04,000
-So, in order to have a full vote, two of
 the three have to vote, right? Two of
 
 979
 00:37:04,000 --> 00:37:05,880
-the three have to vote, right? Two of
 the three have to have to approve. That
 
 980
 00:37:05,880 --> 00:37:09,950
-the three have to have to approve. That
 gives you quorum.
 
 981
@@ -4881,57 +3968,46 @@ like this.
 
 982
 00:37:13,800 --> 00:37:16,640
-like this.
 So, I've got my you know, my identifier.
 
 983
 00:37:16,640 --> 00:37:18,240
-So, I've got my you know, my identifier.
 I have my also known as. Now, here's my
 
 984
 00:37:18,240 --> 00:37:19,800
-I have my also known as. Now, here's my
 verification method conditional proof
 
 985
 00:37:19,800 --> 00:37:23,360
-verification method conditional proof
 2022. It correctly determines that two
 
 986
 00:37:23,360 --> 00:37:25,480
-2022. It correctly determines that two
 out of three, so two of these three
 
 987
 00:37:25,480 --> 00:37:28,040
-out of three, so two of these three
 keys, which are listed in detail here,
 
 988
 00:37:28,040 --> 00:37:30,200
-keys, which are listed in detail here,
 have to sign in order for something to
 
 989
 00:37:30,200 --> 00:37:33,200
-have to sign in order for something to
 be valid, right?
 
 990
 00:37:33,200 --> 00:37:35,680
-be valid, right?
 And then we get our cute pony.
 
 991
 00:37:35,680 --> 00:37:37,156
-And then we get our cute pony.
 CUTE PONY.
 
 992
 00:37:37,156 --> 00:37:40,470
-CUTE PONY.
 [applause]
 
 993
@@ -4945,62 +4021,50 @@ And then let me really quick just
 
 995
 00:37:45,360 --> 00:37:48,240
-And then let me really quick just
 show you in the last minute or so. I
 
 996
 00:37:48,240 --> 00:37:50,400
-show you in the last minute or so. I
 have We have
 
 997
 00:37:50,400 --> 00:37:53,560
-have We have
 Yeah, we have the
 
 998
 00:37:53,560 --> 00:37:54,920
-Yeah, we have the
 This is the universal resolver and I
 
 999
 00:37:54,920 --> 00:37:56,840
-This is the universal resolver and I
 forget Bend the Universal Resolver. This
 
 1000
 00:37:56,840 --> 00:37:58,440
-forget Bend the Universal Resolver. This
 is mostly Marcus and his work that he's
 
 1001
 00:37:58,440 --> 00:38:00,600
-is mostly Marcus and his work that he's
 done on this. It's pretty amazing. Kent
 
 1002
 00:38:00,600 --> 00:38:02,560
-done on this. It's pretty amazing. Kent
 wrote the driver for this. So, we have a
 
 1003
 00:38:02,560 --> 00:38:04,960
-wrote the driver for this. So, we have a
 did:webs driver that goes here.
 
 1004
 00:38:04,960 --> 00:38:07,960
-did:webs driver that goes here.
 So
 
 1005
 00:38:07,960 --> 00:38:10,280
-So
 Let me grab my
 
 1006
 00:38:10,280 --> 00:38:18,411
-Let me grab my
 did:webs identifier here.
 
 1007
@@ -5014,7 +4078,6 @@ did
 
 1009
 00:38:22,000 --> 00:38:27,390
-did
 at the universal resolver.
 
 1010
@@ -5024,57 +4087,46 @@ Tells me where the witness is.
 
 1011
 00:38:32,160 --> 00:38:33,880
-Tells me where the witness is.
 You can look at the did document, see
 
 1012
 00:38:33,880 --> 00:38:37,040
-You can look at the did document, see
 the did document.
 
 1013
 00:38:37,040 --> 00:38:40,480
-the did document.
 You can see the document metadata where
 
 1014
 00:38:40,480 --> 00:38:43,840
-You can see the document metadata where
 you should get the equivalent IDs.
 
 1015
 00:38:43,840 --> 00:38:45,320
-you should get the equivalent IDs.
 Okay.
 
 1016
 00:38:45,320 --> 00:38:46,680
-Okay.
 And
 
 1017
 00:38:46,680 --> 00:38:49,400
-And
 this is where you cannot because
 
 1018
 00:38:49,400 --> 00:38:50,880
-this is where you cannot because
 DIDweb as has the unique property of
 
 1019
 00:38:50,880 --> 00:38:53,000
-DIDweb as has the unique property of
 the KERI CSER that's not available
 
 1020
 00:38:53,000 --> 00:38:55,000
-the KERI CSER that's not available
 on the universal resolver page.
 
 1021
 00:38:55,000 --> 00:39:02,110
-on the universal resolver page.
 If you want to see that.
 
 1022
@@ -5089,82 +4141,66 @@ that's getting
 
 1024
 00:39:14,560 --> 00:39:16,560
-that's getting
 printed to the terminal.
 
 1025
 00:39:16,560 --> 00:39:18,200
-printed to the terminal.
 Looks really great.
 
 1026
 00:39:18,200 --> 00:39:20,200
-Looks really great.
 This is a tool that can't wrote recently
 
 1027
 00:39:20,200 --> 00:39:22,560
-This is a tool that can't wrote recently
 here that's a really nice that annotates
 
 1028
 00:39:22,560 --> 00:39:25,080
-here that's a really nice that annotates
 and prettifies the CESR stream.
 
 1029
 00:39:25,080 --> 00:39:27,040
-and prettifies the CESR stream.
 So this is the CESR this is the this
 
 1030
 00:39:27,040 --> 00:39:28,520
-So this is the CESR this is the this
 is the
 
 1031
 00:39:28,520 --> 00:39:31,240
-is the
 aggregated chunk of KERI events that we
 
 1032
 00:39:31,240 --> 00:39:33,440
-aggregated chunk of KERI events that we
 call the KERI.caesars the KERI event
 
 1033
 00:39:33,440 --> 00:39:36,520
-call the KERI.caesars the KERI event
 stream that created that did document.
 
 1034
 00:39:36,520 --> 00:39:37,720
-stream that created that did document.
 So you're going to go all the way back
 
 1035
 00:39:37,720 --> 00:39:39,000
-So you're going to go all the way back
 you're going to see an inception event
 
 1036
 00:39:39,000 --> 00:39:40,960
-you're going to see an inception event
 here.
 
 1037
 00:39:40,960 --> 00:39:42,400
-here.
 Somewhere in here you're going to notice
 
 1038
 00:39:42,400 --> 00:39:45,600
-Somewhere in here you're going to notice
 that there's going to be an ACDC.
 
 1039
 00:39:45,600 --> 00:39:48,870
-that there's going to be an ACDC.
 It's very bottom.
 
 1040
@@ -5174,16 +4210,13 @@ That authorizes the endpoints.
 
 1041
 00:39:53,720 --> 00:39:55,640
-That authorizes the endpoints.
 So.
 
 1042
 00:39:55,640 --> 00:39:57,982
-So.
 So there you go. That's what I got. Time
 
 1043
 00:39:57,982 --> 00:40:00,360
-So there you go. That's what I got. Time
 [applause] up.
 

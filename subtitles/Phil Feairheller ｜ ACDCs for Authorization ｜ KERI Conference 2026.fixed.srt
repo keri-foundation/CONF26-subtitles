@@ -1,66 +1,54 @@
-﻿1
+1
 00:00:04,150 --> 00:00:05,920
 Hi everyone. For those of you who don't
 know me, I'm Phil Feairheller, CTO and
 
 2
 00:00:05,920 --> 00:00:09,840
-know me, I'm Phil Feairheller, CTO and
 co-founder of healthKERI. And
 
 3
 00:00:09,840 --> 00:00:12,719
-co-founder of healthKERI. And
 those of you who are presenters will
 
 4
 00:00:12,719 --> 00:00:15,920
-those of you who are presenters will
 know that we had to submit our talks
 
 5
 00:00:15,920 --> 00:00:18,560
-know that we had to submit our talks
 ahead of time to get the slides
 
 6
 00:00:18,560 --> 00:00:20,720
-ahead of time to get the slides
 approved. And so I submitted a talk on
 
 7
 00:00:20,720 --> 00:00:23,680
-approved. And so I submitted a talk on
 ACDC's for authentication. But I'm I'm
 
 8
 00:00:23,680 --> 00:00:25,039
-ACDC's for authentication. But I'm I'm
 going to pull a little bit of a fast one
 
 9
 00:00:25,039 --> 00:00:26,560
-going to pull a little bit of a fast one
 and switch it up because there I think
 
 10
 00:00:26,560 --> 00:00:29,359
-and switch it up because there I think
 is a much more important topic that we
 
 11
 00:00:29,359 --> 00:00:33,440
-is a much more important topic that we
 need to discuss and that is HIO. Why
 
 12
 00:00:33,440 --> 00:00:35,280
-need to discuss and that is HIO. Why
 Sam? I'm just kidding. I'm not going to
 
 13
 00:00:35,280 --> 00:00:38,950
-Sam? I'm just kidding. I'm not going to
 do
 
 14
@@ -70,62 +58,50 @@ ACDCs for authentication.
 
 15
 00:00:42,239 --> 00:00:45,600
-ACDCs for authentication.
 Okay, so this talk is based on the
 
 16
 00:00:45,600 --> 00:00:48,879
-Okay, so this talk is based on the
 demo that we did for the SEDI conference
 
 17
 00:00:48,879 --> 00:00:50,879
-demo that we did for the SEDI conference
 and I have it here. I'm just going to
 
 18
 00:00:50,879 --> 00:00:53,600
-and I have it here. I'm just going to
 run the video of it real quick and
 
 19
 00:00:53,600 --> 00:00:56,559
-run the video of it real quick and
 talk through what we did.
 
 20
 00:00:56,559 --> 00:00:58,559
-talk through what we did.
 Let me get it started. So, in this demo,
 
 21
 00:00:58,559 --> 00:01:00,559
-Let me get it started. So, in this demo,
 we start with our Locksmith wallet. We
 
 22
 00:01:00,559 --> 00:01:02,000
-we start with our Locksmith wallet. We
 show that the wallet is holding a couple
 
 23
 00:01:02,000 --> 00:01:04,559
-show that the wallet is holding a couple
 of credentials, a VI credential and a
 
 24
 00:01:04,559 --> 00:01:07,119
-of credentials, a VI credential and a
 fake Utah SEDI health identification
 
 25
 00:01:07,119 --> 00:01:09,360
-fake Utah SEDI health identification
 card credential and the various fields
 
 26
 00:01:09,360 --> 00:01:12,870
-card credential and the various fields
 that are in it.
 
 27
@@ -135,152 +111,122 @@ which is a fake healthcare portal and
 
 28
 00:01:16,799 --> 00:01:18,080
-which is a fake healthcare portal and
 demonstrate how we could use those
 
 29
 00:01:18,080 --> 00:01:20,880
-demonstrate how we could use those
 credentials to first create an account
 
 30
 00:01:20,880 --> 00:01:22,960
-credentials to first create an account
 and second to authenticate and log into
 
 31
 00:01:22,960 --> 00:01:25,759
-and second to authenticate and log into
 the account from there on go through the
 
 32
 00:01:25,759 --> 00:01:27,600
-the account from there on go through the
 fact that you could allow the user to
 
 33
 00:01:27,600 --> 00:01:29,040
-fact that you could allow the user to
 type in the information and suffer
 
 34
 00:01:29,040 --> 00:01:31,360
-type in the information and suffer
 through typos and everything else or you
 
 35
 00:01:31,360 --> 00:01:33,680
-through typos and everything else or you
 could use the SEDI credential and get
 
 36
 00:01:33,680 --> 00:01:36,400
-could use the SEDI credential and get
 accurate data and much more secure
 
 37
 00:01:36,400 --> 00:01:38,320
-accurate data and much more secure
 connections. In addition to that, we
 
 38
 00:01:38,320 --> 00:01:39,680
-connections. In addition to that, we
 went over the fact that we could
 
 39
 00:01:39,680 --> 00:01:41,360
-went over the fact that we could
 introduce at the beginning of the OOTH
 
 40
 00:01:41,360 --> 00:01:44,799
-introduce at the beginning of the OOTH
 flow an offer stage that allows me to
 
 41
 00:01:44,799 --> 00:01:46,960
-flow an offer stage that allows me to
 offer the credential without sharing the
 
 42
 00:01:46,960 --> 00:01:49,520
-offer the credential without sharing the
 data and require a signed receipt back
 
 43
 00:01:49,520 --> 00:01:51,119
-data and require a signed receipt back
 from the site that they agree to my
 
 44
 00:01:51,119 --> 00:01:53,600
-from the site that they agree to my
 terms and conditions before I give them
 
 45
 00:01:53,600 --> 00:01:56,159
-terms and conditions before I give them
 my credential and all the data in it. So
 
 46
 00:01:56,159 --> 00:01:57,200
-my credential and all the data in it. So
 that's what we're doing here. We're
 
 47
 00:01:57,200 --> 00:01:59,360
-that's what we're doing here. We're
 doing the offer.
 
 48
 00:01:59,360 --> 00:02:00,960
-doing the offer.
 We also demonstrated that the site is
 
 49
 00:02:00,960 --> 00:02:02,640
-We also demonstrated that the site is
 built so that anyone using any other
 
 50
 00:02:02,640 --> 00:02:04,079
-built so that anyone using any other
 KERI tool can create an offer and
 
 51
 00:02:04,079 --> 00:02:05,520
-KERI tool can create an offer and
 upload it. You don't need the plugin.
 
 52
 00:02:05,520 --> 00:02:07,520
-upload it. You don't need the plugin.
 Let me just use the plugin make it
 
 53
 00:02:07,520 --> 00:02:09,280
-Let me just use the plugin make it
 work a little more smoothly. And then
 
 54
 00:02:09,280 --> 00:02:11,280
-work a little more smoothly. And then
 here they have reti returned the signed
 
 55
 00:02:11,280 --> 00:02:13,360
-here they have reti returned the signed
 receipt.
 
 56
 00:02:13,360 --> 00:02:15,120
-receipt.
 You can view the receipt in the accepted
 
 57
 00:02:15,120 --> 00:02:21,430
-You can view the receipt in the accepted
 offer section
 
 58
@@ -290,527 +236,422 @@ now you're logged into the site. You've
 
 59
 00:02:25,120 --> 00:02:27,520
-now you're logged into the site. You've
 created your account.
 
 60
 00:02:27,520 --> 00:02:29,280
-created your account.
 All the data is extracted from the
 
 61
 00:02:29,280 --> 00:02:31,599
-All the data is extracted from the
 credential
 
 62
 00:02:31,599 --> 00:02:33,360
-credential
 and you are now signed in. And then you
 
 63
 00:02:33,360 --> 00:02:34,800
-and you are now signed in. And then you
 can go through the process and sign in
 
 64
 00:02:34,800 --> 00:02:36,400
-can go through the process and sign in
 again. And the point here was that we
 
 65
 00:02:36,400 --> 00:02:39,599
-again. And the point here was that we
 made it such that the process of
 
 66
 00:02:39,599 --> 00:02:42,400
-made it such that the process of
 using a any kind of ACDC credential for
 
 67
 00:02:42,400 --> 00:02:44,640
-using a any kind of ACDC credential for
 this form of authorization can be just
 
 68
 00:02:44,640 --> 00:02:46,560
-this form of authorization can be just
 as easy as using a pass key, for
 
 69
 00:02:46,560 --> 00:02:48,720
-as easy as using a pass key, for
 example, but of course much more secure
 
 70
 00:02:48,720 --> 00:02:51,280
-example, but of course much more secure
 because it's based on a KERI identifier
 
 71
 00:02:51,280 --> 00:02:52,560
-because it's based on a KERI identifier
 through the stuff I'm going to show
 
 72
 00:02:52,560 --> 00:02:56,239
-through the stuff I'm going to show
 next. Key rotations work seamlessly. You
 
 73
 00:02:56,239 --> 00:02:58,000
-next. Key rotations work seamlessly. You
 can do them anytime you want. And if you
 
 74
 00:02:58,000 --> 00:03:01,280
-can do them anytime you want. And if you
 use this AID in this account,
 
 75
 00:03:01,280 --> 00:03:04,319
-use this AID in this account,
 how do I go next? There we go. If you
 
 76
 00:03:04,319 --> 00:03:06,720
-how do I go next? There we go. If you
 use this AID for multiple sites that
 
 77
 00:03:06,720 --> 00:03:08,560
-use this AID for multiple sites that
 you've logged into, you do one key
 
 78
 00:03:08,560 --> 00:03:10,560
-you've logged into, you do one key
 rotation and they'll all get your new
 
 79
 00:03:10,560 --> 00:03:11,840
-rotation and they'll all get your new
 keys. So you don't have to worry about
 
 80
 00:03:11,840 --> 00:03:13,040
-keys. So you don't have to worry about
 changing a password, remembering
 
 81
 00:03:13,040 --> 00:03:16,640
-changing a password, remembering
 passwords for many different sites, etc.
 
 82
 00:03:16,640 --> 00:03:20,159
-passwords for many different sites, etc.
 So that demo was something that we kind
 
 83
 00:03:20,159 --> 00:03:22,560
-So that demo was something that we kind
 of backed into because of the work that
 
 84
 00:03:22,560 --> 00:03:24,159
-of backed into because of the work that
 we've been doing in healthcare. And so
 
 85
 00:03:24,159 --> 00:03:26,959
-we've been doing in healthcare. And so
 what I want to cover today is how we got
 
 86
 00:03:26,959 --> 00:03:30,000
-what I want to cover today is how we got
 to that by starting to work with
 
 87
 00:03:30,000 --> 00:03:32,400
-to that by starting to work with
 integrating the vLEI into the OAuth
 
 88
 00:03:32,400 --> 00:03:35,519
-integrating the vLEI into the OAuth
 protocol for a specific purpose related
 
 89
 00:03:35,519 --> 00:03:37,760
-protocol for a specific purpose related
 sorry specific per purpose related to
 
 90
 00:03:37,760 --> 00:03:40,400
-sorry specific per purpose related to
 these protocols. But then we realized
 
 91
 00:03:40,400 --> 00:03:42,080
-these protocols. But then we realized
 that if we just keep going and extend it
 
 92
 00:03:42,080 --> 00:03:44,000
-that if we just keep going and extend it
 a little bit further into OOTH, we could
 
 93
 00:03:44,000 --> 00:03:46,959
-a little bit further into OOTH, we could
 do end user authentication. So these
 
 94
 00:03:46,959 --> 00:03:48,879
-do end user authentication. So these
 protocols I realized this morning
 
 95
 00:03:48,879 --> 00:03:50,879
-protocols I realized this morning
 looking at my slide you've all heard
 
 96
 00:03:50,879 --> 00:03:52,239
-looking at my slide you've all heard
 about them now I think at least three
 
 97
 00:03:52,239 --> 00:03:53,200
-about them now I think at least three
 different times in three different
 
 98
 00:03:53,200 --> 00:03:54,239
-different times in three different
 sessions. So I'm going to go over them
 
 99
 00:03:54,239 --> 00:03:56,400
-sessions. So I'm going to go over them
 very quickly but to make a very
 
 100
 00:03:56,400 --> 00:04:00,159
-very quickly but to make a very
 specific point about them. So HL7 fire
 
 101
 00:04:00,159 --> 00:04:02,560
-specific point about them. So HL7 fire
 think of it as REST APIs for healthcare
 
 102
 00:04:02,560 --> 00:04:06,400
-think of it as REST APIs for healthcare
 very simple but extensible data model
 
 103
 00:04:06,400 --> 00:04:08,560
-very simple but extensible data model
 specific to healthcare. It supports
 
 104
 00:04:08,560 --> 00:04:11,439
-specific to healthcare. It supports
 real-time APIs documents and messages.
 
 105
 00:04:11,439 --> 00:04:13,680
-real-time APIs documents and messages.
 It is actually written into HSS
 
 106
 00:04:13,680 --> 00:04:16,720
-It is actually written into HSS
 regulations and it was informed by all
 
 107
 00:04:16,720 --> 00:04:18,079
-regulations and it was informed by all
 of these other standards that have been
 
 108
 00:04:18,079 --> 00:04:20,320
-of these other standards that have been
 used in healthcare for 30 years, Mark.
 
 109
 00:04:20,320 --> 00:04:22,720
-used in healthcare for 30 years, Mark.
 20 years. Yeah. And so the old way Mark
 
 110
 00:04:22,720 --> 00:04:23,840
-20 years. Yeah. And so the old way Mark
 explained this in another session
 
 111
 00:04:23,840 --> 00:04:26,000
-explained this in another session
 yesterday. The old way was is that as
 
 112
 00:04:26,000 --> 00:04:27,840
-yesterday. The old way was is that as
 they were starting to exchange more and
 
 113
 00:04:27,840 --> 00:04:29,759
-they were starting to exchange more and
 more data, they were just exchanging
 
 114
 00:04:29,759 --> 00:04:32,720
-more data, they were just exchanging
 documents over these protocols and
 
 115
 00:04:32,720 --> 00:04:34,000
-documents over these protocols and
 the documents were just getting bigger
 
 116
 00:04:34,000 --> 00:04:35,440
-the documents were just getting bigger
 and bigger because they had to send the
 
 117
 00:04:35,440 --> 00:04:37,919
-and bigger because they had to send the
 whole thing. So fire what it did was
 
 118
 00:04:37,919 --> 00:04:40,960
-whole thing. So fire what it did was
 allow people to send distinct sections
 
 119
 00:04:40,960 --> 00:04:42,960
-allow people to send distinct sections
 of records that were much easier to
 
 120
 00:04:42,960 --> 00:04:44,639
-of records that were much easier to
 transmit and of course modernized
 
 121
 00:04:44,639 --> 00:04:47,440
-transmit and of course modernized
 because they're REST APIs. So the fire
 
 122
 00:04:47,440 --> 00:04:48,880
-because they're REST APIs. So the fire
 modules are broken down into these
 
 123
 00:04:48,880 --> 00:04:50,160
-modules are broken down into these
 different categories. You have your
 
 124
 00:04:50,160 --> 00:04:52,240
-different categories. You have your
 foundation and base resources and then
 
 125
 00:04:52,240 --> 00:04:53,919
-foundation and base resources and then
 of course you have the specific
 
 126
 00:04:53,919 --> 00:04:56,560
-of course you have the specific
 resources that are defined for things
 
 127
 00:04:56,560 --> 00:04:58,639
-resources that are defined for things
 like clinical, financial, specialized
 
 128
 00:04:58,639 --> 00:04:59,840
-like clinical, financial, specialized
 resources. And you can see all the
 
 129
 00:04:59,840 --> 00:05:01,120
-resources. And you can see all the
 categories here. they're not
 
 130
 00:05:01,120 --> 00:05:02,400
-categories here. they're not
 particularly interesting to us or
 
 131
 00:05:02,400 --> 00:05:04,800
-particularly interesting to us or
 KERI, but I wanted to point out that
 
 132
 00:05:04,800 --> 00:05:07,520
-KERI, but I wanted to point out that
 what we're trying to accomplish is
 
 133
 00:05:07,520 --> 00:05:10,240
-what we're trying to accomplish is
 the ability to do authorization at a
 
 134
 00:05:10,240 --> 00:05:12,720
-the ability to do authorization at a
 level that's as low as this. So, very
 
 135
 00:05:12,720 --> 00:05:15,120
-level that's as low as this. So, very
 particularly, we are working on
 
 136
 00:05:15,120 --> 00:05:16,880
-particularly, we are working on
 something called pair-to-payer access,
 
 137
 00:05:16,880 --> 00:05:19,120
-something called pair-to-payer access,
 which allows payers to, for example, if
 
 138
 00:05:19,120 --> 00:05:21,039
-which allows payers to, for example, if
 you switch from one pair to another, get
 
 139
 00:05:21,039 --> 00:05:22,560
-you switch from one pair to another, get
 your information over to the other payer
 
 140
 00:05:22,560 --> 00:05:25,759
-your information over to the other payer
 much more seamlessly than happens today.
 
 141
 00:05:25,759 --> 00:05:28,000
-much more seamlessly than happens today.
 But we only want the two companies to be
 
 142
 00:05:28,000 --> 00:05:29,440
-But we only want the two companies to be
 able to exchange data for
 
 143
 00:05:29,440 --> 00:05:31,680
-able to exchange data for
 payer-to-payer, not for anything else.
 
 144
 00:05:31,680 --> 00:05:33,759
-payer-to-payer, not for anything else.
 So, we're able to dig in at this level
 
 145
 00:05:33,759 --> 00:05:36,000
-So, we're able to dig in at this level
 and create authorizations very specific
 
 146
 00:05:36,000 --> 00:05:39,600
-and create authorizations very specific
 to the purpose of use.
 
 147
 00:05:39,600 --> 00:05:41,520
-to the purpose of use.
 Okay. And what got us here? What got us
 
 148
 00:05:41,520 --> 00:05:45,199
-Okay. And what got us here? What got us
 here was CMS 0057F final rule. easy to
 
 149
 00:05:45,199 --> 00:05:47,120
-here was CMS 0057F final rule. easy to
 say and it mandates that Medicare
 
 150
 00:05:47,120 --> 00:05:49,520
-say and it mandates that Medicare
 Advantage, Medicaid and CHIP plans. So
 
 151
 00:05:49,520 --> 00:05:51,680
-Advantage, Medicaid and CHIP plans. So
 anyone that interacts with these people
 
 152
 00:05:51,680 --> 00:05:54,240
-anyone that interacts with these people
 have to implement firebased APIs to
 
 153
 00:05:54,240 --> 00:05:55,840
-have to implement firebased APIs to
 streamline prior off and accelerate
 
 154
 00:05:55,840 --> 00:05:58,240
-streamline prior off and accelerate
 decision times.
 
 155
 00:05:58,240 --> 00:06:00,880
-decision times.
 So you have the impacted players here as
 
 156
 00:06:00,880 --> 00:06:02,880
-So you have the impacted players here as
 I said anyone who works with these
 
 157
 00:06:02,880 --> 00:06:05,840
-I said anyone who works with these
 people. The one that's probably most
 
 158
 00:06:05,840 --> 00:06:07,360
-people. The one that's probably most
 interesting to folks in the industry is
 
 159
 00:06:07,360 --> 00:06:08,800
-interesting to folks in the industry is
 the prior off because that's always been
 
 160
 00:06:08,800 --> 00:06:11,280
-the prior off because that's always been
 a sticking point. Takes forever. It's
 
 161
 00:06:11,280 --> 00:06:13,600
-a sticking point. Takes forever. It's
 manual in some cases. They want this
 
 162
 00:06:13,600 --> 00:06:16,160
-manual in some cases. They want this
 to be automated much more quickly.
 
 163
 00:06:16,160 --> 00:06:19,039
-to be automated much more quickly.
 Patient access, so getting into patients
 
 164
@@ -820,182 +661,146 @@ being able to get a hold of their own
 
 165
 00:06:20,639 --> 00:06:23,120
-being able to get a hold of their own
 data at the fire level. But then the one
 
 166
 00:06:23,120 --> 00:06:25,039
-data at the fire level. But then the one
 that we focused on because it's the
 
 167
 00:06:25,039 --> 00:06:27,360
-that we focused on because it's the
 easiest to get pilots going, it's the
 
 168
 00:06:27,360 --> 00:06:29,280
-easiest to get pilots going, it's the
 most constrained use case was the
 
 169
 00:06:29,280 --> 00:06:31,520
-most constrained use case was the
 pair-to-pair data exchange. So this
 
 170
 00:06:31,520 --> 00:06:35,680
-pair-to-pair data exchange. So this
 mandate is forcing by January of 2027
 
 171
 00:06:35,680 --> 00:06:37,680
-mandate is forcing by January of 2027
 health plans to implement this. So that
 
 172
 00:06:37,680 --> 00:06:39,680
-health plans to implement this. So that
 was our opportunity and what gave us the
 
 173
 00:06:39,680 --> 00:06:42,319
-was our opportunity and what gave us the
 idea actually Mark the idea that we
 
 174
 00:06:42,319 --> 00:06:44,880
-idea actually Mark the idea that we
 could integrate the vLEI into this to
 
 175
 00:06:44,880 --> 00:06:47,039
-could integrate the vLEI into this to
 accelerate the connections that are now
 
 176
 00:06:47,039 --> 00:06:48,880
-accelerate the connections that are now
 going to be needed between these payers
 
 177
 00:06:48,880 --> 00:06:50,639
-going to be needed between these payers
 and then down the road between payers
 
 178
 00:06:50,639 --> 00:06:52,560
-and then down the road between payers
 and providers and then down the road
 
 179
 00:06:52,560 --> 00:06:54,400
-and providers and then down the road
 even further between patients and payers
 
 180
 00:06:54,400 --> 00:06:56,400
-even further between patients and payers
 and providers. So you're starting to see
 
 181
 00:06:56,400 --> 00:06:57,919
-and providers. So you're starting to see
 the number of connections that are going
 
 182
 00:06:57,919 --> 00:07:00,400
-the number of connections that are going
 to be needed. Making those connections
 
 183
 00:07:00,400 --> 00:07:03,360
-to be needed. Making those connections
 quickly and securely would be a limiting
 
 184
 00:07:03,360 --> 00:07:04,800
-quickly and securely would be a limiting
 factor without what we're trying to
 
 185
 00:07:04,800 --> 00:07:07,360
-factor without what we're trying to
 implement.
 
 186
 00:07:07,360 --> 00:07:09,680
-implement.
 So OOTH 2 I don't really need to go
 
 187
 00:07:09,680 --> 00:07:11,520
-So OOTH 2 I don't really need to go
 into this most of you probably are aware
 
 188
 00:07:11,520 --> 00:07:14,240
-into this most of you probably are aware
 of what it is legacy kind of like
 
 189
 00:07:14,240 --> 00:07:16,000
-of what it is legacy kind of like
 using the word legacy authorization
 
 190
 00:07:16,000 --> 00:07:18,160
-using the word legacy authorization
 authentication protocols
 
 191
 00:07:18,160 --> 00:07:19,840
-authentication protocols
 essential for essential for
 
 192
 00:07:19,840 --> 00:07:22,960
-essential for essential for
 interoperability and that's the key so I
 
 193
 00:07:22,960 --> 00:07:25,440
-interoperability and that's the key so I
 think the biggest lesson learned for
 
 194
 00:07:25,440 --> 00:07:27,840
-think the biggest lesson learned for
 healthcare here is meeting the customer
 
 195
 00:07:27,840 --> 00:07:30,000
-healthcare here is meeting the customer
 where they are a little history when we
 
 196
 00:07:30,000 --> 00:07:33,120
-where they are a little history when we
 first started out we created a product
 
 197
 00:07:33,120 --> 00:07:36,319
-first started out we created a product
 called rack routing authenticity and
 
 198
 00:07:36,319 --> 00:07:38,400
-called rack routing authenticity and
 confidential confidentiality with
 
 199
 00:07:38,400 --> 00:07:42,319
-confidential confidentiality with
 KERI. I like making acronyms, too.
 
 200
 00:07:42,319 --> 00:07:46,000
-KERI. I like making acronyms, too.
 And what that was is a API gateway
 
 201
@@ -1005,622 +810,498 @@ that wrapped every transaction in an ESR
 
 202
 00:07:49,199 --> 00:07:51,280
-that wrapped every transaction in an ESR
 ESSR packet. So, signed and encrypted to
 
 203
 00:07:51,280 --> 00:07:54,000
-ESSR packet. So, signed and encrypted to
 a specific destination and provided full
 
 204
 00:07:54,000 --> 00:07:56,400
-a specific destination and provided full
 security between those two endpoints. No
 
 205
 00:07:56,400 --> 00:07:58,479
-security between those two endpoints. No
 need for TLS, no need for VPNs, anything
 
 206
 00:07:58,479 --> 00:08:00,160
-need for TLS, no need for VPNs, anything
 else. And it also created a
 
 207
 00:08:00,160 --> 00:08:02,080
-else. And it also created a
 cryptographically verifiable audit log
 
 208
 00:08:02,080 --> 00:08:04,479
-cryptographically verifiable audit log
 of every single transaction.
 
 209
 00:08:04,479 --> 00:08:06,240
-of every single transaction.
 Nobody wanted to use it because it was
 
 210
 00:08:06,240 --> 00:08:09,039
-Nobody wanted to use it because it was
 not interoperable. So what we have done
 
 211
 00:08:09,039 --> 00:08:10,800
-not interoperable. So what we have done
 over the course of the last six months
 
 212
 00:08:10,800 --> 00:08:13,840
-over the course of the last six months
 is slowly back our way out and meet the
 
 213
 00:08:13,840 --> 00:08:15,759
-is slowly back our way out and meet the
 customer where they are by integrating
 
 214
 00:08:15,759 --> 00:08:19,680
-customer where they are by integrating
 with OOTH because fire requires o or
 
 215
 00:08:19,680 --> 00:08:22,160
-with OOTH because fire requires o or
 requires or mandates or includes the
 
 216
 00:08:22,160 --> 00:08:25,039
-requires or mandates or includes the
 ability to use OOTH for authentication
 
 217
 00:08:25,039 --> 00:08:27,360
-ability to use OOTH for authentication
 a protocol I'm about to talk about next.
 
 218
 00:08:27,360 --> 00:08:31,440
-a protocol I'm about to talk about next.
 UDAP had taken OOTH and added five or
 
 219
 00:08:31,440 --> 00:08:33,599
-UDAP had taken OOTH and added five or
 six, I only mentioned four here, new
 
 220
 00:08:33,599 --> 00:08:37,279
-six, I only mentioned four here, new
 profiles that allowed the use of X509s
 
 221
 00:08:37,279 --> 00:08:40,800
-profiles that allowed the use of X509s
 embedded into these different flows to
 
 222
 00:08:40,800 --> 00:08:42,479
-embedded into these different flows to
 do authentication.
 
 223
 00:08:42,479 --> 00:08:45,680
-do authentication.
 Mark Scrumshshire came to us and said
 
 224
 00:08:45,680 --> 00:08:48,480
-Mark Scrumshshire came to us and said
 that seems to work, but what happens
 
 225
 00:08:48,480 --> 00:08:50,399
-that seems to work, but what happens
 when everyone hits their 47-day limit
 
 226
 00:08:50,399 --> 00:08:51,440
-when everyone hits their 47-day limit
 and they have to rotate all their
 
 227
 00:08:51,440 --> 00:08:54,800
-and they have to rotate all their
 searchs? What happens? And so as the
 
 228
 00:08:54,800 --> 00:08:55,839
-searchs? What happens? And so as the
 companies we were talking to, they're
 
 229
 00:08:55,839 --> 00:08:58,480
-companies we were talking to, they're
 like, "Well, I have to manage my Certs,
 
 230
 00:08:58,480 --> 00:09:00,160
-like, "Well, I have to manage my Certs,
 but now I got to worry about everyone
 
 231
 00:09:00,160 --> 00:09:02,000
-but now I got to worry about everyone
 else's CS. How what do I do when they
 
 232
 00:09:02,000 --> 00:09:03,279
-else's CS. How what do I do when they
 all have to rotate? How do we
 
 233
 00:09:03,279 --> 00:09:05,760
-all have to rotate? How do we
 reestablish these connections?" And so
 
 234
 00:09:05,760 --> 00:09:08,000
-reestablish these connections?" And so
 he identified that the vLEI would be the
 
 235
 00:09:08,000 --> 00:09:10,880
-he identified that the vLEI would be the
 perfect opportunity to introduce true
 
 236
 00:09:10,880 --> 00:09:14,399
-perfect opportunity to introduce true
 organizational identity and KERI to
 
 237
 00:09:14,399 --> 00:09:16,160
-organizational identity and KERI to
 solve this problem in a very similar way
 
 238
 00:09:16,160 --> 00:09:18,800
-solve this problem in a very similar way
 that UDEP did, but replace X509's with
 
 239
 00:09:18,800 --> 00:09:20,560
-that UDEP did, but replace X509's with
 the VLE.
 
 240
 00:09:20,560 --> 00:09:22,320
-the VLE.
 And there's there's quite a bit more
 
 241
 00:09:22,320 --> 00:09:24,160
-And there's there's quite a bit more
 detail underneath. I'm not going to get
 
 242
 00:09:24,160 --> 00:09:25,920
-detail underneath. I'm not going to get
 into it, but we have other credentials
 
 243
 00:09:25,920 --> 00:09:28,640
-into it, but we have other credentials
 that chain off of VLIS to define the
 
 244
 00:09:28,640 --> 00:09:31,040
-that chain off of VLIS to define the
 purpose of use to allow them to be that
 
 245
 00:09:31,040 --> 00:09:32,640
-purpose of use to allow them to be that
 more specific authorization I was
 
 246
 00:09:32,640 --> 00:09:34,480
-more specific authorization I was
 talking about, but we don't need to
 
 247
 00:09:34,480 --> 00:09:37,040
-talking about, but we don't need to
 go to that level of detail. So these are
 
 248
 00:09:37,040 --> 00:09:39,760
-go to that level of detail. So these are
 the four protocols or profiles that
 
 249
 00:09:39,760 --> 00:09:42,320
-the four protocols or profiles that
 were defined in UDAP that we are
 
 250
 00:09:42,320 --> 00:09:46,000
-were defined in UDAP that we are
 going to be augmenting or replacing. So
 
 251
 00:09:46,000 --> 00:09:47,680
-going to be augmenting or replacing. So
 the first one and this is where we were
 
 252
 00:09:47,680 --> 00:09:49,600
-the first one and this is where we were
 going to stop before we decided to do
 
 253
 00:09:49,600 --> 00:09:51,760
-going to stop before we decided to do
 something for the SEDI presentation
 
 254
 00:09:51,760 --> 00:09:54,000
-something for the SEDI presentation
 and that is dynamic client registration.
 
 255
 00:09:54,000 --> 00:09:57,600
-and that is dynamic client registration.
 So in oathor is what is it RFC7591
 
 256
 00:09:57,600 --> 00:10:00,640
-So in oathor is what is it RFC7591
 dynamic client registration that allows
 
 257
 00:10:00,640 --> 00:10:02,880
-dynamic client registration that allows
 people without having a developer go to
 
 258
 00:10:02,880 --> 00:10:04,399
-people without having a developer go to
 a developer portal and register your
 
 259
 00:10:04,399 --> 00:10:06,640
-a developer portal and register your
 client ID get a secret or enter a secret
 
 260
 00:10:06,640 --> 00:10:08,399
-client ID get a secret or enter a secret
 get it back so that your client app can
 
 261
 00:10:08,399 --> 00:10:12,240
-get it back so that your client app can
 now make token requests. There is a
 
 262
 00:10:12,240 --> 00:10:14,640
-now make token requests. There is a
 RFC that allows for that to be dynamic.
 
 263
 00:10:14,640 --> 00:10:16,800
-RFC that allows for that to be dynamic.
 And so what UDEAP had done was say okay
 
 264
 00:10:16,800 --> 00:10:19,680
-And so what UDEAP had done was say okay
 if we insert a signed statement from the
 
 265
 00:10:19,680 --> 00:10:23,279
-if we insert a signed statement from the
 client and a reference to their X509erts
 
 266
 00:10:23,279 --> 00:10:25,760
-client and a reference to their X509erts
 if we have an ecosystem of CAS that we
 
 267
 00:10:25,760 --> 00:10:28,079
-if we have an ecosystem of CAS that we
 trust for this purpose we can allow a
 
 268
 00:10:28,079 --> 00:10:30,320
-trust for this purpose we can allow a
 client to be registered dynamically and
 
 269
 00:10:30,320 --> 00:10:32,640
-client to be registered dynamically and
 and automatically. So we saw that and
 
 270
 00:10:32,640 --> 00:10:35,040
-and automatically. So we saw that and
 said okay cool works great just replace
 
 271
 00:10:35,040 --> 00:10:37,519
-said okay cool works great just replace
 X509s with VIS and now we're on to
 
 272
 00:10:37,519 --> 00:10:39,279
-X509s with VIS and now we're on to
 something. So that's the first thing we
 
 273
 00:10:39,279 --> 00:10:41,680
-something. So that's the first thing we
 did. So we automated the ability payerto
 
 274
 00:10:41,680 --> 00:10:42,800
-did. So we automated the ability payerto
 payer remember that's what we're
 
 275
 00:10:42,800 --> 00:10:44,640
-payer remember that's what we're
 focusing on. We automated the ability
 
 276
 00:10:44,640 --> 00:10:46,959
-focusing on. We automated the ability
 for one payer to submit a credential to
 
 277
 00:10:46,959 --> 00:10:48,560
-for one payer to submit a credential to
 another payer and without any human
 
 278
 00:10:48,560 --> 00:10:50,640
-another payer and without any human
 involved be registered to start
 
 279
 00:10:50,640 --> 00:10:54,000
-involved be registered to start
 interacting payer-to-payer APIs and from
 
 280
 00:10:54,000 --> 00:10:57,040
-interacting payer-to-payer APIs and from
 there that point down the rest of their
 
 281
 00:10:57,040 --> 00:10:59,440
-there that point down the rest of their
 stack stays the same. They're using
 
 282
 00:10:59,440 --> 00:11:01,279
-stack stays the same. They're using
 they're using fire APIs. They're using
 
 283
 00:11:01,279 --> 00:11:03,360
-they're using fire APIs. They're using
 token. They're doing the token requests
 
 284
 00:11:03,360 --> 00:11:04,560
-token. They're doing the token requests
 because this is client au
 
 285
 00:11:04,560 --> 00:11:05,600
-because this is client au
 authentication. So there's no
 
 286
 00:11:05,600 --> 00:11:08,560
-authentication. So there's no
 authorization code step first. And so
 
 287
 00:11:08,560 --> 00:11:11,920
-authorization code step first. And so
 that worked great. Then when we decided
 
 288
 00:11:11,920 --> 00:11:13,680
-that worked great. Then when we decided
 that okay, that authorization server
 
 289
 00:11:13,680 --> 00:11:15,120
-that okay, that authorization server
 works great. There's a real good
 
 290
 00:11:15,120 --> 00:11:18,560
-works great. There's a real good
 opportunity here to insert ahead of or
 
 291
 00:11:18,560 --> 00:11:20,720
-opportunity here to insert ahead of or
 after client authentication after client
 
 292
 00:11:20,720 --> 00:11:21,600
-after client authentication after client
 registration and then client
 
 293
 00:11:21,600 --> 00:11:23,680
-registration and then client
 authentication to do user
 
 294
 00:11:23,680 --> 00:11:26,000
-authentication to do user
 authentication. So they had JWTbased
 
 295
 00:11:26,000 --> 00:11:28,480
-authentication. So they had JWTbased
 user authentication which allowed for a
 
 296
 00:11:28,480 --> 00:11:31,760
-user authentication which allowed for a
 cert to be used to sign a JWT that would
 
 297
 00:11:31,760 --> 00:11:33,680
-cert to be used to sign a JWT that would
 then assert who the user is. So you
 
 298
 00:11:33,680 --> 00:11:35,519
-then assert who the user is. So you
 could do the user authorization flow
 
 299
 00:11:35,519 --> 00:11:37,120
-could do the user authorization flow
 which involves getting a code first then
 
 300
 00:11:37,120 --> 00:11:38,399
-which involves getting a code first then
 it redirects back to you and then you
 
 301
 00:11:38,399 --> 00:11:40,320
-it redirects back to you and then you
 use that code to get the token. We
 
 302
 00:11:40,320 --> 00:11:42,560
-use that code to get the token. We
 replaced that with VI as well and that's
 
 303
 00:11:42,560 --> 00:11:45,920
-replaced that with VI as well and that's
 what I demoed here. The last step was
 
 304
 00:11:45,920 --> 00:11:47,760
-what I demoed here. The last step was
 after having conversations with the with
 
 305
 00:11:47,760 --> 00:11:49,440
-after having conversations with the with
 the fine folks in the state of Utah,
 
 306
 00:11:49,440 --> 00:11:52,399
-the fine folks in the state of Utah,
 George and Chris, we realized that there
 
 307
 00:11:52,399 --> 00:11:54,560
-George and Chris, we realized that there
 was still one problem left to solve and
 
 308
 00:11:54,560 --> 00:11:56,959
-was still one problem left to solve and
 that was okay, if we're using these
 
 309
 00:11:56,959 --> 00:11:58,560
-that was okay, if we're using these
 credentials, how do we still know that
 
 310
 00:11:58,560 --> 00:12:00,160
-credentials, how do we still know that
 our data is being protected? And that's
 
 311
 00:12:00,160 --> 00:12:02,160
-our data is being protected? And that's
 when we added a new step that's not part
 
 312
 00:12:02,160 --> 00:12:04,640
-when we added a new step that's not part
 of OOTH, the credential offer. And so
 
 313
 00:12:04,640 --> 00:12:06,320
-of OOTH, the credential offer. And so
 doing the credential offer allows us to
 
 314
 00:12:06,320 --> 00:12:08,639
-doing the credential offer allows us to
 offer a credential based on a schema. So
 
 315
 00:12:08,639 --> 00:12:10,560
-offer a credential based on a schema. So
 the structure of the fields, a
 
 316
 00:12:10,560 --> 00:12:12,000
-the structure of the fields, a
 cryptographic commitment to what the
 
 317
 00:12:12,000 --> 00:12:15,120
-cryptographic commitment to what the
 data will be and require the site to
 
 318
 00:12:15,120 --> 00:12:17,200
-data will be and require the site to
 sign your terms and conditions with that
 
 319
 00:12:17,200 --> 00:12:19,200
-sign your terms and conditions with that
 cryptographic commitment before you
 
 320
 00:12:19,200 --> 00:12:20,720
-cryptographic commitment before you
 reveal the data to them. Then once you
 
 321
 00:12:20,720 --> 00:12:22,079
-reveal the data to them. Then once you
 reveal the data, they can verify that
 
 322
 00:12:22,079 --> 00:12:23,839
-reveal the data, they can verify that
 yep, it matches the schema. Yep, that's
 
 323
 00:12:23,839 --> 00:12:25,279
-yep, it matches the schema. Yep, that's
 the data they promised to give me
 
 324
 00:12:25,279 --> 00:12:27,600
-the data they promised to give me
 without revealing the data. Now I can
 
 325
 00:12:27,600 --> 00:12:31,750
-without revealing the data. Now I can
 register them and allow them through.
 
 326
@@ -1630,472 +1311,378 @@ this but the crank credential the client
 
 327
 00:12:35,200 --> 00:12:38,320
-this but the crank credential the client
 credentials flow with UDAP and VI
 
 328
 00:12:38,320 --> 00:12:39,920
-credentials flow with UDAP and VI
 involved you know like I said dynamic
 
 329
 00:12:39,920 --> 00:12:42,320
-involved you know like I said dynamic
 client registration with VLI we do a
 
 330
 00:12:42,320 --> 00:12:46,079
-client registration with VLI we do a
 sign inserted inside of the
 
 331
 00:12:46,079 --> 00:12:48,000
-sign inserted inside of the
 Client registration request it's
 
 332
 00:12:48,000 --> 00:12:51,440
-Client registration request it's
 slregister is an IPEX presentation in
 
 333
 00:12:51,440 --> 00:12:54,160
-slregister is an IPEX presentation in
 the OOTH registration request itself the
 
 334
 00:12:54,160 --> 00:12:56,000
-the OOTH registration request itself the
 flip side of this one of the things that
 
 335
 00:12:56,000 --> 00:12:58,480
-flip side of this one of the things that
 UDAP had that we borrowed from is a
 
 336
 00:12:58,480 --> 00:13:00,800
-UDAP had that we borrowed from is a
 well-known for the server so that we
 
 337
 00:13:00,800 --> 00:13:02,720
-well-known for the server so that we
 could identify by the server. So we can
 
 338
 00:13:02,720 --> 00:13:04,800
-could identify by the server. So we can
 avoid having a server that we get a man
 
 339
 00:13:04,800 --> 00:13:06,480
-avoid having a server that we get a man
 in the middle or whatever. So in our
 
 340
 00:13:06,480 --> 00:13:08,320
-in the middle or whatever. So in our
 case, we just have in the well-known an
 
 341
 00:13:08,320 --> 00:13:10,399
-case, we just have in the well-known an
 OOBI that identifies the AID of the
 
 342
 00:13:10,399 --> 00:13:11,200
-OOBI that identifies the AID of the
 server that we're going to be
 
 343
 00:13:11,200 --> 00:13:13,680
-server that we're going to be
 interacting with.
 
 344
 00:13:13,680 --> 00:13:17,040
-interacting with.
 Pardon me. Oh, so then finally, and
 
 345
 00:13:17,040 --> 00:13:18,959
-Pardon me. Oh, so then finally, and
 most importantly in this case, the
 
 346
 00:13:18,959 --> 00:13:21,360
-most importantly in this case, the
 client ID is mapped to the set of the
 
 347
 00:13:21,360 --> 00:13:23,680
-client ID is mapped to the set of the
 presented credential. The set of the
 
 348
 00:13:23,680 --> 00:13:25,440
-presented credential. The set of the
 presented credential. And there's no
 
 349
 00:13:25,440 --> 00:13:28,240
-presented credential. And there's no
 client secret. Every token request from
 
 350
 00:13:28,240 --> 00:13:31,440
-client secret. Every token request from
 here on out is a signed request. So you
 
 351
 00:13:31,440 --> 00:13:32,959
-here on out is a signed request. So you
 eliminate a shared seeker from the
 
 352
 00:13:32,959 --> 00:13:35,040
-eliminate a shared seeker from the
 equation and you have fully signed token
 
 353
 00:13:35,040 --> 00:13:37,920
-equation and you have fully signed token
 requests. Now of course our hope is that
 
 354
 00:13:37,920 --> 00:13:40,000
-requests. Now of course our hope is that
 once they see the power of this they'll
 
 355
 00:13:40,000 --> 00:13:42,160
-once they see the power of this they'll
 say okay now that I can sign these token
 
 356
 00:13:42,160 --> 00:13:43,600
-say okay now that I can sign these token
 requests can I sign all my other
 
 357
 00:13:43,600 --> 00:13:45,440
-requests can I sign all my other
 requests and then we'll start selling
 
 358
 00:13:45,440 --> 00:13:47,519
-requests and then we'll start selling
 them rack.
 
 359
 00:13:47,519 --> 00:13:49,519
-them rack.
 So then that and so then I just
 
 360
 00:13:49,519 --> 00:13:50,880
-So then that and so then I just
 touched on the client credentials
 
 361
 00:13:50,880 --> 00:13:53,600
-touched on the client credentials
 flow. Every other request after that
 
 362
 00:13:53,600 --> 00:13:56,160
-flow. Every other request after that
 is present is a IPEX presentation
 
 363
 00:13:56,160 --> 00:13:58,160
-is present is a IPEX presentation
 signed and the client and server key
 
 364
 00:13:58,160 --> 00:14:00,320
-signed and the client and server key
 rotations are supported by the watcher
 
 365
 00:14:00,320 --> 00:14:01,920
-rotations are supported by the watcher
 network and I'll talk about how we
 
 366
 00:14:01,920 --> 00:14:04,880
-network and I'll talk about how we
 implemented that to enable connectedness
 
 367
 00:14:04,880 --> 00:14:08,240
-implemented that to enable connectedness
 as trust at scale specifically for
 
 368
 00:14:08,240 --> 00:14:10,399
-as trust at scale specifically for
 purpose of use and these extensions to
 
 369
 00:14:10,399 --> 00:14:13,920
-purpose of use and these extensions to
 the ooth protocol.
 
 370
 00:14:13,920 --> 00:14:16,160
-the ooth protocol.
 So then the logical next step
 
 371
 00:14:16,160 --> 00:14:18,240
-So then the logical next step
 authorization code flow. Let's let the
 
 372
 00:14:18,240 --> 00:14:21,199
-authorization code flow. Let's let the
 user now leverage what we've done to log
 
 373
 00:14:21,199 --> 00:14:23,600
-user now leverage what we've done to log
 in with their VI credentials. Okay,
 
 374
 00:14:23,600 --> 00:14:25,440
-in with their VI credentials. Okay,
 good. So we extended the model to
 
 375
 00:14:25,440 --> 00:14:28,000
-good. So we extended the model to
 support user authentication with data
 
 376
 00:14:28,000 --> 00:14:31,760
-support user authentication with data
 privacy of doing the offer ahead of the
 
 377
 00:14:31,760 --> 00:14:34,240
-privacy of doing the offer ahead of the
 actual credential presentation. So this
 
 378
 00:14:34,240 --> 00:14:37,120
-actual credential presentation. So this
 is a typical OOTH flow. The user
 
 379
 00:14:37,120 --> 00:14:39,040
-is a typical OOTH flow. The user
 the resource owner goes to the client
 
 380
 00:14:39,040 --> 00:14:40,880
-the resource owner goes to the client
 application. The user gets redirected to
 
 381
 00:14:40,880 --> 00:14:42,480
-application. The user gets redirected to
 the authorization server. They say
 
 382
 00:14:42,480 --> 00:14:45,279
-the authorization server. They say
 approve. It comes back here. The client
 
 383
 00:14:45,279 --> 00:14:47,839
-approve. It comes back here. The client
 then says, "Okay, here's the code. Can I
 
 384
 00:14:47,839 --> 00:14:50,240
-then says, "Okay, here's the code. Can I
 have a token?" You get the token and
 
 385
 00:14:50,240 --> 00:14:51,760
-have a token?" You get the token and
 then you send that over to the fire
 
 386
 00:14:51,760 --> 00:14:53,360
-then you send that over to the fire
 resource server and you get your data
 
 387
 00:14:53,360 --> 00:14:55,040
-resource server and you get your data
 because the resource server is able to
 
 388
 00:14:55,040 --> 00:14:56,639
-because the resource server is able to
 talk to the authorization server behind
 
 389
 00:14:56,639 --> 00:14:57,920
-talk to the authorization server behind
 the scenes and say, "Is this a valid
 
 390
 00:14:57,920 --> 00:14:59,519
-the scenes and say, "Is this a valid
 token?" So that's how it works. This is
 
 391
 00:14:59,519 --> 00:15:01,279
-token?" So that's how it works. This is
 a I stole this diagram from actually I
 
 392
 00:15:01,279 --> 00:15:04,399
-a I stole this diagram from actually I
 made it but I looked at someone else's.
 
 393
 00:15:04,399 --> 00:15:05,760
-made it but I looked at someone else's.
 This is what it looks like with KERI
 
 394
 00:15:05,760 --> 00:15:08,880
-This is what it looks like with KERI
 and the vidc.
 
 395
 00:15:08,880 --> 00:15:10,800
-and the vidc.
 So in this case the resource owner has a
 
 396
 00:15:10,800 --> 00:15:13,519
-So in this case the resource owner has a
 KERI database. The client application
 
 397
 00:15:13,519 --> 00:15:15,680
-KERI database. The client application
 has a KERI database and the
 
 398
 00:15:15,680 --> 00:15:17,120
-has a KERI database and the
 authorization server has a KERI
 
 399
 00:15:17,120 --> 00:15:20,800
-authorization server has a KERI
 database. So in this case when he is
 
 400
 00:15:20,800 --> 00:15:23,680
-database. So in this case when he is
 redirected over there he submits a
 
 401
 00:15:23,680 --> 00:15:25,199
-redirected over there he submits a
 credential instead of username and
 
 402
 00:15:25,199 --> 00:15:27,120
-credential instead of username and
 password. You've all done this with log
 
 403
 00:15:27,120 --> 00:15:28,800
-password. You've all done this with log
 on with Google, right? This is the exact
 
 404
 00:15:28,800 --> 00:15:31,040
-on with Google, right? This is the exact
 same thing but it's now log on with your
 
 405
 00:15:31,040 --> 00:15:33,760
-same thing but it's now log on with your
 ACDC credential.
 
 406
 00:15:33,760 --> 00:15:34,959
-ACDC credential.
 So then you get redirected and
 
 407
 00:15:34,959 --> 00:15:36,560
-So then you get redirected and
 everything works the same. But the
 
 408
 00:15:36,560 --> 00:15:38,399
-everything works the same. But the
 really important part here is these
 
 409
 00:15:38,399 --> 00:15:42,399
-really important part here is these
 arrows. Everybody is watching the
 
 410
 00:15:42,399 --> 00:15:44,000
-arrows. Everybody is watching the
 watcher network and each other's
 
 411
 00:15:44,000 --> 00:15:46,240
-watcher network and each other's
 witnesses so that when he decides to
 
 412
 00:15:46,240 --> 00:15:47,760
-witnesses so that when he decides to
 rotate his keys, he can do it every hour
 
 413
 00:15:47,760 --> 00:15:49,440
-rotate his keys, he can do it every hour
 if he wants to. We actually did that in
 
 414
 00:15:49,440 --> 00:15:50,800
-if he wants to. We actually did that in
 a in a pilot we were running. It was
 
 415
 00:15:50,800 --> 00:15:52,480
-a in a pilot we were running. It was
 really fun. He can rotate every hour if
 
 416
 00:15:52,480 --> 00:15:54,560
-really fun. He can rotate every hour if
 he wants to. It'll get propagated to his
 
 417
 00:15:54,560 --> 00:15:56,480
-he wants to. It'll get propagated to his
 witnesses. Everyone else's watchers will
 
 418
 00:15:56,480 --> 00:15:58,240
-witnesses. Everyone else's watchers will
 pick it up and now it's still fully
 
 419
 00:15:58,240 --> 00:15:59,920
-pick it up and now it's still fully
 secure and you have new keys as
 
 420
 00:15:59,920 --> 00:16:03,670
-secure and you have new keys as
 frequently as you want.
 
 421
@@ -2105,12 +1692,10 @@ Yes, you can hyper churn your
 
 422
 00:16:11,680 --> 00:16:13,199
-Yes, you can hyper churn your
 credentials.
 
 423
 00:16:13,199 --> 00:16:18,230
-credentials.
 And Sam, your voice is sounding better.
 
 424
@@ -2120,67 +1705,54 @@ presentation exchange protocol. It's a
 
 425
 00:16:23,120 --> 00:16:25,360
-presentation exchange protocol. It's a
 protocol built on top of KERI EXN
 
 426
 00:16:25,360 --> 00:16:28,639
-protocol built on top of KERI EXN
 messages and it allows this flow
 
 427
 00:16:28,639 --> 00:16:30,639
-messages and it allows this flow
 defined. I stole this table from the
 
 428
 00:16:30,639 --> 00:16:33,839
-defined. I stole this table from the
 KERI spec, the ACDC spec, sorry.
 
 429
 00:16:33,839 --> 00:16:37,040
-KERI spec, the ACDC spec, sorry.
 It allows this flow of messages to
 
 430
 00:16:37,040 --> 00:16:40,079
-It allows this flow of messages to
 negotiate credential exchange between
 
 431
 00:16:40,079 --> 00:16:42,880
-negotiate credential exchange between
 two parties. So we are only starting at
 
 432
 00:16:42,880 --> 00:16:44,880
-two parties. So we are only starting at
 the offer phase and you can see where
 
 433
 00:16:44,880 --> 00:16:47,839
-the offer phase and you can see where
 you can start. That's the wise in here.
 
 434
 00:16:47,839 --> 00:16:50,720
-you can start. That's the wise in here.
 And you can see after an apply you can
 
 435
 00:16:50,720 --> 00:16:52,959
-And you can see after an apply you can
 spurn it. I love that you use the word
 
 436
 00:16:52,959 --> 00:16:55,920
-spurn it. I love that you use the word
 spurn. I don't know why I just do.
 
 437
 00:16:55,920 --> 00:16:57,519
-spurn. I don't know why I just do.
 You can offer it. You can either spurn
 
 438
@@ -2190,247 +1762,198 @@ or agree to the offer and then you can
 
 439
 00:16:59,680 --> 00:17:01,440
-or agree to the offer and then you can
 grant the credential. And then once you
 
 440
 00:17:01,440 --> 00:17:03,120
-grant the credential. And then once you
 grant the credential, this is an
 
 441
 00:17:03,120 --> 00:17:04,959
-grant the credential, this is an
 important step, you admit it, which
 
 442
 00:17:04,959 --> 00:17:06,640
-important step, you admit it, which
 sends the admission back to the person.
 
 443
 00:17:06,640 --> 00:17:08,240
-sends the admission back to the person.
 So you have a receipt that they accepted
 
 444
 00:17:08,240 --> 00:17:10,720
-So you have a receipt that they accepted
 your credential.
 
 445
 00:17:10,720 --> 00:17:13,919
-your credential.
 And so what we've leveraged with IPEX,
 
 446
 00:17:13,919 --> 00:17:15,520
-And so what we've leveraged with IPEX,
 one of the I think the driving factors
 
 447
 00:17:15,520 --> 00:17:18,720
-one of the I think the driving factors
 for IPEX was graduated disclosure, chain
 
 448
 00:17:18,720 --> 00:17:20,880
-for IPEX was graduated disclosure, chain
 link confidentiality, and contingent
 
 449
 00:17:20,880 --> 00:17:23,839
-link confidentiality, and contingent
 disclosure on them accepting your offer,
 
 450
 00:17:23,839 --> 00:17:25,760
-disclosure on them accepting your offer,
 assigned acceptance of your offer. And
 
 451
 00:17:25,760 --> 00:17:28,559
-assigned acceptance of your offer. And
 then once you embed the rules inside of
 
 452
 00:17:28,559 --> 00:17:30,720
-then once you embed the rules inside of
 your credential, the metadata credential
 
 453
 00:17:30,720 --> 00:17:32,080
-your credential, the metadata credential
 that you exchange back and forth during
 
 454
 00:17:32,080 --> 00:17:34,799
-that you exchange back and forth during
 these exchanges, you get
 
 455
 00:17:34,799 --> 00:17:36,720
-these exchanges, you get
 contractually protected disclosure as
 
 456
 00:17:36,720 --> 00:17:38,559
-contractually protected disclosure as
 well. And that's what we're leveraging
 
 457
 00:17:38,559 --> 00:17:41,200
-well. And that's what we're leveraging
 here
 
 458
 00:17:41,200 --> 00:17:43,840
-here
 and I just said that. So this just
 
 459
 00:17:43,840 --> 00:17:45,120
-and I just said that. So this just
 details the contractually protected
 
 460
 00:17:45,120 --> 00:17:46,720
-details the contractually protected
 disclosure. The user offers the terms
 
 461
 00:17:46,720 --> 00:17:49,280
-disclosure. The user offers the terms
 and conditions, no data exposed. you get
 
 462
 00:17:49,280 --> 00:17:50,960
-and conditions, no data exposed. you get
 a cryptographic commitment in the offer
 
 463
 00:17:50,960 --> 00:17:52,640
-a cryptographic commitment in the offer
 to the structure of the data hash of
 
 464
 00:17:52,640 --> 00:17:54,720
-to the structure of the data hash of
 what the data will be and then terms and
 
 465
 00:17:54,720 --> 00:17:57,039
-what the data will be and then terms and
 conditions which are being enforced. I
 
 466
 00:17:57,039 --> 00:17:59,200
-conditions which are being enforced. I
 I think in the future we can see sites
 
 467
 00:17:59,200 --> 00:18:00,559
-I think in the future we can see sites
 offering a couple of just like when you
 
 468
 00:18:00,559 --> 00:18:01,919
-offering a couple of just like when you
 create a GitHub account you can pick
 
 469
 00:18:01,919 --> 00:18:03,760
-create a GitHub account you can pick
 your license for the for the new
 
 470
 00:18:03,760 --> 00:18:06,640
-your license for the for the new
 GitHub repo. I can see a world where
 
 471
 00:18:06,640 --> 00:18:08,000
-GitHub repo. I can see a world where
 sites are offering different terms and
 
 472
 00:18:08,000 --> 00:18:10,480
-sites are offering different terms and
 conditions and the user can select which
 
 473
 00:18:10,480 --> 00:18:12,480
-conditions and the user can select which
 one best suits their needs for giving
 
 474
 00:18:12,480 --> 00:18:14,799
-one best suits their needs for giving
 the data to the site and if none then
 
 475
 00:18:14,799 --> 00:18:16,960
-the data to the site and if none then
 they don't give the data.
 
 476
 00:18:16,960 --> 00:18:18,559
-they don't give the data.
 the site agrees, returns the signed
 
 477
 00:18:18,559 --> 00:18:20,400
-the site agrees, returns the signed
 agreement, and then the user saves the
 
 478
 00:18:20,400 --> 00:18:22,160
-agreement, and then the user saves the
 receipt and grants the full credential.
 
 479
 00:18:22,160 --> 00:18:24,320
-receipt and grants the full credential.
 And that's what the flow that we showed
 
 480
 00:18:24,320 --> 00:18:27,280
-And that's what the flow that we showed
 in the demo.
 
 481
 00:18:27,280 --> 00:18:29,200
-in the demo.
 So, this is just further detailing the
 
 482
 00:18:29,200 --> 00:18:32,160
-So, this is just further detailing the
 The credential offer comes back or
 
 483
 00:18:32,160 --> 00:18:33,919
-The credential offer comes back or
 I'm sorry, the site comes back
 
 484
 00:18:33,919 --> 00:18:35,280
-I'm sorry, the site comes back
 and says, "We'll accept an offer, you
 
 485
 00:18:35,280 --> 00:18:36,880
-and says, "We'll accept an offer, you
 make the offer, you get to see what
 
 486
 00:18:36,880 --> 00:18:38,240
-make the offer, you get to see what
 terms and conditions are there before
 
 487
 00:18:38,240 --> 00:18:41,750
-terms and conditions are there before
 you agree to it."
 
 488
@@ -2440,412 +1963,330 @@ from the server. We use our plugin to
 
 489
 00:18:45,600 --> 00:18:47,679
-from the server. We use our plugin to
 validate it. But again, at any point if
 
 490
 00:18:47,679 --> 00:18:48,880
-validate it. But again, at any point if
 you don't have our plugin, you want to
 
 491
 00:18:48,880 --> 00:18:50,160
-you don't have our plugin, you want to
 do it yourself, you just download the
 
 492
 00:18:50,160 --> 00:18:51,919
-do it yourself, you just download the
 signed agreement, you send it through
 
 493
 00:18:51,919 --> 00:18:54,480
-signed agreement, you send it through
 KERIpy, if you want to or any tool
 
 494
 00:18:54,480 --> 00:18:56,880
-KERIpy, if you want to or any tool
 that supports this flow with KERI
 
 495
 00:18:56,880 --> 00:18:58,720
-that supports this flow with KERI
 and you can then upload your offer or
 
 496
 00:18:58,720 --> 00:19:00,240
-and you can then upload your offer or
 your full grant, sorry, you upload your
 
 497
 00:19:00,240 --> 00:19:02,080
-your full grant, sorry, you upload your
 full grant, which we do with the submit
 
 498
 00:19:02,080 --> 00:19:04,000
-full grant, which we do with the submit
 full credential and now the site gets
 
 499
 00:19:04,000 --> 00:19:06,320
-full credential and now the site gets
 your information. And when we did this,
 
 500
 00:19:06,320 --> 00:19:08,559
-your information. And when we did this,
 it really did hit home that the
 
 501
 00:19:08,559 --> 00:19:09,919
-it really did hit home that the
 user benefits greatly for all the
 
 502
 00:19:09,919 --> 00:19:11,360
-user benefits greatly for all the
 reasons I just talked about, but the
 
 503
 00:19:11,360 --> 00:19:12,799
-reasons I just talked about, but the
 site benefits from it is something I
 
 504
 00:19:12,799 --> 00:19:14,400
-site benefits from it is something I
 think George said in one of his talks.
 
 505
 00:19:14,400 --> 00:19:16,160
-think George said in one of his talks.
 they get cryptographically verifiable
 
 506
 00:19:16,160 --> 00:19:18,080
-they get cryptographically verifiable
 data. They're not going to get typos.
 
 507
 00:19:18,080 --> 00:19:19,200
-data. They're not going to get typos.
 That's going to halt that's going to
 
 508
 00:19:19,200 --> 00:19:20,720
-That's going to halt that's going to
 slow down the process of users signing
 
 509
 00:19:20,720 --> 00:19:22,400
-slow down the process of users signing
 onto your site and getting access to the
 
 510
 00:19:22,400 --> 00:19:25,520
-onto your site and getting access to the
 data that they need.
 
 511
 00:19:25,520 --> 00:19:28,000
-data that they need.
 Okay, so this is how we did it. We built
 
 512
 00:19:28,000 --> 00:19:30,320
-Okay, so this is how we did it. We built
 an ACDC authorization server. It acts
 
 513
 00:19:30,320 --> 00:19:32,960
-an ACDC authorization server. It acts
 as both an O2 authorization service as
 
 514
 00:19:32,960 --> 00:19:35,520
-as both an O2 authorization service as
 well as an OIDC identity provider. So
 
 515
 00:19:35,520 --> 00:19:38,080
-well as an OIDC identity provider. So
 we're doing it with ACDC schema
 
 516
 00:19:38,080 --> 00:19:39,600
-we're doing it with ACDC schema
 configuration.
 
 517
 00:19:39,600 --> 00:19:41,600
-configuration.
 You can configure both the client
 
 518
 00:19:41,600 --> 00:19:44,080
-You can configure both the client
 registration schema that you'll accept
 
 519
 00:19:44,080 --> 00:19:46,799
-registration schema that you'll accept
 and it can be a list and you also
 
 520
 00:19:46,799 --> 00:19:49,360
-and it can be a list and you also
 specify the user authentication schema
 
 521
 00:19:49,360 --> 00:19:52,080
-specify the user authentication schema
 that you'll accept and it can be a list.
 
 522
 00:19:52,080 --> 00:19:54,240
-that you'll accept and it can be a list.
 Each of those supports a base schema
 
 523
 00:19:54,240 --> 00:19:57,039
-Each of those supports a base schema
 specification which allows you to
 
 524
 00:19:57,039 --> 00:20:00,080
-specification which allows you to
 enforce what issuers you will accept at
 
 525
 00:20:00,080 --> 00:20:02,480
-enforce what issuers you will accept at
 any chain in your hier credential
 
 526
 00:20:02,480 --> 00:20:05,679
-any chain in your hier credential
 hierarchy. So, for example, an oversight
 
 527
 00:20:05,679 --> 00:20:08,640
-hierarchy. So, for example, an oversight
 we did with GLEIF, the I can I can
 
 528
 00:20:08,640 --> 00:20:10,400
-we did with GLEIF, the I can I can
 issue VI credentials. They're not valid
 
 529
 00:20:10,400 --> 00:20:11,919
-issue VI credentials. They're not valid
 because they don't come from GLEIF root,
 
 530
 00:20:11,919 --> 00:20:13,360
-because they don't come from GLEIF root,
 but you can enforce that it has to come
 
 531
 00:20:13,360 --> 00:20:14,960
-but you can enforce that it has to come
 from GLEIF Route in here by putting the
 
 532
 00:20:14,960 --> 00:20:19,200
-from GLEIF Route in here by putting the
 issuer of the GLEIF root AID.
 
 533
 00:20:19,200 --> 00:20:21,200
-issuer of the GLEIF root AID.
 This was a fun part. ACDC payload to
 
 534
 00:20:21,200 --> 00:20:25,280
-This was a fun part. ACDC payload to
 OIDC claims mapping. We used a pretty
 
 535
 00:20:25,280 --> 00:20:26,960
-OIDC claims mapping. We used a pretty
 simple template syntax ginger 2 for
 
 536
 00:20:26,960 --> 00:20:27,760
-simple template syntax ginger 2 for
 those of you who are familiar with
 
 537
 00:20:27,760 --> 00:20:30,799
-those of you who are familiar with
 Python to create complex field mappings
 
 538
 00:20:30,799 --> 00:20:32,960
-Python to create complex field mappings
 between the credential payload and the
 
 539
 00:20:32,960 --> 00:20:35,679
-between the credential payload and the
 OIDC claims that come out the other end.
 
 540
 00:20:35,679 --> 00:20:37,919
-OIDC claims that come out the other end.
 So when you put all this together, what
 
 541
 00:20:37,919 --> 00:20:40,000
-So when you put all this together, what
 you're really doing is you're creating a
 
 542
 00:20:40,000 --> 00:20:42,720
-you're really doing is you're creating a
 truly distributed identity provider
 
 543
 00:20:42,720 --> 00:20:45,280
-truly distributed identity provider
 appliance. I can put one of these up,
 
 544
 00:20:45,280 --> 00:20:46,799
-appliance. I can put one of these up,
 specify a list of credentials, I'll
 
 545
 00:20:46,799 --> 00:20:48,880
-specify a list of credentials, I'll
 accept, specify how I want the data to
 
 546
 00:20:48,880 --> 00:20:50,960
-accept, specify how I want the data to
 look in OIDC.
 
 547
 00:20:50,960 --> 00:20:52,480
-look in OIDC.
 Someone will submit their credential to
 
 548
 00:20:52,480 --> 00:20:55,520
-Someone will submit their credential to
 me and I'll let him in. Sam can do the
 
 549
 00:20:55,520 --> 00:20:57,760
-me and I'll let him in. Sam can do the
 same thing. We never have to talk. Our
 
 550
 00:20:57,760 --> 00:20:59,360
-same thing. We never have to talk. Our
 systems aren't federated. We don't share
 
 551
 00:20:59,360 --> 00:21:01,760
-systems aren't federated. We don't share
 data. If he specifies the same schema as
 
 552
 00:21:01,760 --> 00:21:03,600
-data. If he specifies the same schema as
 me, he'll let the person in the same. It
 
 553
 00:21:03,600 --> 00:21:05,520
-me, he'll let the person in the same. It
 looks exactly the same to the user. The
 
 554
 00:21:05,520 --> 00:21:08,000
-looks exactly the same to the user. The
 data comes back to the to the relying
 
 555
 00:21:08,000 --> 00:21:10,000
-data comes back to the to the relying
 party, no, to the client application,
 
 556
 00:21:10,000 --> 00:21:13,600
-party, no, to the client application,
 sorry, of who that user is. But
 
 557
 00:21:13,600 --> 00:21:15,280
-sorry, of who that user is. But
 there's no federation. You're not
 
 558
 00:21:15,280 --> 00:21:17,440
-there's no federation. You're not
 relying on Google to hold your Gmail
 
 559
 00:21:17,440 --> 00:21:18,640
-relying on Google to hold your Gmail
 account. you're doing it with a
 
 560
 00:21:18,640 --> 00:21:20,799
-account. you're doing it with a
 decentralized credential issuance from
 
 561
 00:21:20,799 --> 00:21:22,320
-decentralized credential issuance from
 anyone.
 
 562
 00:21:22,320 --> 00:21:23,760
-anyone.
 So then these are the flows I've already
 
 563
 00:21:23,760 --> 00:21:25,520
-So then these are the flows I've already
 talked about that we worked with dynamic
 
 564
 00:21:25,520 --> 00:21:28,000
-talked about that we worked with dynamic
 client registration secret lists the
 
 565
 00:21:28,000 --> 00:21:29,600
-client registration secret lists the
 client authentication flow this is for
 
 566
 00:21:29,600 --> 00:21:32,080
-client authentication flow this is for
 our pair to pair model so that the pairs
 
 567
 00:21:32,080 --> 00:21:33,520
-our pair to pair model so that the pairs
 can then just start as soon as they do
 
 568
 00:21:33,520 --> 00:21:35,520
-can then just start as soon as they do
 the DCR the pairs can start exchanging
 
 569
 00:21:35,520 --> 00:21:38,000
-the DCR the pairs can start exchanging
 data by getting the token and then user
 
 570
 00:21:38,000 --> 00:21:41,669
-data by getting the token and then user
 authentication.
 
 571
@@ -2855,337 +2296,270 @@ integration into the watcher network and
 
 572
 00:21:46,720 --> 00:21:49,280
-integration into the watcher network and
 the witness network. For those of
 
 573
 00:21:49,280 --> 00:21:51,200
-the witness network. For those of
 you who know me, I do actually own a
 
 574
 00:21:51,200 --> 00:21:53,120
-you who know me, I do actually own a
 great Dane and a bull mastiff, but these
 
 575
 00:21:53,120 --> 00:21:55,360
-great Dane and a bull mastiff, but these
 aren't my dogs.
 
 576
 00:21:55,360 --> 00:21:57,919
-aren't my dogs.
 So we called it HK Tracker and it's
 
 577
 00:21:57,919 --> 00:21:59,919
-So we called it HK Tracker and it's
 what Sam has been calling forever a
 
 578
 00:21:59,919 --> 00:22:02,960
-what Sam has been calling forever a
 local watcher. And so anywhere where we
 
 579
 00:22:02,960 --> 00:22:05,919
-local watcher. And so anywhere where we
 deploy a server that or a or a system
 
 580
 00:22:05,919 --> 00:22:08,400
-deploy a server that or a or a system
 that needs access to the KERI watcher
 
 581
 00:22:08,400 --> 00:22:10,480
-that needs access to the KERI watcher
 network, it's going to be resolving AIDs
 
 582
 00:22:10,480 --> 00:22:11,840
-network, it's going to be resolving AIDs
 and it's going to need to keep track of
 
 583
 00:22:11,840 --> 00:22:14,880
-and it's going to need to keep track of
 key state. Any enterprise system we can
 
 584
 00:22:14,880 --> 00:22:17,520
-key state. Any enterprise system we can
 put as a sidecar. So think of a sidecar
 
 585
 00:22:17,520 --> 00:22:19,200
-put as a sidecar. So think of a sidecar
 pod inside of Kubernetes or just running
 
 586
 00:22:19,200 --> 00:22:21,919
-pod inside of Kubernetes or just running
 along in a VM. We put a local watcher
 
 587
 00:22:21,919 --> 00:22:26,720
-along in a VM. We put a local watcher
 service which is configured to our SaaS
 
 588
 00:22:26,720 --> 00:22:29,919
-service which is configured to our SaaS
 platform to be able to ask our platform
 
 589
 00:22:29,919 --> 00:22:31,760
-platform to be able to ask our platform
 to start watching new AIDs. So the
 
 590
 00:22:31,760 --> 00:22:33,039
-to start watching new AIDs. So the
 situation where someone authenticates
 
 591
 00:22:33,039 --> 00:22:34,880
-situation where someone authenticates
 for the first time and then continue to
 
 592
 00:22:34,880 --> 00:22:37,120
-for the first time and then continue to
 keep track of their key state changes. So
 
 593
 00:22:37,120 --> 00:22:39,120
-keep track of their key state changes. So
 it adjudicates the key state changes
 
 594
 00:22:39,120 --> 00:22:41,039
-it adjudicates the key state changes
 locally and integrates with the KERI
 
 595
 00:22:41,039 --> 00:22:43,840
-locally and integrates with the KERI
 watcher network. It uses our secure ESSR
 
 596
 00:22:43,840 --> 00:22:46,799
-watcher network. It uses our secure ESSR
 secure connections to our APIs to get
 
 597
 00:22:46,799 --> 00:22:49,280
-secure connections to our APIs to get
 the updates for the AIDs that it cares
 
 598
 00:22:49,280 --> 00:22:50,880
-the updates for the AIDs that it cares
 about. And the cool thing is it doesn't
 
 599
 00:22:50,880 --> 00:22:52,559
-about. And the cool thing is it doesn't
 have to do it for any ids that have
 
 600
 00:22:52,559 --> 00:22:54,640
-have to do it for any ids that have
 registered with SAM server because I
 
 601
 00:22:54,640 --> 00:22:55,840
-registered with SAM server because I
 don't care about those only the ones
 
 602
 00:22:55,840 --> 00:22:58,400
-don't care about those only the ones
 that I have authenticated against. And
 
 603
 00:22:58,400 --> 00:23:01,360
-that I have authenticated against. And
 so we use borrowed very heavily
 
 604
 00:23:01,360 --> 00:23:02,640
-so we use borrowed very heavily
 from Tailscale if any of you are
 
 605
 00:23:02,640 --> 00:23:04,640
-from Tailscale if any of you are
 familiar with that VPN company. They
 
 606
 00:23:04,640 --> 00:23:07,120
-familiar with that VPN company. They
 have a model for when you want to get a
 
 607
 00:23:07,120 --> 00:23:09,840
-have a model for when you want to get a
 ser a headless server on the system you
 
 608
 00:23:09,840 --> 00:23:11,200
-ser a headless server on the system you
 go into the site and you get a
 
 609
 00:23:11,200 --> 00:23:12,480
-go into the site and you get a
 authentication code onetime
 
 610
 00:23:12,480 --> 00:23:14,720
-authentication code onetime
 authentication code that you use. And
 
 611
 00:23:14,720 --> 00:23:18,080
-authentication code that you use. And
 so that's how we do it down there.
 
 612
 00:23:18,080 --> 00:23:20,640
-so that's how we do it down there.
 And so these are my actual dogs. I just
 
 613
 00:23:20,640 --> 00:23:22,720
-And so these are my actual dogs. I just
 wanted to show this. That's Zoe, my
 
 614
 00:23:22,720 --> 00:23:26,159
-wanted to show this. That's Zoe, my
 great Dean. That's Jackson, our bull
 
 615
 00:23:26,159 --> 00:23:28,799
-great Dean. That's Jackson, our bull
 mastiff. And that's Remy
 
 616
 00:23:28,799 --> 00:23:32,080
-mastiff. And that's Remy
 rescue pit bull.
 
 617
 00:23:32,080 --> 00:23:34,000
-rescue pit bull.
 Okay. And then this is the diagram that
 
 618
 00:23:34,000 --> 00:23:35,360
-Okay. And then this is the diagram that
 we've created. I think Jared already
 
 619
 00:23:35,360 --> 00:23:36,480
-we've created. I think Jared already
 showed this in one of his talks, but
 
 620
 00:23:36,480 --> 00:23:38,320
-showed this in one of his talks, but
 this is the diagram we created when we
 
 621
 00:23:38,320 --> 00:23:40,080
-this is the diagram we created when we
 were first trying to conceptualize this.
 
 622
 00:23:40,080 --> 00:23:42,799
-were first trying to conceptualize this.
 And the idea here is that when you look
 
 623
 00:23:42,799 --> 00:23:44,320
-And the idea here is that when you look
 at the convergence of what's happening
 
 624
 00:23:44,320 --> 00:23:46,240
-at the convergence of what's happening
 here, Direct Trust is working very
 
 625
 00:23:46,240 --> 00:23:49,679
-here, Direct Trust is working very
 closely with GLEIF
 
 626
 00:23:49,679 --> 00:23:53,120
-closely with GLEIF
 to help facilitate bringing the VI
 
 627
 00:23:53,120 --> 00:23:56,320
-to help facilitate bringing the VI
 ecosystem into healthcare.
 
 628
 00:23:56,320 --> 00:23:57,760
-ecosystem into healthcare.
 And so you can have these credentials
 
 629
 00:23:57,760 --> 00:23:59,360
-And so you can have these credentials
 issued into a payer and a provider
 
 630
 00:23:59,360 --> 00:24:02,240
-issued into a payer and a provider
 wallet, dynamic client registration,
 
 631
 00:24:02,240 --> 00:24:04,080
-wallet, dynamic client registration,
 client authentication.
 
 632
 00:24:04,080 --> 00:24:05,679
-client authentication.
 They can issue VIS down to their
 
 633
 00:24:05,679 --> 00:24:08,559
-They can issue VIS down to their
 members. state of Utah can issue set
 
 634
 00:24:08,559 --> 00:24:10,960
-members. state of Utah can issue set
 credentials and then all of them can now
 
 635
 00:24:10,960 --> 00:24:12,320
-credentials and then all of them can now
 authenticate against the site and get
 
 636
 00:24:12,320 --> 00:24:14,000
-authenticate against the site and get
 the data they need using this exact same
 
 637
 00:24:14,000 --> 00:24:15,520
-the data they need using this exact same
 method. So that's what we're trying to
 
 638
 00:24:15,520 --> 00:24:19,029
-method. So that's what we're trying to
 get at here.
 
 639
@@ -3200,192 +2574,154 @@ more about the difference between the
 
 641
 00:24:35,120 --> 00:24:37,600
-more about the difference between the
 payer and the provider wallets?
 
 642
 00:24:37,600 --> 00:24:38,080
-payer and the provider wallets?
 So,
 
 643
 00:24:38,080 --> 00:24:40,240
-So,
 like what they're meant for.
 
 644
 00:24:40,240 --> 00:24:42,559
-like what they're meant for.
 Oh like the purpose of use, like
 
 645
 00:24:42,559 --> 00:24:44,159
-Oh like the purpose of use, like
 why a payer would be accessing another
 
 646
 00:24:44,159 --> 00:24:45,679
-why a payer would be accessing another
 payer versus why they'd be accessing a
 
 647
 00:24:45,679 --> 00:24:46,880
-payer versus why they'd be accessing a
 provider. Is that what you mean?
 
 648
 00:24:46,880 --> 00:24:48,960
-provider. Is that what you mean?
 Yeah. Yeah. And what the wallets do,
 
 649
 00:24:48,960 --> 00:24:51,600
-Yeah. Yeah. And what the wallets do,
 like what's their provider mean?
 
 650
 00:24:51,600 --> 00:24:53,919
-like what's their provider mean?
 Oh, well, so yeah, I'll go back. So,
 
 651
 00:24:53,919 --> 00:24:56,799
-Oh, well, so yeah, I'll go back. So,
 in this case this was just meant to
 
 652
 00:24:56,799 --> 00:24:59,600
-in this case this was just meant to
 represent the fact that you have
 
 653
 00:24:59,600 --> 00:25:01,440
-represent the fact that you have
 this the same type of wallet.
 
 654
 00:25:01,440 --> 00:25:02,799
-this the same type of wallet.
 Got it. The payer would be holding his
 
 655
 00:25:02,799 --> 00:25:04,640
-Got it. The payer would be holding his
 VI credential and use it to access
 
 656
 00:25:04,640 --> 00:25:06,400
-VI credential and use it to access
 anyone else in the ecosystem. Literally
 
 657
 00:25:06,400 --> 00:25:07,840
-anyone else in the ecosystem. Literally
 anyone else in the ecosystem access
 
 658
 00:25:07,840 --> 00:25:08,640
-anyone else in the ecosystem access
 their data.
 
 659
 00:25:08,640 --> 00:25:10,159
-their data.
 Got it. Those are just roles, not
 
 660
 00:25:10,159 --> 00:25:11,520
-Got it. Those are just roles, not
 different wallets. Okay. Got it. I
 
 661
 00:25:11,520 --> 00:25:13,919
-different wallets. Okay. Got it. I
 misunderstood.
 
 662
 00:25:13,919 --> 00:25:16,000
-misunderstood.
 Okay. So, my question is about the
 
 663
 00:25:16,000 --> 00:25:17,760
-Okay. So, my question is about the
 authorization server flow. Wow. I'll
 
 664
 00:25:17,760 --> 00:25:19,120
-authorization server flow. Wow. I'll
 hold the mic a little further away from
 
 665
 00:25:19,120 --> 00:25:21,440
-hold the mic a little further away from
 my mouth.
 
 666
 00:25:21,440 --> 00:25:23,919
-my mouth.
 So, so the authorization server waits
 
 667
 00:25:23,919 --> 00:25:26,720
-So, so the authorization server waits
 for an ACDC presentation. So that does
 
 668
 00:25:26,720 --> 00:25:30,000
-for an ACDC presentation. So that does
 that make your the ACDC essentially
 
 669
 00:25:30,000 --> 00:25:32,080
-that make your the ACDC essentially
 the identity provider?
 
 670
 00:25:32,080 --> 00:25:33,360
-the identity provider?
 Yeah. Yeah. That's why I call it a
 
 671
 00:25:33,360 --> 00:25:35,840
-Yeah. Yeah. That's why I call it a
 dynamic identity provider appliance
 
 672
 00:25:35,840 --> 00:25:37,279
-dynamic identity provider appliance
 because it's it's just you install
 
 673
 00:25:37,279 --> 00:25:39,440
-because it's it's just you install
 anyone anywhere and you say trust these
 
 674
 00:25:39,440 --> 00:25:40,240
-anyone anywhere and you say trust these
 credentials.
 
 675
 00:25:40,240 --> 00:25:40,559
-credentials.
 Okay.
 
 676
 00:25:40,559 --> 00:25:41,840
-Okay.
 And it just works.
 
 677
 00:25:41,840 --> 00:25:42,480
-And it just works.
 Cool.
 
 678
 00:25:42,480 --> 00:25:49,110
-Cool.
 Yeah.
 
 679
@@ -3395,81 +2731,65 @@ There you go. Is it limited to person
 
 680
 00:25:56,960 --> 00:26:00,320
-There you go. Is it limited to person
 to business or can also be used in API
 
 681
 00:26:00,320 --> 00:26:02,080
-to business or can also be used in API
 situations businessto business?
 
 682
 00:26:02,080 --> 00:26:03,600
-situations businessto business?
 Yeah, the client authentication
 
 683
 00:26:03,600 --> 00:26:05,120
-Yeah, the client authentication
 flow, dynamic client registration and
 
 684
 00:26:05,120 --> 00:26:07,360
-flow, dynamic client registration and
 then client authentication flow supports
 
 685
 00:26:07,360 --> 00:26:09,919
-then client authentication flow supports
 businessto business.
 
 686
 00:26:09,919 --> 00:26:12,799
-businessto business.
 So anywhere where you do you so in
 
 687
 00:26:12,799 --> 00:26:16,240
-So anywhere where you do you so in
 OOTH you can do just client
 
 688
 00:26:16,240 --> 00:26:18,320
-OOTH you can do just client
 client authentication where you skip the
 
 689
 00:26:18,320 --> 00:26:19,679
-client authentication where you skip the
 authentication flow you get you don't
 
 690
 00:26:19,679 --> 00:26:20,880
-authentication flow you get you don't
 get the authentication code that's just
 
 691
 00:26:20,880 --> 00:26:22,240
-get the authentication code that's just
 pair to pair that's businessto business
 
 692
 00:26:22,240 --> 00:26:24,880
-pair to pair that's businessto business
 so it does support that as well
 
 693
 00:26:24,880 --> 00:26:26,799
-so it does support that as well
 that's why I guess you have a client ID
 
 694
 00:26:26,799 --> 00:26:28,080
-that's why I guess you have a client ID
 because the client can get the data
 
 695
 00:26:28,080 --> 00:26:33,269
-because the client can get the data
 themselves not on behalf of a user
 

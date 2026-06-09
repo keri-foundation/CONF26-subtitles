@@ -1,291 +1,234 @@
-﻿1
+1
 00:00:05,670 --> 00:00:08,400
 All right. Today, so the title
 of the talk is fire and CMS. And
 
 2
 00:00:08,400 --> 00:00:10,639
-of the talk is fire and CMS. And
 we'll talk a lot about that. I actually
 
 3
 00:00:10,639 --> 00:00:12,880
-we'll talk a lot about that. I actually
 want to spend a little bit of time today
 
 4
 00:00:12,880 --> 00:00:14,799
-want to spend a little bit of time today
 going over what the vital framework is.
 
 5
 00:00:14,799 --> 00:00:16,160
-going over what the vital framework is.
 It's actually the vital initiative. I
 
 6
 00:00:16,160 --> 00:00:17,840
-It's actually the vital initiative. I
 need to change the slide on this.
 
 7
 00:00:17,840 --> 00:00:19,199
-need to change the slide on this.
 This is an old one and as you can
 
 8
 00:00:19,199 --> 00:00:21,760
-This is an old one and as you can
 see, it's glitching out. But I want
 
 9
 00:00:21,760 --> 00:00:23,439
-see, it's glitching out. But I want
 to talk through this, what it means, why
 
 10
 00:00:23,439 --> 00:00:25,920
-to talk through this, what it means, why
 it's important what the acronym of
 
 11
 00:00:25,920 --> 00:00:27,840
-it's important what the acronym of
 verifiable identity and trust automation
 
 12
 00:00:27,840 --> 00:00:31,279
-verifiable identity and trust automation
 layer is. So here's just quick
 
 13
 00:00:31,279 --> 00:00:33,680
-layer is. So here's just quick
 intro. We're going to go through CMS
 
 14
 00:00:33,680 --> 00:00:35,600
-intro. We're going to go through CMS
 and their standards process
 
 15
 00:00:35,600 --> 00:00:37,360
-and their standards process
 interoperability standards in
 
 16
 00:00:37,360 --> 00:00:39,760
-interoperability standards in
 healthcare kind of at large, how we got
 
 17
 00:00:39,760 --> 00:00:42,960
-healthcare kind of at large, how we got
 to what fire is now today. What is
 
 18
 00:00:42,960 --> 00:00:45,520
-to what fire is now today. What is
 fire? And we'll go very high level
 
 19
 00:00:45,520 --> 00:00:47,840
-fire? And we'll go very high level
 on this. You we're not going to go into
 
 20
 00:00:47,840 --> 00:00:50,239
-on this. You we're not going to go into
 kind of the different IGs within fire.
 
 21
 00:00:50,239 --> 00:00:51,680
-kind of the different IGs within fire.
 We're not going to talk about, you know,
 
 22
 00:00:51,680 --> 00:00:54,640
-We're not going to talk about, you know,
 Fast necessarily. Just this is
 
 23
 00:00:54,640 --> 00:00:57,680
-Fast necessarily. Just this is
 fire 101 for the KERI ecosystem as
 
 24
 00:00:57,680 --> 00:00:59,680
-fire 101 for the KERI ecosystem as
 they want to come up to speed on the
 
 25
 00:00:59,680 --> 00:01:01,520
-they want to come up to speed on the
 applicability of the KERI ecosystem for
 
 26
 00:01:01,520 --> 00:01:03,359
-applicability of the KERI ecosystem for
 different industries. Then we'll talk
 
 27
 00:01:03,359 --> 00:01:05,920
-different industries. Then we'll talk
 about CMS 0057 and then we'll talk about
 
 28
 00:01:05,920 --> 00:01:08,640
-about CMS 0057 and then we'll talk about
 The vital initiative. So just as a as
 
 29
 00:01:08,640 --> 00:01:10,880
-The vital initiative. So just as a as
 a high level Jared Jeffrey CEO founder
 
 30
 00:01:10,880 --> 00:01:12,960
-a high level Jared Jeffrey CEO founder
 at healthcare is a startup
 
 31
 00:01:12,960 --> 00:01:16,000
-at healthcare is a startup
 that is in the industry of the
 
 32
 00:01:16,000 --> 00:01:18,479
-that is in the industry of the
 missing trust layer for healthcare. So
 
 33
 00:01:18,479 --> 00:01:20,880
-missing trust layer for healthcare. So
 we have adopted some open source open
 
 34
 00:01:20,880 --> 00:01:22,320
-we have adopted some open source open
 standard protocols. If you're at the
 
 35
 00:01:22,320 --> 00:01:24,000
-standard protocols. If you're at the
 KERI conference, you can probably guess
 
 36
 00:01:24,000 --> 00:01:27,759
-KERI conference, you can probably guess
 as to what those are. But for us, it
 
 37
 00:01:27,759 --> 00:01:31,040
-as to what those are. But for us, it
 is imperative that VC this
 
 38
 00:01:31,040 --> 00:01:33,920
-is imperative that VC this
 trust layer be implemented into the
 
 39
 00:01:33,920 --> 00:01:35,600
-trust layer be implemented into the
 healthcare ecosystem. As a little bit of
 
 40
 00:01:35,600 --> 00:01:38,159
-healthcare ecosystem. As a little bit of
 background on myself I am a me a
 
 41
 00:01:38,159 --> 00:01:40,640
-background on myself I am a me a
 member of or a fellow of the American
 
 42
 00:01:40,640 --> 00:01:42,000
-member of or a fellow of the American
 College of Health Data Management. I'm
 
 43
 00:01:42,000 --> 00:01:45,119
-College of Health Data Management. I'm
 former class research. Class is
 
 44
 00:01:45,119 --> 00:01:46,960
-former class research. Class is
 probably the biggest name in healthc
 
 45
 00:01:46,960 --> 00:01:49,520
-probably the biggest name in healthc
 care's market IT research and convening.
 
 46
 00:01:49,520 --> 00:01:52,000
-care's market IT research and convening.
 So they've spent years and years
 
 47
 00:01:52,000 --> 00:01:54,960
-So they've spent years and years
 and years getting all of the right
 
 48
 00:01:54,960 --> 00:01:57,280
-and years getting all of the right
 groups into the room where typically
 
 49
 00:01:57,280 --> 00:01:58,880
-groups into the room where typically
 those groups are very contentious.
 
 50
 00:01:58,880 --> 00:02:00,399
-those groups are very contentious.
 They'll put those people down in a room
 
 51
 00:02:00,399 --> 00:02:02,320
-They'll put those people down in a room
 say take your hats off. Let's
 
 52
 00:02:02,320 --> 00:02:03,759
-say take your hats off. Let's
 actually solve problems. And so they've
 
 53
 00:02:03,759 --> 00:02:06,079
-actually solve problems. And so they've
 done a lot of work like getting pairs
 
 54
 00:02:06,079 --> 00:02:08,080
-done a lot of work like getting pairs
 and providers to come together and talk
 
 55
 00:02:08,080 --> 00:02:10,160
-and providers to come together and talk
 about solutions which is the fact
 
 56
 00:02:10,160 --> 00:02:11,680
-about solutions which is the fact
 that they did that and it never came to
 
 57
 00:02:11,680 --> 00:02:14,640
-that they did that and it never came to
 blows was I think actually a miracle.
 
 58
 00:02:14,640 --> 00:02:17,280
-blows was I think actually a miracle.
 And then previously, you know, my
 
 59
@@ -295,137 +238,110 @@ educational credentials come both
 
 60
 00:02:19,440 --> 00:02:22,080
-educational credentials come both
 from UVU. So happy to be back at
 
 61
 00:02:22,080 --> 00:02:25,040
-from UVU. So happy to be back at
 the alma mater today. And then
 
 62
 00:02:25,040 --> 00:02:27,680
-the alma mater today. And then
 WGU, which is Western Governor's. Okay.
 
 63
 00:02:27,680 --> 00:02:29,280
-WGU, which is Western Governor's. Okay.
 Want to talk about just really
 
 64
 00:02:29,280 --> 00:02:32,959
-Want to talk about just really
 quickly why it is we're doing this in
 
 65
 00:02:32,959 --> 00:02:36,720
-quickly why it is we're doing this in
 healthcare. So my background is one
 
 66
 00:02:36,720 --> 00:02:38,879
-healthcare. So my background is one
 15 years in healthcare it. Yes. But
 
 67
 00:02:38,879 --> 00:02:41,200
-15 years in healthcare it. Yes. But
 I'm also a brain cancer survivor and
 
 68
 00:02:41,200 --> 00:02:43,599
-I'm also a brain cancer survivor and
 patient myself. So at one point I was
 
 69
 00:02:43,599 --> 00:02:45,360
-patient myself. So at one point I was
 being treated by the single machine in
 
 70
 00:02:45,360 --> 00:02:46,640
-being treated by the single machine in
 the entire Rocky Mountain West that
 
 71
 00:02:46,640 --> 00:02:48,560
-the entire Rocky Mountain West that
 could provide me the care I needed to
 
 72
 00:02:48,560 --> 00:02:50,959
-could provide me the care I needed to
 survive to thrive. Without that
 
 73
 00:02:50,959 --> 00:02:53,040
-survive to thrive. Without that
 machine I wouldn't be here today. The
 
 74
 00:02:53,040 --> 00:02:56,000
-machine I wouldn't be here today. The
 reality is that for many millions
 
 75
 00:02:56,000 --> 00:02:58,480
-reality is that for many millions
 of patients that is a very similar thing
 
 76
 00:02:58,480 --> 00:03:01,519
-of patients that is a very similar thing
 but often for them it is not some
 
 77
 00:03:01,519 --> 00:03:04,640
-but often for them it is not some
 bespoke proton therapy machine that
 
 78
 00:03:04,640 --> 00:03:06,480
-bespoke proton therapy machine that
 is hard to build. oftentimes it is
 
 79
 00:03:06,480 --> 00:03:09,040
-is hard to build. oftentimes it is
 something as simple as access to an
 
 80
 00:03:09,040 --> 00:03:11,120
-something as simple as access to an
 ER doctor at the time they need an ER
 
 81
 00:03:11,120 --> 00:03:12,959
-ER doctor at the time they need an ER
 doctor. And so one of the things that
 
 82
 00:03:12,959 --> 00:03:15,200
-doctor. And so one of the things that
 has started to happen increasingly is
 
 83
 00:03:15,200 --> 00:03:17,040
-has started to happen increasingly is
 that as these ransomware attacks which
 
 84
 00:03:17,040 --> 00:03:18,560
-that as these ransomware attacks which
 are targeting healthcare, we'll talk a
 
 85
 00:03:18,560 --> 00:03:20,480
-are targeting healthcare, we'll talk a
 little bit about that in a minute.
 
 86
 00:03:20,480 --> 00:03:23,440
-little bit about that in a minute.
 The targeting of this industry has
 
 87
@@ -435,437 +351,350 @@ real world implications. So the why for
 
 88
 00:03:25,920 --> 00:03:27,680
-real world implications. So the why for
 us, why we're here, why we're doing this
 
 89
 00:03:27,680 --> 00:03:31,360
-us, why we're here, why we're doing this
 is because as we increasingly move
 
 90
 00:03:31,360 --> 00:03:33,840
-is because as we increasingly move
 care into a digital context, we
 
 91
 00:03:33,840 --> 00:03:36,720
-care into a digital context, we
 increasingly make the risk to patients
 
 92
 00:03:36,720 --> 00:03:38,879
-increasingly make the risk to patients
 explode. And why is that? Well, if you
 
 93
 00:03:38,879 --> 00:03:41,599
-explode. And why is that? Well, if you
 shut down a hospital using a ransomware
 
 94
 00:03:41,599 --> 00:03:44,239
-shut down a hospital using a ransomware
 attack, the first response that
 
 95
 00:03:44,239 --> 00:03:46,080
-attack, the first response that
 hospital has to do from a care
 
 96
 00:03:46,080 --> 00:03:48,959
-hospital has to do from a care
 perspective is send every ambulance
 
 97
 00:03:48,959 --> 00:03:50,799
-perspective is send every ambulance
 that's supposed to come to them
 
 98
 00:03:50,799 --> 00:03:53,519
-that's supposed to come to them
 someplace else. And this the especially
 
 99
 00:03:53,519 --> 00:03:55,920
-someplace else. And this the especially
 in the US that ecosystem is incredibly
 
 100
 00:03:55,920 --> 00:03:57,760
-in the US that ecosystem is incredibly
 fragile. And so if you're talking about
 
 101
 00:03:57,760 --> 00:04:01,120
-fragile. And so if you're talking about
 for example an urban center, they may
 
 102
 00:04:01,120 --> 00:04:03,439
-for example an urban center, they may
 have to push hospitals out to hospitals
 
 103
 00:04:03,439 --> 00:04:05,439
-have to push hospitals out to hospitals
 in rural centers and those hospitals may
 
 104
 00:04:05,439 --> 00:04:06,799
-in rural centers and those hospitals may
 not have the same equipment, they may
 
 105
 00:04:06,799 --> 00:04:08,159
-not have the same equipment, they may
 not have the same training, they may not
 
 106
 00:04:08,159 --> 00:04:10,480
-not have the same training, they may not
 have a level one trauma center. So if
 
 107
 00:04:10,480 --> 00:04:12,720
-have a level one trauma center. So if
 you shut down a large health system, you
 
 108
 00:04:12,720 --> 00:04:14,480
-you shut down a large health system, you
 are actively threatening the lives of
 
 109
 00:04:14,480 --> 00:04:17,280
-are actively threatening the lives of
 patients. In fact, NPR about two years
 
 110
 00:04:17,280 --> 00:04:20,639
-patients. In fact, NPR about two years
 ago put out a report that stated that a
 
 111
 00:04:20,639 --> 00:04:22,160
-ago put out a report that stated that a
 ransomware attack on healthcare should
 
 112
 00:04:22,160 --> 00:04:24,720
-ransomware attack on healthcare should
 be considered as disastrous as a
 
 113
 00:04:24,720 --> 00:04:27,040
-be considered as disastrous as a
 national or a natural disaster. So a
 
 114
 00:04:27,040 --> 00:04:29,680
-national or a natural disaster. So a
 tornado or hurricane, they are the same
 
 115
 00:04:29,680 --> 00:04:31,919
-tornado or hurricane, they are the same
 level of disruption. The difference
 
 116
 00:04:31,919 --> 00:04:34,880
-level of disruption. The difference
 of course is while we can blame God for
 
 117
 00:04:34,880 --> 00:04:36,880
-of course is while we can blame God for
 tornadoes and hurricanes we blame
 
 118
 00:04:36,880 --> 00:04:38,639
-tornadoes and hurricanes we blame
 Russia and North KERI for the
 
 119
 00:04:38,639 --> 00:04:39,919
-Russia and North KERI for the
 ransomware attacks that are happening in
 
 120
 00:04:39,919 --> 00:04:42,960
-ransomware attacks that are happening in
 the industry. So a little bit of data
 
 121
 00:04:42,960 --> 00:04:45,600
-the industry. So a little bit of data
 on this. Healthcare is the most
 
 122
 00:04:45,600 --> 00:04:48,960
-on this. Healthcare is the most
 targeted industry by a large margin
 
 123
 00:04:48,960 --> 00:04:50,560
-targeted industry by a large margin
 when you look at some of these other
 
 124
 00:04:50,560 --> 00:04:52,800
-when you look at some of these other
 pieces. There's a few reasons for
 
 125
 00:04:52,800 --> 00:04:54,720
-pieces. There's a few reasons for
 this. They're also the most
 
 126
 00:04:54,720 --> 00:04:56,800
-this. They're also the most
 expensive. So, this is part of what's
 
 127
 00:04:56,800 --> 00:04:58,160
-expensive. So, this is part of what's
 driving that. You'll get the biggest
 
 128
 00:04:58,160 --> 00:05:00,720
-driving that. You'll get the biggest
 payout if you're holding a knife to the
 
 129
 00:05:00,720 --> 00:05:02,720
-payout if you're holding a knife to the
 throat of an organization that has to
 
 130
 00:05:02,720 --> 00:05:05,040
-throat of an organization that has to
 pay you or people will die. And so,
 
 131
 00:05:05,040 --> 00:05:06,880
-pay you or people will die. And so,
 attackers know this. This is a
 
 132
 00:05:06,880 --> 00:05:09,199
-attackers know this. This is a
 persistent data source. This isn't just
 
 133
 00:05:09,199 --> 00:05:10,720
-persistent data source. This isn't just
 one year. This has been for the last
 
 134
 00:05:10,720 --> 00:05:12,880
-one year. This has been for the last
 decade. Healthcare has been the most
 
 135
 00:05:12,880 --> 00:05:16,400
-decade. Healthcare has been the most
 targeted industry. So one of the
 
 136
 00:05:16,400 --> 00:05:19,120
-targeted industry. So one of the
 questions we get all the time is why
 
 137
 00:05:19,120 --> 00:05:21,199
-questions we get all the time is why
 attack patient data? What's what's the
 
 138
 00:05:21,199 --> 00:05:22,880
-attack patient data? What's what's the
 value proposition for an attacker to
 
 139
 00:05:22,880 --> 00:05:24,800
-value proposition for an attacker to
 come into this ecosystem and to
 
 140
 00:05:24,800 --> 00:05:26,720
-come into this ecosystem and to
 compromise all of this data? The reality
 
 141
 00:05:26,720 --> 00:05:28,080
-compromise all of this data? The reality
 is there's a few different things. The
 
 142
 00:05:28,080 --> 00:05:29,680
-is there's a few different things. The
 first is that on the on the black
 
 143
 00:05:29,680 --> 00:05:32,800
-first is that on the on the black
 market, a patient record is typically
 
 144
 00:05:32,800 --> 00:05:35,759
-market, a patient record is typically
 10x or more the value of let's say a
 
 145
 00:05:35,759 --> 00:05:37,360
-10x or more the value of let's say a
 credit card, which makes perfect sense,
 
 146
 00:05:37,360 --> 00:05:38,720
-credit card, which makes perfect sense,
 right? You your credit card gets
 
 147
 00:05:38,720 --> 00:05:40,160
-right? You your credit card gets
 compromised. What's the first thing you
 
 148
 00:05:40,160 --> 00:05:42,960
-compromised. What's the first thing you
 do? You call up Capital One or Chase and
 
 149
 00:05:42,960 --> 00:05:44,880
-do? You call up Capital One or Chase and
 you say, "Hey, I lost my card." And
 
 150
 00:05:44,880 --> 00:05:46,960
-you say, "Hey, I lost my card." And
 within a week, they've got a new card
 
 151
 00:05:46,960 --> 00:05:49,280
-within a week, they've got a new card
 for you, right? They've rotated you to a
 
 152
 00:05:49,280 --> 00:05:50,960
-for you, right? They've rotated you to a
 new credit card number. And you're back
 
 153
 00:05:50,960 --> 00:05:53,440
-new credit card number. And you're back
 up and running. When you lose your
 
 154
 00:05:53,440 --> 00:05:55,039
-up and running. When you lose your
 medical record, you're losing your
 
 155
 00:05:55,039 --> 00:05:56,639
-medical record, you're losing your
 social security number, you're losing
 
 156
 00:05:56,639 --> 00:05:59,280
-social security number, you're losing
 your date of birth, you're losing your
 
 157
 00:05:59,280 --> 00:06:02,639
-your date of birth, you're losing your
 name, you're losing typically one or
 
 158
 00:06:02,639 --> 00:06:04,720
-name, you're losing typically one or
 two payment methods, and you're also
 
 159
 00:06:04,720 --> 00:06:06,240
-two payment methods, and you're also
 losing all of your medical information
 
 160
 00:06:06,240 --> 00:06:09,120
-losing all of your medical information
 itself. None of that can be rotated. As
 
 161
 00:06:09,120 --> 00:06:10,800
-itself. None of that can be rotated. As
 much as I'd love to call Capital One and
 
 162
 00:06:10,800 --> 00:06:12,319
-much as I'd love to call Capital One and
 say, "Hey, you know, I've got brain
 
 163
 00:06:12,319 --> 00:06:14,000
-say, "Hey, you know, I've got brain
 cancer. That's great. Can we rotate this
 
 164
 00:06:14,000 --> 00:06:16,639
-cancer. That's great. Can we rotate this
 to like diabetes?" I'd prefer that
 
 165
 00:06:16,639 --> 00:06:18,400
-to like diabetes?" I'd prefer that
 it just doesn't work that way. You have
 
 166
 00:06:18,400 --> 00:06:20,560
-it just doesn't work that way. You have
 immutable data in a health record, which
 
 167
 00:06:20,560 --> 00:06:23,120
-immutable data in a health record, which
 means that the value of that data lasts
 
 168
 00:06:23,120 --> 00:06:25,600
-means that the value of that data lasts
 for as long as the data is valid,
 
 169
 00:06:25,600 --> 00:06:29,440
-for as long as the data is valid,
 which is forever. So with that data,
 
 170
 00:06:29,440 --> 00:06:30,560
-which is forever. So with that data,
 there are a number of different things
 
 171
 00:06:30,560 --> 00:06:32,720
-there are a number of different things
 that they can do. So one is just selling
 
 172
 00:06:32,720 --> 00:06:34,960
-that they can do. So one is just selling
 the records online but beyond that it's
 
 173
 00:06:34,960 --> 00:06:38,160
-the records online but beyond that it's
 things like standing up fake clinics
 
 174
 00:06:38,160 --> 00:06:50,950
-things like standing up fake clinics
 to execute fraud to CMS and it is
 
 175
@@ -875,317 +704,254 @@ and I can do that at a scale of you
 
 176
 00:06:56,240 --> 00:06:57,600
-and I can do that at a scale of you
 know hundreds or thousands of clinics.
 
 177
 00:06:57,600 --> 00:07:00,080
-know hundreds or thousands of clinics.
 There was actually a clinic, this was
 
 178
 00:07:00,080 --> 00:07:02,720
-There was actually a clinic, this was
 two years ago, I say clinic there
 
 179
 00:07:02,720 --> 00:07:04,720
-two years ago, I say clinic there
 was a group in Florida that was found to
 
 180
 00:07:04,720 --> 00:07:07,120
-was a group in Florida that was found to
 have absolutely no patients, but they
 
 181
 00:07:07,120 --> 00:07:08,800
-have absolutely no patients, but they
 had a whole lot of data and they were
 
 182
 00:07:08,800 --> 00:07:11,199
-had a whole lot of data and they were
 billing CMS pretty
 
 183
 00:07:11,199 --> 00:07:13,039
-billing CMS pretty
 aggressively to get money out of that
 
 184
 00:07:13,039 --> 00:07:15,440
-aggressively to get money out of that
 system. Other things to note here
 
 185
 00:07:15,440 --> 00:07:17,680
-system. Other things to note here
 is and this one I actually want to hit
 
 186
 00:07:17,680 --> 00:07:19,440
-is and this one I actually want to hit
 Pretty heavily which is extortion
 
 187
 00:07:19,440 --> 00:07:23,919
-Pretty heavily which is extortion
 attacks. So, it used to be that the
 
 188
 00:07:23,919 --> 00:07:26,240
-attacks. So, it used to be that the
 primary attack surface that an attacker
 
 189
 00:07:26,240 --> 00:07:27,840
-primary attack surface that an attacker
 was looking for, the monetization
 
 190
 00:07:27,840 --> 00:07:31,120
-was looking for, the monetization
 that they wanted was if I hit a
 
 191
 00:07:31,120 --> 00:07:33,440
-that they wanted was if I hit a
 hospital, they'll pay me $7 million to
 
 192
 00:07:33,440 --> 00:07:36,160
-hospital, they'll pay me $7 million to
 unlock my data. And that's still true.
 
 193
 00:07:36,160 --> 00:07:38,000
-unlock my data. And that's still true.
 But these days, the attacker actually
 
 194
 00:07:38,000 --> 00:07:40,639
-But these days, the attacker actually
 also couples that with exfiltration of
 
 195
 00:07:40,639 --> 00:07:43,599
-also couples that with exfiltration of
 that data. And because AI has made the
 
 196
 00:07:43,599 --> 00:07:46,479
-that data. And because AI has made the
 Cost per extortion so low, they'll
 
 197
 00:07:46,479 --> 00:07:48,479
-Cost per extortion so low, they'll
 now go after individual patients as
 
 198
 00:07:48,479 --> 00:07:51,199
-now go after individual patients as
 well. So they'll go after a recent
 
 199
 00:07:51,199 --> 00:07:53,440
-well. So they'll go after a recent
 article I read was that a bunch of
 
 200
 00:07:53,440 --> 00:07:56,160
-article I read was that a bunch of
 mimography images were captured and
 
 201
 00:07:56,160 --> 00:07:57,599
-mimography images were captured and
 they were actually going to individual
 
 202
 00:07:57,599 --> 00:07:58,960
-they were actually going to individual
 women and saying, "Hey, we have
 
 203
 00:07:58,960 --> 00:08:00,960
-women and saying, "Hey, we have
 compromising images of you from this
 
 204
 00:08:00,960 --> 00:08:02,400
-compromising images of you from this
 this data that we pulled out of your
 
 205
 00:08:02,400 --> 00:08:04,000
-this data that we pulled out of your
 health system. You're going to pay us
 
 206
 00:08:04,000 --> 00:08:06,080
-health system. You're going to pay us
 $2,000 or we're going to put these out
 
 207
 00:08:06,080 --> 00:08:08,160
-$2,000 or we're going to put these out
 on the dark web." And so it used to be
 
 208
 00:08:08,160 --> 00:08:10,479
-on the dark web." And so it used to be
 that $2,000 wasn't enough to get anybody
 
 209
 00:08:10,479 --> 00:08:12,639
-that $2,000 wasn't enough to get anybody
 interested. These days, because it is so
 
 210
 00:08:12,639 --> 00:08:14,319
-interested. These days, because it is so
 simple and easy to make that attack, and
 
 211
 00:08:14,319 --> 00:08:15,680
-simple and easy to make that attack, and
 by the way, I already have all your
 
 212
 00:08:15,680 --> 00:08:18,160
-by the way, I already have all your
 contact information. We can just set
 
 213
 00:08:18,160 --> 00:08:20,800
-contact information. We can just set
 up a script and the AI can extort for us
 
 214
 00:08:20,800 --> 00:08:22,800
-up a script and the AI can extort for us
 Which is obviously not terrible but
 
 215
 00:08:22,800 --> 00:08:24,720
-Which is obviously not terrible but
 when we ask about okay why is healthcare
 
 216
 00:08:24,720 --> 00:08:25,919
-when we ask about okay why is healthcare
 so compromised it's because it's
 
 217
 00:08:25,919 --> 00:08:28,319
-so compromised it's because it's
 insecure it's high value and the
 
 218
 00:08:28,319 --> 00:08:29,759
-insecure it's high value and the
 data doesn't change across time which
 
 219
 00:08:29,759 --> 00:08:32,240
-data doesn't change across time which
 makes it a really good find and
 
 220
 00:08:32,240 --> 00:08:34,560
-makes it a really good find and
 can be resold multiple times in the
 
 221
 00:08:34,560 --> 00:08:37,839
-can be resold multiple times in the
 future. So
 
 222
 00:08:37,839 --> 00:08:40,399
-future. So
 the other problem here is not only is
 
 223
 00:08:40,399 --> 00:08:42,719
-the other problem here is not only is
 healthc care's data incredibly valuable
 
 224
 00:08:42,719 --> 00:08:45,279
-healthc care's data incredibly valuable
 it is also incredibly complex. So you
 
 225
 00:08:45,279 --> 00:08:46,560
-it is also incredibly complex. So you
 have health systems, you have health
 
 226
 00:08:46,560 --> 00:08:48,320
-have health systems, you have health
 payers. These are typically the two big
 
 227
 00:08:48,320 --> 00:08:50,880
-payers. These are typically the two big
 players in the space. Each of these
 
 228
 00:08:50,880 --> 00:08:53,760
-players in the space. Each of these
 ecosystems will on average have about
 
 229
 00:08:53,760 --> 00:08:56,080
-ecosystems will on average have about
 1,500 connections. So the average health
 
 230
 00:08:56,080 --> 00:08:58,480
-1,500 connections. So the average health
 system has got vendors that are
 
 231
 00:08:58,480 --> 00:09:00,160
-system has got vendors that are
 connecting into their system doing a
 
 232
 00:09:00,160 --> 00:09:03,600
-connecting into their system doing a
 number of different tasks for them. Each
 
 233
 00:09:03,600 --> 00:09:06,000
-number of different tasks for them. Each
 one of these connections represents
 
 234
 00:09:06,000 --> 00:09:08,399
-one of these connections represents
 an attack surface for the attackers. I
 
 235
 00:09:08,399 --> 00:09:11,120
-an attack surface for the attackers. I
 showed on that previous slide about 3/4s
 
 236
 00:09:11,120 --> 00:09:14,320
-showed on that previous slide about 3/4s
 of actually originate in an external
 
 237
 00:09:14,320 --> 00:09:17,839
-of actually originate in an external
 party. So I think a good example of
 
 238
 00:09:17,839 --> 00:09:22,070
-party. So I think a good example of
 helps people understand
 
 239
@@ -1200,297 +966,238 @@ Target got stolen. The way that they got
 
 241
 00:09:28,399 --> 00:09:30,240
-Target got stolen. The way that they got
 in was through the HVAC vendor. So the
 
 242
 00:09:30,240 --> 00:09:31,760
-in was through the HVAC vendor. So the
 HVAC vendor had a connection into
 
 243
 00:09:31,760 --> 00:09:34,240
-HVAC vendor had a connection into
 Target. Obviously HVAC, he doesn't
 
 244
 00:09:34,240 --> 00:09:35,360
-Target. Obviously HVAC, he doesn't
 feel like he's got to be all that
 
 245
 00:09:35,360 --> 00:09:37,600
-feel like he's got to be all that
 secure, but simply by virtue of
 
 246
 00:09:37,600 --> 00:09:39,279
-secure, but simply by virtue of
 connectivity, they were able to do a
 
 247
 00:09:39,279 --> 00:09:40,720
-connectivity, they were able to do a
 privilege escalation attack, which is
 
 248
 00:09:40,720 --> 00:09:42,480
-privilege escalation attack, which is
 basically you compromise the first set
 
 249
 00:09:42,480 --> 00:09:44,160
-basically you compromise the first set
 of credentials. You move from those
 
 250
 00:09:44,160 --> 00:09:45,600
-of credentials. You move from those
 credentials laterally to somebody else
 
 251
 00:09:45,600 --> 00:09:47,440
-credentials laterally to somebody else
 that has better access into the system
 
 252
 00:09:47,440 --> 00:09:48,800
-that has better access into the system
 and then you can move up. Eventually,
 
 253
 00:09:48,800 --> 00:09:50,560
-and then you can move up. Eventually,
 you're looking for a CIS admin role.
 
 254
 00:09:50,560 --> 00:09:52,240
-you're looking for a CIS admin role.
 Once you have a CIS admin role, you have
 
 255
 00:09:52,240 --> 00:09:53,839
-Once you have a CIS admin role, you have
 keys of the kingdom. You execute your
 
 256
 00:09:53,839 --> 00:09:56,080
-keys of the kingdom. You execute your
 ransomware. You know, within a month,
 
 257
 00:09:56,080 --> 00:09:58,720
-ransomware. You know, within a month,
 the cyber insurance will have paid
 
 258
 00:09:58,720 --> 00:10:00,320
-the cyber insurance will have paid
 out the $7 million because the
 
 259
 00:10:00,320 --> 00:10:01,600
-out the $7 million because the
 hospital's got to get back up and
 
 260
 00:10:01,600 --> 00:10:04,399
-hospital's got to get back up and
 running. So that's the attack in
 
 261
 00:10:04,399 --> 00:10:08,080
-running. So that's the attack in
 a nutshell and this is the risk. So
 
 262
 00:10:08,080 --> 00:10:10,320
-a nutshell and this is the risk. So
 again thousands of connections coming
 
 263
 00:10:10,320 --> 00:10:12,000
-again thousands of connections coming
 into the system each one of them
 
 264
 00:10:12,000 --> 00:10:14,160
-into the system each one of them
 representing a potential attack surface
 
 265
 00:10:14,160 --> 00:10:18,399
-representing a potential attack surface
 for bad actors to enter in. So we used
 
 266
 00:10:18,399 --> 00:10:20,079
-for bad actors to enter in. So we used
 to think and I think some people still
 
 267
 00:10:20,079 --> 00:10:22,000
-to think and I think some people still
 do that if we've encrypted the
 
 268
 00:10:22,000 --> 00:10:23,839
-do that if we've encrypted the
 channel then we have a secure connection
 
 269
 00:10:23,839 --> 00:10:26,320
-channel then we have a secure connection
 and the reality is that the attacker
 
 270
 00:10:26,320 --> 00:10:29,279
-and the reality is that the attacker
 will most often use that channel
 
 271
 00:10:29,279 --> 00:10:31,680
-will most often use that channel
 against you hunting for what we call
 
 272
 00:10:31,680 --> 00:10:33,279
-against you hunting for what we call
 shared secrets. This is a shared
 
 273
 00:10:33,279 --> 00:10:34,640
-shared secrets. This is a shared
 credential. This is username and
 
 274
 00:10:34,640 --> 00:10:36,399
-credential. This is username and
 password. This is a bearer token.
 
 275
 00:10:36,399 --> 00:10:37,519
-password. This is a bearer token.
 There's a number of different things
 
 276
 00:10:37,519 --> 00:10:39,839
-There's a number of different things
 that qualify as a shared secret. Our
 
 277
 00:10:39,839 --> 00:10:42,720
-that qualify as a shared secret. Our
 contention is that we probably should
 
 278
 00:10:42,720 --> 00:10:44,959
-contention is that we probably should
 stop letting them steal these shared
 
 279
 00:10:44,959 --> 00:10:47,360
-stop letting them steal these shared
 secrets. impersonating your third party,
 
 280
 00:10:47,360 --> 00:10:48,720
-secrets. impersonating your third party,
 moving through the channel that you
 
 281
 00:10:48,720 --> 00:10:50,640
-moving through the channel that you
 trusted to be secure, and then
 
 282
 00:10:50,640 --> 00:10:52,880
-trusted to be secure, and then
 exfiltrating your data. It's time for us
 
 283
 00:10:52,880 --> 00:10:55,440
-exfiltrating your data. It's time for us
 to actually reduce the attack surface by
 
 284
 00:10:55,440 --> 00:10:57,680
-to actually reduce the attack surface by
 taking this piece here and removing the
 
 285
 00:10:57,680 --> 00:11:00,000
-taking this piece here and removing the
 shared secrets that come into the system
 
 286
 00:11:00,000 --> 00:11:02,160
-shared secrets that come into the system
 so that those attacks are no longer
 
 287
 00:11:02,160 --> 00:11:05,360
-so that those attacks are no longer
 valid no longer reasonable for an
 
 288
 00:11:05,360 --> 00:11:07,519
-valid no longer reasonable for an
 attacker to execute. Now, we've talked
 
 289
 00:11:07,519 --> 00:11:09,839
-attacker to execute. Now, we've talked
 about earlier today a lot of the value
 
 290
 00:11:09,839 --> 00:11:13,440
-about earlier today a lot of the value
 in terms of the connectivity problem
 
 291
 00:11:13,440 --> 00:11:16,160
-in terms of the connectivity problem
 with regards to onboarding with regards
 
 292
 00:11:16,160 --> 00:11:18,240
-with regards to onboarding with regards
 to the manual lift on it. One of the
 
 293
 00:11:18,240 --> 00:11:20,240
-to the manual lift on it. One of the
 other things that KERI does for us is
 
 294
 00:11:20,240 --> 00:11:23,920
-other things that KERI does for us is
 this. It allows us to create a ecosystem
 
 295
 00:11:23,920 --> 00:11:26,399
-this. It allows us to create a ecosystem
 of true zero trust where there is no
 
 296
 00:11:26,399 --> 00:11:29,600
-of true zero trust where there is no
 Oh, that's cool. Where there is no
 
 297
 00:11:29,600 --> 00:11:32,560
-Oh, that's cool. Where there is no
 compromising credential for
 
 298
 00:11:32,560 --> 00:11:35,120
-compromising credential for
 participants to be attacked on.
 
 299
 00:11:35,120 --> 00:11:36,560
-participants to be attacked on.
 In fact, we've actually shown this. We
 
 300
@@ -1500,167 +1207,134 @@ had a pentest done on a system that
 
 301
 00:11:38,640 --> 00:11:40,880
-had a pentest done on a system that
 was basically running this. We stood
 
 302
 00:11:40,880 --> 00:11:42,320
-was basically running this. We stood
 the system up. We were running hundreds
 
 303
 00:11:42,320 --> 00:11:44,079
-the system up. We were running hundreds
 of thousands of fire transaction
 
 304
 00:11:44,079 --> 00:11:45,519
-of thousands of fire transaction
 transactions. We'll talk about that in a
 
 305
 00:11:45,519 --> 00:11:47,920
-transactions. We'll talk about that in a
 second. Through the system, we
 
 306
 00:11:47,920 --> 00:11:49,839
-second. Through the system, we
 brought in some white hat hackers. We
 
 307
 00:11:49,839 --> 00:11:51,200
-brought in some white hat hackers. We
 pointed them to the system and we said,
 
 308
 00:11:51,200 --> 00:11:53,040
-pointed them to the system and we said,
 "Go ahead and break it. Here's
 
 309
 00:11:53,040 --> 00:11:54,720
-"Go ahead and break it. Here's
 everything that you would need if it was
 
 310
 00:11:54,720 --> 00:11:56,720
-everything that you would need if it was
 a traditional system." They came
 
 311
 00:11:56,720 --> 00:11:58,160
-a traditional system." They came
 back and said, "We can't get into the
 
 312
 00:11:58,160 --> 00:12:00,160
-back and said, "We can't get into the
 system. There's no serious flaws that we
 
 313
 00:12:00,160 --> 00:12:03,040
-system. There's no serious flaws that we
 see." It was humorous to me though
 
 314
 00:12:03,040 --> 00:12:04,959
-see." It was humorous to me though
 that they did say, "Hey, there's no
 
 315
 00:12:04,959 --> 00:12:07,600
-that they did say, "Hey, there's no
 TLS on this connection. So you guys are
 
 316
 00:12:07,600 --> 00:12:08,959
-TLS on this connection. So you guys are
 missing that. Maybe you should put it in
 
 317
 00:12:08,959 --> 00:12:11,120
-missing that. Maybe you should put it in
 there." And the reality is we believe
 
 318
 00:12:11,120 --> 00:12:12,880
-there." And the reality is we believe
 that KERI-based connectivity is
 
 319
 00:12:12,880 --> 00:12:16,560
-that KERI-based connectivity is
 actually a replacement for TLS. Okay. So
 
 320
 00:12:16,560 --> 00:12:19,200
-actually a replacement for TLS. Okay. So
 that's kind of the background on
 
 321
 00:12:19,200 --> 00:12:21,839
-that's kind of the background on
 healthcare and why I think the vital
 
 322
 00:12:21,839 --> 00:12:22,800
-healthcare and why I think the vital
 initiative and what we're going to talk
 
 323
 00:12:22,800 --> 00:12:24,720
-initiative and what we're going to talk
 about today is important. Now let's get
 
 324
 00:12:24,720 --> 00:12:28,160
-about today is important. Now let's get
 into what CMS is, what they actually do,
 
 325
 00:12:28,160 --> 00:12:31,440
-into what CMS is, what they actually do,
 why they matter. So very high level CMS
 
 326
 00:12:31,440 --> 00:12:32,720
-why they matter. So very high level CMS
 is the Centers for Medicare and
 
 327
 00:12:32,720 --> 00:12:35,680
-is the Centers for Medicare and
 Medicaid. Remember Medicare is for
 
 328
 00:12:35,680 --> 00:12:38,399
-Medicaid. Remember Medicare is for
 the elderly, Medicaid is for low-income
 
 329
 00:12:38,399 --> 00:12:40,480
-the elderly, Medicaid is for low-income
 individuals. So we care about our
 
 330
 00:12:40,480 --> 00:12:42,480
-individuals. So we care about our
 elderly, we provide AID to the poor.
 
 331
 00:12:42,480 --> 00:12:43,920
-elderly, we provide AID to the poor.
 That's the way I always remember it. And
 
 332
 00:12:43,920 --> 00:12:46,000
-That's the way I always remember it. And
 then you can keep those two straight.
 
 333
 00:12:46,000 --> 00:12:48,959
-then you can keep those two straight.
 It's important to note that while not
 
 334
@@ -1670,12 +1344,10 @@ all care happens through CMS, they're
 
 335
 00:12:51,600 --> 00:12:53,600
-all care happens through CMS, they're
 managing what was it like a trillion
 
 336
 00:12:53,600 --> 00:12:57,030
-managing what was it like a trillion
 dollars? 1.2.
 
 337
@@ -1685,212 +1357,170 @@ got a couple trillion dollars flowing
 
 338
 00:13:01,519 --> 00:13:03,200
-got a couple trillion dollars flowing
 through the system every year, which
 
 339
 00:13:03,200 --> 00:13:04,800
-through the system every year, which
 means across years it's trillions and
 
 340
 00:13:04,800 --> 00:13:07,200
-means across years it's trillions and
 trillions of dollars. So even if you are
 
 341
 00:13:07,200 --> 00:13:09,519
-trillions of dollars. So even if you are
 not a Medicare or Medicaid plan, even
 
 342
 00:13:09,519 --> 00:13:10,959
-not a Medicare or Medicaid plan, even
 if you're not accepting Medicare or
 
 343
 00:13:10,959 --> 00:13:13,760
-if you're not accepting Medicare or
 Medicaid dollars this is the 800 lb
 
 344
 00:13:13,760 --> 00:13:16,240
-Medicaid dollars this is the 800 lb
 gorilla in the room. So when they speak,
 
 345
 00:13:16,240 --> 00:13:18,079
-gorilla in the room. So when they speak,
 typically everybody listens. Yeah. Mark
 
 346
 00:13:18,079 --> 00:13:22,880
-typically everybody listens. Yeah. Mark
 amendment. Medicaid is not run by CMS,
 
 347
 00:13:22,880 --> 00:13:24,399
-amendment. Medicaid is not run by CMS,
 right? It's it's stun.
 
 348
 00:13:24,399 --> 00:13:26,880
-right? It's it's stun.
 The states they were the reason they
 
 349
 00:13:26,880 --> 00:13:28,480
-The states they were the reason they
 have the
 
 350
 00:13:28,480 --> 00:13:30,160
-have the
 some level of control is that they'll
 
 351
 00:13:30,160 --> 00:13:35,680
-some level of control is that they'll
 pay 90 a 9010 split for investments into
 
 352
 00:13:35,680 --> 00:13:36,560
-pay 90 a 9010 split for investments into
 Medicaid.
 
 353
 00:13:36,560 --> 00:13:38,480
-Medicaid.
 Yeah. Yeah. Okay. Yeah, that's good.
 
 354
 00:13:38,480 --> 00:13:40,720
-Yeah. Yeah. Okay. Yeah, that's good.
 That's good clarity. But at the end
 
 355
 00:13:40,720 --> 00:13:42,800
-That's good clarity. But at the end
 of the day, the reality is that if you
 
 356
 00:13:42,800 --> 00:13:44,240
-of the day, the reality is that if you
 are looking to get money out of the
 
 357
 00:13:44,240 --> 00:13:46,480
-are looking to get money out of the
 healthKERI system it would be wise
 
 358
 00:13:46,480 --> 00:13:50,000
-healthKERI system it would be wise
 of you to listen to and abide by the
 
 359
 00:13:50,000 --> 00:13:52,560
-of you to listen to and abide by the
 regulations that CMS puts out. Now
 
 360
 00:13:52,560 --> 00:13:55,120
-regulations that CMS puts out. Now
 CMS themselves typically do not
 
 361
 00:13:55,120 --> 00:13:57,360
-CMS themselves typically do not
 originate standards. what they like to
 
 362
 00:13:57,360 --> 00:13:59,920
-originate standards. what they like to
 do and what they've done numerous
 
 363
 00:13:59,920 --> 00:14:01,760
-do and what they've done numerous
 times in the past is that they will work
 
 364
 00:14:01,760 --> 00:14:04,959
-times in the past is that they will work
 with an industry group like HL7 who
 
 365
 00:14:04,959 --> 00:14:06,959
-with an industry group like HL7 who
 who stands up the fire standard and they
 
 366
 00:14:06,959 --> 00:14:08,240
-who stands up the fire standard and they
 will basically say these are the things
 
 367
 00:14:08,240 --> 00:14:09,920
-will basically say these are the things
 that we are looking for there's deep
 
 368
 00:14:09,920 --> 00:14:12,079
-that we are looking for there's deep
 collaboration there fire will say okay
 
 369
 00:14:12,079 --> 00:14:13,839
-collaboration there fire will say okay
 let's get the industry together we'll
 
 370
 00:14:13,839 --> 00:14:16,079
-let's get the industry together we'll
 stand up a standard like fast which
 
 371
 00:14:16,079 --> 00:14:17,680
-stand up a standard like fast which
 is what Mark was talking about
 
 372
 00:14:17,680 --> 00:14:20,639
-is what Mark was talking about
 earlier today once they have a an
 
 373
 00:14:20,639 --> 00:14:22,959
-earlier today once they have a an
 acceptable standard CMS will come
 
 374
 00:14:22,959 --> 00:14:24,720
-acceptable standard CMS will come
 back and basically bless that standard
 
 375
 00:14:24,720 --> 00:14:26,399
-back and basically bless that standard
 put it into regulation and say this is
 
 376
 00:14:26,399 --> 00:14:28,079
-put it into regulation and say this is
 how we want to see things done. So, for
 
 377
 00:14:28,079 --> 00:14:29,920
-how we want to see things done. So, for
 example, we talked about pretty
 
 378
 00:14:29,920 --> 00:14:33,440
-example, we talked about pretty
 extensively earlier today CMS 0057.
 
 379
 00:14:33,440 --> 00:14:35,120
-extensively earlier today CMS 0057.
 It is a regulation. It's a requirement
 
 380
@@ -1900,817 +1530,654 @@ for payers. They will not get or will be
 
 381
 00:14:37,199 --> 00:14:40,560
-for payers. They will not get or will be
 penalized by CMS starting January 1,
 
 382
 00:14:40,560 --> 00:14:43,519
-penalized by CMS starting January 1,
 2027. And that penalty is based on
 
 383
 00:14:43,519 --> 00:14:45,680
-2027. And that penalty is based on
 whether or not they have a fire API
 
 384
 00:14:45,680 --> 00:14:47,440
-whether or not they have a fire API
 endpoint. So again, you start to see
 
 385
 00:14:47,440 --> 00:14:49,760
-endpoint. So again, you start to see
 this converging of the federal
 
 386
 00:14:49,760 --> 00:14:52,000
-this converging of the federal
 regulators working with industry groups
 
 387
 00:14:52,000 --> 00:14:53,920
-regulators working with industry groups
 to establish these standards, then
 
 388
 00:14:53,920 --> 00:14:57,040
-to establish these standards, then
 enacting them into mandate. And then
 
 389
 00:14:57,040 --> 00:15:00,320
-enacting them into mandate. And then
 often, but not always though I
 
 390
 00:15:00,320 --> 00:15:02,079
-often, but not always though I
 would argue the most effective ones
 
 391
 00:15:02,079 --> 00:15:04,079
-would argue the most effective ones
 are when they tie those to payments. So
 
 392
 00:15:04,079 --> 00:15:05,120
-are when they tie those to payments. So
 if they say, "Hey, you're going to get
 
 393
 00:15:05,120 --> 00:15:06,160
-if they say, "Hey, you're going to get
 penalties. You're going to get fines.
 
 394
 00:15:06,160 --> 00:15:07,519
-penalties. You're going to get fines.
 We're going to cut off your Medicare
 
 395
 00:15:07,519 --> 00:15:09,600
-We're going to cut off your Medicare
 Medicaid funding." That's when you
 
 396
 00:15:09,600 --> 00:15:11,680
-Medicaid funding." That's when you
 actually see the industry move. And
 
 397
 00:15:11,680 --> 00:15:12,639
-actually see the industry move. And
 then yeah, they'll they'll they'll come
 
 398
 00:15:12,639 --> 00:15:14,800
-then yeah, they'll they'll they'll come
 in and they'll basically say by X date
 
 399
 00:15:14,800 --> 00:15:17,760
-in and they'll basically say by X date
 you want to see you know why happen
 
 400
 00:15:17,760 --> 00:15:20,720
-you want to see you know why happen
 within the industry. So let's talk
 
 401
 00:15:20,720 --> 00:15:22,240
-within the industry. So let's talk
 about kind of the history of these
 
 402
 00:15:22,240 --> 00:15:24,000
-about kind of the history of these
 standards, how we got to where we are
 
 403
 00:15:24,000 --> 00:15:26,000
-standards, how we got to where we are
 today. I think there's some
 
 404
 00:15:26,000 --> 00:15:28,079
-today. I think there's some
 instructive pieces here. It's important
 
 405
 00:15:28,079 --> 00:15:30,800
-instructive pieces here. It's important
 to note that we started with what I
 
 406
 00:15:30,800 --> 00:15:33,120
-to note that we started with what I
 would call foundational interoperability
 
 407
 00:15:33,120 --> 00:15:35,440
-would call foundational interoperability
 standards and as we've moved across time
 
 408
 00:15:35,440 --> 00:15:37,839
-standards and as we've moved across time
 we've moved up to I think much more
 
 409
 00:15:37,839 --> 00:15:39,839
-we've moved up to I think much more
 useful standards which would be
 
 410
 00:15:39,839 --> 00:15:42,480
-useful standards which would be
 network interoperability standards. Now
 
 411
 00:15:42,480 --> 00:15:44,320
-network interoperability standards. Now
 I want to give a couple of
 
 412
 00:15:44,320 --> 00:15:46,560
-I want to give a couple of
 definitions here. So a foundational
 
 413
 00:15:46,560 --> 00:15:48,240
-definitions here. So a foundational
 standard is basically just what's the
 
 414
 00:15:48,240 --> 00:15:50,320
-standard is basically just what's the
 pipe look like? If you stand up the pipe
 
 415
 00:15:50,320 --> 00:15:51,600
-pipe look like? If you stand up the pipe
 good you've met the foundational
 
 416
 00:15:51,600 --> 00:15:52,880
-good you've met the foundational
 standard. And there we'll talk about
 
 417
 00:15:52,880 --> 00:15:54,399
-standard. And there we'll talk about
 some examples here in a second.
 
 418
 00:15:54,399 --> 00:15:56,720
-some examples here in a second.
 structural is really just I have the
 
 419
 00:15:56,720 --> 00:15:58,560
-structural is really just I have the
 the PET pipe. I know that the data is
 
 420
 00:15:58,560 --> 00:16:00,320
-the PET pipe. I know that the data is
 coming through and the reality is that
 
 421
 00:16:00,320 --> 00:16:02,000
-coming through and the reality is that
 this is a you know for a diabetic let's
 
 422
 00:16:02,000 --> 00:16:04,000
-this is a you know for a diabetic let's
 say it's a glucco glucose test. That's
 
 423
 00:16:04,000 --> 00:16:05,920
-say it's a glucco glucose test. That's
 more useful than just hey data is coming
 
 424
 00:16:05,920 --> 00:16:08,160
-more useful than just hey data is coming
 in and out as you move up the ladder
 
 425
 00:16:08,160 --> 00:16:10,000
-in and out as you move up the ladder
 to like semantic data. This is where you
 
 426
 00:16:10,000 --> 00:16:12,160
-to like semantic data. This is where you
 start to get structure and coding into
 
 427
 00:16:12,160 --> 00:16:13,759
-start to get structure and coding into
 it which basically lets you say things
 
 428
 00:16:13,759 --> 00:16:15,920
-it which basically lets you say things
 like hey this is a glucose test it needs
 
 429
 00:16:15,920 --> 00:16:18,639
-like hey this is a glucose test it needs
 to go into the doctor's decision support
 
 430
 00:16:18,639 --> 00:16:20,399
-to go into the doctor's decision support
 tool. Right? So as you build the
 
 431
 00:16:20,399 --> 00:16:22,240
-tool. Right? So as you build the
 standard on interoperability, you get
 
 432
 00:16:22,240 --> 00:16:23,759
-standard on interoperability, you get
 more and more value out of the data
 
 433
 00:16:23,759 --> 00:16:25,600
-more and more value out of the data
 that's flowing in and out of the system.
 
 434
 00:16:25,600 --> 00:16:28,399
-that's flowing in and out of the system.
 The network standard and this one is
 
 435
 00:16:28,399 --> 00:16:31,519
-The network standard and this one is
 So these are I would say adopted
 
 436
 00:16:31,519 --> 00:16:34,720
-So these are I would say adopted
 nomenclature. I've been adding this. So
 
 437
 00:16:34,720 --> 00:16:36,720
-nomenclature. I've been adding this. So
 this is new to healthcare. My argument
 
 438
 00:16:36,720 --> 00:16:38,720
-this is new to healthcare. My argument
 is that we need to get to network
 
 439
 00:16:38,720 --> 00:16:40,399
-is that we need to get to network
 standards where it is not just
 
 440
 00:16:40,399 --> 00:16:42,480
-standards where it is not just
 structured coded and scaled which is
 
 441
 00:16:42,480 --> 00:16:44,320
-structured coded and scaled which is
 important for these other things. It
 
 442
 00:16:44,320 --> 00:16:46,160
-important for these other things. It
 needs to be governed and that governance
 
 443
 00:16:46,160 --> 00:16:48,399
-needs to be governed and that governance
 piece is the piece that healthcare is
 
 444
 00:16:48,399 --> 00:16:51,279
-piece is the piece that healthcare is
 still I think currently grappling with.
 
 445
 00:16:51,279 --> 00:16:54,480
-still I think currently grappling with.
 So let's talk about a few of the
 
 446
 00:16:54,480 --> 00:16:57,519
-So let's talk about a few of the
 ways that this lays out in terms of
 
 447
 00:16:57,519 --> 00:17:01,199
-ways that this lays out in terms of
 manual effort. So if you have a
 
 448
 00:17:01,199 --> 00:17:02,959
-manual effort. So if you have a
 foundational interoperability model
 
 449
 00:17:02,959 --> 00:17:04,319
-foundational interoperability model
 literally it's just the pipe. Everything
 
 450
 00:17:04,319 --> 00:17:06,079
-literally it's just the pipe. Everything
 else is on you. Congratulations. You
 
 451
 00:17:06,079 --> 00:17:08,400
-else is on you. Congratulations. You
 have data have fun you know
 
 452
 00:17:08,400 --> 00:17:10,079
-have data have fun you know
 normalizing all of that. Maybe you'll
 
 453
 00:17:10,079 --> 00:17:11,600
-normalizing all of that. Maybe you'll
 pass it into Mirthth or Iguana or
 
 454
 00:17:11,600 --> 00:17:13,120
-pass it into Mirthth or Iguana or
 somebody else and they can do the job
 
 455
 00:17:13,120 --> 00:17:15,520
-somebody else and they can do the job
 for you. This goes all the way up to the
 
 456
 00:17:15,520 --> 00:17:17,760
-for you. This goes all the way up to the
 question we should be asking which is
 
 457
 00:17:17,760 --> 00:17:19,520
-question we should be asking which is
 when data is flowing through the system
 
 458
 00:17:19,520 --> 00:17:22,079
-when data is flowing through the system
 is the standard built in such a way that
 
 459
 00:17:22,079 --> 00:17:24,480
-is the standard built in such a way that
 we can answer the question affirmatively
 
 460
 00:17:24,480 --> 00:17:26,000
-we can answer the question affirmatively
 will this improve patient care and
 
 461
 00:17:26,000 --> 00:17:28,000
-will this improve patient care and
 that's what we're trying to get to
 
 462
 00:17:28,000 --> 00:17:30,320
-that's what we're trying to get to
 with interoperability standards. So
 
 463
 00:17:30,320 --> 00:17:32,480
-with interoperability standards. So
 let's talk about what some of these
 
 464
 00:17:32,480 --> 00:17:35,760
-let's talk about what some of these
 standards are. So back in the 80s
 
 465
 00:17:35,760 --> 00:17:38,640
-standards are. So back in the 80s
 which I was not around for ADTS
 
 466
 00:17:38,640 --> 00:17:41,120
-which I was not around for ADTS
 came out ADTS is admissions discharges
 
 467
 00:17:41,120 --> 00:17:43,360
-came out ADTS is admissions discharges
 and transfers basically this was the
 
 468
 00:17:43,360 --> 00:17:44,640
-and transfers basically this was the
 building block of healthcare's
 
 469
 00:17:44,640 --> 00:17:47,120
-building block of healthcare's
 interoperability. Can I see from a
 
 470
 00:17:47,120 --> 00:17:49,360
-interoperability. Can I see from a
 hospital perspective is the patient in
 
 471
 00:17:49,360 --> 00:17:52,320
-hospital perspective is the patient in
 my hospital is he out of the hospital or
 
 472
 00:17:52,320 --> 00:17:54,080
-my hospital is he out of the hospital or
 has she been transferred to another
 
 473
 00:17:54,080 --> 00:17:56,000
-has she been transferred to another
 hospital? And that was the foundational
 
 474
 00:17:56,000 --> 00:17:58,160
-hospital? And that was the foundational
 effort that came again back in the 80s.
 
 475
 00:17:58,160 --> 00:18:02,799
-effort that came again back in the 80s.
 We moved on to between 87 to 95 there
 
 476
 00:18:02,799 --> 00:18:05,840
-We moved on to between 87 to 95 there
 was CCDAS that were added in and the
 
 477
 00:18:05,840 --> 00:18:06,799
-was CCDAS that were added in and the
 one that I actually want to talk about
 
 478
 00:18:06,799 --> 00:18:10,720
-one that I actually want to talk about
 is HL7B2. HL7B2 is the precursor to
 
 479
 00:18:10,720 --> 00:18:12,720
-is HL7B2. HL7B2 is the precursor to
 fire. So this is probably and correct me
 
 480
 00:18:12,720 --> 00:18:15,120
-fire. So this is probably and correct me
 if I'm wrong here Mark the most
 
 481
 00:18:15,120 --> 00:18:17,360
-if I'm wrong here Mark the most
 adopted standard in healthcare today.
 
 482
 00:18:17,360 --> 00:18:20,320
-adopted standard in healthcare today.
 Most data flows on HL7B2
 
 483
 00:18:20,320 --> 00:18:22,720
-Most data flows on HL7B2
 most
 
 484
 00:18:22,720 --> 00:18:25,600
-most
 yeah so it's HL7B2
 
 485
 00:18:25,600 --> 00:18:26,720
-yeah so it's HL7B2
 question mark
 
 486
 00:18:26,720 --> 00:18:30,400
-question mark
 it's standard. Yeah, standard adjacent.
 
 487
 00:18:30,400 --> 00:18:32,480
-it's standard. Yeah, standard adjacent.
 And so that was back in 95 that this
 
 488
 00:18:32,480 --> 00:18:33,840
-And so that was back in 95 that this
 came out. You can see that
 
 489
 00:18:33,840 --> 00:18:36,000
-came out. You can see that
 healthcare is Yeah, go ahead.
 
 490
 00:18:36,000 --> 00:18:37,600
-healthcare is Yeah, go ahead.
 What's the differentiation there? What's
 
 491
 00:18:37,600 --> 00:18:39,919
-What's the differentiation there? What's
 what's the customization? Is it the data
 
 492
 00:18:39,919 --> 00:18:41,840
-what's the customization? Is it the data
 model that's consistent? Is it just
 
 493
 00:18:41,840 --> 00:18:44,000
-model that's consistent? Is it just
 what's what's the proprietary
 
 494
 00:18:44,000 --> 00:18:44,960
-what's what's the proprietary
 niches?
 
 495
 00:18:44,960 --> 00:18:47,280
-niches?
 It's it's extensions.
 
 496
 00:18:47,280 --> 00:18:48,880
-It's it's extensions.
 It's it's wide open extensions. They
 
 497
 00:18:48,880 --> 00:18:51,280
-It's it's wide open extensions. They
 call them Z segments. They just let you
 
 498
 00:18:51,280 --> 00:18:52,480
-call them Z segments. They just let you
 let you put whatever you want in there
 
 499
 00:18:52,480 --> 00:18:55,039
-let you put whatever you want in there
 and define them for your local use. So
 
 500
 00:18:55,039 --> 00:18:56,799
-and define them for your local use. So
 it's a local extension and they're
 
 501
 00:18:56,799 --> 00:18:59,120
-it's a local extension and they're
 allowed and they're you know a lot of
 
 502
 00:18:59,120 --> 00:19:01,520
-allowed and they're you know a lot of
 them are used in fact even later
 
 503
 00:19:01,520 --> 00:19:03,679
-them are used in fact even later
 versions of HS72 that actually support
 
 504
 00:19:03,679 --> 00:19:07,120
-versions of HS72 that actually support
 those capabilities later people
 
 505
 00:19:07,120 --> 00:19:08,720
-those capabilities later people
 didn't change their Z segments because
 
 506
 00:19:08,720 --> 00:19:10,400
-didn't change their Z segments because
 they were working and they were mostly
 
 507
 00:19:10,400 --> 00:19:13,200
-they were working and they were mostly
 were communicating inside the enterprise
 
 508
 00:19:13,200 --> 00:19:17,039
-were communicating inside the enterprise
 so communicating from the system that
 
 509
 00:19:17,039 --> 00:19:19,120
-so communicating from the system that
 manages the
 
 510
 00:19:19,120 --> 00:19:21,360
-manages the
 encounters with the systems that are
 
 511
 00:19:21,360 --> 00:19:24,960
-encounters with the systems that are
 clear so from the system the lab system
 
 512
 00:19:24,960 --> 00:19:27,200
-clear so from the system the lab system
 back. So that's that's why they could be
 
 513
 00:19:27,200 --> 00:19:29,919
-back. So that's that's why they could be
 that's why they could be not standard
 
 514
 00:19:29,919 --> 00:19:32,080
-that's why they could be not standard
 because they were for use in a in a
 
 515
 00:19:32,080 --> 00:19:32,480
-because they were for use in a in a
 price.
 
 516
 00:19:32,480 --> 00:19:32,799
-price.
 Yeah.
 
 517
 00:19:32,799 --> 00:19:37,120
-Yeah.
 And the other thing is the V2 and C CCDA
 
 518
 00:19:37,120 --> 00:19:38,720
-And the other thing is the V2 and C CCDA
 standards
 
 519
 00:19:38,720 --> 00:19:41,360
-standards
 were effectively proprietary. So in
 
 520
 00:19:41,360 --> 00:19:43,360
-were effectively proprietary. So in
 those days you have to pay to get access
 
 521
 00:19:43,360 --> 00:19:45,520
-those days you have to pay to get access
 to those just like you do today with
 
 522
 00:19:45,520 --> 00:19:48,400
-to those just like you do today with
 X12. So if you want to do a financial
 
 523
 00:19:48,400 --> 00:19:51,280
-X12. So if you want to do a financial
 transaction in healthcare it has to go
 
 524
 00:19:51,280 --> 00:19:56,320
-transaction in healthcare it has to go
 RX12 because over it cost you like 1,500
 
 525
 00:19:56,320 --> 00:19:59,840
-RX12 because over it cost you like 1,500
 bucks a year just to be able to see that
 
 526
 00:19:59,840 --> 00:20:02,960
-bucks a year just to be able to see that
 and extra homes in that in that era.
 
 527
 00:20:02,960 --> 00:20:04,559
-and extra homes in that in that era.
 Yeah. Right here.
 
 528
 00:20:04,559 --> 00:20:06,080
-Yeah. Right here.
 Yeah.
 
 529
 00:20:06,080 --> 00:20:08,080
-Yeah.
 Yeah. It's all it's all in here. And
 
 530
 00:20:08,080 --> 00:20:09,760
-Yeah. It's all it's all in here. And
 obviously not comprehensive. We're just
 
 531
 00:20:09,760 --> 00:20:12,080
-obviously not comprehensive. We're just
 trying to do a high level here. So
 
 532
 00:20:12,080 --> 00:20:14,160
-trying to do a high level here. So
 then back in 2011, you'll be happy
 
 533
 00:20:14,160 --> 00:20:15,919
-then back in 2011, you'll be happy
 to note I was here for this one. I was
 
 534
 00:20:15,919 --> 00:20:18,880
-to note I was here for this one. I was
 here for this one. The fire
 
 535
 00:20:18,880 --> 00:20:22,400
-here for this one. The fire
 standard was put out in 2011. Since
 
 536
 00:20:22,400 --> 00:20:24,400
-standard was put out in 2011. Since
 then there's been a lot of work in the
 
 537
 00:20:24,400 --> 00:20:26,400
-then there's been a lot of work in the
 fire space I think at this point. So
 
 538
 00:20:26,400 --> 00:20:29,919
-fire space I think at this point. So
 when I got into healthcare we were
 
 539
 00:20:29,919 --> 00:20:31,440
-when I got into healthcare we were
 just talking about interoperability
 
 540
 00:20:31,440 --> 00:20:33,360
-just talking about interoperability
 standards and there was a lot of
 
 541
 00:20:33,360 --> 00:20:35,760
-standards and there was a lot of
 discussion around is fire the go forward
 
 542
 00:20:35,760 --> 00:20:37,840
-discussion around is fire the go forward
 are we going to do this? Are we not?
 
 543
 00:20:37,840 --> 00:20:39,280
-are we going to do this? Are we not?
 Because a lot of people were happy with
 
 544
@@ -2720,107 +2187,86 @@ HL7B2 in the sense that they're lazy and
 
 545
 00:20:42,080 --> 00:20:43,440
-HL7B2 in the sense that they're lazy and
 Didn't see the need to change and
 
 546
 00:20:43,440 --> 00:20:45,039
-Didn't see the need to change and
 we're still faxing things anyway. So why
 
 547
 00:20:45,039 --> 00:20:47,120
-we're still faxing things anyway. So why
 do we care about a data standard? I
 
 548
 00:20:47,120 --> 00:20:50,240
-do we care about a data standard? I
 would say that in the last 5 to 10
 
 549
 00:20:50,240 --> 00:20:52,080
-would say that in the last 5 to 10
 years that has really flipped and the
 
 550
 00:20:52,080 --> 00:20:54,000
-years that has really flipped and the
 industry has started to say yes fire is
 
 551
 00:20:54,000 --> 00:20:55,760
-industry has started to say yes fire is
 the go forward standard. So even if
 
 552
 00:20:55,760 --> 00:20:57,840
-the go forward standard. So even if
 people aren't using fire today for all
 
 553
 00:20:57,840 --> 00:20:59,840
-people aren't using fire today for all
 of their connections everybody has
 
 554
 00:20:59,840 --> 00:21:01,679
-of their connections everybody has
 kind of accepted the fact that at some
 
 555
 00:21:01,679 --> 00:21:04,320
-kind of accepted the fact that at some
 point fire is going to be coming into
 
 556
 00:21:04,320 --> 00:21:05,679
-point fire is going to be coming into
 their world and again we'll talk more
 
 557
 00:21:05,679 --> 00:21:08,000
-their world and again we'll talk more
 about what fire is in a second. So I
 
 558
 00:21:08,000 --> 00:21:11,360
-about what fire is in a second. So I
 want to go up one level and talk about
 
 559
 00:21:11,360 --> 00:21:13,120
-want to go up one level and talk about
 kind of the network level of
 
 560
 00:21:13,120 --> 00:21:15,919
-kind of the network level of
 interoperability standards. So for
 
 561
 00:21:15,919 --> 00:21:18,000
-interoperability standards. So for
 things like TEFA, which is the trusted
 
 562
 00:21:18,000 --> 00:21:20,240
-things like TEFA, which is the trusted
 exchange framework and common agreement,
 
 563
 00:21:20,240 --> 00:21:22,159
-exchange framework and common agreement,
 This is a federally backed program to
 
 564
 00:21:22,159 --> 00:21:25,280
-This is a federally backed program to
 do nationwide interoperability.
 
 565
 00:21:25,280 --> 00:21:27,760
-do nationwide interoperability.
 They are actually using fire in TEFLA.
 
 566
@@ -2830,22 +2276,18 @@ So this isn't a morphing of this
 
 567
 00:21:30,640 --> 00:21:33,840
-So this isn't a morphing of this
 standard here. Well, sorry, they talk a
 
 568
 00:21:33,840 --> 00:21:36,080
-standard here. Well, sorry, they talk a
 big game about using fire. They
 
 569
 00:21:36,080 --> 00:21:37,840
-big game about using fire. They
 anticipate that in the future they will
 
 570
 00:21:37,840 --> 00:21:41,190
-anticipate that in the future they will
 use it
 
 571
@@ -2855,12 +2297,10 @@ but they have acknowledged that this is
 
 572
 00:21:47,200 --> 00:21:49,679
-but they have acknowledged that this is
 the direction they're going to go.
 
 573
 00:21:49,679 --> 00:21:52,480
-the direction they're going to go.
 So this isn't a new standard as much
 
 574
@@ -2870,37 +2310,30 @@ as it is a new set of guidelines.
 
 575
 00:21:56,559 --> 00:21:59,039
-as it is a new set of guidelines.
 So that common agreement is the
 
 576
 00:21:59,039 --> 00:22:01,360
-So that common agreement is the
 governance framework that they're trying
 
 577
 00:22:01,360 --> 00:22:04,640
-governance framework that they're trying
 to instantiate on top of existing
 
 578
 00:22:04,640 --> 00:22:06,480
-to instantiate on top of existing
 frameworks. So the other one that I
 
 579
 00:22:06,480 --> 00:22:07,520
-frameworks. So the other one that I
 would mention here just kind of in
 
 580
 00:22:07,520 --> 00:22:10,240
-would mention here just kind of in
 passing is CMS aligned networks.
 
 581
 00:22:10,240 --> 00:22:11,840
-passing is CMS aligned networks.
 That's one that will become I think more
 
 582
@@ -2920,1052 +2353,842 @@ have full adoption of fire up here yet
 
 585
 00:22:28,880 --> 00:22:32,480
-have full adoption of fire up here yet
 and beyond that these ecosystems up
 
 586
 00:22:32,480 --> 00:22:36,240
-and beyond that these ecosystems up
 here do not have I would argue an
 
 587
 00:22:36,240 --> 00:22:38,480
-here do not have I would argue an
 effective mechanism for governance and
 
 588
 00:22:38,480 --> 00:22:41,600
-effective mechanism for governance and
 trust on the frameworks. So and I'
 
 589
 00:22:41,600 --> 00:22:43,200
-trust on the frameworks. So and I'
 I think I've got a couple things. We
 
 590
 00:22:43,200 --> 00:22:45,039
-I think I've got a couple things. We
 we'll come to it later on why I say
 
 591
 00:22:45,039 --> 00:22:47,360
-we'll come to it later on why I say
 that. But let's switch just very
 
 592
 00:22:47,360 --> 00:22:50,000
-that. But let's switch just very
 quickly to talk about fire. So fire
 
 593
 00:22:50,000 --> 00:22:52,480
-quickly to talk about fire. So fire
 is fast interoperability fast
 
 594
 00:22:52,480 --> 00:22:54,799
-is fast interoperability fast
 healthcare interoperability resources.
 
 595
 00:22:54,799 --> 00:22:57,280
-healthcare interoperability resources.
 It's a lot of things. So, it's an
 
 596
 00:22:57,280 --> 00:22:59,200
-It's a lot of things. So, it's an
 acronym, but it's also the data
 
 597
 00:22:59,200 --> 00:23:01,600
-acronym, but it's also the data
 structure. It's restful APIs, which is
 
 598
 00:23:01,600 --> 00:23:04,080
-structure. It's restful APIs, which is
 just modern API connectivity. It's a
 
 599
 00:23:04,080 --> 00:23:06,880
-just modern API connectivity. It's a
 set of tool sets. So, so it's a de
 
 600
 00:23:06,880 --> 00:23:08,400
-set of tool sets. So, so it's a de
 developers kits. it's, you know,
 
 601
 00:23:08,400 --> 00:23:10,480
-developers kits. it's, you know,
 validation implementation guides.
 
 602
 00:23:10,480 --> 00:23:13,039
-validation implementation guides.
 HL7 actually does maintain public fire
 
 603
 00:23:13,039 --> 00:23:14,480
-HL7 actually does maintain public fire
 test servers. So, if people are looking
 
 604
 00:23:14,480 --> 00:23:16,240
-test servers. So, if people are looking
 to get into Fire, they've made it really
 
 605
 00:23:16,240 --> 00:23:18,240
-to get into Fire, they've made it really
 easy because you can go in and play
 
 606
 00:23:18,240 --> 00:23:20,159
-easy because you can go in and play
 within their ecosystem. And then
 
 607
 00:23:20,159 --> 00:23:22,240
-within their ecosystem. And then
 there also is a community that's that's
 
 608
 00:23:22,240 --> 00:23:24,080
-there also is a community that's that's
 I would say relatively strong and
 
 609
 00:23:24,080 --> 00:23:26,559
-I would say relatively strong and
 vibrant, growing every day in terms of
 
 610
 00:23:26,559 --> 00:23:29,520
-vibrant, growing every day in terms of
 People in the ecosystem doing Fire.
 
 611
 00:23:29,520 --> 00:23:31,120
-People in the ecosystem doing Fire.
 like I don't think I've talked to
 
 612
 00:23:31,120 --> 00:23:34,000
-like I don't think I've talked to
 another healthcare startup that isn't
 
 613
 00:23:34,000 --> 00:23:35,679
-another healthcare startup that isn't
 starting with fire in terms of the
 
 614
 00:23:35,679 --> 00:23:37,039
-starting with fire in terms of the
 connectivity that they're trying to
 
 615
 00:23:37,039 --> 00:23:39,600
-connectivity that they're trying to
 drive into the ecosystem. The other
 
 616
 00:23:39,600 --> 00:23:41,679
-drive into the ecosystem. The other
 thing that I think I should point out
 
 617
 00:23:41,679 --> 00:23:44,080
-thing that I think I should point out
 here is that the data structure piece is
 
 618
 00:23:44,080 --> 00:23:47,039
-here is that the data structure piece is
 actually incredibly valuable. So, a CCDA
 
 619
 00:23:47,039 --> 00:23:50,000
-actually incredibly valuable. So, a CCDA
 HL7V2, they didn't really allow for
 
 620
 00:23:50,000 --> 00:23:51,919
-HL7V2, they didn't really allow for
 discrete elements of the data to be
 
 621
 00:23:51,919 --> 00:23:54,080
-discrete elements of the data to be
 called out, which meant that oftent
 
 622
 00:23:54,080 --> 00:23:56,320
-called out, which meant that oftent
 times when you're transacting a data
 
 623
 00:23:56,320 --> 00:23:58,240
-times when you're transacting a data
 record, what you're getting is a
 
 624
 00:23:58,240 --> 00:24:00,320
-record, what you're getting is a
 stack of information and then you'd have
 
 625
 00:24:00,320 --> 00:24:01,600
-stack of information and then you'd have
 to go through and kind of parse through
 
 626
 00:24:01,600 --> 00:24:03,440
-to go through and kind of parse through
 that to get to value. Yeah.
 
 627
 00:24:03,440 --> 00:24:05,600
-that to get to value. Yeah.
 Yeah. How does that relate with various
 
 628
 00:24:05,600 --> 00:24:08,720
-Yeah. How does that relate with various
 EHR type?
 
 629
 00:24:08,720 --> 00:24:10,159
-EHR type?
 So, what do you mean? What do you mean?
 
 630
 00:24:10,159 --> 00:24:11,919
-So, what do you mean? What do you mean?
 I think electronic health or portable
 
 631
 00:24:11,919 --> 00:24:14,640
-I think electronic health or portable
 health records. I'm not sure if
 
 632
 00:24:14,640 --> 00:24:18,640
-health records. I'm not sure if
 Yeah. So, so with EHRs it's
 
 633
 00:24:18,640 --> 00:24:21,679
-Yeah. So, so with EHRs it's
 going to depend on EHR. Obviously,
 
 634
 00:24:21,679 --> 00:24:24,000
-going to depend on EHR. Obviously,
 most of them are transacting data on
 
 635
 00:24:24,000 --> 00:24:24,880
-most of them are transacting data on
 HL7B2,
 
 636
 00:24:24,880 --> 00:24:27,919
-HL7B2,
 but does this does this say you have to
 
 637
 00:24:27,919 --> 00:24:29,440
-but does this does this say you have to
 use a particular type or aren't there
 
 638
 00:24:29,440 --> 00:24:31,919
-use a particular type or aren't there
 multiple EHRs?
 
 639
 00:24:31,919 --> 00:24:37,679
-multiple EHRs?
 There's lots of out there. Yeah, the ONC
 
 640
 00:24:37,679 --> 00:24:40,559
-There's lots of out there. Yeah, the ONC
 basically has really got the role of
 
 641
 00:24:40,559 --> 00:24:43,360
-basically has really got the role of
 regulating the
 
 642
 00:24:43,360 --> 00:24:46,320
-regulating the
 healthcare tech industry. ONC being the
 
 643
 00:24:46,320 --> 00:24:48,080
-healthcare tech industry. ONC being the
 office of the national coordinator for
 
 644
 00:24:48,080 --> 00:24:50,000
-office of the national coordinator for
 healthc
 
 645
 00:24:50,000 --> 00:24:53,120
-healthc
 and so they a number of years ago
 
 646
 00:24:53,120 --> 00:24:55,039
-and so they a number of years ago
 defined
 
 647
 00:24:55,039 --> 00:24:56,720
-defined
 fire
 
 648
 00:24:56,720 --> 00:25:00,960
-fire
 set of resources known as US core
 
 649
 00:25:00,960 --> 00:25:05,039
-set of resources known as US core
 And basically had certifications
 
 650
 00:25:05,039 --> 00:25:07,039
-And basically had certifications
 so that if you were a certified health
 
 651
 00:25:07,039 --> 00:25:09,520
-so that if you were a certified health
 information technology platform you
 
 652
 00:25:09,520 --> 00:25:11,120
-information technology platform you
 would have to certify against that and
 
 653
 00:25:11,120 --> 00:25:14,880
-would have to certify against that and
 that required you basically to have a
 
 654
 00:25:14,880 --> 00:25:17,520
-that required you basically to have a
 population health API based on fire
 
 655
 00:25:17,520 --> 00:25:20,640
-population health API based on fire
 patient access API based on fire and
 
 656
 00:25:20,640 --> 00:25:22,720
-patient access API based on fire and
 using those calls that was on an
 
 657
 00:25:22,720 --> 00:25:24,720
-using those calls that was on an
 older version of fire and what's
 
 658
 00:25:24,720 --> 00:25:28,320
-older version of fire and what's
 happened over the last year is
 
 659
 00:25:28,320 --> 00:25:30,400
-happened over the last year is
 they updated to the same version the
 
 660
 00:25:30,400 --> 00:25:32,880
-they updated to the same version the
 players are actually
 
 661
 00:25:32,880 --> 00:25:36,000
-players are actually
 yeah so it is a standard that
 
 662
 00:25:36,000 --> 00:25:38,240
-yeah so it is a standard that
 lives underneath the EHR itself right
 
 663
 00:25:38,240 --> 00:25:39,200
-lives underneath the EHR itself right
 because they're they're trying to get
 
 664
 00:25:39,200 --> 00:25:42,720
-because they're they're trying to get
 data in and out so back to this
 
 665
 00:25:42,720 --> 00:25:44,880
-data in and out so back to this
 the data structure the model here, these
 
 666
 00:25:44,880 --> 00:25:46,240
-the data structure the model here, these
 data descriptions, and it's completely
 
 667
 00:25:46,240 --> 00:25:48,400
-data descriptions, and it's completely
 gone now, which is great. Is
 
 668
 00:25:48,400 --> 00:25:50,159
-gone now, which is great. Is
 actually really important in terms of an
 
 669
 00:25:50,159 --> 00:25:51,600
-actually really important in terms of an
 upgrade here. So, one of the things that
 
 670
 00:25:51,600 --> 00:25:54,320
-upgrade here. So, one of the things that
 Fire allows you to do that
 
 671
 00:25:54,320 --> 00:25:56,480
-Fire allows you to do that
 previous interoperability standards
 
 672
 00:25:56,480 --> 00:25:58,080
-previous interoperability standards
 didn't, is to be able to call out
 
 673
 00:25:58,080 --> 00:25:59,679
-didn't, is to be able to call out
 discrete data elements from the fire
 
 674
 00:25:59,679 --> 00:26:01,039
-discrete data elements from the fire
 record. So, when you're talking about a
 
 675
 00:26:01,039 --> 00:26:03,360
-record. So, when you're talking about a
 multiundpage patient record, which I'm
 
 676
 00:26:03,360 --> 00:26:04,799
-multiundpage patient record, which I'm
 sure mine is with all the things I've
 
 677
 00:26:04,799 --> 00:26:06,720
-sure mine is with all the things I've
 gone through the ability to go in
 
 678
 00:26:06,720 --> 00:26:08,799
-gone through the ability to go in
 and say, I just want these blood tests,
 
 679
 00:26:08,799 --> 00:26:10,720
-and say, I just want these blood tests,
 I just want this, you know, from this
 
 680
 00:26:10,720 --> 00:26:12,960
-I just want this, you know, from this
 date to that date. to be able to parse a
 
 681
 00:26:12,960 --> 00:26:15,600
-date to that date. to be able to parse a
 record at scale like that. That's
 
 682
 00:26:15,600 --> 00:26:17,360
-record at scale like that. That's
 incredibly valuable. And I think, you
 
 683
 00:26:17,360 --> 00:26:19,120
-incredibly valuable. And I think, you
 know, all the rest of these things are
 
 684
 00:26:19,120 --> 00:26:21,039
-know, all the rest of these things are
 essential. They're helpful, but really
 
 685
 00:26:21,039 --> 00:26:22,640
-essential. They're helpful, but really
 it's that data structure and the ability
 
 686
 00:26:22,640 --> 00:26:24,880
-it's that data structure and the ability
 to make the data actually useful in
 
 687
 00:26:24,880 --> 00:26:28,080
-to make the data actually useful in
 clinical practice is what's driven fire
 
 688
 00:26:28,080 --> 00:26:30,559
-clinical practice is what's driven fire
 API as well because traditionally what
 
 689
 00:26:30,559 --> 00:26:32,640
-API as well because traditionally what
 would happen is if you wanted data, you
 
 690
 00:26:32,640 --> 00:26:34,640
-would happen is if you wanted data, you
 would make a request say basically send
 
 691
 00:26:34,640 --> 00:26:35,679
-would make a request say basically send
 me a document.
 
 692
 00:26:35,679 --> 00:26:36,240
-me a document.
 Yeah.
 
 693
 00:26:36,240 --> 00:26:38,080
-Yeah.
 Right. So, they're going to put that
 
 694
 00:26:38,080 --> 00:26:39,919
-Right. So, they're going to put that
 data into the document. I've been in
 
 695
 00:26:39,919 --> 00:26:42,240
-data into the document. I've been in
 meetings where been discussions of how
 
 696
 00:26:42,240 --> 00:26:44,480
-meetings where been discussions of how
 much data should we put in a document if
 
 697
 00:26:44,480 --> 00:26:46,720
-much data should we put in a document if
 we're going to have a standard which is
 
 698
 00:26:46,720 --> 00:26:47,919
-we're going to have a standard which is
 a little bizarre
 
 699
 00:26:47,919 --> 00:26:48,400
-a little bizarre
 right
 
 700
 00:26:48,400 --> 00:26:50,799
-right
 whereas with the restful API and those
 
 701
 00:26:50,799 --> 00:26:53,360
-whereas with the restful API and those
 data structures you can if you've got
 
 702
 00:26:53,360 --> 00:26:55,440
-data structures you can if you've got
 the permissions you can go in and say
 
 703
 00:26:55,440 --> 00:26:58,640
-the permissions you can go in and say
 give me just the A1C readings out of the
 
 704
 00:26:58,640 --> 00:27:00,240
-give me just the A1C readings out of the
 observation resource
 
 705
 00:27:00,240 --> 00:27:02,480
-observation resource
 yeah just give me the discrete
 
 706
 00:27:02,480 --> 00:27:04,240
-yeah just give me the discrete
 elements from the data that I actually
 
 707
 00:27:04,240 --> 00:27:08,880
-elements from the data that I actually
 want so this is the objectives of
 
 708
 00:27:08,880 --> 00:27:10,960
-want so this is the objectives of
 fire that's that's stated by HL7 who's
 
 709
 00:27:10,960 --> 00:27:13,279
-fire that's that's stated by HL7 who's
 standards body that forwards fire.
 
 710
 00:27:13,279 --> 00:27:14,720
-standards body that forwards fire.
 They wanted to be built for
 
 711
 00:27:14,720 --> 00:27:16,240
-They wanted to be built for
 implementers. So this isn't something
 
 712
 00:27:16,240 --> 00:27:19,600
-implementers. So this isn't something
 that was thought up by you know
 
 713
 00:27:19,600 --> 00:27:21,360
-that was thought up by you know
 people like me who would definitely get
 
 714
 00:27:21,360 --> 00:27:23,200
-people like me who would definitely get
 it wrong but actually by impleers that
 
 715
 00:27:23,200 --> 00:27:24,960
-it wrong but actually by impleers that
 know what needs to go into a standard.
 
 716
 00:27:24,960 --> 00:27:27,279
-know what needs to go into a standard.
 They regularly do connectathons
 
 717
 00:27:27,279 --> 00:27:29,360
-They regularly do connectathons
 because it doesn't do any good to
 
 718
 00:27:29,360 --> 00:27:31,679
-because it doesn't do any good to
 have an implement standard if you
 
 719
 00:27:31,679 --> 00:27:33,679
-have an implement standard if you
 can't teach people how to get this done.
 
 720
 00:27:33,679 --> 00:27:35,919
-can't teach people how to get this done.
 I think that this is another piece
 
 721
 00:27:35,919 --> 00:27:37,440
-I think that this is another piece
 that's very valuable is that they
 
 722
 00:27:37,440 --> 00:27:39,760
-that's very valuable is that they
 operate on an 8020 rule. So they're
 
 723
 00:27:39,760 --> 00:27:41,120
-operate on an 8020 rule. So they're
 going to anticipate that they can get
 
 724
 00:27:41,120 --> 00:27:43,360
-going to anticipate that they can get
 about 80% of all the use cases enacted
 
 725
 00:27:43,360 --> 00:27:47,039
-about 80% of all the use cases enacted
 into the standard. But that XKCD
 
 726
 00:27:47,039 --> 00:27:49,200
-into the standard. But that XKCD
 Comic I had up earlier is very
 
 727
 00:27:49,200 --> 00:27:50,720
-Comic I had up earlier is very
 true which is if your standard isn't
 
 728
 00:27:50,720 --> 00:27:53,120
-true which is if your standard isn't
 rigid you end up proliferating standard
 
 729
 00:27:53,120 --> 00:27:55,440
-rigid you end up proliferating standard
 or it is rigid not flexible you end up
 
 730
 00:27:55,440 --> 00:27:57,520
-or it is rigid not flexible you end up
 proliferating standards. The other
 
 731
 00:27:57,520 --> 00:27:59,120
-proliferating standards. The other
 things that are I think important is
 
 732
 00:27:59,120 --> 00:28:01,200
-things that are I think important is
 it's open source. And the
 
 733
 00:28:01,200 --> 00:28:03,360
-it's open source. And the
 adoption as far as everything that fire
 
 734
 00:28:03,360 --> 00:28:05,600
-adoption as far as everything that fire
 tries to do is to make it incredibly
 
 735
 00:28:05,600 --> 00:28:08,240
-tries to do is to make it incredibly
 easy. So that's kind of the fire
 
 736
 00:28:08,240 --> 00:28:10,480
-easy. So that's kind of the fire
 in a nutshell. Let's talk about CMS
 
 737
 00:28:10,480 --> 00:28:13,600
-in a nutshell. Let's talk about CMS
 0057. So this is the latest version of
 
 738
 00:28:13,600 --> 00:28:16,159
-0057. So this is the latest version of
 that synergistic loop that I talked
 
 739
 00:28:16,159 --> 00:28:18,240
-that synergistic loop that I talked
 about earlier, which is CMS doesn't want
 
 740
 00:28:18,240 --> 00:28:20,080
-about earlier, which is CMS doesn't want
 to set standards. They want the industry
 
 741
 00:28:20,080 --> 00:28:21,600
-to set standards. They want the industry
 to set those standards through somebody
 
 742
 00:28:21,600 --> 00:28:24,080
-to set those standards through somebody
 like HL7 and then they come together and
 
 743
 00:28:24,080 --> 00:28:26,000
-like HL7 and then they come together and
 start to put them into mandates. CMS
 
 744
 00:28:26,000 --> 00:28:28,960
-start to put them into mandates. CMS
 0057 basically says that by January 1,
 
 745
 00:28:28,960 --> 00:28:31,840
-0057 basically says that by January 1,
 2027, every payer that receives Medicare
 
 746
 00:28:31,840 --> 00:28:34,559
-2027, every payer that receives Medicare
 and Medicaid dollars has to stand up an
 
 747
 00:28:34,559 --> 00:28:37,840
-and Medicaid dollars has to stand up an
 API for these four use cases, which is
 
 748
 00:28:37,840 --> 00:28:40,399
-API for these four use cases, which is
 Pay-to-payer exchange patient
 
 749
 00:28:40,399 --> 00:28:43,039
-Pay-to-payer exchange patient
 access pair to provider exchange,
 
 750
 00:28:43,039 --> 00:28:44,799
-access pair to provider exchange,
 and then a streamlined pri prior
 
 751
 00:28:44,799 --> 00:28:47,679
-and then a streamlined pri prior
 authorization process. Is anybody not
 
 752
 00:28:47,679 --> 00:28:49,120
-authorization process. Is anybody not
 familiar with what prior authorization
 
 753
 00:28:49,120 --> 00:28:50,559
-familiar with what prior authorization
 is? We've we've thrown that around
 
 754
 00:28:50,559 --> 00:28:52,559
-is? We've we've thrown that around
 pretty loosely, but if you don't know,
 
 755
 00:28:52,559 --> 00:28:54,880
-pretty loosely, but if you don't know,
 okay, great. I will say that when I
 
 756
 00:28:54,880 --> 00:28:57,520
-okay, great. I will say that when I
 went to go get the proton therapy, it
 
 757
 00:28:57,520 --> 00:28:59,760
-went to go get the proton therapy, it
 took 3 months to get the prior
 
 758
 00:28:59,760 --> 00:29:02,399
-took 3 months to get the prior
 authorization approved on that. So
 
 759
 00:29:02,399 --> 00:29:04,159
-authorization approved on that. So
 if we can streamline that, I would be
 
 760
 00:29:04,159 --> 00:29:07,440
-if we can streamline that, I would be
 very, very pleased. So,
 
 761
 00:29:07,440 --> 00:29:08,799
-very, very pleased. So,
 let's talk about how the connections
 
 762
 00:29:08,799 --> 00:29:10,399
-let's talk about how the connections
 work right now. Mark mentioned a couple
 
 763
 00:29:10,399 --> 00:29:11,919
-work right now. Mark mentioned a couple
 of these things earlier, but it's
 
 764
 00:29:11,919 --> 00:29:13,919
-of these things earlier, but it's
 typically in terms of trust on the
 
 765
 00:29:13,919 --> 00:29:15,919
-typically in terms of trust on the
 connection, it's certificates, it's
 
 766
 00:29:15,919 --> 00:29:18,880
-connection, it's certificates, it's
 tokens, it's very manual. And often
 
 767
 00:29:18,880 --> 00:29:21,200
-tokens, it's very manual. And often
 the org identity is assumed not
 
 768
 00:29:21,200 --> 00:29:23,039
-the org identity is assumed not
 proven. So they have some evidence of
 
 769
 00:29:23,039 --> 00:29:24,880
-proven. So they have some evidence of
 who you are, but it's not cryptographic
 
 770
 00:29:24,880 --> 00:29:26,399
-who you are, but it's not cryptographic
 evidence. It's not something that would
 
 771
 00:29:26,399 --> 00:29:29,840
-evidence. It's not something that would
 necessarily hold up in court. And so
 
 772
 00:29:29,840 --> 00:29:32,159
-necessarily hold up in court. And so
 with this idea that healthcare is the
 
 773
 00:29:32,159 --> 00:29:34,080
-with this idea that healthcare is the
 most targeted and that most of those
 
 774
 00:29:34,080 --> 00:29:35,520
-most targeted and that most of those
 attacks are coming through third
 
 775
 00:29:35,520 --> 00:29:38,320
-attacks are coming through third
 parties this is a disaster waiting
 
 776
 00:29:38,320 --> 00:29:40,480
-parties this is a disaster waiting
 to happen. So CMS has come in and said
 
 777
 00:29:40,480 --> 00:29:42,000
-to happen. So CMS has come in and said
 you need to stand up these four types of
 
 778
 00:29:42,000 --> 00:29:44,399
-you need to stand up these four types of
 APIs. In reality, what that means is
 
 779
 00:29:44,399 --> 00:29:45,919
-APIs. In reality, what that means is
 you're going to have thousands, if not
 
 780
 00:29:45,919 --> 00:29:47,520
-you're going to have thousands, if not
 hundreds of thousands of new connections
 
 781
 00:29:47,520 --> 00:29:50,000
-hundreds of thousands of new connections
 coming into the ecosystem. And given
 
 782
 00:29:50,000 --> 00:29:52,720
-coming into the ecosystem. And given
 that we are already the most targeted,
 
 783
 00:29:52,720 --> 00:29:54,080
-that we are already the most targeted,
 we're just going to make it worse for
 
 784
 00:29:54,080 --> 00:29:56,799
-we're just going to make it worse for
 ourselves because again three-4s of
 
 785
 00:29:56,799 --> 00:29:58,000
-ourselves because again three-4s of
 all the attacks are already coming
 
 786
 00:29:58,000 --> 00:29:59,919
-all the attacks are already coming
 through an outside connection that
 
 787
 00:29:59,919 --> 00:30:03,760
-through an outside connection that
 you have. So let's talk about
 
 788
 00:30:03,760 --> 00:30:06,480
-you have. So let's talk about
 what fire has done and then we can talk
 
 789
 00:30:06,480 --> 00:30:08,399
-what fire has done and then we can talk
 about what we think still needs to be
 
 790
 00:30:08,399 --> 00:30:11,039
-about what we think still needs to be
 done. So semantic data again super
 
 791
 00:30:11,039 --> 00:30:12,399
-done. So semantic data again super
 important that you're all speaking the
 
 792
 00:30:12,399 --> 00:30:14,240
-important that you're all speaking the
 same language on your data transactions.
 
 793
 00:30:14,240 --> 00:30:17,600
-same language on your data transactions.
 Real time versus asynchronous.
 
 794
 00:30:17,600 --> 00:30:19,120
-Real time versus asynchronous.
 You want something that's lighter. I
 
 795
@@ -3975,762 +3198,610 @@ think they've done a great job with
 
 796
 00:30:20,080 --> 00:30:22,159
-think they've done a great job with
 that. The developer access and the
 
 797
 00:30:22,159 --> 00:30:23,840
-that. The developer access and the
 discrete element parsing. This is again,
 
 798
 00:30:23,840 --> 00:30:25,520
-discrete element parsing. This is again,
 I think the biggest one that Fire has
 
 799
 00:30:25,520 --> 00:30:27,520
-I think the biggest one that Fire has
 solved. You may disagree with me,
 
 800
 00:30:27,520 --> 00:30:28,799
-solved. You may disagree with me,
 Mark. There might be things more
 
 801
 00:30:28,799 --> 00:30:29,840
-Mark. There might be things more
 important, but I think that's pretty
 
 802
 00:30:29,840 --> 00:30:32,640
-important, but I think that's pretty
 foundational to the value that Fire
 
 803
 00:30:32,640 --> 00:30:36,720
-foundational to the value that Fire
 drives. So really fire fixes today
 
 804
 00:30:36,720 --> 00:30:38,960
-drives. So really fire fixes today
 the how. They do a really good job of
 
 805
 00:30:38,960 --> 00:30:41,039
-the how. They do a really good job of
 how are we going to get data moving back
 
 806
 00:30:41,039 --> 00:30:43,440
-how are we going to get data moving back
 and forth. Sorry, that's a meta
 
 807
 00:30:43,440 --> 00:30:46,720
-and forth. Sorry, that's a meta
 alarm. But what it doesn't solve is the
 
 808
 00:30:46,720 --> 00:30:49,919
-alarm. But what it doesn't solve is the
 who. So right now in the industry,
 
 809
 00:30:49,919 --> 00:30:51,919
-who. So right now in the industry,
 Mitch, what was the last count on Epic
 
 810
 00:30:51,919 --> 00:30:54,960
-Mitch, what was the last count on Epic
 lawsuits? Are we up to 15 yet?
 
 811
 00:30:54,960 --> 00:30:55,679
-lawsuits? Are we up to 15 yet?
 It's climbing.
 
 812
 00:30:55,679 --> 00:30:57,039
-It's climbing.
 Yeah. Okay. So, we're we're somewhere
 
 813
 00:30:57,039 --> 00:30:59,120
-Yeah. Okay. So, we're we're somewhere
 between 13 and 15 lawsuits. And that is
 
 814
 00:30:59,120 --> 00:31:01,520
-between 13 and 15 lawsuits. And that is
 both Epic suing people and Epic being
 
 815
 00:31:01,520 --> 00:31:02,559
-both Epic suing people and Epic being
 sued by people.
 
 816
 00:31:02,559 --> 00:31:07,120
-sued by people.
 Epic's the largest EHR.
 
 817
 00:31:07,120 --> 00:31:09,279
-Epic's the largest EHR.
 Yeah. They're the behemoth in the
 
 818
 00:31:09,279 --> 00:31:11,600
-Yeah. They're the behemoth in the
 industry. So essentially what
 
 819
 00:31:11,600 --> 00:31:12,960
-industry. So essentially what
 happened, and I'll walk you through
 
 820
 00:31:12,960 --> 00:31:14,000
-happened, and I'll walk you through
 this because I actually think it's
 
 821
 00:31:14,000 --> 00:31:16,159
-this because I actually think it's
 really interesting, is a small startup
 
 822
 00:31:16,159 --> 00:31:18,559
-really interesting, is a small startup
 called Particle Health sued Epic and
 
 823
 00:31:18,559 --> 00:31:19,760
-called Particle Health sued Epic and
 basically said, "You're blocking
 
 824
 00:31:19,760 --> 00:31:22,000
-basically said, "You're blocking
 information. We have a right to clinical
 
 825
 00:31:22,000 --> 00:31:23,760
-information. We have a right to clinical
 information through Epic's EMR. We want
 
 826
 00:31:23,760 --> 00:31:25,120
-information through Epic's EMR. We want
 to be able to treat patients and you're
 
 827
 00:31:25,120 --> 00:31:27,039
-to be able to treat patients and you're
 not giving us that info." And so they
 
 828
 00:31:27,039 --> 00:31:28,480
-not giving us that info." And so they
 kicked off this lawsuit that kind of
 
 829
 00:31:28,480 --> 00:31:31,600
-kicked off this lawsuit that kind of
 rocked the industry. The response to
 
 830
 00:31:31,600 --> 00:31:34,320
-rocked the industry. The response to
 this was, yes, obviously Epic's taking
 
 831
 00:31:34,320 --> 00:31:35,600
-this was, yes, obviously Epic's taking
 this with their lawyers in court and
 
 832
 00:31:35,600 --> 00:31:37,760
-this with their lawyers in court and
 they're having discreet arguments there.
 
 833
 00:31:37,760 --> 00:31:40,320
-they're having discreet arguments there.
 But in the court of public opinion, Epic
 
 834
 00:31:40,320 --> 00:31:42,799
-But in the court of public opinion, Epic
 decided to go out and sue one of the
 
 835
 00:31:42,799 --> 00:31:45,440
-decided to go out and sue one of the
 on-ramps to the networks. So, Particle
 
 836
 00:31:45,440 --> 00:31:46,960
-on-ramps to the networks. So, Particle
 said, "Hey, you have to give us the
 
 837
 00:31:46,960 --> 00:31:48,240
-said, "Hey, you have to give us the
 data." And in the court of public
 
 838
 00:31:48,240 --> 00:31:50,000
-data." And in the court of public
 opinion, Epic said, "We can't give you
 
 839
 00:31:50,000 --> 00:31:51,120
-opinion, Epic said, "We can't give you
 the data. The networks aren't
 
 840
 00:31:51,120 --> 00:31:52,720
-the data. The networks aren't
 trustworthy." And so they went and sued
 
 841
 00:31:52,720 --> 00:31:54,000
-trustworthy." And so they went and sued
 Health Gorilla, which is one of these
 
 842
 00:31:54,000 --> 00:31:56,080
-Health Gorilla, which is one of these
 on-ramps into TEFLA, that national
 
 843
 00:31:56,080 --> 00:31:57,679
-on-ramps into TEFLA, that national
 exchange framework, and basically
 
 844
 00:31:57,679 --> 00:31:59,200
-exchange framework, and basically
 alleged that they were letting bad
 
 845
 00:31:59,200 --> 00:32:01,200
-alleged that they were letting bad
 actors onto the network without proper
 
 846
 00:32:01,200 --> 00:32:04,559
-actors onto the network without proper
 vetting. And so Epic now can kind of
 
 847
 00:32:04,559 --> 00:32:07,919
-vetting. And so Epic now can kind of
 hold their virtue in the court of
 
 848
 00:32:07,919 --> 00:32:09,440
-hold their virtue in the court of
 public opinion by saying, "No, no, no.
 
 849
 00:32:09,440 --> 00:32:11,200
-public opinion by saying, "No, no, no.
 We're not info blocking. We're doing
 
 850
 00:32:11,200 --> 00:32:12,880
-We're not info blocking. We're doing
 what's right by patients because if we
 
 851
 00:32:12,880 --> 00:32:14,640
-what's right by patients because if we
 were to put patients data out on these
 
 852
 00:32:14,640 --> 00:32:15,840
-were to put patients data out on these
 networks, it would be compromised
 
 853
 00:32:15,840 --> 00:32:17,600
-networks, it would be compromised
 because the networks can't be trusted."
 
 854
 00:32:17,600 --> 00:32:19,279
-because the networks can't be trusted."
 And then of course because lawyers
 
 855
 00:32:19,279 --> 00:32:21,279
-And then of course because lawyers
 get excited, there has been a number of
 
 856
 00:32:21,279 --> 00:32:22,960
-get excited, there has been a number of
 other lawsuits that have all started to
 
 857
 00:32:22,960 --> 00:32:24,559
-other lawsuits that have all started to
 spawn out of this same thing. So you've
 
 858
 00:32:24,559 --> 00:32:26,320
-spawn out of this same thing. So you've
 got class action lawsuits that are go
 
 859
 00:32:26,320 --> 00:32:28,720
-got class action lawsuits that are go
 now going after Epic because this is a
 
 860
 00:32:28,720 --> 00:32:31,200
-now going after Epic because this is a
 big a big issue. States are suing
 
 861
 00:32:31,200 --> 00:32:33,600
-big a big issue. States are suing
 Epic around this same thing. And at
 
 862
 00:32:33,600 --> 00:32:36,080
-Epic around this same thing. And at
 the core of all of these latigious
 
 863
 00:32:36,080 --> 00:32:39,120
-the core of all of these latigious
 contentions is well can we trust the
 
 864
 00:32:39,120 --> 00:32:42,559
-contentions is well can we trust the
 other side of the ecosystem? And so
 
 865
 00:32:42,559 --> 00:32:44,240
-other side of the ecosystem? And so
 coming all the way back to the lawsuit
 
 866
 00:32:44,240 --> 00:32:48,000
-coming all the way back to the lawsuit
 that kicked this off, if we could
 
 867
 00:32:48,000 --> 00:32:50,399
-that kicked this off, if we could
 trust the network, then we could
 
 868
 00:32:50,399 --> 00:32:52,240
-trust the network, then we could
 actually hold Epic to account and say,
 
 869
 00:32:52,240 --> 00:32:54,000
-actually hold Epic to account and say,
 "Yeah, you're info blocking. You're just
 
 870
 00:32:54,000 --> 00:32:56,240
-"Yeah, you're info blocking. You're just
 not sharing the data because you don't
 
 871
 00:32:56,240 --> 00:32:57,760
-not sharing the data because you don't
 want to because data is the new oil and
 
 872
 00:32:57,760 --> 00:32:59,679
-want to because data is the new oil and
 because you see a lot of value in owning
 
 873
 00:32:59,679 --> 00:33:02,080
-because you see a lot of value in owning
 all of the patient records." But
 
 874
 00:33:02,080 --> 00:33:04,159
-all of the patient records." But
 without that trust, we have to get into
 
 875
 00:33:04,159 --> 00:33:07,360
-without that trust, we have to get into
 this incredible and increasing web of
 
 876
 00:33:07,360 --> 00:33:09,760
-this incredible and increasing web of
 litigation trying to solve that problem
 
 877
 00:33:09,760 --> 00:33:12,720
-litigation trying to solve that problem
 at scale. So, I said this earlier today,
 
 878
 00:33:12,720 --> 00:33:14,640
-at scale. So, I said this earlier today,
 I'll say it again. The question used to
 
 879
 00:33:14,640 --> 00:33:17,360
-I'll say it again. The question used to
 be, can we connect? The answer is yes.
 
 880
 00:33:17,360 --> 00:33:19,760
-be, can we connect? The answer is yes.
 Now, the question is, can we trust those
 
 881
 00:33:19,760 --> 00:33:22,080
-Now, the question is, can we trust those
 connections? So this is a slide I
 
 882
 00:33:22,080 --> 00:33:25,120
-connections? So this is a slide I
 also stole from Mark. I did I did
 
 883
 00:33:25,120 --> 00:33:28,320
-also stole from Mark. I did I did
 beautify it a bit. So but if we are
 
 884
 00:33:28,320 --> 00:33:31,120
-beautify it a bit. So but if we are
 going to get to a place where we can say
 
 885
 00:33:31,120 --> 00:33:33,360
-going to get to a place where we can say
 yes to the question of trust and
 
 886
 00:33:33,360 --> 00:33:35,519
-yes to the question of trust and
 connections we really need a couple of
 
 887
 00:33:35,519 --> 00:33:39,039
-connections we really need a couple of
 things. We need first to have a
 
 888
 00:33:39,039 --> 00:33:41,039
-things. We need first to have a
 organizational binding to the
 
 889
 00:33:41,039 --> 00:33:43,039
-organizational binding to the
 individuals in that organization be they
 
 890
 00:33:43,039 --> 00:33:46,159
-individuals in that organization be they
 people or entities. You have to be
 
 891
 00:33:46,159 --> 00:33:48,320
-people or entities. You have to be
 able to delegate and prove delegated
 
 892
 00:33:48,320 --> 00:33:49,679
-able to delegate and prove delegated
 access and authority to those
 
 893
 00:33:49,679 --> 00:33:51,440
-access and authority to those
 individuals. And then you have to be
 
 894
 00:33:51,440 --> 00:33:54,240
-individuals. And then you have to be
 able to particularly in healthcare scope
 
 895
 00:33:54,240 --> 00:33:56,559
-able to particularly in healthcare scope
 down their access to just the minimum
 
 896
 00:33:56,559 --> 00:33:58,399
-down their access to just the minimum
 needed the purpose of use for that
 
 897
 00:33:58,399 --> 00:34:00,320
-needed the purpose of use for that
 particular connection. If you can do all
 
 898
 00:34:00,320 --> 00:34:01,840
-particular connection. If you can do all
 of those things, you can bind them
 
 899
 00:34:01,840 --> 00:34:04,399
-of those things, you can bind them
 together cryptographically then you can
 
 900
 00:34:04,399 --> 00:34:08,159
-together cryptographically then you can
 get to yes we can trust the connections.
 
 901
 00:34:08,159 --> 00:34:10,800
-get to yes we can trust the connections.
 Now how do we get to that trusted
 
 902
 00:34:10,800 --> 00:34:12,079
-Now how do we get to that trusted
 onboarding the connections
 
 903
 00:34:12,079 --> 00:34:13,359
-onboarding the connections
 themselves? It's these pillars down
 
 904
 00:34:13,359 --> 00:34:14,320
-themselves? It's these pillars down
 here. You need something that's
 
 905
 00:34:14,320 --> 00:34:17,280
-here. You need something that's
 verifiable, auditable, automated, secure
 
 906
 00:34:17,280 --> 00:34:20,159
-verifiable, auditable, automated, secure
 and open. And if you think of a you know
 
 907
 00:34:20,159 --> 00:34:21,839
-and open. And if you think of a you know
 there may be an open source open
 
 908
 00:34:21,839 --> 00:34:23,919
-there may be an open source open
 standard protocol that was invented
 
 909
 00:34:23,919 --> 00:34:25,839
-standard protocol that was invented
 by someone in this room may actually fit
 
 910
 00:34:25,839 --> 00:34:28,879
-by someone in this room may actually fit
 the bill for this. In fact this
 
 911
 00:34:28,879 --> 00:34:31,200
-the bill for this. In fact this
 may be me right now. If you understand
 
 912
 00:34:31,200 --> 00:34:32,879
-may be me right now. If you understand
 KERI I think you know where this
 
 913
 00:34:32,879 --> 00:34:36,000
-KERI I think you know where this
 starts to go. We want to build and we
 
 914
 00:34:36,000 --> 00:34:38,320
-starts to go. We want to build and we
 talked about this earlier today. A
 
 915
 00:34:38,320 --> 00:34:40,879
-talked about this earlier today. A
 trust equity framework or connectedness
 
 916
 00:34:40,879 --> 00:34:44,639
-trust equity framework or connectedness
 at trust. This is a diagram I
 
 917
 00:34:44,639 --> 00:34:47,200
-at trust. This is a diagram I
 entirely came up with myself. Phil gave
 
 918
 00:34:47,200 --> 00:34:50,159
-entirely came up with myself. Phil gave
 no commentary on this at all. He didn't
 
 919
 00:34:50,159 --> 00:34:52,159
-no commentary on this at all. He didn't
 No, I'm just kidding. This is Phil's
 
 920
 00:34:52,159 --> 00:34:55,200
-No, I'm just kidding. This is Phil's
 diagram for really how VC KERI and
 
 921
 00:34:55,200 --> 00:34:57,920
-diagram for really how VC KERI and
 in particular the vLEI participating in
 
 922
 00:34:57,920 --> 00:34:59,680
-in particular the vLEI participating in
 an ecosystem where we can start to
 
 923
 00:34:59,680 --> 00:35:01,839
-an ecosystem where we can start to
 answer that question of can we trust the
 
 924
 00:35:01,839 --> 00:35:03,920
-answer that question of can we trust the
 connection. So it starts with the
 
 925
 00:35:03,920 --> 00:35:05,839
-connection. So it starts with the
 trust anchors. Yeah, go ahead. Okay,
 
 926
 00:35:05,839 --> 00:35:07,839
-trust anchors. Yeah, go ahead. Okay,
 I'll go super quick. It starts with
 
 927
 00:35:07,839 --> 00:35:09,839
-I'll go super quick. It starts with
 the trust anchors which for the BLI is
 
 928
 00:35:09,839 --> 00:35:12,480
-the trust anchors which for the BLI is
 GLEIF. VC direct trust playing a
 
 929
 00:35:12,480 --> 00:35:14,640
-GLEIF. VC direct trust playing a
 huge role in this in terms of
 
 930
 00:35:14,640 --> 00:35:17,599
-huge role in this in terms of
 translation of global standards into
 
 931
 00:35:17,599 --> 00:35:20,160
-translation of global standards into
 value for individual ecosystems like
 
 932
 00:35:20,160 --> 00:35:22,400
-value for individual ecosystems like
 healthcare. And then obviously SEDI
 
 933
 00:35:22,400 --> 00:35:23,760
-healthcare. And then obviously SEDI
 because this is all built on the same
 
 934
 00:35:23,760 --> 00:35:25,920
-because this is all built on the same
 stack plays very nicely with the rest of
 
 935
 00:35:25,920 --> 00:35:27,920
-stack plays very nicely with the rest of
 this. So the way that the BAI stack
 
 936
 00:35:27,920 --> 00:35:30,079
-this. So the way that the BAI stack
 works is they are the root of trust.
 
 937
 00:35:30,079 --> 00:35:32,320
-works is they are the root of trust.
 They create what are called QVIS that
 
 938
 00:35:32,320 --> 00:35:34,480
-They create what are called QVIS that
 issue a credential to organizations.
 
 939
 00:35:34,480 --> 00:35:36,800
-issue a credential to organizations.
 That credential is called the vLEI. Once
 
 940
 00:35:36,800 --> 00:35:38,960
-That credential is called the vLEI. Once
 you have your VI, you can start to issue
 
 941
 00:35:38,960 --> 00:35:41,520
-you have your VI, you can start to issue
 credentials off of that vLEI to
 
 942
 00:35:41,520 --> 00:35:43,280
-credentials off of that vLEI to
 individuals or entities within the
 
 943
 00:35:43,280 --> 00:35:45,839
-individuals or entities within the
 organization. And again, all of this
 
 944
 00:35:45,839 --> 00:35:48,400
-organization. And again, all of this
 is cryptographically attestable all the
 
 945
 00:35:48,400 --> 00:35:50,320
-is cryptographically attestable all the
 way back to the root of trust. So, I now
 
 946
 00:35:50,320 --> 00:35:53,680
-way back to the root of trust. So, I now
 know who you are, who you work for.
 
 947
 00:35:53,680 --> 00:35:55,760
-know who you are, who you work for.
 In particular, I know what you're
 
 948
@@ -4740,187 +3811,150 @@ doing, which is where direct trust comes
 
 949
 00:35:57,440 --> 00:35:59,440
-doing, which is where direct trust comes
 in. And it's the right things to be
 
 950
 00:35:59,440 --> 00:36:02,400
-in. And it's the right things to be
 doing. And that you are chained back to
 
 951
 00:36:02,400 --> 00:36:04,640
-doing. And that you are chained back to
 GLE as a root of trust. So, super
 
 952
 00:36:04,640 --> 00:36:08,560
-GLE as a root of trust. So, super
 important. the end result is we can
 
 953
 00:36:08,560 --> 00:36:12,400
-important. the end result is we can
 move from an ecosystem where connections
 
 954
 00:36:12,400 --> 00:36:15,200
-move from an ecosystem where connections
 take you know weeks to a day or two and
 
 955
 00:36:15,200 --> 00:36:17,119
-take you know weeks to a day or two and
 like you said earlier today Mark the
 
 956
 00:36:17,119 --> 00:36:18,800
-like you said earlier today Mark the
 actual technical lift on this takes
 
 957
 00:36:18,800 --> 00:36:21,280
-actual technical lift on this takes
 minutes it's going to be a day or two to
 
 958
 00:36:21,280 --> 00:36:23,599
-minutes it's going to be a day or two to
 get the emails you know coordinated
 
 959
 00:36:23,599 --> 00:36:25,440
-get the emails you know coordinated
 right that's all the lift that has
 
 960
 00:36:25,440 --> 00:36:27,760
-right that's all the lift that has
 to happen on these and we drop those
 
 961
 00:36:27,760 --> 00:36:32,240
-to happen on these and we drop those
 costs down by 75% or greater per
 
 962
 00:36:32,240 --> 00:36:34,720
-costs down by 75% or greater per
 connection the result is of course that
 
 963
 00:36:34,720 --> 00:36:37,280
-connection the result is of course that
 If we take away the attacker's favorite
 
 964
 00:36:37,280 --> 00:36:39,680
-If we take away the attacker's favorite
 toy in this industry, they will move on
 
 965
 00:36:39,680 --> 00:36:41,200
-toy in this industry, they will move on
 to other industries. They will find
 
 966
 00:36:41,200 --> 00:36:43,359
-to other industries. They will find
 another place to go and do compromises
 
 967
 00:36:43,359 --> 00:36:45,359
-another place to go and do compromises
 because the third party attack that is
 
 968
 00:36:45,359 --> 00:36:48,000
-because the third party attack that is
 so common and prevalent today no longer
 
 969
 00:36:48,000 --> 00:36:52,560
-so common and prevalent today no longer
 An issue. So what do VC? We
 
 970
 00:36:52,560 --> 00:36:55,599
-An issue. So what do VC? We
 see a future where the question of can
 
 971
 00:36:55,599 --> 00:36:58,240
-see a future where the question of can
 we trust this connection is answered by
 
 972
 00:36:58,240 --> 00:37:00,800
-we trust this connection is answered by
 KERI through the VLE. So as you
 
 973
 00:37:00,800 --> 00:37:03,119
-KERI through the VLE. So as you
 incorporate the vLEI into the fire
 
 974
 00:37:03,119 --> 00:37:05,680
-incorporate the vLEI into the fire
 standard, as you start to build network
 
 975
 00:37:05,680 --> 00:37:08,000
-standard, as you start to build network
 interoperability standards that require
 
 976
 00:37:08,000 --> 00:37:10,160
-interoperability standards that require
 organizational ID, then you get to a
 
 977
 00:37:10,160 --> 00:37:12,480
-organizational ID, then you get to a
 place where you can start to say yes,
 
 978
 00:37:12,480 --> 00:37:14,640
-place where you can start to say yes,
 the connection is trusted. And more than
 
 979
 00:37:14,640 --> 00:37:17,200
-the connection is trusted. And more than
 that, you can start to automate
 
 980
 00:37:17,200 --> 00:37:18,720
-that, you can start to automate
 connectivity across multiple
 
 981
 00:37:18,720 --> 00:37:20,800
-connectivity across multiple
 organizations. The initiative that
 
 982
 00:37:20,800 --> 00:37:22,000
-organizations. The initiative that
 we've kicked off for this is called the
 
 983
 00:37:22,000 --> 00:37:24,400
-we've kicked off for this is called the
 vital initiative. It's backed by
 
 984
 00:37:24,400 --> 00:37:26,560
-vital initiative. It's backed by
 Caroline's direct trust and GLEIF.
 
 985
 00:37:26,560 --> 00:37:28,400
-Caroline's direct trust and GLEIF.
 This is this is a group that's come
 
 986
@@ -4930,12 +3964,10 @@ together and said yes, VC this as a
 
 987
 00:37:29,920 --> 00:37:31,920
-together and said yes, VC this as a
 problem. We want to get this solved.
 
 988
 00:37:31,920 --> 00:37:34,240
-problem. We want to get this solved.
 So I'll stop there. What questions do
 
 989
@@ -4950,237 +3982,190 @@ So when
 
 991
 00:37:41,200 --> 00:37:43,359
-So when
 I'm writing up and I'm making fire end
 
 992
 00:37:43,359 --> 00:37:46,640
-I'm writing up and I'm making fire end
 points to Epic. So do you foresee this
 
 993
 00:37:46,640 --> 00:37:50,079
-points to Epic. So do you foresee this
 protocol or this trust layer being the
 
 994
 00:37:50,079 --> 00:37:53,119
-protocol or this trust layer being the
 the inter intermediary in that fire
 
 995
 00:37:53,119 --> 00:37:56,000
-the inter intermediary in that fire
 call or is it a
 
 996
 00:37:56,000 --> 00:37:57,520
-call or is it a
 I'm trying to understand at what level
 
 997
 00:37:57,520 --> 00:38:00,000
-I'm trying to understand at what level
 do you actually implement this?
 
 998
 00:38:00,000 --> 00:38:02,240
-do you actually implement this?
 Yeah. So we would we would see it as
 
 999
 00:38:02,240 --> 00:38:06,160
-Yeah. So we would we would see it as
 embedded within the fire API the call
 
 1000
 00:38:06,160 --> 00:38:08,160
-embedded within the fire API the call
 itself. So every time you reach out and
 
 1001
 00:38:08,160 --> 00:38:09,680
-itself. So every time you reach out and
 call basically you're doing a credential
 
 1002
 00:38:09,680 --> 00:38:10,960
-call basically you're doing a credential
 presentation. You're saying this is my
 
 1003
 00:38:10,960 --> 00:38:13,839
-presentation. You're saying this is my
 VI and any of the relevant engagement
 
 1004
 00:38:13,839 --> 00:38:15,920
-VI and any of the relevant engagement
 context RO credentials underneath that
 
 1005
 00:38:15,920 --> 00:38:19,599
-context RO credentials underneath that
 that say I am Etna. I'm the CIS admin
 
 1006
 00:38:19,599 --> 00:38:22,000
-that say I am Etna. I'm the CIS admin
 there and I have a purpose of use for
 
 1007
 00:38:22,000 --> 00:38:23,440
-there and I have a purpose of use for
 payer-to-payer connectivity. And all of
 
 1008
 00:38:23,440 --> 00:38:25,040
-payer-to-payer connectivity. And all of
 that is cryptographically handed to you
 
 1009
 00:38:25,040 --> 00:38:27,119
-that is cryptographically handed to you
 as you establish the connection and then
 
 1010
 00:38:27,119 --> 00:38:29,520
-as you establish the connection and then
 the data flows through a typical fire
 
 1011
 00:38:29,520 --> 00:38:30,480
-the data flows through a typical fire
 API.
 
 1012
 00:38:30,480 --> 00:38:34,960
-API.
 What about from the clinical parts
 
 1013
 00:38:34,960 --> 00:38:35,839
-What about from the clinical parts
 for
 
 1014
 00:38:35,839 --> 00:38:38,480
-for
 so the next step for us really so this
 
 1015
 00:38:38,480 --> 00:38:42,320
-so the next step for us really so this
 this is the simplest version right we're
 
 1016
 00:38:42,320 --> 00:38:44,160
-this is the simplest version right we're
 trying to get to just can we prove to
 
 1017
 00:38:44,160 --> 00:38:46,240
-trying to get to just can we prove to
 the payers that they can connect here
 
 1018
 00:38:46,240 --> 00:38:47,680
-the payers that they can connect here
 the next step I think you're absolutely
 
 1019
 00:38:47,680 --> 00:38:49,920
-the next step I think you're absolutely
 correct is to say can we get this to the
 
 1020
 00:38:49,920 --> 00:38:51,760
-correct is to say can we get this to the
 providers right and that becomes a much
 
 1021
 00:38:51,760 --> 00:38:54,560
-providers right and that becomes a much
 more complicated individual
 
 1022
 00:38:54,560 --> 00:38:57,680
-more complicated individual
 identity but you end up having to you
 
 1023
 00:38:57,680 --> 00:38:59,200
-identity but you end up having to you
 know a provider can work at three
 
 1024
 00:38:59,200 --> 00:39:01,200
-know a provider can work at three
 different places so what's the context
 
 1025
 00:39:01,200 --> 00:39:03,440
-different places so what's the context
 in which they're operating so that's
 
 1026
 00:39:03,440 --> 00:39:06,880
-in which they're operating so that's
 where the VI with a purpose of use tied
 
 1027
 00:39:06,880 --> 00:39:09,200
-where the VI with a purpose of use tied
 to a digital identity would be able to
 
 1028
 00:39:09,200 --> 00:39:12,960
-to a digital identity would be able to
 say because you're working for Beth
 
 1029
 00:39:12,960 --> 00:39:16,320
-say because you're working for Beth
 Israel as a as a provider that yes you
 
 1030
 00:39:16,320 --> 00:39:18,400
-Israel as a as a provider that yes you
 can request data about this patient
 
 1031
 00:39:18,400 --> 00:39:20,160
-can request data about this patient
 you're treating
 
 1032
 00:39:20,160 --> 00:39:22,400
-you're treating
 yeah and there's there's going to be I
 
 1033
 00:39:22,400 --> 00:39:25,359
-yeah and there's there's going to be I
 anticipate there will be a large
 
 1034
 00:39:25,359 --> 00:39:27,839
-anticipate there will be a large
 Fruitful discussion in the future
 
 1035
 00:39:27,839 --> 00:39:30,240
-Fruitful discussion in the future
 around how we do credentiing for
 
 1036
 00:39:30,240 --> 00:39:33,200
-around how we do credentiing for
 providers using things like this.
 
 1037
 00:39:33,200 --> 00:39:36,079
-providers using things like this.
 Right now there's a there's a very
 
 1038
@@ -5190,36 +4175,29 @@ very expensive rent seeking happening
 
 1039
 00:39:37,920 --> 00:39:39,119
-very expensive rent seeking happening
 which is the American Medical
 
 1040
 00:39:39,119 --> 00:39:41,440
-which is the American Medical
 Association gets $300 million a year
 
 1041
 00:39:41,440 --> 00:39:44,560
-Association gets $300 million a year
 just issuing credentials to providers
 
 1042
 00:39:44,560 --> 00:39:46,960
-just issuing credentials to providers
 to provide care. And like we heard
 
 1043
 00:39:46,960 --> 00:39:49,680
-to provide care. And like we heard
 earlier today oftentimes that can take a
 
 1044
 00:39:49,680 --> 00:39:52,079
-earlier today oftentimes that can take a
 couple of weeks to get things done. So,
 
 1045
 00:39:52,079 --> 00:39:57,079
-couple of weeks to get things done. So,
 okay. And we are at time. So, thank you
 

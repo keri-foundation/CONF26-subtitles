@@ -1,106 +1,86 @@
-﻿1
+1
 00:00:05,430 --> 00:00:07,040
 So yeah, my name is Fergal. I'm the
 identity solutions lead architect at the
 
 2
 00:00:07,040 --> 00:00:09,200
-identity solutions lead architect at the
 Cardano Foundation. I've been there for
 
 3
 00:00:09,200 --> 00:00:11,280
-Cardano Foundation. I've been there for
 the last four years building out our
 
 4
 00:00:11,280 --> 00:00:12,880
-the last four years building out our
 open source identity solution known as
 
 5
 00:00:12,880 --> 00:00:15,280
-open source identity solution known as
 Veridian. Some of you may have seen
 
 6
 00:00:15,280 --> 00:00:16,640
-Veridian. Some of you may have seen
 that this morning in Thomas's
 
 7
 00:00:16,640 --> 00:00:18,960
-that this morning in Thomas's
 presentation on the 5WS.
 
 8
 00:00:18,960 --> 00:00:22,240
-presentation on the 5WS.
 Over a year ago, we launched the
 
 9
 00:00:22,240 --> 00:00:25,359
-Over a year ago, we launched the
 Veridian wallet to the public app
 
 10
 00:00:25,359 --> 00:00:28,320
-Veridian wallet to the public app
 stores. This is the first KERI ACDC
 
 11
 00:00:28,320 --> 00:00:30,640
-stores. This is the first KERI ACDC
 mobile wallet in production. It's
 
 12
 00:00:30,640 --> 00:00:33,600
-mobile wallet in production. It's
 based on KERI and Signify. We
 
 13
 00:00:33,600 --> 00:00:36,719
-based on KERI and Signify. We
 invested a lot of time and effort into
 
 14
 00:00:36,719 --> 00:00:38,879
-invested a lot of time and effort into
 Bringing a nice user experience to
 
 15
 00:00:38,879 --> 00:00:41,280
-Bringing a nice user experience to
 the user. You know abstracting away
 
 16
 00:00:41,280 --> 00:00:43,920
-the user. You know abstracting away
 the details of low-level KERI and
 
 17
 00:00:43,920 --> 00:00:45,120
-the details of low-level KERI and
 giving something that's actually usable
 
 18
 00:00:45,120 --> 00:00:48,160
-giving something that's actually usable
 to the end user. So in doing that we
 
 19
 00:00:48,160 --> 00:00:49,840
-to the end user. So in doing that we
 had to actually contribute a lot of
 
 20
 00:00:49,840 --> 00:00:52,960
-had to actually contribute a lot of
 things back to Korean Signify.
 
 21
 00:00:52,960 --> 00:00:55,840
-things back to Korean Signify.
 Yesterday I spoke about the security
 
 22
@@ -110,42 +90,34 @@ architecture of Korean Signify. But
 
 23
 00:00:58,480 --> 00:01:00,239
-architecture of Korean Signify. But
 today I'll talk about the path to
 
 24
 00:01:00,239 --> 00:01:03,120
-today I'll talk about the path to
 production. I think there are some
 
 25
 00:01:03,120 --> 00:01:05,199
-production. I think there are some
 maturity gaps in the implementation of
 
 26
 00:01:05,199 --> 00:01:08,159
-maturity gaps in the implementation of
 Korean Signify that should be addressed
 
 27
 00:01:08,159 --> 00:01:10,159
-Korean Signify that should be addressed
 for adoption of the KERI suite. It's
 
 28
 00:01:10,159 --> 00:01:11,760
-for adoption of the KERI suite. It's
 starting to lag behind the maturity of
 
 29
 00:01:11,760 --> 00:01:14,720
-starting to lag behind the maturity of
 KERIpy. We'll kind of step through
 
 30
 00:01:14,720 --> 00:01:18,550
-KERIpy. We'll kind of step through
 that today.
 
 31
@@ -155,217 +127,174 @@ I mean yesterday's talk gave kind of an
 
 32
 00:01:23,200 --> 00:01:25,520
-I mean yesterday's talk gave kind of an
 in-depth explanation of how it works in
 
 33
 00:01:25,520 --> 00:01:28,799
-in-depth explanation of how it works in
 practice. But kind of the tagline
 
 34
 00:01:28,799 --> 00:01:30,479
-practice. But kind of the tagline
 that I had was agent in the cloud
 
 35
 00:01:30,479 --> 00:01:33,680
-that I had was agent in the cloud
 controller at the edge. So KERI
 
 36
 00:01:33,680 --> 00:01:37,040
-controller at the edge. So KERI
 allows you to deploy cloud agents
 
 37
 00:01:37,040 --> 00:01:38,880
-allows you to deploy cloud agents
 which essentially handle all of the
 
 38
 00:01:38,880 --> 00:01:42,560
-which essentially handle all of the
 verification of KERI ACDC up in the
 
 39
 00:01:42,560 --> 00:01:45,119
-verification of KERI ACDC up in the
 cloud and allow you to use an edge
 
 40
 00:01:45,119 --> 00:01:47,759
-cloud and allow you to use an edge
 client library known as Signify at
 
 41
 00:01:47,759 --> 00:01:51,119
-client library known as Signify at
 the edge to just assign key
 
 42
 00:01:51,119 --> 00:01:54,240
-the edge to just assign key
 events essentially or ACDCs this
 
 43
 00:01:54,240 --> 00:01:56,640
-events essentially or ACDCs this
 keeps the edge layer very thin. Okay. So
 
 44
 00:01:56,640 --> 00:01:59,680
-keeps the edge layer very thin. Okay. So
 for example, Veridian wallet on our mobile
 
 45
 00:01:59,680 --> 00:02:02,000
-for example, Veridian wallet on our mobile
 just uses a Signify TS just to sign
 
 46
 00:02:02,000 --> 00:02:03,520
-just uses a Signify TS just to sign
 things essentially and all of the
 
 47
 00:02:03,520 --> 00:02:06,560
-things essentially and all of the
 complex validation logic is pushed to
 
 48
 00:02:06,560 --> 00:02:08,879
-complex validation logic is pushed to
 the cloud kind of like a black box
 
 49
 00:02:08,879 --> 00:02:10,959
-the cloud kind of like a black box
 essentially. So in many ways it
 
 50
 00:02:10,959 --> 00:02:14,239
-essentially. So in many ways it
 becomes kind of a more easy to use
 
 51
 00:02:14,239 --> 00:02:16,480
-becomes kind of a more easy to use
 API that's kind of at a higher level
 
 52
 00:02:16,480 --> 00:02:21,440
-API that's kind of at a higher level
 which you know is desirable for adoption
 
 53
 00:02:21,440 --> 00:02:22,640
-which you know is desirable for adoption
 So it gives something that's a bit
 
 54
 00:02:22,640 --> 00:02:25,760
-So it gives something that's a bit
 more tangible for people to develop on
 
 55
 00:02:25,760 --> 00:02:28,480
-more tangible for people to develop on
 And very quickly this is taken from
 
 56
 00:02:28,480 --> 00:02:31,360
-And very quickly this is taken from
 my deck yesterday but doesn't look so
 
 57
 00:02:31,360 --> 00:02:33,440
-my deck yesterday but doesn't look so
 good on the four screens there but if
 
 58
 00:02:33,440 --> 00:02:35,519
-good on the four screens there but if
 KERI is this kind of block in the
 
 59
 00:02:35,519 --> 00:02:38,160
-KERI is this kind of block in the
 middle is the multi- aent service it's
 
 60
 00:02:38,160 --> 00:02:40,640
-middle is the multi- aent service it's
 based on pie Okay. So it's a Python
 
 61
 00:02:40,640 --> 00:02:43,200
-based on pie Okay. So it's a Python
 service. It allows you to spin up
 
 62
 00:02:43,200 --> 00:02:45,200
-service. It allows you to spin up
 various agents in the cloud that are
 
 63
 00:02:45,200 --> 00:02:46,800
-various agents in the cloud that are
 fully isolated. So they have separate
 
 64
 00:02:46,800 --> 00:02:49,360
-fully isolated. So they have separate
 databases. And for every agent in
 
 65
 00:02:49,360 --> 00:02:50,400
-databases. And for every agent in
 the cloud, you have exactly one
 
 66
 00:02:50,400 --> 00:02:51,840
-the cloud, you have exactly one
 signified client at the edge. So this
 
 67
 00:02:51,840 --> 00:02:54,080
-signified client at the edge. So this
 these could be various applications from
 
 68
 00:02:54,080 --> 00:02:56,640
-these could be various applications from
 various people sharing the same cloud
 
 69
 00:02:56,640 --> 00:02:59,360
-various people sharing the same cloud
 agent. This could be say on a mobile
 
 70
 00:02:59,360 --> 00:03:02,000
-agent. This could be say on a mobile
 device for example. And there's a
 
 71
 00:03:02,000 --> 00:03:04,959
-device for example. And there's a
 secure communication between each client
 
 72
 00:03:04,959 --> 00:03:07,760
-secure communication between each client
 and agent. Which I delved into
 
 73
 00:03:07,760 --> 00:03:10,959
-and agent. Which I delved into
 yesterday. I won't do that today.
 
 74
 00:03:10,959 --> 00:03:13,280
-yesterday. I won't do that today.
 And the agent is also responsible for
 
 75
@@ -375,57 +304,46 @@ interfacing with everything else on the
 
 76
 00:03:15,040 --> 00:03:17,040
-interfacing with everything else on the
 network. Such as witnesses and
 
 77
 00:03:17,040 --> 00:03:19,280
-network. Such as witnesses and
 watchers and issuers and verifiers and
 
 78
 00:03:19,280 --> 00:03:21,519
-watchers and issuers and verifiers and
 so forth. So Signify only ever talks
 
 79
 00:03:21,519 --> 00:03:23,200
-so forth. So Signify only ever talks
 to the cloud agent.
 
 80
 00:03:23,200 --> 00:03:26,800
-to the cloud agent.
 Quick question if I may. So why
 
 81
 00:03:26,800 --> 00:03:30,000
-Quick question if I may. So why
 must there only be one Signify client
 
 82
 00:03:30,000 --> 00:03:32,319
-must there only be one Signify client
 per agent? So for example, let's say I
 
 83
 00:03:32,319 --> 00:03:34,879
-per agent? So for example, let's say I
 had a Veridian wallet and I had a
 
 84
 00:03:34,879 --> 00:03:37,040
-had a Veridian wallet and I had a
 browser wallet. Why couldn't I both
 
 85
 00:03:37,040 --> 00:03:39,200
-browser wallet. Why couldn't I both
 connect to the same agent? What would be
 
 86
 00:03:39,200 --> 00:03:45,509
-connect to the same agent? What would be
 the problems with that?
 
 87
@@ -439,82 +357,66 @@ key material?
 
 89
 00:03:48,480 --> 00:03:51,200
-key material?
 No, same pass password passcode.
 
 90
 00:03:51,200 --> 00:03:52,959
-No, same pass password passcode.
 Well, for me that's moving around the
 
 91
 00:03:52,959 --> 00:03:54,799
-Well, for me that's moving around the
 passcode a bit too much.
 
 92
 00:03:54,799 --> 00:03:56,239
-passcode a bit too much.
 Well, it's the same user though, right?
 
 93
 00:03:56,239 --> 00:03:58,400
-Well, it's the same user though, right?
 I have my phone and I have another two
 
 94
 00:03:58,400 --> 00:04:00,720
-I have my phone and I have another two
 phones or two devices. What's the
 
 95
 00:04:00,720 --> 00:04:02,239
-phones or two devices. What's the
 problem with that?
 
 96
 00:04:02,239 --> 00:04:04,159
-problem with that?
 There wouldn't actually be a problem
 
 97
 00:04:04,159 --> 00:04:05,680
-There wouldn't actually be a problem
 with that if it's effectively the same
 
 98
 00:04:05,680 --> 00:04:06,720
-with that if it's effectively the same
 client. If you're using the same
 
 99
 00:04:06,720 --> 00:04:08,239
-client. If you're using the same
 passcode, it is effectively the same
 
 100
 00:04:08,239 --> 00:04:10,080
-passcode, it is effectively the same
 client, just a different instance of it.
 
 101
 00:04:10,080 --> 00:04:12,080
-client, just a different instance of it.
 So it'll it'll derive the same key
 
 102
 00:04:12,080 --> 00:04:13,760
-So it'll it'll derive the same key
 material and authenticate in the same
 
 103
 00:04:13,760 --> 00:04:16,000
-material and authenticate in the same
 way.
 
 104
 00:04:16,000 --> 00:04:18,560
-way.
 But if your applications keep local
 
 105
@@ -524,57 +426,46 @@ state, you might it might cause
 
 106
 00:04:21,359 --> 00:04:22,960
-state, you might it might cause
 inconsistencies essentially. So
 
 107
 00:04:22,960 --> 00:04:24,960
-inconsistencies essentially. So
 Okay. Okay. But it might work.
 
 108
 00:04:24,960 --> 00:04:27,440
-Okay. Okay. But it might work.
 No, it would work. Yeah. Yeah.
 
 109
 00:04:27,440 --> 00:04:31,040
-No, it would work. Yeah. Yeah.
 Although it might then you know how
 
 110
 00:04:31,040 --> 00:04:33,199
-Although it might then you know how
 it actually stores data on KERI needs
 
 111
 00:04:33,199 --> 00:04:34,880
-it actually stores data on KERI needs
 to be the same. You've seen this when
 
 112
 00:04:34,880 --> 00:04:37,680
-to be the same. You've seen this when
 you've tried to connect your
 
 113
 00:04:37,680 --> 00:04:40,080
-you've tried to connect your
 wallet to what was our wallet. Yeah, it
 
 114
 00:04:40,080 --> 00:04:41,520
-wallet to what was our wallet. Yeah, it
 works but you see some fuzzy stuff
 
 115
 00:04:41,520 --> 00:04:44,320
-works but you see some fuzzy stuff
 that's related to our wallet only.
 
 116
 00:04:44,320 --> 00:04:48,160
-that's related to our wallet only.
 But yeah, this is generally the setup.
 
 117
@@ -584,52 +475,42 @@ And today I've kind of split into
 
 118
 00:04:51,280 --> 00:04:53,120
-And today I've kind of split into
 three different sections of what I will
 
 119
 00:04:53,120 --> 00:04:55,360
-three different sections of what I will
 cover on how we can mature Korean
 
 120
 00:04:55,360 --> 00:04:58,560
-cover on how we can mature Korean
 Signify. First is focused on the
 
 121
 00:04:58,560 --> 00:05:01,199
-Signify. First is focused on the
 developer experience. The second on
 
 122
 00:05:01,199 --> 00:05:03,759
-developer experience. The second on
 the operational resilience and third on
 
 123
 00:05:03,759 --> 00:05:07,280
-the operational resilience and third on
 scalability. I think the first two
 
 124
 00:05:07,280 --> 00:05:09,039
-scalability. I think the first two
 are the most important to do in the
 
 125
 00:05:09,039 --> 00:05:12,080
-are the most important to do in the
 short term. To really you know
 
 126
 00:05:12,080 --> 00:05:15,280
-short term. To really you know
 increase the usability of the stack.
 
 127
 00:05:15,280 --> 00:05:17,600
-increase the usability of the stack.
 Scalability is more relevant in the long
 
 128
@@ -639,112 +520,90 @@ term. A lot of people think about this
 
 129
 00:05:19,520 --> 00:05:22,479
-term. A lot of people think about this
 now but these first two points are more
 
 130
 00:05:22,479 --> 00:05:24,400
-now but these first two points are more
 relevant in my opinion and scalability
 
 131
 00:05:24,400 --> 00:05:26,479
-relevant in my opinion and scalability
 will be very relevant for SEDI though you
 
 132
 00:05:26,479 --> 00:05:27,919
-will be very relevant for SEDI though you
 know if we're launching KERI
 
 133
 00:05:27,919 --> 00:05:29,919
-know if we're launching KERI
 instances they want to serve thousands
 
 134
 00:05:29,919 --> 00:05:32,080
-instances they want to serve thousands
 and thousands and thousands of people
 
 135
 00:05:32,080 --> 00:05:34,160
-and thousands and thousands of people
 with wallets and scalability becomes a
 
 136
 00:05:34,160 --> 00:05:37,039
-with wallets and scalability becomes a
 big concern. And just to preface as
 
 137
 00:05:37,039 --> 00:05:39,440
-big concern. And just to preface as
 well, I mean this is going to be a talk
 
 138
 00:05:39,440 --> 00:05:40,639
-well, I mean this is going to be a talk
 probably explaining all the bad points
 
 139
 00:05:40,639 --> 00:05:42,960
-probably explaining all the bad points
 of KERI and Signify, but it does work.
 
 140
 00:05:42,960 --> 00:05:45,440
-of KERI and Signify, but it does work.
 It is in production. It's just maybe
 
 141
 00:05:45,440 --> 00:05:48,080
-It is in production. It's just maybe
 a bit nuanced to work with. It's very
 
 142
 00:05:48,080 --> 00:05:50,240
-a bit nuanced to work with. It's very
 unless you understand it, it can be hard
 
 143
 00:05:50,240 --> 00:05:51,840
-unless you understand it, it can be hard
 to work with because there's a lack of
 
 144
 00:05:51,840 --> 00:05:54,560
-to work with because there's a lack of
 feedback in places. But all of that is
 
 145
 00:05:54,560 --> 00:05:56,000
-feedback in places. But all of that is
 really just traditional software
 
 146
 00:05:56,000 --> 00:05:57,600
-really just traditional software
 development points that are missing.
 
 147
 00:05:57,600 --> 00:05:59,360
-development points that are missing.
 Just some extra maturity. It's not like
 
 148
 00:05:59,360 --> 00:06:00,639
-Just some extra maturity. It's not like
 it's not anything related to the
 
 149
 00:06:00,639 --> 00:06:03,600
-it's not anything related to the
 protocols as such or the security.
 
 150
 00:06:03,600 --> 00:06:06,800
-protocols as such or the security.
 And in places where I say that, oh,
 
 151
@@ -754,47 +613,38 @@ there's not enough API hardening in
 
 152
 00:06:09,039 --> 00:06:11,199
-there's not enough API hardening in
 place, the reality of that is just
 
 153
 00:06:11,199 --> 00:06:12,960
-place, the reality of that is just
 something happened. The KERI crashes.
 
 154
 00:06:12,960 --> 00:06:15,680
-something happened. The KERI crashes.
 It's not a security bug. For as so much
 
 155
 00:06:15,680 --> 00:06:17,280
-It's not a security bug. For as so much
 as I can see, it's more about a
 
 156
 00:06:17,280 --> 00:06:20,800
-as I can see, it's more about a
 resilience thing. Okay.
 
 157
 00:06:20,800 --> 00:06:24,479
-resilience thing. Okay.
 So, on the developer experience the
 
 158
 00:06:24,479 --> 00:06:26,800
-So, on the developer experience the
 first point I'm going to on this slide
 
 159
 00:06:26,800 --> 00:06:29,120
-first point I'm going to on this slide
 refer to at the edge. So everything in
 
 160
 00:06:29,120 --> 00:06:34,230
-refer to at the edge. So everything in
 Signify essentially
 
 161
@@ -808,317 +658,254 @@ last at least 6 months I think to
 
 163
 00:06:40,560 --> 00:06:44,240
-last at least 6 months I think to
 strongly type the edge libraries so I
 
 164
 00:06:44,240 --> 00:06:48,000
-strongly type the edge libraries so I
 mean if you're using sign typescript
 
 165
 00:06:48,000 --> 00:06:49,360
-mean if you're using sign typescript
 you should be using types essentially
 
 166
 00:06:49,360 --> 00:06:52,319
-you should be using types essentially
 but when Signify was originally written
 
 167
 00:06:52,319 --> 00:06:55,039
-but when Signify was originally written
 It didn't have any types in it
 
 168
 00:06:55,039 --> 00:06:56,720
-It didn't have any types in it
 this is problematic if you're
 
 169
 00:06:56,720 --> 00:06:58,160
-this is problematic if you're
 refactoring code and so forth things
 
 170
 00:06:58,160 --> 00:07:02,160
-refactoring code and so forth things
 start to break. So we've put a lot
 
 171
 00:07:02,160 --> 00:07:04,560
-start to break. So we've put a lot
 of time and effort to strongly type
 
 172
 00:07:04,560 --> 00:07:06,800
-of time and effort to strongly type
 Signify. It's not fully there yet,
 
 173
 00:07:06,800 --> 00:07:09,520
-Signify. It's not fully there yet,
 but it pretty much almost is. And
 
 174
 00:07:09,520 --> 00:07:11,280
-but it pretty much almost is. And
 instead of adding types directly into
 
 175
 00:07:11,280 --> 00:07:13,199
-instead of adding types directly into
 Signify, we've actually taken a kind of
 
 176
 00:07:13,199 --> 00:07:16,639
-Signify, we've actually taken a kind of
 A different approach because as I
 
 177
 00:07:16,639 --> 00:07:18,319
-A different approach because as I
 mentioned yesterday, Signify essentially
 
 178
 00:07:18,319 --> 00:07:20,319
-mentioned yesterday, Signify essentially
 is kind of like an API wrapper around
 
 179
 00:07:20,319 --> 00:07:22,240
-is kind of like an API wrapper around
 KERIA. It can do extra things like
 
 180
 00:07:22,240 --> 00:07:24,400
-KERIA. It can do extra things like
 generate key events and sign them, but
 
 181
 00:07:24,400 --> 00:07:27,759
-generate key events and sign them, but
 it's otherwise an API wrapper. And
 
 182
 00:07:27,759 --> 00:07:30,880
-it's otherwise an API wrapper. And
 since you have an API on KERIA, you can
 
 183
 00:07:30,880 --> 00:07:33,520
-since you have an API on KERIA, you can
 let KERIA decide what it wants and what
 
 184
 00:07:33,520 --> 00:07:35,759
-let KERIA decide what it wants and what
 it will respond with through its open
 
 185
 00:07:35,759 --> 00:07:38,639
-it will respond with through its open
 API documentation. Okay, so it will say
 
 186
 00:07:38,639 --> 00:07:40,080
-API documentation. Okay, so it will say
 at this endpoint, it will give a
 
 187
 00:07:40,080 --> 00:07:43,280
-at this endpoint, it will give a
 response in this format if it's a HTTP
 
 188
 00:07:43,280 --> 00:07:46,720
-response in this format if it's a HTTP
 200 or whatever. So
 
 189
 00:07:46,720 --> 00:07:49,919
-200 or whatever. So
 and this is common practice to take open
 
 190
 00:07:49,919 --> 00:07:53,360
-and this is common practice to take open
 API documentation and autogenerate types
 
 191
 00:07:53,360 --> 00:07:55,759
-API documentation and autogenerate types
 in languages. Okay, so that's what we've
 
 192
 00:07:55,759 --> 00:07:58,400
-in languages. Okay, so that's what we've
 done. We've updated all of the open API
 
 193
 00:07:58,400 --> 00:08:00,879
-done. We've updated all of the open API
 docs on KERIA and generated types in
 
 194
 00:08:00,879 --> 00:08:03,599
-docs on KERIA and generated types in
 Signify TS and Signify Java because they
 
 195
 00:08:03,599 --> 00:08:06,400
-Signify TS and Signify Java because they
 propagate to various languages now as
 
 196
 00:08:06,400 --> 00:08:07,919
-propagate to various languages now as
 a single source of truth and if you
 
 197
 00:08:07,919 --> 00:08:10,000
-a single source of truth and if you
 wanted to add in another Signify like a
 
 198
 00:08:10,000 --> 00:08:12,240
-wanted to add in another Signify like a
 Rust library you could just
 
 199
 00:08:12,240 --> 00:08:16,000
-Rust library you could just
 automatically generate them. Now you
 
 200
 00:08:16,000 --> 00:08:17,360
-automatically generate them. Now you
 might have to do some reworking in
 
 201
 00:08:17,360 --> 00:08:18,800
-might have to do some reworking in
 places.
 
 202
 00:08:18,800 --> 00:08:22,160
-places.
 Java for example is
 
 203
 00:08:22,160 --> 00:08:24,639
-Java for example is
 not as expressive in its type system as
 
 204
 00:08:24,639 --> 00:08:28,160
-not as expressive in its type system as
 TypeScript is. It didn't play nice
 
 205
 00:08:28,160 --> 00:08:30,479
-TypeScript is. It didn't play nice
 with a lot of the semantics of CESR.
 
 206
 00:08:30,479 --> 00:08:32,640
-with a lot of the semantics of CESR.
 But we've kind of got it working now.
 
 207
 00:08:32,640 --> 00:08:35,120
-But we've kind of got it working now.
 So it took some changes there but
 
 208
 00:08:35,120 --> 00:08:37,120
-So it took some changes there but
 it's quite useful and also we're not
 
 209
 00:08:37,120 --> 00:08:40,080
-it's quite useful and also we're not
 hand rolling the open API docs. We're
 
 210
 00:08:40,080 --> 00:08:42,959
-hand rolling the open API docs. We're
 actually taking
 
 211
 00:08:42,959 --> 00:08:44,880
-actually taking
 the data structures in KERIpy that
 
 212
 00:08:44,880 --> 00:08:46,880
-the data structures in KERIpy that
 Sam's written saying okay here are the
 
 213
 00:08:46,880 --> 00:08:49,519
-Sam's written saying okay here are the
 top level fields of an ACDC we've
 
 214
 00:08:49,519 --> 00:08:52,160
-top level fields of an ACDC we've
 converted those into Python data classes
 
 215
 00:08:52,160 --> 00:08:54,080
-converted those into Python data classes
 automatically generated so they can be
 
 216
 00:08:54,080 --> 00:08:56,640
-automatically generated so they can be
 reused in KERI and those data classes
 
 217
 00:08:56,640 --> 00:09:00,000
-reused in KERI and those data classes
 are converted to the open API docs and
 
 218
 00:09:00,000 --> 00:09:01,440
-are converted to the open API docs and
 you what that gives you is if there's an
 
 219
 00:09:01,440 --> 00:09:04,080
-you what that gives you is if there's an
 update you know downstream it propagates
 
 220
 00:09:04,080 --> 00:09:06,480
-update you know downstream it propagates
 upstream and the open API docs don't go
 
 221
 00:09:06,480 --> 00:09:10,480
-upstream and the open API docs don't go
 out of sync so this has been a huge
 
 222
 00:09:10,480 --> 00:09:13,839
-out of sync so this has been a huge
 lift to make it more usable.
 
 223
 00:09:13,839 --> 00:09:15,519
-lift to make it more usable.
 Internally, I think Signify still needs
 
 224
 00:09:15,519 --> 00:09:18,320
-Internally, I think Signify still needs
 some work.
 
 225
 00:09:18,320 --> 00:09:20,320
-some work.
 Probably we can get away with not doing
 
 226
@@ -1128,272 +915,218 @@ that for a bit. There's maybe some other
 
 227
 00:09:21,920 --> 00:09:23,200
-that for a bit. There's maybe some other
 points that are more relevant to that
 
 228
 00:09:23,200 --> 00:09:25,279
-points that are more relevant to that
 point. I would say we'd maybe tackle
 
 229
 00:09:25,279 --> 00:09:27,519
-point. I would say we'd maybe tackle
 this when we're upgrading to CESR 2,
 
 230
 00:09:27,519 --> 00:09:29,200
-this when we're upgrading to CESR 2,
 which would be quite a bit of work as
 
 231
 00:09:29,200 --> 00:09:29,920
-which would be quite a bit of work as
 well.
 
 232
 00:09:29,920 --> 00:09:33,360
-well.
 So, quick question if I may. So
 
 233
 00:09:33,360 --> 00:09:35,120
-So, quick question if I may. So
 some of the Web of Trust developers
 
 234
 00:09:35,120 --> 00:09:38,640
-some of the Web of Trust developers
 refer to Signify meaning Is it what
 
 235
 00:09:38,640 --> 00:09:40,640
-refer to Signify meaning Is it what
 Signify TS has in it? I always thought
 
 236
 00:09:40,640 --> 00:09:43,680
-Signify TS has in it? I always thought
 of it as like the protocol that KERI
 
 237
 00:09:43,680 --> 00:09:47,120
-of it as like the protocol that KERI
 exposes. So is Signify a component or is
 
 238
 00:09:47,120 --> 00:09:49,760
-exposes. So is Signify a component or is
 it a protocol or is it all things or I
 
 239
 00:09:49,760 --> 00:09:51,920
-it a protocol or is it all things or I
 don't. So how would you define what
 
 240
 00:09:51,920 --> 00:09:54,240
-don't. So how would you define what
 Signify is? So sorry it's a simple
 
 241
 00:09:54,240 --> 00:09:56,480
-Signify is? So sorry it's a simple
 question but it's a language question
 
 242
 00:09:56,480 --> 00:09:57,680
-question but it's a language question
 mostly
 
 243
 00:09:57,680 --> 00:10:01,040
-mostly
 an edge client that you can that
 
 244
 00:10:01,040 --> 00:10:02,800
-an edge client that you can that
 any edge client of KERI.
 
 245
 00:10:02,800 --> 00:10:03,360
-any edge client of KERI.
 Yeah.
 
 246
 00:10:03,360 --> 00:10:07,680
-Yeah.
 Okay. So it's got it.
 
 247
 00:10:07,680 --> 00:10:09,519
-Okay. So it's got it.
 Yeah. Yeah. So there's a KERI
 
 248
 00:10:09,519 --> 00:10:10,800
-Yeah. Yeah. So there's a KERI
 protocol essentially,
 
 249
 00:10:10,800 --> 00:10:12,640
-protocol essentially,
 right? It's defined as a protocol, but
 
 250
 00:10:12,640 --> 00:10:15,360
-right? It's defined as a protocol, but
 it could be Signify JS or Signify Java
 
 251
 00:10:15,360 --> 00:10:15,760
-it could be Signify JS or Signify Java
 or
 
 252
 00:10:15,760 --> 00:10:17,360
-or
 Yeah. Yeah.
 
 253
 00:10:17,360 --> 00:10:18,720
-Yeah. Yeah.
 whatever other language.
 
 254
 00:10:18,720 --> 00:10:21,440
-whatever other language.
 How does it look like? Is it is it
 
 255
 00:10:21,440 --> 00:10:25,600
-How does it look like? Is it is it
 UX stuff or is it command line stuff or
 
 256
 00:10:25,600 --> 00:10:26,399
-UX stuff or is it command line stuff or
 library?
 
 257
 00:10:26,399 --> 00:10:28,160
-library?
 Library. So when you're using Signifi
 
 258
 00:10:28,160 --> 00:10:29,839
-Library. So when you're using Signifi
 TS,
 
 259
 00:10:29,839 --> 00:10:31,040
-TS,
 you essentially it's kind of like having
 
 260
 00:10:31,040 --> 00:10:32,720
-you essentially it's kind of like having
 a compiler error if you type in the
 
 261
 00:10:32,720 --> 00:10:35,440
-a compiler error if you type in the
 wrong formats essentially. So if you try
 
 262
 00:10:35,440 --> 00:10:38,000
-wrong formats essentially. So if you try
 to create an ACDC or something, it will
 
 263
 00:10:38,000 --> 00:10:40,240
-to create an ACDC or something, it will
 know what the structure should look like
 
 264
 00:10:40,240 --> 00:10:43,839
-know what the structure should look like
 and you can reference it directly.
 
 265
 00:10:43,839 --> 00:10:46,480
-and you can reference it directly.
 Whereas before you're kind of blind
 
 266
 00:10:46,480 --> 00:10:49,200
-Whereas before you're kind of blind
 essentially, you know you would if
 
 267
 00:10:49,200 --> 00:10:51,360
-essentially, you know you would if
 you're maybe you receive an ACDC back
 
 268
 00:10:51,360 --> 00:10:52,959
-you're maybe you receive an ACDC back
 from KERI and you were going to present
 
 269
 00:10:52,959 --> 00:10:55,120
-from KERI and you were going to present
 that in the UI and you would say I want
 
 270
 00:10:55,120 --> 00:10:57,839
-that in the UI and you would say I want
 to get the top level I field as the
 
 271
 00:10:57,839 --> 00:10:59,600
-to get the top level I field as the
 issuer.
 
 272
 00:10:59,600 --> 00:11:01,600
-issuer.
 If you were to reference some field that
 
 273
 00:11:01,600 --> 00:11:03,519
-If you were to reference some field that
 doesn't ex exist like T before it
 
 274
 00:11:03,519 --> 00:11:04,800
-doesn't ex exist like T before it
 wouldn't complain and you just get a
 
 275
 00:11:04,800 --> 00:11:07,760
-wouldn't complain and you just get a
 blank space in the UI whereas now
 
 276
 00:11:07,760 --> 00:11:10,000
-blank space in the UI whereas now
 TypeScript would say there is no top
 
 277
 00:11:10,000 --> 00:11:14,720
-TypeScript would say there is no top
 level T field in an ACDC. So
 
 278
 00:11:14,720 --> 00:11:16,720
-level T field in an ACDC. So
 I'm a strong you know believer in
 
 279
 00:11:16,720 --> 00:11:19,519
-I'm a strong you know believer in
 strongly typed languages.
 
 280
 00:11:19,519 --> 00:11:21,920
-strongly typed languages.
 The payoff is very high in terms of
 
 281
@@ -1403,102 +1136,82 @@ keeping the book count low and
 
 282
 00:11:23,440 --> 00:11:26,000
-keeping the book count low and
 especially when you refactor.
 
 283
 00:11:26,000 --> 00:11:28,000
-especially when you refactor.
 to your to your question. It's a library
 
 284
 00:11:28,000 --> 00:11:30,000
-to your to your question. It's a library
 you need to be able to build that you
 
 285
 00:11:30,000 --> 00:11:32,640
-you need to be able to build that you
 want on top of
 
 286
 00:11:32,640 --> 00:11:37,190
-want on top of
 sort of
 
 287
 00:11:42,150 --> 00:11:44,079
-sort of
 a hole in the wall where you give the
 
 288
 00:11:44,079 --> 00:11:47,760
-a hole in the wall where you give the
 food like you give to the other
 
 289
 00:11:47,760 --> 00:11:50,000
-food like you give to the other
 the delivery desk or whatever.
 
 290
 00:11:50,000 --> 00:11:50,880
-the delivery desk or whatever.
 Yeah,
 
 291
 00:11:50,880 --> 00:11:55,600
-Yeah,
 you have the back office which is
 
 292
 00:11:55,600 --> 00:11:56,880
-you have the back office which is
 career
 
 293
 00:11:56,880 --> 00:11:59,040
-career
 and then you have this and then you can
 
 294
 00:11:59,040 --> 00:12:00,720
-and then you have this and then you can
 deliver it out to the UX
 
 295
 00:12:00,720 --> 00:12:03,360
-deliver it out to the UX
 serving window or something.
 
 296
 00:12:03,360 --> 00:12:04,079
-serving window or something.
 Yeah.
 
 297
 00:12:04,079 --> 00:12:05,600
-Yeah.
 Okay. And with this you know what's
 
 298
 00:12:05,600 --> 00:12:07,360
-Okay. And with this you know what's
 going to come out, what shape it will
 
 299
 00:12:07,360 --> 00:12:09,200
-going to come out, what shape it will
 be, what comes through the serving
 
 300
 00:12:09,200 --> 00:12:10,560
-be, what comes through the serving
 window whereas before it's like you're
 
 301
 00:12:10,560 --> 00:12:14,550
-window whereas before it's like you're
 blindfolded. So
 
 302
@@ -1512,127 +1225,102 @@ a bit technical. Currently with in
 
 304
 00:12:22,399 --> 00:12:24,800
-a bit technical. Currently with in
 all of the Signify implementations
 
 305
 00:12:24,800 --> 00:12:27,760
-all of the Signify implementations
 When you want to do something like
 
 306
 00:12:27,760 --> 00:12:30,320
-When you want to do something like
 issue a credential
 
 307
 00:12:30,320 --> 00:12:33,200
-issue a credential
 in one command on Signify
 
 308
 00:12:33,200 --> 00:12:37,120
-in one command on Signify
 it will construct the credential
 
 309
 00:12:37,120 --> 00:12:39,360
-it will construct the credential
 Try to create the interaction event
 
 310
 00:12:39,360 --> 00:12:42,000
-Try to create the interaction event
 to anchor it in your Key Event Log. It
 
 311
 00:12:42,000 --> 00:12:44,639
-to anchor it in your Key Event Log. It
 will pick the sequence number for you
 
 312
 00:12:44,639 --> 00:12:47,680
-will pick the sequence number for you
 and submit it to the API all in one go.
 
 313
 00:12:47,680 --> 00:12:48,240
-and submit it to the API all in one go.
 Absolutely.
 
 314
 00:12:48,240 --> 00:12:50,639
-Absolutely.
 Which automates workflows of several
 
 315
 00:12:50,639 --> 00:12:51,440
-Which automates workflows of several
 steps. Yeah.
 
 316
 00:12:51,440 --> 00:12:53,920
-steps. Yeah.
 Yeah. Which is not a good thing because
 
 317
 00:12:53,920 --> 00:12:57,600
-Yeah. Which is not a good thing because
 if you lose the HTTP response
 
 318
 00:12:57,600 --> 00:12:59,440
-if you lose the HTTP response
 u you've not lost data. Okay. It's okay
 
 319
 00:12:59,440 --> 00:13:01,120
-u you've not lost data. Okay. It's okay
 when you use Signify completely
 
 320
 00:13:01,120 --> 00:13:02,720
-when you use Signify completely
 stateless in smaller applications but
 
 321
 00:13:02,720 --> 00:13:05,839
-stateless in smaller applications but
 when you want to build enterprise
 
 322
 00:13:05,839 --> 00:13:07,760
-when you want to build enterprise
 applications where you need you know
 
 323
 00:13:07,760 --> 00:13:10,160
-applications where you need you know
 mission critical reliability you need
 
 324
 00:13:10,160 --> 00:13:11,680
-mission critical reliability you need
 things to go through. So if you want
 
 325
 00:13:11,680 --> 00:13:13,360
-things to go through. So if you want
 outbox patterns, you need to be able to
 
 326
 00:13:13,360 --> 00:13:15,600
-outbox patterns, you need to be able to
 decouple those things. So you can create
 
 327
 00:13:15,600 --> 00:13:19,600
-decouple those things. So you can create
 and sign at the edge and then submit.
 
 328
 00:13:19,600 --> 00:13:23,910
-and sign at the edge and then submit.
 And the API should be ident.
 
 329
@@ -1642,257 +1330,206 @@ Yes.
 
 330
 00:13:25,200 --> 00:13:26,800
-Yes.
 On that particular note, I want to
 
 331
 00:13:26,800 --> 00:13:28,000
-On that particular note, I want to
 make I want to hear more what you have
 
 332
 00:13:28,000 --> 00:13:29,600
-make I want to hear more what you have
 to say on outbox patterns. That's
 
 333
 00:13:29,600 --> 00:13:30,880
-to say on outbox patterns. That's
 actually something I was looking into.
 
 334
 00:13:30,880 --> 00:13:32,320
-actually something I was looking into.
 It seems like that while we're
 
 335
 00:13:32,320 --> 00:13:33,440
-It seems like that while we're
 considering this,
 
 336
 00:13:33,440 --> 00:13:36,320
-considering this,
 we should consider the API, the
 
 337
 00:13:36,320 --> 00:13:38,160
-we should consider the API, the
 fundamental design of the API between
 
 338
 00:13:38,160 --> 00:13:40,880
-fundamental design of the API between
 Signify and car because the One of the
 
 339
 00:13:40,880 --> 00:13:42,160
-Signify and car because the One of the
 reasons why we have so many different
 
 340
 00:13:42,160 --> 00:13:44,160
-reasons why we have so many different
 HTTP payloads instead of just CESR
 
 341
 00:13:44,160 --> 00:13:46,240
-HTTP payloads instead of just CESR
 streams which if we were to just had
 
 342
 00:13:46,240 --> 00:13:47,600
-streams which if we were to just had
 streams the outbox it would be very
 
 343
 00:13:47,600 --> 00:13:48,720
-streams the outbox it would be very
 straightforward
 
 344
 00:13:48,720 --> 00:13:51,519
-straightforward
 is because we didn't have a fully a
 
 345
 00:13:51,519 --> 00:13:54,079
-is because we didn't have a fully a
 complete parser and cryptographic
 
 346
 00:13:54,079 --> 00:13:56,480
-complete parser and cryptographic
 primitives implementation in TypeScript
 
 347
 00:13:56,480 --> 00:13:59,040
-primitives implementation in TypeScript
 when Signify CS was being first created
 
 348
 00:13:59,040 --> 00:14:00,720
-when Signify CS was being first created
 and so we ended up doing a bit of what
 
 349
 00:14:00,720 --> 00:14:03,120
-and so we ended up doing a bit of what
 you would say is a bulkier
 
 350
 00:14:03,120 --> 00:14:05,680
-you would say is a bulkier
 API from Signify CS to KERI because
 
 351
 00:14:05,680 --> 00:14:07,120
-API from Signify CS to KERI because
 really we should just be passing CESR
 
 352
 00:14:07,120 --> 00:14:10,240
-really we should just be passing CESR
 strings around and instead we have these
 
 353
 00:14:10,240 --> 00:14:12,560
-strings around and instead we have these
 and embeds that we put in HTTP messages.
 
 354
 00:14:12,560 --> 00:14:15,680
-and embeds that we put in HTTP messages.
 And so I it's it's sort of a something
 
 355
 00:14:15,680 --> 00:14:16,880
-And so I it's it's sort of a something
 that I've wondered about as part of
 
 356
 00:14:16,880 --> 00:14:19,920
-that I've wondered about as part of
 maturing the Signify and KERI out. But
 
 357
 00:14:19,920 --> 00:14:22,800
-maturing the Signify and KERI out. But
 even before we even get there, I do
 
 358
 00:14:22,800 --> 00:14:24,720
-even before we even get there, I do
 think we should architect everything the
 
 359
 00:14:24,720 --> 00:14:26,480
-think we should architect everything the
 way that you're saying about boxes
 
 360
 00:14:26,480 --> 00:14:28,720
-way that you're saying about boxes
 save everything locally. That makes a
 
 361
 00:14:28,720 --> 00:14:29,680
-save everything locally. That makes a
 lot of sense. So
 
 362
 00:14:29,680 --> 00:14:31,120
-lot of sense. So
 but I'm just sort of saying if we're
 
 363
 00:14:31,120 --> 00:14:32,959
-but I'm just sort of saying if we're
 going to do that anyway, maybe we should
 
 364
 00:14:32,959 --> 00:14:35,199
-going to do that anyway, maybe we should
 reconsider what we even send per
 
 365
 00:14:35,199 --> 00:14:35,920
-reconsider what we even send per
 end.
 
 366
 00:14:35,920 --> 00:14:38,160
-end.
 Yeah, that's a big refactor as well or
 
 367
 00:14:38,160 --> 00:14:39,760
-Yeah, that's a big refactor as well or
 change rather. Yeah,
 
 368
 00:14:39,760 --> 00:14:41,680
-change rather. Yeah,
 but you could put helper functions,
 
 369
 00:14:41,680 --> 00:14:44,320
-but you could put helper functions,
 you know, also in Signify ts, sorry,
 
 370
 00:14:44,320 --> 00:14:45,279
-you know, also in Signify ts, sorry,
 that
 
 371
 00:14:45,279 --> 00:14:48,160
-that
 that either give the structure or raw C.
 
 372
 00:14:48,160 --> 00:14:48,720
-that either give the structure or raw C.
 Okay, going
 
 373
 00:14:48,720 --> 00:14:50,480
-Okay, going
 I'll finish because I have like 10 sides
 
 374
 00:14:50,480 --> 00:14:54,079
-I'll finish because I have like 10 sides
 of this. This is on our fork. We've
 
 375
 00:14:54,079 --> 00:14:55,199
-of this. This is on our fork. We've
 done this already with identifier
 
 376
 00:14:55,199 --> 00:14:56,720
-done this already with identifier
 creation. So, we create the identifier
 
 377
 00:14:56,720 --> 00:14:58,800
-creation. So, we create the identifier
 locally and then submit it and it allows
 
 378
 00:14:58,800 --> 00:15:00,800
-locally and then submit it and it allows
 us to get reliability in our wallet,
 
 379
 00:15:00,800 --> 00:15:03,440
-us to get reliability in our wallet,
 which we couldn't get before. But we
 
 380
 00:15:03,440 --> 00:15:06,150
-which we couldn't get before. But we
 probably need to apply this everywhere.
 
 381
@@ -1906,197 +1543,158 @@ identifier and then submit it. Yeah. So
 
 383
 00:15:09,839 --> 00:15:13,680
-identifier and then submit it. Yeah. So
 the post call is decoupled. So we
 
 384
 00:15:13,680 --> 00:15:15,680
-the post call is decoupled. So we
 can put it into an outbox locally and
 
 385
 00:15:15,680 --> 00:15:19,120
-can put it into an outbox locally and
 push it up. We've gone to a lot of
 
 386
 00:15:19,120 --> 00:15:20,720
-push it up. We've gone to a lot of
 lengths for reliability in our wallet,
 
 387
 00:15:20,720 --> 00:15:23,040
-lengths for reliability in our wallet,
 but you need to do things like that for
 
 388
 00:15:23,040 --> 00:15:25,519
-but you need to do things like that for
 it. And you also get better control
 
 389
 00:15:25,519 --> 00:15:27,360
-it. And you also get better control
 in the sequence number for anchoring. So
 
 390
 00:15:27,360 --> 00:15:28,399
-in the sequence number for anchoring. So
 if you're trying to assign multiple
 
 391
 00:15:28,399 --> 00:15:29,920
-if you're trying to assign multiple
 things at once, especially in a group
 
 392
 00:15:29,920 --> 00:15:32,079
-things at once, especially in a group
 multi context, having better control
 
 393
 00:15:32,079 --> 00:15:33,040
-multi context, having better control
 will be better.
 
 394
 00:15:33,040 --> 00:15:35,040
-will be better.
 So how is this how is that just
 
 395
 00:15:35,040 --> 00:15:37,279
-So how is this how is that just
 different from simply right now? Is that
 
 396
 00:15:37,279 --> 00:15:38,560
-different from simply right now? Is that
 what the 10 slides are? Well, for
 
 397
 00:15:38,560 --> 00:15:42,000
-what the 10 slides are? Well, for
 example, right now in Signify, you IPEX
 
 398
 00:15:42,000 --> 00:15:43,680
-example, right now in Signify, you IPEX
 is decoupled. You create the IPEX
 
 399
 00:15:43,680 --> 00:15:45,120
-is decoupled. You create the IPEX
 message and you submit it.
 
 400
 00:15:45,120 --> 00:15:47,120
-message and you submit it.
 It's two calls. Everything else isn't,
 
 401
 00:15:47,120 --> 00:15:48,800
-It's two calls. Everything else isn't,
 but it should all be like IPEX.
 
 402
 00:15:48,800 --> 00:15:49,279
-but it should all be like IPEX.
 I see.
 
 403
 00:15:49,279 --> 00:15:51,040
-I see.
 Yeah.
 
 404
 00:15:51,040 --> 00:15:54,480
-Yeah.
 Wants to go through.
 
 405
 00:15:54,480 --> 00:15:57,519
-Wants to go through.
 Maybe I should leave the room.
 
 406
 00:15:57,519 --> 00:15:59,759
-Maybe I should leave the room.
 All right.
 
 407
 00:15:59,759 --> 00:16:01,040
-All right.
 Okay. It's just an example of the
 
 408
 00:16:01,040 --> 00:16:03,440
-Okay. It's just an example of the
 TypeScript generated,
 
 409
 00:16:03,440 --> 00:16:05,600
-TypeScript generated,
 a snippet of it. It's a very long file.
 
 410
 00:16:05,600 --> 00:16:07,680
-a snippet of it. It's a very long file.
 And in Java there's like hundreds of
 
 411
 00:16:07,680 --> 00:16:11,440
-And in Java there's like hundreds of
 classes generated but this is what
 
 412
 00:16:11,440 --> 00:16:14,079
-classes generated but this is what
 we're contributing. The other
 
 413
 00:16:14,079 --> 00:16:16,639
-we're contributing. The other
 developer experience issue, and this is
 
 414
 00:16:16,639 --> 00:16:19,279
-developer experience issue, and this is
 actually probably even a bigger issue,
 
 415
 00:16:19,279 --> 00:16:21,279
-actually probably even a bigger issue,
 And you see this all the time on
 
 416
 00:16:21,279 --> 00:16:23,839
-And you see this all the time on
 Discord for new developers is
 
 417
 00:16:23,839 --> 00:16:27,519
-Discord for new developers is
 silent failures
 
 418
 00:16:27,519 --> 00:16:29,600
-silent failures
 where, you know, you submit something to
 
 419
 00:16:29,600 --> 00:16:31,199
-where, you know, you submit something to
 KERIA
 
 420
 00:16:31,199 --> 00:16:35,279
-KERIA
 and nothing's happening essentially.
 
 421
 00:16:35,279 --> 00:16:37,360
-and nothing's happening essentially.
 Now with KERI when you submit things
 
 422
@@ -2106,262 +1704,210 @@ that take time you get an operation back
 
 423
 00:16:39,519 --> 00:16:40,800
-that take time you get an operation back
 and you can track the operation
 
 424
 00:16:40,800 --> 00:16:42,720
-and you can track the operation
 completion such as if it's waiting for
 
 425
 00:16:42,720 --> 00:16:45,440
-completion such as if it's waiting for
 witness receipts and so forth. But
 
 426
 00:16:45,440 --> 00:16:46,880
-witness receipts and so forth. But
 it's so common to have operations that
 
 427
 00:16:46,880 --> 00:16:49,279
-it's so common to have operations that
 are stuck in pending forever and you
 
 428
 00:16:49,279 --> 00:16:51,120
-are stuck in pending forever and you
 have no idea why and you can't trace it
 
 429
 00:16:51,120 --> 00:16:52,399
-have no idea why and you can't trace it
 down and it's because you had a
 
 430
 00:16:52,399 --> 00:16:54,800
-down and it's because you had a
 different set in this place of this and
 
 431
 00:16:54,800 --> 00:16:57,279
-different set in this place of this and
 you there's very little feedback to why
 
 432
 00:16:57,279 --> 00:17:01,279
-you there's very little feedback to why
 that happened. So
 
 433
 00:17:01,279 --> 00:17:04,240
-that happened. So
 you want to put more weight on it.
 
 434
 00:17:04,240 --> 00:17:06,079
-you want to put more weight on it.
 Yeah, you just need more you just need
 
 435
 00:17:06,079 --> 00:17:07,839
-Yeah, you just need more you just need
 better feedback patterns essentially.
 
 436
 00:17:07,839 --> 00:17:09,839
-better feedback patterns essentially.
 It's probably a case by case basis
 
 437
 00:17:09,839 --> 00:17:12,480
-It's probably a case by case basis
 to do that. This is at kind of the
 
 438
 00:17:12,480 --> 00:17:14,160
-to do that. This is at kind of the
 API layer. It needs it needs work.
 
 439
 00:17:14,160 --> 00:17:17,199
-API layer. It needs it needs work.
 But there could be like a result T kind
 
 440
 00:17:17,199 --> 00:17:20,400
-But there could be like a result T kind
 of pattern applied to the call so
 
 441
 00:17:20,400 --> 00:17:23,199
-of pattern applied to the call so
 that if there's a failure in any call,
 
 442
 00:17:23,199 --> 00:17:25,360
-that if there's a failure in any call,
 it's handled in a consistent way.
 
 443
 00:17:25,360 --> 00:17:27,439
-it's handled in a consistent way.
 Yeah. But this is not the call. the call
 
 444
 00:17:27,439 --> 00:17:29,520
-Yeah. But this is not the call. the call
 is like it accepts it and it puts it
 
 445
 00:17:29,520 --> 00:17:31,440
-is like it accepts it and it puts it
 onto a parser
 
 446
 00:17:31,440 --> 00:17:34,240
-onto a parser
 and then the result of parsing that
 
 447
 00:17:34,240 --> 00:17:35,840
-and then the result of parsing that
 doesn't result in a fully signed
 
 448
 00:17:35,840 --> 00:17:37,200
-doesn't result in a fully signed
 something because something was wrong
 
 449
 00:17:37,200 --> 00:17:39,440
-something because something was wrong
 and you have no idea why and you're
 
 450
 00:17:39,440 --> 00:17:40,880
-and you have no idea why and you're
 tracing through the logs and there's a
 
 451
 00:17:40,880 --> 00:17:44,000
-tracing through the logs and there's a
 million logs.
 
 452
 00:17:44,000 --> 00:17:46,320
-million logs.
 I don't have a I mean this is case by
 
 453
 00:17:46,320 --> 00:17:48,000
-I don't have a I mean this is case by
 case basis so you'd have to step through
 
 454
 00:17:48,000 --> 00:17:50,160
-case basis so you'd have to step through
 the code and find the biggest issues but
 
 455
 00:17:50,160 --> 00:17:51,600
-the code and find the biggest issues but
 even if you historically look at the
 
 456
 00:17:51,600 --> 00:17:53,520
-even if you historically look at the
 GitHub issues or Discord you'll see what
 
 457
 00:17:53,520 --> 00:17:58,160
-GitHub issues or Discord you'll see what
 pops up most. This one
 
 458
 00:17:58,160 --> 00:17:59,760
-pops up most. This one
 I think we fixed this one and actually
 
 459
 00:17:59,760 --> 00:18:02,160
-I think we fixed this one and actually
 caused a different issue or
 
 460
 00:18:02,160 --> 00:18:04,000
-caused a different issue or
 not sure.
 
 461
 00:18:04,000 --> 00:18:06,240
-not sure.
 Yeah, we made a change. Yeah, cuz it
 
 462
 00:18:06,240 --> 00:18:08,240
-Yeah, we made a change. Yeah, cuz it
 wasn't
 
 463
 00:18:08,240 --> 00:18:10,400
-wasn't
 anyway. Yeah, but in general it just
 
 464
 00:18:10,400 --> 00:18:11,840
-anyway. Yeah, but in general it just
 needs work. I would say it's a
 
 465
 00:18:11,840 --> 00:18:15,520
-needs work. I would say it's a
 barrier to entry. Yeah, I've seen
 
 466
 00:18:15,520 --> 00:18:16,960
-barrier to entry. Yeah, I've seen
 this too often where the operation just
 
 467
 00:18:16,960 --> 00:18:20,960
-this too often where the operation just
 times out and you have no idea why.
 
 468
 00:18:20,960 --> 00:18:22,480
-times out and you have no idea why.
 I would think they're probably the two
 
 469
 00:18:22,480 --> 00:18:23,679
-I would think they're probably the two
 biggest things you could do for the
 
 470
 00:18:23,679 --> 00:18:25,120
-biggest things you could do for the
 developer experience. So, it's actually
 
 471
 00:18:25,120 --> 00:18:27,840
-developer experience. So, it's actually
 easy to build on, you know because
 
 472
 00:18:27,840 --> 00:18:29,919
-easy to build on, you know because
 if you get stuck wondering why this
 
 473
 00:18:29,919 --> 00:18:32,960
-if you get stuck wondering why this
 isn't working for hours and hours and
 
 474
 00:18:32,960 --> 00:18:35,590
-isn't working for hours and hours and
 hours, it's
 
 475
@@ -2375,117 +1921,94 @@ car
 
 477
 00:18:38,320 --> 00:18:39,039
-car
 Yeah.
 
 478
 00:18:39,039 --> 00:18:40,799
-Yeah.
 and they start developing and this is
 
 479
 00:18:40,799 --> 00:18:42,559
-and they start developing and this is
 experience.
 
 480
 00:18:42,559 --> 00:18:45,039
-experience.
 Yeah. But this these are easy things to
 
 481
 00:18:45,039 --> 00:18:46,320
-Yeah. But this these are easy things to
 fix. It just takes a little bit time to
 
 482
 00:18:46,320 --> 00:18:48,960
-fix. It just takes a little bit time to
 go through certain edge cases. The
 
 483
 00:18:48,960 --> 00:18:50,240
-go through certain edge cases. The
 harder one to fix is the typing which
 
 484
 00:18:50,240 --> 00:18:51,520
-harder one to fix is the typing which
 we've almost done. So, that's the good
 
 485
 00:18:51,520 --> 00:18:54,320
-we've almost done. So, that's the good
 news. The second so that was
 
 486
 00:18:54,320 --> 00:18:56,400
-news. The second so that was
 developer experience. The second kind
 
 487
 00:18:56,400 --> 00:18:58,799
-developer experience. The second kind
 of section is operational resilience
 
 488
 00:18:58,799 --> 00:19:00,480
-of section is operational resilience
 kind of you know after you deploy it
 
 489
 00:19:00,480 --> 00:19:01,840
-kind of you know after you deploy it
 what that looks like. Some of these
 
 490
 00:19:01,840 --> 00:19:03,520
-what that looks like. Some of these
 might bleed back into developer
 
 491
 00:19:03,520 --> 00:19:07,600
-might bleed back into developer
 experience though but related to the
 
 492
 00:19:07,600 --> 00:19:11,679
-experience though but related to the
 last one is API hardening. They're
 
 493
 00:19:11,679 --> 00:19:14,640
-last one is API hardening. They're
 kind of overlapping. But additionally
 
 494
 00:19:14,640 --> 00:19:16,559
-kind of overlapping. But additionally
 not just
 
 495
 00:19:16,559 --> 00:19:17,840
-not just
 you know KERI getting stuck in the
 
 496
 00:19:17,840 --> 00:19:19,840
-you know KERI getting stuck in the
 state where things are pending. It's
 
 497
 00:19:19,840 --> 00:19:21,679
-state where things are pending. It's
 also a bit crash prone from certain bad
 
 498
 00:19:21,679 --> 00:19:23,840
-also a bit crash prone from certain bad
 inputs.
 
 499
 00:19:23,840 --> 00:19:25,840
-inputs.
 What happens if it crashes?
 
 500
@@ -2495,122 +2018,98 @@ Well, if it's in the Docker setup, it
 
 501
 00:19:27,360 --> 00:19:28,880
-Well, if it's in the Docker setup, it
 just comes back up. That's fine. But
 
 502
 00:19:28,880 --> 00:19:32,640
-just comes back up. That's fine. But
 like you know we even see like in our
 
 503
 00:19:32,640 --> 00:19:35,360
-like you know we even see like in our
 developer KERI deployment that we use
 
 504
 00:19:35,360 --> 00:19:37,840
-developer KERI deployment that we use
 at Veridian and you'll have some random
 
 505
 00:19:37,840 --> 00:19:39,440
-at Veridian and you'll have some random
 person in the community trying to do the
 
 506
 00:19:39,440 --> 00:19:42,160
-person in the community trying to do the
 previous slide sending the wrong input
 
 507
 00:19:42,160 --> 00:19:44,160
-previous slide sending the wrong input
 and they crash our instance and all of
 
 508
 00:19:44,160 --> 00:19:46,000
-and they crash our instance and all of
 our wallets are flashing to offline mode
 
 509
 00:19:46,000 --> 00:19:48,559
-our wallets are flashing to offline mode
 because KERI has gone down and up you
 
 510
 00:19:48,559 --> 00:19:51,360
-because KERI has gone down and up you
 know so it needs a bit more
 
 511
 00:19:51,360 --> 00:19:53,840
-know so it needs a bit more
 resilience. At that point it's not
 
 512
 00:19:53,840 --> 00:19:55,600
-resilience. At that point it's not
 on the parser. It's actually just on
 
 513
 00:19:55,600 --> 00:19:57,120
-on the parser. It's actually just on
 things like the granter and things like
 
 514
 00:19:57,120 --> 00:19:58,799
-things like the granter and things like
 that. All the dexter and the agent in
 
 515
 00:19:58,799 --> 00:19:59,360
-that. All the dexter and the agent in
 file.
 
 516
 00:19:59,360 --> 00:20:00,960
-file.
 It's the development, not the
 
 517
 00:20:00,960 --> 00:20:02,240
-It's the development, not the
 production.
 
 518
 00:20:02,240 --> 00:20:03,200
-production.
 Oh, yeah. Yeah. Yeah.
 
 519
 00:20:03,200 --> 00:20:04,559
-Oh, yeah. Yeah. Yeah.
 He says our wallets are going up and
 
 520
 00:20:04,559 --> 00:20:05,360
-He says our wallets are going up and
 down. That's
 
 521
 00:20:05,360 --> 00:20:06,799
-down. That's
 the development environment.
 
 522
 00:20:06,799 --> 00:20:09,440
-the development environment.
 Yeah. Yeah.
 
 523
 00:20:09,440 --> 00:20:10,480
-Yeah. Yeah.
 They don't have access to our
 
 524
 00:20:10,480 --> 00:20:15,830
-They don't have access to our
 production. That's not Yeah.
 
 525
@@ -2620,37 +2119,30 @@ aent. Okay. So yeah, like I just said,
 
 526
 00:20:20,640 --> 00:20:22,160
-aent. Okay. So yeah, like I just said,
 you're now denying service to other
 
 527
 00:20:22,160 --> 00:20:23,360
-you're now denying service to other
 people just because you're submitting
 
 528
 00:20:23,360 --> 00:20:26,160
-people just because you're submitting
 the wrong thing. And it bloats the
 
 529
 00:20:26,160 --> 00:20:28,240
-the wrong thing. And it bloats the
 logs with lots of errors. That could be
 
 530
 00:20:28,240 --> 00:20:29,760
-logs with lots of errors. That could be
 nice,
 
 531
 00:20:29,760 --> 00:20:31,280
-nice,
 you know, information back to the user.
 
 532
 00:20:31,280 --> 00:20:36,310
-you know, information back to the user.
 You submitted the wrong thing.
 
 533
@@ -2664,62 +2156,50 @@ this was the one we fixed recently.
 
 535
 00:20:42,000 --> 00:20:45,520
-this was the one we fixed recently.
 So it doesn't crash anymore if you
 
 536
 00:20:45,520 --> 00:20:48,240
-So it doesn't crash anymore if you
 point your
 
 537
 00:20:48,240 --> 00:20:51,600
-point your
 Admit to the wrong instead of
 
 538
 00:20:51,600 --> 00:20:53,039
-Admit to the wrong instead of
 pointing it back to the grant, you point
 
 539
 00:20:53,039 --> 00:20:56,240
-pointing it back to the grant, you point
 it to a different string. It caused a
 
 540
 00:20:56,240 --> 00:20:59,440
-it to a different string. It caused a
 crash. Now it causes is now it causes
 
 541
 00:20:59,440 --> 00:21:01,760
-crash. Now it causes is now it causes
 a an operation that's pending forever.
 
 542
 00:21:01,760 --> 00:21:04,000
-a an operation that's pending forever.
 So you just pushed it down one layer,
 
 543
 00:21:04,000 --> 00:21:06,640
-So you just pushed it down one layer,
 but
 
 544
 00:21:06,640 --> 00:21:10,880
-but
 Another one is application layer
 
 545
 00:21:10,880 --> 00:21:12,480
-Another one is application layer
 reliability.
 
 546
 00:21:12,480 --> 00:21:17,350
-reliability.
 So
 
 547
@@ -2729,127 +2209,102 @@ that the escros in KERIpy are
 
 548
 00:21:21,200 --> 00:21:22,880
-that the escros in KERIpy are
 meant to provide application layer
 
 549
 00:21:22,880 --> 00:21:24,720
-meant to provide application layer
 reliability, but they're not. They're
 
 550
 00:21:24,720 --> 00:21:27,120
-reliability, but they're not. They're
 more they're they're more so to
 
 551
 00:21:27,120 --> 00:21:31,600
-more they're they're more so to
 handle out of order processing. Okay. So
 
 552
 00:21:31,600 --> 00:21:33,919
-handle out of order processing. Okay. So
 in reality, if you want full reliability
 
 553
 00:21:33,919 --> 00:21:36,880
-in reality, if you want full reliability
 at the application layer between say
 
 554
 00:21:36,880 --> 00:21:39,679
-at the application layer between say
 two wallets, their agents will need to
 
 555
 00:21:39,679 --> 00:21:43,039
-two wallets, their agents will need to
 continuously resend information
 
 556
 00:21:43,039 --> 00:21:44,880
-continuously resend information
 Until they get a acknowledgements
 
 557
 00:21:44,880 --> 00:21:48,480
-Until they get a acknowledgements
 back. Okay. So like for example
 
 558
 00:21:48,480 --> 00:21:52,080
-back. Okay. So like for example
 currently if I send an IPEX grant and my
 
 559
 00:21:52,080 --> 00:21:55,280
-currently if I send an IPEX grant and my
 KERI sends it to the port of another
 
 560
 00:21:55,280 --> 00:21:59,440
-KERI sends it to the port of another
 KERI instance and it's accepted 202
 
 561
 00:21:59,440 --> 00:22:00,799
-KERI instance and it's accepted 202
 all that's done is put it onto the
 
 562
 00:22:00,799 --> 00:22:02,720
-all that's done is put it onto the
 parser.
 
 563
 00:22:02,720 --> 00:22:04,799
-parser.
 Okay. It's not going to give you any
 
 564
 00:22:04,799 --> 00:22:07,760
-Okay. It's not going to give you any
 feedback if it crashes. The parser is in
 
 565
 00:22:07,760 --> 00:22:10,400
-feedback if it crashes. The parser is in
 memory right? So if their KERI instance
 
 566
 00:22:10,400 --> 00:22:12,960
-memory right? So if their KERI instance
 goes down at that point in time when you
 
 567
 00:22:12,960 --> 00:22:15,440
-goes down at that point in time when you
 just got the 202 back, you have no idea
 
 568
 00:22:15,440 --> 00:22:16,960
-just got the 202 back, you have no idea
 that they didn't parse it at all.
 
 569
 00:22:16,960 --> 00:22:19,440
-that they didn't parse it at all.
 They've never seen it essentially. So
 
 570
 00:22:19,440 --> 00:22:21,200
-They've never seen it essentially. So
 for application reliability, we need
 
 571
 00:22:21,200 --> 00:22:23,679
-for application reliability, we need
 retries on that.
 
 572
 00:22:23,679 --> 00:22:25,520
-retries on that.
 So when you're talking about they you
 
 573
@@ -2859,137 +2314,110 @@ mean the other controllers agent
 
 574
 00:22:28,640 --> 00:22:30,480
-mean the other controllers agent
 maybe not even related to your agent
 
 575
 00:22:30,480 --> 00:22:33,679
-maybe not even related to your agent
 other than it's on the same KERI. So,
 
 576
 00:22:33,679 --> 00:22:36,000
-other than it's on the same KERI. So,
 I was experiencing the need for
 
 577
 00:22:36,000 --> 00:22:37,919
-I was experiencing the need for
 retries that I didn't understand because
 
 578
 00:22:37,919 --> 00:22:41,760
-retries that I didn't understand because
 I have a good network. But it
 
 579
 00:22:41,760 --> 00:22:45,520
-I have a good network. But it
 could just so as a defensive program
 
 580
 00:22:45,520 --> 00:22:47,600
-could just so as a defensive program
 when you get the 202 or other certain
 
 581
 00:22:47,600 --> 00:22:49,840
-when you get the 202 or other certain
 other areas, you need to retry. It's not
 
 582
 00:22:49,840 --> 00:22:52,000
-other areas, you need to retry. It's not
 necessarily a network error.
 
 583
 00:22:52,000 --> 00:22:52,320
-necessarily a network error.
 Yeah.
 
 584
 00:22:52,320 --> 00:22:53,600
-Yeah.
 Is that what you're saying? It's the
 
 585
 00:22:53,600 --> 00:22:56,000
-Is that what you're saying? It's the
 KERI is busy or dropped it.
 
 586
 00:22:56,000 --> 00:23:00,159
-KERI is busy or dropped it.
 Yeah. I mean, so on the 392 port, the
 
 587
 00:23:00,159 --> 00:23:03,600
-Yeah. I mean, so on the 392 port, the
 CESR endpoint of KERIA, it will just
 
 588
 00:23:03,600 --> 00:23:05,840
-CESR endpoint of KERIA, it will just
 take in the CESR stream and put it
 
 589
 00:23:05,840 --> 00:23:08,880
-take in the CESR stream and put it
 onto the queue of the parser and give
 
 590
 00:23:08,880 --> 00:23:12,559
-onto the queue of the parser and give
 you a 202 back and then parse it. But if
 
 591
 00:23:12,559 --> 00:23:14,400
-you a 202 back and then parse it. But if
 it gives you the 202 back and
 
 592
 00:23:14,400 --> 00:23:16,640
-it gives you the 202 back and
 immediately crashes, you've now lost
 
 593
 00:23:16,640 --> 00:23:18,480
-immediately crashes, you've now lost
 that data.
 
 594
 00:23:18,480 --> 00:23:19,760
-that data.
 They have no idea that they need to
 
 595
 00:23:19,760 --> 00:23:21,039
-They have no idea that they need to
 parse something. They can't parse it.
 
 596
 00:23:21,039 --> 00:23:23,840
-parse something. They can't parse it.
 It's lost in memory. But the 3902 port
 
 597
 00:23:23,840 --> 00:23:26,320
-It's lost in memory. But the 3902 port
 isn't used by Signify TS, right? It's
 
 598
 00:23:26,320 --> 00:23:28,080
-isn't used by Signify TS, right? It's
 I'm not talking about Signify TS here.
 
 599
 00:23:28,080 --> 00:23:30,159
-I'm not talking about Signify TS here.
 I'm talking about entire KERI here,
 
 600
 00:23:30,159 --> 00:23:35,110
-I'm talking about entire KERI here,
 but agent to agent communication. Yeah.
 
 601
@@ -3011,22 +2439,18 @@ can use it if they want.
 
 605
 00:23:43,600 --> 00:23:45,520
-392 is open.
 Yeah. But Signify TS doesn't do anything
 
 606
 00:23:45,520 --> 00:23:47,360
-Yeah. But Signify TS doesn't do anything
 with it out of the box, right?
 
 607
 00:23:47,360 --> 00:23:50,320
-with it out of the box, right?
 No, it doesn't out of the box. No.
 
 608
 00:23:50,320 --> 00:23:53,840
-No, it doesn't out of the box. No.
 But also Yeah. If your agent accepts,
 
 609
@@ -3036,12 +2460,10 @@ you know, an IPEX message, it should
 
 610
 00:23:56,640 --> 00:24:00,640
-you know, an IPEX message, it should
 send it, right?
 
 611
 00:24:00,640 --> 00:24:03,520
-send it, right?
 Especially for groups. So, for example,
 
 612
@@ -3051,217 +2473,174 @@ If you have a group set up
 
 613
 00:24:07,760 --> 00:24:10,640
-If you have a group set up
 based on KERI and Signify
 
 614
 00:24:10,640 --> 00:24:14,000
-based on KERI and Signify
 Let's say the one person proposes an
 
 615
 00:24:14,000 --> 00:24:16,480
-Let's say the one person proposes an
 IPX message, sends it to the others, it
 
 616
 00:24:16,480 --> 00:24:19,039
-IPX message, sends it to the others, it
 starts collecting signatures. before it
 
 617
 00:24:19,039 --> 00:24:21,120
-starts collecting signatures. before it
 collects enough signatures, it goes
 
 618
 00:24:21,120 --> 00:24:25,039
-collects enough signatures, it goes
 down, comes back up, receives the other
 
 619
 00:24:25,039 --> 00:24:27,279
-down, comes back up, receives the other
 signatures, nothing happens. It doesn't
 
 620
 00:24:27,279 --> 00:24:29,600
-signatures, nothing happens. It doesn't
 send it to the other person because the
 
 621
 00:24:29,600 --> 00:24:32,159
-send it to the other person because the
 granter deck is in memory, the queue.
 
 622
 00:24:32,159 --> 00:24:35,360
-granter deck is in memory, the queue.
 So, it's lost it. And the lead of the
 
 623
 00:24:35,360 --> 00:24:37,279
-So, it's lost it. And the lead of the
 group currently is the one that sends.
 
 624
 00:24:37,279 --> 00:24:39,600
-group currently is the one that sends.
 So, a lot of the in-memory decks that we
 
 625
 00:24:39,600 --> 00:24:42,159
-So, a lot of the in-memory decks that we
 use for cues in KERI need to be made
 
 626
 00:24:42,159 --> 00:24:45,039
-use for cues in KERI need to be made
 durable. So
 
 627
 00:24:45,039 --> 00:24:47,039
-durable. So
 we is there an issue? If there's not an
 
 628
 00:24:47,039 --> 00:24:48,159
-we is there an issue? If there's not an
 issue with that, I'm going to make that
 
 629
 00:24:48,159 --> 00:24:49,039
-issue with that, I'm going to make that
 one right now. That's
 
 630
 00:24:49,039 --> 00:24:51,120
-one right now. That's
 Yeah, that's that's that's bad. That one
 
 631
 00:24:51,120 --> 00:24:52,799
-Yeah, that's that's that's bad. That one
 that one's bad, actually. That needs to
 
 632
 00:24:52,799 --> 00:24:55,919
-that one's bad, actually. That needs to
 be fixed soon. But you don't see
 
 633
 00:24:55,919 --> 00:24:57,840
-be fixed soon. But you don't see
 these in your normal setups like
 
 634
 00:24:57,840 --> 00:25:00,159
-these in your normal setups like
 because it's just happy paths.
 
 635
 00:25:00,159 --> 00:25:01,200
-because it's just happy paths.
 Everything just works. Everyone clicks
 
 636
 00:25:01,200 --> 00:25:02,960
-Everything just works. Everyone clicks
 at the same time.
 
 637
 00:25:02,960 --> 00:25:03,760
-at the same time.
 It's all good.
 
 638
 00:25:03,760 --> 00:25:05,440
-It's all good.
 Yeah.
 
 639
 00:25:05,440 --> 00:25:07,360
-Yeah.
 And it'd be nice to have some more
 
 640
 00:25:07,360 --> 00:25:08,799
-And it'd be nice to have some more
 feedback on the async stuff because
 
 641
 00:25:08,799 --> 00:25:11,760
-feedback on the async stuff because
 everything in KERI is async. So,
 
 642
 00:25:11,760 --> 00:25:14,240
-everything in KERI is async. So,
 if we have better ways of receiving
 
 643
 00:25:14,240 --> 00:25:17,760
-if we have better ways of receiving
 results that are more rich on what's
 
 644
 00:25:17,760 --> 00:25:20,159
-results that are more rich on what's
 happening, that would be useful. But
 
 645
 00:25:20,159 --> 00:25:22,159
-happening, that would be useful. But
 that's a bit open-ended.
 
 646
 00:25:22,159 --> 00:25:23,440
-that's a bit open-ended.
 I mean, if you already have a plan to
 
 647
 00:25:23,440 --> 00:25:24,799
-I mean, if you already have a plan to
 put these into issues, I don't want to
 
 648
 00:25:24,799 --> 00:25:27,760
-put these into issues, I don't want to
 duplicate it. But is this like is
 
 649
 00:25:27,760 --> 00:25:29,039
-duplicate it. But is this like is
 there's a plan to currently make an
 
 650
 00:25:29,039 --> 00:25:30,080
-there's a plan to currently make an
 issue on that because if there's not,
 
 651
 00:25:30,080 --> 00:25:31,600
-issue on that because if there's not,
 I'll capture it immediately.
 
 652
 00:25:31,600 --> 00:25:34,320
-I'll capture it immediately.
 I have a joint discussion but I don't
 
 653
 00:25:34,320 --> 00:25:35,760
-I have a joint discussion but I don't
 know if it has everything from this. It
 
 654
 00:25:35,760 --> 00:25:37,919
-know if it has everything from this. It
 was written a while ago. It's either
 
 655
 00:25:37,919 --> 00:25:42,950
-was written a while ago. It's either
 in Signify TS or KERIA. Okay.
 
 656
@@ -3275,17 +2654,14 @@ application layer reliability.
 
 658
 00:25:48,080 --> 00:25:49,919
-application layer reliability.
 If you want to read it, it's him saying
 
 659
 00:25:49,919 --> 00:25:52,320
-If you want to read it, it's him saying
 that KERI Pie is not going to provide
 
 660
 00:25:52,320 --> 00:25:59,350
-that KERI Pie is not going to provide
 this essentially.
 
 661
@@ -3295,17 +2671,14 @@ About achieving application layer
 
 662
 00:26:04,159 --> 00:26:06,000
-About achieving application layer
 reliability end to end.
 
 663
 00:26:06,000 --> 00:26:08,640
-reliability end to end.
 Okay, cool. and the need for retries and
 
 664
 00:26:08,640 --> 00:26:13,750
-Okay, cool. and the need for retries and
 identy so forth.
 
 665
@@ -3320,222 +2693,178 @@ especially when you're using group
 
 667
 00:26:27,120 --> 00:26:29,760
-especially when you're using group
 multisig if you're doing something
 
 668
 00:26:29,760 --> 00:26:31,600
-multisig if you're doing something
 wrong, it can be quite hard to
 
 669
 00:26:31,600 --> 00:26:33,760
-wrong, it can be quite hard to
 understand what you're doing wrong
 
 670
 00:26:33,760 --> 00:26:36,080
-understand what you're doing wrong
 because it's a multi- aent setup. All
 
 671
 00:26:36,080 --> 00:26:38,480
-because it's a multi- aent setup. All
 your logs are intertwined. There's no
 
 672
 00:26:38,480 --> 00:26:40,320
-your logs are intertwined. There's no
 way to filter on the logs. And even if
 
 673
 00:26:40,320 --> 00:26:41,760
-way to filter on the logs. And even if
 there was a way to filter on the logs
 
 674
 00:26:41,760 --> 00:26:44,400
-there was a way to filter on the logs
 per agent there's still too many
 
 675
 00:26:44,400 --> 00:26:45,919
-per agent there's still too many
 logs. There's no way to filter on the
 
 676
 00:26:45,919 --> 00:26:49,039
-logs. There's no way to filter on the
 action you were trying to do. And
 
 677
 00:26:49,039 --> 00:26:52,240
-action you were trying to do. And
 data again, everything's based on HEO.
 
 678
 00:26:52,240 --> 00:26:54,480
-data again, everything's based on HEO.
 Everything's async, everything's moving
 
 679
 00:26:54,480 --> 00:26:57,039
-Everything's async, everything's moving
 various ways with little
 
 680
 00:26:57,039 --> 00:27:00,320
-various ways with little
 observability. It's again fine in happy
 
 681
 00:27:00,320 --> 00:27:01,760
-observability. It's again fine in happy
 pad once you've developed it's fine
 
 682
 00:27:01,760 --> 00:27:04,159
-pad once you've developed it's fine
 but sometimes it can be very
 
 683
 00:27:04,159 --> 00:27:05,600
-but sometimes it can be very
 difficult to add new features to KERI
 
 684
 00:27:05,600 --> 00:27:07,919
-difficult to add new features to KERI
 and try and figure out where the data is
 
 685
 00:27:07,919 --> 00:27:09,279
-and try and figure out where the data is
 actually moving and what's actually
 
 686
 00:27:09,279 --> 00:27:11,600
-actually moving and what's actually
 wrong and why this isn't completing and
 
 687
 00:27:11,600 --> 00:27:12,480
-wrong and why this isn't completing and
 so forth.
 
 688
 00:27:12,480 --> 00:27:14,159
-so forth.
 Should the KERI requests have a
 
 689
 00:27:14,159 --> 00:27:15,919
-Should the KERI requests have a
 request ID added to them?
 
 690
 00:27:15,919 --> 00:27:18,080
-request ID added to them?
 Probably. Yeah. Yeah. But it'll need
 
 691
 00:27:18,080 --> 00:27:21,200
-Probably. Yeah. Yeah. But it'll need
 some work with KERIpy as well
 
 692
 00:27:21,200 --> 00:27:24,480
-some work with KERIpy as well
 because most of the complex logic of
 
 693
 00:27:24,480 --> 00:27:26,720
-because most of the complex logic of
 KERI is KERIpy. It's it's a direct
 
 694
 00:27:26,720 --> 00:27:28,799
-KERI is KERIpy. It's it's a direct
 dependency. it gets pushed onto KERI
 
 695
 00:27:28,799 --> 00:27:30,960
-dependency. it gets pushed onto KERI
 pie. So I need to do some work
 
 696
 00:27:30,960 --> 00:27:34,480
-pie. So I need to do some work
 there. So yeah, some instrumentation
 
 697
 00:27:34,480 --> 00:27:37,279
-there. So yeah, some instrumentation
 would be useful at that. And this is
 
 698
 00:27:37,279 --> 00:27:39,120
-would be useful at that. And this is
 just I mean yeah, you see you go to the
 
 699
 00:27:39,120 --> 00:27:40,320
-just I mean yeah, you see you go to the
 logs and you're just trying to figure
 
 700
 00:27:40,320 --> 00:27:41,679
-logs and you're just trying to figure
 out what's going on because you've put
 
 701
 00:27:41,679 --> 00:27:44,400
-out what's going on because you've put
 the wrong ID somewhere and it's yeah,
 
 702
 00:27:44,400 --> 00:27:46,799
-the wrong ID somewhere and it's yeah,
 you can see Kent added some you added
 
 703
 00:27:46,799 --> 00:27:48,880
-you can see Kent added some you added
 some stuff here. But we probably need
 
 704
 00:27:48,880 --> 00:27:50,400
-some stuff here. But we probably need
 to go a bit further so we can actually
 
 705
 00:27:50,400 --> 00:27:52,320
-to go a bit further so we can actually
 filter on ids of like agents and so
 
 706
 00:27:52,320 --> 00:27:53,039
-filter on ids of like agents and so
 forth.
 
 707
 00:27:53,039 --> 00:27:54,559
-forth.
 A structured log.
 
 708
 00:27:54,559 --> 00:27:55,120
-A structured log.
 Yeah.
 
 709
 00:27:55,120 --> 00:27:56,720
-Yeah.
 Request ID or client ID.
 
 710
 00:27:56,720 --> 00:28:00,149
-Request ID or client ID.
 Yeah. Yeah.
 
 711
@@ -3550,92 +2879,74 @@ have some semantic versioning because
 
 713
 00:28:07,840 --> 00:28:10,799
-have some semantic versioning because
 it's an API. And I think you raised
 
 714
 00:28:10,799 --> 00:28:13,120
-it's an API. And I think you raised
 issues on this. There should be compet
 
 715
 00:28:13,120 --> 00:28:15,120
-issues on this. There should be compet
 compatibility enforcements between them.
 
 716
 00:28:15,120 --> 00:28:17,840
-compatibility enforcements between them.
 I don't think this is big issue now,
 
 717
 00:28:17,840 --> 00:28:20,000
-I don't think this is big issue now,
 but in as you move towards, you know,
 
 718
 00:28:20,000 --> 00:28:21,760
-but in as you move towards, you know,
 being a more mature ecosystem and
 
 719
 00:28:21,760 --> 00:28:23,760
-being a more mature ecosystem and
 getting more developers in, it'll become
 
 720
 00:28:23,760 --> 00:28:28,159
-getting more developers in, it'll become
 more relevant. Also versioning
 
 721
 00:28:28,159 --> 00:28:30,000
-more relevant. Also versioning
 Right now you have to version on the
 
 722
 00:28:30,000 --> 00:28:34,080
-Right now you have to version on the
 KI per agent and iterate over them. So
 
 723
 00:28:34,080 --> 00:28:36,080
-KI per agent and iterate over them. So
 there needs to be a migration framework
 
 724
 00:28:36,080 --> 00:28:38,559
-there needs to be a migration framework
 in place. We've been avoiding this
 
 725
 00:28:38,559 --> 00:28:39,679
-in place. We've been avoiding this
 for ages because there hasn't been
 
 726
 00:28:39,679 --> 00:28:42,640
-for ages because there hasn't been
 migrations essentially but when there is
 
 727
 00:28:42,640 --> 00:28:43,679
-migrations essentially but when there is
 yeah in production it would be
 
 728
 00:28:43,679 --> 00:28:47,840
-yeah in production it would be
 problematic. Okay so that's
 
 729
 00:28:47,840 --> 00:28:49,840
-problematic. Okay so that's
 resilience
 
 730
 00:28:49,840 --> 00:28:54,950
-resilience
 and again this is just I think these are
 
 731
@@ -3645,107 +2956,86 @@ you know just put some resources into it
 
 732
 00:28:58,399 --> 00:29:00,640
-you know just put some resources into it
 and it'll make it a more mature app
 
 733
 00:29:00,640 --> 00:29:02,159
-and it'll make it a more mature app
 it's not a protocol thing so these are
 
 734
 00:29:02,159 --> 00:29:05,760
-it's not a protocol thing so these are
 all very achievable
 
 735
 00:29:05,760 --> 00:29:08,320
-all very achievable
 But finally on scalability
 
 736
 00:29:08,320 --> 00:29:11,120
-But finally on scalability
 And this one is also a kind of
 
 737
 00:29:11,120 --> 00:29:13,120
-And this one is also a kind of
 developer experience
 
 738
 00:29:13,120 --> 00:29:14,720
-developer experience
 So
 
 739
 00:29:14,720 --> 00:29:16,960
-So
 I mentioned earlier that because a lot
 
 740
 00:29:16,960 --> 00:29:19,919
-I mentioned earlier that because a lot
 of the things are async, you need to
 
 741
 00:29:19,919 --> 00:29:22,240
-of the things are async, you need to
 submit like create an identifier, create
 
 742
 00:29:22,240 --> 00:29:23,919
-submit like create an identifier, create
 a registry, issue a credential and you
 
 743
 00:29:23,919 --> 00:29:26,159
-a registry, issue a credential and you
 get an operation back.
 
 744
 00:29:26,159 --> 00:29:28,320
-get an operation back.
 And then you need to pull on that
 
 745
 00:29:28,320 --> 00:29:30,080
-And then you need to pull on that
 status of the operation until it's done
 
 746
 00:29:30,080 --> 00:29:31,440
-status of the operation until it's done
 while it's waiting to collect signatures
 
 747
 00:29:31,440 --> 00:29:35,600
-while it's waiting to collect signatures
 and so forth. That's kind of a pain.
 
 748
 00:29:35,600 --> 00:29:38,240
-and so forth. That's kind of a pain.
 Typ modern systems are usually
 
 749
 00:29:38,240 --> 00:29:40,720
-Typ modern systems are usually
 event driven. Where you would get
 
 750
 00:29:40,720 --> 00:29:42,880
-event driven. Where you would get
 some notification that it has completed
 
 751
 00:29:42,880 --> 00:29:46,559
-some notification that it has completed
 rather than constantly checking.
 
 752
 00:29:46,559 --> 00:29:47,919
-rather than constantly checking.
 The same goes for notifications. You
 
 753
@@ -3755,12 +3045,10 @@ have to constantly check if there's new
 
 754
 00:29:49,279 --> 00:29:52,720
-have to constantly check if there's new
 new notifications.
 
 755
 00:29:52,720 --> 00:29:54,320
-new notifications.
 You know in any general application like
 
 756
@@ -3770,132 +3058,106 @@ a wallet, it's going to have to
 
 757
 00:29:55,360 --> 00:29:57,520
-a wallet, it's going to have to
 constantly check because it doesn't know
 
 758
 00:29:57,520 --> 00:29:59,760
-constantly check because it doesn't know
 when to expect that you're receiving a
 
 759
 00:29:59,760 --> 00:30:00,240
-when to expect that you're receiving a
 credential.
 
 760
 00:30:00,240 --> 00:30:01,840
-credential.
 Single threaded environment, it could
 
 761
 00:30:01,840 --> 00:30:04,080
-Single threaded environment, it could
 completely
 
 762
 00:30:04,080 --> 00:30:05,760
-completely
 block the rest of the application.
 
 763
 00:30:05,760 --> 00:30:08,320
-block the rest of the application.
 Yeah. And I mean like
 
 764
 00:30:08,320 --> 00:30:10,399
-Yeah. And I mean like
 this we've made event driven in our
 
 765
 00:30:10,399 --> 00:30:11,760
-this we've made event driven in our
 wallet in every application we've built
 
 766
 00:30:11,760 --> 00:30:13,200
-wallet in every application we've built
 because we've just put it in a corner in
 
 767
 00:30:13,200 --> 00:30:16,240
-because we've just put it in a corner in
 the box and made it event driven from
 
 768
 00:30:16,240 --> 00:30:17,679
-the box and made it event driven from
 the perspective of the rest of our
 
 769
 00:30:17,679 --> 00:30:19,440
-the perspective of the rest of our
 application. But it's kind of annoying
 
 770
 00:30:19,440 --> 00:30:20,720
-application. But it's kind of annoying
 to have to build that every single time.
 
 771
 00:30:20,720 --> 00:30:21,200
-to have to build that every single time.
 But
 
 772
 00:30:21,200 --> 00:30:24,320
-But
 this is very doable in if we were to
 
 773
 00:30:24,320 --> 00:30:26,880
-this is very doable in if we were to
 take the KERI reply
 
 774
 00:30:26,880 --> 00:30:29,120
-take the KERI reply
 it approach of just using the even just
 
 775
 00:30:29,120 --> 00:30:32,559
-it approach of just using the even just
 the WSGI response stream we could open
 
 776
 00:30:32,559 --> 00:30:34,880
-the WSGI response stream we could open
 up the server events connection per
 
 777
 00:30:34,880 --> 00:30:36,080
-up the server events connection per
 agent. Yep.
 
 778
 00:30:36,080 --> 00:30:39,919
-agent. Yep.
 To Signify and do this today.
 
 779
 00:30:39,919 --> 00:30:43,600
-To Signify and do this today.
 I might try that over the weekend.
 
 780
 00:30:43,600 --> 00:30:45,679
-I might try that over the weekend.
 Huh?
 
 781
 00:30:45,679 --> 00:30:46,480
-Huh?
 No.
 
 782
 00:30:46,480 --> 00:30:50,149
-No.
 Tell me about it.
 
 783
@@ -3905,127 +3167,102 @@ reason I put this in scalability is
 
 784
 00:30:54,799 --> 00:30:56,799
-reason I put this in scalability is
 because right now you have 10,000
 
 785
 00:30:56,799 --> 00:30:59,200
-because right now you have 10,000
 wallets using one KERI instance and
 
 786
 00:30:59,200 --> 00:31:01,279
-wallets using one KERI instance and
 they have 25 pending operations that
 
 787
 00:31:01,279 --> 00:31:03,679
-they have 25 pending operations that
 they're pulling, pulling, pulling. These
 
 788
 00:31:03,679 --> 00:31:06,799
-they're pulling, pulling, pulling. These
 are all full HTTP requests. It's way too
 
 789
 00:31:06,799 --> 00:31:11,440
-are all full HTTP requests. It's way too
 much traffic hitting KERI. It yeah
 
 790
 00:31:11,440 --> 00:31:15,360
-much traffic hitting KERI. It yeah
 it won't work. So moving to something
 
 791
 00:31:15,360 --> 00:31:17,440
-it won't work. So moving to something
 like service events
 
 792
 00:31:17,440 --> 00:31:18,799
-like service events
 is much better from a developer
 
 793
 00:31:18,799 --> 00:31:20,880
-is much better from a developer
 experience, but it's also much better
 
 794
 00:31:20,880 --> 00:31:24,880
-experience, but it's also much better
 from a load experience. And
 
 795
 00:31:24,880 --> 00:31:26,720
-from a load experience. And
 it isn't, well, I haven't I've never
 
 796
 00:31:26,720 --> 00:31:27,840
-it isn't, well, I haven't I've never
 implemented them, so I don't know what
 
 797
 00:31:27,840 --> 00:31:30,000
-implemented them, so I don't know what
 it's like, but for notifications, it
 
 798
 00:31:30,000 --> 00:31:32,080
-it's like, but for notifications, it
 wouldn't be too difficult because it's
 
 799
 00:31:32,080 --> 00:31:34,000
-wouldn't be too difficult because it's
 just the next notification coming out on
 
 800
 00:31:34,000 --> 00:31:36,880
-just the next notification coming out on
 the event. It's more problematic for
 
 801
 00:31:36,880 --> 00:31:39,519
-the event. It's more problematic for
 operations. I explain that in a moment.
 
 802
 00:31:39,519 --> 00:31:42,080
-operations. I explain that in a moment.
 I also service end events are true
 
 803
 00:31:42,080 --> 00:31:44,320
-I also service end events are true
 HTTP, so they're compatible load
 
 804
 00:31:44,320 --> 00:31:46,080
-HTTP, so they're compatible load
 balancers. So if you if you start to do
 
 805
 00:31:46,080 --> 00:31:47,600
-balancers. So if you if you start to do
 horizontal scaling and so forth, they're
 
 806
 00:31:47,600 --> 00:31:50,159
-horizontal scaling and so forth, they're
 compatible, which is why Sam likes them
 
 807
 00:31:50,159 --> 00:31:51,760
-compatible, which is why Sam likes them
 over or would prefer that over
 
 808
 00:31:51,760 --> 00:31:58,070
-over or would prefer that over
 websockets because that isn't pure HTTP.
 
 809
@@ -4040,12 +3277,10 @@ a long run operation to track that
 
 811
 00:32:09,919 --> 00:32:13,120
-a long run operation to track that
 status of the operation.
 
 812
 00:32:13,120 --> 00:32:16,000
-status of the operation.
 It just stores the related sets and
 
 813
@@ -4055,632 +3290,506 @@ metadata that refer to that operation.
 
 814
 00:32:18,080 --> 00:32:20,159
-metadata that refer to that operation.
 It doesn't have a status of pending or
 
 815
 00:32:20,159 --> 00:32:22,799
-It doesn't have a status of pending or
 failed or anything like that.
 
 816
 00:32:22,799 --> 00:32:24,559
-failed or anything like that.
 And when you use Signify to check that
 
 817
 00:32:24,559 --> 00:32:26,080
-And when you use Signify to check that
 status of pending or failed, it's not
 
 818
 00:32:26,080 --> 00:32:27,200
-status of pending or failed, it's not
 stored in the database. That's what I
 
 819
 00:32:27,200 --> 00:32:29,279
-stored in the database. That's what I
 mean. It doesn't flip in the database
 
 820
 00:32:29,279 --> 00:32:31,760
-mean. It doesn't flip in the database
 from pending to complete
 
 821
 00:32:31,760 --> 00:32:35,039
-from pending to complete
 actually if you look at longridden.py
 
 822
 00:32:35,039 --> 00:32:38,080
-actually if you look at longridden.py
 in KERI, it takes all of those sets
 
 823
 00:32:38,080 --> 00:32:40,720
-in KERI, it takes all of those sets
 and compares it against the database of
 
 824
 00:32:40,720 --> 00:32:42,720
-and compares it against the database of
 the agent to see if it's effectively
 
 825
 00:32:42,720 --> 00:32:46,399
-the agent to see if it's effectively
 complete. Okay, so it's not checking is
 
 826
 00:32:46,399 --> 00:32:48,000
-complete. Okay, so it's not checking is
 this operation complete in the database.
 
 827
 00:32:48,000 --> 00:32:50,240
-this operation complete in the database.
 check in based on this operations
 
 828
 00:32:50,240 --> 00:32:53,279
-check in based on this operations
 metadata are all the signatures in place
 
 829
 00:32:53,279 --> 00:32:55,440
-metadata are all the signatures in place
 for this to be considered complete for
 
 830
 00:32:55,440 --> 00:32:57,679
-for this to be considered complete for
 example you can see here for the
 
 831
 00:32:57,679 --> 00:33:00,559
-example you can see here for the
 delegations using the swancomplete
 
 832
 00:33:00,559 --> 00:33:03,279
-delegations using the swancomplete
 every time you check
 
 833
 00:33:03,279 --> 00:33:05,039
-every time you check
 yeah basically like a diff on the
 
 834
 00:33:05,039 --> 00:33:06,480
-yeah basically like a diff on the
 database
 
 835
 00:33:06,480 --> 00:33:08,480
-database
 yeah so this has been quite a mental
 
 836
 00:33:08,480 --> 00:33:10,720
-yeah so this has been quite a mental
 challenge for me for like two years with
 
 837
 00:33:10,720 --> 00:33:13,760
-challenge for me for like two years with
 KERI is the notion that the concept of
 
 838
 00:33:13,760 --> 00:33:16,559
-KERI is the notion that the concept of
 state and state modeling is missing
 
 839
 00:33:16,559 --> 00:33:18,000
-state and state modeling is missing
 and that's intentional
 
 840
 00:33:18,000 --> 00:33:22,559
-and that's intentional
 I think from Sam for what is
 
 841
 00:33:22,559 --> 00:33:25,600
-I think from Sam for what is
 let's let's IPEX for example right is
 
 842
 00:33:25,600 --> 00:33:28,240
-let's let's IPEX for example right is
 you know I tried to get a state
 
 843
 00:33:28,240 --> 00:33:31,200
-you know I tried to get a state
 machine diagram of all the possible
 
 844
 00:33:31,200 --> 00:33:33,919
-machine diagram of all the possible
 state transitions and IPEX of spurn
 
 845
 00:33:33,919 --> 00:33:36,480
-state transitions and IPEX of spurn
 grant you know accept and all that and
 
 846
 00:33:36,480 --> 00:33:38,960
-grant you know accept and all that and
 had very had a challenge getting to the
 
 847
 00:33:38,960 --> 00:33:41,279
-had very had a challenge getting to the
 precision but this is similar is you're
 
 848
 00:33:41,279 --> 00:33:44,399
-precision but this is similar is you're
 wanting to KERI the state of an
 
 849
 00:33:44,399 --> 00:33:46,320
-wanting to KERI the state of an
 operation and it has to be derived and
 
 850
 00:33:46,320 --> 00:33:48,480
-operation and it has to be derived and
 has to be requeried to compute the state
 
 851
 00:33:48,480 --> 00:33:51,440
-has to be requeried to compute the state
 is what I think I heard you say.
 
 852
 00:33:51,440 --> 00:33:51,840
-is what I think I heard you say.
 Yeah.
 
 853
 00:33:51,840 --> 00:33:54,240
-Yeah.
 Of an operation, right? So it'd be like
 
 854
 00:33:54,240 --> 00:33:56,000
-Of an operation, right? So it'd be like
 it'd be nice just to get the state back
 
 855
 00:33:56,000 --> 00:33:58,880
-it'd be nice just to get the state back
 from curious like oh it's in pending.
 
 856
 00:33:58,880 --> 00:34:00,240
-from curious like oh it's in pending.
 Yeah. So basically while it's currently
 
 857
 00:34:00,240 --> 00:34:01,760
-Yeah. So basically while it's currently
 like this we can't do event driven with
 
 858
 00:34:01,760 --> 00:34:03,360
-like this we can't do event driven with
 ser events
 
 859
 00:34:03,360 --> 00:34:04,960
-ser events
 to date
 
 860
 00:34:04,960 --> 00:34:06,640
-to date
 because it's you're checking against the
 
 861
 00:34:06,640 --> 00:34:09,520
-because it's you're checking against the
 database state. Okay. So instead of
 
 862
 00:34:09,520 --> 00:34:13,440
-database state. Okay. So instead of
 checking the database state or the diff
 
 863
 00:34:13,440 --> 00:34:15,040
-checking the database state or the diff
 when this completes for the first time
 
 864
 00:34:15,040 --> 00:34:17,200
-when this completes for the first time
 inside KERIpy, it needs to emit an
 
 865
 00:34:17,200 --> 00:34:19,359
-inside KERIpy, it needs to emit an
 event that gets sent on server the
 
 866
 00:34:19,359 --> 00:34:21,440
-event that gets sent on server the
 server sent event
 
 867
 00:34:21,440 --> 00:34:22,000
-server sent event
 thread.
 
 868
 00:34:22,000 --> 00:34:23,760
-thread.
 Okay. Because I'm thinking what we could
 
 869
 00:34:23,760 --> 00:34:27,200
-Okay. Because I'm thinking what we could
 do for each operation type is that there
 
 870
 00:34:27,200 --> 00:34:28,800
-do for each operation type is that there
 could be let's say there's already a
 
 871
 00:34:28,800 --> 00:34:30,879
-could be let's say there's already a
 server event connection from the agent
 
 872
 00:34:30,879 --> 00:34:32,720
-server event connection from the agent
 to the Signify client. It would
 
 873
 00:34:32,720 --> 00:34:33,919
-to the Signify client. It would
 essentially just be a channel to
 
 874
 00:34:33,919 --> 00:34:35,599
-essentially just be a channel to
 communicate. I'm thinking on completion
 
 875
 00:34:35,599 --> 00:34:36,879
-communicate. I'm thinking on completion
 it would just send a completion.
 
 876
 00:34:36,879 --> 00:34:39,440
-it would just send a completion.
 Yeah. But there is no completion of an
 
 877
 00:34:39,440 --> 00:34:42,960
-Yeah. But there is no completion of an
 operation in KERIA. It's a state check.
 
 878
 00:34:42,960 --> 00:34:46,000
-operation in KERIA. It's a state check.
 It tells you it's effectively complete.
 
 879
 00:34:46,000 --> 00:34:47,679
-It tells you it's effectively complete.
 There's no point where it's the
 
 880
 00:34:47,679 --> 00:34:48,639
-There's no point where it's the
 database. So
 
 881
 00:34:48,639 --> 00:34:49,359
-database. So
 it's inferred
 
 882
 00:34:49,359 --> 00:34:51,040
-it's inferred
 if you Yeah, it's inferred. So if you
 
 883
 00:34:51,040 --> 00:34:53,679
-if you Yeah, it's inferred. So if you
 never ever connect it again,
 
 884
 00:34:53,679 --> 00:34:55,919
-never ever connect it again,
 nothing changes on the database to say
 
 885
 00:34:55,919 --> 00:34:57,440
-nothing changes on the database to say
 it's complete. It's just you coming back
 
 886
 00:34:57,440 --> 00:35:00,400
-it's complete. It's just you coming back
 later and saying this is the status.
 
 887
 00:35:00,400 --> 00:35:02,320
-later and saying this is the status.
 Okay. So because there's no point at
 
 888
 00:35:02,320 --> 00:35:04,800
-Okay. So because there's no point at
 which that happens
 
 889
 00:35:04,800 --> 00:35:06,320
-which that happens
 things that's this is a problem all the
 
 890
 00:35:06,320 --> 00:35:06,800
-things that's this is a problem all the
 time right
 
 891
 00:35:06,800 --> 00:35:08,400
-time right
 so essentially
 
 892
 00:35:08,400 --> 00:35:10,800
-so essentially
 we need to store the completed state not
 
 893
 00:35:10,800 --> 00:35:11,680
-we need to store the completed state not
 just derive it
 
 894
 00:35:11,680 --> 00:35:13,760
-just derive it
 yeah so and also but all of this happens
 
 895
 00:35:13,760 --> 00:35:16,320
-yeah so and also but all of this happens
 in KERIpy so KERIpy needs to tell us
 
 896
 00:35:16,320 --> 00:35:18,640
-in KERIpy so KERIpy needs to tell us
 because this is a KERI thing
 
 897
 00:35:18,640 --> 00:35:20,079
-because this is a KERI thing
 operations aren't in KERIpy
 
 898
 00:35:20,079 --> 00:35:22,480
-operations aren't in KERIpy
 locally in KERI per agent so because
 
 899
 00:35:22,480 --> 00:35:24,320
-locally in KERI per agent so because
 once we derive it once even though we're
 
 900
 00:35:24,320 --> 00:35:24,960
-once we derive it once even though we're
 reading it
 
 901
 00:35:24,960 --> 00:35:26,480
-reading it
 yeah but what triggers to derive it
 
 902
 00:35:26,480 --> 00:35:28,160
-yeah but what triggers to derive it
 otherw then you're going to move the
 
 903
 00:35:28,160 --> 00:35:29,680
-otherw then you're going to move the
 polling inside internally
 
 904
 00:35:29,680 --> 00:35:31,119
-polling inside internally
 what triggers What
 
 905
 00:35:31,119 --> 00:35:34,880
-what triggers What
 what triggers check and it's complete
 
 906
 00:35:34,880 --> 00:35:35,760
-what triggers check and it's complete
 in KERI out.
 
 907
 00:35:35,760 --> 00:35:37,040
-in KERI out.
 So this is where I think what we should
 
 908
 00:35:37,040 --> 00:35:39,599
-So this is where I think what we should
 do when we have an operation
 
 909
 00:35:39,599 --> 00:35:42,000
-do when we have an operation
 There should be a doer for each
 
 910
 00:35:42,000 --> 00:35:43,280
-There should be a doer for each
 operation
 
 911
 00:35:43,280 --> 00:35:46,240
-operation
 once it completes at the end before that
 
 912
 00:35:46,240 --> 00:35:47,680
-once it completes at the end before that
 doer finishes it should write the
 
 913
 00:35:47,680 --> 00:35:48,480
-doer finishes it should write the
 complete state.
 
 914
 00:35:48,480 --> 00:35:50,079
-complete state.
 Yeah. But then you're now you've just
 
 915
 00:35:50,079 --> 00:35:53,280
-Yeah. But then you're now you've just
 moved all of the polling internal toia
 
 916
 00:35:53,280 --> 00:35:57,680
-moved all of the polling internal toia
 and you'd have so many doers for 10,000
 
 917
 00:35:57,680 --> 00:36:00,480
-and you'd have so many doers for 10,000
 signified clients you know. So it would
 
 918
 00:36:00,480 --> 00:36:03,760
-signified clients you know. So it would
 be a lot better if internally in KERI
 
 919
 00:36:03,760 --> 00:36:05,520
-be a lot better if internally in KERI
 Pi it could just let us know when it's
 
 920
 00:36:05,520 --> 00:36:08,320
-Pi it could just let us know when it's
 effectively completed
 
 921
 00:36:08,320 --> 00:36:09,839
-effectively completed
 because there's already something inside
 
 922
 00:36:09,839 --> 00:36:11,760
-because there's already something inside
 KERIpy tracking this I would say. So
 
 923
 00:36:11,760 --> 00:36:14,800
-KERIpy tracking this I would say. So
 then it can admit that event or whatever
 
 924
 00:36:14,800 --> 00:36:17,520
-then it can admit that event or whatever
 and we can capture it and update our
 
 925
 00:36:17,520 --> 00:36:19,920
-and we can capture it and update our
 operation in the database and send the
 
 926
 00:36:19,920 --> 00:36:21,200
-operation in the database and send the
 event back and service events.
 
 927
 00:36:21,200 --> 00:36:22,560
-event back and service events.
 Yeah, I think we're slightly talking
 
 928
 00:36:22,560 --> 00:36:23,920
-Yeah, I think we're slightly talking
 past each other but I think I get what
 
 929
 00:36:23,920 --> 00:36:25,520
-past each other but I think I get what
 you're saying. I think fundamentally
 
 930
 00:36:25,520 --> 00:36:27,520
-you're saying. I think fundamentally
 when an important event happens in KERI
 
 931
 00:36:27,520 --> 00:36:29,359
-when an important event happens in KERI
 five, it should be admitted saying this
 
 932
 00:36:29,359 --> 00:36:30,800
-five, it should be admitted saying this
 is happened.
 
 933
 00:36:30,800 --> 00:36:32,480
-is happened.
 Yeah. Yeah.
 
 934
 00:36:32,480 --> 00:36:33,920
-Yeah. Yeah.
 Rather than having new doers that are
 
 935
 00:36:33,920 --> 00:36:37,040
-Rather than having new doers that are
 also tracking it again, you know,
 
 936
 00:36:37,040 --> 00:36:38,640
-also tracking it again, you know,
 cool just one more slide. So it's
 
 937
 00:36:38,640 --> 00:36:39,520
-cool just one more slide. So it's
 actually good.
 
 938
 00:36:39,520 --> 00:36:44,079
-actually good.
 No, actually one so not too bad.
 
 939
 00:36:44,079 --> 00:36:46,640
-No, actually one so not too bad.
 Yeah, and horizontal scaling. I mean
 
 940
@@ -4690,77 +3799,62 @@ people have asked about this before
 
 941
 00:36:49,200 --> 00:36:50,560
-people have asked about this before
 I would put this on the lowest priority
 
 942
 00:36:50,560 --> 00:36:52,079
-I would put this on the lowest priority
 because other things just need to be
 
 943
 00:36:52,079 --> 00:36:54,720
-because other things just need to be
 fixed first to get adoption. But for
 
 944
 00:36:54,720 --> 00:36:57,359
-fixed first to get adoption. But for
 SEDI it would be important.
 
 945
 00:36:57,359 --> 00:36:59,599
-SEDI it would be important.
 Okay right now you could do something
 
 946
 00:36:59,599 --> 00:37:00,960
-Okay right now you could do something
 like sticky sessions. It would be a very
 
 947
 00:37:00,960 --> 00:37:04,720
-like sticky sessions. It would be a very
 naive approach. Where you know you
 
 948
 00:37:04,720 --> 00:37:06,880
-naive approach. Where you know you
 deploy 10 different KERIs and you
 
 949
 00:37:06,880 --> 00:37:10,320
-deploy 10 different KERIs and you
 have a load balancer and once a once a
 
 950
 00:37:10,320 --> 00:37:12,480
-have a load balancer and once a once a
 client connects and gets rooted to a
 
 951
 00:37:12,480 --> 00:37:13,839
-client connects and gets rooted to a
 KERI instance they always have to go
 
 952
 00:37:13,839 --> 00:37:15,359
-KERI instance they always have to go
 there forever. that's like a sticky
 
 953
 00:37:15,359 --> 00:37:17,599
-there forever. that's like a sticky
 session. It would work now, but it
 
 954
 00:37:17,599 --> 00:37:20,880
-session. It would work now, but it
 wouldn't be great.
 
 955
 00:37:20,880 --> 00:37:23,520
-wouldn't be great.
 To do true horizontal scale, I think K's
 
 956
@@ -4770,7 +3864,6 @@ actually already quite suited to it.
 
 957
 00:37:26,160 --> 00:37:27,920
-actually already quite suited to it.
 Because all the databases of agents are
 
 958
@@ -4780,12 +3873,10 @@ fully isolated and no agents are shared.
 
 959
 00:37:31,200 --> 00:37:34,400
-fully isolated and no agents are shared.
 They're just a bunch of LMDB files.
 
 960
 00:37:34,400 --> 00:37:39,270
-They're just a bunch of LMDB files.
 Okay. So if you had to like
 
 961
@@ -4795,57 +3886,46 @@ shared volume in your cloud deployment
 
 962
 00:37:43,599 --> 00:37:45,760
-shared volume in your cloud deployment
 that all of the instances can access and
 
 963
 00:37:45,760 --> 00:37:47,599
-that all of the instances can access and
 they would just go to the specific LMDB
 
 964
 00:37:47,599 --> 00:37:49,520
-they would just go to the specific LMDB
 files that were that they're currently
 
 965
 00:37:49,520 --> 00:37:52,000
-files that were that they're currently
 serving. And if it's done correctly
 
 966
 00:37:52,000 --> 00:37:53,760
-serving. And if it's done correctly
 they won't try to access the same LMDB
 
 967
 00:37:53,760 --> 00:37:55,119
-they won't try to access the same LMDB
 file of someone else and you could have
 
 968
 00:37:55,119 --> 00:37:58,880
-file of someone else and you could have
 the agency coordinate that. If you
 
 969
 00:37:58,880 --> 00:38:01,280
-the agency coordinate that. If you
 wanted more isolation, I guess you could
 
 970
 00:38:01,280 --> 00:38:02,720
-wanted more isolation, I guess you could
 separate the volumes, but I think that
 
 971
 00:38:02,720 --> 00:38:05,040
-separate the volumes, but I think that
 would be
 
 972
 00:38:05,040 --> 00:38:11,190
-would be
 a little bit complex, not necessary.
 
 973
@@ -4855,62 +3935,50 @@ volumes. I don't like that for now. At
 
 974
 00:38:14,160 --> 00:38:16,560
-volumes. I don't like that for now. At
 least I don't think it's necessary.
 
 975
 00:38:16,560 --> 00:38:20,320
-least I don't think it's necessary.
 Unless there's a
 
 976
 00:38:20,320 --> 00:38:22,720
-Unless there's a
 legal constraint on data or something. I
 
 977
 00:38:22,720 --> 00:38:24,000
-legal constraint on data or something. I
 don't know.
 
 978
 00:38:24,000 --> 00:38:26,000
-don't know.
 And yeah, the agency can become the
 
 979
 00:38:26,000 --> 00:38:28,320
-And yeah, the agency can become the
 load balancer like it kind of currently
 
 980
 00:38:28,320 --> 00:38:29,920
-load balancer like it kind of currently
 is basically for the message router in
 
 981
 00:38:29,920 --> 00:38:31,760
-is basically for the message router in
 KERI. But instead it would
 
 982
 00:38:31,760 --> 00:38:33,760
-KERI. But instead it would
 actually be outside
 
 983
 00:38:33,760 --> 00:38:38,400
-actually be outside
 KERI and root into kind of a more
 
 984
 00:38:38,400 --> 00:38:40,160
-KERI and root into kind of a more
 lightweight KERI. So you kind of
 
 985
 00:38:40,160 --> 00:38:45,109
-lightweight KERI. So you kind of
 decouple it a bit be different services
 
 986
@@ -4924,12 +3992,10 @@ line. So that's why developer experience
 
 988
 00:38:48,320 --> 00:38:50,240
-line. So that's why developer experience
 and operational resilience are highest
 
 989
 00:38:50,240 --> 00:38:58,710
-and operational resilience are highest
 priority I think. Yeah. Done.
 
 990
@@ -4939,57 +4005,46 @@ That's the file system. So,
 
 991
 00:39:01,920 --> 00:39:03,760
-That's the file system. So,
 yeah.
 
 992
 00:39:03,760 --> 00:39:05,920
-yeah.
 Okay. So, the agency database is an LMDB
 
 993
 00:39:05,920 --> 00:39:08,960
-Okay. So, the agency database is an LMDB
 database. You can see that there was two
 
 994
 00:39:08,960 --> 00:39:10,640
-database. You can see that there was two
 new
 
 995
 00:39:10,640 --> 00:39:12,880
-new
 Agents booted. There are the config
 
 996
 00:39:12,880 --> 00:39:15,760
-Agents booted. There are the config
 files that get copied in the JSON config
 
 997
 00:39:15,760 --> 00:39:17,920
-files that get copied in the JSON config
 files with the OOBIs.
 
 998
 00:39:17,920 --> 00:39:20,720
-files with the OOBIs.
 And for each
 
 999
 00:39:20,720 --> 00:39:23,680
-And for each
 Agent they have a subdirectory in all
 
 1000
 00:39:23,680 --> 00:39:25,280
-Agent they have a subdirectory in all
 of these directories. Like there's the
 
 1001
 00:39:25,280 --> 00:39:29,510
-of these directories. Like there's the
 key store for example.
 
 1002
@@ -5003,26 +4058,21 @@ restructure it so that the agent is at
 
 1004
 00:39:34,240 --> 00:39:36,800
-restructure it so that the agent is at
 the top level and it has its databases
 
 1005
 00:39:36,800 --> 00:39:38,240
-the top level and it has its databases
 internally so you can more easily take
 
 1006
 00:39:38,240 --> 00:39:40,880
-internally so you can more easily take
 it. But if it was a shared volume
 
 1007
 00:39:40,880 --> 00:39:43,680
-it. But if it was a shared volume
 across many instances it wouldn't
 
 1008
 00:39:43,680 --> 00:39:46,680
-across many instances it wouldn't
 matter.
 

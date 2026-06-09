@@ -1,21 +1,18 @@
-﻿1
+1
 00:00:07,590 --> 00:00:09,760
 This version of the Locksmith app is
 it's it's a open-source stripped down
 
 2
 00:00:09,760 --> 00:00:11,440
-it's it's a open-source stripped down
 version of what healthcare has. So, if
 
 3
 00:00:11,440 --> 00:00:13,360
-version of what healthcare has. So, if
 you guys want to follow along, I have a
 
 4
 00:00:13,360 --> 00:00:21,670
-you guys want to follow along, I have a
 open source repo. It's githubjiot
 
 5
@@ -25,7 +22,6 @@ and you can follow along. There's some
 
 6
 00:00:25,760 --> 00:00:37,350
-and you can follow along. There's some
 instructions in the readme.
 
 7
@@ -35,22 +31,18 @@ KERI. This talk is about the
 
 8
 00:00:41,680 --> 00:00:42,879
-KERI. This talk is about the
 controller side of the system where the
 
 9
 00:00:42,879 --> 00:00:46,079
-controller side of the system where the
 keys stay local. Users manage their
 
 10
 00:00:46,079 --> 00:00:48,000
-keys stay local. Users manage their
 identifiers and control does not
 
 11
 00:00:48,000 --> 00:00:53,510
-identifiers and control does not
 disappear into a single provider stack.
 
 12
@@ -64,137 +56,110 @@ wallet surface where the keys in
 
 14
 00:00:59,840 --> 00:01:01,600
-wallet surface where the keys in
 control.
 
 15
 00:01:01,600 --> 00:01:05,119
-control.
 I'm sorry, I'm terrible. The trust
 
 16
 00:01:05,119 --> 00:01:07,600
-I'm sorry, I'm terrible. The trust
 route lives at the edge and non-hosted
 
 17
 00:01:07,600 --> 00:01:10,400
-route lives at the edge and non-hosted
 services
 
 18
 00:01:10,400 --> 00:01:12,640
-services
 many
 
 19
 00:01:12,640 --> 00:01:14,799
-many
 in the in KERI the controller is the
 
 20
 00:01:14,799 --> 00:01:17,840
-in the in KERI the controller is the
 party that actually controls the AID.
 
 21
 00:01:17,840 --> 00:01:20,400
-party that actually controls the AID.
 That means that it manages the keys in
 
 22
 00:01:20,400 --> 00:01:24,000
-That means that it manages the keys in
 the key event life cycle. If that user
 
 23
 00:01:24,000 --> 00:01:26,000
-the key event life cycle. If that user
 if that userfacing wallet gets absorbed
 
 24
 00:01:26,000 --> 00:01:27,680
-if that userfacing wallet gets absorbed
 into one vertically integrated service
 
 25
 00:01:27,680 --> 00:01:30,400
-into one vertically integrated service
 stack, the system may still look open on
 
 26
 00:01:30,400 --> 00:01:31,840
-stack, the system may still look open on
 paper but it becomes less open in
 
 27
 00:01:31,840 --> 00:01:33,920
-paper but it becomes less open in
 practice. That's why the wallet boundary
 
 28
 00:01:33,920 --> 00:01:35,520
-practice. That's why the wallet boundary
 matters is where the control actually
 
 29
 00:01:35,520 --> 00:01:37,759
-matters is where the control actually
 lives.
 
 30
 00:01:37,759 --> 00:01:40,640
-lives.
 Many services describe themselves as
 
 31
 00:01:40,640 --> 00:01:43,920
-Many services describe themselves as
 open, but in practice, the wallet, the
 
 32
 00:01:43,920 --> 00:01:46,000
-open, but in practice, the wallet, the
 provider, and the integration path are
 
 33
 00:01:46,000 --> 00:01:48,720
-provider, and the integration path are
 all tied to the same stack. When that
 
 34
 00:01:48,720 --> 00:01:50,159
-all tied to the same stack. When that
 happens, builder choice starts to
 
 35
 00:01:50,159 --> 00:01:52,640
-happens, builder choice starts to
 disappear for KERI to remain genuinely
 
 36
 00:01:52,640 --> 00:01:55,520
-disappear for KERI to remain genuinely
 open. The wallet must remain separate,
 
 37
 00:01:55,520 --> 00:01:57,600
-open. The wallet must remain separate,
 and that separation must be real and
 
 38
 00:01:57,600 --> 00:01:59,200
-and that separation must be real and
 verifiable. So, with that in mind,
 
 39
 00:01:59,200 --> 00:02:01,520
-verifiable. So, with that in mind,
 here's where Locksmith sits in the
 
 40
 00:02:01,520 --> 00:02:04,789
-here's where Locksmith sits in the
 stack.
 
 41
@@ -204,42 +169,34 @@ wallet layer. Witnesses stay outside of
 
 42
 00:02:09,920 --> 00:02:12,239
-wallet layer. Witnesses stay outside of
 it. The watchers stay outside of it. The
 
 43
 00:02:12,239 --> 00:02:14,560
-it. The watchers stay outside of it. The
 connectors the providers connect to
 
 44
 00:02:14,560 --> 00:02:16,160
-connectors the providers connect to
 it but they do not become the wallet.
 
 45
 00:02:16,160 --> 00:02:18,400
-it but they do not become the wallet.
 And by providers I mean the real
 
 46
 00:02:18,400 --> 00:02:21,280
-And by providers I mean the real
 external services witness and watcher
 
 47
 00:02:21,280 --> 00:02:23,680
-external services witness and watcher
 operators credential services workflow
 
 48
 00:02:23,680 --> 00:02:25,440
-operators credential services workflow
 services and other KERI adjacent
 
 49
 00:02:25,440 --> 00:02:29,589
-services and other KERI adjacent
 integrations.
 
 50
@@ -249,87 +206,70 @@ The first thing that Locksmith proves
 
 51
 00:02:37,680 --> 00:02:40,800
-The first thing that Locksmith proves
 is the local state. It is a real local
 
 52
 00:02:40,800 --> 00:02:43,920
-is the local state. It is a real local
 identity vault. It supports multiple
 
 53
 00:02:43,920 --> 00:02:46,319
-identity vault. It supports multiple
 vaults and local first storage and
 
 54
 00:02:46,319 --> 00:02:48,800
-vaults and local first storage and
 controller owned state on disk. That
 
 55
 00:02:48,800 --> 00:02:50,239
-controller owned state on disk. That
 matters because portability could come
 
 56
 00:02:50,239 --> 00:02:52,319
-matters because portability could come
 later. The first proof is local control.
 
 57
 00:02:52,319 --> 00:02:53,920
-later. The first proof is local control.
 So what are you defining as portability
 
 58
 00:02:53,920 --> 00:02:58,720
-So what are you defining as portability
 here? You could deploy it to any
 
 59
 00:02:58,720 --> 00:03:00,720
-here? You could deploy it to any
 any location I suppose.
 
 60
 00:03:00,720 --> 00:03:02,560
-any location I suppose.
 Okay. Because you say state ownership
 
 61
 00:03:02,560 --> 00:03:04,159
-Okay. Because you say state ownership
 for portability polish. I imagine that
 
 62
 00:03:04,159 --> 00:03:05,599
-for portability polish. I imagine that
 means like the key state and everything
 
 63
 00:03:05,599 --> 00:03:07,920
-means like the key state and everything
 necessary for like interacting with the
 
 64
 00:03:07,920 --> 00:03:09,040
-necessary for like interacting with the
 service provider.
 
 65
 00:03:09,040 --> 00:03:10,159
-service provider.
 Is that what you mean by state
 
 66
 00:03:10,159 --> 00:03:11,040
-Is that what you mean by state
 ownership?
 
 67
 00:03:11,040 --> 00:03:16,949
-ownership?
 Yeah.
 
 68
@@ -339,287 +279,230 @@ u and for the identifier
 
 69
 00:03:24,239 --> 00:03:26,959
-u and for the identifier
 credentials and real user workloads
 
 70
 00:03:26,959 --> 00:03:28,400
-credentials and real user workloads
 is where the wallet becomes real for the
 
 71
 00:03:28,400 --> 00:03:31,840
-is where the wallet becomes real for the
 user. Locksmith is the desktop surface
 
 72
 00:03:31,840 --> 00:03:33,840
-user. Locksmith is the desktop surface
 where someone can create and manage
 
 73
 00:03:33,840 --> 00:03:35,840
-where someone can create and manage
 identifiers track credential state work
 
 74
 00:03:35,840 --> 00:03:39,040
-identifiers track credential state work
 with KERI operations through a usable
 
 75
 00:03:39,040 --> 00:03:42,080
-with KERI operations through a usable
 interface. That is what the wallet
 
 76
 00:03:42,080 --> 00:03:44,799
-interface. That is what the wallet
 layers for turning core KERI
 
 77
 00:03:44,799 --> 00:03:46,560
-layers for turning core KERI
 behavior into something a person could
 
 78
 00:03:46,560 --> 00:03:49,120
-behavior into something a person could
 actually use.
 
 79
 00:03:49,120 --> 00:03:53,280
-actually use.
 the this is where the
 
 80
 00:03:53,280 --> 00:03:55,599
-the this is where the
 architecture stays open. Locksmith
 
 81
 00:03:55,599 --> 00:03:57,760
-architecture stays open. Locksmith
 has a real plug-in boundary and code
 
 82
 00:03:57,760 --> 00:03:59,360
-has a real plug-in boundary and code
 providers sit behind that boundary
 
 83
 00:03:59,360 --> 00:04:01,920
-providers sit behind that boundary
 rather than replace it. That means that
 
 84
 00:04:01,920 --> 00:04:04,000
-rather than replace it. That means that
 the wallet can integrate with outside
 
 85
 00:04:04,000 --> 00:04:05,439
-the wallet can integrate with outside
 services without collapsing into
 
 86
 00:04:05,439 --> 00:04:07,760
-services without collapsing into
 infrastructure. What is real today is
 
 87
 00:04:07,760 --> 00:04:09,760
-infrastructure. What is real today is
 the boundary itself. what is in
 
 88
 00:04:09,760 --> 00:04:11,360
-the boundary itself. what is in
 progress is the broader ecosystem around
 
 89
 00:04:11,360 --> 00:04:14,319
-progress is the broader ecosystem around
 it. More provider side integrations
 
 90
 00:04:14,319 --> 00:04:16,639
-it. More provider side integrations
 and the KERI Foundation's work to KERI
 
 91
 00:04:16,639 --> 00:04:18,639
-and the KERI Foundation's work to KERI
 that pattern more through more
 
 92
 00:04:18,639 --> 00:04:21,440
-that pattern more through more
 completely. So the architecture for now
 
 93
 00:04:21,440 --> 00:04:24,080
-completely. So the architecture for now
 is real now and the full provider
 
 94
 00:04:24,080 --> 00:04:27,680
-is real now and the full provider
 story is currently being built.
 
 95
 00:04:27,680 --> 00:04:30,800
-story is currently being built.
 This is our architecture flow. The
 
 96
 00:04:30,800 --> 00:04:33,120
-This is our architecture flow. The
 user signs and stores locally in the
 
 97
 00:04:33,120 --> 00:04:34,880
-user signs and stores locally in the
 Locksmith vault. From there, the wallet
 
 98
 00:04:34,880 --> 00:04:36,880
-Locksmith vault. From there, the wallet
 can communicate with provider side
 
 99
 00:04:36,880 --> 00:04:40,000
-can communicate with provider side
 services via the plug-in boundary.
 
 100
 00:04:40,000 --> 00:04:42,320
-services via the plug-in boundary.
 Separately, events go out to witnesses
 
 101
 00:04:42,320 --> 00:04:44,800
-Separately, events go out to witnesses
 and watchers and receipts come back.
 
 102
 00:04:44,800 --> 00:04:47,280
-and watchers and receipts come back.
 Verifiers stay out of that path, which
 
 103
 00:04:47,280 --> 00:04:50,160
-Verifiers stay out of that path, which
 is the point. Verifiers verification
 
 104
 00:04:50,160 --> 00:04:53,360
-is the point. Verifiers verification
 stays available without turning the
 
 105
 00:04:53,360 --> 00:04:57,360
-stays available without turning the
 whole system into one provider owned. If
 
 106
 00:04:57,360 --> 00:05:00,000
-whole system into one provider owned. If
 if somebody wants implementation detail,
 
 107
 00:05:00,000 --> 00:05:02,160
-if somebody wants implementation detail,
 I could go there. at the at the highest
 
 108
 00:05:02,160 --> 00:05:06,400
-I could go there. at the at the highest
 level that is the overall shape.
 
 109
 00:05:06,400 --> 00:05:09,680
-level that is the overall shape.
 What is real now? What is so let
 
 110
 00:05:09,680 --> 00:05:12,160
-What is real now? What is so let
 me draw a clean line between what is
 
 111
 00:05:12,160 --> 00:05:14,320
-me draw a clean line between what is
 real now what is next. What is real
 
 112
 00:05:14,320 --> 00:05:16,560
-real now what is next. What is real
 now is the desktop KERI identity
 
 113
 00:05:16,560 --> 00:05:19,520
-now is the desktop KERI identity
 vault local vault and the identifier
 
 114
 00:05:19,520 --> 00:05:21,840
-vault local vault and the identifier
 workflows a plug-in boundary encode and
 
 115
 00:05:21,840 --> 00:05:23,919
-workflows a plug-in boundary encode and
 repeatable setup reset and launch
 
 116
 00:05:23,919 --> 00:05:26,800
-repeatable setup reset and launch
 evidence. What is next is the broader
 
 117
 00:05:26,800 --> 00:05:28,560
-evidence. What is next is the broader
 foundation plug-in follow through mobile
 
 118
 00:05:28,560 --> 00:05:31,039
-foundation plug-in follow through mobile
 and web portability and the browser
 
 119
 00:05:31,039 --> 00:05:36,160
-and web portability and the browser
 adjacent work around that this
 
 120
 00:05:36,160 --> 00:05:37,759
-adjacent work around that this
 credibility only for the talk. I wanted
 
 121
 00:05:37,759 --> 00:05:40,720
-credibility only for the talk. I wanted
 to leave room to I wanted the room to
 
 122
 00:05:40,720 --> 00:05:42,160
-to leave room to I wanted the room to
 leave knowing exactly what the demo
 
 123
 00:05:42,160 --> 00:05:43,680
-leave knowing exactly what the demo
 proof say and what it's still in
 
 124
 00:05:43,680 --> 00:05:46,560
-proof say and what it's still in
 progress.
 
 125
 00:05:46,560 --> 00:05:50,639
-progress.
 And then for getting started with the
 
 126
@@ -629,117 +512,94 @@ question on that last one or did you
 
 127
 00:05:52,160 --> 00:05:53,280
-question on that last one or did you
 want us to get to the end and that
 
 128
 00:05:53,280 --> 00:05:55,440
-want us to get to the end and that
 question the end? Sure. Let's do it
 
 129
 00:05:55,440 --> 00:05:56,479
-question the end? Sure. Let's do it
 at the end.
 
 130
 00:05:56,479 --> 00:05:57,199
-at the end.
 Okay.
 
 131
 00:05:57,199 --> 00:05:58,720
-Okay.
 And then for getting started with
 
 132
 00:05:58,720 --> 00:06:03,120
-And then for getting started with
 the code I have a demo repo
 
 133
 00:06:03,120 --> 00:06:05,919
-the code I have a demo repo
 that I've forked and I have commands
 
 134
 00:06:05,919 --> 00:06:08,800
-that I've forked and I have commands
 for Unix. It'll work on for
 
 135
 00:06:08,800 --> 00:06:11,039
-for Unix. It'll work on for
 Unix, it'll work on Mac OS or Linux and
 
 136
 00:06:11,039 --> 00:06:14,240
-Unix, it'll work on Mac OS or Linux and
 for Windows that the script is it's
 
 137
 00:06:14,240 --> 00:06:15,520
-for Windows that the script is it's
 just a PowerShell script you could
 
 138
 00:06:15,520 --> 00:06:18,400
-just a PowerShell script you could
 execute.
 
 139
 00:06:18,400 --> 00:06:22,160
-execute.
 Demo bridge.
 
 140
 00:06:22,160 --> 00:06:26,000
-Demo bridge.
 The locks Locksmith gives KERI a
 
 141
 00:06:26,000 --> 00:06:30,000
-The locks Locksmith gives KERI a
 real control side wallet surface. I
 
 142
 00:06:30,000 --> 00:06:32,800
-real control side wallet surface. I
 wanted to show the a smallest life path
 
 143
 00:06:32,800 --> 00:06:34,880
-wanted to show the a smallest life path
 of this setup can honestly support.
 
 144
 00:06:34,880 --> 00:06:36,400
-of this setup can honestly support.
 I'm not going to try to turn this into a
 
 145
 00:06:36,400 --> 00:06:39,360
-I'm not going to try to turn this into a
 full network demo is the
 
 146
 00:06:39,360 --> 00:06:42,240
-full network demo is the
 Work that we had to do to remove the
 
 147
 00:06:42,240 --> 00:06:45,120
-Work that we had to do to remove the
 health the healthcare code kind of
 
 148
 00:06:45,120 --> 00:06:47,440
-health the healthcare code kind of
 made that part a still a work in
 
 149
 00:06:47,440 --> 00:06:50,469
-made that part a still a work in
 progress
 
 150
@@ -749,37 +609,30 @@ set just run the script where it'll
 
 151
 00:07:02,400 --> 00:07:04,720
-set just run the script where it'll
 If it'll detect if something's
 
 152
 00:07:04,720 --> 00:07:06,800
-If it'll detect if something's
 ready there. If not, if it is, it'll get
 
 153
 00:07:06,800 --> 00:07:09,120
-ready there. If not, if it is, it'll get
 rid of it and then it'll set up the
 
 154
 00:07:09,120 --> 00:07:12,400
-rid of it and then it'll set up the
 environment and then I'll deploy it.
 
 155
 00:07:12,400 --> 00:07:14,160
-environment and then I'll deploy it.
 Screen
 
 156
 00:07:14,160 --> 00:07:15,520
-Screen
 expected.
 
 157
 00:07:15,520 --> 00:07:32,710
-expected.
 Sorry.
 
 158
@@ -789,47 +642,38 @@ is the wallet KERI.
 
 159
 00:07:37,039 --> 00:07:39,919
-is the wallet KERI.
 Yes.
 
 160
 00:07:39,919 --> 00:07:41,120
-Yes.
 What's the relationship between
 
 161
 00:07:41,120 --> 00:07:43,840
-What's the relationship between
 Locksmith and KERIpy one that was in
 
 162
 00:07:43,840 --> 00:07:47,599
-Locksmith and KERIpy one that was in
 the session description? The KERI
 
 163
 00:07:47,599 --> 00:07:50,720
-the session description? The KERI
 pie one is that this is the KERI
 
 164
 00:07:50,720 --> 00:07:54,160
-pie one is that this is the KERI
 pie one's just my fork or the pie is
 
 165
 00:07:54,160 --> 00:07:57,120
-pie one's just my fork or the pie is
 The
 
 166
 00:07:57,120 --> 00:07:58,639
-The
 wait
 
 167
 00:07:58,639 --> 00:08:07,589
-wait
 and the other one's my fork
 
 168
@@ -849,7 +693,6 @@ it takes my
 
 171
 00:09:31,680 --> 00:09:35,990
-it takes my
 Sorry, this is taking a while.
 
 172
@@ -859,1761 +702,1416 @@ a vault and
 
 173
 00:09:43,120 --> 00:09:46,160
-a vault and
 a lot of this stuff is still work in
 
 174
 00:09:46,160 --> 00:09:49,360
-a lot of this stuff is still work in
 progress. The a lot of the functionality
 
 175
 00:09:49,360 --> 00:09:50,880
-progress. The a lot of the functionality
 is
 
 176
 00:09:50,880 --> 00:09:53,120
-is
 not there because it was stripped out
 
 177
 00:09:53,120 --> 00:09:57,120
-not there because it was stripped out
 from the from the healthcare wallet.
 
 178
 00:09:57,120 --> 00:10:02,800
-from the from the healthcare wallet.
 But this when it we have
 
 179
 00:10:02,800 --> 00:10:04,240
-But this when it we have
 when we when we have the full
 
 180
 00:10:04,240 --> 00:10:07,760
-when we when we have the full
 functionality built out, it'll have
 
 181
 00:10:07,760 --> 00:10:10,720
-functionality built out, it'll have
 large par with largely at par with the
 
 182
 00:10:10,720 --> 00:10:12,959
-large par with largely at par with the
 healthcare wallet
 
 183
 00:10:12,959 --> 00:10:16,160
-healthcare wallet
 and we could create our own identifiers.
 
 184
 00:10:16,160 --> 00:10:17,760
-and we could create our own identifiers.
 We could set the cryptographic
 
 185
 00:10:17,760 --> 00:10:19,760
-We could set the cryptographic
 strength a I don't have a remote
 
 186
 00:10:19,760 --> 00:10:21,279
-strength a I don't have a remote
 identifier that I could connect to right
 
 187
 00:10:21,279 --> 00:10:23,200
-identifier that I could connect to right
 now.
 
 188
 00:10:23,200 --> 00:10:25,680
-now.
 Same thing for a group identifier.
 
 189
 00:10:25,680 --> 00:10:28,240
-Same thing for a group identifier.
 issue a credential.
 
 190
 00:10:28,240 --> 00:10:32,160
-issue a credential.
 No schemas to
 
 191
 00:10:32,160 --> 00:10:33,839
-No schemas to
 I don't I don't have anything for that
 
 192
 00:10:33,839 --> 00:10:35,760
-I don't I don't have anything for that
 yet.
 
 193
 00:10:35,760 --> 00:10:37,839
-yet.
 Add a schema.
 
 194
 00:10:37,839 --> 00:10:43,120
-Add a schema.
 And set this. I could change
 
 195
 00:10:43,120 --> 00:10:46,240
-And set this. I could change
 the settings for the cryptographics
 
 196
 00:10:46,240 --> 00:10:48,640
-the settings for the cryptographics
 Key strength settings or other stuff
 
 197
 00:10:48,640 --> 00:10:52,800
-Key strength settings or other stuff
 for the cryptography. But this is
 
 198
 00:10:52,800 --> 00:10:54,320
-for the cryptography. But this is
 The open source version of the code
 
 199
 00:10:54,320 --> 00:10:57,360
-The open source version of the code
 that you guys can go and explore.
 
 200
 00:10:57,360 --> 00:10:59,440
-that you guys can go and explore.
 And sorry I'm just I'm not good at
 
 201
 00:10:59,440 --> 00:11:02,320
-And sorry I'm just I'm not good at
 public speaking. So and that's all I've
 
 202
 00:11:02,320 --> 00:11:05,120
-public speaking. So and that's all I've
 got. What questions do you guys
 
 203
 00:11:05,120 --> 00:11:05,920
-got. What questions do you guys
 have?
 
 204
 00:11:05,920 --> 00:11:08,399
-have?
 Yeah. So essentially is what you've
 
 205
 00:11:08,399 --> 00:11:12,399
-Yeah. So essentially is what you've
 showed us the KERI Foundation using the
 
 206
 00:11:12,399 --> 00:11:14,480
-showed us the KERI Foundation using the
 plug-in API with Locksmith to run
 
 207
 00:11:14,480 --> 00:11:16,240
-plug-in API with Locksmith to run
 against their own infrastructure.
 
 208
 00:11:16,240 --> 00:11:16,720
-against their own infrastructure.
 Yes.
 
 209
-00:11:16,720 --> 00:11:17,680
-Yes.
-Yes.
+00:11:17,680 --> 00:11:18,640
+In this demo.
 
 210
-00:11:17,680 --> 00:11:18,640
-Yes.
-In this demo.
-
-211
 00:11:18,640 --> 00:11:23,030
-In this demo.
 That's not in this demo. Okay.
 
-212
+211
 00:11:26,550 --> 00:11:29,760
 So this is the open- source wallet that
 we got originally from healthcare. We've
 
-213
+212
 00:11:29,760 --> 00:11:32,160
-we got originally from healthcare. We've
 debranded it. This is available now for
+
+213
+00:11:32,160 --> 00:11:34,240
+anybody to go and fork this, download
 
 214
-00:11:32,160 --> 00:11:34,240
-debranded it. This is available now for
-anybody to go and fork this, download
+00:11:34,240 --> 00:11:36,240
+it, use it, build out more if you want
 
 215
-00:11:34,240 --> 00:11:36,240
-anybody to go and fork this, download
-it, use it, build out more if you want
+00:11:36,240 --> 00:11:38,240
+other features if you want. The plugin
 
 216
-00:11:36,240 --> 00:11:38,240
-it, use it, build out more if you want
-other features if you want. The plugin
+00:11:38,240 --> 00:11:41,440
+itself is not shown here.
 
 217
-00:11:38,240 --> 00:11:41,440
-other features if you want. The plugin
-itself is not shown here.
+00:11:41,440 --> 00:11:43,279
+You'll see that in my demo, but you and
 
 218
-00:11:41,440 --> 00:11:43,279
-itself is not shown here.
-You'll see that in my demo, but you and
+00:11:43,279 --> 00:11:44,720
+I are competing with each other. So now
 
 219
-00:11:43,279 --> 00:11:44,720
-You'll see that in my demo, but you and
-I are competing with each other. So now
+00:11:44,720 --> 00:11:45,600
+we're not
 
 220
-00:11:44,720 --> 00:11:45,600
-I are competing with each other. So now
-we're not
+00:11:45,600 --> 00:11:47,040
+now we're not gonna now you're not going
 
 221
-00:11:45,600 --> 00:11:47,040
-we're not
-now we're not gonna now you're not going
-
-222
 00:11:47,040 --> 00:11:52,470
-now we're not gonna now you're not going
 to see it ever. Ah,
 
-223
+222
 00:11:54,790 --> 00:11:58,000
 thanks man. Hey Joseph,
 does so does this sorry this is a dumb
 
-224
+223
 00:11:58,000 --> 00:12:00,720
-does so does this sorry this is a dumb
 question but does this wallet here have
+
+224
+00:12:00,720 --> 00:12:05,040
+the KEL on in this whatever device is
 
 225
-00:12:00,720 --> 00:12:05,040
-question but does this wallet here have
-the KEL on in this whatever device is
+00:12:05,040 --> 00:12:06,880
+installing the wallet does is the KEL
 
 226
-00:12:05,040 --> 00:12:06,880
-the KEL on in this whatever device is
-installing the wallet does is the KEL
+00:12:06,880 --> 00:12:08,320
+also there
 
 227
-00:12:06,880 --> 00:12:08,320
-installing the wallet does is the KEL
-also there
+00:12:08,320 --> 00:12:09,040
+you're local
 
 228
-00:12:08,320 --> 00:12:09,040
-also there
-you're local
+00:12:09,040 --> 00:12:09,920
+yeah local
 
 229
-00:12:09,040 --> 00:12:09,920
-you're local
-yeah local
+00:12:09,920 --> 00:12:10,959
+yeah locally
 
 230
-00:12:09,920 --> 00:12:10,959
-yeah local
-yeah locally
+00:12:10,959 --> 00:12:13,040
+so this creates the manages the keys and
 
 231
-00:12:10,959 --> 00:12:13,040
-yeah locally
-so this creates the manages the keys and
+00:12:13,040 --> 00:12:14,399
+the KEL
 
 232
-00:12:13,040 --> 00:12:14,399
-so this creates the manages the keys and
-the KEL
+00:12:14,399 --> 00:12:15,440
+in that environment
 
 233
-00:12:14,399 --> 00:12:15,440
-the KEL
-in that environment
+00:12:15,440 --> 00:12:17,839
+and you publish the KEL to a witness
 
 234
-00:12:15,440 --> 00:12:17,839
-in that environment
-and you publish the KEL to a witness
+00:12:17,839 --> 00:12:20,480
+yes to one or more witnesses right
 
 235
-00:12:17,839 --> 00:12:20,480
-and you publish the KEL to a witness
-yes to one or more witnesses right
+00:12:20,480 --> 00:12:22,800
+so you would configure the witness here
 
 236
-00:12:20,480 --> 00:12:22,800
-yes to one or more witnesses right
-so you would configure the witness here
+00:12:22,800 --> 00:12:24,560
+Yeah, you'll see that in my demo if you
 
 237
-00:12:22,800 --> 00:12:24,560
-so you would configure the witness here
-Yeah, you'll see that in my demo if you
+00:12:24,560 --> 00:12:25,519
+come to my demo.
 
 238
-00:12:24,560 --> 00:12:25,519
-Yeah, you'll see that in my demo if you
-come to my demo.
+00:12:25,519 --> 00:12:27,040
+When did you demo?
 
 239
-00:12:25,519 --> 00:12:27,040
-come to my demo.
-When did you demo?
+00:12:27,040 --> 00:12:28,079
+3:15.
 
 240
-00:12:27,040 --> 00:12:28,079
-When did you demo?
-3:15.
+00:12:28,079 --> 00:12:32,079
+It's Yeah, big
 
 241
-00:12:28,079 --> 00:12:32,079
-3:15.
-It's Yeah, big
+00:12:32,079 --> 00:12:35,279
+sorry. And then and then also the
 
 242
-00:12:32,079 --> 00:12:35,279
-It's Yeah, big
-sorry. And then and then also the
+00:12:35,279 --> 00:12:36,880
+tell stuff is that
 
 243
-00:12:35,279 --> 00:12:36,880
-sorry. And then and then also the
-tell stuff is that
+00:12:36,880 --> 00:12:38,560
+no that's ACDC related. We're not going
 
 244
-00:12:36,880 --> 00:12:38,560
-tell stuff is that
-no that's ACDC related. We're not going
+00:12:38,560 --> 00:12:40,560
+to cover that in this
 
 245
-00:12:38,560 --> 00:12:40,560
-no that's ACDC related. We're not going
-to cover that in this
+00:12:40,560 --> 00:12:42,959
+but it would it be on in this on this
 
 246
-00:12:40,560 --> 00:12:42,959
-to cover that in this
-but it would it be on in this on this
+00:12:42,959 --> 00:12:44,160
+local just
 
 247
-00:12:42,959 --> 00:12:44,160
-but it would it be on in this on this
-local just
+00:12:44,160 --> 00:12:45,279
+that's a good question. I don't know
 
 248
-00:12:44,160 --> 00:12:45,279
-local just
-that's a good question. I don't know
+00:12:45,279 --> 00:12:48,079
+where theoretically I guess probably
 
 249
-00:12:45,279 --> 00:12:48,079
-that's a good question. I don't know
-where theoretically I guess probably
+00:12:48,079 --> 00:12:49,920
+so but I don't I don't know that's a
 
 250
-00:12:48,079 --> 00:12:49,920
-where theoretically I guess probably
-so but I don't I don't know that's a
+00:12:49,920 --> 00:12:52,800
+little bit outside of scope of
 
 251
-00:12:49,920 --> 00:12:52,800
-so but I don't I don't know that's a
-little bit outside of scope of
+00:12:52,800 --> 00:12:53,600
+dealt with yet.
 
 252
-00:12:52,800 --> 00:12:53,600
-little bit outside of scope of
-dealt with yet.
+00:12:53,600 --> 00:12:54,959
+I know they defined the tell this
 
 253
-00:12:53,600 --> 00:12:54,959
-dealt with yet.
-I know they defined the tell this
+00:12:54,959 --> 00:12:56,079
+morning, but I forgot what it stands
 
 254
-00:12:54,959 --> 00:12:56,079
-I know they defined the tell this
-morning, but I forgot what it stands
+00:12:56,079 --> 00:12:56,480
+for.
 
 255
-00:12:56,079 --> 00:12:56,480
-morning, but I forgot what it stands
-for.
+00:12:56,480 --> 00:12:57,839
+Transaction event log
 
 256
-00:12:56,480 --> 00:12:57,839
-for.
-Transaction event log
+00:12:57,839 --> 00:13:00,399
+and that's for the recipient to detect
 
 257
-00:12:57,839 --> 00:13:00,399
-Transaction event log
-and that's for the recipient to detect
+00:13:00,399 --> 00:13:02,079
+that's for the holder to detect if their
 
 258
-00:13:00,399 --> 00:13:02,079
-and that's for the recipient to detect
-that's for the holder to detect if their
+00:13:02,079 --> 00:13:05,200
+credentials are being used in the non
 
 259
-00:13:02,079 --> 00:13:05,200
-that's for the holder to detect if their
-credentials are being used in the non
+00:13:05,200 --> 00:13:08,000
+Not necessarily tells are
 
 260
-00:13:05,200 --> 00:13:08,000
-credentials are being used in the non
-Not necessarily tells are
+00:13:08,000 --> 00:13:09,360
+specifically related to a different
 
 261
-00:13:08,000 --> 00:13:09,360
-Not necessarily tells are
-specifically related to a different
+00:13:09,360 --> 00:13:13,600
+construct in AC or in KERI ecosystem
 
 262
-00:13:09,360 --> 00:13:13,600
-specifically related to a different
-construct in AC or in KERI ecosystem
+00:13:13,600 --> 00:13:15,680
+called ACDC which is more about
 
 263
-00:13:13,600 --> 00:13:15,680
-construct in AC or in KERI ecosystem
-called ACDC which is more about
+00:13:15,680 --> 00:13:17,120
+credential issuing.
 
 264
-00:13:15,680 --> 00:13:17,120
-called ACDC which is more about
-credential issuing.
+00:13:17,120 --> 00:13:20,079
+Yeah. So the benefit of the tell you're
 
 265
-00:13:17,120 --> 00:13:20,079
-credential issuing.
-Yeah. So the benefit of the tell you're
+00:13:20,079 --> 00:13:21,680
+publishing the transaction event so that
 
 266
-00:13:20,079 --> 00:13:21,680
-Yeah. So the benefit of the tell you're
-publishing the transaction event so that
+00:13:21,680 --> 00:13:22,959
+you can
 
 267
-00:13:21,680 --> 00:13:22,959
-publishing the transaction event so that
-you can
+00:13:22,959 --> 00:13:24,160
+I'm going to get anchored to the key
 
 268
-00:13:22,959 --> 00:13:24,160
-you can
-I'm going to get anchored to the key
+00:13:24,160 --> 00:13:25,519
+event log
 
 269
-00:13:24,160 --> 00:13:25,519
-I'm going to get anchored to the key
-event log
+00:13:25,519 --> 00:13:26,639
+I can't keep track of the state
 
 270
-00:13:25,519 --> 00:13:26,639
-event log
-I can't keep track of the state
+00:13:26,639 --> 00:13:30,240
+I think a good way is the KEL is the
 
 271
-00:13:26,639 --> 00:13:30,240
-I can't keep track of the state
-I think a good way is the KEL is the
+00:13:30,240 --> 00:13:33,839
+state of your keys and the tell is the
 
 272
-00:13:30,240 --> 00:13:33,839
-I think a good way is the KEL is the
-state of your keys and the tell is the
+00:13:33,839 --> 00:13:36,000
+state of your credentials
 
 273
-00:13:33,839 --> 00:13:36,000
-state of your keys and the tell is the
-state of your credentials
+00:13:36,000 --> 00:13:39,120
+question like how what the state of
 
 274
-00:13:36,000 --> 00:13:39,120
-state of your credentials
-question like how what the state of
+00:13:39,120 --> 00:13:40,399
+because they can be in multiple
 
 275
-00:13:39,120 --> 00:13:40,399
-question like how what the state of
-because they can be in multiple
+00:13:40,399 --> 00:13:41,760
+different kind of states depending on
 
 276
-00:13:40,399 --> 00:13:41,760
-because they can be in multiple
-different kind of states depending on
+00:13:41,760 --> 00:13:43,760
+what the credential is
 
 277
-00:13:41,760 --> 00:13:43,760
-different kind of states depending on
-what the credential is
+00:13:43,760 --> 00:13:44,639
+and so
 
 278
-00:13:43,760 --> 00:13:44,639
-what the credential is
-and so
+00:13:44,639 --> 00:13:48,000
+like revocation status state Yeah. Yeah.
 
 279
-00:13:44,639 --> 00:13:48,000
-and so
-like revocation status state Yeah. Yeah.
+00:13:48,000 --> 00:13:50,240
+I would guess that in Phil's ACDC talk
 
 280
-00:13:48,000 --> 00:13:50,240
-like revocation status state Yeah. Yeah.
-I would guess that in Phil's ACDC talk
+00:13:50,240 --> 00:13:51,360
+tomorrow morning, he'll cover this
 
 281
-00:13:50,240 --> 00:13:51,360
-I would guess that in Phil's ACDC talk
-tomorrow morning, he'll cover this
+00:13:51,360 --> 00:13:52,639
+stuff.
 
 282
-00:13:51,360 --> 00:13:52,639
-tomorrow morning, he'll cover this
-stuff.
+00:13:52,639 --> 00:13:53,440
+Tells everybody
 
 283
-00:13:52,639 --> 00:13:53,440
-stuff.
-Tells everybody
+00:13:53,440 --> 00:13:54,800
+if he's doing one then. Yeah.
 
 284
-00:13:53,440 --> 00:13:54,800
-Tells everybody
-if he's doing one then. Yeah.
+00:13:54,800 --> 00:13:56,240
+Yeah. He's talking about ACDC tomorrow
 
 285
-00:13:54,800 --> 00:13:56,240
-if he's doing one then. Yeah.
-Yeah. He's talking about ACDC tomorrow
+00:13:56,240 --> 00:13:57,519
+morning. So if you have more questions
 
 286
-00:13:56,240 --> 00:13:57,519
-Yeah. He's talking about ACDC tomorrow
-morning. So if you have more questions
+00:13:57,519 --> 00:14:00,079
+about that, he might actually have
 
 287
-00:13:57,519 --> 00:14:00,079
-morning. So if you have more questions
-about that, he might actually have
+00:14:00,079 --> 00:14:02,959
+production use cases that you could
 
 288
-00:14:00,079 --> 00:14:02,959
-about that, he might actually have
-production use cases that you could
+00:14:02,959 --> 00:14:05,360
+guess.
 
 289
-00:14:02,959 --> 00:14:05,360
-production use cases that you could
-guess.
+00:14:05,360 --> 00:14:08,000
+So about the repos again.
 
 290
-00:14:05,360 --> 00:14:08,000
-guess.
-So about the repos again.
+00:14:08,000 --> 00:14:11,279
+So the Locksmith demo one is this one.
 
 291
-00:14:08,000 --> 00:14:11,279
-So about the repos again.
-So the Locksmith demo one is this one.
+00:14:11,279 --> 00:14:13,199
+And what's in the Locksmith one? That
 
 292
-00:14:11,279 --> 00:14:13,199
-So the Locksmith demo one is this one.
-And what's in the Locksmith one? That
+00:14:13,199 --> 00:14:15,519
+just that's the full health KERI
 
 293
-00:14:13,199 --> 00:14:15,519
-And what's in the Locksmith one? That
-just that's the full health KERI
+00:14:15,519 --> 00:14:16,880
+that's the
 
 294
-00:14:15,519 --> 00:14:16,880
-just that's the full health KERI
-that's the
+00:14:16,880 --> 00:14:18,399
+healthy is proprietary.
 
 295
-00:14:16,880 --> 00:14:18,399
-that's the
-healthy is proprietary.
+00:14:18,399 --> 00:14:19,199
+Yeah,
 
 296
-00:14:18,399 --> 00:14:19,199
-healthy is proprietary.
-Yeah,
+00:14:19,199 --> 00:14:21,600
+we had to strip out all their fun
 
 297
-00:14:19,199 --> 00:14:21,600
-Yeah,
-we had to strip out all their fun
+00:14:21,600 --> 00:14:24,000
+features when they donated to us. But
 
 298
-00:14:21,600 --> 00:14:24,000
-we had to strip out all their fun
-features when they donated to us. But
+00:14:24,000 --> 00:14:25,680
+we still have like all the core KERI
 
 299
-00:14:24,000 --> 00:14:25,680
-features when they donated to us. But
-we still have like all the core KERI
+00:14:25,680 --> 00:14:29,920
+stuff like identify creationing.
 
 300
-00:14:25,680 --> 00:14:29,920
-we still have like all the core KERI
-stuff like identify creationing.
+00:14:29,920 --> 00:14:32,399
+There's support for like witnesses
 
 301
-00:14:29,920 --> 00:14:32,399
-stuff like identify creationing.
-There's support for like witnesses
+00:14:32,399 --> 00:14:34,720
+and watchers but in order to connect to
 
 302
-00:14:32,399 --> 00:14:34,720
-There's support for like witnesses
-and watchers but in order to connect to
+00:14:34,720 --> 00:14:36,079
+witnesses and watchers you need to
 
 303
-00:14:34,720 --> 00:14:36,079
-and watchers but in order to connect to
-witnesses and watchers you need to
+00:14:36,079 --> 00:14:39,120
+connect to a provider such as healthcare
 
 304
-00:14:36,079 --> 00:14:39,120
-witnesses and watchers you need to
-connect to a provider such as healthcare
+00:14:39,120 --> 00:14:41,120
+through a plugin. So the KERI
 
 305
-00:14:39,120 --> 00:14:41,120
-connect to a provider such as healthcare
-through a plugin. So the KERI
+00:14:41,120 --> 00:14:42,720
+Foundation is going to create is
 
 306
-00:14:41,120 --> 00:14:42,720
-through a plugin. So the KERI
-Foundation is going to create is
+00:14:42,720 --> 00:14:44,720
+creating our own plugin where you can
 
 307
-00:14:42,720 --> 00:14:44,720
-Foundation is going to create is
-creating our own plugin where you can
+00:14:44,720 --> 00:14:46,160
+connect to our infrastructure to get
 
 308
-00:14:44,720 --> 00:14:46,160
-creating our own plugin where you can
-connect to our infrastructure to get
+00:14:46,160 --> 00:14:49,440
+witnesses and watchers and then in
 
 309
-00:14:46,160 --> 00:14:49,440
-connect to our infrastructure to get
-witnesses and watchers and then in
+00:14:49,440 --> 00:14:51,360
+theory you could also have in the same
 
 310
-00:14:49,440 --> 00:14:51,360
-witnesses and watchers and then in
-theory you could also have in the same
+00:14:51,360 --> 00:14:53,279
+UI you can see KERI Foundations plugin
 
 311
-00:14:51,360 --> 00:14:53,279
-theory you could also have in the same
-UI you can see KERI Foundations plugin
+00:14:53,279 --> 00:14:55,279
+and like healthcare's plugin or any
 
 312
-00:14:53,279 --> 00:14:55,279
-UI you can see KERI Foundations plugin
-and like healthcare's plugin or any
+00:14:55,279 --> 00:14:56,800
+other provider who wants to create
 
 313
-00:14:55,279 --> 00:14:56,800
-and like healthcare's plugin or any
-other provider who wants to create
+00:14:56,800 --> 00:14:58,959
+witnesses and watchers
 
 314
-00:14:56,800 --> 00:14:58,959
-other provider who wants to create
-witnesses and watchers
+00:14:58,959 --> 00:15:01,680
+provide infrastructure for you to
 
 315
-00:14:58,959 --> 00:15:01,680
-witnesses and watchers
-provide infrastructure for you to
+00:15:01,680 --> 00:15:05,440
+use basic but what does it want started
 
 316
-00:15:01,680 --> 00:15:05,440
-provide infrastructure for you to
-use basic but what does it want started
+00:15:05,440 --> 00:15:08,320
+with creating a want
 
 317
-00:15:05,440 --> 00:15:08,320
-use basic but what does it want started
-with creating a want
+00:15:08,320 --> 00:15:10,000
+encryption storage right Yeah, it's just
 
 318
-00:15:08,320 --> 00:15:10,000
-with creating a want
-encryption storage right Yeah, it's just
+00:15:10,000 --> 00:15:11,120
+a place to store keys.
 
 319
-00:15:10,000 --> 00:15:11,120
-encryption storage right Yeah, it's just
-a place to store keys.
+00:15:11,120 --> 00:15:13,360
+Yeah, but it is like for per wallet
 
 320
-00:15:11,120 --> 00:15:13,360
-a place to store keys.
-Yeah, but it is like for per wallet
+00:15:13,360 --> 00:15:14,800
+you have multiple wallets. What is the
 
 321
-00:15:13,360 --> 00:15:14,800
-Yeah, but it is like for per wallet
-you have multiple wallets. What is the
+00:15:14,800 --> 00:15:16,560
+reason for it?
 
 322
-00:15:14,800 --> 00:15:16,560
-you have multiple wallets. What is the
-reason for it?
+00:15:16,560 --> 00:15:18,079
+Just in case you wanted separation for
 
 323
-00:15:16,560 --> 00:15:18,079
-reason for it?
-Just in case you wanted separation for
+00:15:18,079 --> 00:15:18,880
+some reason.
 
 324
-00:15:18,079 --> 00:15:18,880
-Just in case you wanted separation for
-some reason.
+00:15:18,880 --> 00:15:20,880
+It's like one password and bit warden.
 
 325
-00:15:18,880 --> 00:15:20,880
-some reason.
-It's like one password and bit warden.
+00:15:20,880 --> 00:15:22,160
+Most of these password managers have the
 
 326
-00:15:20,880 --> 00:15:22,160
-It's like one password and bit warden.
-Most of these password managers have the
+00:15:22,160 --> 00:15:23,680
+similar idea of vaults where you can say
 
 327
-00:15:22,160 --> 00:15:23,680
-Most of these password managers have the
-similar idea of vaults where you can say
+00:15:23,680 --> 00:15:25,120
+this is my work vault. This is my
 
 328
-00:15:23,680 --> 00:15:25,120
-similar idea of vaults where you can say
-this is my work vault. This is my
+00:15:25,120 --> 00:15:26,240
+personal vault.
 
 329
-00:15:25,120 --> 00:15:26,240
-this is my work vault. This is my
-personal vault.
+00:15:26,240 --> 00:15:26,800
+Okay.
 
 330
-00:15:26,240 --> 00:15:26,800
-personal vault.
-Okay.
+00:15:26,800 --> 00:15:28,800
+It's just applying the same belong to a
 
 331
-00:15:26,800 --> 00:15:28,800
-Okay.
-It's just applying the same belong to a
+00:15:28,800 --> 00:15:29,760
+specific vault.
 
 332
-00:15:28,800 --> 00:15:29,760
-It's just applying the same belong to a
-specific vault.
+00:15:29,760 --> 00:15:30,959
+Yeah.
 
 333
-00:15:29,760 --> 00:15:30,959
-specific vault.
-Yeah.
+00:15:30,959 --> 00:15:32,079
+So you can't move them across.
 
 334
-00:15:30,959 --> 00:15:32,079
+00:15:32,079 --> 00:15:33,360
 Yeah.
-So you can't move them across.
 
 335
-00:15:32,079 --> 00:15:33,360
-So you can't move them across.
-Yeah.
+00:15:33,360 --> 00:15:35,440
+Yeah. That's I don't know. I don't
 
 336
-00:15:33,360 --> 00:15:35,440
-Yeah.
-Yeah. That's I don't know. I don't
+00:15:35,440 --> 00:15:36,480
+think you can move them across yet.
 
 337
-00:15:35,440 --> 00:15:36,480
-Yeah. That's I don't know. I don't
-think you can move them across yet.
+00:15:36,480 --> 00:15:37,680
+Theoretically, I guess we could
 
 338
-00:15:36,480 --> 00:15:37,680
-think you can move them across yet.
-Theoretically, I guess we could
+00:15:37,680 --> 00:15:40,560
+eventually I can understand
 
 339
-00:15:37,680 --> 00:15:40,560
-Theoretically, I guess we could
-eventually I can understand
+00:15:40,560 --> 00:15:41,279
+I have them.
 
 340
-00:15:40,560 --> 00:15:41,279
-eventually I can understand
-I have them.
+00:15:41,279 --> 00:15:41,760
+Yeah.
 
 341
-00:15:41,279 --> 00:15:41,760
-I have them.
-Yeah.
+00:15:41,760 --> 00:15:43,040
+But here I'm trying to understand
 
 342
-00:15:41,760 --> 00:15:43,040
-Yeah.
-But here I'm trying to understand
+00:15:43,040 --> 00:15:44,959
+because they're very tightly coupled
 
 343
-00:15:43,040 --> 00:15:44,959
-But here I'm trying to understand
-because they're very tightly coupled
+00:15:44,959 --> 00:15:47,600
+with ID, right? The credentials are very
 
 344
-00:15:44,959 --> 00:15:47,600
-because they're very tightly coupled
-with ID, right? The credentials are very
+00:15:47,600 --> 00:15:48,959
+tightly coupled with ID.
 
 345
-00:15:47,600 --> 00:15:48,959
-with ID, right? The credentials are very
-tightly coupled with ID.
+00:15:48,959 --> 00:15:50,560
+And when you have walls,
 
 346
-00:15:48,959 --> 00:15:50,560
-tightly coupled with ID.
-And when you have walls,
+00:15:50,560 --> 00:15:52,240
+I mean what would you how would you move
 
 347
-00:15:50,560 --> 00:15:52,240
-And when you have walls,
-I mean what would you how would you move
+00:15:52,240 --> 00:15:53,839
+you can't move the credentials across
 
 348
-00:15:52,240 --> 00:15:53,839
-I mean what would you how would you move
-you can't move the credentials across
-
-349
 00:15:53,839 --> 00:16:00,790
-you can't move the credentials across
 because different ID
 
-350
+349
 00:16:02,790 --> 00:16:04,959
 I would guess that you could probably
 like if you created two vaults I have so
 
-351
+350
 00:16:04,959 --> 00:16:05,920
-like if you created two vaults I have so
 I don't know. I'm guessing if you
+
+351
+00:16:05,920 --> 00:16:07,360
+created like a local identifier in one
 
 352
-00:16:05,920 --> 00:16:07,360
-I don't know. I'm guessing if you
-created like a local identifier in one
+00:16:07,360 --> 00:16:09,040
+vault, you could OOBI with it from
 
 353
-00:16:07,360 --> 00:16:09,040
-created like a local identifier in one
-vault, you could OOBI with it from
+00:16:09,040 --> 00:16:11,120
+another vault as a remote identifier so
 
 354
-00:16:09,040 --> 00:16:11,120
-vault, you could OOBI with it from
-another vault as a remote identifier so
+00:16:11,120 --> 00:16:12,320
+you could watch your own vaults. But I
 
 355
-00:16:11,120 --> 00:16:12,320
-another vault as a remote identifier so
-you could watch your own vaults. But I
+00:16:12,320 --> 00:16:14,560
+don't know why you want to do that.
 
 356
-00:16:12,320 --> 00:16:14,560
-you could watch your own vaults. But I
-don't know why you want to do that.
+00:16:14,560 --> 00:16:16,160
+The I was looking at the KERI
 
 357
-00:16:14,560 --> 00:16:16,160
-don't know why you want to do that.
-The I was looking at the KERI
+00:16:16,160 --> 00:16:18,639
+Foundation GitHub.
 
 358
-00:16:16,160 --> 00:16:18,639
-The I was looking at the KERI
-Foundation GitHub.
+00:16:18,639 --> 00:16:20,160
+There's 16 repositories and it looks
 
 359
-00:16:18,639 --> 00:16:20,160
-Foundation GitHub.
-There's 16 repositories and it looks
+00:16:20,160 --> 00:16:21,199
+like there's three different wallet
 
 360
-00:16:20,160 --> 00:16:21,199
-There's 16 repositories and it looks
-like there's three different wallet
+00:16:21,199 --> 00:16:22,720
+implementations.
 
 361
-00:16:21,199 --> 00:16:22,720
-like there's three different wallet
-implementations.
+00:16:22,720 --> 00:16:25,839
+There's the Fort Web
 
 362
-00:16:22,720 --> 00:16:25,839
-implementations.
-There's the Fort Web
+00:16:25,839 --> 00:16:26,320
+the
 
 363
-00:16:25,839 --> 00:16:26,320
-There's the Fort Web
-the
+00:16:26,320 --> 00:16:28,240
+No, there's the I think those are just
 
 364
-00:16:26,320 --> 00:16:28,240
-the
-No, there's the I think those are just
+00:16:28,240 --> 00:16:30,639
+different deployment w targets.
 
 365
-00:16:28,240 --> 00:16:30,639
-No, there's the I think those are just
-different deployment w targets.
-
-366
 00:16:30,639 --> 00:16:32,480
-different deployment w targets.
 There's one for iOS, there's a web app,
 
-367
+366
 00:16:32,480 --> 00:16:35,040
 there's one for iOS, there's a web app,
 and one for Android. Yeah.
 
-368
+367
 00:16:35,040 --> 00:16:37,920
-and one for Android. Yeah.
 Okay. But there's there's the fort
+
+368
+00:16:37,920 --> 00:16:39,680
+for Android and fort for iOS and then
 
 369
-00:16:37,920 --> 00:16:39,680
-Okay. But there's there's the fort
-for Android and fort for iOS and then
+00:16:39,680 --> 00:16:43,279
+there's the key the Locksmith. Are those
 
 370
-00:16:39,680 --> 00:16:43,279
-for Android and fort for iOS and then
-there's the key the Locksmith. Are those
+00:16:43,279 --> 00:16:45,279
+how are those related?
 
 371
-00:16:43,279 --> 00:16:45,279
-there's the key the Locksmith. Are those
-how are those related?
+00:16:45,279 --> 00:16:48,480
+The Locksmith is just what we take
 
 372
-00:16:45,279 --> 00:16:48,480
-how are those related?
-The Locksmith is just what we take
+00:16:48,480 --> 00:16:51,360
+and deploy to the different targets.
 
 373
-00:16:48,480 --> 00:16:51,360
-The Locksmith is just what we take
-and deploy to the different targets.
+00:16:51,360 --> 00:16:53,440
+Locksmith is desktop version.
 
 374
-00:16:51,360 --> 00:16:53,440
-and deploy to the different targets.
-Locksmith is desktop version.
+00:16:53,440 --> 00:16:54,800
+Okay.
 
 375
-00:16:53,440 --> 00:16:54,800
-Locksmith is desktop version.
-Okay.
+00:16:54,800 --> 00:16:58,320
+Well, the Fort Web and Locksmith are
 
 376
-00:16:54,800 --> 00:16:58,320
-Okay.
-Well, the Fort Web and Locksmith are
+00:16:58,320 --> 00:16:59,920
+they're they're they're both desktop
 
 377
-00:16:58,320 --> 00:16:59,920
-Well, the Fort Web and Locksmith are
-they're they're they're both desktop
+00:16:59,920 --> 00:17:00,959
+versions. They're just different
 
 378
-00:16:59,920 --> 00:17:00,959
-they're they're they're both desktop
-versions. They're just different
+00:17:00,959 --> 00:17:03,600
+implementations of the desktop version.
 
 379
-00:17:00,959 --> 00:17:03,600
-versions. They're just different
-implementations of the desktop version.
+00:17:03,600 --> 00:17:05,360
+Essentially, all of them are a wallet,
 
 380
-00:17:03,600 --> 00:17:05,360
-implementations of the desktop version.
-Essentially, all of them are a wallet,
+00:17:05,360 --> 00:17:06,880
+right? They're all the same. They're all
 
 381
-00:17:05,360 --> 00:17:06,880
-Essentially, all of them are a wallet,
-right? They're all the same. They're all
+00:17:06,880 --> 00:17:08,319
+wallet. You make identifiers. You can
 
 382
-00:17:06,880 --> 00:17:08,319
-right? They're all the same. They're all
-wallet. You make identifiers. You can
+00:17:08,319 --> 00:17:08,799
+UI.
 
 383
-00:17:08,319 --> 00:17:08,799
-wallet. You make identifiers. You can
-UI.
+00:17:08,799 --> 00:17:09,919
+So, my question is, why would you pick
 
 384
-00:17:08,799 --> 00:17:09,919
-UI.
-So, my question is, why would you pick
+00:17:09,919 --> 00:17:10,880
+one versus the other?
 
 385
-00:17:09,919 --> 00:17:10,880
-So, my question is, why would you pick
-one versus the other?
+00:17:10,880 --> 00:17:12,160
+Whatever platform you want to use it on.
 
 386
-00:17:10,880 --> 00:17:12,160
-one versus the other?
-Whatever platform you want to use it on.
+00:17:12,160 --> 00:17:12,319
+Are
 
 387
-00:17:12,160 --> 00:17:12,319
-Whatever platform you want to use it on.
-Are
+00:17:12,319 --> 00:17:13,919
+you trying to deploy to a desktop or to
 
 388
-00:17:12,319 --> 00:17:13,919
-Are
-you trying to deploy to a desktop or to
+00:17:13,919 --> 00:17:14,880
+an iOS?
 
 389
-00:17:13,919 --> 00:17:14,880
-you trying to deploy to a desktop or to
-an iOS?
+00:17:14,880 --> 00:17:16,319
+But Locksmith is web.
 
 390
-00:17:14,880 --> 00:17:16,319
-an iOS?
-But Locksmith is web.
+00:17:16,319 --> 00:17:18,240
+No, lockmith is just desktop.
 
 391
-00:17:16,319 --> 00:17:18,240
-But Locksmith is web.
-No, lockmith is just desktop.
+00:17:18,240 --> 00:17:18,640
+It's
 
 392
-00:17:18,240 --> 00:17:18,640
-No, lockmith is just desktop.
-It's
+00:17:18,640 --> 00:17:19,919
+Oh, this is native desktop.
 
 393
-00:17:18,640 --> 00:17:19,919
-It's
-Oh, this is native desktop.
+00:17:19,919 --> 00:17:22,799
+Yeah, it's a PIDE 6 applic. Okay, that
 
 394
-00:17:19,919 --> 00:17:22,799
-Oh, this is native desktop.
-Yeah, it's a PIDE 6 applic. Okay, that
+00:17:22,799 --> 00:17:24,640
+makes sense. Are they coming from the
 
 395
-00:17:22,799 --> 00:17:24,640
-Yeah, it's a PIDE 6 applic. Okay, that
-makes sense. Are they coming from the
+00:17:24,640 --> 00:17:25,919
+same?
 
 396
-00:17:24,640 --> 00:17:25,919
-makes sense. Are they coming from the
-same?
+00:17:25,919 --> 00:17:28,319
+It's multiplatform source bundle. It's
 
 397
-00:17:25,919 --> 00:17:28,319
-same?
-It's multiplatform source bundle. It's
+00:17:28,319 --> 00:17:32,240
+it's all it the web or yeah they
 
 398
-00:17:28,319 --> 00:17:32,240
-It's multiplatform source bundle. It's
-it's all it the web or yeah they
+00:17:32,240 --> 00:17:34,480
+they all are getting deploy the same
 
 399
-00:17:32,240 --> 00:17:34,480
-it's all it the web or yeah they
-they all are getting deploy the same
+00:17:34,480 --> 00:17:36,000
+stuff the same code is getting deployed
 
 400
-00:17:34,480 --> 00:17:36,000
-they all are getting deploy the same
-stuff the same code is getting deployed
+00:17:36,000 --> 00:17:37,919
+to all those all those different
 
 401
-00:17:36,000 --> 00:17:37,919
-stuff the same code is getting deployed
-to all those all those different
+00:17:37,919 --> 00:17:40,880
+platforms. So for web is just the
 
 402
-00:17:37,919 --> 00:17:40,880
-to all those all those different
-platforms. So for web is just the
+00:17:40,880 --> 00:17:44,240
+web SaaS
 
 403
-00:17:40,880 --> 00:17:44,240
-platforms. So for web is just the
-web SaaS
+00:17:44,240 --> 00:17:47,039
+app of Fort
 
 404
-00:17:44,240 --> 00:17:47,039
-web SaaS
-app of Fort
+00:17:47,039 --> 00:17:48,640
+also have multiple local identifiers
 
 405
-00:17:47,039 --> 00:17:48,640
-app of Fort
-also have multiple local identifiers
+00:17:48,640 --> 00:17:51,520
+right in a single one have multiple
 
 406
-00:17:48,640 --> 00:17:51,520
-also have multiple local identifiers
-right in a single one have multiple
+00:17:51,520 --> 00:17:52,000
+local
 
 407
-00:17:51,520 --> 00:17:52,000
-right in a single one have multiple
-local
+00:17:52,000 --> 00:17:53,760
+yes
 
 408
-00:17:52,000 --> 00:17:53,760
-local
-yes
+00:17:53,760 --> 00:17:56,400
+that's just talking about
 
 409
-00:17:53,760 --> 00:17:56,400
-yes
-that's just talking about
+00:17:56,400 --> 00:17:58,799
+issuing credential to many identifiers
 
 410
-00:17:56,400 --> 00:17:58,799
-that's just talking about
-issuing credential to many identifiers
+00:17:58,799 --> 00:18:02,080
+some Josh was talking about
 
 411
-00:17:58,799 --> 00:18:02,080
-issuing credential to many identifiers
-some Josh was talking about
+00:18:02,080 --> 00:18:04,559
+Evan be talking more about the web wall
 
 412
-00:18:02,080 --> 00:18:04,559
-some Josh was talking about
-Evan be talking more about the web wall
+00:18:04,559 --> 00:18:06,880
+tomorrow
 
 413
-00:18:04,559 --> 00:18:06,880
-Evan be talking more about the web wall
-tomorrow
+00:18:06,880 --> 00:18:08,080
+or whatever you want.
 
 414
-00:18:06,880 --> 00:18:08,080
-tomorrow
-or whatever you want.
+00:18:08,080 --> 00:18:10,400
+Wow.
 
 415
-00:18:08,080 --> 00:18:10,400
-or whatever you want.
-Wow.
+00:18:10,400 --> 00:18:11,440
+People have other things they want to
 
 416
-00:18:10,400 --> 00:18:11,440
-Wow.
-People have other things they want to
+00:18:11,440 --> 00:18:11,840
+hear about
 
 417
-00:18:11,440 --> 00:18:11,840
-People have other things they want to
-hear about
+00:18:11,840 --> 00:18:13,919
+or whatever suggestions.
 
 418
-00:18:11,840 --> 00:18:13,919
-hear about
-or whatever suggestions.
+00:18:13,919 --> 00:18:15,039
+Basically, he's just going to stand up
 
 419
-00:18:13,919 --> 00:18:15,039
-or whatever suggestions.
-Basically, he's just going to stand up
+00:18:15,039 --> 00:18:18,160
+there and let you ask him anything.
 
 420
-00:18:15,039 --> 00:18:18,160
-Basically, he's just going to stand up
-there and let you ask him anything.
+00:18:18,160 --> 00:18:20,799
+Ask me anything session with that.
 
 421
-00:18:18,160 --> 00:18:20,799
-there and let you ask him anything.
-Ask me anything session with that.
+00:18:20,799 --> 00:18:22,400
+Cool.
 
 422
-00:18:20,799 --> 00:18:22,400
-Ask me anything session with that.
-Cool.
+00:18:22,400 --> 00:18:26,480
+I think that's kind of it.
 
 423
-00:18:22,400 --> 00:18:26,480
-Cool.
-I think that's kind of it.
+00:18:26,480 --> 00:18:28,720
+Do you guys have any other questions or
 
 424
-00:18:26,480 --> 00:18:28,720
-I think that's kind of it.
-Do you guys have any other questions or
+00:18:28,720 --> 00:18:30,000
+I guess we're kind of still kind of
 
 425
-00:18:28,720 --> 00:18:30,000
-Do you guys have any other questions or
-I guess we're kind of still kind of
+00:18:30,000 --> 00:18:32,080
+pretty early
 
 426
-00:18:30,000 --> 00:18:32,080
-I guess we're kind of still kind of
-pretty early
-
-427
 00:18:32,080 --> 00:18:38,950
-pretty early
 tomorrow.
 
-428
+427
 00:18:40,549 --> 00:18:42,240
 Yeah, I guess I mean the question I have
 that might be answered tomorrow probably
 
-429
+428
 00:18:42,240 --> 00:18:44,160
-that might be answered tomorrow probably
 in your session.
+
+429
+00:18:44,160 --> 00:18:47,840
+Is there is it is it clear based on what
 
 430
-00:18:44,160 --> 00:18:47,840
-in your session.
-Is there is it is it clear based on what
+00:18:47,840 --> 00:18:50,160
+the what code that's open source what a
 
 431
-00:18:47,840 --> 00:18:50,160
-Is there is it is it clear based on what
-the what code that's open source what a
+00:18:50,160 --> 00:18:52,320
+provider has to do in order to do their
 
 432
-00:18:50,160 --> 00:18:52,320
-the what code that's open source what a
-provider has to do in order to do their
+00:18:52,320 --> 00:18:53,760
+own plug-in implementation and what they
 
 433
-00:18:52,320 --> 00:18:53,760
-provider has to do in order to do their
-own plug-in implementation and what they
+00:18:53,760 --> 00:18:55,679
+have to sort of implement on the
 
 434
-00:18:53,760 --> 00:18:55,679
-own plug-in implementation and what they
-have to sort of implement on the
+00:18:55,679 --> 00:18:58,000
+infrastructure side
 
 435
-00:18:55,679 --> 00:18:58,000
-have to sort of implement on the
-infrastructure side
+00:18:58,000 --> 00:18:59,600
+for the plugin kind of. Yeah.
 
 436
-00:18:58,000 --> 00:18:59,600
-infrastructure side
-for the plugin kind of. Yeah.
+00:18:59,600 --> 00:19:01,679
+Yeah. Because I want to do I want I'm
 
 437
-00:18:59,600 --> 00:19:01,679
-for the plugin kind of. Yeah.
-Yeah. Because I want to do I want I'm
+00:19:01,679 --> 00:19:03,200
+going to do a blog about it and sort of
 
 438
-00:19:01,679 --> 00:19:03,200
-Yeah. Because I want to do I want I'm
-going to do a blog about it and sort of
+00:19:03,200 --> 00:19:04,240
+show people how to do it.
 
 439
-00:19:03,200 --> 00:19:04,240
-going to do a blog about it and sort of
-show people how to do it.
+00:19:04,240 --> 00:19:05,679
+I can make my session how to make your
 
 440
-00:19:04,240 --> 00:19:05,679
-show people how to do it.
-I can make my session how to make your
+00:19:05,679 --> 00:19:06,559
+own plug-in demo.
 
 441
-00:19:05,679 --> 00:19:06,559
-I can make my session how to make your
-own plug-in demo.
+00:19:06,559 --> 00:19:08,080
+Yeah, that'd be great.
 
 442
-00:19:06,559 --> 00:19:08,080
-own plug-in demo.
-Yeah, that'd be great.
+00:19:08,080 --> 00:19:10,080
+Yeah, it's pretty cool. a good idea
 
 443
-00:19:08,080 --> 00:19:10,080
-Yeah, that'd be great.
-Yeah, it's pretty cool. a good idea
+00:19:10,080 --> 00:19:11,760
+because I will definitely be doing it.
 
 444
-00:19:10,080 --> 00:19:11,760
-Yeah, it's pretty cool. a good idea
-because I will definitely be doing it.
+00:19:11,760 --> 00:19:13,120
+I want to help other people learn too.
 
 445
-00:19:11,760 --> 00:19:13,120
-because I will definitely be doing it.
-I want to help other people learn too.
+00:19:13,120 --> 00:19:14,960
+I mean it's it's all there in the repo
 
 446
-00:19:13,120 --> 00:19:14,960
-I want to help other people learn too.
-I mean it's it's all there in the repo
+00:19:14,960 --> 00:19:17,200
+so you could obviously learn how it's
 
 447
-00:19:14,960 --> 00:19:17,200
-I mean it's it's all there in the repo
-so you could obviously learn how it's
+00:19:17,200 --> 00:19:18,160
+built but
 
 448
-00:19:17,200 --> 00:19:18,160
-so you could obviously learn how it's
-built but
+00:19:18,160 --> 00:19:19,200
+I don't think we haven't done
 
 449
-00:19:18,160 --> 00:19:19,200
-built but
-I don't think we haven't done
+00:19:19,200 --> 00:19:21,440
+anything formally yet to describe how to
 
 450
-00:19:19,200 --> 00:19:21,440
-I don't think we haven't done
-anything formally yet to describe how to
+00:19:21,440 --> 00:19:22,240
+build a plugin.
 
 451
-00:19:21,440 --> 00:19:22,240
-anything formally yet to describe how to
-build a plugin.
+00:19:22,240 --> 00:19:23,120
+Okay.
 
 452
-00:19:22,240 --> 00:19:23,120
-build a plugin.
-Okay.
+00:19:23,120 --> 00:19:24,320
+So that would be a good thing.
 
 453
-00:19:23,120 --> 00:19:24,320
-Okay.
-So that would be a good thing.
+00:19:24,320 --> 00:19:26,160
+There is yeah healthcare shipped like a
 
 454
-00:19:24,320 --> 00:19:26,160
-So that would be a good thing.
-There is yeah healthcare shipped like a
+00:19:26,160 --> 00:19:27,679
+plug-in based flask. So they basically
 
 455
-00:19:26,160 --> 00:19:27,679
-There is yeah healthcare shipped like a
-plug-in based flask. So they basically
+00:19:27,679 --> 00:19:29,600
+like define the set of functions
 
 456
-00:19:27,679 --> 00:19:29,600
-plug-in based flask. So they basically
-like define the set of functions
+00:19:29,600 --> 00:19:31,280
+you need to define in order to make your
 
 457
-00:19:29,600 --> 00:19:31,280
-like define the set of functions
-you need to define in order to make your
+00:19:31,280 --> 00:19:32,080
+own plugin.
 
 458
-00:19:31,280 --> 00:19:32,080
-you need to define in order to make your
-own plugin.
+00:19:32,080 --> 00:19:34,480
+Awesome. Yeah that's what I wanted
 
 459
-00:19:32,080 --> 00:19:34,480
-own plugin.
-Awesome. Yeah that's what I wanted
+00:19:34,480 --> 00:19:37,360
+that's what I want to know.
 
 460
-00:19:34,480 --> 00:19:37,360
-Awesome. Yeah that's what I wanted
-that's what I want to know.
+00:19:37,360 --> 00:19:38,559
+time to go through that sort of thing
 
 461
-00:19:37,360 --> 00:19:38,559
-that's what I want to know.
-time to go through that sort of thing
+00:19:38,559 --> 00:19:40,320
+tomorrow.
 
 462
-00:19:38,559 --> 00:19:40,320
-time to go through that sort of thing
-tomorrow.
+00:19:40,320 --> 00:19:41,120
+Was interesting.
 
 463
-00:19:40,320 --> 00:19:41,120
-tomorrow.
-Was interesting.
+00:19:41,120 --> 00:19:42,720
+There are other open source KERI
 
 464
-00:19:41,120 --> 00:19:42,720
-Was interesting.
-There are other open source KERI
+00:19:42,720 --> 00:19:45,440
+wallets besides the Fort Locket one,
 
 465
-00:19:42,720 --> 00:19:45,440
-There are other open source KERI
-wallets besides the Fort Locket one,
+00:19:45,440 --> 00:19:46,240
+isn't there?
 
 466
-00:19:45,440 --> 00:19:46,240
-wallets besides the Fort Locket one,
-isn't there?
+00:19:46,240 --> 00:19:48,480
+Yeah. From so I'll talk a little bit
 
 467
-00:19:46,240 --> 00:19:48,480
-isn't there?
-Yeah. From so I'll talk a little bit
+00:19:48,480 --> 00:19:49,840
+about this in my session, but there's
 
 468
-00:19:48,480 --> 00:19:49,840
-Yeah. From so I'll talk a little bit
-about this in my session, but there's
+00:19:49,840 --> 00:19:51,120
+heavyweight wallets and lightweight
 
 469
-00:19:49,840 --> 00:19:51,120
-about this in my session, but there's
-heavyweight wallets and lightweight
+00:19:51,120 --> 00:19:53,280
+wallets. Lightweight or Signify wallets.
 
 470
-00:19:51,120 --> 00:19:53,280
-heavyweight wallets and lightweight
-wallets. Lightweight or Signify wallets.
+00:19:53,280 --> 00:19:54,640
+This is a heavyweight wallet. It's the
 
 471
-00:19:53,280 --> 00:19:54,640
-wallets. Lightweight or Signify wallets.
-This is a heavyweight wallet. It's the
+00:19:54,640 --> 00:19:57,919
+most complete one in the world by far.
 
 472
-00:19:54,640 --> 00:19:57,919
-This is a heavyweight wallet. It's the
-most complete one in the world by far.
+00:19:57,919 --> 00:19:59,280
+Well, health carries is
 
 473
-00:19:57,919 --> 00:19:59,280
-most complete one in the world by far.
-Well, health carries is
+00:19:59,280 --> 00:20:00,640
+Yeah, health carries is I guess
 
 474
-00:19:59,280 --> 00:20:00,640
-Well, health carries is
-Yeah, health carries is I guess
+00:20:00,640 --> 00:20:02,799
+this is sort of a stripped down
 
 475
-00:20:00,640 --> 00:20:02,799
-Yeah, health carries is I guess
-this is sort of a stripped down
+00:20:02,799 --> 00:20:05,200
+slightest. So I guess health carries is
 
 476
-00:20:02,799 --> 00:20:05,200
-this is sort of a stripped down
-slightest. So I guess health carries is
+00:20:05,200 --> 00:20:06,720
+the most complete and then this is
 
 477
-00:20:05,200 --> 00:20:06,720
-slightest. So I guess health carries is
-the most complete and then this is
+00:20:06,720 --> 00:20:08,559
+stripped down version of but it's it's
 
 478
-00:20:06,720 --> 00:20:08,559
-the most complete and then this is
-stripped down version of but it's it's
+00:20:08,559 --> 00:20:09,760
+the furthest of all
 
 479
-00:20:08,559 --> 00:20:09,760
-stripped down version of but it's it's
-the furthest of all
+00:20:09,760 --> 00:20:11,280
+but that's your session tomorrow not
 
 480
-00:20:09,760 --> 00:20:11,280
-the furthest of all
-but that's your session tomorrow not
+00:20:11,280 --> 00:20:12,160
+your session today.
 
 481
-00:20:11,280 --> 00:20:12,160
-but that's your session tomorrow not
-your session today.
+00:20:12,160 --> 00:20:14,640
+No I have two sessions today. One is
 
 482
-00:20:12,160 --> 00:20:14,640
-your session today.
-No I have two sessions today. One is
+00:20:14,640 --> 00:20:17,280
+the last one is on the KERI stuff
 
 483
-00:20:14,640 --> 00:20:17,280
-No I have two sessions today. One is
-the last one is on the KERI stuff
+00:20:17,280 --> 00:20:19,280
+about lightweight wall. The first one is
 
 484
-00:20:17,280 --> 00:20:19,280
-the last one is on the KERI stuff
-about lightweight wall. The first one is
-
-485
 00:20:19,280 --> 00:20:24,070
-about lightweight wall. The first one is
 going to be on the root of trust.
 
-486
+485
 00:20:25,830 --> 00:20:27,360
 Cool. Wow.
 Well thank you. Do you guys have any
 
-487
+486
 00:20:27,360 --> 00:20:31,270
-Well thank you. Do you guys have any
 other questions?
 
-488
+487
 00:20:33,510 --> 00:20:35,120
 Who wants to speedrun building a
 provider
 
-489
+488
 00:20:35,120 --> 00:20:36,159
-provider
 right now?
+
+489
+00:20:36,159 --> 00:20:36,799
+Let's do it.
 
 490
-00:20:36,159 --> 00:20:36,799
-right now?
-Let's do it.
+00:20:36,799 --> 00:20:39,600
+Evan can coach you through it.
 
 491
-00:20:36,799 --> 00:20:39,600
-Let's do it.
-Evan can coach you through it.
+00:20:39,600 --> 00:20:40,000
+All right.
 
 492
-00:20:39,600 --> 00:20:40,000
-Evan can coach you through it.
-All right.
-
-493
 00:20:40,000 --> 00:20:46,950
-All right.
 I just copy our
 
-494
+493
 00:20:48,870 --> 00:20:51,760
 done 40 minutes.
 No.
 
-495
+494
 00:20:51,760 --> 00:20:54,400
-No.
 Sorry that this wasn't very long.
+
+495
+00:20:54,400 --> 00:20:56,880
+Good.
 
 496
-00:20:54,400 --> 00:20:56,880
-Sorry that this wasn't very long.
-Good.
-
-497
 00:20:56,880 --> 00:21:08,630
-Good.
 See,
 
-498
+497
 00:21:10,710 --> 00:21:13,440
 we got a little time. Jay, you can
 launch the iOS thing if you want.
 
-499
+498
 00:21:13,440 --> 00:21:14,000
-launch the iOS thing if you want.
 Sure.
+
+499
+00:21:14,000 --> 00:21:16,240
+Just to show it.
 
 500
-00:21:14,000 --> 00:21:16,240
-Sure.
-Just to show it.
+00:21:16,240 --> 00:21:20,240
+Yep. So, this is the iOS app.
 
 501
-00:21:16,240 --> 00:21:20,240
-Just to show it.
-Yep. So, this is the iOS app.
-
-502
 00:21:20,240 --> 00:21:31,350
-Yep. So, this is the iOS app.
 Suppose I should
 
-503
+502
 00:21:33,110 --> 00:21:35,360
 So yeah, it's it's functionally speaking
 just it's the same code just it's
 
-504
+503
 00:21:35,360 --> 00:21:38,240
-just it's the same code just it's
 deployed to a w the mobile apps
+
+504
+00:21:38,240 --> 00:21:41,200
+are just wrappers that will run the
 
 505
-00:21:38,240 --> 00:21:41,200
-deployed to a w the mobile apps
-are just wrappers that will run the
+00:21:41,200 --> 00:21:43,440
+bLocksmith code
 
 506
-00:21:41,200 --> 00:21:43,440
-are just wrappers that will run the
-bLocksmith code
+00:21:43,440 --> 00:21:46,480
+and yeah it's just this functionally
 
 507
-00:21:43,440 --> 00:21:46,480
-bLocksmith code
-and yeah it's just this functionally
+00:21:46,480 --> 00:21:50,400
+the same experience on any of the
 
 508
-00:21:46,480 --> 00:21:50,400
-and yeah it's just this functionally
-the same experience on any of the
+00:21:50,400 --> 00:21:53,120
+devices and that's right I have not
 
 509
-00:21:50,400 --> 00:21:53,120
-the same experience on any of the
-devices and that's right I have not
+00:21:53,120 --> 00:21:54,480
+fixed this yet.
 
 510
-00:21:53,120 --> 00:21:54,480
-devices and that's right I have not
-fixed this yet.
+00:21:54,480 --> 00:21:56,320
+So, I'm noticing that this looks very
 
 511
-00:21:54,480 --> 00:21:56,320
-fixed this yet.
-So, I'm noticing that this looks very
+00:21:56,320 --> 00:21:59,520
+similar to the flat UI. It's And I know
 
 512
-00:21:56,320 --> 00:21:59,520
-So, I'm noticing that this looks very
-similar to the flat UI. It's And I know
+00:21:59,520 --> 00:22:01,039
+it's Pyite 6.
 
 513
-00:21:59,520 --> 00:22:01,039
-similar to the flat UI. It's And I know
-it's Pyite 6.
+00:22:01,039 --> 00:22:02,640
+Mhm.
 
 514
-00:22:01,039 --> 00:22:02,640
-it's Pyite 6.
-Mhm.
+00:22:02,640 --> 00:22:05,200
+Yeah. Well, healthcare basically just
 
 515
-00:22:02,640 --> 00:22:05,200
-Mhm.
-Yeah. Well, healthcare basically just
+00:22:05,200 --> 00:22:07,520
+translated the flat app into Pyite 6.
 
 516
-00:22:05,200 --> 00:22:07,520
-Yeah. Well, healthcare basically just
-translated the flat app into Pyite 6.
+00:22:07,520 --> 00:22:11,039
+Okay. So, the flat app is,
 
 517
-00:22:07,520 --> 00:22:11,039
-translated the flat app into Pyite 6.
-Okay. So, the flat app is,
+00:22:11,039 --> 00:22:13,280
+right? I just wondered if it was I guess
 
 518
-00:22:11,039 --> 00:22:13,280
-Okay. So, the flat app is,
-right? I just wondered if it was I guess
+00:22:13,280 --> 00:22:16,000
+did they lift the CSS styling when they
 
 519
-00:22:13,280 --> 00:22:16,000
-right? I just wondered if it was I guess
-did they lift the CSS styling when they
+00:22:16,000 --> 00:22:18,559
+This is CS. Yeah, I just I left it as
 
 520
-00:22:16,000 --> 00:22:18,559
-did they lift the CSS styling when they
-This is CS. Yeah, I just I left it as
+00:22:18,559 --> 00:22:22,240
+close as it to what it was.
 
 521
-00:22:18,559 --> 00:22:22,240
-This is CS. Yeah, I just I left it as
-close as it to what it was.
-
-522
 00:22:22,240 --> 00:22:37,990
-close as it to what it was.
 Okay.
 
-523
+522
 00:22:39,990 --> 00:22:41,039
 Good jokes.
 Nice work.
 
-524
+523
 00:22:41,039 --> 00:22:43,520
-Nice work.
 Thank you.
 

@@ -1,176 +1,142 @@
-﻿1
+1
 00:00:07,310 --> 00:00:10,240
 All right, so this is a developer focus
 description for the async the runtime
 
 2
 00:00:10,240 --> 00:00:12,200
-description for the async the runtime
 foundation of KERI pie.
 
 3
 00:00:12,200 --> 00:00:13,680
-foundation of KERI pie.
 And what this is that's essentially
 
 4
 00:00:13,680 --> 00:00:15,400
-And what this is that's essentially
 what's the process, what's the execution
 
 5
 00:00:15,400 --> 00:00:17,800
-what's the process, what's the execution
 model, how does this run?
 
 6
 00:00:17,800 --> 00:00:19,040
-model, how does this run?
 And
 
 7
 00:00:19,040 --> 00:00:20,920
-And
 if I'm going to read the source code,
 
 8
 00:00:20,920 --> 00:00:23,360
-if I'm going to read the source code,
 what do I need to know
 
 9
 00:00:23,360 --> 00:00:24,480
-what do I need to know
 in order for me to effectively
 
 10
 00:00:24,480 --> 00:00:26,000
-in order for me to effectively
 contribute
 
 11
 00:00:26,000 --> 00:00:28,040
-contribute
 to the KERI pie code base.
 
 12
 00:00:28,040 --> 00:00:30,400
-to the KERI pie code base.
 And to learn it or to extend it.
 
 13
 00:00:30,400 --> 00:00:32,840
-And to learn it or to extend it.
 And hopefully by the end of this
 
 14
 00:00:32,840 --> 00:00:34,960
-And hopefully by the end of this
 presentation you will have enough of a
 
 15
 00:00:34,960 --> 00:00:36,440
-presentation you will have enough of a
 mental map and a mental model to know
 
 16
 00:00:36,440 --> 00:00:38,880
-mental map and a mental model to know
 how to effectively talk to Claude
 
 17
 00:00:38,880 --> 00:00:41,240
-how to effectively talk to Claude
 or code x or another AI in case you need
 
 18
 00:00:41,240 --> 00:00:43,000
-or code x or another AI in case you need
 to go and relearn this later to
 
 19
 00:00:43,000 --> 00:00:44,920
-to go and relearn this later to
 concretize your own learning to anchor
 
 20
 00:00:44,920 --> 00:00:46,000
-concretize your own learning to anchor
 it in
 
 21
 00:00:46,000 --> 00:00:49,520
-it in
 or to potentially extend it, you know?
 
 22
 00:00:49,520 --> 00:00:51,200
-or to potentially extend it, you know?
 So, all right, that's you're we're going
 
 23
 00:00:51,200 --> 00:00:53,000
-So, all right, that's you're we're going
 to go over a lot what structured
 
 24
 00:00:53,000 --> 00:00:55,800
-to go over a lot what structured
 concurrency is, why it matters, how it's
 
 25
 00:00:55,800 --> 00:00:57,320
-concurrency is, why it matters, how it's
 superior
 
 26
 00:00:57,320 --> 00:00:59,600
-superior
 to promises async await
 
 27
 00:00:59,600 --> 00:01:01,600
-to promises async await
 call backs and go to.
 
 28
 00:01:01,600 --> 00:01:04,160
-call backs and go to.
 And then some common gotchas for when
 
 29
 00:01:04,160 --> 00:01:06,160
-And then some common gotchas for when
 you're trying to use KERI pie and why
 
 30
 00:01:06,160 --> 00:01:08,200
-you're trying to use KERI pie and why
 things are done the way they are.
 
 31
 00:01:08,200 --> 00:01:10,040
-things are done the way they are.
 All right, so
 
 32
 00:01:10,040 --> 00:01:12,760
-All right, so
 hello is it's Evan, right? No, no.
 
 33
 00:01:12,760 --> 00:01:14,000
-hello is it's Evan, right? No, no.
 Keanu.
 
 34
 00:01:14,000 --> 00:01:15,400
-Keanu.
 All right, so you probably know a
 
 35
 00:01:15,400 --> 00:01:19,030
-All right, so you probably know a
 fair bit of this already.
 
 36
@@ -180,27 +146,22 @@ about this before Joe. I was just
 
 37
 00:01:22,000 --> 00:01:23,360
-about this before Joe. I was just
 probably talking to you when we say
 
 38
 00:01:23,360 --> 00:01:26,360
-probably talking to you when we say
 stuff about structured concurrency.
 
 39
 00:01:26,360 --> 00:01:27,920
-stuff about structured concurrency.
 How many would say they're familiar
 
 40
 00:01:27,920 --> 00:01:28,840
-How many would say they're familiar
 enough with
 
 41
 00:01:28,840 --> 00:01:33,470
-enough with
 currency to be able to explain it?
 
 42
@@ -210,7 +171,6 @@ You work at the KERI Foundation.
 
 43
 00:01:37,960 --> 00:01:40,150
-You work at the KERI Foundation.
 Well
 
 44
@@ -224,1547 +184,1238 @@ the only time I've really dove into the
 
 46
 00:01:45,080 --> 00:01:48,880
-the only time I've really dove into the
 code was when we had to port
 
 47
 00:01:48,880 --> 00:01:51,080
-code was when we had to port
 into the web
 
 48
 00:01:51,080 --> 00:01:53,680
-into the web
 base there. Okay. Because we had to use
 
 49
 00:01:53,680 --> 00:01:56,480
-base there. Okay. Because we had to use
 Trio because it was async. It was
 
 50
 00:01:56,480 --> 00:01:58,880
-Trio because it was async. It was
 asynchronous so we had to adapt it
 
 51
 00:01:58,880 --> 00:02:01,080
-asynchronous so we had to adapt it
 because in the weather it was sync, so
 
 52
 00:02:01,080 --> 00:02:03,320
-because in the weather it was sync, so
 we had to convert it and that's what
 
 53
 00:02:03,320 --> 00:02:05,479
-we had to convert it and that's what
 we did in the tutorial,
 
 54
 00:02:05,479 --> 00:02:07,040
-we did in the tutorial,
 but I don't want to
 
 55
 00:02:07,040 --> 00:02:08,679
-but I don't want to
 Say something that is completely
 
 56
 00:02:08,679 --> 00:02:11,320
-Say something that is completely
 wrong, so Okay, I see.
 
 57
 00:02:11,320 --> 00:02:12,920
-wrong, so Okay, I see.
 Okay.
 
 58
 00:02:12,920 --> 00:02:14,440
-Okay.
 So this is this will be valuable for you
 
 59
 00:02:14,440 --> 00:02:16,080
-So this is this will be valuable for you
 then because maybe you haven't had as
 
 60
 00:02:16,080 --> 00:02:17,760
-then because maybe you haven't had as
 much experience with the Trio async
 
 61
 00:02:17,760 --> 00:02:19,120
-much experience with the Trio async
 runtime.
 
 62
 00:02:19,120 --> 00:02:21,760
-runtime.
 Great cuz my if I even if I have one
 
 63
 00:02:21,760 --> 00:02:23,760
-Great cuz my if I even if I have one
 more programmer
 
 64
 00:02:23,760 --> 00:02:25,360
-more programmer
 that really deeply understands Trio
 
 65
 00:02:25,360 --> 00:02:27,480
-that really deeply understands Trio
 after this, that will be good because I
 
 66
 00:02:27,480 --> 00:02:28,520
-after this, that will be good because I
 got to get this knowledge out of my
 
 67
 00:02:28,520 --> 00:02:30,040
-got to get this knowledge out of my
 brain.
 
 68
 00:02:30,040 --> 00:02:31,720
-brain.
 Who's going to ask a question? So I
 
 69
 00:02:31,720 --> 00:02:33,640
-Who's going to ask a question? So I
 think structured concurrency is just
 
 70
 00:02:33,640 --> 00:02:35,320
-think structured concurrency is just
 multi-threading and then how you
 
 71
 00:02:35,320 --> 00:02:37,160
-multi-threading and then how you
 actually come to a
 
 72
 00:02:37,160 --> 00:02:38,880
-actually come to a
 finality?
 
 73
 00:02:38,880 --> 00:02:40,120
-finality?
 It's a good question. You're going in
 
 74
 00:02:40,120 --> 00:02:41,240
-It's a good question. You're going in
 the right direction. It's not
 
 75
 00:02:41,240 --> 00:02:43,560
-the right direction. It's not
 multi-threading. Okay. Are you familiar
 
 76
 00:02:43,560 --> 00:02:45,840
-multi-threading. Okay. Are you familiar
 with co- go co-routines?
 
 77
 00:02:45,840 --> 00:02:48,200
-with co- go co-routines?
 Not in Python, no. So it's a lightweight
 
 78
 00:02:48,200 --> 00:02:51,400
-Not in Python, no. So it's a lightweight
 co-routine construct from go lang. I
 
 79
 00:02:51,400 --> 00:02:53,320
-co-routine construct from go lang. I
 just said the go co-routines. A lot of
 
 80
 00:02:53,320 --> 00:02:55,000
-just said the go co-routines. A lot of
 people one of the reasons why go became
 
 81
 00:02:55,000 --> 00:02:57,120
-people one of the reasons why go became
 so popular is people like the simplicity
 
 82
 00:02:57,120 --> 00:02:59,519
-so popular is people like the simplicity
 of the mental model with go co-routines.
 
 83
 00:02:59,519 --> 00:03:02,360
-of the mental model with go co-routines.
 Python co-routines are actually better
 
 84
 00:03:02,360 --> 00:03:04,080
-Python co-routines are actually better
 than go co-routines in my opinion, the
 
 85
 00:03:04,080 --> 00:03:06,880
-than go co-routines in my opinion, the
 way Sam uses them in Trio.
 
 86
 00:03:06,880 --> 00:03:09,600
-way Sam uses them in Trio.
 So if you want to think about what the
 
 87
 00:03:09,600 --> 00:03:11,560
-So if you want to think about what the
 unit the base fundamental unit of
 
 88
 00:03:11,560 --> 00:03:13,800
-unit the base fundamental unit of
 concurrency in a structured concurrency
 
 89
 00:03:13,800 --> 00:03:17,120
-concurrency in a structured concurrency
 framework is, it's a co-routine
 
 90
 00:03:17,120 --> 00:03:19,000
-framework is, it's a co-routine
 that is cooperative with the other
 
 91
 00:03:19,000 --> 00:03:21,800
-that is cooperative with the other
 co-routines. Usually a thread
 
 92
 00:03:21,800 --> 00:03:23,959
-co-routines. Usually a thread
 you'll have a lot of it's it's like
 
 93
 00:03:23,959 --> 00:03:25,800
-you'll have a lot of it's it's like
 a fundamental
 
 94
 00:03:25,800 --> 00:03:27,600
-a fundamental
 construct where it doesn't matter if you
 
 95
 00:03:27,600 --> 00:03:29,440
-construct where it doesn't matter if you
 block within one thread and the reason
 
 96
 00:03:29,440 --> 00:03:31,080
-block within one thread and the reason
 why you use threads is because you want
 
 97
 00:03:31,080 --> 00:03:34,400
-why you use threads is because you want
 to have a main thread that's not blocked
 
 98
 00:03:34,400 --> 00:03:36,959
-to have a main thread that's not blocked
 by work that will block that you put to
 
 99
 00:03:36,959 --> 00:03:39,440
-by work that will block that you put to
 another thread.
 
 100
 00:03:39,440 --> 00:03:42,120
-another thread.
 If you want to adopt the mindset of
 
 101
 00:03:42,120 --> 00:03:44,120
-If you want to adopt the mindset of
 structured concurrency, you need to
 
 102
 00:03:44,120 --> 00:03:46,800
-structured concurrency, you need to
 think from a non-blocking mindset. Often
 
 103
 00:03:46,800 --> 00:03:49,920
-think from a non-blocking mindset. Often
 it's called a reactive mindset. So zero
 
 104
 00:03:49,920 --> 00:03:53,519
-it's called a reactive mindset. So zero
 of the co-routines should block.
 
 105
 00:03:53,519 --> 00:03:54,640
-of the co-routines should block.
 And you might wonder, how is that
 
 106
 00:03:54,640 --> 00:03:55,640
-And you might wonder, how is that
 possible?
 
 107
 00:03:55,640 --> 00:03:58,200
-possible?
 The way this is implemented at the IO
 
 108
 00:03:58,200 --> 00:04:01,800
-The way this is implemented at the IO
 level with network IO and file IO
 
 109
 00:04:01,800 --> 00:04:04,480
-level with network IO and file IO
 is in a fundamentally non-blocking way.
 
 110
 00:04:04,480 --> 00:04:05,920
-is in a fundamentally non-blocking way.
 What and how do you do that? You
 
 111
 00:04:05,920 --> 00:04:08,200
-What and how do you do that? You
 essentially chop up your IO reads and
 
 112
 00:04:08,200 --> 00:04:10,840
-essentially chop up your IO reads and
 writes into chunks and then you So,
 
 113
 00:04:10,840 --> 00:04:14,080
-writes into chunks and then you So,
 it'll be blocking ever so slightly to
 
 114
 00:04:14,080 --> 00:04:15,800
-it'll be blocking ever so slightly to
 process one chunk and then it'll move
 
 115
 00:04:15,800 --> 00:04:16,840
-process one chunk and then it'll move
 on.
 
 116
 00:04:16,840 --> 00:04:19,160
-on.
 But it's fast enough, right?
 
 117
 00:04:19,160 --> 00:04:20,720
-But it's fast enough, right?
 Exactly. It doesn't like it's like it
 
 118
 00:04:20,720 --> 00:04:22,280
-Exactly. It doesn't like it's like it
 doesn't really block.
 
 119
 00:04:22,280 --> 00:04:23,680
-doesn't really block.
 And not only that, but if you look
 
 120
 00:04:23,680 --> 00:04:25,760
-And not only that, but if you look
 at the low-level socket implementation
 
 121
 00:04:25,760 --> 00:04:27,560
-at the low-level socket implementation
 in Hio,
 
 122
 00:04:27,560 --> 00:04:29,360
-in Hio,
 it's it waits for a chunk and if
 
 123
 00:04:29,360 --> 00:04:31,200
-it's it waits for a chunk and if
 there's an error, it just waits and then
 
 124
 00:04:31,200 --> 00:04:32,960
-there's an error, it just waits and then
 schedules itself for the next cycle of
 
 125
 00:04:32,960 --> 00:04:34,840
-schedules itself for the next cycle of
 the root scheduler to schedule that
 
 126
 00:04:34,840 --> 00:04:36,880
-the root scheduler to schedule that
 co-routine again.
 
 127
 00:04:36,880 --> 00:04:38,400
-co-routine again.
 Okay. So,
 
 128
 00:04:38,400 --> 00:04:39,520
-Okay. So,
 we're we're still at the first two
 
 129
 00:04:39,520 --> 00:04:42,040
-we're we're still at the first two
 slides two slides, so you're good.
 
 130
 00:04:42,040 --> 00:04:43,320
-slides two slides, so you're good.
 So, we're talking about what structured
 
 131
 00:04:43,320 --> 00:04:45,480
-So, we're talking about what structured
 concurrency is. The fundamental unit of
 
 132
 00:04:45,480 --> 00:04:46,880
-concurrency is. The fundamental unit of
 structured concurrency, which we will
 
 133
 00:04:46,880 --> 00:04:48,560
-structured concurrency, which we will
 beat to death
 
 134
 00:04:48,560 --> 00:04:50,800
-beat to death
 in the rest of this as a doer, it's a
 
 135
 00:04:50,800 --> 00:04:52,360
-in the rest of this as a doer, it's a
 co-routine.
 
 136
 00:04:52,360 --> 00:04:54,440
-co-routine.
 A non-blocking co-routine. And if you
 
 137
 00:04:54,440 --> 00:04:56,840
-A non-blocking co-routine. And if you
 look at the readme of Hio that we're
 
 138
 00:04:56,840 --> 00:04:58,760
-look at the readme of Hio that we're
 diving into, it says,
 
 139
 00:04:58,760 --> 00:05:01,240
-diving into, it says,
 a waitless hierarchical structured
 
 140
 00:05:01,240 --> 00:05:03,919
-a waitless hierarchical structured
 concurrent cooperative concurrency
 
 141
 00:05:03,919 --> 00:05:05,600
-concurrent cooperative concurrency
 runtime.
 
 142
 00:05:05,600 --> 00:05:06,960
-runtime.
 Now, you might say, let's dive deep into
 
 143
 00:05:06,960 --> 00:05:08,600
-Now, you might say, let's dive deep into
 structured concurrency. Well, let's go
 
 144
 00:05:08,600 --> 00:05:11,120
-structured concurrency. Well, let's go
 all the way back to 1968.
 
 145
 00:05:11,120 --> 00:05:14,800
-all the way back to 1968.
 You might have heard of Edgar Dijkstra.
 
 146
 00:05:14,800 --> 00:05:16,800
-You might have heard of Edgar Dijkstra.
 He's very popular in the computer
 
 147
 00:05:16,800 --> 00:05:18,080
-He's very popular in the computer
 science space. There's a Dijkstra
 
 148
 00:05:18,080 --> 00:05:19,600
-science space. There's a Dijkstra
 pathfinding algorithm and lot lots of
 
 149
 00:05:19,600 --> 00:05:20,880
-pathfinding algorithm and lot lots of
 other things.
 
 150
 00:05:20,880 --> 00:05:23,040
-other things.
 He wrote an article back in 1968 that
 
 151
 00:05:23,040 --> 00:05:24,880
-He wrote an article back in 1968 that
 says, go to statement considered
 
 152
 00:05:24,880 --> 00:05:26,480
-says, go to statement considered
 harmful.
 
 153
 00:05:26,480 --> 00:05:27,720
-harmful.
 And it's actually not that long. This is
 
 154
 00:05:27,720 --> 00:05:29,880
-And it's actually not that long. This is
 the whole article, this page and this
 
 155
 00:05:29,880 --> 00:05:30,880
-the whole article, this page and this
 page.
 
 156
 00:05:30,880 --> 00:05:33,240
-page.
 And he says a key part statement, the
 
 157
 00:05:33,240 --> 00:05:35,360
-And he says a key part statement, the
 unbridled use
 
 158
 00:05:35,360 --> 00:05:37,760
-unbridled use
 of the go to statement
 
 159
 00:05:37,760 --> 00:05:40,560
-of the go to statement
 has an immediate consequence that it
 
 160
 00:05:40,560 --> 00:05:42,680
-has an immediate consequence that it
 becomes terribly hard
 
 161
 00:05:42,680 --> 00:05:45,040
-becomes terribly hard
 to find a meaningful set of coordinates
 
 162
 00:05:45,040 --> 00:05:47,040
-to find a meaningful set of coordinates
 in which to describe the process
 
 163
 00:05:47,040 --> 00:05:49,000
-in which to describe the process
 progress. He's trying to say this is
 
 164
 00:05:49,000 --> 00:05:50,320
-progress. He's trying to say this is
 very difficult to understand from a
 
 165
 00:05:50,320 --> 00:05:52,760
-very difficult to understand from a
 procedural standpoint where I'm at in my
 
 166
 00:05:52,760 --> 00:05:54,560
-procedural standpoint where I'm at in my
 procedure if I've got go-to statements
 
 167
 00:05:54,560 --> 00:05:57,320
-procedure if I've got go-to statements
 that could take me to arbitrary places.
 
 168
 00:05:57,320 --> 00:06:00,160
-that could take me to arbitrary places.
 And we'll we'll give you a bit of a
 
 169
 00:06:00,160 --> 00:06:01,920
-And we'll we'll give you a bit of a
 I'm going to give you a visual here. So,
 
 170
 00:06:01,920 --> 00:06:03,760
-I'm going to give you a visual here. So,
 this is flowmatic. It's it's it's it's
 
 171
 00:06:03,760 --> 00:06:05,360
-this is flowmatic. It's it's it's it's
 like basic. It's like some of the early
 
 172
 00:06:05,360 --> 00:06:06,920
-like basic. It's like some of the early
 programming languages and
 
 173
 00:06:06,920 --> 00:06:09,640
-programming languages and
 this is a jump, but a jump is a go-to.
 
 174
 00:06:09,640 --> 00:06:10,680
-this is a jump, but a jump is a go-to.
 And it's saying, "Okay, when you get
 
 175
 00:06:10,680 --> 00:06:11,920
-And it's saying, "Okay, when you get
 down here, if this set of conditions
 
 176
 00:06:11,920 --> 00:06:14,320
-down here, if this set of conditions
 happens, go to operation two."
 
 177
 00:06:14,320 --> 00:06:17,280
-happens, go to operation two."
 Well, that seems like it might be okay
 
 178
 00:06:17,280 --> 00:06:19,919
-Well, that seems like it might be okay
 till you get a lot of go-to statements.
 
 179
 00:06:19,919 --> 00:06:21,600
-till you get a lot of go-to statements.
 And now how do you how do you
 
 180
 00:06:21,600 --> 00:06:23,360
-And now how do you how do you
 how do you understand what the
 
 181
 00:06:23,360 --> 00:06:24,960
-how do you understand what the
 boundaries are here?
 
 182
 00:06:24,960 --> 00:06:26,360
-boundaries are here?
 Have you ever heard of solid programming
 
 183
 00:06:26,360 --> 00:06:28,520
-Have you ever heard of solid programming
 principles? Highly cohesive, loosely
 
 184
 00:06:28,520 --> 00:06:30,400
-principles? Highly cohesive, loosely
 coupled? Where's the loose coupling?
 
 185
 00:06:30,400 --> 00:06:31,880
-coupled? Where's the loose coupling?
 That looks like tight coupling spaghetti
 
 186
 00:06:31,880 --> 00:06:33,080
-That looks like tight coupling spaghetti
 code.
 
 187
 00:06:33,080 --> 00:06:34,720
-code.
 Right? Well, that's where the name
 
 188
 00:06:34,720 --> 00:06:36,280
-Right? Well, that's where the name
 spaghetti code came from. Right. We
 
 189
 00:06:36,280 --> 00:06:38,160
-spaghetti code came from. Right. We
 don't like this. This is bad. This is
 
 190
 00:06:38,160 --> 00:06:40,080
-don't like this. This is bad. This is
 hard on humans. It's hard on LLMs.
 
 191
 00:06:40,080 --> 00:06:42,240
-hard on humans. It's hard on LLMs.
 Nobody likes it.
 
 192
 00:06:42,240 --> 00:06:44,160
-Nobody likes it.
 Now, the reason if we go back to couple
 
 193
 00:06:44,160 --> 00:06:45,160
-Now, the reason if we go back to couple
 slides,
 
 194
 00:06:45,160 --> 00:06:49,320
-slides,
 so go-to, the go statement in go for go
 
 195
 00:06:49,320 --> 00:06:51,280
-so go-to, the go statement in go for go
 promises, callbacks,
 
 196
 00:06:51,280 --> 00:06:53,720
-promises, callbacks,
 they're all variations, if you look at
 
 197
 00:06:53,720 --> 00:06:55,520
-they're all variations, if you look at
 them closely,
 
 198
 00:06:55,520 --> 00:06:57,800
-them closely,
 of a go-to statement. And they the
 
 199
 00:06:57,800 --> 00:07:00,240
-of a go-to statement. And they the
 problem is they break abstractions.
 
 200
 00:07:00,240 --> 00:07:02,680
-problem is they break abstractions.
 We as programmers endeavor
 
 201
 00:07:02,680 --> 00:07:04,160
-We as programmers endeavor
 persistently
 
 202
 00:07:04,160 --> 00:07:06,240
-persistently
 to have clean abstractions that let us
 
 203
 00:07:06,240 --> 00:07:08,240
-to have clean abstractions that let us
 reason about the complexity of a
 
 204
 00:07:08,240 --> 00:07:09,600
-reason about the complexity of a
 system that we're modeling. Like Sam
 
 205
 00:07:09,600 --> 00:07:11,760
-system that we're modeling. Like Sam
 said earlier yesterday, all models are
 
 206
 00:07:11,760 --> 00:07:13,360
-said earlier yesterday, all models are
 wrong, but some are more useful some are
 
 207
 00:07:13,360 --> 00:07:14,520
-wrong, but some are more useful some are
 useful.
 
 208
 00:07:14,520 --> 00:07:16,400
-useful.
 All of our models of abstractions of the
 
 209
 00:07:16,400 --> 00:07:18,320
-All of our models of abstractions of the
 real world are wrong, but they're useful
 
 210
 00:07:18,320 --> 00:07:20,280
-real world are wrong, but they're useful
 to accomplish a certain end. They're
 
 211
 00:07:20,280 --> 00:07:22,200
-to accomplish a certain end. They're
 abstractions.
 
 212
 00:07:22,200 --> 00:07:23,600
-abstractions.
 We try really hard with software
 
 213
 00:07:23,600 --> 00:07:26,240
-We try really hard with software
 architecture to have invariants about
 
 214
 00:07:26,240 --> 00:07:28,440
-architecture to have invariants about
 abstractions, conditions that are true
 
 215
 00:07:28,440 --> 00:07:29,840
-abstractions, conditions that are true
 no matter where our system is at. And we
 
 216
 00:07:29,840 --> 00:07:34,640
-no matter where our system is at. And we
 create state machines to ever so
 
 217
 00:07:34,640 --> 00:07:36,480
-create state machines to ever so
 specifically describe the behavior in
 
 218
 00:07:36,480 --> 00:07:38,080
-specifically describe the behavior in
 the states of our system.
 
 219
 00:07:38,080 --> 00:07:40,080
-the states of our system.
 Well, that only works if our
 
 220
 00:07:40,080 --> 00:07:41,880
-Well, that only works if our
 abstractions are stable.
 
 221
 00:07:41,880 --> 00:07:44,280
-abstractions are stable.
 Go to break sub fractions,
 
 222
 00:07:44,280 --> 00:07:46,480
-Go to break sub fractions,
 which means So, if you want to If you
 
 223
 00:07:46,480 --> 00:07:47,560
-which means So, if you want to If you
 want to look at So, that's what There's
 
 224
 00:07:47,560 --> 00:07:49,400
-want to look at So, that's what There's
 a very good article by a man named
 
 225
 00:07:49,400 --> 00:07:50,960
-a very good article by a man named
 Nathaniel J. Smith, not related to Sam
 
 226
 00:07:50,960 --> 00:07:52,080
-Nathaniel J. Smith, not related to Sam
 Smith,
 
 227
 00:07:52,080 --> 00:07:54,160
-Smith,
 where he talks about structured
 
 228
 00:07:54,160 --> 00:07:55,520
-where he talks about structured
 concurrency
 
 229
 00:07:55,520 --> 00:07:57,760
-concurrency
 in the context of a go to statements in
 
 230
 00:07:57,760 --> 00:07:58,800
-in the context of a go to statements in
 in the context of structured
 
 231
 00:07:58,800 --> 00:08:00,760
-in the context of structured
 concurrency. And he talks about
 
 232
 00:08:00,760 --> 00:08:03,040
-concurrency. And he talks about
 That's where this picture comes from.
 
 233
 00:08:03,040 --> 00:08:05,920
-That's where this picture comes from.
 He shows you how effectively a promise,
 
 234
 00:08:05,920 --> 00:08:08,320
-He shows you how effectively a promise,
 whether it's a JavaScript promise
 
 235
 00:08:08,320 --> 00:08:10,000
-whether it's a JavaScript promise
 or a
 
 236
 00:08:10,000 --> 00:08:12,120
-or a
 which is async await in JavaScript,
 
 237
 00:08:12,120 --> 00:08:14,000
-which is async await in JavaScript,
 or in Python, where you have async
 
 238
 00:08:14,000 --> 00:08:16,840
-or in Python, where you have async
 await, they're go to statements.
 
 239
 00:08:16,840 --> 00:08:18,280
-await, they're go to statements.
 They really are.
 
 240
 00:08:18,280 --> 00:08:19,720
-They really are.
 And I'm not going to go into the deep
 
 241
 00:08:19,720 --> 00:08:21,520
-And I'm not going to go into the deep
 So, we have so much to cover today. I'm
 
 242
 00:08:21,520 --> 00:08:22,640
-So, we have so much to cover today. I'm
 not going to You just go read the
 
 243
 00:08:22,640 --> 00:08:24,600
-not going to You just go read the
 article. It's It height You're going to
 
 244
 00:08:24,600 --> 00:08:26,120
-article. It's It height You're going to
 be so happy you read the article. Let me
 
 245
 00:08:26,120 --> 00:08:27,400
-be so happy you read the article. Let me
 go to
 
 246
 00:08:27,400 --> 00:08:28,520
-go to
 There's actually a couple of articles
 
 247
 00:08:28,520 --> 00:08:30,280
-There's actually a couple of articles
 cuz he talks about what about timeouts
 
 248
 00:08:30,280 --> 00:08:32,120
-cuz he talks about what about timeouts
 and cancellations. How do we How do we
 
 249
 00:08:32,120 --> 00:08:33,640
-and cancellations. How do we How do we
 thread that through the code without
 
 250
 00:08:33,640 --> 00:08:35,200
-thread that through the code without
 making it explode and blow up and look
 
 251
 00:08:35,200 --> 00:08:37,880
-making it explode and blow up and look
 ugly? This right here, vorpus.org blog,
 
 252
 00:08:37,880 --> 00:08:39,000
-ugly? This right here, vorpus.org blog,
 just search no sun structured
 
 253
 00:08:39,000 --> 00:08:40,240
-just search no sun structured
 concurrency. You'll get these at You can
 
 254
 00:08:40,240 --> 00:08:41,640
-concurrency. You'll get these at You can
 take a picture now or get it with the
 
 255
 00:08:41,640 --> 00:08:42,760
-take a picture now or get it with the
 digest that Kim's going to give
 
 256
 00:08:42,760 --> 00:08:44,360
-digest that Kim's going to give
 everybody later. This link is in the
 
 257
 00:08:44,360 --> 00:08:45,800
-everybody later. This link is in the
 notes.
 
 258
 00:08:45,800 --> 00:08:49,160
-notes.
 What's fascinating is that Samuel Smith and
 
 259
 00:08:49,160 --> 00:08:52,000
-What's fascinating is that Samuel Smith and
 another excellent engineer, Charles
 
 260
 00:08:52,000 --> 00:08:53,920
-another excellent engineer, Charles
 Lowell, who wrote affection, which is a
 
 261
 00:08:53,920 --> 00:08:56,360
-Lowell, who wrote affection, which is a
 structured concurrency library in
 
 262
 00:08:56,360 --> 00:08:59,000
-structured concurrency library in
 JavaScript, also TypeScript, they both
 
 263
 00:08:59,000 --> 00:09:01,920
-JavaScript, also TypeScript, they both
 cite this article as their inspiration.
 
 264
 00:09:01,920 --> 00:09:04,400
-cite this article as their inspiration.
 I highly recommend and in the
 
 265
 00:09:04,400 --> 00:09:06,320
-I highly recommend and in the
 wallet that I put out
 
 266
 00:09:06,320 --> 00:09:08,040
-wallet that I put out
 in preparation for yesterday's talk on
 
 267
 00:09:08,040 --> 00:09:09,400
-in preparation for yesterday's talk on
 KERIA,
 
 268
 00:09:09,400 --> 00:09:11,120
-KERIA,
 it's a job TypeScript application. It
 
 269
 00:09:11,120 --> 00:09:13,440
-it's a job TypeScript application. It
 uses affection structured concurrency.
 
 270
 00:09:13,440 --> 00:09:14,600
-uses affection structured concurrency.
 And we'll see a little bit of that code
 
 271
 00:09:14,600 --> 00:09:16,560
-And we'll see a little bit of that code
 later in this presentation.
 
 272
 00:09:16,560 --> 00:09:18,320
-later in this presentation.
 So, you If you want to understand in
 
 273
 00:09:18,320 --> 00:09:22,640
-So, you If you want to understand in
 precise intricate detail why promises,
 
 274
 00:09:22,640 --> 00:09:24,120
-precise intricate detail why promises,
 callbacks,
 
 275
 00:09:24,120 --> 00:09:26,880
-callbacks,
 the go channel go lane go channels are
 
 276
 00:09:26,880 --> 00:09:28,720
-the go channel go lane go channels are
 different kinds of
 
 277
 00:09:28,720 --> 00:09:30,880
-different kinds of
 go to statements expresses concurrency
 
 278
 00:09:30,880 --> 00:09:33,000
-go to statements expresses concurrency
 constructs, read this article. And
 
 279
 00:09:33,000 --> 00:09:34,120
-constructs, read this article. And
 you'll At the end of it, you'll be
 
 280
 00:09:34,120 --> 00:09:36,080
-you'll At the end of it, you'll be
 disgusted with the different kind of go
 
 281
 00:09:36,080 --> 00:09:37,720
-disgusted with the different kind of go
 to statements. And you'll say, "How can
 
 282
 00:09:37,720 --> 00:09:40,560
-to statements. And you'll say, "How can
 I repair my abstractions? How can I have
 
 283
 00:09:40,560 --> 00:09:43,120
-I repair my abstractions? How can I have
 clean abstractions?" Highly recommend
 
 284
 00:09:43,120 --> 00:09:44,360
-clean abstractions?" Highly recommend
 this article. You're just going to love
 
 285
 00:09:44,360 --> 00:09:46,400
-this article. You're just going to love
 it. It's kind of kind of long, so you
 
 286
 00:09:46,400 --> 00:09:48,120
-it. It's kind of kind of long, so you
 get a nice refreshment or give
 
 287
 00:09:48,120 --> 00:09:49,680
-get a nice refreshment or give
 yourself an hour or two.
 
 288
 00:09:49,680 --> 00:09:51,080
-yourself an hour or two.
 Okay, so we feel like we understand
 
 289
 00:09:51,080 --> 00:09:52,840
-Okay, so we feel like we understand
 So, what is structured concurrency? Let
 
 290
 00:09:52,840 --> 00:09:56,000
-So, what is structured concurrency? Let
 me get Let me jump forward to a couple.
 
 291
 00:09:56,000 --> 00:09:57,680
-me get Let me jump forward to a couple.
 There's a Let's see, do we have
 
 292
 00:09:57,680 --> 00:09:59,480
-There's a Let's see, do we have
 it? It's a little bit further down.
 
 293
 00:09:59,480 --> 00:10:01,320
-it? It's a little bit further down.
 Sam has a nice I should have brought
 
 294
 00:10:01,320 --> 00:10:03,880
-Sam has a nice I should have brought
 over So, I'll I'll show you sort of
 
 295
 00:10:03,880 --> 00:10:07,080
-over So, I'll I'll show you sort of
 this is a borrowed diagram from Sam
 
 296
 00:10:07,080 --> 00:10:08,360
-this is a borrowed diagram from Sam
 Smith.
 
 297
 00:10:08,360 --> 00:10:10,240
-Smith.
 So, with anything, what So, what's
 
 298
 00:10:10,240 --> 00:10:11,280
-So, with anything, what So, what's
 interesting, you might say, "Well, let's
 
 299
 00:10:11,280 --> 00:10:13,840
-interesting, you might say, "Well, let's
 talk about root Python, the async
 
 300
 00:10:13,840 --> 00:10:15,560
-talk about root Python, the async
 await." What it is the asyncio has an
 
 301
 00:10:15,560 --> 00:10:18,000
-await." What it is the asyncio has an
 event loop, and the event loop runs any
 
 302
 00:10:18,000 --> 00:10:19,800
-event loop, and the event loop runs any
 function that has async in the function,
 
 303
 00:10:19,800 --> 00:10:22,080
-function that has async in the function,
 right? That's how So, the way in Python
 
 304
 00:10:22,080 --> 00:10:24,800
-right? That's how So, the way in Python
 you use their native async support
 
 305
 00:10:24,800 --> 00:10:26,640
-you use their native async support
 is it's that it'll just run a
 
 306
 00:10:26,640 --> 00:10:28,520
-is it's that it'll just run a
 generator for you. And the way you
 
 307
 00:10:28,520 --> 00:10:30,560
-generator for you. And the way you
 declare a function as a generator is you
 
 308
 00:10:30,560 --> 00:10:33,040
-declare a function as a generator is you
 mark it an async function.
 
 309
 00:10:33,040 --> 00:10:34,960
-mark it an async function.
 The async function is the only way you
 
 310
 00:10:34,960 --> 00:10:36,320
-The async function is the only way you
 can run
 
 311
 00:10:36,320 --> 00:10:37,720
-can run
 This is not Hielo. This is just regular
 
 312
 00:10:37,720 --> 00:10:39,520
-This is not Hielo. This is just regular
 Python. The only way you can run an
 
 313
 00:10:39,520 --> 00:10:41,839
-Python. The only way you can run an
 await statement inside of a function is
 
 314
 00:10:41,839 --> 00:10:43,600
-await statement inside of a function is
 if you declare it
 
 315
 00:10:43,600 --> 00:10:46,640
-if you declare it
 with async as async def, right? That's
 
 316
 00:10:46,640 --> 00:10:49,520
-with async as async def, right? That's
 the signal to the Python runtime to plop
 
 317
 00:10:49,520 --> 00:10:52,120
-the signal to the Python runtime to plop
 it into the asyncio event loop,
 
 318
 00:10:52,120 --> 00:10:54,240
-it into the asyncio event loop,
 so it'll get scheduled. If you don't put
 
 319
 00:10:54,240 --> 00:10:55,920
-so it'll get scheduled. If you don't put
 async in front of it,
 
 320
 00:10:55,920 --> 00:10:57,200
-async in front of it,
 it won't get scheduled, and then it'll
 
 321
 00:10:57,200 --> 00:10:59,280
-it won't get scheduled, and then it'll
 never get run. Well, now let's take that
 
 322
 00:10:59,280 --> 00:11:01,240
-never get run. Well, now let's take that
 kind of that mental model, and let's do
 
 323
 00:11:01,240 --> 00:11:03,360
-kind of that mental model, and let's do
 the Hielo version of it.
 
 324
 00:11:03,360 --> 00:11:06,880
-the Hielo version of it.
 The root scheduler is called a doist.
 
 325
 00:11:06,880 --> 00:11:09,000
-The root scheduler is called a doist.
 The doist is what will run all of your
 
 326
 00:11:09,000 --> 00:11:11,400
-The doist is what will run all of your
 async tasks. There are two kinds of
 
 327
 00:11:11,400 --> 00:11:14,080
-async tasks. There are two kinds of
 async tasks in Hielo.
 
 328
 00:11:14,080 --> 00:11:17,120
-async tasks in Hielo.
 There's the do-doer and the doer. Now,
 
 329
 00:11:17,120 --> 00:11:19,640
-There's the do-doer and the doer. Now,
 the do-doer is an aggregation
 
 330
 00:11:19,640 --> 00:11:23,480
-the do-doer is an aggregation
 construct. You can run many child tasks,
 
 331
 00:11:23,480 --> 00:11:25,120
-construct. You can run many child tasks,
 and it can schedule them. So, the
 
 332
 00:11:25,120 --> 00:11:27,040
-and it can schedule them. So, the
 do-doer is like a little bit of a
 
 333
 00:11:27,040 --> 00:11:29,320
-do-doer is like a little bit of a
 combination of a scheduler
 
 334
 00:11:29,320 --> 00:11:31,839
-combination of a scheduler
 and a task. It has a recur It has a
 
 335
 00:11:31,839 --> 00:11:34,160
-and a task. It has a recur It has a
 function where it'll perform work and it
 
 336
 00:11:34,160 --> 00:11:36,040
-function where it'll perform work and it
 has the ability to add more tasks to
 
 337
 00:11:36,040 --> 00:11:37,800
-has the ability to add more tasks to
 itself. You'll see a little bit of
 
 338
 00:11:37,800 --> 00:11:40,200
-itself. You'll see a little bit of
 similarity between Hiero's structured
 
 339
 00:11:40,200 --> 00:11:42,840
-similarity between Hiero's structured
 concurrency design and other async
 
 340
 00:11:42,840 --> 00:11:45,280
-concurrency design and other async
 frameworks like Trio and Curio
 
 341
 00:11:45,280 --> 00:11:47,280
-frameworks like Trio and Curio
 as and affection as we go on. But this
 
 342
 00:11:47,280 --> 00:11:48,920
-as and affection as we go on. But this
 is So at a high-level architecture
 
 343
 00:11:48,920 --> 00:11:50,200
-is So at a high-level architecture
 diagram, this is what we're dealing
 
 344
 00:11:50,200 --> 00:11:53,040
-diagram, this is what we're dealing
 with. Primarily three concepts.
 
 345
 00:11:53,040 --> 00:11:54,800
-with. Primarily three concepts.
 The scheduler,
 
 346
 00:11:54,800 --> 00:11:56,720
-The scheduler,
 a task aggregator that's also a task
 
 347
 00:11:56,720 --> 00:11:57,880
-a task aggregator that's also a task
 itself,
 
 348
 00:11:57,880 --> 00:11:59,440
-itself,
 and a task.
 
 349
 00:11:59,440 --> 00:12:00,960
-and a task.
 This is the fundamental unit of
 
 350
 00:12:00,960 --> 00:12:03,200
-This is the fundamental unit of
 execution in Hiero.
 
 351
 00:12:03,200 --> 00:12:05,720
-execution in Hiero.
 The doer. This is your task.
 
 352
 00:12:05,720 --> 00:12:07,600
-The doer. This is your task.
 You can see this like a task group.
 
 353
 00:12:07,600 --> 00:12:10,720
-You can see this like a task group.
 Schedulable task group.
 
 354
 00:12:10,720 --> 00:12:13,710
-Schedulable task group.
 Okay, and did we talk about
 
 355
@@ -1778,392 +1429,314 @@ fixing this problem.
 
 357
 00:12:18,320 --> 00:12:19,520
-fixing this problem.
 So there's
 
 358
 00:12:19,520 --> 00:12:21,680
-So there's
 Why would we use structured concurrency?
 
 359
 00:12:21,680 --> 00:12:24,080
-Why would we use structured concurrency?
 This slide says a couple of benefits.
 
 360
 00:12:24,080 --> 00:12:25,800
-This slide says a couple of benefits.
 The biggest benefit is my first bullet
 
 361
 00:12:25,800 --> 00:12:29,000
-The biggest benefit is my first bullet
 point here. Program flow or task flow
 
 362
 00:12:29,000 --> 00:12:31,760
-point here. Program flow or task flow
 follows lexical scope. Now, what does
 
 363
 00:12:31,760 --> 00:12:33,280
-follows lexical scope. Now, what does
 that mean?
 
 364
 00:12:33,280 --> 00:12:34,160
-that mean?
 It's
 
 365
 00:12:34,160 --> 00:12:36,240
-It's
 it means that the execution of the
 
 366
 00:12:36,240 --> 00:12:38,280
-it means that the execution of the
 program will follow your intuition as a
 
 367
 00:12:38,280 --> 00:12:39,480
-program will follow your intuition as a
 programmer.
 
 368
 00:12:39,480 --> 00:12:40,760
-programmer.
 You're going to write a function. You
 
 369
 00:12:40,760 --> 00:12:42,839
-You're going to write a function. You
 expect control flow to go from the
 
 370
 00:12:42,839 --> 00:12:45,360
-expect control flow to go from the
 beginning of the function to the end.
 
 371
 00:12:45,360 --> 00:12:47,240
-beginning of the function to the end.
 And when that function is over, you
 
 372
 00:12:47,240 --> 00:12:49,080
-And when that function is over, you
 expect operations you've created in that
 
 373
 00:12:49,080 --> 00:12:51,400
-expect operations you've created in that
 function to have completed. Unless
 
 374
 00:12:51,400 --> 00:12:52,960
-function to have completed. Unless
 you're doing threads or processes, in
 
 375
 00:12:52,960 --> 00:12:56,000
-you're doing threads or processes, in
 which case you might return a handle
 
 376
 00:12:56,000 --> 00:12:58,080
-which case you might return a handle
 from the function to sort of go later,
 
 377
 00:12:58,080 --> 00:13:01,000
-from the function to sort of go later,
 but structured concurrency, usually the
 
 378
 00:13:01,000 --> 00:13:02,480
-but structured concurrency, usually the
 mental model is
 
 379
 00:13:02,480 --> 00:13:04,000
-mental model is
 if I have a function that
 
 380
 00:13:04,000 --> 00:13:06,320
-if I have a function that
 fires off a bunch of tasks,
 
 381
 00:13:06,320 --> 00:13:08,240
-fires off a bunch of tasks,
 all of those should complete by the time
 
 382
 00:13:08,240 --> 00:13:10,520
-all of those should complete by the time
 the function returns. Okay. And so what
 
 383
 00:13:10,520 --> 00:13:11,720
-the function returns. Okay. And so what
 you're doing is you're turning the
 
 384
 00:13:11,720 --> 00:13:13,280
-you're doing is you're turning the
 function
 
 385
 00:13:13,280 --> 00:13:15,839
-function
 into a bit of a almost like a scheduler
 
 386
 00:13:15,839 --> 00:13:17,800
-into a bit of a almost like a scheduler
 of a bunch of subtasks. Are you familiar
 
 387
 00:13:17,800 --> 00:13:19,680
-of a bunch of subtasks. Are you familiar
 with Erlang and a process supervisor?
 
 388
 00:13:19,680 --> 00:13:21,839
-with Erlang and a process supervisor?
 No. Okay. That's a good mental model.
 
 389
 00:13:21,839 --> 00:13:23,520
-No. Okay. That's a good mental model.
 Erlang or Elixir?
 
 390
 00:13:23,520 --> 00:13:25,200
-Erlang or Elixir?
 No. so it's there's a process super
 
 391
 00:13:25,200 --> 00:13:26,640
-No. so it's there's a process super
 supervision model.
 
 392
 00:13:26,640 --> 00:13:28,160
-supervision model.
 But I'll I'll leave that terminology
 
 393
 00:13:28,160 --> 00:13:29,160
-But I'll I'll leave that terminology
 aside.
 
 394
 00:13:29,160 --> 00:13:30,920
-aside.
 The way to think it'll be clearer as
 
 395
 00:13:30,920 --> 00:13:32,600
-The way to think it'll be clearer as
 I get further into the code examples,
 
 396
 00:13:32,600 --> 00:13:33,880
-I get further into the code examples,
 but essentially
 
 397
 00:13:33,880 --> 00:13:35,720
-but essentially
 the idea is that
 
 398
 00:13:35,720 --> 00:13:37,640
-the idea is that
 if I enter into a function
 
 399
 00:13:37,640 --> 00:13:39,880
-if I enter into a function
 and that function has tasks in it,
 
 400
 00:13:39,880 --> 00:13:41,360
-and that function has tasks in it,
 there's a guarantee that structured
 
 401
 00:13:41,360 --> 00:13:43,480
-there's a guarantee that structured
 concurrency provides that all those
 
 402
 00:13:43,480 --> 00:13:46,920
-concurrency provides that all those
 tasks will finish or be canceled
 
 403
 00:13:46,920 --> 00:13:49,680
-tasks will finish or be canceled
 by the time that I leave that function.
 
 404
 00:13:49,680 --> 00:13:52,000
-by the time that I leave that function.
 What that does is now you don't have any
 
 405
 00:13:52,000 --> 00:13:54,640
-What that does is now you don't have any
 So, the promises break this
 
 406
 00:13:54,640 --> 00:13:57,520
-So, the promises break this
 because what happens if
 
 407
 00:13:57,520 --> 00:13:59,080
-because what happens if
 my
 
 408
 00:13:59,080 --> 00:14:02,200
-my
 my outer scope cancels and returns and
 
 409
 00:14:02,200 --> 00:14:03,680
-my outer scope cancels and returns and
 then my promise returns later. Well, now
 
 410
 00:14:03,680 --> 00:14:05,000
-then my promise returns later. Well, now
 it's a different scope. It's a different
 
 411
 00:14:05,000 --> 00:14:07,000
-it's a different scope. It's a different
 function scope. You might use closures
 
 412
 00:14:07,000 --> 00:14:08,440
-function scope. You might use closures
 or other things to try to transfer state
 
 413
 00:14:08,440 --> 00:14:10,640
-or other things to try to transfer state
 to callbacks to promises as a kind
 
 414
 00:14:10,640 --> 00:14:11,920
-to callbacks to promises as a kind
 of a callback.
 
 415
 00:14:11,920 --> 00:14:13,440
-of a callback.
 But, promises break this. So, what
 
 416
 00:14:13,440 --> 00:14:15,680
-But, promises break this. So, what
 essentially what this is saying
 
 417
 00:14:15,680 --> 00:14:16,920
-essentially what this is saying
 is that
 
 418
 00:14:16,920 --> 00:14:20,240
-is that
 your function is a kind of abstraction.
 
 419
 00:14:20,240 --> 00:14:22,120
-your function is a kind of abstraction.
 That function
 
 420
 00:14:22,120 --> 00:14:23,600
-That function
 you're not going to break the boundary
 
 421
 00:14:23,600 --> 00:14:25,160
-you're not going to break the boundary
 of that function cuz by the time that
 
 422
 00:14:25,160 --> 00:14:27,080
-of that function cuz by the time that
 function returns, everything in it will
 
 423
 00:14:27,080 --> 00:14:28,720
-function returns, everything in it will
 be completed and you'll see that in code
 
 424
 00:14:28,720 --> 00:14:30,720
-be completed and you'll see that in code
 in just a minute. Another thing,
 
 425
 00:14:30,720 --> 00:14:33,160
-in just a minute. Another thing,
 so child tasks cannot outlive their
 
 426
 00:14:33,160 --> 00:14:34,680
-so child tasks cannot outlive their
 parent scope.
 
 427
 00:14:34,680 --> 00:14:37,040
-parent scope.
 A function is like a parent scope.
 
 428
 00:14:37,040 --> 00:14:38,920
-A function is like a parent scope.
 All tasks you spawn within that will
 
 429
 00:14:38,920 --> 00:14:41,400
-All tasks you spawn within that will
 finish before their parent returns. And
 
 430
 00:14:41,400 --> 00:14:43,240
-finish before their parent returns. And
 Heo enforces this with the dot done
 
 431
 00:14:43,240 --> 00:14:44,280
-Heo enforces this with the dot done
 attribute. Go ahead.
 
 432
 00:14:44,280 --> 00:14:45,560
-attribute. Go ahead.
 You When you say lexical scope, that
 
 433
 00:14:45,560 --> 00:14:47,080
-You When you say lexical scope, that
 just makes me
 
 434
 00:14:47,080 --> 00:14:52,470
-just makes me
 my brain I go to the program task flow
 
 435
@@ -2177,547 +1750,438 @@ that you declared in that scope go out
 
 437
 00:14:57,240 --> 00:14:58,520
-that you declared in that scope go out
 of scope,
 
 438
 00:14:58,520 --> 00:15:00,640
-of scope,
 the task outflow is also complete. Yes,
 
 439
 00:15:00,640 --> 00:15:02,800
-the task outflow is also complete. Yes,
 exactly. Precisely.
 
 440
 00:15:02,800 --> 00:15:04,800
-exactly. Precisely.
 That's right.
 
 441
 00:15:04,800 --> 00:15:06,800
-That's right.
 Yes. Now, now that's a common structured
 
 442
 00:15:06,800 --> 00:15:08,240
-Yes. Now, now that's a common structured
 closures and stuff. Like, you basically
 
 443
 00:15:08,240 --> 00:15:09,560
-closures and stuff. Like, you basically
 say you don't have to deal with any of
 
 444
 00:15:09,560 --> 00:15:11,000
-say you don't have to deal with any of
 that because
 
 445
 00:15:11,000 --> 00:15:14,120
-that because
 everything happens in context with stuff
 
 446
 00:15:14,120 --> 00:15:15,720
-everything happens in context with stuff
 that's in context with it.
 
 447
 00:15:15,720 --> 00:15:16,960
-that's in context with it.
 Yeah. You don't have to pass any of that
 
 448
 00:15:16,960 --> 00:15:19,000
-Yeah. You don't have to pass any of that
 state around cuz it's
 
 449
 00:15:19,000 --> 00:15:20,560
-state around cuz it's
 you will you just avoid that problem.
 
 450
 00:15:20,560 --> 00:15:22,480
-you will you just avoid that problem.
 Yes, that's correct.
 
 451
 00:15:22,480 --> 00:15:23,240
-Yes, that's correct.
 Okay. This
 
 452
 00:15:23,240 --> 00:15:25,640
-Okay. This
 make sense this seems much more simple.
 
 453
 00:15:25,640 --> 00:15:27,240
-make sense this seems much more simple.
 Exactly.
 
 454
 00:15:27,240 --> 00:15:29,640
-Exactly.
 That's why people use it.
 
 455
 00:15:29,640 --> 00:15:31,320
-That's why people use it.
 That's the whole selling point for
 
 456
 00:15:31,320 --> 00:15:32,400
-That's the whole selling point for
 structured concurrency.
 
 457
 00:15:32,400 --> 00:15:33,880
-structured concurrency.
 But it feels more complicated for some
 
 458
 00:15:33,880 --> 00:15:35,880
-But it feels more complicated for some
 reason. It will Well, well, you know
 
 459
 00:15:35,880 --> 00:15:37,440
-reason. It will Well, well, you know
 Venkat Subramaniam, he's one of the most
 
 460
 00:15:37,440 --> 00:15:39,720
-Venkat Subramaniam, he's one of the most
 popular speakers in the JVM space. He
 
 461
 00:15:39,720 --> 00:15:43,280
-popular speakers in the JVM space. He
 says it's unfamiliar. It's not that it's
 
 462
 00:15:43,280 --> 00:15:45,600
-says it's unfamiliar. It's not that it's
 difficult, it's unfamiliar.
 
 463
 00:15:45,600 --> 00:15:46,680
-difficult, it's unfamiliar.
 Cuz once you learn structured
 
 464
 00:15:46,680 --> 00:15:48,000
-Cuz once you learn structured
 concurrency, you're like, "Oh, that maps
 
 465
 00:15:48,000 --> 00:15:50,160
-concurrency, you're like, "Oh, that maps
 more onto how my brain thinks."
 
 466
 00:15:50,160 --> 00:15:51,800
-more onto how my brain thinks."
 So, there's a little bit of upfront
 
 467
 00:15:51,800 --> 00:15:53,240
-So, there's a little bit of upfront
 learning curve, but then you're like,
 
 468
 00:15:53,240 --> 00:15:55,040
-learning curve, but then you're like,
 "Oh, this is so straightforward. I like
 
 469
 00:15:55,040 --> 00:15:56,200
-"Oh, this is so straightforward. I like
 this."
 
 470
 00:15:56,200 --> 00:15:57,400
-this."
 What do you call that concept in the
 
 471
 00:15:57,400 --> 00:15:58,600
-What do you call that concept in the
 Java world?
 
 472
 00:15:58,600 --> 00:16:00,760
-Java world?
 Is that a like a task?
 
 473
 00:16:00,760 --> 00:16:02,080
-Is that a like a task?
 So, they're they're trying to do I think
 
 474
 00:16:02,080 --> 00:16:03,720
-So, they're they're trying to do I think
 there's a fiber, if I remember right.
 
 475
 00:16:03,720 --> 00:16:04,760
-there's a fiber, if I remember right.
 There's
 
 476
 00:16:04,760 --> 00:16:07,680
-There's
 JVM 22, I believe, is trying to do some
 
 477
 00:16:07,680 --> 00:16:08,920
-JVM 22, I believe, is trying to do some
 integration with some structured
 
 478
 00:16:08,920 --> 00:16:11,560
-integration with some structured
 concurrency, but it's ugly. It's not
 
 479
 00:16:11,560 --> 00:16:12,880
-concurrency, but it's ugly. It's not
 very nice.
 
 480
 00:16:12,880 --> 00:16:15,160
-very nice.
 And Pythons and JavaScripts are very,
 
 481
 00:16:15,160 --> 00:16:16,480
-And Pythons and JavaScripts are very,
 very nice.
 
 482
 00:16:16,480 --> 00:16:19,160
-very nice.
 As far as their Trio is the best Python
 
 483
 00:16:19,160 --> 00:16:21,240
-As far as their Trio is the best Python
 structured concurrency library out
 
 484
 00:16:21,240 --> 00:16:23,480
-structured concurrency library out
 there. It's not the most usable, but
 
 485
 00:16:23,480 --> 00:16:25,880
-there. It's not the most usable, but
 as far as the most intuitive, by far the
 
 486
 00:16:25,880 --> 00:16:28,280
-as far as the most intuitive, by far the
 most intuitive. David Beazley, a big
 
 487
 00:16:28,280 --> 00:16:29,880
-most intuitive. David Beazley, a big
 name in the space has space has one
 
 488
 00:16:29,880 --> 00:16:31,240
-name in the space has space has one
 called Curio that you'll see referenced
 
 489
 00:16:31,240 --> 00:16:33,880
-called Curio that you'll see referenced
 later. And then Nathaniel Smith has one
 
 490
 00:16:33,880 --> 00:16:35,680
-later. And then Nathaniel Smith has one
 named Trio.
 
 491
 00:16:35,680 --> 00:16:38,000
-named Trio.
 And then there's Sam's.
 
 492
 00:16:38,000 --> 00:16:39,760
-And then there's Sam's.
 I've looked at all the other ones. Sam's
 
 493
 00:16:39,760 --> 00:16:40,920
-I've looked at all the other ones. Sam's
 is the best.
 
 494
 00:16:40,920 --> 00:16:44,040
-is the best.
 It's not the most usable as far as
 
 495
 00:16:44,040 --> 00:16:45,320
-It's not the most usable as far as
 like there's there's nice wrapper
 
 496
 00:16:45,320 --> 00:16:46,880
-like there's there's nice wrapper
 functions because the other ones have so
 
 497
 00:16:46,880 --> 00:16:48,560
-functions because the other ones have so
 much more adoption, they hit a bunch of
 
 498
 00:16:48,560 --> 00:16:49,640
-much more adoption, they hit a bunch of
 problems, and there's a little bit more
 
 499
 00:16:49,640 --> 00:16:51,160
-problems, and there's a little bit more
 wrapper functions to adapt them into the
 
 500
 00:16:51,160 --> 00:16:53,240
-wrapper functions to adapt them into the
 async await stuff. The async await is a
 
 501
 00:16:53,240 --> 00:16:55,800
-async await stuff. The async await is a
 dumpster fire. Does Java have async
 
 502
 00:16:55,800 --> 00:16:57,000
-dumpster fire. Does Java have async
 await?
 
 503
 00:16:57,000 --> 00:16:57,920
-await?
 Or
 
 504
 00:16:57,920 --> 00:16:59,480
-Or
 They better never get it. It's a
 
 505
 00:16:59,480 --> 00:17:02,760
-They better never get it. It's a
 dumpster fire. I hope It's too bad that
 
 506
 00:17:02,760 --> 00:17:05,439
-dumpster fire. I hope It's too bad that
 it infected Python. It's future. I think
 
 507
 00:17:05,439 --> 00:17:07,280
-it infected Python. It's future. I think
 that's where it is. Async await, the
 
 508
 00:17:07,280 --> 00:17:10,120
-that's where it is. Async await, the
 JavaScript form of async await, was
 
 509
 00:17:10,120 --> 00:17:11,839
-JavaScript form of async await, was
 forced upon the world because of the
 
 510
 00:17:11,839 --> 00:17:13,560
-forced upon the world because of the
 limitations of the browser execution
 
 511
 00:17:13,560 --> 00:17:15,560
-limitations of the browser execution
 engine. It was a mistake to put that
 
 512
 00:17:15,560 --> 00:17:17,720
-engine. It was a mistake to put that
 into the Python runtime itself. They
 
 513
 00:17:17,720 --> 00:17:19,800
-into the Python runtime itself. They
 should have done structured concurrency.
 
 514
 00:17:19,800 --> 00:17:21,240
-should have done structured concurrency.
 The Guido, if there's any mistake that
 
 515
 00:17:21,240 --> 00:17:23,199
-The Guido, if there's any mistake that
 Guido made, the benevolent dictator
 
 516
 00:17:23,199 --> 00:17:25,040
-Guido made, the benevolent dictator
 for life until he resigned
 
 517
 00:17:25,040 --> 00:17:26,839
-for life until he resigned
 in Python, it was putting async await
 
 518
 00:17:26,839 --> 00:17:28,199
-in Python, it was putting async await
 into Python.
 
 519
 00:17:28,199 --> 00:17:29,240
-into Python.
 They shouldn't have done that. It's
 
 520
 00:17:29,240 --> 00:17:32,600
-They shouldn't have done that. It's
 really ugly and garish. It works, but
 
 521
 00:17:32,600 --> 00:17:35,120
-really ugly and garish. It works, but
 it's over it's overly simplified.
 
 522
 00:17:35,120 --> 00:17:36,000
-it's over it's overly simplified.
 They should have they should have
 
 523
 00:17:36,000 --> 00:17:38,120
-They should have they should have
 because people were complaining about
 
 524
 00:17:38,120 --> 00:17:39,520
-because people were complaining about
 generators. They were saying they're too
 
 525
 00:17:39,520 --> 00:17:40,880
-generators. They were saying they're too
 hard.
 
 526
 00:17:40,880 --> 00:17:42,840
-hard.
 But, you know, you can you can you can
 
 527
 00:17:42,840 --> 00:17:44,520
-But, you know, you can you can you can
 make frameworks that abstract the hard
 
 528
 00:17:44,520 --> 00:17:46,480
-make frameworks that abstract the hard
 parts and still preserve the structured
 
 529
 00:17:46,480 --> 00:17:48,800
-parts and still preserve the structured
 concurrency guarantees. So, Python had
 
 530
 00:17:48,800 --> 00:17:50,240
-concurrency guarantees. So, Python had
 an opportunity
 
 531
 00:17:50,240 --> 00:17:51,640
-an opportunity
 the whole language ecosystem had an
 
 532
 00:17:51,640 --> 00:17:53,160
-the whole language ecosystem had an
 opportunity to do adopt structured
 
 533
 00:17:53,160 --> 00:17:55,280
-opportunity to do adopt structured
 concurrency and they missed it. And now
 
 534
 00:17:55,280 --> 00:17:57,200
-concurrency and they missed it. And now
 there's there's libraries.
 
 535
 00:17:57,200 --> 00:18:00,200
-there's there's libraries.
 Okay, so other important guarantees of
 
 536
 00:18:00,200 --> 00:18:02,480
-Okay, so other important guarantees of
 structured concurrency, if you spawn in
 
 537
 00:18:02,480 --> 00:18:05,200
-structured concurrency, if you spawn in
 a lexical scope, you will join before
 
 538
 00:18:05,200 --> 00:18:07,760
-a lexical scope, you will join before
 that lexical scope returns. And
 
 539
 00:18:07,760 --> 00:18:09,800
-that lexical scope returns. And
 indeed and here that means
 
 540
 00:18:09,800 --> 00:18:11,880
-indeed and here that means
 if you have a do-doer and you spin up
 
 541
 00:18:11,880 --> 00:18:13,880
-if you have a do-doer and you spin up
 some child processes, those will get
 
 542
 00:18:13,880 --> 00:18:16,160
-some child processes, those will get
 to the done state before the do-doer
 
 543
 00:18:16,160 --> 00:18:18,760
-to the done state before the do-doer
 finishes. So, the doist
 
 544
 00:18:18,760 --> 00:18:20,920
-finishes. So, the doist
 will own all of its children will
 
 545
 00:18:20,920 --> 00:18:25,150
-will own all of its children will
 complete before the doist returns.
 
 546
@@ -2727,742 +2191,594 @@ one some nice consequences of this is
 
 547
 00:18:29,120 --> 00:18:30,920
-one some nice consequences of this is
 then we have straightforward execution
 
 548
 00:18:30,920 --> 00:18:33,080
-then we have straightforward execution
 handling. Failure cancellation
 
 549
 00:18:33,080 --> 00:18:34,760
-handling. Failure cancellation
 propagation throughout the task tree is
 
 550
 00:18:34,760 --> 00:18:37,480
-propagation throughout the task tree is
 very intuitive from child tasks up to
 
 551
 00:18:37,480 --> 00:18:39,080
-very intuitive from child tasks up to
 parent tasks.
 
 552
 00:18:39,080 --> 00:18:41,160
-parent tasks.
 And now you can intelligently respond to
 
 553
 00:18:41,160 --> 00:18:44,120
-And now you can intelligently respond to
 both failures and cancellation signals.
 
 554
 00:18:44,120 --> 00:18:46,040
-both failures and cancellation signals.
 And there's actually a
 
 555
 00:18:46,040 --> 00:18:47,960
-And there's actually a
 sister article to the one that I
 
 556
 00:18:47,960 --> 00:18:49,400
-sister article to the one that I
 mentioned earlier, the note the notes on
 
 557
 00:18:49,400 --> 00:18:50,920
-mentioned earlier, the note the notes on
 structured concurrency go to statement
 
 558
 00:18:50,920 --> 00:18:52,360
-structured concurrency go to statement
 considered harmful. There's one on
 
 559
 00:18:52,360 --> 00:18:53,960
-considered harmful. There's one on
 timeouts and cancellations. And then
 
 560
 00:18:53,960 --> 00:18:55,800
-timeouts and cancellations. And then
 there's one on control C and interrupts.
 
 561
 00:18:55,800 --> 00:18:57,320
-there's one on control C and interrupts.
 You want to read all three. They're so
 
 562
 00:18:57,320 --> 00:18:59,040
-You want to read all three. They're so
 well written.
 
 563
 00:18:59,040 --> 00:19:01,440
-well written.
 Okay, so and exceptions are carried all
 
 564
 00:19:01,440 --> 00:19:02,680
-Okay, so and exceptions are carried all
 the way up through the scheduling tree.
 
 565
 00:19:02,680 --> 00:19:04,360
-the way up through the scheduling tree.
 This is one of the major benefits of
 
 566
 00:19:04,360 --> 00:19:07,080
-This is one of the major benefits of
 structured concurrency is that you can
 
 567
 00:19:07,080 --> 00:19:09,240
-structured concurrency is that you can
 have error propagation all the way up to
 
 568
 00:19:09,240 --> 00:19:11,400
-have error propagation all the way up to
 the root scheduler and handle it there
 
 569
 00:19:11,400 --> 00:19:14,160
-the root scheduler and handle it there
 or in any of the parents. It's a It's an
 
 570
 00:19:14,160 --> 00:19:16,080
-or in any of the parents. It's a It's an
 intuitive, straightforward way to handle
 
 571
 00:19:16,080 --> 00:19:18,000
-intuitive, straightforward way to handle
 exceptions.
 
 572
 00:19:18,000 --> 00:19:19,480
-exceptions.
 So, consistent, predictable exception
 
 573
 00:19:19,480 --> 00:19:20,960
-So, consistent, predictable exception
 behavior. Very, very awesome and
 
 574
 00:19:20,960 --> 00:19:22,320
-behavior. Very, very awesome and
 amazing.
 
 575
 00:19:22,320 --> 00:19:24,360
-amazing.
 Okay, so there's Trio nurseries from the
 
 576
 00:19:24,360 --> 00:19:25,520
-Okay, so there's Trio nurseries from the
 guy who wrote the article that you're
 
 577
 00:19:25,520 --> 00:19:27,440
-guy who wrote the article that you're
 going to go read. And this is a This is
 
 578
 00:19:27,440 --> 00:19:29,920
-going to go read. And this is a This is
 an example from his article
 
 579
 00:19:29,920 --> 00:19:32,680
-an example from his article
 about the So, he uses async with the his
 
 580
 00:19:32,680 --> 00:19:35,120
-about the So, he uses async with the his
 async with is essentially a doist or a
 
 581
 00:19:35,120 --> 00:19:36,880
-async with is essentially a doist or a
 do doer for and he and he or just think
 
 582
 00:19:36,880 --> 00:19:39,360
-do doer for and he and he or just think
 of it as a as a as a doist.
 
 583
 00:19:39,360 --> 00:19:41,240
-of it as a as a as a doist.
 So, you start one task, which might
 
 584
 00:19:41,240 --> 00:19:42,680
-So, you start one task, which might
 have a child task, which might have a
 
 585
 00:19:42,680 --> 00:19:44,560
-have a child task, which might have a
 child task.
 
 586
 00:19:44,560 --> 00:19:46,320
-child task.
 And all of those complete before the
 
 587
 00:19:46,320 --> 00:19:48,320
-And all of those complete before the
 outer bounding lexical scope of the
 
 588
 00:19:48,320 --> 00:19:51,040
-outer bounding lexical scope of the
 async with returns.
 
 589
 00:19:51,040 --> 00:19:53,640
-async with returns.
 And because it's a context manager, that
 
 590
 00:19:53,640 --> 00:19:55,440
-And because it's a context manager, that
 means you can have startup and teardown
 
 591
 00:19:55,440 --> 00:19:57,640
-means you can have startup and teardown
 logic that will complete predictably for
 
 592
 00:19:57,640 --> 00:19:59,560
-logic that will complete predictably for
 all these tasks, for any resources that
 
 593
 00:19:59,560 --> 00:20:01,760
-all these tasks, for any resources that
 you need to open or close. It's kind of
 
 594
 00:20:01,760 --> 00:20:03,520
-you need to open or close. It's kind of
 Java started to go in this direction
 
 595
 00:20:03,520 --> 00:20:04,920
-Java started to go in this direction
 with the try with resources, with the
 
 596
 00:20:04,920 --> 00:20:06,680
-with the try with resources, with the
 auto closeable interfaces, but they
 
 597
 00:20:06,680 --> 00:20:08,600
-auto closeable interfaces, but they
 didn't go to full structured concurrency
 
 598
 00:20:08,600 --> 00:20:10,880
-didn't go to full structured concurrency
 like this.
 
 599
 00:20:10,880 --> 00:20:12,400
-like this.
 Okay, so I talked about Hiero and doers
 
 600
 00:20:12,400 --> 00:20:13,440
-Okay, so I talked about Hiero and doers
 a bit. We went here. We'll sort of
 
 601
 00:20:13,440 --> 00:20:14,800
-a bit. We went here. We'll sort of
 breeze past this. You already know the
 
 602
 00:20:14,800 --> 00:20:16,320
-breeze past this. You already know the
 doist, doer, do doer. Let me
 
 603
 00:20:16,320 --> 00:20:17,880
-doist, doer, do doer. Let me
 double-check our time here. Oh, we've
 
 604
 00:20:17,880 --> 00:20:19,920
-double-check our time here. Oh, we've
 only got 19 minutes left.
 
 605
 00:20:19,920 --> 00:20:21,240
-only got 19 minutes left.
 So, now we're getting into the Hiero
 
 606
 00:20:21,240 --> 00:20:23,840
-So, now we're getting into the Hiero
 internals. You get some of the at a high
 
 607
 00:20:23,840 --> 00:20:25,160
-internals. You get some of the at a high
 level and an object level what the
 
 608
 00:20:25,160 --> 00:20:26,720
-level and an object level what the
 benefits are. Let's Let's anchor this in
 
 609
 00:20:26,720 --> 00:20:28,280
-benefits are. Let's Let's anchor this in
 some code.
 
 610
 00:20:28,280 --> 00:20:29,640
-some code.
 So, we mentioned the doist is the root
 
 611
 00:20:29,640 --> 00:20:31,200
-So, we mentioned the doist is the root
 scheduler, the code routine tasks are
 
 612
 00:20:31,200 --> 00:20:32,760
-scheduler, the code routine tasks are
 the doers and do doers.
 
 613
 00:20:32,760 --> 00:20:35,400
-the doers and do doers.
 We won't get into the details of time.
 
 614
 00:20:35,400 --> 00:20:36,720
-We won't get into the details of time.
 It's really fascinating. It's really
 
 615
 00:20:36,720 --> 00:20:38,080
-It's really fascinating. It's really
 interesting. I highly recommend you read
 
 616
 00:20:38,080 --> 00:20:39,280
-interesting. I highly recommend you read
 the source. I had to read it a couple of
 
 617
 00:20:39,280 --> 00:20:40,600
-the source. I had to read it a couple of
 times.
 
 618
 00:20:40,600 --> 00:20:42,360
-times.
 And this is before AI came out, by the
 
 619
 00:20:42,360 --> 00:20:43,360
-And this is before AI came out, by the
 way.
 
 620
 00:20:43,360 --> 00:20:45,000
-way.
 Now you can ask AI and it'll walk you
 
 621
 00:20:45,000 --> 00:20:46,440
-Now you can ask AI and it'll walk you
 through it much faster than I learned
 
 622
 00:20:46,440 --> 00:20:48,640
-through it much faster than I learned
 it. But the you need to
 
 623
 00:20:48,640 --> 00:20:51,440
-it. But the you need to
 understand the outer scheduler has
 
 624
 00:20:51,440 --> 00:20:54,440
-understand the outer scheduler has
 its own concept of time.
 
 625
 00:20:54,440 --> 00:20:56,160
-its own concept of time.
 And it accumulates time. There's only
 
 626
 00:20:56,160 --> 00:20:58,320
-And it accumulates time. There's only
 you'll see the one sleep in the entire
 
 627
 00:20:58,320 --> 00:21:00,400
-you'll see the one sleep in the entire
 system. There's only one sleep, and it's
 
 628
 00:21:00,400 --> 00:21:02,480
-system. There's only one sleep, and it's
 in the doist, the root scheduler. And it
 
 629
 00:21:02,480 --> 00:21:05,360
-in the doist, the root scheduler. And it
 keeps track of its own cycle time, so
 
 630
 00:21:05,360 --> 00:21:06,760
-keeps track of its own cycle time, so
 that and you don't need to worry about
 
 631
 00:21:06,760 --> 00:21:08,360
-that and you don't need to worry about
 completely understanding this, but just
 
 632
 00:21:08,360 --> 00:21:09,640
-completely understanding this, but just
 anchored in your brain somewhere, the
 
 633
 00:21:09,640 --> 00:21:11,520
-anchored in your brain somewhere, the
 doist keeps track of time so it can have
 
 634
 00:21:11,520 --> 00:21:13,800
-doist keeps track of time so it can have
 deterministic scheduling of its array of
 
 635
 00:21:13,800 --> 00:21:15,920
-deterministic scheduling of its array of
 tasks.
 
 636
 00:21:15,920 --> 00:21:18,160
-tasks.
 In order to make it deterministic, it
 
 637
 00:21:18,160 --> 00:21:19,800
-In order to make it deterministic, it
 has to keep track of its own sense of
 
 638
 00:21:19,800 --> 00:21:22,040
-has to keep track of its own sense of
 elapsed time from the start. You always
 
 639
 00:21:22,040 --> 00:21:24,160
-elapsed time from the start. You always
 start at zero and increase.
 
 640
 00:21:24,160 --> 00:21:25,560
-start at zero and increase.
 If you keep track of your own time and
 
 641
 00:21:25,560 --> 00:21:27,760
-If you keep track of your own time and
 your own sort of talk, essentially your
 
 642
 00:21:27,760 --> 00:21:29,880
-your own sort of talk, essentially your
 your next how long you're going to
 
 643
 00:21:29,880 --> 00:21:32,520
-your next how long you're going to
 sleep before you advance to your next
 
 644
 00:21:32,520 --> 00:21:34,360
-sleep before you advance to your next
 execution of your array of
 
 645
 00:21:34,360 --> 00:21:36,400
-execution of your array of
 coroutines. You have to have an internal
 
 646
 00:21:36,400 --> 00:21:38,680
-coroutines. You have to have an internal
 concept of time. This came and bit me
 
 647
 00:21:38,680 --> 00:21:41,800
-concept of time. This came and bit me
 and cost me 40 40 to 80 dollars in
 
 648
 00:21:41,800 --> 00:21:44,560
-and cost me 40 40 to 80 dollars in
 in AI tokens with Codex.
 
 649
 00:21:44,560 --> 00:21:46,320
-in AI tokens with Codex.
 Because the it wasn't able to model
 
 650
 00:21:46,320 --> 00:21:48,040
-Because the it wasn't able to model
 reality and realized that oh, HEO has
 
 651
 00:21:48,040 --> 00:21:49,720
-reality and realized that oh, HEO has
 its own concept of time and I actually
 
 652
 00:21:49,720 --> 00:21:50,670
-its own concept of time and I actually
 hit that as a bug.
 
 653
 00:21:50,670 --> 00:21:51,360
-hit that as a bug.
 [laughter]
 
 654
 00:21:51,360 --> 00:21:53,320
-[laughter]
 So, you realize LLMs are going to
 
 655
 00:21:53,320 --> 00:21:55,640
-So, you realize LLMs are going to
 struggle with structured concurrency.
 
 656
 00:21:55,640 --> 00:21:56,560
-struggle with structured concurrency.
 And if you don't know how to tell it to
 
 657
 00:21:56,560 --> 00:21:58,920
-And if you don't know how to tell it to
 do the right thing, you might waste tens
 
 658
 00:21:58,920 --> 00:22:00,200
-do the right thing, you might waste tens
 of dollars of tokens like I did. I'm
 
 659
 00:22:00,200 --> 00:22:01,560
-of dollars of tokens like I did. I'm
 glad it wasn't hundreds.
 
 660
 00:22:01,560 --> 00:22:03,400
-glad it wasn't hundreds.
 So, remember, doist has its own concept
 
 661
 00:22:03,400 --> 00:22:04,680
-So, remember, doist has its own concept
 of time, but we won't get into that
 
 662
 00:22:04,680 --> 00:22:06,920
-of time, but we won't get into that
 here. It's another presentation.
 
 663
 00:22:06,920 --> 00:22:08,760
-here. It's another presentation.
 All right, so we're going to anchor this
 
 664
 00:22:08,760 --> 00:22:10,880
-All right, so we're going to anchor this
 in with some actual
 
 665
 00:22:10,880 --> 00:22:12,280
-in with some actual
 commands. And we're going to go through
 
 666
 00:22:12,280 --> 00:22:14,080
-commands. And we're going to go through
 the KERIpy code base. If you've used
 
 667
 00:22:14,080 --> 00:22:15,320
-the KERIpy code base. If you've used
 KERIpy,
 
 668
 00:22:15,320 --> 00:22:17,200
-KERIpy,
 you've done KLI.in.set.
 
 669
 00:22:17,200 --> 00:22:19,880
-you've done KLI.in.set.
 What this does is it calls into what's
 
 670
 00:22:19,880 --> 00:22:22,520
-What this does is it calls into what's
 called KLI.py this main function. This
 
 671
 00:22:22,520 --> 00:22:24,760
-called KLI.py this main function. This
 is the entry point for the command line.
 
 672
 00:22:24,760 --> 00:22:26,440
-is the entry point for the command line.
 The important part is it says run
 
 673
 00:22:26,440 --> 00:22:27,880
-The important part is it says run
 controller.
 
 674
 00:22:27,880 --> 00:22:29,480
-controller.
 That's important because it calls the
 
 675
 00:22:29,480 --> 00:22:30,880
-That's important because it calls the
 root scheduler.
 
 676
 00:22:30,880 --> 00:22:32,800
-root scheduler.
 Here, run controller has these three
 
 677
 00:22:32,800 --> 00:22:34,840
-Here, run controller has these three
 lines, defines the talk, which is the
 
 678
 00:22:34,840 --> 00:22:36,920
-lines, defines the talk, which is the
 run rate of the cycle time, how
 
 679
 00:22:36,920 --> 00:22:38,920
-run rate of the cycle time, how
 quickly the root scheduler iterates over
 
 680
 00:22:38,920 --> 00:22:41,120
-quickly the root scheduler iterates over
 all of its tasks.
 
 681
 00:22:41,120 --> 00:22:43,520
-all of its tasks.
 Which means this is 1/32 of a second, so
 
 682
 00:22:43,520 --> 00:22:45,440
-Which means this is 1/32 of a second, so
 it'll 32 times a second it'll run its
 
 683
 00:22:45,440 --> 00:22:47,920
-it'll 32 times a second it'll run its
 entire task list. Unless there's like
 
 684
 00:22:47,920 --> 00:22:49,880
-entire task list. Unless there's like
 something that takes some time to
 
 685
 00:22:49,880 --> 00:22:52,040
-something that takes some time to
 execute. Here's the instantiation of the
 
 686
 00:22:52,040 --> 00:22:54,000
-execute. Here's the instantiation of the
 root scheduler. And then we say root
 
 687
 00:22:54,000 --> 00:22:56,360
-root scheduler. And then we say root
 scheduler.do. This is a life cycle
 
 688
 00:22:56,360 --> 00:22:58,760
-scheduler.do. This is a life cycle
 function. This is the life cycle
 
 689
 00:22:58,760 --> 00:23:01,120
-function. This is the life cycle
 function that runs the system.
 
 690
 00:23:01,120 --> 00:23:03,000
-function that runs the system.
 So, this is the entry point of the Hio
 
 691
 00:23:03,000 --> 00:23:05,000
-So, this is the entry point of the Hio
 runtime.
 
 692
 00:23:05,000 --> 00:23:06,320
-runtime.
 Okay, we don't have to worry about those
 
 693
 00:23:06,320 --> 00:23:08,320
-Okay, we don't have to worry about those
 other parameters just yet. Let's get
 
 694
 00:23:08,320 --> 00:23:09,270
-other parameters just yet. Let's get
 through this.
 
 695
@@ -3476,72 +2792,58 @@ of the doist. Here's the do. The do
 
 697
 00:23:13,320 --> 00:23:14,800
-of the doist. Here's the do. The do
 calls all of these other functions.
 
 698
 00:23:14,800 --> 00:23:17,760
-calls all of these other functions.
 These enter, recur, exit.
 
 699
 00:23:17,760 --> 00:23:19,880
-These enter, recur, exit.
 So, think if for enter think
 
 700
 00:23:19,880 --> 00:23:22,080
-So, think if for enter think
 resource allocation and exit resource
 
 701
 00:23:22,080 --> 00:23:23,960
-resource allocation and exit resource
 closing. That's what the enter and exit
 
 702
 00:23:23,960 --> 00:23:27,320
-closing. That's what the enter and exit
 context is. There's an enter and an exit
 
 703
 00:23:27,320 --> 00:23:29,560
-context is. There's an enter and an exit
 for every task
 
 704
 00:23:29,560 --> 00:23:31,880
-for every task
 in the Hio ecosystem. So, every doer has
 
 705
 00:23:31,880 --> 00:23:33,640
-in the Hio ecosystem. So, every doer has
 an enter and an exit.
 
 706
 00:23:33,640 --> 00:23:35,480
-an enter and an exit.
 Which think about it. Now, that means it
 
 707
 00:23:35,480 --> 00:23:37,080
-Which think about it. Now, that means it
 can be used as a context manager. Cuz
 
 708
 00:23:37,080 --> 00:23:38,800
-can be used as a context manager. Cuz
 what does a context manager do? When you
 
 709
 00:23:38,800 --> 00:23:40,280
-what does a context manager do? When you
 do with this,
 
 710
 00:23:40,280 --> 00:23:42,350
-do with this,
 what you're doing is you're saying,
 
 711
@@ -3555,152 +2857,122 @@ allocate resources and an after to clean
 
 713
 00:23:46,560 --> 00:23:47,880
-allocate resources and an after to clean
 up." That's why people use context
 
 714
 00:23:47,880 --> 00:23:50,040
-up." That's why people use context
 managers or try with resources in Java
 
 715
 00:23:50,040 --> 00:23:52,000
-managers or try with resources in Java
 or languages like that, so that you can
 
 716
 00:23:52,000 --> 00:23:54,760
-or languages like that, so that you can
 have automated cleanup.
 
 717
 00:23:54,760 --> 00:23:57,000
-have automated cleanup.
 And so, what the enter and the exit do
 
 718
 00:23:57,000 --> 00:23:58,640
-And so, what the enter and the exit do
 is it allows you to make arbitrarily
 
 719
 00:23:58,640 --> 00:24:00,720
-is it allows you to make arbitrarily
 smart your coroutines.
 
 720
 00:24:00,720 --> 00:24:02,480
-smart your coroutines.
 Python coroutines by themselves are dumb
 
 721
 00:24:02,480 --> 00:24:04,600
-Python coroutines by themselves are dumb
 and stupid. You can't add this nice cool
 
 722
 00:24:04,600 --> 00:24:06,320
-and stupid. You can't add this nice cool
 logic to it. This is a big selling point
 
 723
 00:24:06,320 --> 00:24:07,680
-logic to it. This is a big selling point
 of Hio
 
 724
 00:24:07,680 --> 00:24:09,360
-of Hio
 is that your tasks have an enter and an
 
 725
 00:24:09,360 --> 00:24:10,720
-is that your tasks have an enter and an
 exit.
 
 726
 00:24:10,720 --> 00:24:11,880
-exit.
 J- just about everything else in the
 
 727
 00:24:11,880 --> 00:24:14,520
-J- just about everything else in the
 space only has a recur.
 
 728
 00:24:14,520 --> 00:24:16,600
-space only has a recur.
 Go ahead. So, can you provide Can you
 
 729
 00:24:16,600 --> 00:24:18,880
-Go ahead. So, can you provide Can you
 implement handlers to those They're
 
 730
 00:24:18,880 --> 00:24:20,920
-implement handlers to those They're
 essentially events, you know, when you
 
 731
 00:24:20,920 --> 00:24:22,520
-essentially events, you know, when you
 enter or when you exit then you can
 
 732
 00:24:22,520 --> 00:24:25,440
-enter or when you exit then you can
 attach handlers and then react to it?
 
 733
 00:24:25,440 --> 00:24:27,480
-attach handlers and then react to it?
 It's it's it's Think of in terms of
 
 734
 00:24:27,480 --> 00:24:30,280
-It's it's it's Think of in terms of
 subclass. You subclass the doer You
 
 735
 00:24:30,280 --> 00:24:31,680
-subclass. You subclass the doer You
 subclass and then you override those
 
 736
 00:24:31,680 --> 00:24:33,800
-subclass and then you override those
 functions. That would be equivalent of
 
 737
 00:24:33,800 --> 00:24:35,840
-functions. That would be equivalent of
 handlers. Okay, so now let's go deeper
 
 738
 00:24:35,840 --> 00:24:37,840
-handlers. Okay, so now let's go deeper
 into the do function. You'll see.
 
 739
 00:24:37,840 --> 00:24:39,920
-into the do function. You'll see.
 So, the red arrows
 
 740
 00:24:39,920 --> 00:24:41,400
-So, the red arrows
 are the life cycle functions. Remember I
 
 741
 00:24:41,400 --> 00:24:43,400
-are the life cycle functions. Remember I
 said enter, exit, recur?
 
 742
 00:24:43,400 --> 00:24:45,550
-said enter, exit, recur?
 Enter.
 
 743
@@ -3714,637 +2986,510 @@ one special cuz I'm going to go there
 
 745
 00:24:48,720 --> 00:24:50,840
-one special cuz I'm going to go there
 next. There's enter and exit, startup,
 
 746
 00:24:50,840 --> 00:24:52,160
-next. There's enter and exit, startup,
 teardown.
 
 747
 00:24:52,160 --> 00:24:53,440
-teardown.
 We've got the recur, which we're going
 
 748
 00:24:53,440 --> 00:24:55,200
-We've got the recur, which we're going
 to jump into later. Here's the only
 
 749
 00:24:55,200 --> 00:24:58,400
-to jump into later. Here's the only
 sleep in the system. There is one sleep
 
 750
 00:24:58,400 --> 00:25:00,480
-sleep in the system. There is one sleep
 in the entire duet run time. It's this
 
 751
 00:25:00,480 --> 00:25:02,280
-in the entire duet run time. It's this
 right here. This is what accumulates
 
 752
 00:25:02,280 --> 00:25:04,160
-right here. This is what accumulates
 time, so essentially starts to
 
 753
 00:25:04,160 --> 00:25:05,840
-time, so essentially starts to
 track the time elapsed to know when to
 
 754
 00:25:05,840 --> 00:25:08,480
-track the time elapsed to know when to
 schedule the next co-routine.
 
 755
 00:25:08,480 --> 00:25:11,320
-schedule the next co-routine.
 So, you and also, let's see.
 
 756
 00:25:11,320 --> 00:25:12,840
-So, you and also, let's see.
 One thing to be aware of, that self.that
 
 757
 00:25:12,840 --> 00:25:15,560
-One thing to be aware of, that self.that
 enter, what it does is it takes all of
 
 758
 00:25:15,560 --> 00:25:18,440
-enter, what it does is it takes all of
 your tasks and runs enter on every task.
 
 759
 00:25:18,440 --> 00:25:20,520
-your tasks and runs enter on every task.
 So, by the time that finishes, all your
 
 760
 00:25:20,520 --> 00:25:22,000
-So, by the time that finishes, all your
 resources have been provisioned for all
 
 761
 00:25:22,000 --> 00:25:24,040
-resources have been provisioned for all
 the tasks that are going to run. After
 
 762
 00:25:24,040 --> 00:25:26,520
-the tasks that are going to run. After
 that one line? After that one line, yes.
 
 763
 00:25:26,520 --> 00:25:28,840
-that one line? After that one line, yes.
 And what it does is it advances every
 
 764
 00:25:28,840 --> 00:25:30,680
-And what it does is it advances every
 single It advances every single
 
 765
 00:25:30,680 --> 00:25:32,880
-single It advances every single
 co-routine to be primed to be ready,
 
 766
 00:25:32,880 --> 00:25:34,120
-co-routine to be primed to be ready,
 essentially.
 
 767
 00:25:34,120 --> 00:25:35,360
-essentially.
 So, that readies all the tasks for
 
 768
 00:25:35,360 --> 00:25:38,200
-So, that readies all the tasks for
 execution, and then recur begins the
 
 769
 00:25:38,200 --> 00:25:39,880
-execution, and then recur begins the
 infinite while loop to run all of your
 
 770
 00:25:39,880 --> 00:25:42,320
-infinite while loop to run all of your
 tasks until you get a an abort an
 
 771
 00:25:42,320 --> 00:25:44,000
-tasks until you get a an abort an
 interrupt signal, which will then
 
 772
 00:25:44,000 --> 00:25:46,000
-interrupt signal, which will then
 trigger exit. Like control-C will
 
 773
 00:25:46,000 --> 00:25:48,120
-trigger exit. Like control-C will
 trigger exit, and it'll exit all of the
 
 774
 00:25:48,120 --> 00:25:50,120
-trigger exit, and it'll exit all of the
 child tasks, and then their nested
 
 775
 00:25:50,120 --> 00:25:51,600
-child tasks, and then their nested
 tasks, and then it'll finally exit the
 
 776
 00:25:51,600 --> 00:25:53,520
-tasks, and then it'll finally exit the
 duet.
 
 777
 00:25:53,520 --> 00:25:54,720
-duet.
 That's one of the That's one of the cool
 
 778
 00:25:54,720 --> 00:25:57,480
-That's one of the That's one of the cool
 things about structured concurrency.
 
 779
 00:25:57,480 --> 00:25:58,680
-things about structured concurrency.
 Okay, so we're going to jump in. Let's
 
 780
 00:25:58,680 --> 00:26:00,200
-Okay, so we're going to jump in. Let's
 jump in. So, now this is recur,
 
 781
 00:26:00,200 --> 00:26:02,440
-jump in. So, now this is recur,
 remember? So, we went from
 
 782
 00:26:02,440 --> 00:26:03,880
-remember? So, we went from
 that we're going into the blue arrow, or
 
 783
 00:26:03,880 --> 00:26:06,880
-that we're going into the blue arrow, or
 the teal green arrow.
 
 784
 00:26:06,880 --> 00:26:08,440
-the teal green arrow.
 This is the recur function. The main
 
 785
 00:26:08,440 --> 00:26:10,840
-This is the recur function. The main
 thing here is So, what actually runs
 
 786
 00:26:10,840 --> 00:26:12,640
-thing here is So, what actually runs
 We're still in the scheduler. When are
 
 787
 00:26:12,640 --> 00:26:14,400
-We're still in the scheduler. When are
 we going to get to the task? Well, right
 
 788
 00:26:14,400 --> 00:26:15,920
-we going to get to the task? Well, right
 here, this send. And that send right
 
 789
 00:26:15,920 --> 00:26:19,600
-here, this send. And that send right
 there, that's the Python generator API.
 
 790
 00:26:19,600 --> 00:26:21,080
-there, that's the Python generator API.
 When you run cuz remember, the
 
 791
 00:26:21,080 --> 00:26:24,480
-When you run cuz remember, the
 co-routines are just generators.
 
 792
 00:26:24,480 --> 00:26:26,800
-co-routines are just generators.
 And the generator the syntax to run a
 
 793
 00:26:26,800 --> 00:26:28,480
-And the generator the syntax to run a
 generator
 
 794
 00:26:28,480 --> 00:26:30,680
-generator
 is this send right here.
 
 795
 00:26:30,680 --> 00:26:32,400
-is this send right here.
 So, you don't have to It's You can ask
 
 796
 00:26:32,400 --> 00:26:34,400
-So, you don't have to It's You can ask
 Claude about or Codex about it.
 
 797
 00:26:34,400 --> 00:26:36,600
-Claude about or Codex about it.
 There's also a really excellent So,
 
 798
 00:26:36,600 --> 00:26:38,240
-There's also a really excellent So,
 Luciano Ramalho, the guy who wrote the
 
 799
 00:26:38,240 --> 00:26:40,480
-Luciano Ramalho, the guy who wrote the
 Python reference manual,
 
 800
 00:26:40,480 --> 00:26:42,560
-Python reference manual,
 his 2016 version of the book has a
 
 801
 00:26:42,560 --> 00:26:44,960
-his 2016 version of the book has a
 really great chapter on co-routines. And
 
 802
 00:26:44,960 --> 00:26:46,200
-really great chapter on co-routines. And
 then when the whole Python language
 
 803
 00:26:46,200 --> 00:26:47,680
-then when the whole Python language
 community went the wrong direction to
 
 804
 00:26:47,680 --> 00:26:49,800
-community went the wrong direction to
 the oversimplified async await,
 
 805
 00:26:49,800 --> 00:26:51,640
-the oversimplified async await,
 for the 2022 version of the Python
 
 806
 00:26:51,640 --> 00:26:53,720
-for the 2022 version of the Python
 reference manual, he did not include
 
 807
 00:26:53,720 --> 00:26:56,320
-reference manual, he did not include
 that awesome content on co-routines, but
 
 808
 00:26:56,320 --> 00:26:58,280
-that awesome content on co-routines, but
 it's on his website. So, you can go to I
 
 809
 00:26:58,280 --> 00:27:00,680
-it's on his website. So, you can go to I
 think it's fluppy.com
 
 810
 00:27:00,680 --> 00:27:02,600
-think it's fluppy.com
 and you'll find the chapter 16, I think,
 
 811
 00:27:02,600 --> 00:27:04,160
-and you'll find the chapter 16, I think,
 on the co-routines. It's it'll go
 
 812
 00:27:04,160 --> 00:27:05,760
-on the co-routines. It's it'll go
 through that in exhaustively in-depth.
 
 813
 00:27:05,760 --> 00:27:07,000
-through that in exhaustively in-depth.
 It'll teach you everything you want to
 
 814
 00:27:07,000 --> 00:27:08,880
-It'll teach you everything you want to
 know about Python co-routines.
 
 815
 00:27:08,880 --> 00:27:10,960
-know about Python co-routines.
 High-density, high-value content.
 
 816
 00:27:10,960 --> 00:27:12,680
-High-density, high-value content.
 Anyway, so this is what runs it. We
 
 817
 00:27:12,680 --> 00:27:13,840
-Anyway, so this is what runs it. We
 won't worry about the rest of the stuff.
 
 818
 00:27:13,840 --> 00:27:15,480
-won't worry about the rest of the stuff.
 So, this interest interestingly enough,
 
 819
 00:27:15,480 --> 00:27:17,480
-So, this interest interestingly enough,
 last note on the root scheduler, this
 
 820
 00:27:17,480 --> 00:27:20,880
-last note on the root scheduler, this
 tick advances you forward that next 1/32
 
 821
 00:27:20,880 --> 00:27:22,800
-tick advances you forward that next 1/32
 of a second. It starts the next time it
 
 822
 00:27:22,800 --> 00:27:26,000
-of a second. It starts the next time it
 schedules the time sleep, after which
 
 823
 00:27:26,000 --> 00:27:27,600
-schedules the time sleep, after which
 the next iteration of all the tasks will
 
 824
 00:27:27,600 --> 00:27:29,320
-the next iteration of all the tasks will
 occur.
 
 825
 00:27:29,320 --> 00:27:30,440
-occur.
 Okay, so now let's go into the
 
 826
 00:27:30,440 --> 00:27:33,240
-Okay, so now let's go into the
 individual task. What it does, that dot
 
 827
 00:27:33,240 --> 00:27:35,360
-individual task. What it does, that dot
 send calls you might be familiar with
 
 828
 00:27:35,360 --> 00:27:37,200
-send calls you might be familiar with
 other dunder methods, the underscore
 
 829
 00:27:37,200 --> 00:27:39,360
-other dunder methods, the underscore
 underscore methods in Python.
 
 830
 00:27:39,360 --> 00:27:42,640
-underscore methods in Python.
 It calls the call method of a doer.
 
 831
 00:27:42,640 --> 00:27:44,440
-It calls the call method of a doer.
 And what the doer does is it says
 
 832
 00:27:44,440 --> 00:27:48,080
-And what the doer does is it says
 self.do. So, what that send does,
 
 833
 00:27:48,080 --> 00:27:49,200
-self.do. So, what that send does,
 this
 
 834
 00:27:49,200 --> 00:27:50,960
-this
 the and it's dog, I won't get into the
 
 835
 00:27:50,960 --> 00:27:53,120
-the and it's dog, I won't get into the
 syntax here. Dog stands for doer
 
 836
 00:27:53,120 --> 00:27:55,200
-syntax here. Dog stands for doer
 generator. Okay, [laughter] there's some
 
 837
 00:27:55,200 --> 00:27:56,960
-generator. Okay, [laughter] there's some
 Samisms here that it takes a little bit
 
 838
 00:27:56,960 --> 00:27:59,520
-Samisms here that it takes a little bit
 of time to get accosted accustomed to,
 
 839
 00:27:59,520 --> 00:28:01,120
-of time to get accosted accustomed to,
 but this is essentially the generator
 
 840
 00:28:01,120 --> 00:28:03,120
-but this is essentially the generator
 that is the subtask.
 
 841
 00:28:03,120 --> 00:28:05,120
-that is the subtask.
 The dog. So, we're doing the send
 
 842
 00:28:05,120 --> 00:28:07,520
-The dog. So, we're doing the send
 and that eventually results in self.do.
 
 843
 00:28:07,520 --> 00:28:09,800
-and that eventually results in self.do.
 Now, why is that important?
 
 844
 00:28:09,800 --> 00:28:12,320
-Now, why is that important?
 The doer.do is the entry point into the
 
 845
 00:28:12,320 --> 00:28:15,520
-The doer.do is the entry point into the
 life cycle of one task. And let's let's
 
 846
 00:28:15,520 --> 00:28:17,840
-life cycle of one task. And let's let's
 look at that. Here's the doer.do.
 
 847
 00:28:17,840 --> 00:28:19,600
-look at that. Here's the doer.do.
 So, look at that. We've got an enter,
 
 848
 00:28:19,600 --> 00:28:21,200
-So, look at that. We've got an enter,
 exit, and a couple of other life cycle
 
 849
 00:28:21,200 --> 00:28:23,520
-exit, and a couple of other life cycle
 functions for different reasons that we
 
 850
 00:28:23,520 --> 00:28:24,440
-functions for different reasons that we
 can get
 
 851
 00:28:24,440 --> 00:28:25,400
-can get
 we don't have time to get into, but
 
 852
 00:28:25,400 --> 00:28:26,760
-we don't have time to get into, but
 there's there's a clean, there's an
 
 853
 00:28:26,760 --> 00:28:28,240
-there's there's a clean, there's an
 abort, there's a cease for when the
 
 854
 00:28:28,240 --> 00:28:30,840
-abort, there's a cease for when the
 generator And the important thing is
 
 855
 00:28:30,840 --> 00:28:31,800
-generator And the important thing is
 that
 
 856
 00:28:31,800 --> 00:28:33,240
-that
 Okay, you see the enter and the exit,
 
 857
 00:28:33,240 --> 00:28:35,720
-Okay, you see the enter and the exit,
 startup teardown, and you see the recur.
 
 858
 00:28:35,720 --> 00:28:37,840
-startup teardown, and you see the recur.
 So, self.recur. This will actually
 
 859
 00:28:37,840 --> 00:28:39,360
-So, self.recur. This will actually
 execute the self, but there's another
 
 860
 00:28:39,360 --> 00:28:41,240
-execute the self, but there's another
 important thing
 
 861
 00:28:41,240 --> 00:28:42,640
-important thing
 that you need to know a little bit about
 
 862
 00:28:42,640 --> 00:28:44,080
-that you need to know a little bit about
 Python generators to know how this
 
 863
 00:28:44,080 --> 00:28:45,240
-Python generators to know how this
 works.
 
 864
 00:28:45,240 --> 00:28:47,320
-works.
 See how we say is generator function,
 
 865
 00:28:47,320 --> 00:28:48,680
-See how we say is generator function,
 Self dot recur.
 
 866
 00:28:48,680 --> 00:28:50,560
-Self dot recur.
 What that means is if you have a yield
 
 867
 00:28:50,560 --> 00:28:53,120
-What that means is if you have a yield
 statement, this is how Python works. If
 
 868
 00:28:53,120 --> 00:28:54,680
-statement, this is how Python works. If
 you put a yield or a yield from in a
 
 869
 00:28:54,680 --> 00:28:56,040
-you put a yield or a yield from in a
 function body,
 
 870
 00:28:56,040 --> 00:28:58,160
-function body,
 it turns that into a generator.
 
 871
 00:28:58,160 --> 00:29:00,630
-it turns that into a generator.
 If you're going to do anything with
 
 872
@@ -4358,447 +3503,358 @@ that yeah that's usually some where
 
 874
 00:29:05,880 --> 00:29:08,200
-that yeah that's usually some where
 you're going to have to wait. And
 
 875
 00:29:08,200 --> 00:29:09,680
-you're going to have to wait. And
 usually you use some sort of yield or
 
 876
 00:29:09,680 --> 00:29:11,600
-usually you use some sort of yield or
 yield from or async await. You need to
 
 877
 00:29:11,600 --> 00:29:13,080
-yield from or async await. You need to
 drive that
 
 878
 00:29:13,080 --> 00:29:15,080
-drive that
 in a way to where it can be paused and
 
 879
 00:29:15,080 --> 00:29:16,400
-in a way to where it can be paused and
 resumed later. That's what the generate
 
 880
 00:29:16,400 --> 00:29:17,720
-resumed later. That's what the generate
 That's what generators are used for in
 
 881
 00:29:17,720 --> 00:29:20,240
-That's what generators are used for in
 Python. So, you need to use yield from
 
 882
 00:29:20,240 --> 00:29:22,640
-Python. So, you need to use yield from
 syntax to drive the generator function.
 
 883
 00:29:22,640 --> 00:29:24,400
-syntax to drive the generator function.
 The generator function will stay inert
 
 884
 00:29:24,400 --> 00:29:26,720
-The generator function will stay inert
 and it'll never execute unless you have
 
 885
 00:29:26,720 --> 00:29:28,080
-and it'll never execute unless you have
 a yield from.
 
 886
 00:29:28,080 --> 00:29:30,240
-a yield from.
 So, if you have a recur function in a
 
 887
 00:29:30,240 --> 00:29:32,320
-So, if you have a recur function in a
 task that needs to call some business
 
 888
 00:29:32,320 --> 00:29:33,720
-task that needs to call some business
 logic that's going to execute like a
 
 889
 00:29:33,720 --> 00:29:36,000
-logic that's going to execute like a
 network call or a file call, you need
 
 890
 00:29:36,000 --> 00:29:39,440
-network call or a file call, you need
 this yield from. This is what runs
 
 891
 00:29:39,440 --> 00:29:41,440
-this yield from. This is what runs
 you can put synchronous logic in here
 
 892
 00:29:41,440 --> 00:29:43,520
-you can put synchronous logic in here
 and the in your in your recur and it'll
 
 893
 00:29:43,520 --> 00:29:44,680
-and the in your in your recur and it'll
 it'll execute this line, but when you
 
 894
 00:29:44,680 --> 00:29:47,200
-it'll execute this line, but when you
 have async logic, you must it'll it'll
 
 895
 00:29:47,200 --> 00:29:48,680
-have async logic, you must it'll it'll
 call the yield from.
 
 896
 00:29:48,680 --> 00:29:50,880
-call the yield from.
 Now, let's we're going really fast and
 
 897
 00:29:50,880 --> 00:29:52,280
-Now, let's we're going really fast and
 we I know we only have 10 minutes left,
 
 898
 00:29:52,280 --> 00:29:53,680
-we I know we only have 10 minutes left,
 so I'm going to do my best to just keep
 
 899
 00:29:53,680 --> 00:29:54,880
-so I'm going to do my best to just keep
 on going.
 
 900
 00:29:54,880 --> 00:29:56,880
-on going.
 If it's uncomfortable, if you don't
 
 901
 00:29:56,880 --> 00:29:59,200
-If it's uncomfortable, if you don't
 aren't quite tracking, it's okay. Let's
 
 902
 00:29:59,200 --> 00:30:00,880
-aren't quite tracking, it's okay. Let's
 get to the end and then we'll we'll get
 
 903
 00:30:00,880 --> 00:30:02,800
-get to the end and then we'll we'll get
 to some questions.
 
 904
 00:30:02,800 --> 00:30:06,560
-to some questions.
 So, we went to the from the doist.do
 
 905
 00:30:06,560 --> 00:30:08,360
-So, we went to the from the doist.do
 to the recur
 
 906
 00:30:08,360 --> 00:30:09,960
-to the recur
 of the of the of the of the main event
 
 907
 00:30:09,960 --> 00:30:12,240
-of the of the of the of the main event
 loop or scheduler. And now we're going
 
 908
 00:30:12,240 --> 00:30:14,720
-loop or scheduler. And now we're going
 to the individual task do. And the
 
 909
 00:30:14,720 --> 00:30:16,400
-to the individual task do. And the
 individual task do is taking us to the
 
 910
 00:30:16,400 --> 00:30:19,280
-individual task do is taking us to the
 recur of the task.
 
 911
 00:30:19,280 --> 00:30:21,400
-recur of the task.
 So, and you'll see it's empty except for
 
 912
 00:30:21,400 --> 00:30:23,560
-So, and you'll see it's empty except for
 return false. You have to subclass it if
 
 913
 00:30:23,560 --> 00:30:25,600
-return false. You have to subclass it if
 you want to do work, right? So, the
 
 914
 00:30:25,600 --> 00:30:27,440
-you want to do work, right? So, the
 the main doer construct is almost
 
 915
 00:30:27,440 --> 00:30:29,600
-the main doer construct is almost
 like an abstract class in the sense that
 
 916
 00:30:29,600 --> 00:30:31,480
-like an abstract class in the sense that
 you need to subclass it, override the
 
 917
 00:30:31,480 --> 00:30:33,280
-you need to subclass it, override the
 recur, and that's where you call your
 
 918
 00:30:33,280 --> 00:30:35,800
-recur, and that's where you call your
 business logic function.
 
 919
 00:30:35,800 --> 00:30:37,400
-business logic function.
 And the false there is interesting. So,
 
 920
 00:30:37,400 --> 00:30:39,640
-And the false there is interesting. So,
 if you return false, it'll keep
 
 921
 00:30:39,640 --> 00:30:42,040
-if you return false, it'll keep
 running until you return true. Because
 
 922
 00:30:42,040 --> 00:30:43,360
-running until you return true. Because
 the way that you end something is you
 
 923
 00:30:43,360 --> 00:30:45,680
-the way that you end something is you
 return true cuz it's the done or not
 
 924
 00:30:45,680 --> 00:30:48,200
-return true cuz it's the done or not
 status. So, return true sets done to
 
 925
 00:30:48,200 --> 00:30:50,040
-status. So, return true sets done to
 true in the root scheduler for that
 
 926
 00:30:50,040 --> 00:30:51,200
-true in the root scheduler for that
 task.
 
 927
 00:30:51,200 --> 00:30:52,440
-task.
 That's why the default is to return
 
 928
 00:30:52,440 --> 00:30:54,000
-That's why the default is to return
 false.
 
 929
 00:30:54,000 --> 00:30:56,120
-false.
 Now, this is an example
 
 930
 00:30:56,120 --> 00:30:57,640
-Now, this is an example
 from the KERIpy code base. If you've
 
 931
 00:30:57,640 --> 00:30:59,720
-from the KERIpy code base. If you've
 used KERI it all, you probably have to
 
 932
 00:30:59,720 --> 00:31:01,800
-used KERI it all, you probably have to
 deal with database migrations. We have a
 
 933
 00:31:01,800 --> 00:31:04,120
-deal with database migrations. We have a
 doer that does database migrations. We
 
 934
 00:31:04,120 --> 00:31:05,480
-doer that does database migrations. We
 have a recur.
 
 935
 00:31:05,480 --> 00:31:06,600
-have a recur.
 And so,
 
 936
 00:31:06,600 --> 00:31:09,400
-And so,
 we Okay, we open up the database.
 
 937
 00:31:09,400 --> 00:31:10,920
-we Okay, we open up the database.
 And then after that, so really this
 
 938
 00:31:10,920 --> 00:31:12,720
-And then after that, so really this
 database stuff should be in an enter
 
 939
 00:31:12,720 --> 00:31:14,720
-database stuff should be in an enter
 function. Whoever wrote this wasn't
 
 940
 00:31:14,720 --> 00:31:17,640
-function. Whoever wrote this wasn't
 trying to fully embrace the life cycle
 
 941
 00:31:17,640 --> 00:31:19,520
-trying to fully embrace the life cycle
 functions. This is set up that really
 
 942
 00:31:19,520 --> 00:31:20,960
-functions. This is set up that really
 should be
 
 943
 00:31:20,960 --> 00:31:22,320
-should be
 in a
 
 944
 00:31:22,320 --> 00:31:24,760
-in a
 What do you call it? And you notice,
 
 945
 00:31:24,760 --> 00:31:27,040
-What do you call it? And you notice,
 where's the cleanup?
 
 946
 00:31:27,040 --> 00:31:28,640
-where's the cleanup?
 We need an enter and an exit function.
 
 947
 00:31:28,640 --> 00:31:30,720
-We need an enter and an exit function.
 So, this is not as good as it could
 
 948
 00:31:30,720 --> 00:31:32,400
-So, this is not as good as it could
 be, but it's sort of sufficient for now.
 
 949
 00:31:32,400 --> 00:31:33,920
-be, but it's sort of sufficient for now.
 So, we run all this business logic, we
 
 950
 00:31:33,920 --> 00:31:36,800
-So, we run all this business logic, we
 run database migrate, return true.
 
 951
 00:31:36,800 --> 00:31:38,120
-run database migrate, return true.
 Runs the database migrations, return
 
 952
 00:31:38,120 --> 00:31:39,760
-Runs the database migrations, return
 true, and it's done.
 
 953
 00:31:39,760 --> 00:31:42,640
-true, and it's done.
 So, this is a basic task. If I do CLI
 
 954
 00:31:42,640 --> 00:31:44,720
-So, this is a basic task. If I do CLI
 migrate run,
 
 955
 00:31:44,720 --> 00:31:46,880
-migrate run,
 this will that'll trigger this.
 
 956
 00:31:46,880 --> 00:31:48,880
-this will that'll trigger this.
 It'll migrate your database version.
 
 957
 00:31:48,880 --> 00:31:49,800
-It'll migrate your database version.
 Now, if you're going to look through the
 
 958
 00:31:49,800 --> 00:31:50,960
-Now, if you're going to look through the
 rest of the KERIpy code base, you
 
 959
 00:31:50,960 --> 00:31:53,240
-rest of the KERIpy code base, you
 might say, "Why do we use so many do
 
 960
 00:31:53,240 --> 00:31:56,280
-might say, "Why do we use so many do
 doers, but not many doers?"
 
 961
 00:31:56,280 --> 00:31:58,520
-doers, but not many doers?"
 And it's because
 
 962
 00:31:58,520 --> 00:32:03,092
-And it's because
 of one function, doing.doify.
 
 963
@@ -4808,362 +3864,290 @@ That's kind of funny.
 
 964
 00:32:05,480 --> 00:32:07,320
-That's kind of funny.
 Yeah, it's it's Sam has a really
 
 965
 00:32:07,320 --> 00:32:09,440
-Yeah, it's it's Sam has a really
 fascinating naming policy.
 
 966
 00:32:09,440 --> 00:32:11,520
-fascinating naming policy.
 But what doify does,
 
 967
 00:32:11,520 --> 00:32:13,320
-But what doify does,
 it essentially allows you to use yield
 
 968
 00:32:13,320 --> 00:32:15,280
-it essentially allows you to use yield
 from in the body of a function. Remember
 
 969
 00:32:15,280 --> 00:32:19,400
-from in the body of a function. Remember
 how I said structured concurrency says,
 
 970
 00:32:19,400 --> 00:32:23,200
-how I said structured concurrency says,
 "Program flow follows lexical scope."
 
 971
 00:32:23,200 --> 00:32:26,120
-"Program flow follows lexical scope."
 The reason why doify is used is because
 
 972
 00:32:26,120 --> 00:32:28,320
-The reason why doify is used is because
 it allows that sort of intuitive program
 
 973
 00:32:28,320 --> 00:32:30,720
-it allows that sort of intuitive program
 flow to follow lexical scope
 
 974
 00:32:30,720 --> 00:32:33,000
-flow to follow lexical scope
 contract to be met. And it's easy to
 
 975
 00:32:33,000 --> 00:32:34,960
-contract to be met. And it's easy to
 essentially schedule a lot of subtasks
 
 976
 00:32:34,960 --> 00:32:36,920
-essentially schedule a lot of subtasks
 in one lexical context that makes
 
 977
 00:32:36,920 --> 00:32:38,520
-in one lexical context that makes
 intuitive sense.
 
 978
 00:32:38,520 --> 00:32:41,280
-intuitive sense.
 And so, I'll give you an example here.
 
 979
 00:32:41,280 --> 00:32:42,520
-And so, I'll give you an example here.
 Oh, so and actually there's a
 
 980
 00:32:42,520 --> 00:32:43,960
-Oh, so and actually there's a
 difference. So, this is the do doer
 
 981
 00:32:43,960 --> 00:32:44,920
-difference. So, this is the do doer
 function. You'll notice there's a
 
 982
 00:32:44,920 --> 00:32:46,840
-function. You'll notice there's a
 critical difference. So, the reason why
 
 983
 00:32:46,840 --> 00:32:49,160
-critical difference. So, the reason why
 you use doify is because there's there's
 
 984
 00:32:49,160 --> 00:32:50,360
-you use doify is because there's there's
 something that
 
 985
 00:32:50,360 --> 00:32:52,280
-something that
 I think is my opinion it's missing
 
 986
 00:32:52,280 --> 00:32:54,000
-I think is my opinion it's missing
 from do doer.
 
 987
 00:32:54,000 --> 00:32:55,640
-from do doer.
 I think Sam argues differently. He
 
 988
 00:32:55,640 --> 00:32:57,760
-I think Sam argues differently. He
 argues for a different or
 
 989
 00:32:57,760 --> 00:32:59,960
-argues for a different or
 way to arrange things.
 
 990
 00:32:59,960 --> 00:33:01,840
-way to arrange things.
 Personally, I think that the way that we
 
 991
 00:33:01,840 --> 00:33:03,520
-Personally, I think that the way that we
 use doify
 
 992
 00:33:03,520 --> 00:33:05,440
-use doify
 is evidence
 
 993
 00:33:05,440 --> 00:33:07,040
-is evidence
 that we should add the missing part
 
 994
 00:33:07,040 --> 00:33:09,240
-that we should add the missing part
 here. See here we have self.recur, but
 
 995
 00:33:09,240 --> 00:33:10,600
-here. See here we have self.recur, but
 we don't have the generator check.
 
 996
 00:33:10,600 --> 00:33:12,160
-we don't have the generator check.
 Remember the generator check? If I go
 
 997
 00:33:12,160 --> 00:33:15,080
-Remember the generator check? If I go
 one slide over, here's the doer.
 
 998
 00:33:15,080 --> 00:33:17,360
-one slide over, here's the doer.
 We say if is generator yield from. So,
 
 999
 00:33:17,360 --> 00:33:19,800
-We say if is generator yield from. So,
 what this means is a do doer will not
 
 1000
 00:33:19,800 --> 00:33:21,960
-what this means is a do doer will not
 allow you to use yield from in its
 
 1001
 00:33:21,960 --> 00:33:24,920
-allow you to use yield from in its
 recur. That's why we use doify all the
 
 1002
 00:33:24,920 --> 00:33:26,920
-recur. That's why we use doify all the
 time. And Sam has this argument about
 
 1003
 00:33:26,920 --> 00:33:28,520
-time. And Sam has this argument about
 hierarchical state machines is the right
 
 1004
 00:33:28,520 --> 00:33:30,320
-hierarchical state machines is the right
 place to use state to essentially
 
 1005
 00:33:30,320 --> 00:33:31,800
-place to use state to essentially
 manage multiple sets of doers, and then
 
 1006
 00:33:31,800 --> 00:33:33,720
-manage multiple sets of doers, and then
 you have a scheduler doer that manages
 
 1007
 00:33:33,720 --> 00:33:35,720
-you have a scheduler doer that manages
 other doers as a set of doers within a
 
 1008
 00:33:35,720 --> 00:33:37,880
-other doers as a set of doers within a
 do doer. There's an argument there, but
 
 1009
 00:33:37,880 --> 00:33:39,640
-do doer. There's an argument there, but
 I don't think it's very intuitive.
 
 1010
 00:33:39,640 --> 00:33:41,360
-I don't think it's very intuitive.
 I understand the argument. Maybe I just
 
 1011
 00:33:41,360 --> 00:33:43,000
-I understand the argument. Maybe I just
 need to maybe I'm just unfamiliar and I
 
 1012
 00:33:43,000 --> 00:33:45,360
-need to maybe I'm just unfamiliar and I
 need to learn that. But to me, the fact
 
 1013
 00:33:45,360 --> 00:33:46,880
-need to learn that. But to me, the fact
 that we use doify so much is
 
 1014
 00:33:46,880 --> 00:33:50,200
-that we use doify so much is
 evidence that we should add
 
 1015
 00:33:50,200 --> 00:33:52,400
-evidence that we should add
 this is generator
 
 1016
 00:33:52,400 --> 00:33:54,680
-this is generator
 in the doer and see now we're in do doer
 
 1017
 00:33:54,680 --> 00:33:57,320
-in the doer and see now we're in do doer
 right above here. We should put that is
 
 1018
 00:33:57,320 --> 00:33:58,760
-right above here. We should put that is
 generator check and run it that way in
 
 1019
 00:33:58,760 --> 00:34:00,600
-generator check and run it that way in
 my opinion. And you'll see why. So, now
 
 1020
 00:34:00,600 --> 00:34:02,560
-my opinion. And you'll see why. So, now
 let's get to the code. But notice the do
 
 1021
 00:34:02,560 --> 00:34:05,880
-let's get to the code. But notice the do
 doer has the same life cycle functions.
 
 1022
 00:34:05,880 --> 00:34:08,720
-doer has the same life cycle functions.
 Enter, exit, clean abort sees, and we
 
 1023
 00:34:08,720 --> 00:34:10,440
-Enter, exit, clean abort sees, and we
 call recur.
 
 1024
 00:34:10,440 --> 00:34:13,679
-call recur.
 So, the do doer
 
 1025
 00:34:13,679 --> 00:34:15,280
-So, the do doer
 And you'll notice this return self.done
 
 1026
 00:34:15,280 --> 00:34:17,760
-And you'll notice this return self.done
 for when a task is done, true or false.
 
 1027
 00:34:17,760 --> 00:34:19,399
-for when a task is done, true or false.
 The difference between the do doer and
 
 1028
 00:34:19,399 --> 00:34:22,520
-The difference between the do doer and
 the doer that is the do doer you can add
 
 1029
 00:34:22,520 --> 00:34:24,720
-the doer that is the do doer you can add
 it's extend or remove. You can add tasks
 
 1030
 00:34:24,720 --> 00:34:26,560
-it's extend or remove. You can add tasks
 to it or remove tasks to it. So, it's an
 
 1031
 00:34:26,560 --> 00:34:30,679
-to it or remove tasks to it. So, it's an
 aggregation construct. The doer is not.
 
 1032
 00:34:30,679 --> 00:34:33,679
-aggregation construct. The doer is not.
 So, you can see how the do doer is a bit
 
 1033
 00:34:33,679 --> 00:34:36,320
-So, you can see how the do doer is a bit
 of a combination between a scheduler
 
 1034
 00:34:36,320 --> 00:34:40,440
-of a combination between a scheduler
 and a task, but the doer is just a task.
 
 1035
 00:34:40,440 --> 00:34:44,510
-and a task, but the doer is just a task.
 Okay, so
 
 1036
@@ -5173,377 +4157,302 @@ back to the K Alliance Sept.
 
 1037
 00:34:47,679 --> 00:34:49,120
-back to the K Alliance Sept.
 Inside of the init function for the
 
 1038
 00:34:49,120 --> 00:34:50,879
-Inside of the init function for the
 Incept doer, what you'll notice is a do
 
 1039
 00:34:50,879 --> 00:34:53,919
-Incept doer, what you'll notice is a do
 doer. We call doing.dot doify on the
 
 1040
 00:34:53,919 --> 00:34:56,120
-doer. We call doing.dot doify on the
 main function that runs everything.
 
 1041
 00:34:56,120 --> 00:34:58,080
-main function that runs everything.
 What that does
 
 1042
 00:34:58,080 --> 00:34:59,960
-What that does
 Here's the Incept do. You see we have a
 
 1043
 00:34:59,960 --> 00:35:03,360
-Here's the Incept do. You see we have a
 yield from yield from. It's
 
 1044
 00:35:03,360 --> 00:35:05,280
-yield from yield from. It's
 pretty intuitive to co-locate a lot of
 
 1045
 00:35:05,280 --> 00:35:06,800
-pretty intuitive to co-locate a lot of
 that logic. Rather than create a
 
 1046
 00:35:06,800 --> 00:35:08,640
-that logic. Rather than create a
 complicated state machine and worry
 
 1047
 00:35:08,640 --> 00:35:10,000
-complicated state machine and worry
 about the state of this doer and that
 
 1048
 00:35:10,000 --> 00:35:11,040
-about the state of this doer and that
 doer and sort of schedule them at the
 
 1049
 00:35:11,040 --> 00:35:12,760
-doer and sort of schedule them at the
 right time, we just locate them in the
 
 1050
 00:35:12,760 --> 00:35:15,920
-right time, we just locate them in the
 same lex- lexical cons- scope.
 
 1051
 00:35:15,920 --> 00:35:17,400
-same lex- lexical cons- scope.
 That's pretty easy for humans to
 
 1052
 00:35:17,400 --> 00:35:19,440
-That's pretty easy for humans to
 understand that program flow,
 
 1053
 00:35:19,440 --> 00:35:20,520
-understand that program flow,
 right?
 
 1054
 00:35:20,520 --> 00:35:21,800
-right?
 That's why it's so handy. That's why in
 
 1055
 00:35:21,800 --> 00:35:23,200
-That's why it's so handy. That's why in
 my opinion
 
 1056
 00:35:23,200 --> 00:35:25,120
-my opinion
 we this really should be a recur
 
 1057
 00:35:25,120 --> 00:35:27,240
-we this really should be a recur
 function, and the recur should allow you
 
 1058
 00:35:27,240 --> 00:35:29,360
-function, and the recur should allow you
 to use these yields and yields from
 
 1059
 00:35:29,360 --> 00:35:30,880
-to use these yields and yields from
 in the body
 
 1060
 00:35:30,880 --> 00:35:32,960
-in the body
 of the do doer's recur.
 
 1061
 00:35:32,960 --> 00:35:35,080
-of the do doer's recur.
 That's not how it works. I actually did
 
 1062
 00:35:35,080 --> 00:35:36,480
-That's not how it works. I actually did
 go through the trouble
 
 1063
 00:35:36,480 --> 00:35:39,040
-go through the trouble
 in the did:webs repository in our tests
 
 1064
 00:35:39,040 --> 00:35:40,840
-in the did:webs repository in our tests
 to do it the way that Sam recommended,
 
 1065
 00:35:40,840 --> 00:35:41,920
-to do it the way that Sam recommended,
 and it's kind of interesting. It does
 
 1066
 00:35:41,920 --> 00:35:43,360
-and it's kind of interesting. It does
 make you clean up your code a little bit
 
 1067
 00:35:43,360 --> 00:35:45,240
-make you clean up your code a little bit
 cuz if you And so, I can see There
 
 1068
 00:35:45,240 --> 00:35:46,720
-cuz if you And so, I can see There
 There's an argument there. And what it
 
 1069
 00:35:46,720 --> 00:35:48,240
-There's an argument there. And what it
 does is essentially the mental model is
 
 1070
 00:35:48,240 --> 00:35:49,960
-does is essentially the mental model is
 if you're going to do things the right
 
 1071
 00:35:49,960 --> 00:35:52,240
-if you're going to do things the right
 idiomatic way according to Sam's
 
 1072
 00:35:52,240 --> 00:35:54,320
-idiomatic way according to Sam's
 idea, every place where you have a yield
 
 1073
 00:35:54,320 --> 00:35:56,040
-idea, every place where you have a yield
 from should essentially be a separate do
 
 1074
 00:35:56,040 --> 00:35:58,400
-from should essentially be a separate do
 doer, or sorry, a separate doer.
 
 1075
 00:35:58,400 --> 00:36:00,320
-doer, or sorry, a separate doer.
 You would You have at least one, two,
 
 1076
 00:36:00,320 --> 00:36:02,280
-You would You have at least one, two,
 possibly three more here. And what you
 
 1077
 00:36:02,280 --> 00:36:05,800
-possibly three more here. And what you
 do is you would add all of those
 
 1078
 00:36:05,800 --> 00:36:07,080
-do is you would add all of those
 You would See how we have a list of
 
 1079
 00:36:07,080 --> 00:36:08,560
-You would See how we have a list of
 doers here, and then we send it when we
 
 1080
 00:36:08,560 --> 00:36:09,640
-doers here, and then we send it when we
 say
 
 1081
 00:36:09,640 --> 00:36:11,000
-say
 call the constructor we init doers
 
 1082
 00:36:11,000 --> 00:36:12,160
-call the constructor we init doers
 equals doers.
 
 1083
 00:36:12,160 --> 00:36:13,320
-equals doers.
 What you would do instead of having all
 
 1084
 00:36:13,320 --> 00:36:15,480
-What you would do instead of having all
 those yield froms in one function, you
 
 1085
 00:36:15,480 --> 00:36:17,400
-those yield froms in one function, you
 would make separate doers for that sub
 
 1086
 00:36:17,400 --> 00:36:20,040
-would make separate doers for that sub
 part of the task, and you'd have that be
 
 1087
 00:36:20,040 --> 00:36:21,880
-part of the task, and you'd have that be
 part of the task array that you send to
 
 1088
 00:36:21,880 --> 00:36:23,000
-part of the task array that you send to
 yourself when you're scheduling
 
 1089
 00:36:23,000 --> 00:36:24,560
-yourself when you're scheduling
 yourself.
 
 1090
 00:36:24,560 --> 00:36:26,240
-yourself.
 So, you can You can see it sort of force
 
 1091
 00:36:26,240 --> 00:36:27,240
-So, you can You can see it sort of force
 you to lift things out, and make
 
 1092
 00:36:27,240 --> 00:36:28,680
-you to lift things out, and make
 dependencies more explicit. It's kind of
 
 1093
 00:36:28,680 --> 00:36:30,120
-dependencies more explicit. It's kind of
 like smaller functions versus larger
 
 1094
 00:36:30,120 --> 00:36:31,600
-like smaller functions versus larger
 functions. So it is more hygienic in
 
 1095
 00:36:31,600 --> 00:36:32,960
-functions. So it is more hygienic in
 some senses, a little bit more
 
 1096
 00:36:32,960 --> 00:36:34,240
-some senses, a little bit more
 convoluted. So it's a bit of a
 
 1097
 00:36:34,240 --> 00:36:36,520
-convoluted. So it's a bit of a
 trade-off.
 
 1098
 00:36:36,520 --> 00:36:37,800
-trade-off.
 So
 
 1099
 00:36:37,800 --> 00:36:39,760
-So
 Now I'm I'm just mixing affection. So
 
 1100
 00:36:39,760 --> 00:36:41,720
-Now I'm I'm just mixing affection. So
 affection is a JavaScript structured
 
 1101
 00:36:41,720 --> 00:36:43,480
-affection is a JavaScript structured
 concurrency library. Now that you
 
 1102
 00:36:43,480 --> 00:36:45,000
-concurrency library. Now that you
 understand
 
 1103
 00:36:45,000 --> 00:36:47,360
-understand
 the yield from syntax and the yield and
 
 1104
 00:36:47,360 --> 00:36:48,640
-the yield from syntax and the yield and
 whatever, now you can see what it looks
 
 1105
 00:36:48,640 --> 00:36:50,680
-whatever, now you can see what it looks
 like in JavaScript cuz JavaScript has a
 
 1106
 00:36:50,680 --> 00:36:53,280
-like in JavaScript cuz JavaScript has a
 construct that's like yield from.
 
 1107
 00:36:53,280 --> 00:36:55,600
-construct that's like yield from.
 If you see yield star in JavaScript,
 
 1108
 00:36:55,600 --> 00:36:57,440
-If you see yield star in JavaScript,
 it's the same thing. It runs a
 
 1109
 00:36:57,440 --> 00:36:59,000
-it's the same thing. It runs a
 co-routine
 
 1110
 00:36:59,000 --> 00:37:01,040
-co-routine
 from that spot. So this is using the
 
 1111
 00:37:01,040 --> 00:37:03,390
-from that spot. So this is using the
 affection
 
 1112
@@ -5557,326 +4466,261 @@ just like we you know how we did
 
 1114
 00:37:06,800 --> 00:37:08,760
-just like we you know how we did
 doing.do.doify.
 
 1115
 00:37:08,760 --> 00:37:10,480
-doing.do.doify.
 This is part of why I lean in favor of
 
 1116
 00:37:10,480 --> 00:37:13,240
-This is part of why I lean in favor of
 making do doer.recur do allow yield from
 
 1117
 00:37:13,240 --> 00:37:15,680
-making do doer.recur do allow yield from
 because in affection in the structured
 
 1118
 00:37:15,680 --> 00:37:17,200
-because in affection in the structured
 concurrency library in TypeScript
 
 1119
 00:37:17,200 --> 00:37:18,600
-concurrency library in TypeScript
 JavaScript
 
 1120
 00:37:18,600 --> 00:37:20,200
-JavaScript
 this whole function is like a doified
 
 1121
 00:37:20,200 --> 00:37:21,720
-this whole function is like a doified
 function.
 
 1122
 00:37:21,720 --> 00:37:24,080
-function.
 You can have as many yields yield stars,
 
 1123
 00:37:24,080 --> 00:37:26,000
-You can have as many yields yield stars,
 which are yield froms, as you want and
 
 1124
 00:37:26,000 --> 00:37:27,920
-which are yield froms, as you want and
 just sort of naturally proceed forth in
 
 1125
 00:37:27,920 --> 00:37:30,160
-just sort of naturally proceed forth in
 an execution chain in one function.
 
 1126
 00:37:30,160 --> 00:37:31,560
-an execution chain in one function.
 And so you'll see I'm saying yield from
 
 1127
 00:37:31,560 --> 00:37:33,000
-And so you'll see I'm saying yield from
 list identifier service and we'll look
 
 1128
 00:37:33,000 --> 00:37:35,280
-list identifier service and we'll look
 at that one layer deeper.
 
 1129
 00:37:35,280 --> 00:37:37,000
-at that one layer deeper.
 This actually it wraps the Signify
 
 1130
 00:37:37,000 --> 00:37:38,240
-This actually it wraps the Signify
 client. You'll see it has a Signify
 
 1131
 00:37:38,240 --> 00:37:39,600
-client. You'll see it has a Signify
 client right here.
 
 1132
 00:37:39,600 --> 00:37:42,520
-client right here.
 This is the wrapper. The This is another
 
 1133
 00:37:42,520 --> 00:37:43,800
-This is the wrapper. The This is another
 thing that I think is sort of missing
 
 1134
 00:37:43,800 --> 00:37:45,520
-thing that I think is sort of missing
 from HIO that we could add to it.
 
 1135
 00:37:45,520 --> 00:37:46,760
-from HIO that we could add to it.
 Wouldn't be that hard to add it. Sam has
 
 1136
 00:37:46,760 --> 00:37:48,440
-Wouldn't be that hard to add it. Sam has
 actually been experimenting with the
 
 1137
 00:37:48,440 --> 00:37:49,800
-actually been experimenting with the
 wrappers
 
 1138
 00:37:49,800 --> 00:37:51,600
-wrappers
 More recently with trying to
 
 1139
 00:37:51,600 --> 00:37:54,120
-More recently with trying to
 integrate async await into HIO. It's
 
 1140
 00:37:54,120 --> 00:37:56,280
-integrate async await into HIO. It's
 already done in the affection. We have a
 
 1141
 00:37:56,280 --> 00:37:58,120
-already done in the affection. We have a
 we say call promise and turn it into a
 
 1142
 00:37:58,120 --> 00:37:59,400
-we say call promise and turn it into a
 generator.
 
 1143
 00:37:59,400 --> 00:38:00,720
-generator.
 This allows you to preserve the
 
 1144
 00:38:00,720 --> 00:38:03,000
-This allows you to preserve the
 structured concurrency guarantees
 
 1145
 00:38:03,000 --> 00:38:04,680
-structured concurrency guarantees
 even when you use promises in
 
 1146
 00:38:04,680 --> 00:38:06,680
-even when you use promises in
 JavaScript. You'll have promises at sort
 
 1147
 00:38:06,680 --> 00:38:08,000
-JavaScript. You'll have promises at sort
 of the edge of your architecture and all
 
 1148
 00:38:08,000 --> 00:38:09,320
-of the edge of your architecture and all
 the nice stuff in between you'll have
 
 1149
 00:38:09,320 --> 00:38:11,400
-the nice stuff in between you'll have
 your structured concurrency guarantees.
 
 1150
 00:38:11,400 --> 00:38:12,720
-your structured concurrency guarantees.
 Just call a library you're importing
 
 1151
 00:38:12,720 --> 00:38:13,840
-Just call a library you're importing
 that you can't control.
 
 1152
 00:38:13,840 --> 00:38:17,000
-that you can't control.
 Exactly. Precisely. Promise. Yeah. And
 
 1153
 00:38:17,000 --> 00:38:18,320
-Exactly. Precisely. Promise. Yeah. And
 if you look at the wallet that I demoed
 
 1154
 00:38:18,320 --> 00:38:20,760
-if you look at the wallet that I demoed
 yesterday for my I a I need a really
 
 1155
 00:38:20,760 --> 00:38:22,080
-yesterday for my I a I need a really
 need to wrap up. Oh.
 
 1156
 00:38:22,080 --> 00:38:23,320
-need to wrap up. Oh.
 okay, let me just run through the end.
 
 1157
 00:38:23,320 --> 00:38:25,160
-okay, let me just run through the end.
 Okay, the last thing is
 
 1158
 00:38:25,160 --> 00:38:26,480
-Okay, the last thing is
 Look just look at these in the slides
 
 1159
 00:38:26,480 --> 00:38:28,520
-Look just look at these in the slides
 later. You'll see this weird
 
 1160
 00:38:28,520 --> 00:38:30,840
-later. You'll see this weird
 convention used everywhere in curio pi
 
 1161
 00:38:30,840 --> 00:38:33,160
-convention used everywhere in curio pi
 the self.wine talk and yield. And what
 
 1162
 00:38:33,160 --> 00:38:34,360
-the self.wine talk and yield. And what
 it is there's something with all
 
 1163
 00:38:34,360 --> 00:38:35,960
-it is there's something with all
 generators in JavaScript and in Python
 
 1164
 00:38:35,960 --> 00:38:37,840
-generators in JavaScript and in Python
 where you need to prime it. Prime it
 
 1165
 00:38:37,840 --> 00:38:39,840
-where you need to prime it. Prime it
 means advance to the first yield. You
 
 1166
 00:38:39,840 --> 00:38:41,840
-means advance to the first yield. You
 don't want the priming of your generator
 
 1167
 00:38:41,840 --> 00:38:44,000
-don't want the priming of your generator
 to run business logic.
 
 1168
 00:38:44,000 --> 00:38:45,040
-to run business logic.
 You don't want it to come down here, so
 
 1169
 00:38:45,040 --> 00:38:47,400
-You don't want it to come down here, so
 you put this yield at the front. I think
 
 1170
 00:38:47,400 --> 00:38:48,880
-you put this yield at the front. I think
 that should be handled by a framework in
 
 1171
 00:38:48,880 --> 00:38:50,080
-that should be handled by a framework in
 my opinion.
 
 1172
 00:38:50,080 --> 00:38:51,040
-my opinion.
 It's kind of weird to force people to
 
 1173
 00:38:51,040 --> 00:38:53,600
-It's kind of weird to force people to
 manage that, but that's why this exists.
 
 1174
 00:38:53,600 --> 00:38:55,840
-manage that, but that's why this exists.
 And
 
 1175
 00:38:55,840 --> 00:38:59,240
-And
 Okay, and I would say there's
 
 1176
 00:38:59,240 --> 00:39:02,800
-Okay, and I would say there's
 Oh, get we'll we'll cut it there.
 
 1177
 00:39:02,800 --> 00:39:04,927
-Oh, get we'll we'll cut it there.
 That's that's that's heel.
 
 1178
 00:39:04,927 --> 00:39:06,947
-That's that's that's heel.
 [applause]
 

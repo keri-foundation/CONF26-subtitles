@@ -1,76 +1,62 @@
-﻿1
+1
 00:00:07,909 --> 00:00:12,960
 Okay, I'm going to start
 since we're over time already. I'm
 
 2
 00:00:12,960 --> 00:00:15,200
-since we're over time already. I'm
 glad to be here today.
 
 3
 00:00:15,200 --> 00:00:17,840
-glad to be here today.
 Title of my talk, as you can see, is
 
 4
 00:00:17,840 --> 00:00:19,680
-Title of my talk, as you can see, is
 digital identity needs a legal
 
 5
 00:00:19,680 --> 00:00:22,640
-digital identity needs a legal
 foundation. So if you were at SEDI
 
 6
 00:00:22,640 --> 00:00:24,400
-foundation. So if you were at SEDI
 summit
 
 7
 00:00:24,400 --> 00:00:27,199
-summit
 with the first two days of the week,
 
 8
 00:00:27,199 --> 00:00:29,760
-with the first two days of the week,
 this is related to the things I said
 
 9
 00:00:29,760 --> 00:00:32,160
-this is related to the things I said
 there and just kind of goes into a
 
 10
 00:00:32,160 --> 00:00:34,800
-there and just kind of goes into a
 little bit more detail on how the legal
 
 11
 00:00:34,800 --> 00:00:37,520
-little bit more detail on how the legal
 foundation actually helps us out. So we
 
 12
 00:00:37,520 --> 00:00:39,840
-foundation actually helps us out. So we
 spent a lot of time talking about, you
 
 13
 00:00:39,840 --> 00:00:41,200
-spent a lot of time talking about, you
 know, the cryptography and key
 
 14
 00:00:41,200 --> 00:00:44,079
-know, the cryptography and key
 management and all of those things.
 
 15
 00:00:44,079 --> 00:00:48,239
-management and all of those things.
 But I think the hardest part of digital
 
 16
@@ -80,57 +66,46 @@ identity is actually
 
 17
 00:00:51,120 --> 00:00:53,120
-identity is actually
 the
 
 18
 00:00:53,120 --> 00:00:56,719
-the
 not the technical things but legal and
 
 19
 00:00:56,719 --> 00:00:59,680
-not the technical things but legal and
 institutional right so spent a lot of
 
 20
 00:00:59,680 --> 00:01:04,000
-institutional right so spent a lot of
 time talking about governance and you
 
 21
 00:01:04,000 --> 00:01:06,080
-time talking about governance and you
 know sometimes it's can be kind of
 
 22
 00:01:06,080 --> 00:01:08,479
-know sometimes it's can be kind of
 boring but ultimately I think it's what
 
 23
 00:01:08,479 --> 00:01:10,799
-boring but ultimately I think it's what
 gives us the foundation for making all
 
 24
 00:01:10,799 --> 00:01:13,920
-gives us the foundation for making all
 of this work. So, think about where
 
 25
 00:01:13,920 --> 00:01:16,159
-of this work. So, think about where
 we're at. We've got decentralized key
 
 26
 00:01:16,159 --> 00:01:19,439
-we're at. We've got decentralized key
 management, authentic chain credentials,
 
 27
 00:01:19,439 --> 00:01:22,320
-management, authentic chain credentials,
 Serialization formats,
 
 28
@@ -148,202 +123,162 @@ So, the technical foundations
 
 31
 00:01:30,880 --> 00:01:32,560
-So, the technical foundations
 are largely there. That doesn't mean
 
 32
 00:01:32,560 --> 00:01:34,000
-are largely there. That doesn't mean
 they're done. Doesn't mean they can't be
 
 33
 00:01:34,000 --> 00:01:37,759
-they're done. Doesn't mean they can't be
 improved, but we've made real progress.
 
 34
 00:01:37,759 --> 00:01:40,560
-improved, but we've made real progress.
 We also have things that we're still
 
 35
 00:01:40,560 --> 00:01:42,960
-We also have things that we're still
 working on like tooling and ecosystem
 
 36
 00:01:42,960 --> 00:01:45,600
-working on like tooling and ecosystem
 and developer experience and all of
 
 37
 00:01:45,600 --> 00:01:48,479
-and developer experience and all of
 those things that make it work.
 
 38
 00:01:48,479 --> 00:01:50,399
-those things that make it work.
 But we need to get adoption. And in
 
 39
 00:01:50,399 --> 00:01:52,640
-But we need to get adoption. And in
 order to get adoption,
 
 40
 00:01:52,640 --> 00:01:56,000
-order to get adoption,
 we have to
 
 41
 00:01:56,000 --> 00:01:57,360
-we have to
 get rid of some of the fundamental
 
 42
 00:01:57,360 --> 00:01:59,600
-get rid of some of the fundamental
 blockers. Now, I'm going to talk about a
 
 43
 00:01:59,600 --> 00:02:02,000
-blockers. Now, I'm going to talk about a
 couple of them today. Not necessarily
 
 44
 00:02:02,000 --> 00:02:04,640
-couple of them today. Not necessarily
 all of them. I mean because you know
 
 45
 00:02:04,640 --> 00:02:06,719
-all of them. I mean because you know
 there's no end to blockers when you're
 
 46
 00:02:06,719 --> 00:02:08,879
-there's no end to blockers when you're
 trying to do something this big. But
 
 47
 00:02:08,879 --> 00:02:10,879
-trying to do something this big. But
 there's a couple of them that I think we
 
 48
 00:02:10,879 --> 00:02:16,959
-there's a couple of them that I think we
 can we can help solve. So Sarashin
 
 49
 00:02:16,959 --> 00:02:20,239
-can we can help solve. So Sarashin
 How to say his name Mukapage I think
 
 50
 00:02:20,239 --> 00:02:22,400
-How to say his name Mukapage I think
 is how you say his last name. I haven't
 
 51
 00:02:22,400 --> 00:02:24,560
-is how you say his last name. I haven't
 heard it said so I'll say it that way.
 
 52
 00:02:24,560 --> 00:02:26,160
-heard it said so I'll say it that way.
 Recently wrote a book about what he
 
 53
 00:02:26,160 --> 00:02:28,959
-Recently wrote a book about what he
 called the a book a paper what he called
 
 54
 00:02:28,959 --> 00:02:31,680
-called the a book a paper what he called
 the proof gap. And for him, the proof
 
 55
 00:02:31,680 --> 00:02:35,599
-the proof gap. And for him, the proof
 gap was the idea that we still rely
 
 56
 00:02:35,599 --> 00:02:39,200
-gap was the idea that we still rely
 largely on centralized institutions to
 
 57
 00:02:39,200 --> 00:02:42,000
-largely on centralized institutions to
 be able to prove things about ourselves.
 
 58
 00:02:42,000 --> 00:02:45,040
-be able to prove things about ourselves.
 So, our education, employment, whatever
 
 59
 00:02:45,040 --> 00:02:47,840
-So, our education, employment, whatever
 licenses we have, you know, benefits
 
 60
 00:02:47,840 --> 00:02:50,560
-licenses we have, you know, benefits
 we're entitled to, all of those things.
 
 61
 00:02:50,560 --> 00:02:53,519
-we're entitled to, all of those things.
 When proof is needed, we can't generally
 
 62
 00:02:53,519 --> 00:02:55,760
-When proof is needed, we can't generally
 present it directly, especially
 
 63
 00:02:55,760 --> 00:02:58,480
-present it directly, especially
 digitally in a way that somebody else
 
 64
 00:02:58,480 --> 00:03:03,200
-digitally in a way that somebody else
 can easily verify. So even worse, I
 
 65
 00:03:03,200 --> 00:03:05,680
-can easily verify. So even worse, I
 mean, if we lose that proof, we have to
 
 66
 00:03:05,680 --> 00:03:07,200
-mean, if we lose that proof, we have to
 essentially go back to those
 
 67
 00:03:07,200 --> 00:03:10,239
-essentially go back to those
 institutions one at a time and confirm
 
 68
 00:03:10,239 --> 00:03:12,239
-institutions one at a time and confirm
 something about ourselves, right? So, so
 
 69
 00:03:12,239 --> 00:03:16,800
-something about ourselves, right? So, so
 that could be a real problem.
 
 70
 00:03:16,800 --> 00:03:18,560
-that could be a real problem.
 Back, you know, 50 years ago when
 
 71
@@ -353,87 +288,70 @@ everything was based on paper and kept
 
 72
 00:03:20,319 --> 00:03:22,239
-everything was based on paper and kept
 in filing cabinets, that might have made
 
 73
 00:03:22,239 --> 00:03:23,760
-in filing cabinets, that might have made
 sense because it was really all you
 
 74
 00:03:23,760 --> 00:03:25,920
-sense because it was really all you
 could do. But I think everybody in this
 
 75
 00:03:25,920 --> 00:03:28,319
-could do. But I think everybody in this
 room acknowledges that we can do better
 
 76
 00:03:28,319 --> 00:03:30,480
-room acknowledges that we can do better
 than that in a digital world and we
 
 77
 00:03:30,480 --> 00:03:32,159
-than that in a digital world and we
 should do better than that, not just
 
 78
 00:03:32,159 --> 00:03:34,319
-should do better than that, not just
 take that old paper filing cabinet model
 
 79
 00:03:34,319 --> 00:03:36,720
-take that old paper filing cabinet model
 and move it forward.
 
 80
 00:03:36,720 --> 00:03:38,640
-and move it forward.
 So
 
 81
 00:03:38,640 --> 00:03:40,799
-So
 sometimes people think of the proof gap
 
 82
 00:03:40,799 --> 00:03:43,440
-sometimes people think of the proof gap
 as a technical problem and it certainly
 
 83
 00:03:43,440 --> 00:03:45,920
-as a technical problem and it certainly
 is that. There are technical problems
 
 84
 00:03:45,920 --> 00:03:48,159
-is that. There are technical problems
 with moving this centralized filing
 
 85
 00:03:48,159 --> 00:03:51,280
-with moving this centralized filing
 cabinet model into the digital world and
 
 86
 00:03:51,280 --> 00:03:53,040
-cabinet model into the digital world and
 trying to decentralize it and create
 
 87
 00:03:53,040 --> 00:03:57,519
-trying to decentralize it and create
 something that's better.
 
 88
 00:03:57,519 --> 00:04:01,599
-something that's better.
 But I think we can think we can ask
 
 89
@@ -443,7 +361,6 @@ ourselves about the problem of
 
 90
 00:04:03,280 --> 00:04:07,990
-ourselves about the problem of
 governance. So the
 
 91
@@ -453,17 +370,14 @@ worked out how to
 
 92
 00:04:13,680 --> 00:04:16,880
-worked out how to
 Transfer trust
 
 93
 00:04:16,880 --> 00:04:21,359
-Transfer trust
 in the physical world, right?
 
 94
 00:04:21,359 --> 00:04:24,000
-in the physical world, right?
 One of those is very familiar to
 
 95
@@ -478,582 +392,466 @@ we didn't have this problem because we
 
 97
 00:04:35,680 --> 00:04:37,840
-we didn't have this problem because we
 didn't have credit cards really at all,
 
 98
 00:04:37,840 --> 00:04:41,360
-didn't have credit cards really at all,
 right? There were bank cards and might
 
 99
 00:04:41,360 --> 00:04:43,120
-right? There were bank cards and might
 maybe had a card from your department
 
 100
 00:04:43,120 --> 00:04:44,639
-maybe had a card from your department
 store, right? I remember people had
 
 101
 00:04:44,639 --> 00:04:47,120
-store, right? I remember people had
 Sears cards that you could use at Sears
 
 102
 00:04:47,120 --> 00:04:49,360
-Sears cards that you could use at Sears
 and nowhere else, right? So they were
 
 103
 00:04:49,360 --> 00:04:53,680
-and nowhere else, right? So they were
 all centralized, single domain and Visa
 
 104
 00:04:53,680 --> 00:04:56,560
-all centralized, single domain and Visa
 first and then others followed came up
 
 105
 00:04:56,560 --> 00:05:00,080
-first and then others followed came up
 with this idea that we could have a
 
 106
 00:05:00,080 --> 00:05:03,759
-with this idea that we could have a
 coalition of banks put together ways
 
 107
 00:05:03,759 --> 00:05:05,600
-coalition of banks put together ways
 that they can work together. So this
 
 108
 00:05:05,600 --> 00:05:08,000
-that they can work together. So this
 involved technology, how are we going to
 
 109
 00:05:08,000 --> 00:05:10,639
-involved technology, how are we going to
 technically transfer information? It
 
 110
 00:05:10,639 --> 00:05:13,919
-technically transfer information? It
 involved rules and processes. It
 
 111
 00:05:13,919 --> 00:05:16,639
-involved rules and processes. It
 involved legal agreements. Involved all
 
 112
 00:05:16,639 --> 00:05:18,880
-involved legal agreements. Involved all
 of this. And collectively we call that
 
 113
 00:05:18,880 --> 00:05:21,039
-of this. And collectively we call that
 thing a trust framework, right? All of
 
 114
 00:05:21,039 --> 00:05:24,560
-thing a trust framework, right? All of
 those technical and legal and regulatory
 
 115
 00:05:24,560 --> 00:05:27,919
-those technical and legal and regulatory
 rules that make all of that work. But
 
 116
 00:05:27,919 --> 00:05:31,199
-rules that make all of that work. But
 even today, right, if you're a merchant,
 
 117
 00:05:31,199 --> 00:05:33,680
-even today, right, if you're a merchant,
 you've got multiple ones of these that
 
 118
 00:05:33,680 --> 00:05:35,600
-you've got multiple ones of these that
 you have to interact with. Now, it turns
 
 119
 00:05:35,600 --> 00:05:37,680
-you have to interact with. Now, it turns
 out somebody saw that problem and there
 
 120
 00:05:37,680 --> 00:05:39,199
-out somebody saw that problem and there
 are all kinds of companies. There's
 
 121
 00:05:39,199 --> 00:05:41,520
-are all kinds of companies. There's
 actually between this guy and those
 
 122
 00:05:41,520 --> 00:05:43,919
-actually between this guy and those
 guys, there's like four layers of
 
 123
 00:05:43,919 --> 00:05:46,800
-guys, there's like four layers of
 companies that make this all work. in
 
 124
 00:05:46,800 --> 00:05:50,560
-companies that make this all work. in
 order to make it easy for him and for
 
 125
 00:05:50,560 --> 00:05:52,880
-order to make it easy for him and for
 you when you go in, right? He doesn't
 
 126
 00:05:52,880 --> 00:05:54,880
-you when you go in, right? He doesn't
 have to have six different terminals and
 
 127
 00:05:54,880 --> 00:05:56,720
-have to have six different terminals and
 all of that because somebody's solved
 
 128
 00:05:56,720 --> 00:05:59,759
-all of that because somebody's solved
 that problem. But still, it's a problem.
 
 129
 00:05:59,759 --> 00:06:01,840
-that problem. But still, it's a problem.
 Now, imagine what happens when we've got
 
 130
 00:06:01,840 --> 00:06:05,840
-Now, imagine what happens when we've got
 not five different banking system or
 
 131
 00:06:05,840 --> 00:06:08,160
-not five different banking system or
 credit card systems. We have thousands
 
 132
 00:06:08,160 --> 00:06:10,560
-credit card systems. We have thousands
 of different credentials. Now we're
 
 133
 00:06:10,560 --> 00:06:14,000
-of different credentials. Now we're
 trying to navigate this island, the sea
 
 134
 00:06:14,000 --> 00:06:16,639
-trying to navigate this island, the sea
 of islands where each of these is a
 
 135
 00:06:16,639 --> 00:06:18,960
-of islands where each of these is a
 separate trust framework with their own
 
 136
 00:06:18,960 --> 00:06:21,680
-separate trust framework with their own
 rules, their own governance. Maybe they
 
 137
 00:06:21,680 --> 00:06:23,919
-rules, their own governance. Maybe they
 share some technical underpinnings, you
 
 138
 00:06:23,919 --> 00:06:25,440
-share some technical underpinnings, you
 know, at least at least we could hope
 
 139
 00:06:25,440 --> 00:06:28,160
-know, at least at least we could hope
 for that. But it's still a problem if
 
 140
 00:06:28,160 --> 00:06:30,479
-for that. But it's still a problem if
 every category of credentials requires
 
 141
 00:06:30,479 --> 00:06:33,360
-every category of credentials requires
 its own private trust framework and
 
 142
 00:06:33,360 --> 00:06:37,120
-its own private trust framework and
 every verifier has to somehow be inside
 
 143
 00:06:37,120 --> 00:06:39,680
-every verifier has to somehow be inside
 each of those trust frameworks. It's a
 
 144
 00:06:39,680 --> 00:06:42,160
-each of those trust frameworks. It's a
 nightmare, right? Instead of four layers
 
 145
 00:06:42,160 --> 00:06:43,680
-nightmare, right? Instead of four layers
 between the merchant and the credit card
 
 146
 00:06:43,680 --> 00:06:45,440
-between the merchant and the credit card
 companies, we'll have a hundred layers
 
 147
 00:06:45,440 --> 00:06:48,639
-companies, we'll have a hundred layers
 between, you know, you and all of the
 
 148
 00:06:48,639 --> 00:06:50,160
-between, you know, you and all of the
 different things that you might need to
 
 149
 00:06:50,160 --> 00:06:53,600
-different things that you might need to
 verify in your life. Now, private
 
 150
 00:06:53,600 --> 00:06:56,000
-verify in your life. Now, private
 governance can solve some of these
 
 151
 00:06:56,000 --> 00:06:58,639
-governance can solve some of these
 problems, right? And we've seen lots of
 
 152
 00:06:58,639 --> 00:07:01,680
-problems, right? And we've seen lots of
 efforts over the years. IRA is one of
 
 153
 00:07:01,680 --> 00:07:04,160
-efforts over the years. IRA is one of
 the most recent, right? that tries to
 
 154
 00:07:04,160 --> 00:07:08,240
-the most recent, right? that tries to
 create a coalition of
 
 155
 00:07:08,240 --> 00:07:10,880
-create a coalition of
 related or like-minded maybe
 
 156
 00:07:10,880 --> 00:07:13,199
-related or like-minded maybe
 organizations who can come together and
 
 157
 00:07:13,199 --> 00:07:15,039
-organizations who can come together and
 create a trust framework that is
 
 158
 00:07:15,039 --> 00:07:18,639
-create a trust framework that is
 interoperable right and you know I think
 
 159
 00:07:18,639 --> 00:07:20,560
-interoperable right and you know I think
 they all kind of have this vision of
 
 160
 00:07:20,560 --> 00:07:22,319
-they all kind of have this vision of
 well we'll just get big enough that
 
 161
 00:07:22,319 --> 00:07:24,160
-well we'll just get big enough that
 we'll solve this problem it won't be a
 
 162
 00:07:24,160 --> 00:07:25,360
-we'll solve this problem it won't be a
 problem because we'll just get big
 
 163
 00:07:25,360 --> 00:07:27,680
-problem because we'll just get big
 enough that everybody will be part of us
 
 164
 00:07:27,680 --> 00:07:30,240
-enough that everybody will be part of us
 but you know Visa is not part of
 
 165
 00:07:30,240 --> 00:07:32,560
-but you know Visa is not part of
 Mastercard and they never will
 
 166
 00:07:32,560 --> 00:07:35,840
-Mastercard and they never will
 And that's always going to be a problem.
 
 167
 00:07:35,840 --> 00:07:39,440
-And that's always going to be a problem.
 So a different way to solve this problem
 
 168
 00:07:39,440 --> 00:07:43,520
-So a different way to solve this problem
 is to have something underneath all and
 
 169
 00:07:43,520 --> 00:07:46,000
-is to have something underneath all and
 connect them. Okay, but that's just one
 
 170
 00:07:46,000 --> 00:07:47,520
-connect them. Okay, but that's just one
 problem. There's another problem. I
 
 171
 00:07:47,520 --> 00:07:50,160
-problem. There's another problem. I
 talked about this in my talk on
 
 172
 00:07:50,160 --> 00:07:53,840
-talked about this in my talk on
 Monday and that is an economic problem.
 
 173
 00:07:53,840 --> 00:07:56,479
-Monday and that is an economic problem.
 So in the mid 1990s,
 
 174
 00:07:56,479 --> 00:07:59,039
-So in the mid 1990s,
 Netscape had essentially solved the
 
 175
 00:07:59,039 --> 00:08:01,759
-Netscape had essentially solved the
 digital identity problem for at least
 
 176
 00:08:01,759 --> 00:08:04,960
-digital identity problem for at least
 the web. I mean, they had a pretty good
 
 177
 00:08:04,960 --> 00:08:08,240
-the web. I mean, they had a pretty good
 pretty good idea, right? We'll have
 
 178
 00:08:08,240 --> 00:08:12,000
-pretty good idea, right? We'll have
 servers that will have certificates and
 
 179
 00:08:12,000 --> 00:08:15,680
-servers that will have certificates and
 we'll put certificates in browsers
 
 180
 00:08:15,680 --> 00:08:18,479
-we'll put certificates in browsers
 and your browser certificate will
 
 181
 00:08:18,479 --> 00:08:21,199
-and your browser certificate will
 identify you. We'll proof your identity
 
 182
 00:08:21,199 --> 00:08:23,919
-identify you. We'll proof your identity
 with these certificates. I mean, in
 
 183
 00:08:23,919 --> 00:08:26,560
-with these certificates. I mean, in
 this day and age where you can
 
 184
 00:08:26,560 --> 00:08:28,639
-this day and age where you can
 essentially get server certificates for
 
 185
 00:08:28,639 --> 00:08:32,320
-essentially get server certificates for
 free, you may not remember, but back in
 
 186
 00:08:32,320 --> 00:08:34,719
-free, you may not remember, but back in
 the day, certificates were really
 
 187
 00:08:34,719 --> 00:08:37,279
-the day, certificates were really
 expensive because they were all proofed.
 
 188
 00:08:37,279 --> 00:08:40,000
-expensive because they were all proofed.
 Right now, they basically just link a
 
 189
 00:08:40,000 --> 00:08:42,959
-Right now, they basically just link a
 domain name to a key. That's all they
 
 190
 00:08:42,959 --> 00:08:45,200
-domain name to a key. That's all they
 do. But if you want a real proofed
 
 191
 00:08:45,200 --> 00:08:47,360
-do. But if you want a real proofed
 certificate, they cost money. Not only
 
 192
 00:08:47,360 --> 00:08:49,360
-certificate, they cost money. Not only
 because it costs money to proof you, but
 
 193
 00:08:49,360 --> 00:08:50,880
-because it costs money to proof you, but
 because the company is putting
 
 194
 00:08:50,880 --> 00:08:53,680
-because the company is putting
 themselves out there and saying this
 
 195
 00:08:53,680 --> 00:08:55,200
-themselves out there and saying this
 information is correct. So, they're
 
 196
 00:08:55,200 --> 00:08:58,480
-information is correct. So, they're
 liable, right? So, they cost money.
 
 197
 00:08:58,480 --> 00:09:00,480
-liable, right? So, they cost money.
 People, turns out people were not
 
 198
 00:09:00,480 --> 00:09:02,800
-People, turns out people were not
 willing to pay money to shop and to bank
 
 199
 00:09:02,800 --> 00:09:04,560
-willing to pay money to shop and to bank
 and all of those things. They wanted it
 
 200
 00:09:04,560 --> 00:09:08,480
-and all of those things. They wanted it
 all to be free. So
 
 201
 00:09:08,480 --> 00:09:11,519
-all to be free. So
 we standardized on servers will have
 
 202
 00:09:11,519 --> 00:09:13,360
-we standardized on servers will have
 certificates and people will have
 
 203
 00:09:13,360 --> 00:09:16,399
-certificates and people will have
 passwords and just kind of waved our
 
 204
 00:09:16,399 --> 00:09:17,920
-passwords and just kind of waved our
 hands and hoped the problem would go
 
 205
 00:09:17,920 --> 00:09:21,360
-hands and hoped the problem would go
 away because there was money to be made.
 
 206
 00:09:21,360 --> 00:09:23,279
-away because there was money to be made.
 So here's the two problems, right? How
 
 207
 00:09:23,279 --> 00:09:25,600
-So here's the two problems, right? How
 we scale trust, right? How do we create
 
 208
 00:09:25,600 --> 00:09:28,080
-we scale trust, right? How do we create
 trust frameworks that are more
 
 209
 00:09:28,080 --> 00:09:31,519
-trust frameworks that are more
 universal? And second, who's going to
 
 210
 00:09:31,519 --> 00:09:33,760
-universal? And second, who's going to
 pay for this, right? who's proofing the
 
 211
 00:09:33,760 --> 00:09:36,720
-pay for this, right? who's proofing the
 person using what authority, what's the
 
 212
 00:09:36,720 --> 00:09:43,190
-person using what authority, what's the
 legal standing, all of those questions.
 
 213
@@ -1063,362 +861,290 @@ with both of these problems and I'll and
 
 214
 00:09:48,720 --> 00:09:51,440
-with both of these problems and I'll and
 I'll talk about them in some detail.
 
 215
 00:09:51,440 --> 00:09:56,240
-I'll talk about them in some detail.
 So as far as scaling trust, SEDI
 
 216
 00:09:56,240 --> 00:09:59,279
-So as far as scaling trust, SEDI
 doesn't provide any kind of universal
 
 217
 00:09:59,279 --> 00:10:01,279
-doesn't provide any kind of universal
 trust framework. That's not the answer,
 
 218
 00:10:01,279 --> 00:10:04,240
-trust framework. That's not the answer,
 right? What SEDI provides instead is a
 
 219
 00:10:04,240 --> 00:10:07,200
-right? What SEDI provides instead is a
 foundation that trust frameworks can sit
 
 220
 00:10:07,200 --> 00:10:10,160
-foundation that trust frameworks can sit
 on. Right? So we have something that is
 
 221
 00:10:10,160 --> 00:10:13,279
-on. Right? So we have something that is
 firm underneath a firm legal foundation
 
 222
 00:10:13,279 --> 00:10:14,880
-firm underneath a firm legal foundation
 for all of these other things that are
 
 223
 00:10:14,880 --> 00:10:18,560
-for all of these other things that are
 going to happen. The second help that
 
 224
 00:10:18,560 --> 00:10:20,880
-going to happen. The second help that
 SEDI can provide is on the economic
 
 225
 00:10:20,880 --> 00:10:26,640
-SEDI can provide is on the economic
 problem because turns out that the state
 
 226
 00:10:26,640 --> 00:10:30,560
-problem because turns out that the state
 already has lots of infrastructure
 
 227
 00:10:30,560 --> 00:10:32,560
-already has lots of infrastructure
 for doing this, right? They already
 
 228
 00:10:32,560 --> 00:10:34,640
-for doing this, right? They already
 proof you, right? part of you know if
 
 229
 00:10:34,640 --> 00:10:36,640
-proof you, right? part of you know if
 you look at your driver's license we
 
 230
 00:10:36,640 --> 00:10:38,160
-you look at your driver's license we
 have a couple of people from Europe here
 
 231
 00:10:38,160 --> 00:10:40,079
-have a couple of people from Europe here
 so they may not be familiar with
 
 232
 00:10:40,079 --> 00:10:41,440
-so they may not be familiar with
 this idea but if you look at your
 
 233
 00:10:41,440 --> 00:10:43,040
-this idea but if you look at your
 driver's license which is the only thing
 
 234
 00:10:43,040 --> 00:10:45,279
-driver's license which is the only thing
 we have to prove who we are there's a
 
 235
 00:10:45,279 --> 00:10:46,800
-we have to prove who we are there's a
 little star on it you know what that
 
 236
 00:10:46,800 --> 00:10:49,040
-little star on it you know what that
 star means
 
 237
 00:10:49,040 --> 00:10:50,640
-star means
 real ID
 
 238
 00:10:50,640 --> 00:10:54,160
-real ID
 it means the state proofed your identity
 
 239
 00:10:54,160 --> 00:10:59,920
-it means the state proofed your identity
 so this was started in 2005
 
 240
 00:10:59,920 --> 00:11:03,279
-so this was started in 2005
 when earlier than that maybe 2002
 
 241
 00:11:03,279 --> 00:11:06,880
-when earlier than that maybe 2002
 two. It was right after 911.
 
 242
 00:11:06,880 --> 00:11:08,399
-two. It was right after 911.
 It happened. It happened. It happened
 
 243
 00:11:08,399 --> 00:11:10,880
-It happened. It happened. It happened
 before 911 because I remember I was CIO
 
 244
 00:11:10,880 --> 00:11:12,160
-before 911 because I remember I was CIO
 when they started talking about this.
 
 245
 00:11:12,160 --> 00:11:15,120
-when they started talking about this.
 This was early 2000s, right? So,
 
 246
 00:11:15,120 --> 00:11:16,720
-This was early 2000s, right? So,
 proofing your identity. And at the time,
 
 247
 00:11:16,720 --> 00:11:18,640
-proofing your identity. And at the time,
 the motor vehicle division, the driver's
 
 248
 00:11:18,640 --> 00:11:21,040
-the motor vehicle division, the driver's
 license division said, "We don't want
 
 249
 00:11:21,040 --> 00:11:23,600
-license division said, "We don't want
 anything to do with identity. We're not
 
 250
 00:11:23,600 --> 00:11:25,519
-anything to do with identity. We're not
 an identity
 
 251
 00:11:25,519 --> 00:11:28,640
-an identity
 provider. This is not us." Well, let's
 
 252
 00:11:28,640 --> 00:11:30,079
-provider. This is not us." Well, let's
 see how that worked out for him. So,
 
 253
 00:11:30,079 --> 00:11:31,760
-see how that worked out for him. So,
 anyway, you have the old star. They
 
 254
 00:11:31,760 --> 00:11:34,160
-anyway, you have the old star. They
 already proved your identity.
 
 255
 00:11:34,160 --> 00:11:36,160
-already proved your identity.
 So, let's talk for a minute. I think
 
 256
 00:11:36,160 --> 00:11:38,240
-So, let's talk for a minute. I think
 most people at this point probably have
 
 257
 00:11:38,240 --> 00:11:40,000
-most people at this point probably have
 an idea of what SEDI is, but let's just
 
 258
 00:11:40,000 --> 00:11:41,519
-an idea of what SEDI is, but let's just
 make sure that we're all on the same
 
 259
 00:11:41,519 --> 00:11:44,640
-make sure that we're all on the same
 page, right? So, SEDI doesn't give you
 
 260
 00:11:44,640 --> 00:11:47,839
-page, right? So, SEDI doesn't give you
 an identity, right? In fact, the SEDI
 
 261
 00:11:47,839 --> 00:11:50,800
-an identity, right? In fact, the SEDI
 legislation specifically says an
 
 262
 00:11:50,800 --> 00:11:54,160
-legislation specifically says an
 individual possesses an identity innate
 
 263
 00:11:54,160 --> 00:11:56,720
-individual possesses an identity innate
 to the individual's existence and
 
 264
 00:11:56,720 --> 00:11:59,440
-to the individual's existence and
 independent of the state. which identity
 
 265
 00:11:59,440 --> 00:12:02,720
-independent of the state. which identity
 is fundamental and inalienable. So SEDI
 
 266
 00:12:02,720 --> 00:12:04,160
-is fundamental and inalienable. So SEDI
 doesn't give you an identity. They're
 
 267
 00:12:04,160 --> 00:12:06,800
-doesn't give you an identity. They're
 not an identity provider, right? That's
 
 268
 00:12:06,800 --> 00:12:11,760
-not an identity provider, right? That's
 a nice term. Instead, what it is, you
 
 269
 00:12:11,760 --> 00:12:16,480
-a nice term. Instead, what it is, you
 create your identifier or identifiers.
 
 270
 00:12:16,480 --> 00:12:19,600
-create your identifier or identifiers.
 the state proofs specific attributes
 
 271
 00:12:19,600 --> 00:12:21,519
-the state proofs specific attributes
 about you
 
 272
 00:12:21,519 --> 00:12:25,519
-about you
 and then links those attributes to you
 
 273
 00:12:25,519 --> 00:12:28,160
-and then links those attributes to you
 In a cryptographic way, not to you to
 
 274
 00:12:28,160 --> 00:12:30,079
-In a cryptographic way, not to you to
 to this identifier, right, that you
 
 275
 00:12:30,079 --> 00:12:32,800
-to this identifier, right, that you
 control, right? In a cryptographic way.
 
 276
 00:12:32,800 --> 00:12:34,959
-control, right? In a cryptographic way.
 So, you can kind of think of this like a
 
 277
 00:12:34,959 --> 00:12:37,760
-So, you can kind of think of this like a
 notary, right? The state is endorsing
 
 278
 00:12:37,760 --> 00:12:41,279
-notary, right? The state is endorsing
 your identity, not giving you an
 
 279
 00:12:41,279 --> 00:12:44,240
-your identity, not giving you an
 identity. They're just saying, "Yeah,
 
 280
 00:12:44,240 --> 00:12:47,120
-identity. They're just saying, "Yeah,
 this identifier, we looked at the person
 
 281
 00:12:47,120 --> 00:12:49,600
-this identifier, we looked at the person
 who controls it, and that really is the
 
 282
 00:12:49,600 --> 00:12:51,680
-who controls it, and that really is the
 name and the birthday and the address
 
 283
 00:12:51,680 --> 00:12:54,320
-name and the birthday and the address
 and whatever other attributes might be
 
 284
 00:12:54,320 --> 00:12:56,560
-and whatever other attributes might be
 part of your setting."
 
 285
 00:12:56,560 --> 00:13:02,710
-part of your setting."
 So set is not just one credential.
 
 286
@@ -1428,27 +1154,22 @@ identifiers
 
 287
 00:13:08,800 --> 00:13:11,519
-identifiers
 and then SEDI
 
 288
 00:13:11,519 --> 00:13:16,240
-and then SEDI
 is a credential which links those
 
 289
 00:13:16,240 --> 00:13:18,560
-is a credential which links those
 identifiers to I'm sorry those
 
 290
 00:13:18,560 --> 00:13:20,480
-identifiers to I'm sorry those
 attributes that the state has proofed
 
 291
 00:13:20,480 --> 00:13:25,509
-attributes that the state has proofed
 and endorsed to that identifier.
 
 292
@@ -1462,162 +1183,130 @@ credentials that sit on top of that.
 
 294
 00:13:30,000 --> 00:13:32,399
-credentials that sit on top of that.
 things like driver's licenses. We heard
 
 295
 00:13:32,399 --> 00:13:35,920
-things like driver's licenses. We heard
 Joe talk about offhighway vehicle
 
 296
 00:13:35,920 --> 00:13:39,519
-Joe talk about offhighway vehicle
 operator licenses, fishing licenses.
 
 297
 00:13:39,519 --> 00:13:41,839
-operator licenses, fishing licenses.
 States are veritable credential
 
 298
 00:13:41,839 --> 00:13:44,480
-States are veritable credential
 factories. They just love giving
 
 299
 00:13:44,480 --> 00:13:46,320
-factories. They just love giving
 credentials to people for different
 
 300
 00:13:46,320 --> 00:13:49,360
-credentials to people for different
 things, right? So, states have lots of
 
 301
 00:13:49,360 --> 00:13:52,000
-things, right? So, states have lots of
 them. Now, some of these will involve
 
 302
 00:13:52,000 --> 00:13:53,360
-them. Now, some of these will involve
 guardianship, things like birth
 
 303
 00:13:53,360 --> 00:13:55,279
-guardianship, things like birth
 certificates and school records, and the
 
 304
 00:13:55,279 --> 00:13:58,000
-certificates and school records, and the
 statute includes that idea, right?
 
 305
 00:13:58,000 --> 00:14:00,399
-statute includes that idea, right?
 Others will be just things that you get.
 
 306
 00:14:00,399 --> 00:14:02,959
-Others will be just things that you get.
 And you know, like I said, I've got six
 
 307
 00:14:02,959 --> 00:14:04,639
-And you know, like I said, I've got six
 up here, but there probably a thousand
 
 308
 00:14:04,639 --> 00:14:07,120
-up here, but there probably a thousand
 of them that states have. Most of us
 
 309
 00:14:07,120 --> 00:14:09,839
-of them that states have. Most of us
 don't care about most of them, right?
 
 310
 00:14:09,839 --> 00:14:12,720
-don't care about most of them, right?
 But also, other institutions can give
 
 311
 00:14:12,720 --> 00:14:15,600
-But also, other institutions can give
 you credentials. So, you could use your
 
 312
 00:14:15,600 --> 00:14:18,399
-you credentials. So, you could use your
 SEDI to prove who you are when you go to
 
 313
 00:14:18,399 --> 00:14:21,040
-SEDI to prove who you are when you go to
 the bank to get a credential from your
 
 314
 00:14:21,040 --> 00:14:23,279
-the bank to get a credential from your
 bank. or you could use your SEDI to
 
 315
 00:14:23,279 --> 00:14:25,040
-bank. or you could use your SEDI to
 prove who you are when you're
 
 316
 00:14:25,040 --> 00:14:27,440
-prove who you are when you're
 registering for school and you would get
 
 317
 00:14:27,440 --> 00:14:29,279
-registering for school and you would get
 a school ID. So all of these other
 
 318
 00:14:29,279 --> 00:14:31,519
-a school ID. So all of these other
 credentials are essentially resting on
 
 319
 00:14:31,519 --> 00:14:34,560
-credentials are essentially resting on
 this foundation that SEDI has provided
 
 320
 00:14:34,560 --> 00:14:36,560
-this foundation that SEDI has provided
 and you can even issue your own
 
 321
 00:14:36,560 --> 00:14:40,079
-and you can even issue your own
 credentials. You may not imagine why
 
 322
 00:14:40,079 --> 00:14:42,880
-credentials. You may not imagine why
 that would be interesting now but I mean
 
 323
 00:14:42,880 --> 00:14:45,920
-that would be interesting now but I mean
 you know with personal agents AI agents
 
 324
 00:14:45,920 --> 00:14:47,600
-you know with personal agents AI agents
 coming along this could be a lot more
 
 325
 00:14:47,600 --> 00:14:51,990
-coming along this could be a lot more
 interesting.
 
 326
@@ -1627,72 +1316,58 @@ So there's also organizations. Now this
 
 327
 00:14:57,519 --> 00:15:00,720
-So there's also organizations. Now this
 is not SEDI. This is different than SEDI
 
 328
 00:15:00,720 --> 00:15:02,800
-is not SEDI. This is different than SEDI
 but it's related to SEDI and important
 
 329
 00:15:02,800 --> 00:15:05,279
-but it's related to SEDI and important
 for what we're talking about. Right? So,
 
 330
 00:15:05,279 --> 00:15:07,760
-for what we're talking about. Right? So,
 organizations already have firm legal
 
 331
 00:15:07,760 --> 00:15:10,480
-organizations already have firm legal
 foundations in the sense that
 
 332
 00:15:10,480 --> 00:15:13,440
-foundations in the sense that
 you g register a business and the
 
 333
 00:15:13,440 --> 00:15:15,519
-you g register a business and the
 commerce department gives you a
 
 334
 00:15:15,519 --> 00:15:18,320
-commerce department gives you a
 registration number and the IRS gives
 
 335
 00:15:18,320 --> 00:15:20,720
-registration number and the IRS gives
 you an EIN and all of these things that
 
 336
 00:15:20,720 --> 00:15:22,959
-you an EIN and all of these things that
 come along with being an organization.
 
 337
 00:15:22,959 --> 00:15:24,720
-come along with being an organization.
 We don't care as much about the
 
 338
 00:15:24,720 --> 00:15:26,880
-We don't care as much about the
 organizations creating and controlling
 
 339
 00:15:26,880 --> 00:15:29,600
-organizations creating and controlling
 their own organiz identifiers, but they
 
 340
 00:15:29,600 --> 00:15:33,110
-their own organiz identifiers, but they
 will, right?
 
 341
@@ -1702,172 +1377,138 @@ in the United States at least is who is
 
 342
 00:15:37,920 --> 00:15:41,920
-in the United States at least is who is
 responsible for I for endorsing that
 
 343
 00:15:41,920 --> 00:15:44,959
-responsible for I for endorsing that
 right so you could imagine a SEDI like
 
 344
 00:15:44,959 --> 00:15:46,800
-right so you could imagine a SEDI like
 credential or it might just be their
 
 345
 00:15:46,800 --> 00:15:50,399
-credential or it might just be their
 business registration but anyway it's
 
 346
 00:15:50,399 --> 00:15:53,600
-business registration but anyway it's
 it's analogous to the SEDI
 
 347
 00:15:53,600 --> 00:15:56,480
-it's analogous to the SEDI
 organizations like GLEIF
 
 348
 00:15:56,480 --> 00:16:00,639
-organizations like GLEIF
 are indispensable for businesses and
 
 349
 00:16:00,639 --> 00:16:03,360
-are indispensable for businesses and
 other organizations who need some sort
 
 350
 00:16:03,360 --> 00:16:05,440
-other organizations who need some sort
 of global
 
 351
 00:16:05,440 --> 00:16:08,240
-of global
 reach, right?
 
 352
 00:16:08,240 --> 00:16:11,199
-reach, right?
 I got an LEI just because I wanted to
 
 353
 00:16:11,199 --> 00:16:13,040
-I got an LEI just because I wanted to
 see how it worked. I've never ever used
 
 354
 00:16:13,040 --> 00:16:16,480
-see how it worked. I've never ever used
 it for anything for my business. But
 
 355
 00:16:16,480 --> 00:16:18,880
-it for anything for my business. But
 that but that's important, right?
 
 356
 00:16:18,880 --> 00:16:20,240
-that but that's important, right?
 Because there are some things like
 
 357
 00:16:20,240 --> 00:16:21,759
-Because there are some things like
 government credentials and banking
 
 358
 00:16:21,759 --> 00:16:24,000
-government credentials and banking
 credentials, business licenses that
 
 359
 00:16:24,000 --> 00:16:25,519
-credentials, business licenses that
 would just depend on whatever
 
 360
 00:16:25,519 --> 00:16:27,920
-would just depend on whatever
 organizational identity you have,
 
 361
 00:16:27,920 --> 00:16:30,560
-organizational identity you have,
 whatever identity or credential
 
 362
 00:16:30,560 --> 00:16:32,560
-whatever identity or credential
 the organization has from the
 
 363
 00:16:32,560 --> 00:16:35,040
-the organization has from the
 Department of Commerce, but many might
 
 364
 00:16:35,040 --> 00:16:38,800
-Department of Commerce, but many might
 require this global interaction. Okay?
 
 365
 00:16:38,800 --> 00:16:41,680
-require this global interaction. Okay?
 Local restaurant might not ever need an
 
 366
 00:16:41,680 --> 00:16:43,440
-Local restaurant might not ever need an
 LEI and all of the things that go with
 
 367
 00:16:43,440 --> 00:16:47,839
-LEI and all of the things that go with
 that, but a bank might.
 
 368
 00:16:47,839 --> 00:16:49,680
-that, but a bank might.
 Now
 
 369
 00:16:49,680 --> 00:16:53,279
-Now
 let's talk for a second about the legal
 
 370
 00:16:53,279 --> 00:16:55,199
-let's talk for a second about the legal
 underpinnings of SEDI because this is
 
 371
 00:16:55,199 --> 00:16:57,519
-underpinnings of SEDI because this is
 important. I mean first of all SEDI
 
 372
 00:16:57,519 --> 00:16:59,680
-important. I mean first of all SEDI
 includes a bill of rights. I read you
 
 373
 00:16:59,680 --> 00:17:01,440
-includes a bill of rights. I read you
 the statement that it says about your
 
 374
 00:17:01,440 --> 00:17:03,040
-the statement that it says about your
 identity belonging to you and being
 
 375
 00:17:03,040 --> 00:17:06,949
-identity belonging to you and being
 inalienable.
 
 376
@@ -1881,342 +1522,274 @@ service. Right? This is not a
 
 378
 00:17:10,880 --> 00:17:12,640
-service. Right? This is not a
 click-through contract that you don't
 
 379
 00:17:12,640 --> 00:17:15,839
-click-through contract that you don't
 read. And you know, if you want to
 
 380
 00:17:15,839 --> 00:17:18,480
-read. And you know, if you want to
 enforce whatever small rights they might
 
 381
 00:17:18,480 --> 00:17:20,880
-enforce whatever small rights they might
 have left you in this 60page document,
 
 382
 00:17:20,880 --> 00:17:22,480
-have left you in this 60page document,
 you have to go to court. These are
 
 383
 00:17:22,480 --> 00:17:24,079
-you have to go to court. These are
 things that you know, they're they're in
 
 384
 00:17:24,079 --> 00:17:27,199
-things that you know, they're they're in
 statute. They're in law. It also
 
 385
 00:17:27,199 --> 00:17:29,600
-statute. They're in law. It also
 includes selective disclosure. So the
 
 386
 00:17:29,600 --> 00:17:33,039
-includes selective disclosure. So the
 idea that you don't have to disclose
 
 387
 00:17:33,039 --> 00:17:35,840
-idea that you don't have to disclose
 everything on a cred in a credential
 
 388
 00:17:35,840 --> 00:17:38,880
-everything on a cred in a credential
 or in your SEDI credential in order to
 
 389
 00:17:38,880 --> 00:17:41,039
-or in your SEDI credential in order to
 use it you can just disclose the parts
 
 390
 00:17:41,039 --> 00:17:43,840
-use it you can just disclose the parts
 that is necessary requires that the
 
 391
 00:17:43,840 --> 00:17:46,240
-that is necessary requires that the
 system be built on open standards right
 
 392
 00:17:46,240 --> 00:17:49,760
-system be built on open standards right
 that it's not a proprietary system MDL
 
 393
 00:17:49,760 --> 00:17:53,120
-that it's not a proprietary system MDL
 Even
 
 394
 00:17:53,120 --> 00:17:57,919
-Even
 So no vendor lockin anyone can
 
 395
 00:17:57,919 --> 00:17:59,360
-So no vendor lockin anyone can
 build a conformant
 
 396
 00:17:59,360 --> 00:18:02,080
-build a conformant
 wallet verifier, whatever. Speaking of
 
 397
 00:18:02,080 --> 00:18:04,880
-wallet verifier, whatever. Speaking of
 wallets, it mandates a choice of
 
 398
 00:18:04,880 --> 00:18:06,559
-wallets, it mandates a choice of
 wallets, right? So, there's not just one
 
 399
 00:18:06,559 --> 00:18:09,360
-wallets, right? So, there's not just one
 app that the state gives you. And if you
 
 400
 00:18:09,360 --> 00:18:10,960
-app that the state gives you. And if you
 don't have that state app, you don't
 
 401
 00:18:10,960 --> 00:18:13,760
-don't have that state app, you don't
 have a SEDI. You can choose different
 
 402
 00:18:13,760 --> 00:18:15,760
-have a SEDI. You can choose different
 wallet providers. You can put your SEDI
 
 403
 00:18:15,760 --> 00:18:18,960
-wallet providers. You can put your SEDI
 in any of those, move it between them,
 
 404
 00:18:18,960 --> 00:18:22,000
-in any of those, move it between them,
 you know, whatever. It includes a
 
 405
 00:18:22,000 --> 00:18:24,320
-you know, whatever. It includes a
 duty of loyalty which is like a
 
 406
 00:18:24,320 --> 00:18:29,280
-duty of loyalty which is like a
 fiduciary requirement for identity
 
 407
 00:18:29,280 --> 00:18:32,640
-fiduciary requirement for identity
 data which is a first right this is
 
 408
 00:18:32,640 --> 00:18:34,799
-data which is a first right this is
 revolutionary in the world of digital
 
 409
 00:18:34,799 --> 00:18:36,480
-revolutionary in the world of digital
 identity.
 
 410
 00:18:36,480 --> 00:18:39,360
-identity.
 And finally, like I mentioned earlier,
 
 411
 00:18:39,360 --> 00:18:42,880
-And finally, like I mentioned earlier,
 it supports the idea recognizes that
 
 412
 00:18:42,880 --> 00:18:46,880
-it supports the idea recognizes that
 many people are
 
 413
 00:18:46,880 --> 00:18:50,080
-many people are
 wards of a guardian and therefore the
 
 414
 00:18:50,080 --> 00:18:52,799
-wards of a guardian and therefore the
 guardian has to have the rights and the
 
 415
 00:18:52,799 --> 00:18:58,960
-guardian has to have the rights and the
 abilities to KERI out
 
 416
 00:18:58,960 --> 00:19:00,799
-abilities to KERI out
 functions,
 
 417
 00:19:00,799 --> 00:19:02,559
-functions,
 operations on their behalf. I don't know
 
 418
 00:19:02,559 --> 00:19:04,559
-operations on their behalf. I don't know
 what the right word is. KERI out what
 
 419
 00:19:04,559 --> 00:19:06,720
-what the right word is. KERI out what
 what are they doing? acting on their
 
 420
 00:19:06,720 --> 00:19:08,480
-what are they doing? acting on their
 behalf. There we go. Acting. That's the
 
 421
 00:19:08,480 --> 00:19:09,919
-behalf. There we go. Acting. That's the
 word I was looking for. Nice simple
 
 422
 00:19:09,919 --> 00:19:13,360
-word I was looking for. Nice simple
 word, not KERI out duties. Okay. So, so
 
 423
 00:19:13,360 --> 00:19:15,760
-word, not KERI out duties. Okay. So, so
 these are all part of the statute and
 
 424
 00:19:15,760 --> 00:19:19,760
-these are all part of the statute and
 important to why SEDI creates this kind
 
 425
 00:19:19,760 --> 00:19:23,039
-important to why SEDI creates this kind
 of legal foundation.
 
 426
 00:19:23,039 --> 00:19:25,919
-of legal foundation.
 Now,
 
 427
 00:19:25,919 --> 00:19:28,320
-Now,
 as I mentioned earlier,
 
 428
 00:19:28,320 --> 00:19:31,520
-as I mentioned earlier,
 the problem in this proof gap is that
 
 429
 00:19:31,520 --> 00:19:34,799
-the problem in this proof gap is that
 when institutions make errors,
 
 430
 00:19:34,799 --> 00:19:36,960
-when institutions make errors,
 you basically are left to navigate the
 
 431
 00:19:36,960 --> 00:19:40,160
-you basically are left to navigate the
 correction process all on your own. Now,
 
 432
 00:19:40,160 --> 00:19:43,600
-correction process all on your own. Now,
 SEDI doesn't mandate that everybody that
 
 433
 00:19:43,600 --> 00:19:46,640
-SEDI doesn't mandate that everybody that
 every institution has to do things a
 
 434
 00:19:46,640 --> 00:19:48,960
-every institution has to do things a
 certain way, but it does provide you
 
 435
 00:19:48,960 --> 00:19:51,840
-certain way, but it does provide you
 with a legal foundation. And it does say
 
 436
 00:19:51,840 --> 00:19:56,000
-with a legal foundation. And it does say
 that you have enforcable rights
 
 437
 00:19:56,000 --> 00:19:58,799
-that you have enforcable rights
 related to your SEDI. So you have the
 
 438
 00:19:58,799 --> 00:20:02,160
-related to your SEDI. So you have the
 right to obtain SEDI credentials. You
 
 439
 00:20:02,160 --> 00:20:04,559
-right to obtain SEDI credentials. You
 have the right to have its attributes
 
 440
 00:20:04,559 --> 00:20:08,400
-have the right to have its attributes
 amended as they change or need
 
 441
 00:20:08,400 --> 00:20:11,200
-amended as they change or need
 correction. You have protections against
 
 442
 00:20:11,200 --> 00:20:13,440
-correction. You have protections against
 arbitrary revocation. There are only
 
 443
 00:20:13,440 --> 00:20:15,280
-arbitrary revocation. There are only
 certain circumstances where this can be
 
 444
 00:20:15,280 --> 00:20:18,400
-certain circumstances where this can be
 revoked.
 
 445
 00:20:18,400 --> 00:20:20,559
-revoked.
 You there's an in a complaint an
 
 446
@@ -2226,162 +1799,130 @@ enforcement mechanism for how you can
 
 447
 00:20:23,360 --> 00:20:26,559
-enforcement mechanism for how you can
 deal with problems that come up and
 
 448
 00:20:26,559 --> 00:20:29,679
-deal with problems that come up and
 that includes both the digital
 
 449
 00:20:29,679 --> 00:20:31,600
-that includes both the digital
 what's it called? A digital privacy on
 
 450
 00:20:31,600 --> 00:20:34,320
-what's it called? A digital privacy on
 budsman and the attorney general. Yeah.
 
 451
 00:20:34,320 --> 00:20:37,120
-budsman and the attorney general. Yeah.
 So there are both of those that
 
 452
 00:20:37,120 --> 00:20:40,240
-So there are both of those that
 give you the ability to seek redress if
 
 453
 00:20:40,240 --> 00:20:42,960
-give you the ability to seek redress if
 something happens. So yeah,
 
 454
 00:20:42,960 --> 00:20:44,880
-something happens. So yeah,
 just real quick, but it does not
 
 455
 00:20:44,880 --> 00:20:47,520
-just real quick, but it does not
 include a private right of action. The
 
 456
 00:20:47,520 --> 00:20:50,080
-include a private right of action. The
 attorney general has to act on your
 
 457
 00:20:50,080 --> 00:20:50,720
-attorney general has to act on your
 behalf.
 
 458
 00:20:50,720 --> 00:20:52,320
-behalf.
 Yeah, we tried to get that in there, but
 
 459
 00:20:52,320 --> 00:20:54,240
-Yeah, we tried to get that in there, but
 they decided that was reach too far.
 
 460
 00:20:54,240 --> 00:20:54,640
-they decided that was reach too far.
 Yeah.
 
 461
 00:20:54,640 --> 00:21:00,159
-Yeah.
 Rich too far. Yeah. Yeah. Okay. So
 
 462
 00:21:00,159 --> 00:21:03,120
-Rich too far. Yeah. Yeah. Okay. So
 these aren't just like you know consent
 
 463
 00:21:03,120 --> 00:21:05,360
-these aren't just like you know consent
 form clickth through consent forms and
 
 464
 00:21:05,360 --> 00:21:08,240
-form clickth through consent forms and
 you know support calls that you make,
 
 465
 00:21:08,240 --> 00:21:10,480
-you know support calls that you make,
 right? Th these are legal remedies that
 
 466
 00:21:10,480 --> 00:21:14,159
-right? Th these are legal remedies that
 you have the right to there are
 
 467
 00:21:14,159 --> 00:21:15,600
-you have the right to there are
 legal remedies you have the right to
 
 468
 00:21:15,600 --> 00:21:18,799
-legal remedies you have the right to
 access if these things don't happen.
 
 469
 00:21:18,799 --> 00:21:20,720
-access if these things don't happen.
 Now
 
 470
 00:21:20,720 --> 00:21:22,480
-Now
 like I said earlier this doesn't mean
 
 471
 00:21:22,480 --> 00:21:24,480
-like I said earlier this doesn't mean
 SEDI doesn't
 
 472
 00:21:24,480 --> 00:21:27,120
-SEDI doesn't
 replace all of these trust frameworks
 
 473
 00:21:27,120 --> 00:21:31,039
-replace all of these trust frameworks
 that exist. So I spent my career largely
 
 474
 00:21:31,039 --> 00:21:34,159
-that exist. So I spent my career largely
 in academia, right?
 
 475
 00:21:34,159 --> 00:21:36,320
-in academia, right?
 Academics is going to have trust
 
 476
 00:21:36,320 --> 00:21:38,480
-Academics is going to have trust
 frameworks about what an accredited
 
 477
 00:21:38,480 --> 00:21:42,080
-frameworks about what an accredited
 institution is for example, right?
 
 478
 00:21:42,080 --> 00:21:44,080
-institution is for example, right?
 Visa is still going to exist as a trust
 
 479
@@ -2391,602 +1932,482 @@ framework for how
 
 480
 00:21:46,400 --> 00:21:48,480
-framework for how
 money gets transferred inside their
 
 481
 00:21:48,480 --> 00:21:50,240
-money gets transferred inside their
 network. Those are all still going to
 
 482
 00:21:50,240 --> 00:21:55,120
-network. Those are all still going to
 exist. But what does change is the idea
 
 483
 00:21:55,120 --> 00:21:59,679
-exist. But what does change is the idea
 that they are or can sit on top of this
 
 484
 00:21:59,679 --> 00:22:04,320
-that they are or can sit on top of this
 legal foundation, right? They can have
 
 485
 00:22:04,320 --> 00:22:07,919
-legal foundation, right? They can have
 attributes that they know someone they
 
 486
 00:22:07,919 --> 00:22:11,200
-attributes that they know someone they
 trust proofed.
 
 487
 00:22:11,200 --> 00:22:14,720
-trust proofed.
 Now along those lines, I want to talk
 
 488
 00:22:14,720 --> 00:22:17,600
-Now along those lines, I want to talk
 about two different ways of establishing
 
 489
 00:22:17,600 --> 00:22:19,600
-about two different ways of establishing
 trust. This is a conversation I had with
 
 490
 00:22:19,600 --> 00:22:24,000
-trust. This is a conversation I had with
 Sam. At Smoking Apple six weeks ago
 
 491
 00:22:24,000 --> 00:22:26,799
-Sam. At Smoking Apple six weeks ago
 or so, right? Because I had just
 
 492
 00:22:26,799 --> 00:22:29,600
-or so, right? Because I had just
 written a blog post about reputation for
 
 493
 00:22:29,600 --> 00:22:32,159
-written a blog post about reputation for
 agents, right? And how and how all that
 
 494
 00:22:32,159 --> 00:22:34,080
-agents, right? And how and how all that
 can work. But it's equally important
 
 495
 00:22:34,080 --> 00:22:35,840
-can work. But it's equally important
 here, right? So there are two different
 
 496
 00:22:35,840 --> 00:22:40,000
-here, right? So there are two different
 ways of establishing trust.
 
 497
 00:22:40,000 --> 00:22:44,799
-ways of establishing trust.
 One is by obser observation,
 
 498
 00:22:44,799 --> 00:22:46,400
-One is by obser observation,
 right? You look at someone's behavior
 
 499
 00:22:46,400 --> 00:22:49,280
-right? You look at someone's behavior
 and you say, "Sam seems like a nice guy.
 
 500
 00:22:49,280 --> 00:22:51,760
-and you say, "Sam seems like a nice guy.
 I guess you know I'll get to know him a
 
 501
 00:22:51,760 --> 00:22:53,679
-I guess you know I'll get to know him a
 little better and then you know you have
 
 502
 00:22:53,679 --> 00:22:56,240
-little better and then you know you have
 more interactions and you get you build
 
 503
 00:22:56,240 --> 00:22:58,799
-more interactions and you get you build
 up that trust. The second one which I'm
 
 504
 00:22:58,799 --> 00:22:59,919
-up that trust. The second one which I'm
 going to talk about first I'm going to
 
 505
 00:22:59,919 --> 00:23:02,159
-going to talk about first I'm going to
 talk about the second one first is
 
 506
 00:23:02,159 --> 00:23:04,080
-talk about the second one first is
 reputation by reference and the reason
 
 507
 00:23:04,080 --> 00:23:05,280
-reputation by reference and the reason
 I'm going to talk about it first is
 
 508
 00:23:05,280 --> 00:23:06,559
-I'm going to talk about it first is
 because it's essentially how we
 
 509
 00:23:06,559 --> 00:23:09,679
-because it's essentially how we
 bootstrap things right so at the top of
 
 510
 00:23:09,679 --> 00:23:12,640
-bootstrap things right so at the top of
 this I have a diploma right so if you
 
 511
 00:23:12,640 --> 00:23:15,679
-this I have a diploma right so if you
 want to know things about me related to
 
 512
 00:23:15,679 --> 00:23:18,320
-want to know things about me related to
 my education I can give you a diploma
 
 513
 00:23:18,320 --> 00:23:21,039
-my education I can give you a diploma
 right that is essentially reputation by
 
 514
 00:23:21,039 --> 00:23:25,600
-right that is essentially reputation by
 reference some institution is saying
 
 515
 00:23:25,600 --> 00:23:29,440
-reference some institution is saying
 that they did specific things and are
 
 516
 00:23:29,440 --> 00:23:32,480
-that they did specific things and are
 vouching for the fact that I met their
 
 517
 00:23:32,480 --> 00:23:35,200
-vouching for the fact that I met their
 standards with respect to this course of
 
 518
 00:23:35,200 --> 00:23:39,679
-standards with respect to this course of
 study, right? But who are they
 
 519
 00:23:39,679 --> 00:23:43,280
-study, right? But who are they
 and does this really belong to me and
 
 520
 00:23:43,280 --> 00:23:46,799
-and does this really belong to me and
 what standards are they actually holding
 
 521
 00:23:46,799 --> 00:23:50,159
-what standards are they actually holding
 me to? Now, if I tell you I have a PhD
 
 522
 00:23:50,159 --> 00:23:51,679
-me to? Now, if I tell you I have a PhD
 from the University of California at
 
 523
 00:23:51,679 --> 00:23:53,760
-from the University of California at
 Davis, most people would say, "Oh,
 
 524
 00:23:53,760 --> 00:23:56,400
-Davis, most people would say, "Oh,
 University of California. I know that
 
 525
 00:23:56,400 --> 00:23:58,960
-University of California. I know that
 school. I guess that's okay, right?" But
 
 526
 00:23:58,960 --> 00:24:01,600
-school. I guess that's okay, right?" But
 if I tell you I have a bachelor's degree
 
 527
 00:24:01,600 --> 00:24:03,600
-if I tell you I have a bachelor's degree
 from Norda,
 
 528
 00:24:03,600 --> 00:24:05,440
-from Norda,
 whatever, what is that thing called?
 
 529
 00:24:05,440 --> 00:24:06,960
-whatever, what is that thing called?
 Norda
 
 530
 00:24:06,960 --> 00:24:09,440
-Norda
 Medical Thing, you guys know down in
 
 531
 00:24:09,440 --> 00:24:12,400
-Medical Thing, you guys know down in
 Provo. Anyway,
 
 532
 00:24:12,400 --> 00:24:14,799
-Provo. Anyway,
 are they good? Are they acceptable? Or
 
 533
 00:24:14,799 --> 00:24:18,240
-are they good? Are they acceptable? Or
 is that a good institution? I honestly
 
 534
 00:24:18,240 --> 00:24:22,640
-is that a good institution? I honestly
 don't know. But who does? Well, the way
 
 535
 00:24:22,640 --> 00:24:26,080
-don't know. But who does? Well, the way
 you do it is this diploma can be a
 
 536
 00:24:26,080 --> 00:24:27,600
-you do it is this diploma can be a
 credential
 
 537
 00:24:27,600 --> 00:24:31,039
-credential
 and it can be chained to my SEDI
 
 538
 00:24:31,039 --> 00:24:34,640
-and it can be chained to my SEDI
 credential which now means that I can
 
 539
 00:24:34,640 --> 00:24:37,360
-credential which now means that I can
 prove that this diploma was actually
 
 540
 00:24:37,360 --> 00:24:40,559
-prove that this diploma was actually
 linked to me or given to me. Right? But
 
 541
 00:24:40,559 --> 00:24:43,279
-linked to me or given to me. Right? But
 it also can be chained to the
 
 542
 00:24:43,279 --> 00:24:45,760
-it also can be chained to the
 university's credentials and
 
 543
 00:24:45,760 --> 00:24:49,440
-university's credentials and
 identifiers. So they probably have an
 
 544
 00:24:49,440 --> 00:24:51,679
-identifiers. So they probably have an
 accreditation credential or should have
 
 545
 00:24:51,679 --> 00:24:53,919
-accreditation credential or should have
 one that came from their accrediting
 
 546
 00:24:53,919 --> 00:24:55,840
-one that came from their accrediting
 body. And there's not just one, right?
 
 547
 00:24:55,840 --> 00:24:57,760
-body. And there's not just one, right?
 So there would be an accrediting body
 
 548
 00:24:57,760 --> 00:24:59,360
-So there would be an accrediting body
 for the university. There would be an
 
 549
 00:24:59,360 --> 00:25:01,360
-for the university. There would be an
 accrediting body for the specific degree
 
 550
 00:25:01,360 --> 00:25:03,840
-accrediting body for the specific degree
 program I'm in. All of those I mean
 
 551
 00:25:03,840 --> 00:25:05,919
-program I'm in. All of those I mean
 there might be dozens of these out here
 
 552
 00:25:05,919 --> 00:25:08,880
-there might be dozens of these out here
 that the that the university has. Okay.
 
 553
 00:25:08,880 --> 00:25:11,840
-that the that the university has. Okay.
 They can you can also check to see is
 
 554
 00:25:11,840 --> 00:25:13,840
-They can you can also check to see is
 this a legal business? Is it even
 
 555
 00:25:13,840 --> 00:25:17,760
-this a legal business? Is it even
 recognized as a business? So you know
 
 556
 00:25:17,760 --> 00:25:19,600
-recognized as a business? So you know
 that would be your commerce department
 
 557
 00:25:19,600 --> 00:25:22,320
-that would be your commerce department
 or GLEIF vLEI
 
 558
 00:25:22,320 --> 00:25:23,840
-or GLEIF vLEI
 credential.
 
 559
 00:25:23,840 --> 00:25:26,720
-credential.
 And importantly when I present this
 
 560
 00:25:26,720 --> 00:25:29,679
-And importantly when I present this
 diploma as a credential
 
 561
 00:25:29,679 --> 00:25:32,240
-diploma as a credential
 all of this can be checked automatically
 
 562
 00:25:32,240 --> 00:25:34,480
-all of this can be checked automatically
 right these chains can be followed. We
 
 563
 00:25:34,480 --> 00:25:37,039
-right these chains can be followed. We
 can check all of the credentials and you
 
 564
 00:25:37,039 --> 00:25:38,720
-can check all of the credentials and you
 know you can get a green light on your
 
 565
 00:25:38,720 --> 00:25:42,240
-know you can get a green light on your
 system that tells you yes
 
 566
 00:25:42,240 --> 00:25:45,679
-system that tells you yes
 this credential tell came is issued to
 
 567
 00:25:45,679 --> 00:25:48,080
-this credential tell came is issued to
 this person it was came from this
 
 568
 00:25:48,080 --> 00:25:50,400
-this person it was came from this
 institution that institution is
 
 569
 00:25:50,400 --> 00:25:53,120
-institution that institution is
 accredited by this body and this body
 
 570
 00:25:53,120 --> 00:25:55,919
-accredited by this body and this body
 and this body and it's organized in the
 
 571
 00:25:55,919 --> 00:25:58,240
-and this body and it's organized in the
 state of Utah and all of the things that
 
 572
 00:25:58,240 --> 00:26:01,679
-state of Utah and all of the things that
 you might want to know about it.
 
 573
 00:26:01,679 --> 00:26:04,559
-you might want to know about it.
 So that's reputation by reference
 
 574
 00:26:04,559 --> 00:26:06,240
-So that's reputation by reference
 and
 
 575
 00:26:06,240 --> 00:26:08,000
-and
 steady provides a nice foundation for
 
 576
 00:26:08,000 --> 00:26:10,799
-steady provides a nice foundation for
 that as do the organizational
 
 577
 00:26:10,799 --> 00:26:13,600
-that as do the organizational
 Credentials that we talked about.
 
 578
 00:26:13,600 --> 00:26:16,400
-Credentials that we talked about.
 Okay. There's another kind of reputation
 
 579
 00:26:16,400 --> 00:26:18,000
-Okay. There's another kind of reputation
 that I mentioned and that's reputation
 
 580
 00:26:18,000 --> 00:26:20,640
-that I mentioned and that's reputation
 by behavior. Now, in the physical world,
 
 581
 00:26:20,640 --> 00:26:22,400
-by behavior. Now, in the physical world,
 right, we just interact with each other,
 
 582
 00:26:22,400 --> 00:26:24,400
-right, we just interact with each other,
 and that's kind of how we figure out
 
 583
 00:26:24,400 --> 00:26:27,520
-and that's kind of how we figure out
 whether or not
 
 584
 00:26:27,520 --> 00:26:30,240
-whether or not
 we like this person. We trust them,
 
 585
 00:26:30,240 --> 00:26:32,159
-we like this person. We trust them,
 right? The fact that I'm going to let
 
 586
 00:26:32,159 --> 00:26:34,240
-right? The fact that I'm going to let
 you fix my plumbing doesn't mean I'm
 
 587
 00:26:34,240 --> 00:26:36,080
-you fix my plumbing doesn't mean I'm
 going to let you babysit my kids, right?
 
 588
 00:26:36,080 --> 00:26:37,760
-going to let you babysit my kids, right?
 So, there's different domains of
 
 589
 00:26:37,760 --> 00:26:40,400
-So, there's different domains of
 behavior that we that we look for,
 
 590
 00:26:40,400 --> 00:26:43,679
-behavior that we that we look for,
 right? We use reputation by reference to
 
 591
 00:26:43,679 --> 00:26:45,760
-right? We use reputation by reference to
 essentially bootstrap this. I needed
 
 592
 00:26:45,760 --> 00:26:48,000
-essentially bootstrap this. I needed
 someone to come in and fix an oven at a
 
 593
 00:26:48,000 --> 00:26:51,600
-someone to come in and fix an oven at a
 at a rental property I have.
 
 594
 00:26:51,600 --> 00:26:54,080
-at a rental property I have.
 I didn't know anyone, so I just used
 
 595
 00:26:54,080 --> 00:26:56,159
-I didn't know anyone, so I just used
 reputation by reference, right? I looked
 
 596
 00:26:56,159 --> 00:26:59,760
-reputation by reference, right? I looked
 at reviews online to see, okay, they've
 
 597
 00:26:59,760 --> 00:27:02,880
-at reviews online to see, okay, they've
 got a pretty good thing. Yeah, Timothy,
 
 598
 00:27:02,880 --> 00:27:05,200
-got a pretty good thing. Yeah, Timothy,
 isn't reputation by reference also an
 
 599
 00:27:05,200 --> 00:27:09,510
-isn't reputation by reference also an
 accumulation of behaviors?
 
 600
@@ -3000,277 +2421,222 @@ So, we go back to this
 
 602
 00:27:16,159 --> 00:27:19,120
-So, we go back to this
 All of these could be many layers
 
 603
 00:27:19,120 --> 00:27:21,360
-All of these could be many layers
 away from the actual thing that I give
 
 604
 00:27:21,360 --> 00:27:24,320
-away from the actual thing that I give
 you. Right? So there are accumulated
 
 605
 00:27:24,320 --> 00:27:27,440
-you. Right? So there are accumulated
 behaviors that lead to that diploma. But
 
 606
 00:27:27,440 --> 00:27:30,720
-behaviors that lead to that diploma. But
 why do I but it's not me who watched you
 
 607
 00:27:30,720 --> 00:27:33,600
-why do I but it's not me who watched you
 complete the degree. It's indirect. It's
 
 608
 00:27:33,600 --> 00:27:36,159
-complete the degree. It's indirect. It's
 the university who watched you complete
 
 609
 00:27:36,159 --> 00:27:38,559
-the university who watched you complete
 the degree and you're believing the
 
 610
 00:27:38,559 --> 00:27:41,120
-the degree and you're believing the
 university. So there's an indirectness,
 
 611
 00:27:41,120 --> 00:27:44,000
-university. So there's an indirectness,
 not a direct link. But either way, the
 
 612
 00:27:44,000 --> 00:27:46,080
-not a direct link. But either way, the
 quality of reputation
 
 613
 00:27:46,080 --> 00:27:48,240
-quality of reputation
 can't be separ separated from an
 
 614
 00:27:48,240 --> 00:27:50,640
-can't be separ separated from an
 accumulation of behaviors over time.
 
 615
 00:27:50,640 --> 00:27:51,279
-accumulation of behaviors over time.
 Correct.
 
 616
 00:27:51,279 --> 00:27:52,159
-Correct.
 That's true.
 
 617
 00:27:52,159 --> 00:27:54,640
-That's true.
 And so if it's a good restaurant, it's
 
 618
 00:27:54,640 --> 00:27:57,039
-And so if it's a good restaurant, it's
 done well. It's it's had good behaviors
 
 619
 00:27:57,039 --> 00:27:59,120
-done well. It's it's had good behaviors
 which got that reputation. And what
 
 620
 00:27:59,120 --> 00:28:00,399
-which got that reputation. And what
 you're doing is you're collapsing the
 
 621
 00:28:00,399 --> 00:28:02,720
-you're doing is you're collapsing the
 history because it's so well known. I'm
 
 622
 00:28:02,720 --> 00:28:04,480
-history because it's so well known. I'm
 going to collapse the history and just
 
 623
 00:28:04,480 --> 00:28:06,159
-going to collapse the history and just
 say I just need to tell you the name
 
 624
 00:28:06,159 --> 00:28:07,760
-say I just need to tell you the name
 of the organization. changing
 
 625
 00:28:07,760 --> 00:28:09,679
-of the organization. changing
 the trust.
 
 626
 00:28:09,679 --> 00:28:11,840
-the trust.
 In reputation for you, you explicitly
 
 627
 00:28:11,840 --> 00:28:15,279
-In reputation for you, you explicitly
 trust the recruiter. If you're observing
 
 628
 00:28:15,279 --> 00:28:17,600
-trust the recruiter. If you're observing
 the direct behavior, the only person
 
 629
 00:28:17,600 --> 00:28:19,600
-the direct behavior, the only person
 you're trusting is yourself. So, the
 
 630
 00:28:19,600 --> 00:28:22,080
-you're trusting is yourself. So, the
 verifier doesn't have to trust anybody.
 
 631
 00:28:22,080 --> 00:28:24,640
-verifier doesn't have to trust anybody.
 If they truly do reputation by behavior,
 
 632
 00:28:24,640 --> 00:28:27,840
-If they truly do reputation by behavior,
 they can verify all of
 
 633
 00:28:27,840 --> 00:28:29,279
-they can verify all of
 So, here's a here's a different way of
 
 634
 00:28:29,279 --> 00:28:30,480
-So, here's a here's a different way of
 thinking about it. Here's a different
 
 635
 00:28:30,480 --> 00:28:32,480
-thinking about it. Here's a different
 way of thinking about it.
 
 636
 00:28:32,480 --> 00:28:35,440
-way of thinking about it.
 Trust always
 
 637
 00:28:35,440 --> 00:28:40,640
-Trust always
 always requires vulnerability.
 
 638
 00:28:40,640 --> 00:28:44,080
-always requires vulnerability.
 Your trust requires vulnerability.
 
 639
 00:28:44,080 --> 00:28:48,240
-Your trust requires vulnerability.
 So if you aren't vulnerable,
 
 640
 00:28:48,240 --> 00:28:50,799
-So if you aren't vulnerable,
 you don't have to trust.
 
 641
 00:28:50,799 --> 00:28:55,039
-you don't have to trust.
 So the question here is, am I trusting
 
 642
 00:28:55,039 --> 00:28:57,360
-So the question here is, am I trusting
 me? Right? I've eaten at that restaurant
 
 643
 00:28:57,360 --> 00:28:59,840
-me? Right? I've eaten at that restaurant
 before and it was pretty good, right? or
 
 644
 00:28:59,840 --> 00:29:02,320
-before and it was pretty good, right? or
 am I trusting the reviewers which is an
 
 645
 00:29:02,320 --> 00:29:04,399
-am I trusting the reviewers which is an
 accumulation of behavior but I'm
 
 646
 00:29:04,399 --> 00:29:07,120
-accumulation of behavior but I'm
 trusting someone else in one case I'm
 
 647
 00:29:07,120 --> 00:29:09,600
-trusting someone else in one case I'm
 more vulnerable to mistakes than I
 
 648
 00:29:09,600 --> 00:29:12,240
-more vulnerable to mistakes than I
 am any other right because it's indirect
 
 649
 00:29:12,240 --> 00:29:13,760
-am any other right because it's indirect
 rather than direct that's the difference
 
 650
 00:29:13,760 --> 00:29:15,520
-rather than direct that's the difference
 you're trusting a third party's opinion
 
 651
 00:29:15,520 --> 00:29:17,760
-you're trusting a third party's opinion
 of the reputation versus your own
 
 652
 00:29:17,760 --> 00:29:19,440
-of the reputation versus your own
 that's right it's not it's not whether
 
 653
 00:29:19,440 --> 00:29:21,919
-that's right it's not it's not whether
 it's based on behavior it's based it's
 
 654
 00:29:21,919 --> 00:29:23,840
-it's based on behavior it's based it's
 whether it's indirect or direct
 
 655
 00:29:23,840 --> 00:29:24,480
-whether it's indirect or direct
 right
 
 656
 00:29:24,480 --> 00:29:33,029
-right
 so a different dimension but yeah So
 
 657
@@ -3280,562 +2646,450 @@ works, one example of that is credit
 
 658
 00:29:38,799 --> 00:29:41,760
-works, one example of that is credit
 bureaus, right? So credit bureaus
 
 659
 00:29:41,760 --> 00:29:44,000
-bureaus, right? So credit bureaus
 accumulate
 
 660
 00:29:44,000 --> 00:29:46,320
-accumulate
 all of your transactions and whether you
 
 661
 00:29:46,320 --> 00:29:48,159
-all of your transactions and whether you
 pay your bills on time and whether you
 
 662
 00:29:48,159 --> 00:29:50,080
-pay your bills on time and whether you
 were late and all of those things,
 
 663
 00:29:50,080 --> 00:29:51,679
-were late and all of those things,
 right?
 
 664
 00:29:51,679 --> 00:29:56,799
-right?
 And they use some algorithm to determine
 
 665
 00:29:56,799 --> 00:29:59,919
-And they use some algorithm to determine
 a credit score which is then paid for. I
 
 666
 00:29:59,919 --> 00:30:02,720
-a credit score which is then paid for. I
 mean other places other banks or credit
 
 667
 00:30:02,720 --> 00:30:05,039
-mean other places other banks or credit
 issuers, credit card issuers or
 
 668
 00:30:05,039 --> 00:30:07,919
-issuers, credit card issuers or
 employers and others can then pay for
 
 669
 00:30:07,919 --> 00:30:10,480
-employers and others can then pay for
 that credit score and get that for you.
 
 670
 00:30:10,480 --> 00:30:14,159
-that credit score and get that for you.
 Right? So that's one way that we do
 
 671
 00:30:14,159 --> 00:30:19,200
-Right? So that's one way that we do
 behavior. Different way is say every
 
 672
 00:30:19,200 --> 00:30:21,360
-behavior. Different way is say every
 time I have a transaction with company X
 
 673
 00:30:21,360 --> 00:30:23,520
-time I have a transaction with company X
 or company Y,
 
 674
 00:30:23,520 --> 00:30:28,080
-or company Y,
 I get a receipt that I paid on time, all
 
 675
 00:30:28,080 --> 00:30:30,080
-I get a receipt that I paid on time, all
 of these things. Now, this may not
 
 676
 00:30:30,080 --> 00:30:31,840
-of these things. Now, this may not
 matter as much for individuals as it
 
 677
 00:30:31,840 --> 00:30:33,919
-matter as much for individuals as it
 does for organizations. I mean you can
 
 678
 00:30:33,919 --> 00:30:35,520
-does for organizations. I mean you can
 see the organizations could really
 
 679
 00:30:35,520 --> 00:30:37,039
-see the organizations could really
 benefit from something like this because
 
 680
 00:30:37,039 --> 00:30:39,279
-benefit from something like this because
 it's big lots of money but anyway you
 
 681
 00:30:39,279 --> 00:30:41,200
-it's big lots of money but anyway you
 get these as credentials and now you can
 
 682
 00:30:41,200 --> 00:30:44,399
-get these as credentials and now you can
 prove to other people in combination or
 
 683
 00:30:44,399 --> 00:30:48,159
-prove to other people in combination or
 apart whether or not you have behaved
 
 684
 00:30:48,159 --> 00:30:50,720
-apart whether or not you have behaved
 properly. Now I have to say there's one
 
 685
 00:30:50,720 --> 00:30:54,320
-properly. Now I have to say there's one
 big problem here.
 
 686
 00:30:54,320 --> 00:30:58,320
-big problem here.
 I can admit bad behavior. So doesn't
 
 687
 00:30:58,320 --> 00:31:00,080
-I can admit bad behavior. So doesn't
 mean that these things are ever are ever
 
 688
 00:31:00,080 --> 00:31:01,360
-mean that these things are ever are ever
 going to go away. I mean, I think
 
 689
 00:31:01,360 --> 00:31:04,320
-going to go away. I mean, I think
 there's always room for things
 
 690
 00:31:04,320 --> 00:31:06,960
-there's always room for things
 that u
 
 691
 00:31:06,960 --> 00:31:09,840
-that u
 are looking for bad behavior. Yeah.
 
 692
 00:31:09,840 --> 00:31:11,840
-are looking for bad behavior. Yeah.
 One thing though that the
 
 693
 00:31:11,840 --> 00:31:15,200
-One thing though that the
 decentralized model allows is that the
 
 694
 00:31:15,200 --> 00:31:18,000
-decentralized model allows is that the
 verifier can pick their own algorithm.
 
 695
 00:31:18,000 --> 00:31:20,559
-verifier can pick their own algorithm.
 If I go to get a credit score, there's
 
 696
 00:31:20,559 --> 00:31:22,320
-If I go to get a credit score, there's
 like five algorithms.
 
 697
 00:31:22,320 --> 00:31:24,000
-like five algorithms.
 Yeah. And that's and Yeah. And I was
 
 698
 00:31:24,000 --> 00:31:27,039
-Yeah. And that's and Yeah. And I was
 going to mention that this model allows
 
 699
 00:31:27,039 --> 00:31:29,760
-going to mention that this model allows
 for a marketplace of algorithms, right?
 
 700
 00:31:29,760 --> 00:31:32,159
-for a marketplace of algorithms, right?
 and for transparency in algorithms,
 
 701
 00:31:32,159 --> 00:31:33,440
-and for transparency in algorithms,
 right? Somebody might say, "Oh, yeah.
 
 702
 00:31:33,440 --> 00:31:35,520
-right? Somebody might say, "Oh, yeah.
 Well, we use this algorithm for how we
 
 703
 00:31:35,520 --> 00:31:37,840
-Well, we use this algorithm for how we
 do how you do scoring." Yeah.
 
 704
 00:31:37,840 --> 00:31:39,120
-do how you do scoring." Yeah.
 I don't know if you were talking about
 
 705
 00:31:39,120 --> 00:31:41,600
-I don't know if you were talking about
 it, but you said at the bottom in
 
 706
 00:31:41,600 --> 00:31:43,600
-it, but you said at the bottom in
 one case, you don't own your data. You
 
 707
 00:31:43,600 --> 00:31:44,640
-one case, you don't own your data. You
 do own your data.
 
 708
 00:31:44,640 --> 00:31:48,399
-do own your data.
 Yeah. And I'm gonna say that this is
 
 709
 00:31:48,399 --> 00:31:52,399
-Yeah. And I'm gonna say that this is
 the sort of issue legally that is going
 
 710
 00:31:52,399 --> 00:31:54,799
-the sort of issue legally that is going
 to slow us down dramatically because if
 
 711
 00:31:54,799 --> 00:31:57,360
-to slow us down dramatically because if
 you look at what the Supreme Court has
 
 712
 00:31:57,360 --> 00:32:00,240
-you look at what the Supreme Court has
 always said, it's that no one owns
 
 713
 00:32:00,240 --> 00:32:03,200
-always said, it's that no one owns
 facts. Okay, data is facts. You might
 
 714
 00:32:03,200 --> 00:32:05,120
-facts. Okay, data is facts. You might
 own the database that the facts reside
 
 715
 00:32:05,120 --> 00:32:07,279
-own the database that the facts reside
 in, but no one owns the underlying
 
 716
 00:32:07,279 --> 00:32:11,519
-in, but no one owns the underlying
 facts. So the solution to that is to
 
 717
 00:32:11,519 --> 00:32:14,320
-facts. So the solution to that is to
 treat those facts as an unownable
 
 718
 00:32:14,320 --> 00:32:18,720
-treat those facts as an unownable
 commons. Okay? And like all commons,
 
 719
 00:32:18,720 --> 00:32:21,360
-commons. Okay? And like all commons,
 navigable waters or the air we breathe,
 
 720
 00:32:21,360 --> 00:32:23,679
-navigable waters or the air we breathe,
 someone has to be responsible. So going
 
 721
 00:32:23,679 --> 00:32:25,440
-someone has to be responsible. So going
 back to the fiduciary duty of loyalty
 
 722
 00:32:25,440 --> 00:32:28,960
-back to the fiduciary duty of loyalty
 and other fiduciary duties, you are the
 
 723
 00:32:28,960 --> 00:32:31,600
-and other fiduciary duties, you are the
 best candidate to be the trustee over
 
 724
 00:32:31,600 --> 00:32:33,919
-best candidate to be the trustee over
 your facts because you're more
 
 725
 00:32:33,919 --> 00:32:35,200
-your facts because you're more
 interested in their accuracy.
 
 726
 00:32:35,200 --> 00:32:36,159
-interested in their accuracy.
 I care about them.
 
 727
 00:32:36,159 --> 00:32:38,960
-I care about them.
 Right. Okay. and the government has
 
 728
 00:32:38,960 --> 00:32:41,600
-Right. Okay. and the government has
 a secondary fiduciary duty to make
 
 729
 00:32:41,600 --> 00:32:45,440
-a secondary fiduciary duty to make
 certain that your rights in those facts
 
 730
 00:32:45,440 --> 00:32:46,320
-certain that your rights in those facts
 aren't abused.
 
 731
 00:32:46,320 --> 00:32:47,120
-aren't abused.
 Yeah, that's
 
 732
 00:32:47,120 --> 00:32:49,360
-Yeah, that's
 but the point there is I think that's
 
 733
 00:32:49,360 --> 00:32:50,640
-but the point there is I think that's
 what's going to slow us down because if
 
 734
 00:32:50,640 --> 00:32:52,880
-what's going to slow us down because if
 you look at these 80page agreements
 
 735
 00:32:52,880 --> 00:32:55,200
-you look at these 80page agreements
 where you just click I agree, none of
 
 736
 00:32:55,200 --> 00:32:57,760
-where you just click I agree, none of
 them say you own the data and you're
 
 737
 00:32:57,760 --> 00:33:00,000
-them say you own the data and you're
 giving us ownership. They all say you
 
 738
 00:33:00,000 --> 00:33:02,399
-giving us ownership. They all say you
 transfer whatever rights you have and we
 
 739
 00:33:02,399 --> 00:33:04,480
-transfer whatever rights you have and we
 accept whatever rights you have and then
 
 740
 00:33:04,480 --> 00:33:05,919
-accept whatever rights you have and then
 the company goes out and says well we
 
 741
 00:33:05,919 --> 00:33:07,840
-the company goes out and says well we
 own this. So it's a legal fiction.
 
 742
 00:33:07,840 --> 00:33:10,480
-own this. So it's a legal fiction.
 Yeah, we I probably shouldn't say
 
 743
 00:33:10,480 --> 00:33:12,799
-Yeah, we I probably shouldn't say
 own there. I mean control is a better
 
 744
 00:33:12,799 --> 00:33:13,919
-own there. I mean control is a better
 word.
 
 745
 00:33:13,919 --> 00:33:16,240
-word.
 Own is a problematic word in this word
 
 746
 00:33:16,240 --> 00:33:18,000
-Own is a problematic word in this word
 for the reasons that you have
 
 747
 00:33:18,000 --> 00:33:23,440
-for the reasons that you have
 pointed out. And in fact, if
 
 748
 00:33:23,440 --> 00:33:26,799
-pointed out. And in fact, if
 if I'm in a transaction with someone, we
 
 749
 00:33:26,799 --> 00:33:30,240
-if I'm in a transaction with someone, we
 both are parties to that transaction
 
 750
 00:33:30,240 --> 00:33:33,760
-both are parties to that transaction
 and we both could have a credential re
 
 751
 00:33:33,760 --> 00:33:37,200
-and we both could have a credential re
 to that transaction and we both control
 
 752
 00:33:37,200 --> 00:33:39,120
-to that transaction and we both control
 that, right? And of course, that's just
 
 753
 00:33:39,120 --> 00:33:41,360
-that, right? And of course, that's just
 two-party. It could be multi-party. So,
 
 754
 00:33:41,360 --> 00:33:44,320
-two-party. It could be multi-party. So,
 so yeah, it's it's about you have access
 
 755
 00:33:44,320 --> 00:33:47,120
-so yeah, it's it's about you have access
 to and can control who you share it
 
 756
 00:33:47,120 --> 00:33:47,519
-to and can control who you share it
 with,
 
 757
 00:33:47,519 --> 00:33:49,440
-with,
 right? And just to your point very
 
 758
 00:33:49,440 --> 00:33:51,600
-right? And just to your point very
 quickly about transactions, you know, we
 
 759
 00:33:51,600 --> 00:33:54,159
-quickly about transactions, you know, we
 always sort of say, well, the newspaper
 
 760
 00:33:54,159 --> 00:33:57,519
-always sort of say, well, the newspaper
 costs a dollar. Well, if I'm buying the
 
 761
 00:33:57,519 --> 00:34:00,399
-costs a dollar. Well, if I'm buying the
 newspaper, I value the newspaper more
 
 762
 00:34:00,399 --> 00:34:04,399
-newspaper, I value the newspaper more
 than the dollar and the publisher values
 
 763
 00:34:04,399 --> 00:34:06,559
-than the dollar and the publisher values
 the dollar more than the newspaper. So
 
 764
 00:34:06,559 --> 00:34:08,000
-the dollar more than the newspaper. So
 otherwise, the transaction wouldn't
 
 765
 00:34:08,000 --> 00:34:09,040
-otherwise, the transaction wouldn't
 occur.
 
 766
 00:34:09,040 --> 00:34:11,599
-occur.
 Yeah. Yeah. There has Yeah. It's not
 
 767
 00:34:11,599 --> 00:34:13,679
-Yeah. Yeah. There has Yeah. It's not
 there's cost, price, and value. Right.
 
 768
 00:34:13,679 --> 00:34:16,000
-there's cost, price, and value. Right.
 Right. And they're not the same. Yeah.
 
 769
 00:34:16,000 --> 00:34:21,270
-Right. And they're not the same. Yeah.
 Even the word your implies ownership
 
 770
@@ -3845,272 +3099,218 @@ Yeah.
 
 771
 00:34:26,399 --> 00:34:30,320
-Yeah.
 Okay. So this whole idea of
 
 772
 00:34:30,320 --> 00:34:36,639
-Okay. So this whole idea of
 reputation has lots of implications or
 
 773
 00:34:36,639 --> 00:34:39,599
-reputation has lots of implications or
 Ramifications for how we might
 
 774
 00:34:39,599 --> 00:34:44,079
-Ramifications for how we might
 approach agent AI and how agentic AI
 
 775
 00:34:44,079 --> 00:34:46,720
-approach agent AI and how agentic AI
 works with us. I mean this talk is not
 
 776
 00:34:46,720 --> 00:34:49,760
-works with us. I mean this talk is not
 about agent AI but I just wanted to
 
 777
 00:34:49,760 --> 00:34:54,320
-about agent AI but I just wanted to
 point out that this same foundation and
 
 778
 00:34:54,320 --> 00:34:58,079
-point out that this same foundation and
 this idea of building reputation around
 
 779
 00:34:58,079 --> 00:35:00,800
-this idea of building reputation around
 solid identifiers for organizations and
 
 780
 00:35:00,800 --> 00:35:02,320
-solid identifiers for organizations and
 individuals
 
 781
 00:35:02,320 --> 00:35:05,520
-individuals
 helps us in this space if you want to
 
 782
 00:35:05,520 --> 00:35:08,240
-helps us in this space if you want to
 know details how I think about it like I
 
 783
 00:35:08,240 --> 00:35:14,400
-know details how I think about it like I
 said there's a blog post okay
 
 784
 00:35:14,400 --> 00:35:15,200
-said there's a blog post okay
 or
 
 785
 00:35:15,200 --> 00:35:16,640
-or
 One thing I thought of when I was doing
 
 786
 00:35:16,640 --> 00:35:18,480
-One thing I thought of when I was doing
 this actually is this idea of an
 
 787
 00:35:18,480 --> 00:35:20,720
-this actually is this idea of an
 evaluator. You could imagine agents that
 
 788
 00:35:20,720 --> 00:35:22,720
-evaluator. You could imagine agents that
 you employ that are evaluators. You
 
 789
 00:35:22,720 --> 00:35:24,320
-you employ that are evaluators. You
 know, we talked about having a
 
 790
 00:35:24,320 --> 00:35:27,440
-know, we talked about having a
 marketplace of reputation evaluation
 
 791
 00:35:27,440 --> 00:35:29,200
-marketplace of reputation evaluation
 algorithms. You could imagine a
 
 792
 00:35:29,200 --> 00:35:31,440
-algorithms. You could imagine a
 marketplace of reputation evaluation
 
 793
 00:35:31,440 --> 00:35:34,240
-marketplace of reputation evaluation
 agents who are working on your behalf
 
 794
 00:35:34,240 --> 00:35:36,160
-agents who are working on your behalf
 for various things, right? Things that
 
 795
 00:35:36,160 --> 00:35:37,760
-for various things, right? Things that
 you care about and ones that you trust
 
 796
 00:35:37,760 --> 00:35:39,520
-you care about and ones that you trust
 and you Yeah, I'm going to use that
 
 797
 00:35:39,520 --> 00:35:41,280
-and you Yeah, I'm going to use that
 agent because I, you know, like the
 
 798
 00:35:41,280 --> 00:35:43,839
-agent because I, you know, like the
 restaurants it recommends.
 
 799
 00:35:43,839 --> 00:35:46,880
-restaurants it recommends.
 So what's the technology opportunity
 
 800
 00:35:46,880 --> 00:35:50,000
-So what's the technology opportunity
 here? If you're building
 
 801
 00:35:50,000 --> 00:35:52,320
-here? If you're building
 decentralized identity infrastructure,
 
 802
 00:35:52,320 --> 00:35:55,119
-decentralized identity infrastructure,
 SEDI is an opportunity, but it's not a
 
 803
 00:35:55,119 --> 00:35:59,839
-SEDI is an opportunity, but it's not a
 guarantee, right? There's a
 
 804
 00:35:59,839 --> 00:36:03,680
-guarantee, right? There's a
 SEDI sets out these requirements,
 
 805
 00:36:03,680 --> 00:36:05,839
-SEDI sets out these requirements,
 Open standards, decentralized
 
 806
 00:36:05,839 --> 00:36:07,359
-Open standards, decentralized
 control,
 
 807
 00:36:07,359 --> 00:36:10,400
-control,
 that represent a high bar for how
 
 808
 00:36:10,400 --> 00:36:15,440
-that represent a high bar for how
 this all has to work. And like I
 
 809
 00:36:15,440 --> 00:36:18,320
-this all has to work. And like I
 said at the start of the talk,
 
 810
 00:36:18,320 --> 00:36:20,640
-said at the start of the talk,
 there's the technical side of it, right?
 
 811
 00:36:20,640 --> 00:36:24,720
-there's the technical side of it, right?
 Which is the which is not in any way a
 
 812
 00:36:24,720 --> 00:36:29,280
-Which is the which is not in any way a
 small thing, but doing that at scale,
 
 813
 00:36:29,280 --> 00:36:32,000
-small thing, but doing that at scale,
 meeting the user experience requirements
 
 814
 00:36:32,000 --> 00:36:34,480
-meeting the user experience requirements
 that we might have, finding the right
 
 815
 00:36:34,480 --> 00:36:37,119
-that we might have, finding the right
 economic models for the various parts
 
 816
 00:36:37,119 --> 00:36:39,280
-economic models for the various parts
 and pieces that have to work. Those are
 
 817
 00:36:39,280 --> 00:36:41,760
-and pieces that have to work. Those are
 all extremely difficult problems to
 
 818
 00:36:41,760 --> 00:36:45,760
-all extremely difficult problems to
 solve. So it's it's not a no-brainer
 
 819
 00:36:45,760 --> 00:36:48,480
-solve. So it's it's not a no-brainer
 that oh SEDI came along good it's all
 
 820
 00:36:48,480 --> 00:36:50,320
-that oh SEDI came along good it's all
 solved and we still have lots of work to
 
 821
 00:36:50,320 --> 00:36:52,800
-solved and we still have lots of work to
 do. Timothy
 
 822
 00:36:52,800 --> 00:36:54,720
-do. Timothy
 you've got whole talks about this. If
 
 823
 00:36:54,720 --> 00:36:56,400
-you've got whole talks about this. If
 you
 
 824
 00:36:56,400 --> 00:37:01,670
-you
 in
 
 825
@@ -4120,177 +3320,142 @@ centralized digital system
 
 826
 00:37:06,880 --> 00:37:10,320
-centralized digital system
 use a lot of cryptography as well
 
 827
 00:37:10,320 --> 00:37:12,320
-use a lot of cryptography as well
 component missing
 
 828
 00:37:12,320 --> 00:37:14,400
-component missing
 and that's the decentralized nature of
 
 829
 00:37:14,400 --> 00:37:18,240
-and that's the decentralized nature of
 setting. It's trying to have
 
 830
 00:37:18,240 --> 00:37:22,880
-setting. It's trying to have
 a legal verifiable basis but also
 
 831
 00:37:22,880 --> 00:37:24,880
-a legal verifiable basis but also
 decentralization meaning that you can
 
 832
 00:37:24,880 --> 00:37:26,880
-decentralization meaning that you can
 have different vendors in different
 
 833
 00:37:26,880 --> 00:37:29,760
-have different vendors in different
 states and different systems and they
 
 834
 00:37:29,760 --> 00:37:32,160
-states and different systems and they
 can issue in one place and verify in
 
 835
 00:37:32,160 --> 00:37:33,680
-can issue in one place and verify in
 another because they're speaking a
 
 836
 00:37:33,680 --> 00:37:34,800
-another because they're speaking a
 common
 
 837
 00:37:34,800 --> 00:37:35,520
-common
 we hope
 
 838
 00:37:35,520 --> 00:37:38,079
-we hope
 those systems that's that's
 
 839
 00:37:38,079 --> 00:37:39,359
-those systems that's that's
 obviously the
 
 840
 00:37:39,359 --> 00:37:40,880
-obviously the
 but I mean but I mean I think this is
 
 841
 00:37:40,880 --> 00:37:42,000
-but I mean but I mean I think this is
 where you're going but that makes it
 
 842
 00:37:42,000 --> 00:37:42,640
-where you're going but that makes it
 hard right
 
 843
 00:37:42,640 --> 00:37:45,200
-hard right
 in contrast with ADAR in India and in
 
 844
 00:37:45,200 --> 00:37:46,560
-in contrast with ADAR in India and in
 contra contst with what they're doing in
 
 845
 00:37:46,560 --> 00:37:48,800
-contra contst with what they're doing in
 Estonia because they do not have that
 
 846
 00:37:48,800 --> 00:37:50,320
-Estonia because they do not have that
 property and they're not even trying.
 
 847
 00:37:50,320 --> 00:37:52,160
-property and they're not even trying.
 It's a giant centralized system and
 
 848
 00:37:52,160 --> 00:37:53,680
-It's a giant centralized system and
 everybody phones home to the mother
 
 849
 00:37:53,680 --> 00:37:54,240
-everybody phones home to the mother
 ship.
 
 850
 00:37:54,240 --> 00:37:55,119
-ship.
 Yeah, absolutely.
 
 851
 00:37:55,119 --> 00:37:57,040
-Yeah, absolutely.
 My point is just having those two
 
 852
 00:37:57,040 --> 00:38:01,119
-My point is just having those two
 components up there describes ad hoc.
 
 853
 00:38:01,119 --> 00:38:04,240
-components up there describes ad hoc.
 That's my point.
 
 854
 00:38:04,240 --> 00:38:06,640
-That's my point.
 Okay.
 
 855
 00:38:06,640 --> 00:38:08,880
-Okay.
 And it does
 
 856
 00:38:08,880 --> 00:38:11,040
-And it does
 go back to your point about control
 
 857
 00:38:11,040 --> 00:38:14,800
-go back to your point about control
 because decentralization is about
 
 858
 00:38:14,800 --> 00:38:17,680
-because decentralization is about
 autonomy and control ultimately.
 
 859
 00:38:17,680 --> 00:38:19,359
-autonomy and control ultimately.
 Yeah.
 
 860
 00:38:19,359 --> 00:38:22,630
-Yeah.
 So
 
 861
@@ -4300,42 +3465,34 @@ and there's a lot of people who take
 
 862
 00:38:30,000 --> 00:38:32,880
-and there's a lot of people who take
 that to heart and it is true to the
 
 863
 00:38:32,880 --> 00:38:35,440
-that to heart and it is true to the
 extent that code controls what you can
 
 864
 00:38:35,440 --> 00:38:38,160
-extent that code controls what you can
 do and what you can't do but I don't
 
 865
 00:38:38,160 --> 00:38:40,720
-do and what you can't do but I don't
 think for identity that idea is quite
 
 866
 00:38:40,720 --> 00:38:44,400
-think for identity that idea is quite
 sufficient right that we need more than
 
 867
 00:38:44,400 --> 00:38:48,480
-sufficient right that we need more than
 code we need this underlying legal
 
 868
 00:38:48,480 --> 00:38:50,640
-code we need this underlying legal
 foundation that SEDI provides for
 
 869
 00:38:50,640 --> 00:38:57,829
-foundation that SEDI provides for
 individuals.
 
 870
@@ -4345,121 +3502,97 @@ authority to revoke, when can they
 
 871
 00:39:02,640 --> 00:39:05,920
-authority to revoke, when can they
 revoke? That's just one example, right?
 
 872
 00:39:05,920 --> 00:39:09,599
-revoke? That's just one example, right?
 Who has the right to get one of these?
 
 873
 00:39:09,599 --> 00:39:11,680
-Who has the right to get one of these?
 Code doesn't solve those problems. Those
 
 874
 00:39:11,680 --> 00:39:13,760
-Code doesn't solve those problems. Those
 are all things that we need legal
 
 875
 00:39:13,760 --> 00:39:17,760
-are all things that we need legal
 infrastructure which steady is at least
 
 876
 00:39:17,760 --> 00:39:20,000
-infrastructure which steady is at least
 on the road to providing right. I don't
 
 877
 00:39:20,000 --> 00:39:21,680
-on the road to providing right. I don't
 think this will be the last SEDI
 
 878
 00:39:21,680 --> 00:39:23,680
-think this will be the last SEDI
 statute. I think there will be more but
 
 879
 00:39:23,680 --> 00:39:25,599
-statute. I think there will be more but
 but nevertheless we're on we're on the
 
 880
 00:39:25,599 --> 00:39:29,760
-but nevertheless we're on we're on the
 road to getting there. So
 
 881
 00:39:29,760 --> 00:39:31,760
-road to getting there. So
 that provides this legal foundation like
 
 882
 00:39:31,760 --> 00:39:33,599
-that provides this legal foundation like
 I've said
 
 883
 00:39:33,599 --> 00:39:36,480
-I've said
 We've got
 
 884
 00:39:36,480 --> 00:39:40,320
-We've got
 code, we've got stacks that are maturing
 
 885
 00:39:40,320 --> 00:39:45,760
-code, we've got stacks that are maturing
 And what we have now starting in May
 
 886
 00:39:45,760 --> 00:39:49,599
-And what we have now starting in May
 is a legal foundation for all of that.
 
 887
 00:39:49,599 --> 00:39:52,079
-is a legal foundation for all of that.
 So
 
 888
 00:39:52,079 --> 00:39:53,680
-So
 we've had some discussion going back.
 
 889
 00:39:53,680 --> 00:39:55,440
-we've had some discussion going back.
 I've got like two or three minutes I
 
 890
 00:39:55,440 --> 00:39:56,880
-I've got like two or three minutes I
 think if there are questions. two
 
 891
 00:39:56,880 --> 00:39:59,839
-think if there are questions. two
 minutes I'm told. So, is there
 
 892
 00:39:59,839 --> 00:40:01,040
-minutes I'm told. So, is there
 questions? Happy to answer them.
 
 893
 00:40:01,040 --> 00:40:03,839
-questions? Happy to answer them.
 Otherwise, I will turn you over to the
 
 894
 00:40:03,839 --> 00:40:07,079
-Otherwise, I will turn you over to the
 next one.
 

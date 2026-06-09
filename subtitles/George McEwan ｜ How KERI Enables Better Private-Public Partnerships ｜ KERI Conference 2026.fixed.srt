@@ -1,66 +1,54 @@
-﻿1
+1
 00:00:05,230 --> 00:00:06,400
 So, while we let Chris find a
 chair, I'm going to go ahead and start
 
 2
 00:00:06,400 --> 00:00:08,560
-chair, I'm going to go ahead and start
 so we can stay on time. So, one of the
 
 3
 00:00:08,560 --> 00:00:10,920
-so we can stay on time. So, one of the
 things I want to ask the panel
 
 4
 00:00:10,920 --> 00:00:12,240
-things I want to ask the panel
 and each one of you will get an
 
 5
 00:00:12,240 --> 00:00:15,280
-and each one of you will get an
 opportunity to answer this question.
 
 6
 00:00:15,280 --> 00:00:17,080
-opportunity to answer this question.
 What I want to know is if you in 2
 
 7
 00:00:17,080 --> 00:00:18,760
-What I want to know is if you in 2
 minutes or less, could you tell us a
 
 8
 00:00:18,760 --> 00:00:21,040
-minutes or less, could you tell us a
 little about your background and
 
 9
 00:00:21,040 --> 00:00:23,440
-little about your background and
 what was the specific lightbulb moment
 
 10
 00:00:23,440 --> 00:00:25,440
-what was the specific lightbulb moment
 that drove your passion in trying to fix
 
 11
 00:00:25,440 --> 00:00:28,000
-that drove your passion in trying to fix
 digital identity?
 
 12
 00:00:28,000 --> 00:00:29,320
-digital identity?
 So
 
 13
 00:00:29,320 --> 00:00:35,230
-So
 I don't think this is on
 
 14
@@ -70,27 +58,22 @@ anything.
 
 15
 00:00:38,520 --> 00:00:41,840
-anything.
 This, however, does. So
 
 16
 00:00:41,840 --> 00:00:43,720
-This, however, does. So
 So, my
 
 17
 00:00:43,720 --> 00:00:45,520
-So, my
 So, my background is actually kind of a
 
 18
 00:00:45,520 --> 00:00:47,600
-So, my background is actually kind of a
 bizarre I started again with take about
 
 19
 00:00:47,600 --> 00:00:50,190
-bizarre I started again with take about
 an hour, so we're not going to do that.
 
 20
@@ -104,32 +87,26 @@ background began actually at the very
 
 22
 00:00:55,120 --> 00:00:58,360
-background began actually at the very
 beginning of the of the exercise
 
 23
 00:00:58,360 --> 00:01:00,600
-beginning of the of the exercise
 we're all involved in, right? So, my
 
 24
 00:01:00,600 --> 00:01:03,560
-we're all involved in, right? So, my
 first health my first job actually
 
 25
 00:01:03,560 --> 00:01:05,680
-first health my first job actually
 was in 1986,
 
 26
 00:01:05,680 --> 00:01:08,280
-was in 1986,
 which is when the 8088 was the
 
 27
 00:01:08,280 --> 00:01:11,630
-which is when the 8088 was the
 processor du jour. And fast forward
 
 28
@@ -143,127 +120,102 @@ about 10 years from that point when I
 
 30
 00:01:13,920 --> 00:01:16,200
-about 10 years from that point when I
 went through a couple of life cycles of
 
 31
 00:01:16,200 --> 00:01:18,720
-went through a couple of life cycles of
 career, I ended up being transferred
 
 32
 00:01:18,720 --> 00:01:20,400
-career, I ended up being transferred
 back and ended up in the healthcare IT
 
 33
 00:01:20,400 --> 00:01:22,760
-back and ended up in the healthcare IT
 space. Actually got the
 
 34
 00:01:22,760 --> 00:01:24,600
-space. Actually got the
 My first healthcare IT job was
 
 35
 00:01:24,600 --> 00:01:26,240
-My first healthcare IT job was
 actually the bass player in my band got
 
 36
 00:01:26,240 --> 00:01:29,280
-actually the bass player in my band got
 me that job, so but actually my
 
 37
 00:01:29,280 --> 00:01:32,240
-me that job, so but actually my
 original notion of why I identity is
 
 38
 00:01:32,240 --> 00:01:34,480
-original notion of why I identity is
 important is really far back. It is
 
 39
 00:01:34,480 --> 00:01:37,040
-important is really far back. It is
 really actually back to the notion of my
 
 40
 00:01:37,040 --> 00:01:40,320
-really actually back to the notion of my
 first implementation of an EMPI, if you
 
 41
 00:01:40,320 --> 00:01:41,680
-first implementation of an EMPI, if you
 know what that is. So, this is the
 
 42
 00:01:41,680 --> 00:01:44,120
-know what that is. So, this is the
 notion of a an enterprise master patient
 
 43
 00:01:44,120 --> 00:01:46,520
-notion of a an enterprise master patient
 index. So, the idea that you would know
 
 44
 00:01:46,520 --> 00:01:48,400
-index. So, the idea that you would know
 who you were talking to reliably at that
 
 45
 00:01:48,400 --> 00:01:51,440
-who you were talking to reliably at that
 point was a question of probabilism with
 
 46
 00:01:51,440 --> 00:01:54,360
-point was a question of probabilism with
 very little very little assuredly
 
 47
 00:01:54,360 --> 00:01:56,720
-very little very little assuredly
 about who those people were in any way.
 
 48
 00:01:56,720 --> 00:01:59,200
-about who those people were in any way.
 So, pretty early on I realized that the
 
 49
 00:01:59,200 --> 00:02:00,720
-So, pretty early on I realized that the
 quality of the data that was being
 
 50
 00:02:00,720 --> 00:02:03,520
-quality of the data that was being
 collected to establish this was
 
 51
 00:02:03,520 --> 00:02:05,800
-collected to establish this was
 poor. That their ability that actually
 
 52
 00:02:05,800 --> 00:02:07,040
-poor. That their ability that actually
 the organization I was working with at
 
 53
 00:02:07,040 --> 00:02:08,520
-the organization I was working with at
 the time was Kaiser Permanente Northern
 
 54
 00:02:08,520 --> 00:02:14,270
-the time was Kaiser Permanente Northern
 California. They had a about a 30%
 
 55
@@ -277,392 +229,314 @@ so, your ability to actually resolve
 
 57
 00:02:19,600 --> 00:02:21,240
-so, your ability to actually resolve
 identity was the first thing that was my
 
 58
 00:02:21,240 --> 00:02:23,200
-identity was the first thing that was my
 light bulb moment. My next big
 
 59
 00:02:23,200 --> 00:02:26,320
-light bulb moment. My next big
 opportunity then was like, I don't know,
 
 60
 00:02:26,320 --> 00:02:28,560
-opportunity then was like, I don't know,
 20 some years later when I was
 
 61
 00:02:28,560 --> 00:02:30,959
-20 some years later when I was
 responsible for a national network
 
 62
 00:02:30,959 --> 00:02:33,800
-responsible for a national network
 deployment that was the Commonwealth
 
 63
 00:02:33,800 --> 00:02:36,040
-deployment that was the Commonwealth
 Health Alliance. And again, when that
 
 64
 00:02:36,040 --> 00:02:38,240
-Health Alliance. And again, when that
 first launched, its focus was not on
 
 65
 00:02:38,240 --> 00:02:40,000
-first launched, its focus was not on
 healthcare information exchange, but on
 
 66
 00:02:40,000 --> 00:02:42,240
-healthcare information exchange, but on
 identity first. Because the expectation
 
 67
 00:02:42,240 --> 00:02:43,920
-identity first. Because the expectation
 was this was the problem you had to
 
 68
 00:02:43,920 --> 00:02:45,760
-was this was the problem you had to
 solve. You had to figure out who you
 
 69
 00:02:45,760 --> 00:02:47,840
-solve. You had to figure out who you
 were talking about at this point and
 
 70
 00:02:47,840 --> 00:02:50,640
-were talking about at this point and
 that point. What I quickly learned is
 
 71
 00:02:50,640 --> 00:02:52,720
-that point. What I quickly learned is
 that we were still talking probabilism
 
 72
 00:02:52,720 --> 00:02:54,360
-that we were still talking probabilism
 and we were still talking 20%
 
 73
 00:02:54,360 --> 00:02:56,920
-and we were still talking 20%
 duplication some 20 years later. I mean,
 
 74
 00:02:56,920 --> 00:02:58,680
-duplication some 20 years later. I mean,
 this stuff had not gotten even a little
 
 75
 00:02:58,680 --> 00:02:59,920
-this stuff had not gotten even a little
 bit better.
 
 76
 00:02:59,920 --> 00:03:02,600
-bit better.
 So, the notion that identifiers would be
 
 77
 00:03:02,600 --> 00:03:06,040
-So, the notion that identifiers would be
 important, I think for me really began
 
 78
 00:03:06,040 --> 00:03:09,040
-important, I think for me really began
 to click when we couldn't resolve
 
 79
 00:03:09,040 --> 00:03:10,239
-to click when we couldn't resolve
 identity.
 
 80
 00:03:10,239 --> 00:03:12,600
-identity.
 So, getting to identity assurance
 
 81
 00:03:12,600 --> 00:03:14,320
-So, getting to identity assurance
 wasn't something I was thinking about. I
 
 82
 00:03:14,320 --> 00:03:16,040
-wasn't something I was thinking about. I
 was thinking about the fact you just
 
 83
 00:03:16,040 --> 00:03:18,200
-was thinking about the fact you just
 couldn't match people or records with
 
 84
 00:03:18,200 --> 00:03:21,200
-couldn't match people or records with
 people. And so, the my light bulb moment
 
 85
 00:03:21,200 --> 00:03:23,600
-people. And so, the my light bulb moment
 really was around identity resolution
 
 86
 00:03:23,600 --> 00:03:26,080
-really was around identity resolution
 and that's really my was my raison
 
 87
 00:03:26,080 --> 00:03:29,280
-and that's really my was my raison
 d'être. But then, now in this setting,
 
 88
 00:03:29,280 --> 00:03:30,800
-d'être. But then, now in this setting,
 what we're trying to figure out is how
 
 89
 00:03:30,800 --> 00:03:33,320
-what we're trying to figure out is how
 to make it possible for us to be sure
 
 90
 00:03:33,320 --> 00:03:35,080
-to make it possible for us to be sure
 that people are who they say they are
 
 91
 00:03:35,080 --> 00:03:36,640
-that people are who they say they are
 when they're contracted over the
 
 92
 00:03:36,640 --> 00:03:39,239
-when they're contracted over the
 internet. This is very different problem
 
 93
 00:03:39,239 --> 00:03:41,840
-internet. This is very different problem
 than identity resolution, but it has the
 
 94
 00:03:41,840 --> 00:03:44,519
-than identity resolution, but it has the
 same core problem, which is that people
 
 95
 00:03:44,519 --> 00:03:46,600
-same core problem, which is that people
 go through processes to do this
 
 96
 00:03:46,600 --> 00:03:49,000
-go through processes to do this
 exercise, this initial exercise. The
 
 97
 00:03:49,000 --> 00:03:50,880
-exercise, this initial exercise. The
 initial exercise is the first
 
 98
 00:03:50,880 --> 00:03:53,560
-initial exercise is the first
 transaction. The first transaction is
 
 99
 00:03:53,560 --> 00:03:55,920
-transaction. The first transaction is
 the failure transaction. That is the
 
 100
 00:03:55,920 --> 00:03:58,080
-the failure transaction. That is the
 fact. So, if you can't get the first
 
 101
 00:03:58,080 --> 00:04:00,000
-fact. So, if you can't get the first
 transaction right, all other
 
 102
 00:04:00,000 --> 00:04:02,960
-transaction right, all other
 transactions beyond that will fail.
 
 103
 00:04:02,960 --> 00:04:05,280
-transactions beyond that will fail.
 So, this was my big aha moment. I've
 
 104
 00:04:05,280 --> 00:04:06,840
-So, this was my big aha moment. I've
 been saying the first transaction for
 
 105
 00:04:06,840 --> 00:04:09,200
-been saying the first transaction for
 about a decade. I think it's the most
 
 106
 00:04:09,200 --> 00:04:11,200
-about a decade. I think it's the most
 important transaction of all. And if you
 
 107
 00:04:11,200 --> 00:04:13,480
-important transaction of all. And if you
 can't get the right stuff in the door
 
 108
 00:04:13,480 --> 00:04:15,440
-can't get the right stuff in the door
 the first time, then you're trying to
 
 109
 00:04:15,440 --> 00:04:17,040
-the first time, then you're trying to
 match to it,
 
 110
 00:04:17,040 --> 00:04:19,400
-match to it,
 all bets are off. Not going to work.
 
 111
 00:04:19,400 --> 00:04:21,200
-all bets are off. Not going to work.
 So, that to me was my light bulb moment.
 
 112
 00:04:21,200 --> 00:04:24,880
-So, that to me was my light bulb moment.
 It's maybe, I don't know, 1993.
 
 113
 00:04:24,880 --> 00:04:25,880
-It's maybe, I don't know, 1993.
 It's a good time to have it. We're just
 
 114
 00:04:25,880 --> 00:04:27,840
-It's a good time to have it. We're just
 going to do this like a slow stadium
 
 115
 00:04:27,840 --> 00:04:29,919
-going to do this like a slow stadium
 wave. We'll just keep rolling on down.
 
 116
 00:04:29,919 --> 00:04:33,080
-wave. We'll just keep rolling on down.
 Okay, well, I'll give it a try. I
 
 117
 00:04:33,080 --> 00:04:36,000
-Okay, well, I'll give it a try. I
 suppose that light bulb moment for me
 
 118
 00:04:36,000 --> 00:04:37,720
-suppose that light bulb moment for me
 probably came back in
 
 119
 00:04:37,720 --> 00:04:41,440
-probably came back in
 2015. I'd started with CMS. We were
 
 120
 00:04:41,440 --> 00:04:42,880
-2015. I'd started with CMS. We were
 working out how we were going to make
 
 121
 00:04:42,880 --> 00:04:44,760
-working out how we were going to make
 data available to
 
 122
 00:04:44,760 --> 00:04:48,640
-data available to
 Patients, to beneficiaries. And it
 
 123
 00:04:48,640 --> 00:04:50,560
-Patients, to beneficiaries. And it
 was going to be done via third-party
 
 124
 00:04:50,560 --> 00:04:53,040
-was going to be done via third-party
 applications, health applications that
 
 125
 00:04:53,040 --> 00:04:54,760
-applications, health applications that
 we're seeing
 
 126
 00:04:54,760 --> 00:04:56,680
-we're seeing
 pretty typically these days.
 
 127
 00:04:56,680 --> 00:04:58,560
-pretty typically these days.
 And I just asked this the
 
 128
 00:04:58,560 --> 00:05:00,320
-And I just asked this the
 really the simple question is there a
 
 129
 00:05:00,320 --> 00:05:01,560
-really the simple question is there a
 way
 
 130
 00:05:01,560 --> 00:05:05,280
-way
 that we could automate the registration?
 
 131
 00:05:05,280 --> 00:05:07,360
-that we could automate the registration?
 But if we're going to do that, I really
 
 132
 00:05:07,360 --> 00:05:09,600
-But if we're going to do that, I really
 need to be able to have some confidence
 
 133
 00:05:09,600 --> 00:05:12,120
-need to be able to have some confidence
 that the organization that is
 
 134
 00:05:12,120 --> 00:05:14,630
-that the organization that is
 presenting themselves
 
 135
@@ -676,322 +550,258 @@ And so
 
 137
 00:05:18,919 --> 00:05:21,240
-And so
 I started this the way I seem to do
 
 138
 00:05:21,240 --> 00:05:23,400
-I started this the way I seem to do
 quite often. I wrote a blog.
 
 139
 00:05:23,400 --> 00:05:26,280
-quite often. I wrote a blog.
 It happened to be for HHS, and it simply
 
 140
 00:05:26,280 --> 00:05:28,320
-It happened to be for HHS, and it simply
 asked that question. And
 
 141
 00:05:28,320 --> 00:05:30,080
-asked that question. And
 that led to conversations. And I think,
 
 142
 00:05:30,080 --> 00:05:32,520
-that led to conversations. And I think,
 Scott, we even had conversations
 
 143
 00:05:32,520 --> 00:05:34,760
-Scott, we even had conversations
 with the Direct Trust around is there a
 
 144
 00:05:34,760 --> 00:05:37,360
-with the Direct Trust around is there a
 way I could call an API and check with
 
 145
 00:05:37,360 --> 00:05:39,919
-way I could call an API and check with
 you guys whether you know this
 
 146
 00:05:39,919 --> 00:05:42,480
-you guys whether you know this
 organization. And so that really evolved
 
 147
 00:05:42,480 --> 00:05:43,720
-organization. And so that really evolved
 from there
 
 148
 00:05:43,720 --> 00:05:45,760
-from there
 it more directly around
 
 149
 00:05:45,760 --> 00:05:47,360
-it more directly around
 healthKERI areas. I
 
 150
 00:05:47,360 --> 00:05:49,600
-healthKERI areas. I
 Back in back last year
 
 151
 00:05:49,600 --> 00:05:51,440
-Back in back last year
 again I wrote an article because I'm
 
 152
 00:05:51,440 --> 00:05:54,120
-again I wrote an article because I'm
 thinking how do we operationalize these
 
 153
 00:05:54,120 --> 00:05:55,760
-thinking how do we operationalize these
 APIs that
 
 154
 00:05:55,760 --> 00:05:57,600
-APIs that
 a thousand health plans are going to
 
 155
 00:05:57,600 --> 00:06:00,200
-a thousand health plans are going to
 have to implement and tens of thousands
 
 156
 00:06:00,200 --> 00:06:02,360
-have to implement and tens of thousands
 of provider organizations
 
 157
 00:06:02,360 --> 00:06:04,200
-of provider organizations
 and I don't want these to do all this
 
 158
 00:06:04,200 --> 00:06:05,560
-and I don't want these to do all this
 work on
 
 159
 00:06:05,560 --> 00:06:07,040
-work on
 defining what these
 
 160
 00:06:07,040 --> 00:06:08,040
-defining what these
 APIs are
 
 161
 00:06:08,040 --> 00:06:09,640
-APIs are
 and have them sit there and do nothing
 
 162
 00:06:09,640 --> 00:06:11,800
-and have them sit there and do nothing
 because that doesn't benefit the patient
 
 163
 00:06:11,800 --> 00:06:13,120
-because that doesn't benefit the patient
 whatsoever.
 
 164
 00:06:13,120 --> 00:06:16,040
-whatsoever.
 So how can you operationalize that?
 
 165
 00:06:16,040 --> 00:06:19,520
-So how can you operationalize that?
 And realizing that the manual methods we
 
 166
 00:06:19,520 --> 00:06:22,480
-And realizing that the manual methods we
 used for patient access API
 
 167
 00:06:22,480 --> 00:06:24,000
-used for patient access API
 which takes
 
 168
 00:06:24,000 --> 00:06:26,640
-which takes
 days, weeks to go through
 
 169
 00:06:26,640 --> 00:06:28,840
-days, weeks to go through
 is totally non-scalable.
 
 170
 00:06:28,840 --> 00:06:30,320
-is totally non-scalable.
 And so
 
 171
 00:06:30,320 --> 00:06:32,080
-And so
 I asked the question
 
 172
 00:06:32,080 --> 00:06:34,360
-I asked the question
 how can we have an organizational
 
 173
 00:06:34,360 --> 00:06:37,320
-how can we have an organizational
 identity that we can check?
 
 174
 00:06:37,320 --> 00:06:39,160
-identity that we can check?
 And that sort of led me down the path to
 
 175
 00:06:39,160 --> 00:06:41,480
-And that sort of led me down the path to
 to KERI.
 
 176
 00:06:41,480 --> 00:06:43,560
-to KERI.
 And I've said.
 
 177
 00:06:43,560 --> 00:06:45,240
-And I've said.
 Okay. Well, coming at it from a
 
 178
 00:06:45,240 --> 00:06:47,320
-Okay. Well, coming at it from a
 completely different
 
 179
 00:06:47,320 --> 00:06:49,760
-completely different
 Is it working now?
 
 180
 00:06:49,760 --> 00:06:51,000
-Is it working now?
 All right.
 
 181
 00:06:51,000 --> 00:06:51,919
-All right.
 Thank you.
 
 182
 00:06:51,919 --> 00:06:54,619
-Thank you.
 Coming at it from a completely different
 
 183
 00:06:54,619 --> 00:06:55,320
-Coming at it from a completely different
 [laughter]
 
 184
 00:06:55,320 --> 00:06:56,800
-[laughter]
 angle.
 
 185
 00:06:56,800 --> 00:06:59,400
-angle.
 My background is in financial services,
 
 186
 00:06:59,400 --> 00:07:01,919
-My background is in financial services,
 particularly in transaction services,
 
 187
 00:07:01,919 --> 00:07:04,680
-particularly in transaction services,
 which at the time that I started
 
 188
 00:07:04,680 --> 00:07:07,760
-which at the time that I started
 wasn't a very common or
 
 189
 00:07:07,760 --> 00:07:09,840
-wasn't a very common or
 what would I say attractive part of
 
 190
 00:07:09,840 --> 00:07:12,040
-what would I say attractive part of
 financial services to go
 
 191
 00:07:12,040 --> 00:07:13,480
-financial services to go
 into.
 
 192
 00:07:13,480 --> 00:07:17,520
-into.
 But I've spent most of my career around
 
 193
 00:07:17,520 --> 00:07:19,120
-But I've spent most of my career around
 identifiers
 
 194
 00:07:19,120 --> 00:07:21,640
-identifiers
 and identification.
 
 195
 00:07:21,640 --> 00:07:24,800
-and identification.
 Which is quite different than identity.
 
 196
 00:07:24,800 --> 00:07:27,200
-Which is quite different than identity.
 Although a good foundation and a good
 
 197
 00:07:27,200 --> 00:07:30,880
-Although a good foundation and a good
 basis for the way that my career at GLEIF
 
 198
 00:07:30,880 --> 00:07:33,440
-basis for the way that my career at GLEIF
 and my involvement in this community has
 
 199
 00:07:33,440 --> 00:07:34,960
-and my involvement in this community has
 has led to.
 
 200
 00:07:34,960 --> 00:07:37,710
-has led to.
 So
 
 201
@@ -1001,312 +811,250 @@ before,
 
 202
 00:07:41,040 --> 00:07:43,320
-before,
 my background in standards led me to be
 
 203
 00:07:43,320 --> 00:07:45,680
-my background in standards led me to be
 involved in the development of the LEI,
 
 204
 00:07:45,680 --> 00:07:48,480
-involved in the development of the LEI,
 of course, another identifier.
 
 205
 00:07:48,480 --> 00:07:51,440
-of course, another identifier.
 And then it was its usage,
 
 206
 00:07:51,440 --> 00:07:53,720
-And then it was its usage,
 especially guided by
 
 207
 00:07:53,720 --> 00:07:56,360
-especially guided by
 the its initial usage in order to solve
 
 208
 00:07:56,360 --> 00:07:58,280
-the its initial usage in order to solve
 an initial problem. We want to know who
 
 209
 00:07:58,280 --> 00:07:59,960
-an initial problem. We want to know who
 these organizations are who are
 
 210
 00:07:59,960 --> 00:08:02,520
-these organizations are who are
 responsible for a particular function in
 
 211
 00:08:02,520 --> 00:08:04,960
-responsible for a particular function in
 a particular context, just to generalize
 
 212
 00:08:04,960 --> 00:08:06,920
-a particular context, just to generalize
 it, basically.
 
 213
 00:08:06,920 --> 00:08:10,480
-it, basically.
 And then as we started to
 
 214
 00:08:10,480 --> 00:08:13,440
-And then as we started to
 to operate for a few years,
 
 215
 00:08:13,440 --> 00:08:16,040
-to operate for a few years,
 in our strategic discussions at GLEIF,
 
 216
 00:08:16,040 --> 00:08:17,919
-in our strategic discussions at GLEIF,
 we started to talk about we have a high
 
 217
 00:08:17,919 --> 00:08:19,720
-we started to talk about we have a high
 assurance
 
 218
 00:08:19,720 --> 00:08:22,560
-assurance
 identifier that's global in nature, that
 
 219
 00:08:22,560 --> 00:08:25,520
-identifier that's global in nature, that
 can identify
 
 220
 00:08:25,520 --> 00:08:29,640
-can identify
 a very broad list of
 
 221
 00:08:29,640 --> 00:08:32,960
-a very broad list of
 entity legal forms or legal entities in
 
 222
 00:08:32,960 --> 00:08:34,440
-entity legal forms or legal entities in
 effect.
 
 223
 00:08:34,440 --> 00:08:38,000
-effect.
 Because of the effort that we put into
 
 224
 00:08:38,000 --> 00:08:40,240
-Because of the effort that we put into
 or our partners put into validating this
 
 225
 00:08:40,240 --> 00:08:42,960
-or our partners put into validating this
 identifier and the effort that
 
 226
 00:08:42,960 --> 00:08:45,600
-identifier and the effort that
 GLEIF puts in managing the global LEI
 
 227
 00:08:45,600 --> 00:08:49,640
-GLEIF puts in managing the global LEI
 system and the quality of that system
 
 228
 00:08:49,640 --> 00:08:51,839
-system and the quality of that system
 and its operations,
 
 229
 00:08:51,839 --> 00:08:54,240
-and its operations,
 why don't we look forward in order to be
 
 230
 00:08:54,240 --> 00:08:55,839
-why don't we look forward in order to be
 able to see how we could make this
 
 231
 00:08:55,839 --> 00:08:58,040
-able to see how we could make this
 relevant in the digital world, which is
 
 232
 00:08:58,040 --> 00:09:00,560
-relevant in the digital world, which is
 the way that the world is going?
 
 233
 00:09:00,560 --> 00:09:04,160
-the way that the world is going?
 And so this is when we first started to
 
 234
 00:09:04,160 --> 00:09:07,160
-And so this is when we first started to
 get involved with the identity community
 
 235
 00:09:07,160 --> 00:09:09,600
-get involved with the identity community
 and I'll call it the identity industry,
 
 236
 00:09:09,600 --> 00:09:12,080
-and I'll call it the identity industry,
 which of course I had no idea up until
 
 237
 00:09:12,080 --> 00:09:15,240
-which of course I had no idea up until
 this particular point even was a thing.
 
 238
 00:09:15,240 --> 00:09:19,000
-this particular point even was a thing.
 And so luckily we were able to
 
 239
 00:09:19,000 --> 00:09:22,600
-And so luckily we were able to
 get connected with and
 
 240
 00:09:22,600 --> 00:09:25,080
-get connected with and
 be welcomed into the community by many
 
 241
 00:09:25,080 --> 00:09:27,920
-be welcomed into the community by many
 of the experts that we see here today,
 
 242
 00:09:27,920 --> 00:09:31,880
-of the experts that we see here today,
 who introduced us to the importance of
 
 243
 00:09:31,880 --> 00:09:35,280
-who introduced us to the importance of
 identity and not only identification but
 
 244
 00:09:35,280 --> 00:09:37,960
-identity and not only identification but
 verification, which of course led us
 
 245
 00:09:37,960 --> 00:09:40,480
-verification, which of course led us
 To wanting to be able to develop
 
 246
 00:09:40,480 --> 00:09:43,880
-To wanting to be able to develop
 the vLEI and then use the vLEI.
 
 247
 00:09:43,880 --> 00:09:46,680
-the vLEI and then use the vLEI.
 I have to say that it was an eye-opener
 
 248
 00:09:46,680 --> 00:09:50,120
-I have to say that it was an eye-opener
 for me. My aha moment was actually not
 
 249
 00:09:50,120 --> 00:09:51,880
-for me. My aha moment was actually not
 as I was
 
 250
 00:09:51,880 --> 00:09:53,920
-as I was
 day-to-day trying to be able to figure
 
 251
 00:09:53,920 --> 00:09:55,880
-day-to-day trying to be able to figure
 out delivering on the strategy that my
 
 252
 00:09:55,880 --> 00:09:58,880
-out delivering on the strategy that my
 CEO had given me in order to be able to
 
 253
 00:09:58,880 --> 00:10:00,880
-CEO had given me in order to be able to
 say, "Okay, let's make a verifiable
 
 254
 00:10:00,880 --> 00:10:03,560
-say, "Okay, let's make a verifiable
 credential containing the LEI and
 
 255
 00:10:03,560 --> 00:10:05,520
-credential containing the LEI and
 let's make it a success."
 
 256
 00:10:05,520 --> 00:10:09,920
-let's make it a success."
 It was how clueless I was to how I was
 
 257
 00:10:09,920 --> 00:10:13,680
-It was how clueless I was to how I was
 exposing my own identity every day in
 
 258
 00:10:13,680 --> 00:10:16,160
-exposing my own identity every day in
 in the everyday things that I did
 
 259
 00:10:16,160 --> 00:10:18,720
-in the everyday things that I did
 just as a natural person and a citizen
 
 260
 00:10:18,720 --> 00:10:21,640
-just as a natural person and a citizen
 and how I naturally accepted anything
 
 261
 00:10:21,640 --> 00:10:25,080
-and how I naturally accepted anything
 that people told me was secure
 
 262
 00:10:25,080 --> 00:10:27,720
-that people told me was secure
 And was protecting my identity. I
 
 263
 00:10:27,720 --> 00:10:31,630
-And was protecting my identity. I
 took it just as face value.
 
 264
@@ -1320,12 +1068,10 @@ moment came in 1993.
 
 266
 00:10:37,280 --> 00:10:38,960
-moment came in 1993.
 I think I think mine came at the
 
 267
 00:10:38,960 --> 00:10:41,242
-I think I think mine came at the
 exact same time. I was two.
 
 268
@@ -1339,202 +1085,162 @@ tongue-in-cheek, but the truth of
 
 270
 00:10:46,000 --> 00:10:49,000
-tongue-in-cheek, but the truth of
 the matter is that for my generation
 
 271
 00:10:49,000 --> 00:10:50,960
-the matter is that for my generation
 we were born into… Now, I do remember
 
 272
 00:10:50,960 --> 00:10:52,520
-we were born into… Now, I do remember
 when we had dial-up installed in the
 
 273
 00:10:52,520 --> 00:10:55,320
-when we had dial-up installed in the
 house. I'm not that young. But in
 
 274
 00:10:55,320 --> 00:10:58,440
-house. I'm not that young. But in
 a real sense, I grew up in the digital
 
 275
 00:10:58,440 --> 00:11:01,160
-a real sense, I grew up in the digital
 world. Like we had digital identity
 
 276
 00:11:01,160 --> 00:11:02,920
-world. Like we had digital identity
 before we had a term for a digital
 
 277
 00:11:02,920 --> 00:11:04,800
-before we had a term for a digital
 identity. And we just accepted, you
 
 278
 00:11:04,800 --> 00:11:06,760
-identity. And we just accepted, you
 know, in the in the halcyon days of
 
 279
 00:11:06,760 --> 00:11:09,360
-know, in the in the halcyon days of
 yore, you know, MySpace was the hot snot
 
 280
 00:11:09,360 --> 00:11:10,920
-yore, you know, MySpace was the hot snot
 and there was none of the concerns that
 
 281
 00:11:10,920 --> 00:11:12,920
-and there was none of the concerns that
 we had around it. But for my
 
 282
 00:11:12,920 --> 00:11:15,440
-we had around it. But for my
 generation, there's never really been a
 
 283
 00:11:15,440 --> 00:11:17,920
-generation, there's never really been a
 demarcation between my identity in the
 
 284
 00:11:17,920 --> 00:11:20,320
-demarcation between my identity in the
 real sense in the real world and my
 
 285
 00:11:20,320 --> 00:11:23,560
-real sense in the real world and my
 identity in the digital world. And so
 
 286
 00:11:23,560 --> 00:11:25,320
-identity in the digital world. And so
 for me it was I don't know that I ever
 
 287
 00:11:25,320 --> 00:11:28,200
-for me it was I don't know that I ever
 had a lightbulb moment. It was a
 
 288
 00:11:28,200 --> 00:11:32,080
-had a lightbulb moment. It was a
 lifetime of experiences where you
 
 289
 00:11:32,080 --> 00:11:34,760
-lifetime of experiences where you
 know, XYZ got hacked, your credit card
 
 290
 00:11:34,760 --> 00:11:36,560
-know, XYZ got hacked, your credit card
 gets stolen, your you know, all of these
 
 291
 00:11:36,560 --> 00:11:39,680
-gets stolen, your you know, all of these
 things and it wasn't until I started
 
 292
 00:11:39,680 --> 00:11:41,080
-things and it wasn't until I started
 to understand some of the things that
 
 293
 00:11:41,080 --> 00:11:43,720
-to understand some of the things that
 were possible with digital identity that
 
 294
 00:11:43,720 --> 00:11:45,520
-were possible with digital identity that
 I went back to this whole life that I'd
 
 295
 00:11:45,520 --> 00:11:47,160
-I went back to this whole life that I'd
 lived and said,
 
 296
 00:11:47,160 --> 00:11:49,040
-lived and said,
 there has to be a better way. We
 
 297
 00:11:49,040 --> 00:11:50,760
-there has to be a better way. We
 have to do something different than
 
 298
 00:11:50,760 --> 00:11:52,480
-have to do something different than
 what's being done now. And you know,
 
 299
 00:11:52,480 --> 00:11:54,760
-what's being done now. And you know,
 I mentioned this earlier, but the I
 
 300
 00:11:54,760 --> 00:11:57,000
-I mentioned this earlier, but the I
 guess the coup de gras on that
 
 301
 00:11:57,000 --> 00:11:59,320
-guess the coup de gras on that
 system was when I just realized the
 
 302
 00:11:59,320 --> 00:12:01,400
-system was when I just realized the
 fragility of the system we've built off
 
 303
 00:12:01,400 --> 00:12:02,880
-fragility of the system we've built off
 of
 
 304
 00:12:02,880 --> 00:12:05,320
-of
 poor identity structure and how that
 
 305
 00:12:05,320 --> 00:12:08,160
-poor identity structure and how that
 could impact me as a patient.
 
 306
 00:12:08,160 --> 00:12:10,600
-could impact me as a patient.
 I feel like a baby compared to this
 
 307
 00:12:10,600 --> 00:12:11,643
-I feel like a baby compared to this
 entire group.
 
 308
 00:12:11,643 --> 00:12:12,640
-entire group.
 [laughter]
 
 309
 00:12:12,640 --> 00:12:15,550
-[laughter]
 I'm a I'm a newcomer here.
 
 310
@@ -1548,857 +1254,686 @@ got me to this current this current
 
 312
 00:12:19,720 --> 00:12:22,120
-got me to this current this current
 point that have I guess made me a part
 
 313
 00:12:22,120 --> 00:12:24,800
-point that have I guess made me a part
 of the identity movement. When I
 
 314
 00:12:24,800 --> 00:12:26,680
-of the identity movement. When I
 first got into my role as chief privacy
 
 315
 00:12:26,680 --> 00:12:28,800
-first got into my role as chief privacy
 officer, it was one of the it was the
 
 316
 00:12:28,800 --> 00:12:32,280
-officer, it was one of the it was the
 first time the state had one. And I got
 
 317
 00:12:32,280 --> 00:12:35,000
-first time the state had one. And I got
 calls all the time from people that I
 
 318
 00:12:35,000 --> 00:12:37,280
-calls all the time from people that I
 would sit on the phone for I think the
 
 319
 00:12:37,280 --> 00:12:38,760
-would sit on the phone for I think the
 longest one was probably two or three
 
 320
 00:12:38,760 --> 00:12:40,120
-longest one was probably two or three
 hours where I felt like I was like a
 
 321
 00:12:40,120 --> 00:12:42,240
-hours where I felt like I was like a
 psychiatrist of they're just saying,
 
 322
 00:12:42,240 --> 00:12:44,480
-psychiatrist of they're just saying,
 I've had this horrible thing happen and
 
 323
 00:12:44,480 --> 00:12:46,120
-I've had this horrible thing happen and
 I have no control.
 
 324
 00:12:46,120 --> 00:12:48,480
-I have no control.
 And I've had cases where
 
 325
 00:12:48,480 --> 00:12:50,120
-And I've had cases where
 women would call and say, my
 
 326
 00:12:50,120 --> 00:12:52,560
-women would call and say, my
 psychiatrist literally like gave my data
 
 327
 00:12:52,560 --> 00:12:54,760
-psychiatrist literally like gave my data
 to my ex-husband and now it's being
 
 328
 00:12:54,760 --> 00:12:57,160
-to my ex-husband and now it's being
 used against me in court or my data's
 
 329
 00:12:57,160 --> 00:13:00,720
-used against me in court or my data's
 been breached and XYZ has happened. And
 
 330
 00:13:00,720 --> 00:13:02,839
-been breached and XYZ has happened. And
 that made me realize one, people had
 
 331
 00:13:02,839 --> 00:13:05,040
-that made me realize one, people had
 absolutely no control and they had
 
 332
 00:13:05,040 --> 00:13:07,440
-absolutely no control and they had
 nowhere to go. Their data's been lost
 
 333
 00:13:07,440 --> 00:13:09,640
-nowhere to go. Their data's been lost
 and nobody was listening to them.
 
 334
 00:13:09,640 --> 00:13:12,400
-and nobody was listening to them.
 The next thing that built upon that
 
 335
 00:13:12,400 --> 00:13:14,480
-The next thing that built upon that
 was George and I had offices close
 
 336
 00:13:14,480 --> 00:13:17,400
-was George and I had offices close
 together for years and between George
 
 337
 00:13:17,400 --> 00:13:19,200
-together for years and between George
 and the rest of the team, we knew
 
 338
 00:13:19,200 --> 00:13:20,560
-and the rest of the team, we knew
 government had a big problem. If you
 
 339
 00:13:20,560 --> 00:13:22,280
-government had a big problem. If you
 don't know the problems in government
 
 340
 00:13:22,280 --> 00:13:23,880
-don't know the problems in government
 right now,
 
 341
 00:13:23,880 --> 00:13:26,520
-right now,
 there is really no data governance and
 
 342
 00:13:26,520 --> 00:13:28,000
-there is really no data governance and
 with what's happening with technology
 
 343
 00:13:28,000 --> 00:13:30,240
-with what's happening with technology
 and the transition the last 30 years,
 
 344
 00:13:30,240 --> 00:13:32,480
-and the transition the last 30 years,
 what used to be due process rights and
 
 345
 00:13:32,480 --> 00:13:34,440
-what used to be due process rights and
 ensuring you had processes that were not
 
 346
 00:13:34,440 --> 00:13:36,320
-ensuring you had processes that were not
 arbitrary, that were not capricious,
 
 347
 00:13:36,320 --> 00:13:38,200
-arbitrary, that were not capricious,
 that eliminated bias,
 
 348
 00:13:38,200 --> 00:13:40,160
-that eliminated bias,
 that is not what you have now with
 
 349
 00:13:40,160 --> 00:13:43,120
-that is not what you have now with
 technology. And so it became very clear
 
 350
 00:13:43,120 --> 00:13:45,640
-technology. And so it became very clear
 that if we truly believe that the basis
 
 351
 00:13:45,640 --> 00:13:48,080
-that if we truly believe that the basis
 of government came from the individual,
 
 352
 00:13:48,080 --> 00:13:49,600
-of government came from the individual,
 and then they're the ones authorizing
 
 353
 00:13:49,600 --> 00:13:51,640
-and then they're the ones authorizing
 government to do what they do,
 
 354
 00:13:51,640 --> 00:13:54,040
-government to do what they do,
 but government is now just doing
 
 355
 00:13:54,040 --> 00:13:55,840
-but government is now just doing
 whatever, you have got to have some
 
 356
 00:13:55,840 --> 00:13:58,240
-whatever, you have got to have some
 anchor of trust. And that was where my
 
 357
 00:13:58,240 --> 00:14:00,280
-anchor of trust. And that was where my
 first constitutional basis came from of
 
 358
 00:14:00,280 --> 00:14:02,400
-first constitutional basis came from of
 it's it's the individual. And that's why
 
 359
 00:14:02,400 --> 00:14:05,560
-it's it's the individual. And that's why
 I hold so strong like that to that in
 
 360
 00:14:05,560 --> 00:14:08,640
-I hold so strong like that to that in
 the SEDI approach. And then lastly has
 
 361
 00:14:08,640 --> 00:14:11,480
-the SEDI approach. And then lastly has
 come of as we work to redesign
 
 362
 00:14:11,480 --> 00:14:13,880
-come of as we work to redesign
 government, not just SEDI as a point at
 
 363
 00:14:13,880 --> 00:14:15,480
-government, not just SEDI as a point at
 which you engage, but what do all the
 
 364
 00:14:15,480 --> 00:14:17,760
-which you engage, but what do all the
 other government processes look like for
 
 365
 00:14:17,760 --> 00:14:20,160
-other government processes look like for
 identity, for organizational identity,
 
 366
 00:14:20,160 --> 00:14:22,320
-identity, for organizational identity,
 to have end-to-end verifiability, to
 
 367
 00:14:22,320 --> 00:14:25,080
-to have end-to-end verifiability, to
 have that provenance, and to identify,
 
 368
 00:14:25,080 --> 00:14:26,040
-have that provenance, and to identify,
 you know, where is automated
 
 369
 00:14:26,040 --> 00:14:27,880
-you know, where is automated
 decision-making going to fit in and
 
 370
 00:14:27,880 --> 00:14:29,600
-decision-making going to fit in and
 these artifacts government has to create
 
 371
 00:14:29,600 --> 00:14:31,560
-these artifacts government has to create
 so you can hold them accountable, you
 
 372
 00:14:31,560 --> 00:14:34,760
-so you can hold them accountable, you
 can't do any of that without identity
 
 373
 00:14:34,760 --> 00:14:36,240
-can't do any of that without identity
 to know who are the accountable
 
 374
 00:14:36,240 --> 00:14:37,800
-to know who are the accountable
 accountable parties and who's been
 
 375
 00:14:37,800 --> 00:14:41,040
-accountable parties and who's been
 wronged. So all of that together last
 
 376
 00:14:41,040 --> 00:14:43,160
-wronged. So all of that together last
 5 years has
 
 377
 00:14:43,160 --> 00:14:45,480
-5 years has
 for me created a essentially an
 
 378
 00:14:45,480 --> 00:14:47,440
-for me created a essentially an
 undeniable truth of we have to fix
 
 379
 00:14:47,440 --> 00:14:50,480
-undeniable truth of we have to fix
 identity or we are not going to have a
 
 380
 00:14:50,480 --> 00:14:52,839
-identity or we are not going to have a
 trusted government in the future.
 
 381
 00:14:52,839 --> 00:14:54,160
-trusted government in the future.
 So as you can see we have a very
 
 382
 00:14:54,160 --> 00:14:56,560
-So as you can see we have a very
 passionate, well-qualified group to talk
 
 383
 00:14:56,560 --> 00:14:58,240
-passionate, well-qualified group to talk
 about the elephant in all of its various
 
 384
 00:14:58,240 --> 00:15:00,000
-about the elephant in all of its various
 facets. So what I want to do for the
 
 385
 00:15:00,000 --> 00:15:01,440
-facets. So what I want to do for the
 about the next 15 minutes is I want to
 
 386
 00:15:01,440 --> 00:15:03,160
-about the next 15 minutes is I want to
 talk a little bit about the topic
 
 387
 00:15:03,160 --> 00:15:05,160
-talk a little bit about the topic
 area. So we're going to start with Chris
 
 388
 00:15:05,160 --> 00:15:06,720
-area. So we're going to start with Chris
 for the for the government perspective
 
 389
 00:15:06,720 --> 00:15:08,720
-for the for the government perspective
 and then anyone on the panel jump in to
 
 390
 00:15:08,720 --> 00:15:11,839
-and then anyone on the panel jump in to
 to add additional perspective. So we can
 
 391
 00:15:11,839 --> 00:15:13,080
-to add additional perspective. So we can
 acknowledge that public and private
 
 392
 00:15:13,080 --> 00:15:15,680
-acknowledge that public and private
 partnerships are not new. Historically
 
 393
 00:15:15,680 --> 00:15:17,440
-partnerships are not new. Historically
 their value is questioned and often
 
 394
 00:15:17,440 --> 00:15:20,240
-their value is questioned and often
 debated. We don't know if they deliver
 
 395
 00:15:20,240 --> 00:15:21,280
-debated. We don't know if they deliver
 on what they say they're going to
 
 396
 00:15:21,280 --> 00:15:24,160
-on what they say they're going to
 deliver on. So, describe for us, Chris,
 
 397
 00:15:24,160 --> 00:15:25,960
-deliver on. So, describe for us, Chris,
 how you view SEDI's engagement with the
 
 398
 00:15:25,960 --> 00:15:27,800
-how you view SEDI's engagement with the
 KERI community and how that's going to
 
 399
 00:15:27,800 --> 00:15:30,520
-KERI community and how that's going to
 benefit all the parties involved.
 
 400
 00:15:30,520 --> 00:15:32,960
-benefit all the parties involved.
 Does anybody know how we started the
 
 401
 00:15:32,960 --> 00:15:36,360
-Does anybody know how we started the
 engagement with the KERI community?
 
 402
 00:15:36,360 --> 00:15:38,480
-engagement with the KERI community?
 How many actually know that inception
 
 403
 00:15:38,480 --> 00:15:41,720
-How many actually know that inception
 event? Okay. Well, let me tell you this.
 
 404
 00:15:41,720 --> 00:15:43,960
-event? Okay. Well, let me tell you this.
 It started with,
 
 405
 00:15:43,960 --> 00:15:47,600
-It started with,
 Sam and Timothy and Mike Lahey,
 
 406
 00:15:47,600 --> 00:15:50,320
-Sam and Timothy and Mike Lahey,
 Sat us down in a room with Alan
 
 407
 00:15:50,320 --> 00:15:52,840
-Sat us down in a room with Alan
 Fuller and myself and a couple others
 
 408
 00:15:52,840 --> 00:15:54,440
-Fuller and myself and a couple others
 and they were like, "We have the
 
 409
 00:15:54,440 --> 00:15:56,480
-and they were like, "We have the
 solution for you."
 
 410
 00:15:56,480 --> 00:15:59,080
-solution for you."
 And we were like, "You are so
 
 411
 00:15:59,080 --> 00:16:00,240
-And we were like, "You are so
 full of it."
 
 412
 00:16:00,240 --> 00:16:00,840
-full of it."
 [laughter]
 
 413
 00:16:00,840 --> 00:16:05,320
-[laughter]
 And, and but just like
 
 414
 00:16:05,320 --> 00:16:07,240
-And, and but just like
 I think you'll find the whole Utah team,
 
 415
 00:16:07,240 --> 00:16:08,720
-I think you'll find the whole Utah team,
 we are willing to sit down and listen to
 
 416
 00:16:08,720 --> 00:16:09,920
-we are willing to sit down and listen to
 anyone. If you have a good idea, it
 
 417
 00:16:09,920 --> 00:16:11,960
-anyone. If you have a good idea, it
 doesn't matter who you are, we sit down
 
 418
 00:16:11,960 --> 00:16:13,960
-doesn't matter who you are, we sit down
 and listen to everyone. So, we listened
 
 419
 00:16:13,960 --> 00:16:15,760
-and listen to everyone. So, we listened
 and we listened and we listened and
 
 420
 00:16:15,760 --> 00:16:17,560
-and we listened and we listened and
 before long,
 
 421
 00:16:17,560 --> 00:16:19,600
-before long,
 It was a I we think there's
 
 422
 00:16:19,600 --> 00:16:21,160
-It was a I we think there's
 something here. You learn things that
 
 423
 00:16:21,160 --> 00:16:22,840
-something here. You learn things that
 you can't deny.
 
 424
 00:16:22,840 --> 00:16:26,000
-you can't deny.
 And so that passion from the
 
 425
 00:16:26,000 --> 00:16:28,720
-And so that passion from the
 the KERI community and their persistence
 
 426
 00:16:28,720 --> 00:16:30,200
-the KERI community and their persistence
 in bringing facts to the table, we've
 
 427
 00:16:30,200 --> 00:16:32,920
-in bringing facts to the table, we've
 been very fact-driven. That's what's
 
 428
 00:16:32,920 --> 00:16:35,280
-been very fact-driven. That's what's
 impressed me is you come to the table,
 
 429
 00:16:35,280 --> 00:16:37,800
-impressed me is you come to the table,
 you bring facts, you've educated us cuz
 
 430
 00:16:37,800 --> 00:16:39,880
-you bring facts, you've educated us cuz
 we weren't experts, we verify and
 
 431
 00:16:39,880 --> 00:16:42,040
-we weren't experts, we verify and
 validate on our end, but then we've
 
 432
 00:16:42,040 --> 00:16:44,120
-validate on our end, but then we've
 created this reciprocal of relationship
 
 433
 00:16:44,120 --> 00:16:45,480
-created this reciprocal of relationship
 of what are the facts, let's have an
 
 434
 00:16:45,480 --> 00:16:47,400
-of what are the facts, let's have an
 honest discussion. I can assure you
 
 435
 00:16:47,400 --> 00:16:48,800
-honest discussion. I can assure you
 every time we meet with any of you, we
 
 436
 00:16:48,800 --> 00:16:50,720
-every time we meet with any of you, we
 bring in skeptics as well to challenge
 
 437
 00:16:50,720 --> 00:16:52,520
-bring in skeptics as well to challenge
 it and we've had meetings where we have
 
 438
 00:16:52,520 --> 00:16:54,200
-it and we've had meetings where we have
 Sam, we had Phil Windley and we had
 
 439
 00:16:54,200 --> 00:16:56,400
-Sam, we had Phil Windley and we had
 Steve McConnell all in a room, you know,
 
 440
 00:16:56,400 --> 00:16:58,360
-Steve McConnell all in a room, you know,
 kind of battling out in a way to get to
 
 441
 00:16:58,360 --> 00:17:01,160
-kind of battling out in a way to get to
 first principle truths and we've gotten
 
 442
 00:17:01,160 --> 00:17:02,560
-first principle truths and we've gotten
 to the point now where I feel very
 
 443
 00:17:02,560 --> 00:17:04,000
-to the point now where I feel very
 comfortable in just having honest
 
 444
 00:17:04,000 --> 00:17:06,160
-comfortable in just having honest
 conversations and we've said everyone
 
 445
 00:17:06,160 --> 00:17:08,600
-conversations and we've said everyone
 else, bring mDoc, bring W3C, let's have
 
 446
 00:17:08,600 --> 00:17:09,880
-else, bring mDoc, bring W3C, let's have
 that conversation of how it fits
 
 447
 00:17:09,880 --> 00:17:13,160
-that conversation of how it fits
 together and to me that's resulted
 
 448
 00:17:13,160 --> 00:17:15,439
-together and to me that's resulted
 in how we have engaged with the KERI
 
 449
 00:17:15,439 --> 00:17:17,439
-in how we have engaged with the KERI
 community and then the basis of how
 
 450
 00:17:17,439 --> 00:17:19,280
-community and then the basis of how
 we're we're engaging going forward of
 
 451
 00:17:19,280 --> 00:17:20,839
-we're we're engaging going forward of
 just what are the problems, what are the
 
 452
 00:17:20,839 --> 00:17:22,360
-just what are the problems, what are the
 facts.
 
 453
 00:17:22,360 --> 00:17:24,920
-facts.
 And then because of that trust built,
 
 454
 00:17:24,920 --> 00:17:27,160
-And then because of that trust built,
 I feel loyalty because it's was
 
 455
 00:17:27,160 --> 00:17:29,360
-I feel loyalty because it's was
 partly created in Utah to help that
 
 456
 00:17:29,360 --> 00:17:31,800
-partly created in Utah to help that
 community thrive cuz there's not many
 
 457
 00:17:31,800 --> 00:17:35,200
-community thrive cuz there's not many
 like it. And if we can scale that and
 
 458
 00:17:35,200 --> 00:17:36,800
-like it. And if we can scale that and
 that type of engagement and truth
 
 459
 00:17:36,800 --> 00:17:38,960
-that type of engagement and truth
 finding, you can do really amazing
 
 460
 00:17:38,960 --> 00:17:42,600
-finding, you can do really amazing
 things when you have passionate people.
 
 461
 00:17:42,600 --> 00:17:45,720
-things when you have passionate people.
 Anyone else want to jump in? So
 
 462
 00:17:45,720 --> 00:17:47,840
-Anyone else want to jump in? So
 So, DirectTrust as an organization was
 
 463
 00:17:47,840 --> 00:17:52,000
-So, DirectTrust as an organization was
 born out of a groundswell of
 
 464
 00:17:52,000 --> 00:17:54,040
-born out of a groundswell of
 basically volunteer effort initially if
 
 465
 00:17:54,040 --> 00:17:55,560
-basically volunteer effort initially if
 just in fact, I don't know if you
 
 466
 00:17:55,560 --> 00:17:56,800
-just in fact, I don't know if you
 were involved in the in the Direct
 
 467
 00:17:56,800 --> 00:17:58,560
-were involved in the in the Direct
 Project initially or not, but
 
 468
 00:17:58,560 --> 00:18:00,680
-Project initially or not, but
 watching closely. So, the Direct Project
 
 469
 00:18:00,680 --> 00:18:02,800
-watching closely. So, the Direct Project
 was like 150 different, you know,
 
 470
 00:18:02,800 --> 00:18:04,680
-was like 150 different, you know,
 organizations and individuals who were
 
 471
 00:18:04,680 --> 00:18:07,160
-organizations and individuals who were
 involved in this exercise. It was
 
 472
 00:18:07,160 --> 00:18:09,400
-involved in this exercise. It was
 The idea was we need to be able to do
 
 473
 00:18:09,400 --> 00:18:12,080
-The idea was we need to be able to do
 secure identity assured communication in
 
 474
 00:18:12,080 --> 00:18:13,680
-secure identity assured communication in
 healthcare. That was the goal, right?
 
 475
 00:18:13,680 --> 00:18:16,080
-healthcare. That was the goal, right?
 That was the goal. This is 2012. This is
 
 476
 00:18:16,080 --> 00:18:18,680
-That was the goal. This is 2012. This is
 This is coming out of
 
 477
 00:18:18,680 --> 00:18:21,000
-This is coming out of
 this is coming out of the HITECH Act,
 
 478
 00:18:21,000 --> 00:18:23,720
-this is coming out of the HITECH Act,
 which is basically legislation that
 
 479
 00:18:23,720 --> 00:18:25,920
-which is basically legislation that
 says all of the electronic health record
 
 480
 00:18:25,920 --> 00:18:29,320
-says all of the electronic health record
 companies are going to get a big boon as
 
 481
 00:18:29,320 --> 00:18:31,720
-companies are going to get a big boon as
 all of the doctors can basically get
 
 482
 00:18:31,720 --> 00:18:35,470
-all of the doctors can basically get
 paid to implement healthcare
 
 483
@@ -2412,217 +1947,174 @@ from paper,
 
 485
 00:18:39,040 --> 00:18:40,600
-from paper,
 you know, to actual electronic systems.
 
 486
 00:18:40,600 --> 00:18:42,440
-you know, to actual electronic systems.
 And that all just really happened very
 
 487
 00:18:42,440 --> 00:18:44,800
-And that all just really happened very
 quickly. So, the Direct Project was born
 
 488
 00:18:44,800 --> 00:18:47,560
-quickly. So, the Direct Project was born
 kind of in that crucible, but it was a
 
 489
 00:18:47,560 --> 00:18:49,080
-kind of in that crucible, but it was a
 public private partnership. So,
 
 490
 00:18:49,080 --> 00:18:52,440
-public private partnership. So,
 the first thing that we did was they
 
 491
 00:18:52,440 --> 00:18:54,520
-the first thing that we did was they
 they actually were stood up within the
 
 492
 00:18:54,520 --> 00:18:56,840
-they actually were stood up within the
 ONC as the as a part of the national
 
 493
 00:18:56,840 --> 00:18:59,160
-ONC as the as a part of the national
 coordinator's work. And then the
 
 494
 00:18:59,160 --> 00:19:01,880
-coordinator's work. And then the
 national coordinator gave
 
 495
 00:19:01,880 --> 00:19:04,600
-national coordinator gave
 a couple of years of support economic
 
 496
 00:19:04,600 --> 00:19:06,160
-a couple of years of support economic
 support to actually stand up the
 
 497
 00:19:06,160 --> 00:19:09,640
-support to actually stand up the
 organization. And so, since
 
 498
 00:19:09,640 --> 00:19:12,600
-organization. And so, since
 2014, DirectTrust has had no economic
 
 499
 00:19:12,600 --> 00:19:14,400
-2014, DirectTrust has had no economic
 support from the federal government. But
 
 500
 00:19:14,400 --> 00:19:15,720
-support from the federal government. But
 that
 
 501
 00:19:15,720 --> 00:19:17,280
-that
 short period of time where we had
 
 502
 00:19:17,280 --> 00:19:19,360
-short period of time where we had
 federal relationships, actually the
 
 503
 00:19:19,360 --> 00:19:21,000
-federal relationships, actually the
 relationships have continued, but the
 
 504
 00:19:21,000 --> 00:19:23,040
-relationships have continued, but the
 economic relationship has not continued.
 
 505
 00:19:23,040 --> 00:19:25,640
-economic relationship has not continued.
 So, we do have one aspect today,
 
 506
 00:19:25,640 --> 00:19:27,200
-So, we do have one aspect today,
 interestingly, we've talked about this
 
 507
 00:19:27,200 --> 00:19:29,240
-interestingly, we've talked about this
 UDAP exercise. We're talking about the
 
 508
 00:19:29,240 --> 00:19:31,160
-UDAP exercise. We're talking about the
 root of trust that's associated with
 
 509
 00:19:31,160 --> 00:19:32,480
-root of trust that's associated with
 that
 
 510
 00:19:32,480 --> 00:19:34,800
-that
 is a cryptographic root of trust that is
 
 511
 00:19:34,800 --> 00:19:36,680
-is a cryptographic root of trust that is
 an X.509
 
 512
 00:19:36,680 --> 00:19:39,400
-an X.509
 based PKI framework.
 
 513
 00:19:39,400 --> 00:19:40,760
-based PKI framework.
 And let me tell you the challenge that
 
 514
 00:19:40,760 --> 00:19:42,880
-And let me tell you the challenge that
 we have with it. It is not
 
 515
 00:19:42,880 --> 00:19:44,840
-we have with it. It is not
 extraterritorial.
 
 516
 00:19:44,840 --> 00:19:48,680
-extraterritorial.
 It's bound to TEFCA. It is in It is
 
 517
 00:19:48,680 --> 00:19:51,480
-It's bound to TEFCA. It is in It is
 invented and used intended only
 
 518
 00:19:51,480 --> 00:19:53,880
-invented and used intended only
 be used in the TEFCA area. So, the
 
 519
 00:19:53,880 --> 00:19:56,520
-be used in the TEFCA area. So, the
 opportunity with this eLEI exercise for
 
 520
 00:19:56,520 --> 00:20:00,000
-opportunity with this eLEI exercise for
 us is to take something that is good
 
 521
 00:20:00,000 --> 00:20:03,120
-us is to take something that is good
 anywhere it's, you know, presented for
 
 522
 00:20:03,120 --> 00:20:05,560
-anywhere it's, you know, presented for
 the same benefit of identity assurance
 
 523
 00:20:05,560 --> 00:20:08,360
-the same benefit of identity assurance
 that a PKI framework can be used for.
 
 524
 00:20:08,360 --> 00:20:11,000
-that a PKI framework can be used for.
 So, we're intensely interested in this
 
 525
 00:20:11,000 --> 00:20:13,680
-So, we're intensely interested in this
 exercise and very excited about
 
 526
 00:20:13,680 --> 00:20:15,440
-exercise and very excited about
 An ongoing relationship with GLEIF
 
 527
 00:20:15,440 --> 00:20:18,910
-An ongoing relationship with GLEIF
 and also hopefully with SEDI.
 
 528
@@ -2636,187 +2128,150 @@ here yesterday and he was one of the
 
 530
 00:20:23,280 --> 00:20:25,920
-here yesterday and he was one of the
 very early organizers, along with people
 
 531
 00:20:25,920 --> 00:20:27,600
-very early organizers, along with people
 like Aneesh Chopra,
 
 532
 00:20:27,600 --> 00:20:30,040
-like Aneesh Chopra,
 Around the CARIN Alliance. Well, that
 
 533
 00:20:30,040 --> 00:20:31,960
-Around the CARIN Alliance. Well, that
 has now also evolved into It's an
 
 534
 00:20:31,960 --> 00:20:35,600
-has now also evolved into It's an
 accelerator within HL7. And I think HL7
 
 535
 00:20:35,600 --> 00:20:37,560
-accelerator within HL7. And I think HL7
 itself, they those accelerators are
 
 536
 00:20:37,560 --> 00:20:39,080
-itself, they those accelerators are
 great example of
 
 537
 00:20:39,080 --> 00:20:41,240
-great example of
 public-private partnership. So, really
 
 538
 00:20:41,240 --> 00:20:44,000
-public-private partnership. So, really
 what happens I'm retained by HL7 to
 
 539
 00:20:44,000 --> 00:20:46,640
-what happens I'm retained by HL7 to
 help write some of those standards for
 
 540
 00:20:46,640 --> 00:20:48,000
-help write some of those standards for
 the DaVinci project, for the
 
 541
 00:20:48,000 --> 00:20:50,240
-the DaVinci project, for the
 accelerator. So, we're focused around
 
 542
 00:20:50,240 --> 00:20:52,200
-accelerator. So, we're focused around
 payer-to-provider. So, I've written
 
 543
 00:20:52,200 --> 00:20:54,800
-payer-to-provider. So, I've written
 payer data exchange. Well, what you see
 
 544
 00:20:54,800 --> 00:20:58,480
-payer data exchange. Well, what you see
 happening there is CMS is watching. In
 
 545
 00:20:58,480 --> 00:21:00,240
-happening there is CMS is watching. In
 fact, CMS is
 
 546
 00:21:00,240 --> 00:21:02,480
-fact, CMS is
 has a contract out there where there's a
 
 547
 00:21:02,480 --> 00:21:04,720
-has a contract out there where there's a
 whole bunch of contractors
 
 548
 00:21:04,720 --> 00:21:09,280
-whole bunch of contractors
 that they have embedded into HL7 to help
 
 549
 00:21:09,280 --> 00:21:11,400
-that they have embedded into HL7 to help
 write implementation guides to help
 
 550
 00:21:11,400 --> 00:21:15,200
-write implementation guides to help
 develop testing protocols, to help
 
 551
 00:21:15,200 --> 00:21:17,520
-develop testing protocols, to help
 develop the educational materials,
 
 552
 00:21:17,520 --> 00:21:20,480
-develop the educational materials,
 because the secret is you know, Congress
 
 553
 00:21:20,480 --> 00:21:22,800
-because the secret is you know, Congress
 will go and set legislation, they'll
 
 554
 00:21:22,800 --> 00:21:24,320
-will go and set legislation, they'll
 write a law.
 
 555
 00:21:24,320 --> 00:21:27,160
-write a law.
 The agencies then have to regulate.
 
 556
 00:21:27,160 --> 00:21:28,920
-The agencies then have to regulate.
 Well, you can't regulate what you can't
 
 557
 00:21:28,920 --> 00:21:31,560
-Well, you can't regulate what you can't
 point at. So, they really need to come
 
 558
 00:21:31,560 --> 00:21:34,680
-point at. So, they really need to come
 to organizations like HL7 and say
 
 559
 00:21:34,680 --> 00:21:37,120
-to organizations like HL7 and say
 let's help you get those standards
 
 560
 00:21:37,120 --> 00:21:39,680
-let's help you get those standards
 written so we can point to them to then
 
 561
 00:21:39,680 --> 00:21:42,040
-written so we can point to them to then
 get people to implement. And so, this
 
 562
 00:21:42,040 --> 00:21:43,600
-get people to implement. And so, this
 it's been a really
 
 563
 00:21:43,600 --> 00:21:45,960
-it's been a really
 it's almost an early warning signal as
 
 564
 00:21:45,960 --> 00:21:47,680
-it's almost an early warning signal as
 to what are they going to regulate on
 
 565
 00:21:47,680 --> 00:21:49,320
-to what are they going to regulate on
 next because you see where the pressure
 
 566
 00:21:49,320 --> 00:21:52,990
-next because you see where the pressure
 is on to get something published.
 
 567
@@ -2826,197 +2281,158 @@ ongoing part public-private partnership.
 
 568
 00:21:59,240 --> 00:22:01,880
-ongoing part public-private partnership.
 We are under regulatory oversight and
 
 569
 00:22:01,880 --> 00:22:05,080
-We are under regulatory oversight and
 continue to be throughout our entire
 
 570
 00:22:05,080 --> 00:22:06,560
-continue to be throughout our entire
 existence.
 
 571
 00:22:06,560 --> 00:22:08,000
-existence.
 And
 
 572
 00:22:08,000 --> 00:22:10,040
-And
 the engagement with the public sector
 
 573
 00:22:10,040 --> 00:22:11,720
-the engagement with the public sector
 being a private sector individual and
 
 574
 00:22:11,720 --> 00:22:13,480
-being a private sector individual and
 myself
 
 575
 00:22:13,480 --> 00:22:16,160
-myself
 started long before that actually in my
 
 576
 00:22:16,160 --> 00:22:17,960
-started long before that actually in my
 my standards role
 
 577
 00:22:17,960 --> 00:22:19,880
-my standards role
 at the international level.
 
 578
 00:22:19,880 --> 00:22:22,880
-at the international level.
 And I think that being involved in
 
 579
 00:22:22,880 --> 00:22:24,640
-And I think that being involved in
 public-private partnerships and making
 
 580
 00:22:24,640 --> 00:22:26,120
-public-private partnerships and making
 them work
 
 581
 00:22:26,120 --> 00:22:28,440
-them work
 that it's important in order to be able
 
 582
 00:22:28,440 --> 00:22:30,640
-that it's important in order to be able
 to realize that bringing
 
 583
 00:22:30,640 --> 00:22:33,760
-to realize that bringing
 viewpoints and sensitivities
 
 584
 00:22:33,760 --> 00:22:37,120
-viewpoints and sensitivities
 and important points together
 
 585
 00:22:37,120 --> 00:22:38,760
-and important points together
 from the private sector and the public
 
 586
 00:22:38,760 --> 00:22:40,120
-from the private sector and the public
 sector
 
 587
 00:22:40,120 --> 00:22:43,200
-sector
 actually produces better conversation,
 
 588
 00:22:43,200 --> 00:22:45,600
-actually produces better conversation,
 better discussion, better debate, and
 
 589
 00:22:45,600 --> 00:22:48,680
-better discussion, better debate, and
 hopefully in the end better solutions
 
 590
 00:22:48,680 --> 00:22:51,360
-hopefully in the end better solutions
 than if it was a completely, you know,
 
 591
 00:22:51,360 --> 00:22:53,360
-than if it was a completely, you know,
 one-sided discussion.
 
 592
 00:22:53,360 --> 00:22:57,040
-one-sided discussion.
 Also, it's sensitized me over the years
 
 593
 00:22:57,040 --> 00:22:59,760
-Also, it's sensitized me over the years
 that I need to believe in, you know,
 
 594
 00:22:59,760 --> 00:23:01,840
-that I need to believe in, you know,
 exactly what I'm putting forward and I
 
 595
 00:23:01,840 --> 00:23:03,800
-exactly what I'm putting forward and I
 need to speak facts and I need to
 
 596
 00:23:03,800 --> 00:23:05,480
-need to speak facts and I need to
 understand
 
 597
 00:23:05,480 --> 00:23:07,680
-understand
 what I'm what I'm talking about and it
 
 598
 00:23:07,680 --> 00:23:10,000
-what I'm what I'm talking about and it
 really sold us at life
 
 599
 00:23:10,000 --> 00:23:13,040
-really sold us at life
 in order to be able to decide to develop
 
 600
 00:23:13,040 --> 00:23:14,600
-in order to be able to decide to develop
 the vLEI
 
 601
 00:23:14,600 --> 00:23:17,240
-the vLEI
 when the people who
 
 602
 00:23:17,240 --> 00:23:18,920
-when the people who
 approached us and said that there's a
 
 603
 00:23:18,920 --> 00:23:20,840
-approached us and said that there's a
 better way than the traditional way of
 
 604
 00:23:20,840 --> 00:23:22,640
-better way than the traditional way of
 being able to do this were actually the
 
 605
 00:23:22,640 --> 00:23:24,560
-being able to do this were actually the
 people who had built the previous
 
 606
 00:23:24,560 --> 00:23:29,150
-people who had built the previous
 solution and were ready to move on.
 
 607
@@ -3026,62 +2442,50 @@ thought here which is that with regards
 
 608
 00:23:33,160 --> 00:23:34,480
-thought here which is that with regards
 to public private partnership and I
 
 609
 00:23:34,480 --> 00:23:36,440
-to public private partnership and I
 think we'll get into this
 
 610
 00:23:36,440 --> 00:23:38,000
-think we'll get into this
 from a healthKERI perspective. I've
 
 611
 00:23:38,000 --> 00:23:40,720
-from a healthKERI perspective. I've
 seen what happens when the public part
 
 612
 00:23:40,720 --> 00:23:43,120
-seen what happens when the public part
 of that partnership goes awry and they
 
 613
 00:23:43,120 --> 00:23:45,400
-of that partnership goes awry and they
 just run at something on their own and
 
 614
 00:23:45,400 --> 00:23:48,240
-just run at something on their own and
 they don't you know enact
 
 615
 00:23:48,240 --> 00:23:50,240
-they don't you know enact
 a partnership with the private market. I
 
 616
 00:23:50,240 --> 00:23:51,520
-a partnership with the private market. I
 think we've also seen the
 
 617
 00:23:51,520 --> 00:23:53,160
-think we've also seen the
 alternative to that where the private
 
 618
 00:23:53,160 --> 00:23:55,760
-alternative to that where the private
 market starts to dictate terms
 
 619
 00:23:55,760 --> 00:23:58,750
-market starts to dictate terms
 and I think in both cases
 
 620
@@ -3095,1072 +2499,858 @@ parties aligned. I think that's one of
 
 622
 00:24:01,960 --> 00:24:04,240
-parties aligned. I think that's one of
 the powerful things around
 
 623
 00:24:04,240 --> 00:24:06,280
-the powerful things around
 doing things like Care you that is so
 
 624
 00:24:06,280 --> 00:24:08,280
-doing things like Care you that is so
 you know open source open standard. It
 
 625
 00:24:08,280 --> 00:24:10,400
-you know open source open standard. It
 invites the collaboration and invites
 
 626
 00:24:10,400 --> 00:24:13,280
-invites the collaboration and invites
 the participation and it actually
 
 627
 00:24:13,280 --> 00:24:16,120
-the participation and it actually
 defends both sides from being able to
 
 628
 00:24:16,120 --> 00:24:18,720
-defends both sides from being able to
 just run amok.
 
 629
 00:24:18,720 --> 00:24:20,200
-just run amok.
 Thank you for all those answers. One of
 
 630
 00:24:20,200 --> 00:24:22,320
-Thank you for all those answers. One of
 the things that I've noticed with this
 
 631
 00:24:22,320 --> 00:24:23,840
-the things that I've noticed with this
 public private partnership approach that
 
 632
 00:24:23,840 --> 00:24:26,120
-public private partnership approach that
 we're taking is there's not a person we
 
 633
 00:24:26,120 --> 00:24:27,760
-we're taking is there's not a person we
 don't talk to who realizes they're
 
 634
 00:24:27,760 --> 00:24:29,320
-don't talk to who realizes they're
 ultimately going to be the beneficiary
 
 635
 00:24:29,320 --> 00:24:31,720
-ultimately going to be the beneficiary
 of some of this technology. So we really
 
 636
 00:24:31,720 --> 00:24:33,000
-of some of this technology. So we really
 appreciate the fact that everyone's
 
 637
 00:24:33,000 --> 00:24:34,240
-appreciate the fact that everyone's
 putting forward the effort to say well
 
 638
 00:24:34,240 --> 00:24:35,440
-putting forward the effort to say well
 wait a minute.
 
 639
 00:24:35,440 --> 00:24:37,440
-wait a minute.
 Ultimately this is going to impact me.
 
 640
 00:24:37,440 --> 00:24:39,400
-Ultimately this is going to impact me.
 How do we do it the best way and
 
 641
 00:24:39,400 --> 00:24:41,680
-How do we do it the best way and
 that open discussion and that dialogue
 
 642
 00:24:41,680 --> 00:24:43,600
-that open discussion and that dialogue
 has been super helpful for us. Well we
 
 643
 00:24:43,600 --> 00:24:45,400
-has been super helpful for us. Well we
 are at Care you con so let's take this
 
 644
 00:24:45,400 --> 00:24:47,840
-are at Care you con so let's take this
 directly to a Care you question and this
 
 645
 00:24:47,840 --> 00:24:49,320
-directly to a Care you question and this
 one I'm really interested to see where
 
 646
 00:24:49,320 --> 00:24:51,200
-one I'm really interested to see where
 everyone goes on it. Regarding the
 
 647
 00:24:51,200 --> 00:24:52,800
-everyone goes on it. Regarding the
 healthKERI industry
 
 648
 00:24:52,800 --> 00:24:55,360
-healthKERI industry
 what is the biggest problem you see Care
 
 649
 00:24:55,360 --> 00:24:57,640
-what is the biggest problem you see Care
 you solving in the time horizon of the
 
 650
 00:24:57,640 --> 00:25:00,000
-you solving in the time horizon of the
 next 5 years.
 
 651
 00:25:00,000 --> 00:25:02,760
-next 5 years.
 Anyone jump in.
 
 652
 00:25:02,760 --> 00:25:05,920
-Anyone jump in.
 Yeah, wouldn't I go first? I
 
 653
 00:25:05,920 --> 00:25:08,920
-Yeah, wouldn't I go first? I
 we have to solve organizational identity
 
 654
 00:25:08,920 --> 00:25:11,680
-we have to solve organizational identity
 and the key the thing I see around
 
 655
 00:25:11,680 --> 00:25:13,120
-and the key the thing I see around
 digital identity particularly for
 
 656
 00:25:13,120 --> 00:25:16,320
-digital identity particularly for
 individuals is it's all about context.
 
 657
 00:25:16,320 --> 00:25:17,880
-individuals is it's all about context.
 Right? So, you've got to be able to tie
 
 658
 00:25:17,880 --> 00:25:19,720
-Right? So, you've got to be able to tie
 those threads together.
 
 659
 00:25:19,720 --> 00:25:21,680
-those threads together.
 And that's where I see how we can
 
 660
 00:25:21,680 --> 00:25:25,800
-And that's where I see how we can
 implement the VLBI, the ACDCs, these
 
 661
 00:25:25,800 --> 00:25:27,920
-implement the VLBI, the ACDCs, these
 here. All of the this technology to
 
 662
 00:25:27,920 --> 00:25:29,880
-here. All of the this technology to
 basically say
 
 663
 00:25:29,880 --> 00:25:32,840
-basically say
 I'm part of this organization. I'm
 
 664
 00:25:32,840 --> 00:25:35,240
-I'm part of this organization. I'm
 allowed to do these things. This is the
 
 665
 00:25:35,240 --> 00:25:37,640
-allowed to do these things. This is the
 type of transaction I want to be able to
 
 666
 00:25:37,640 --> 00:25:39,600
-type of transaction I want to be able to
 to take on. You know,
 
 667
 00:25:39,600 --> 00:25:41,680
-to take on. You know,
 I think some people already said that.
 
 668
 00:25:41,680 --> 00:25:44,680
-I think some people already said that.
 We exist in many different facets.
 
 669
 00:25:44,680 --> 00:25:46,800
-We exist in many different facets.
 You know, after say I'm in
 
 670
 00:25:46,800 --> 00:25:48,640
-You know, after say I'm in
 Utah in the winter, I'm a ski
 
 671
 00:25:48,640 --> 00:25:50,600
-Utah in the winter, I'm a ski
 instructor. So, I have a you know, I
 
 672
 00:25:50,600 --> 00:25:53,600
-instructor. So, I have a you know, I
 have a an employee badge for that
 
 673
 00:25:53,600 --> 00:25:56,080
-have a an employee badge for that
 and I also have one for my day job.
 
 674
 00:25:56,080 --> 00:25:58,560
-and I also have one for my day job.
 They're totally different, right? And
 
 675
 00:25:58,560 --> 00:26:00,920
-They're totally different, right? And
 give me different permissions
 
 676
 00:26:00,920 --> 00:26:03,400
-give me different permissions
 based on the context of am I working
 
 677
 00:26:03,400 --> 00:26:05,880
-based on the context of am I working
 there or not. So, we have to get this
 
 678
 00:26:05,880 --> 00:26:08,400
-there or not. So, we have to get this
 problem of being able to clearly
 
 679
 00:26:08,400 --> 00:26:10,960
-problem of being able to clearly
 identify and prove and be able to root
 
 680
 00:26:10,960 --> 00:26:13,280
-identify and prove and be able to root
 out bad actors at the organizational
 
 681
 00:26:13,280 --> 00:26:14,240
-out bad actors at the organizational
 level
 
 682
 00:26:14,240 --> 00:26:17,080
-level
 and relate it to individual identity as
 
 683
 00:26:17,080 --> 00:26:18,280
-and relate it to individual identity as
 well.
 
 684
 00:26:18,280 --> 00:26:20,040
-well.
 Can I Can I interject just really
 
 685
 00:26:20,040 --> 00:26:23,240
-Can I Can I interject just really
 quickly? 73% of all cyber attacks
 
 686
 00:26:23,240 --> 00:26:24,680
-quickly? 73% of all cyber attacks
 that happen in the US healthcare
 
 687
 00:26:24,680 --> 00:26:27,480
-that happen in the US healthcare
 ecosystem come from third parties first.
 
 688
 00:26:27,480 --> 00:26:29,560
-ecosystem come from third parties first.
 The bad actors one, we're the most
 
 689
 00:26:29,560 --> 00:26:31,520
-The bad actors one, we're the most
 targeted industry. Two, they know
 
 690
 00:26:31,520 --> 00:26:33,480
-targeted industry. Two, they know
 exactly how to get in and that's through
 
 691
 00:26:33,480 --> 00:26:36,640
-exactly how to get in and that's through
 the insecurity of the identities
 
 692
 00:26:36,640 --> 00:26:39,000
-the insecurity of the identities
 established between parties in those
 
 693
 00:26:39,000 --> 00:26:40,880
-established between parties in those
 connections. I think if there is
 
 694
 00:26:40,880 --> 00:26:42,280
-connections. I think if there is
 anything that carries going to do in the
 
 695
 00:26:42,280 --> 00:26:43,920
-anything that carries going to do in the
 next 5 years, it's going to take that
 
 696
 00:26:43,920 --> 00:26:45,560
-next 5 years, it's going to take that
 73%
 
 697
 00:26:45,560 --> 00:26:47,280
-73%
 and plummet it to the ground. I think
 
 698
 00:26:47,280 --> 00:26:49,480
-and plummet it to the ground. I think
 we'll be able to solve the largest
 
 699
 00:26:49,480 --> 00:26:51,760
-we'll be able to solve the largest
 problems in that connectivity. And
 
 700
 00:26:51,760 --> 00:26:54,520
-problems in that connectivity. And
 something like 60% of providers that are
 
 701
 00:26:54,520 --> 00:26:56,520
-something like 60% of providers that are
 hit by a ransomware attack go out of
 
 702
 00:26:56,520 --> 00:26:59,520
-hit by a ransomware attack go out of
 business. Yeah, so I can tell you also
 
 703
 00:26:59,520 --> 00:27:01,160
-business. Yeah, so I can tell you also
 just from So, we also accredit
 
 704
 00:27:01,160 --> 00:27:02,360
-just from So, we also accredit
 healthcare organizations for their
 
 705
 00:27:02,360 --> 00:27:05,440
-healthcare organizations for their
 cybersecurity capabilities. And
 
 706
 00:27:05,440 --> 00:27:08,560
-cybersecurity capabilities. And
 as we review the activities of
 
 707
 00:27:08,560 --> 00:27:11,960
-as we review the activities of
 folks in post-breach world, what happens
 
 708
 00:27:11,960 --> 00:27:14,440
-folks in post-breach world, what happens
 what you find out is most of the
 
 709
 00:27:14,440 --> 00:27:17,400
-what you find out is most of the
 breaches are caused by the use of an
 
 710
 00:27:17,400 --> 00:27:19,160
-breaches are caused by the use of an
 actual a credential that is actually a
 
 711
 00:27:19,160 --> 00:27:20,560
-actual a credential that is actually a
 valid credential. So, you're talking
 
 712
 00:27:20,560 --> 00:27:22,320
-valid credential. So, you're talking
 about people who are using someone
 
 713
 00:27:22,320 --> 00:27:23,880
-about people who are using someone
 else's credential
 
 714
 00:27:23,880 --> 00:27:26,400
-else's credential
 for nefarious purposes. And once they
 
 715
 00:27:26,400 --> 00:27:28,280
-for nefarious purposes. And once they
 get in that initial door, they're able
 
 716
 00:27:28,280 --> 00:27:29,800
-get in that initial door, they're able
 to then use
 
 717
 00:27:29,800 --> 00:27:32,280
-to then use
 AI, for example, to get
 
 718
 00:27:32,280 --> 00:27:34,560
-AI, for example, to get
 to traverse the entire network
 
 719
 00:27:34,560 --> 00:27:36,400
-to traverse the entire network
 once they're inside. So, from my
 
 720
 00:27:36,400 --> 00:27:38,720
-once they're inside. So, from my
 perspective, being able to move the
 
 721
 00:27:38,720 --> 00:27:42,040
-perspective, being able to move the
 entire healthcare ecosystem from weak
 
 722
 00:27:42,040 --> 00:27:43,640
-entire healthcare ecosystem from weak
 credentials
 
 723
 00:27:43,640 --> 00:27:44,840
-credentials
 to a model that is actually
 
 724
 00:27:44,840 --> 00:27:47,400
-to a model that is actually
 password-free would be the biggest thing
 
 725
 00:27:47,400 --> 00:27:49,160
-password-free would be the biggest thing
 we could do for the workforce in
 
 726
 00:27:49,160 --> 00:27:51,120
-we could do for the workforce in
 healthcare. I think that's up That would
 
 727
 00:27:51,120 --> 00:27:53,320
-healthcare. I think that's up That would
 be the best outcome.
 
 728
 00:27:53,320 --> 00:27:55,960
-be the best outcome.
 I also think that in general that
 
 729
 00:27:55,960 --> 00:27:59,400
-I also think that in general that
 the world needs a veracity engine
 
 730
 00:27:59,400 --> 00:28:01,404
-the world needs a veracity engine
 and we don't have one.
 
 731
 00:28:01,404 --> 00:28:01,960
-and we don't have one.
 [laughter]
 
 732
 00:28:01,960 --> 00:28:04,400
-[laughter]
 So, there needs to be a veracity
 
 733
 00:28:04,400 --> 00:28:06,720
-So, there needs to be a veracity
 engine. So, when I appear online, when I
 
 734
 00:28:06,720 --> 00:28:09,560
-engine. So, when I appear online, when I
 appear online in any context, like when
 
 735
 00:28:09,560 --> 00:28:11,920
-appear online in any context, like when
 I'm talking to you over Zoom, you should
 
 736
 00:28:11,920 --> 00:28:14,120
-I'm talking to you over Zoom, you should
 be able to see who I am, that I am who I
 
 737
 00:28:14,120 --> 00:28:17,200
-be able to see who I am, that I am who I
 say I am, reliably. And that should be I
 
 738
 00:28:17,200 --> 00:28:19,640
-say I am, reliably. And that should be I
 think and that's if I want my
 
 739
 00:28:19,640 --> 00:28:21,200
-think and that's if I want my
 I need to be shared. And like these
 
 740
 00:28:21,200 --> 00:28:22,600
-I need to be shared. And like these
 things I think are so important to
 
 741
 00:28:22,600 --> 00:28:26,080
-things I think are so important to
 establish. I think the policy focus is
 
 742
 00:28:26,080 --> 00:28:28,320
-establish. I think the policy focus is
 really important though. If the policy
 
 743
 00:28:28,320 --> 00:28:29,720
-really important though. If the policy
 doesn't happen right, I think this is
 
 744
 00:28:29,720 --> 00:28:32,720
-doesn't happen right, I think this is
 what Utah has done so well. You know,
 
 745
 00:28:32,720 --> 00:28:35,320
-what Utah has done so well. You know,
 first principles, policy first. I think
 
 746
 00:28:35,320 --> 00:28:38,040
-first principles, policy first. I think
 that has a huge impact.
 
 747
 00:28:38,040 --> 00:28:39,520
-that has a huge impact.
 I'm going to give a slightly different
 
 748
 00:28:39,520 --> 00:28:40,760
-I'm going to give a slightly different
 answer here. It's going to be
 
 749
 00:28:40,760 --> 00:28:42,280
-answer here. It's going to be
 controversial.
 
 750
 00:28:42,280 --> 00:28:44,800
-controversial.
 This is from the policy perspective
 
 751
 00:28:44,800 --> 00:28:46,760
-This is from the policy perspective
 of what needs to be done in 5 years to
 
 752
 00:28:46,760 --> 00:28:49,280
-of what needs to be done in 5 years to
 actually get lots of money put into the
 
 753
 00:28:49,280 --> 00:28:51,480
-actually get lots of money put into the
 ecosystem and to align interest with
 
 754
 00:28:51,480 --> 00:28:52,960
-ecosystem and to align interest with
 policy makers to get them to run
 
 755
 00:28:52,960 --> 00:28:55,240
-policy makers to get them to run
 legislation and actually get the market
 
 756
 00:28:55,240 --> 00:28:56,880
-legislation and actually get the market
 going cuz we've had breaches and
 
 757
 00:28:56,880 --> 00:28:59,640
-going cuz we've had breaches and
 security and lack of trusted identity
 
 758
 00:28:59,640 --> 00:29:01,840
-security and lack of trusted identity
 and provenance for decades and it hasn't
 
 759
 00:29:01,840 --> 00:29:04,440
-and provenance for decades and it hasn't
 fixed the issue. What is the one topic
 
 760
 00:29:04,440 --> 00:29:05,640
-fixed the issue. What is the one topic
 everybody's talking about now and
 
 761
 00:29:05,640 --> 00:29:08,920
-everybody's talking about now and
 pumping money into and it's AI? And so
 
 762
 00:29:08,920 --> 00:29:10,960
-pumping money into and it's AI? And so
 if you want to solve all of these
 
 763
 00:29:10,960 --> 00:29:12,960
-if you want to solve all of these
 problems, you've got to tie it to some
 
 764
 00:29:12,960 --> 00:29:14,960
-problems, you've got to tie it to some
 AI use case which is where all the money
 
 765
 00:29:14,960 --> 00:29:17,160
-AI use case which is where all the money
 is going. And so Utah did something
 
 766
 00:29:17,160 --> 00:29:18,520
-is going. And so Utah did something
 really unique and this is just for
 
 767
 00:29:18,520 --> 00:29:19,440
-really unique and this is just for
 everyone to think about as you're
 
 768
 00:29:19,440 --> 00:29:21,000
-everyone to think about as you're
 working on the problems.
 
 769
 00:29:21,000 --> 00:29:22,720
-working on the problems.
 They have been in national news
 
 770
 00:29:22,720 --> 00:29:25,280
-They have been in national news
 because they did the first automated
 
 771
 00:29:25,280 --> 00:29:27,720
-because they did the first automated
 prescription issuance from AI
 
 772
 00:29:27,720 --> 00:29:29,880
-prescription issuance from AI
 Coming out of our regulatory sandbox.
 
 773
 00:29:29,880 --> 00:29:31,320
-Coming out of our regulatory sandbox.
 So Utah's created some really unique
 
 774
 00:29:31,320 --> 00:29:34,000
-So Utah's created some really unique
 things to allow new
 
 775
 00:29:34,000 --> 00:29:38,080
-things to allow new
 AI to be used. We know in this room what
 
 776
 00:29:38,080 --> 00:29:41,000
-AI to be used. We know in this room what
 KERI and ACDC is going to bring to the
 
 777
 00:29:41,000 --> 00:29:44,960
-KERI and ACDC is going to bring to the
 AI ecosystem in terms of provenance
 
 778
 00:29:44,960 --> 00:29:48,520
-AI ecosystem in terms of provenance
 and then associated to data or to AI
 
 779
 00:29:48,520 --> 00:29:50,840
-and then associated to data or to AI
 agents having being delegated with
 
 780
 00:29:50,840 --> 00:29:53,320
-agents having being delegated with
 authority to act on somebody's behalf.
 
 781
 00:29:53,320 --> 00:29:56,680
-authority to act on somebody's behalf.
 And so I think it's critical to tie
 
 782
 00:29:56,680 --> 00:29:59,560
-And so I think it's critical to tie
 in some of these unique capabilities to
 
 783
 00:29:59,560 --> 00:30:02,720
-in some of these unique capabilities to
 AI and not show that we're reducing
 
 784
 00:30:02,720 --> 00:30:05,280
-AI and not show that we're reducing
 fraud or losses but to show some
 
 785
 00:30:05,280 --> 00:30:07,720
-fraud or losses but to show some
 efficiency gains or things that directly
 
 786
 00:30:07,720 --> 00:30:09,520
-efficiency gains or things that directly
 impact individuals. So if you can start
 
 787
 00:30:09,520 --> 00:30:13,000
-impact individuals. So if you can start
 saying because we have we proven,
 
 788
 00:30:13,000 --> 00:30:15,200
-saying because we have we proven,
 you know, verifiable delegation for this
 
 789
 00:30:15,200 --> 00:30:18,080
-you know, verifiable delegation for this
 agent acting on another doctor's behalf
 
 790
 00:30:18,080 --> 00:30:20,560
-agent acting on another doctor's behalf
 to start streamlining prescription
 
 791
 00:30:20,560 --> 00:30:23,960
-to start streamlining prescription
 issuance and lowering cost, that's going
 
 792
 00:30:23,960 --> 00:30:25,360
-issuance and lowering cost, that's going
 to get people excited. And if we can
 
 793
 00:30:25,360 --> 00:30:27,880
-to get people excited. And if we can
 prove the use of this technology over
 
 794
 00:30:27,880 --> 00:30:29,160
-prove the use of this technology over
 the next I don't think it's 5 years, I
 
 795
 00:30:29,160 --> 00:30:31,560
-the next I don't think it's 5 years, I
 think it's the next 3 years,
 
 796
 00:30:31,560 --> 00:30:34,400
-think it's the next 3 years,
 that is going to start turbocharging the
 
 797
 00:30:34,400 --> 00:30:36,520
-that is going to start turbocharging the
 the digital identity and verifiability
 
 798
 00:30:36,520 --> 00:30:37,120
-the digital identity and verifiability
 approach.
 
 799
 00:30:37,120 --> 00:30:38,760
-approach.
 Okay, who in the room just registered
 
 800
 00:30:38,760 --> 00:30:41,560
-Okay, who in the room just registered
 KERI.ai? Did that Did that just happen?
 
 801
 00:30:41,560 --> 00:30:43,846
-KERI.ai? Did that Did that just happen?
 Okay. Jared, go ahead.
 
 802
 00:30:43,846 --> 00:30:44,240
-Okay. Jared, go ahead.
 [laughter]
 
 803
 00:30:44,240 --> 00:30:46,920
-[laughter]
 I mean, yeah. I agree with what
 
 804
 00:30:46,920 --> 00:30:50,080
-I mean, yeah. I agree with what
 Chris is saying and really my
 
 805
 00:30:50,080 --> 00:30:51,880
-Chris is saying and really my
 thought there is that
 
 806
 00:30:51,880 --> 00:30:54,360
-thought there is that
 this is a problem that can't wait
 
 807
 00:30:54,360 --> 00:30:55,720
-this is a problem that can't wait
 and this is a problem that people should
 
 808
 00:30:55,720 --> 00:30:57,200
-and this is a problem that people should
 be thinking about and working on
 
 809
 00:30:57,200 --> 00:30:59,920
-be thinking about and working on
 already. And what I guess what I what
 
 810
 00:30:59,920 --> 00:31:01,840
-already. And what I guess what I what
 what I'll say is while we haven't moved
 
 811
 00:31:01,840 --> 00:31:03,040
-what I'll say is while we haven't moved
 some of the work we're doing at Health
 
 812
 00:31:03,040 --> 00:31:05,480
-some of the work we're doing at Health
 Caery around AI into open source, I
 
 813
 00:31:05,480 --> 00:31:07,400
-Caery around AI into open source, I
 mean, we probably won't in the near
 
 814
 00:31:07,400 --> 00:31:10,320
-mean, we probably won't in the near
 term. We definitely want to entertain
 
 815
 00:31:10,320 --> 00:31:11,840
-term. We definitely want to entertain
 conversations with folks that look at
 
 816
 00:31:11,840 --> 00:31:13,240
-conversations with folks that look at
 that and see it as a problem the same
 
 817
 00:31:13,240 --> 00:31:13,960
-that and see it as a problem the same
 way Chris does.
 
 818
 00:31:13,960 --> 00:31:15,960
-way Chris does.
 And I will say to do what I just said,
 
 819
 00:31:15,960 --> 00:31:17,280
-And I will say to do what I just said,
 you already have to do everything you
 
 820
 00:31:17,280 --> 00:31:19,240
-you already have to do everything you
 just said. It's just what's the story
 
 821
 00:31:19,240 --> 00:31:21,200
-just said. It's just what's the story
 you're going to tell and that's an
 
 822
 00:31:21,200 --> 00:31:23,040
-you're going to tell and that's an
 amazing story to tell that will get
 
 823
 00:31:23,040 --> 00:31:25,320
-amazing story to tell that will get
 people to put more money into it.
 
 824
 00:31:25,320 --> 00:31:26,960
-people to put more money into it.
 So Carl, I'm going to lean on your
 
 825
 00:31:26,960 --> 00:31:28,800
-So Carl, I'm going to lean on your
 organizational experience that you've
 
 826
 00:31:28,800 --> 00:31:30,000
-organizational experience that you've
 had.
 
 827
 00:31:30,000 --> 00:31:32,120
-had.
 Given what you've seen in creating
 
 828
 00:31:32,120 --> 00:31:34,560
-Given what you've seen in creating
 verifiable organizational identity, what
 
 829
 00:31:34,560 --> 00:31:35,920
-verifiable organizational identity, what
 do you anticipate is going to be the
 
 830
 00:31:35,920 --> 00:31:37,840
-do you anticipate is going to be the
 practical friction or challenges that
 
 831
 00:31:37,840 --> 00:31:40,000
-practical friction or challenges that
 healthcare organizations are going to
 
 832
 00:31:40,000 --> 00:31:42,400
-healthcare organizations are going to
 encounter going through this process?
 
 833
 00:31:42,400 --> 00:31:44,480
-encounter going through this process?
 And then, panel, listen up. My question
 
 834
 00:31:44,480 --> 00:31:45,640
-And then, panel, listen up. My question
 to you would be is how do we help
 
 835
 00:31:45,640 --> 00:31:49,310
-to you would be is how do we help
 mitigate those issues?
 
 836
@@ -4170,292 +3360,234 @@ to begin with,
 
 837
 00:31:52,200 --> 00:31:53,960
-to begin with,
 I think that
 
 838
 00:31:53,960 --> 00:31:56,600
-I think that
 the first thing is that
 
 839
 00:31:56,600 --> 00:31:59,520
-the first thing is that
 people are used to doing things or not
 
 840
 00:31:59,520 --> 00:32:01,280
-people are used to doing things or not
 doing anything at all or doing things a
 
 841
 00:32:01,280 --> 00:32:03,760
-doing anything at all or doing things a
 different way. So, there's going to need
 
 842
 00:32:03,760 --> 00:32:05,840
-different way. So, there's going to need
 to be a change in behavior.
 
 843
 00:32:05,840 --> 00:32:08,320
-to be a change in behavior.
 And the reason why the change in
 
 844
 00:32:08,320 --> 00:32:10,000
-And the reason why the change in
 behavior is going to need to be
 
 845
 00:32:10,000 --> 00:32:12,200
-behavior is going to need to be
 explained to them.
 
 846
 00:32:12,200 --> 00:32:14,800
-explained to them.
 And that's a challenge for us.
 
 847
 00:32:14,800 --> 00:32:17,520
-And that's a challenge for us.
 Not to get into the technical details.
 
 848
 00:32:17,520 --> 00:32:19,800
-Not to get into the technical details.
 To focus on the user experience and
 
 849
 00:32:19,800 --> 00:32:22,320
-To focus on the user experience and
 what the benefits are in order to be
 
 850
 00:32:22,320 --> 00:32:24,960
-what the benefits are in order to be
 able to target whether it's doctors,
 
 851
 00:32:24,960 --> 00:32:27,680
-able to target whether it's doctors,
 whether it's patients, whether it's
 
 852
 00:32:27,680 --> 00:32:30,400
-whether it's patients, whether it's
 payers and the plans. As we've we've
 
 853
 00:32:30,400 --> 00:32:32,840
-payers and the plans. As we've we've
 been speaking with Health Caery and
 
 854
 00:32:32,840 --> 00:32:35,440
-been speaking with Health Caery and
 we've been speaking with Direct Trust.
 
 855
 00:32:35,440 --> 00:32:36,960
-we've been speaking with Direct Trust.
 I'm learning more and more about the
 
 856
 00:32:36,960 --> 00:32:42,160
-I'm learning more and more about the
 healthcare industry and the fact that
 
 857
 00:32:42,160 --> 00:32:43,520
-healthcare industry and the fact that
 there are
 
 858
 00:32:43,520 --> 00:32:46,000
-there are
 data inconsistencies,
 
 859
 00:32:46,000 --> 00:32:47,520
-data inconsistencies,
 there are
 
 860
 00:32:47,520 --> 00:32:50,880
-there are
 efficiencies that need to be
 
 861
 00:32:50,880 --> 00:32:52,240
-efficiencies that need to be
 exploited
 
 862
 00:32:52,240 --> 00:32:56,520
-exploited
 and identity and verifiable identity is
 
 863
 00:32:56,520 --> 00:32:59,480
-and identity and verifiable identity is
 at the core of all of these things.
 
 864
 00:32:59,480 --> 00:33:02,360
-at the core of all of these things.
 And for us to be able to leverage what
 
 865
 00:33:02,360 --> 00:33:04,200
-And for us to be able to leverage what
 we've already
 
 866
 00:33:04,200 --> 00:33:06,720
-we've already
 created and
 
 867
 00:33:06,720 --> 00:33:10,800
-created and
 to see this applied in this way, to be
 
 868
 00:33:10,800 --> 00:33:12,920
-to see this applied in this way, to be
 able to take a problem
 
 869
 00:33:12,920 --> 00:33:17,200
-able to take a problem
 and say, we can look at our process that
 
 870
 00:33:17,200 --> 00:33:18,640
-and say, we can look at our process that
 we have here
 
 871
 00:33:18,640 --> 00:33:21,200
-we have here
 and we can explain to our members that
 
 872
 00:33:21,200 --> 00:33:24,000
-and we can explain to our members that
 they're going to want to see their
 
 873
 00:33:24,000 --> 00:33:26,400
-they're going to want to see their
 credentials registered in the provider
 
 874
 00:33:26,400 --> 00:33:28,960
-credentials registered in the provider
 registry so that it reflects the real
 
 875
 00:33:28,960 --> 00:33:31,320
-registry so that it reflects the real
 situation in the world,
 
 876
 00:33:31,320 --> 00:33:34,320
-situation in the world,
 I think is an improvement. In order to
 
 877
 00:33:34,320 --> 00:33:36,160
-I think is an improvement. In order to
 be able to
 
 878
 00:33:36,160 --> 00:33:37,720
-be able to
 to
 
 879
 00:33:37,720 --> 00:33:40,960
-to
 also apply the
 
 880
 00:33:40,960 --> 00:33:43,520
-also apply the
 the credentials to the plans.
 
 881
 00:33:43,520 --> 00:33:45,800
-the credentials to the plans.
 And so you know who is associated with
 
 882
 00:33:45,800 --> 00:33:49,080
-And so you know who is associated with
 what plan and also to just disambiguate
 
 883
 00:33:49,080 --> 00:33:52,520
-what plan and also to just disambiguate
 the providers themselves. I go back
 
 884
 00:33:52,520 --> 00:33:55,360
-the providers themselves. I go back
 to the example that Scott gives to say
 
 885
 00:33:55,360 --> 00:33:57,400
-to the example that Scott gives to say
 which St. Mary's is it.
 
 886
 00:33:57,400 --> 00:33:59,000
-which St. Mary's is it.
 And
 
 887
 00:33:59,000 --> 00:34:01,000
-And
 you know, we had
 
 888
 00:34:01,000 --> 00:34:03,440
-you know, we had
 I guess the answer kind of like sitting
 
 889
 00:34:03,440 --> 00:34:06,800
-I guess the answer kind of like sitting
 there in the LEI repository
 
 890
 00:34:06,800 --> 00:34:09,240
-there in the LEI repository
 and we are glad in order to be able to
 
 891
 00:34:09,240 --> 00:34:12,600
-and we are glad in order to be able to
 know that there is another industry and
 
 892
 00:34:12,600 --> 00:34:15,440
-know that there is another industry and
 another domain that can benefit from the
 
 893
 00:34:15,440 --> 00:34:18,840
-another domain that can benefit from the
 same kinds of principles that we
 
 894
 00:34:18,840 --> 00:34:24,710
-same kinds of principles that we
 wanted to promote in the first place.
 
 895
@@ -4465,492 +3597,394 @@ if you
 
 896
 00:34:27,960 --> 00:34:29,560
-if you
 you asked the question about barriers,
 
 897
 00:34:29,560 --> 00:34:30,879
-you asked the question about barriers,
 like so what's going to keep us from
 
 898
 00:34:30,879 --> 00:34:34,040
-like so what's going to keep us from
 being successful? I think
 
 899
 00:34:34,040 --> 00:34:35,919
-being successful? I think
 I'm new to KERI. I think KERI is
 
 900
 00:34:35,919 --> 00:34:37,800
-I'm new to KERI. I think KERI is
 incredibly interesting and exciting, and
 
 901
 00:34:37,800 --> 00:34:39,320
-incredibly interesting and exciting, and
 I'm a kind of a
 
 902
 00:34:39,320 --> 00:34:41,240
-I'm a kind of a
 propeller head, but not
 
 903
 00:34:41,240 --> 00:34:42,960
-propeller head, but not
 not my propeller is kind of just drawn
 
 904
 00:34:42,960 --> 00:34:45,360
-not my propeller is kind of just drawn
 in crayon. But so but I what I've got
 
 905
 00:34:45,360 --> 00:34:47,120
-in crayon. But so but I what I've got
 to tell you is that
 
 906
 00:34:47,120 --> 00:34:48,440
-to tell you is that
 that KERI's going to have the same
 
 907
 00:34:48,440 --> 00:34:50,800
-that KERI's going to have the same
 challenge that the X.509 community has,
 
 908
 00:34:50,800 --> 00:34:54,159
-challenge that the X.509 community has,
 which is y'all speak Eldish.
 
 909
 00:34:54,159 --> 00:34:55,399
-which is y'all speak Eldish.
 And so
 
 910
 00:34:55,399 --> 00:34:56,919
-And so
 you're going to have to translate this
 
 911
 00:34:56,919 --> 00:34:59,160
-you're going to have to translate this
 into English, and really quickly,
 
 912
 00:34:59,160 --> 00:35:00,960
-into English, and really quickly,
 because if you're going to try and bring
 
 913
 00:35:00,960 --> 00:35:02,640
-because if you're going to try and bring
 this to market,
 
 914
 00:35:02,640 --> 00:35:04,080
-this to market,
 we're going to have to start using words
 
 915
 00:35:04,080 --> 00:35:06,560
-we're going to have to start using words
 that people understand. And we're
 
 916
 00:35:06,560 --> 00:35:09,080
-that people understand. And we're
 going to have to de-acronymify
 
 917
 00:35:09,080 --> 00:35:11,760
-going to have to de-acronymify
 because in this day and age,
 
 918
 00:35:11,760 --> 00:35:12,840
-because in this day and age,
 I can tell you, we merged with an
 
 919
 00:35:12,840 --> 00:35:15,160
-I can tell you, we merged with an
 organization called ENACT, and when we
 
 920
 00:35:15,160 --> 00:35:18,400
-organization called ENACT, and when we
 did, we went and we de-acronymified
 
 921
 00:35:18,400 --> 00:35:20,280
-did, we went and we de-acronymified
 everything, cuz all their programs were
 
 922
 00:35:20,280 --> 00:35:22,360
-everything, cuz all their programs were
 four-letter acronyms. I'm telling you,
 
 923
 00:35:22,360 --> 00:35:25,240
-four-letter acronyms. I'm telling you,
 this is really not a
 
 924
 00:35:25,240 --> 00:35:27,840
-this is really not a
 2026 kind of a thing. This is a That's a
 
 925
 00:35:27,840 --> 00:35:31,280
-2026 kind of a thing. This is a That's a
 1995 thing, right? So, acronyms are big
 
 926
 00:35:31,280 --> 00:35:33,680
-1995 thing, right? So, acronyms are big
 in technical space, because you can't do
 
 927
 00:35:33,680 --> 00:35:34,880
-in technical space, because you can't do
 these things without them, because you
 
 928
 00:35:34,880 --> 00:35:36,640
-these things without them, because you
 can't You can't describe something
 
 929
 00:35:36,640 --> 00:35:38,400
-can't You can't describe something
 technical in short words. Germans, of
 
 930
 00:35:38,400 --> 00:35:41,280
-technical in short words. Germans, of
 course, just put words together. But
 
 931
 00:35:41,280 --> 00:35:42,920
-course, just put words together. But
 I'm telling you that this is, I think,
 
 932
 00:35:42,920 --> 00:35:44,880
-I'm telling you that this is, I think,
 our biggest barrier.
 
 933
 00:35:44,880 --> 00:35:46,760
-our biggest barrier.
 What I heard some people explain here,
 
 934
 00:35:46,760 --> 00:35:49,800
-What I heard some people explain here,
 actually, I think it was a legislator,
 
 935
 00:35:49,800 --> 00:35:52,400
-actually, I think it was a legislator,
 it's hard to explain.
 
 936
 00:35:52,400 --> 00:35:53,760
-it's hard to explain.
 And I think that's that's probably our
 
 937
 00:35:53,760 --> 00:35:54,920
-And I think that's that's probably our
 biggest barrier is that we have to be
 
 938
 00:35:54,920 --> 00:35:57,480
-biggest barrier is that we have to be
 able to describe it very succinctly, and
 
 939
 00:35:57,480 --> 00:36:00,280
-able to describe it very succinctly, and
 with value proposition in mind, and with
 
 940
 00:36:00,280 --> 00:36:02,200
-with value proposition in mind, and with
 words that people understand. That's If
 
 941
 00:36:02,200 --> 00:36:04,160
-words that people understand. That's If
 there's a barrier here, that's the
 
 942
 00:36:04,160 --> 00:36:05,680
-there's a barrier here, that's the
 biggest one.
 
 943
 00:36:05,680 --> 00:36:07,420
-biggest one.
 Yeah, and so I agree. I
 
 944
 00:36:07,420 --> 00:36:08,120
-Yeah, and so I agree. I
 think clarity in
 
 945
 00:36:08,120 --> 00:36:11,680
-think clarity in
 language is the biggest hurdle. If we
 
 946
 00:36:11,680 --> 00:36:13,360
-language is the biggest hurdle. If we
 can get to clarity of language, we solve
 
 947
 00:36:13,360 --> 00:36:15,080
-can get to clarity of language, we solve
 a lot of problems. I think the second
 
 948
 00:36:15,080 --> 00:36:16,880
-a lot of problems. I think the second
 biggest hurdle,
 
 949
 00:36:16,880 --> 00:36:19,280
-biggest hurdle,
 And then the solution, honestly, is
 
 950
 00:36:19,280 --> 00:36:21,000
-And then the solution, honestly, is
 money. And I wish that wasn't the case.
 
 951
 00:36:21,000 --> 00:36:22,080
-money. And I wish that wasn't the case.
 I wish we could talk about healthKERI
 
 952
 00:36:22,080 --> 00:36:23,880
-I wish we could talk about healthKERI
 being this folderol, and everybody
 
 953
 00:36:23,880 --> 00:36:26,360
-being this folderol, and everybody
 wants to be, you know, for the patient.
 
 954
 00:36:26,360 --> 00:36:27,960
-wants to be, you know, for the patient.
 The reality is this industry is not
 
 955
 00:36:27,960 --> 00:36:29,760
-The reality is this industry is not
 going to move unless there's money
 
 956
 00:36:29,760 --> 00:36:31,120
-going to move unless there's money
 attached to it. And that comes in two
 
 957
 00:36:31,120 --> 00:36:33,720
-attached to it. And that comes in two
 forms. One is if companies like
 
 958
 00:36:33,720 --> 00:36:35,200
-forms. One is if companies like
 Healthcare can come and improve out a
 
 959
 00:36:35,200 --> 00:36:38,320
-Healthcare can come and improve out a
 model that carried drives dollars for
 
 960
 00:36:38,320 --> 00:36:40,200
-model that carried drives dollars for
 companies like us, then a lot of
 
 961
 00:36:40,200 --> 00:36:42,320
-companies like us, then a lot of
 different ecosystem players are going to
 
 962
 00:36:42,320 --> 00:36:43,760
-different ecosystem players are going to
 come in. It's going to be new startups
 
 963
 00:36:43,760 --> 00:36:45,520
-come in. It's going to be new startups
 competing with us on our level. It's
 
 964
 00:36:45,520 --> 00:36:46,960
-competing with us on our level. It's
 going to be people that are established
 
 965
 00:36:46,960 --> 00:36:48,360
-going to be people that are established
 in the space that want to come in and
 
 966
 00:36:48,360 --> 00:36:49,840
-in the space that want to come in and
 start doing what we're doing. But if we
 
 967
 00:36:49,840 --> 00:36:52,240
-start doing what we're doing. But if we
 can show money, we can move the market.
 
 968
 00:36:52,240 --> 00:36:54,080
-can show money, we can move the market.
 The other side of this is for the
 
 969
 00:36:54,080 --> 00:36:55,960
-The other side of this is for the
 customers the groups that will be paying
 
 970
 00:36:55,960 --> 00:36:57,880
-customers the groups that will be paying
 for these new services, they need to see
 
 971
 00:36:57,880 --> 00:37:00,440
-for these new services, they need to see
 money as well. For them likely, they
 
 972
 00:37:00,440 --> 00:37:01,920
-money as well. For them likely, they
 will see that in two forms. It's going
 
 973
 00:37:01,920 --> 00:37:04,840
-will see that in two forms. It's going
 to be a reduction of cost or an increase
 
 974
 00:37:04,840 --> 00:37:06,280
-to be a reduction of cost or an increase
 in business. If they can prove that
 
 975
 00:37:06,280 --> 00:37:07,680
-in business. If they can prove that
 they're more trustworthy, they can
 
 976
 00:37:07,680 --> 00:37:09,560
-they're more trustworthy, they can
 capture more customers. If they can do
 
 977
 00:37:09,560 --> 00:37:11,560
-capture more customers. If they can do
 this automatically, they will save on
 
 978
 00:37:11,560 --> 00:37:14,200
-this automatically, they will save on
 COGS. So, I think it's it's both the
 
 979
 00:37:14,200 --> 00:37:16,400
-COGS. So, I think it's it's both the
 biggest barrier and if we can solve it,
 
 980
 00:37:16,400 --> 00:37:18,120
-biggest barrier and if we can solve it,
 we'll be the biggest activator because
 
 981
 00:37:18,120 --> 00:37:20,840
-we'll be the biggest activator because
 people will forgive your language
 
 982
 00:37:20,840 --> 00:37:22,680
-people will forgive your language
 if there's a big pile of money behind
 
 983
 00:37:22,680 --> 00:37:25,520
-if there's a big pile of money behind
 your acronyms.
 
 984
 00:37:25,520 --> 00:37:27,800
-your acronyms.
 So, one industry that does not get rid
 
 985
 00:37:27,800 --> 00:37:30,160
-So, one industry that does not get rid
 of their acronyms is the legal industry
 
 986
 00:37:30,160 --> 00:37:32,720
-of their acronyms is the legal industry
 and those terms and conditions don't get
 
 987
 00:37:32,720 --> 00:37:34,640
-and those terms and conditions don't get
 any smaller and I do think we can move
 
 988
 00:37:34,640 --> 00:37:35,760
-any smaller and I do think we can move
 the industry and I said this at the
 
 989
 00:37:35,760 --> 00:37:37,280
-the industry and I said this at the
 steady summit
 
 990
 00:37:37,280 --> 00:37:39,640
-steady summit
 is what's the regulatory framework to
 
 991
 00:37:39,640 --> 00:37:41,720
-is what's the regulatory framework to
 incentivize all these experts,
 
 992
 00:37:41,720 --> 00:37:43,840
-incentivize all these experts,
 technologists, and the legal
 
 993
 00:37:43,840 --> 00:37:47,790
-technologists, and the legal
 departments to move this way and so
 
 994
@@ -4964,137 +3998,110 @@ reciprocal verifiability. You want
 
 996
 00:37:51,240 --> 00:37:53,880
-reciprocal verifiability. You want
 organizational identity, we're going to
 
 997
 00:37:53,880 --> 00:37:55,800
-organizational identity, we're going to
 require them to do reciprocal
 
 998
 00:37:55,800 --> 00:37:58,080
-require them to do reciprocal
 verifiability. Who is the org? Who is
 
 999
 00:37:58,080 --> 00:37:59,800
-verifiability. Who is the org? Who is
 the individual? That sounds like well,
 
 1000
 00:37:59,800 --> 00:38:01,120
-the individual? That sounds like well,
 it's a cost. Who's going to do this
 
 1001
 00:38:01,120 --> 00:38:03,720
-it's a cost. Who's going to do this
 then? But then we say, well, if you do
 
 1002
 00:38:03,720 --> 00:38:05,920
-then? But then we say, well, if you do
 this, here's the limitations now on
 
 1003
 00:38:05,920 --> 00:38:07,800
-this, here's the limitations now on
 liability. Here's the safe harbor to
 
 1004
 00:38:07,800 --> 00:38:10,240
-liability. Here's the safe harbor to
 function and we give them the incentives
 
 1005
 00:38:10,240 --> 00:38:13,480
-function and we give them the incentives
 to move toward reciprocal verifiability
 
 1006
 00:38:13,480 --> 00:38:15,520
-to move toward reciprocal verifiability
 and to use tools that have the
 
 1007
 00:38:15,520 --> 00:38:18,400
-and to use tools that have the
 capabilities KERI provides and that
 
 1008
 00:38:18,400 --> 00:38:21,360
-capabilities KERI provides and that
 should take away enough liability or
 
 1009
 00:38:21,360 --> 00:38:23,400
-should take away enough liability or
 provide enough incentive for them
 
 1010
 00:38:23,400 --> 00:38:24,440
-provide enough incentive for them
 to at least start in their
 
 1011
 00:38:24,440 --> 00:38:27,880
-to at least start in their
 transformation to move this direction.
 
 1012
 00:38:27,880 --> 00:38:29,400
-transformation to move this direction.
 And especially when we start tying that
 
 1013
 00:38:29,400 --> 00:38:30,880
-And especially when we start tying that
 to AI, I think this is a perfect
 
 1014
 00:38:30,880 --> 00:38:33,680
-to AI, I think this is a perfect
 example. We say, "Your AI agent must
 
 1015
 00:38:33,680 --> 00:38:36,360
-example. We say, "Your AI agent must
 have, you know, some verifiable form to
 
 1016
 00:38:36,360 --> 00:38:38,080
-have, you know, some verifiable form to
 say that they're acting on behalf of the
 
 1017
 00:38:38,080 --> 00:38:39,840
-say that they're acting on behalf of the
 entity and who provided that
 
 1018
 00:38:39,840 --> 00:38:42,400
-entity and who provided that
 delegation." And if you do this, then
 
 1019
 00:38:42,400 --> 00:38:44,920
-delegation." And if you do this, then
 you can be in the sandbox in Utah. Those
 
 1020
 00:38:44,920 --> 00:38:46,720
-you can be in the sandbox in Utah. Those
 are the incentives that I think
 
 1021
 00:38:46,720 --> 00:38:49,600
-are the incentives that I think
 regulators can help with to move
 
 1022
 00:38:49,600 --> 00:38:52,150
-regulators can help with to move
 things.
 
 1023
@@ -5104,27 +4111,22 @@ here. The yes, we need to speak in very
 
 1024
 00:38:57,320 --> 00:39:00,720
-here. The yes, we need to speak in very
 plain language to folks as to what
 
 1025
 00:39:00,720 --> 00:39:03,080
-plain language to folks as to what
 they what we're trying to do. The
 
 1026
 00:39:03,080 --> 00:39:05,680
-they what we're trying to do. The
 problem is yes, legal and government
 
 1027
 00:39:05,680 --> 00:39:07,880
-problem is yes, legal and government
 love their acronyms. So, we've got to
 
 1028
 00:39:07,880 --> 00:39:10,870
-love their acronyms. So, we've got to
 also meet them there.
 
 1029
@@ -5138,382 +4140,306 @@ don't make it too complicated.
 
 1031
 00:39:16,280 --> 00:39:18,280
-don't make it too complicated.
 And also try and tie it back to things
 
 1032
 00:39:18,280 --> 00:39:19,920
-And also try and tie it back to things
 they understand.
 
 1033
 00:39:19,920 --> 00:39:22,640
-they understand.
 Jokingly tell a story about how I
 
 1034
 00:39:22,640 --> 00:39:25,520
-Jokingly tell a story about how I
 actually got blue button built at CMS
 
 1035
 00:39:25,520 --> 00:39:28,120
-actually got blue button built at CMS
 and got it out through ATO, their
 
 1036
 00:39:28,120 --> 00:39:30,560
-and got it out through ATO, their
 authorization to operate, so that it
 
 1037
 00:39:30,560 --> 00:39:32,360
-authorization to operate, so that it
 went out and into the into the
 
 1038
 00:39:32,360 --> 00:39:33,840
-went out and into the into the
 marketplace.
 
 1039
 00:39:33,840 --> 00:39:35,760
-marketplace.
 And I say, "I basically designed the
 
 1040
 00:39:35,760 --> 00:39:37,400
-And I say, "I basically designed the
 project so nobody had to make a
 
 1041
 00:39:37,400 --> 00:39:38,680
-project so nobody had to make a
 decision,
 
 1042
 00:39:38,680 --> 00:39:41,200
-decision,
 right? So, that you always could point
 
 1043
 00:39:41,200 --> 00:39:43,440
-right? So, that you always could point
 to precedent so that they could say,
 
 1044
 00:39:43,440 --> 00:39:45,360
-to precedent so that they could say,
 'You've already done that.'"
 
 1045
 00:39:45,360 --> 00:39:47,440
-'You've already done that.'"
 And if you look at if you were listening
 
 1046
 00:39:47,440 --> 00:39:49,920
-And if you look at if you were listening
 to what we were saying this morning,
 
 1047
 00:39:49,920 --> 00:39:51,640
-to what we were saying this morning,
 a lot of what we've done there is to
 
 1048
 00:39:51,640 --> 00:39:54,560
-a lot of what we've done there is to
 say, "This is just a small change on top
 
 1049
 00:39:54,560 --> 00:39:56,760
-say, "This is just a small change on top
 of what you're doing already. It's the
 
 1050
 00:39:56,760 --> 00:39:58,920
-of what you're doing already. It's the
 same type of technology. It's just a
 
 1051
 00:39:58,920 --> 00:40:02,720
-same type of technology. It's just a
 different cryptographic key, right?" So,
 
 1052
 00:40:02,720 --> 00:40:06,360
-different cryptographic key, right?" So,
 that you able to make help them make
 
 1053
 00:40:06,360 --> 00:40:08,720
-that you able to make help them make
 the intellectual jump.
 
 1054
 00:40:08,720 --> 00:40:11,040
-the intellectual jump.
 One other thing to consider is what is
 
 1055
 00:40:11,040 --> 00:40:13,440
-One other thing to consider is what is
 the use case you're building for? We've
 
 1056
 00:40:13,440 --> 00:40:16,240
-the use case you're building for? We've
 had many verifiable credential companies
 
 1057
 00:40:16,240 --> 00:40:18,880
-had many verifiable credential companies
 come in from KERI and every space
 
 1058
 00:40:18,880 --> 00:40:21,360
-come in from KERI and every space
 and they're selling a product for a use
 
 1059
 00:40:21,360 --> 00:40:23,760
-and they're selling a product for a use
 case which is not the low-hanging fruit
 
 1060
 00:40:23,760 --> 00:40:25,960
-case which is not the low-hanging fruit
 that's needed. And so there are many
 
 1061
 00:40:25,960 --> 00:40:27,600
-that's needed. And so there are many
 entities with really smart people if you
 
 1062
 00:40:27,600 --> 00:40:29,480
-entities with really smart people if you
 simplify what you're doing enough but
 
 1063
 00:40:29,480 --> 00:40:31,880
-simplify what you're doing enough but
 hit that right use case and there's some
 
 1064
 00:40:31,880 --> 00:40:33,040
-hit that right use case and there's some
 out there. This isn't the healthKERI
 
 1065
 00:40:33,040 --> 00:40:35,320
-out there. This isn't the healthKERI
 industry but we had we had Maverick in
 
 1066
 00:40:35,320 --> 00:40:36,680
-industry but we had we had Maverick in
 here on the first two days of the steady
 
 1067
 00:40:36,680 --> 00:40:38,680
-here on the first two days of the steady
 summit and they actually said, "Hey, if
 
 1068
 00:40:38,680 --> 00:40:41,280
-summit and they actually said, "Hey, if
 you one, we've already made steady
 
 1069
 00:40:41,280 --> 00:40:42,920
-you one, we've already made steady
 legal for purchase of alcohol and
 
 1070
 00:40:42,920 --> 00:40:44,640
-legal for purchase of alcohol and
 tobacco." And they said, "Well, if you
 
 1071
 00:40:44,640 --> 00:40:46,240
-tobacco." And they said, "Well, if you
 have the implementation guide, we could
 
 1072
 00:40:46,240 --> 00:40:47,680
-have the implementation guide, we could
 have this implemented in 6 months and
 
 1073
 00:40:47,680 --> 00:40:49,520
-have this implemented in 6 months and
 we'll start accepting steady." And
 
 1074
 00:40:49,520 --> 00:40:51,880
-we'll start accepting steady." And
 that's cuz there is a product market fit
 
 1075
 00:40:51,880 --> 00:40:53,200
-that's cuz there is a product market fit
 there that perfectly aligned with the
 
 1076
 00:40:53,200 --> 00:40:55,520
-there that perfectly aligned with the
 protocol we're looking at for steady. So
 
 1077
 00:40:55,520 --> 00:40:57,680
-protocol we're looking at for steady. So
 what are the right healthKERI use cases
 
 1078
 00:40:57,680 --> 00:41:00,360
-what are the right healthKERI use cases
 as well when and we don't need the whole
 
 1079
 00:41:00,360 --> 00:41:02,680
-as well when and we don't need the whole
 platform. I think it's what's that to
 
 1080
 00:41:02,680 --> 00:41:05,120
-platform. I think it's what's that to
 get you in the door to show value and if
 
 1081
 00:41:05,120 --> 00:41:06,720
-get you in the door to show value and if
 you do that, then you can build from
 
 1082
 00:41:06,720 --> 00:41:08,160
-you do that, then you can build from
 there. Yeah.
 
 1083
 00:41:08,160 --> 00:41:10,440
-there. Yeah.
 Fant- fantastic point and you're
 
 1084
 00:41:10,440 --> 00:41:11,560
-Fant- fantastic point and you're
 right. This is all tying together. I
 
 1085
 00:41:11,560 --> 00:41:13,680
-right. This is all tying together. I
 love when a when a panel just leads
 
 1086
 00:41:13,680 --> 00:41:15,800
-love when a when a panel just leads
 towards that natural conclusion. For me,
 
 1087
 00:41:15,800 --> 00:41:17,480
-towards that natural conclusion. For me,
 it's let's talk about the ultimate
 
 1088
 00:41:17,480 --> 00:41:19,040
-it's let's talk about the ultimate
 stakeholder in the healthKERI industry
 
 1089
 00:41:19,040 --> 00:41:21,560
-stakeholder in the healthKERI industry
 and that's the patient. We know that the
 
 1090
 00:41:21,560 --> 00:41:24,000
-and that's the patient. We know that the
 trust is broken in terms of the personal
 
 1091
 00:41:24,000 --> 00:41:25,760
-trust is broken in terms of the personal
 data and the protections around it. We
 
 1092
 00:41:25,760 --> 00:41:27,800
-data and the protections around it. We
 say HIPAA a lot but that doesn't mean
 
 1093
 00:41:27,800 --> 00:41:29,040
-say HIPAA a lot but that doesn't mean
 anything when you're lying in the
 
 1094
 00:41:29,040 --> 00:41:31,880
-anything when you're lying in the
 hospital bed and
 
 1095
 00:41:31,880 --> 00:41:33,720
-hospital bed and
 we do have some representation on here
 
 1096
 00:41:33,720 --> 00:41:35,160
-we do have some representation on here
 from people who are in government or
 
 1097
 00:41:35,160 --> 00:41:36,800
-from people who are in government or
 who've done some pretty remarkable
 
 1098
 00:41:36,800 --> 00:41:39,000
-who've done some pretty remarkable
 things with government regulation trying
 
 1099
 00:41:39,000 --> 00:41:41,480
-things with government regulation trying
 to help the industry move forward. So if
 
 1100
 00:41:41,480 --> 00:41:44,160
-to help the industry move forward. So if
 you can give me your closing remarks
 
 1101
 00:41:44,160 --> 00:41:46,280
-you can give me your closing remarks
 individually and if you had the magic
 
 1102
 00:41:46,280 --> 00:41:47,720
-individually and if you had the magic
 wand that you could change one
 
 1103
 00:41:47,720 --> 00:41:50,680
-wand that you could change one
 regulation or add something at a state
 
 1104
 00:41:50,680 --> 00:41:53,040
-regulation or add something at a state
 level or a federal level that could
 
 1105
 00:41:53,040 --> 00:41:54,720
-level or a federal level that could
 really kickstart everything in the right
 
 1106
 00:41:54,720 --> 00:42:00,750
-really kickstart everything in the right
 direction, what would that be?
 
 1107
@@ -5523,47 +4449,38 @@ is the organization that has the biggest
 
 1108
 00:42:04,360 --> 00:42:06,640
-is the organization that has the biggest
 hammer. They're I mean their hammer is
 
 1109
 00:42:06,640 --> 00:42:08,040
-hammer. They're I mean their hammer is
 actually
 
 1110
 00:42:08,040 --> 00:42:10,440
-actually
 is it a spoon with sugar in it or is it
 
 1111
 00:42:10,440 --> 00:42:11,520
-is it a spoon with sugar in it or is it
 hammer? I don't know which, but it's
 
 1112
 00:42:11,520 --> 00:42:16,040
-hammer? I don't know which, but it's
 very, very, very authoritative and
 
 1113
 00:42:16,040 --> 00:42:18,840
-very, very, very authoritative and
 powerful. So, they their two their two
 
 1114
 00:42:18,840 --> 00:42:22,080
-powerful. So, they their two their two
 opportunities are reimbursement
 
 1115
 00:42:22,080 --> 00:42:23,280
-opportunities are reimbursement
 and
 
 1116
 00:42:23,280 --> 00:42:25,800
-and
 Regulation. So, when they regulate,
 
 1117
@@ -5581,82 +4498,66 @@ you know, if for instance, they were to
 
 1120
 00:42:31,000 --> 00:42:32,440
-you know, if for instance, they were to
 require
 
 1121
 00:42:32,440 --> 00:42:35,480
-require
 provider organizations to all have FEAL
 
 1122
 00:42:35,480 --> 00:42:37,640
-provider organizations to all have FEAL
 eyes in order to get into the national
 
 1123
 00:42:37,640 --> 00:42:38,880
-eyes in order to get into the national
 directory,
 
 1124
 00:42:38,880 --> 00:42:41,640
-directory,
 it would be an instant driver.
 
 1125
 00:42:41,640 --> 00:42:43,520
-it would be an instant driver.
 And this is a national directory
 
 1126
 00:42:43,520 --> 00:42:46,000
-And this is a national directory
 they're trying to build that is
 
 1127
 00:42:46,000 --> 00:42:47,800
-they're trying to build that is
 failing on the subject of organizational
 
 1128
 00:42:47,800 --> 00:42:49,000
-failing on the subject of organizational
 identity.
 
 1129
 00:42:49,000 --> 00:42:50,800
-identity.
 So, this would be a huge opportunity for
 
 1130
 00:42:50,800 --> 00:42:53,120
-So, this would be a huge opportunity for
 them. There's they haven't
 
 1131
 00:42:53,120 --> 00:42:55,200
-them. There's they haven't
 learned to say GLEIF yet. They call it
 
 1132
 00:42:55,200 --> 00:42:58,800
-learned to say GLEIF yet. They call it
 GLEEF. They are confused. So, I
 
 1133
 00:42:58,800 --> 00:43:00,680
-GLEEF. They are confused. So, I
 I'm trying to bring them forward and say
 
 1134
 00:43:00,680 --> 00:43:02,720
-I'm trying to bring them forward and say
 once they can pronounce it, I'm hoping
 
 1135
 00:43:02,720 --> 00:43:08,350
-once they can pronounce it, I'm hoping
 that they can also support it.
 
 1136
@@ -5675,142 +4576,114 @@ when I was with CMS sort of 2017,
 
 1139
 00:43:21,560 --> 00:43:23,240
-2018, there was a lot of talk about
 Medicare for all.
 
 1140
 00:43:23,240 --> 00:43:25,440
-Medicare for all.
 And I was saying, "No, no, let's Why
 
 1141
 00:43:25,440 --> 00:43:27,440
-And I was saying, "No, no, let's Why
 don't we just start with Medicare
 
 1142
 00:43:27,440 --> 00:43:30,240
-don't we just start with Medicare
 registration for all? So, that you got a
 
 1143
 00:43:30,240 --> 00:43:33,560
-registration for all? So, that you got a
 standard ID that you could take." And I
 
 1144
 00:43:33,560 --> 00:43:35,520
-standard ID that you could take." And I
 I've sort of moved beyond that to say
 
 1145
 00:43:35,520 --> 00:43:37,120
-I've sort of moved beyond that to say
 what I would love to see is probably
 
 1146
 00:43:37,120 --> 00:43:39,520
-what I would love to see is probably
 regulation that says,
 
 1147
 00:43:39,520 --> 00:43:42,520
-regulation that says,
 "If I as a patient
 
 1148
 00:43:42,520 --> 00:43:47,600
-"If I as a patient
 present an identifier or an identity to
 
 1149
 00:43:47,600 --> 00:43:50,520
-present an identifier or an identity to
 a practitioner, to an organization in
 
 1150
 00:43:50,520 --> 00:43:52,320
-a practitioner, to an organization in
 healthKERI,
 
 1151
 00:43:52,320 --> 00:43:54,160
-healthKERI,
 you should damn well put that into my
 
 1152
 00:43:54,160 --> 00:43:55,480
-you should damn well put that into my
 record
 
 1153
 00:43:55,480 --> 00:43:56,800
-record
 so that
 
 1154
 00:43:56,800 --> 00:43:59,640
-so that
 Yeah, so that it then starts as you as
 
 1155
 00:43:59,640 --> 00:44:01,440
-Yeah, so that it then starts as you as
 they start sharing data and you go to
 
 1156
 00:44:01,440 --> 00:44:03,760
-they start sharing data and you go to
 more and more places, you can actually
 
 1157
 00:44:03,760 --> 00:44:07,160
-more and more places, you can actually
 patient match. I had a colleague
 
 1158
 00:44:07,160 --> 00:44:09,720
-patient match. I had a colleague
 in the ideal lab at CMS who was there to
 
 1159
 00:44:09,720 --> 00:44:11,640
-in the ideal lab at CMS who was there to
 do patient matching.
 
 1160
 00:44:11,640 --> 00:44:13,280
-do patient matching.
 You'll know who he is if he ever sees
 
 1161
 00:44:13,280 --> 00:44:16,040
-You'll know who he is if he ever sees
 the video. Yeah, and
 
 1162
 00:44:16,040 --> 00:44:17,840
-the video. Yeah, and
 I would always every time I went to see
 
 1163
 00:44:17,840 --> 00:44:18,880
-I would always every time I went to see
 him
 
 1164
 00:44:18,880 --> 00:44:20,800
-him
 see him I'd say, you know, patient
 
 1165
 00:44:20,800 --> 00:44:22,720
-see him I'd say, you know, patient
 matching is so much easier when you
 
 1166
 00:44:22,720 --> 00:44:27,830
-matching is so much easier when you
 involve the patient.
 
 1167
@@ -5820,192 +4693,154 @@ overnight. So
 
 1168
 00:44:32,120 --> 00:44:33,800
-overnight. So
 I'm going to take a little bit of a
 
 1169
 00:44:33,800 --> 00:44:36,000
-I'm going to take a little bit of a
 different tack here.
 
 1170
 00:44:36,000 --> 00:44:39,840
-different tack here.
 I would like to be able to see any law
 
 1171
 00:44:39,840 --> 00:44:42,640
-I would like to be able to see any law
 going forward that
 
 1172
 00:44:42,640 --> 00:44:44,840
-going forward that
 involves identity
 
 1173
 00:44:44,840 --> 00:44:47,880
-involves identity
 in order to be able to come at it from
 
 1174
 00:44:47,880 --> 00:44:51,400
-in order to be able to come at it from
 what are you trying to accomplish? What
 
 1175
 00:44:51,400 --> 00:44:53,680
-what are you trying to accomplish? What
 benefits are you trying
 
 1176
 00:44:53,680 --> 00:44:57,520
-benefits are you trying
 to gain? So what features then do you
 
 1177
 00:44:57,520 --> 00:45:00,720
-to gain? So what features then do you
 need in order to be able to have in a
 
 1178
 00:45:00,720 --> 00:45:02,240
-need in order to be able to have in a
 solution?
 
 1179
 00:45:02,240 --> 00:45:06,320
-solution?
 Or to have the law be principle-based.
 
 1180
 00:45:06,320 --> 00:45:09,840
-Or to have the law be principle-based.
 If you have need for
 
 1181
 00:45:09,840 --> 00:45:13,640
-If you have need for
 to be able to protect for example
 
 1182
 00:45:13,640 --> 00:45:16,240
-to be able to protect for example
 children or elderly parents, do you
 
 1183
 00:45:16,240 --> 00:45:18,920
-children or elderly parents, do you
 need delegation?
 
 1184
 00:45:18,920 --> 00:45:21,880
-need delegation?
 Are you trying to be able to
 
 1185
 00:45:21,880 --> 00:45:24,800
-Are you trying to be able to
 instantiate or give credentials in order
 
 1186
 00:45:24,800 --> 00:45:28,360
-instantiate or give credentials in order
 to be able to know the real situation of
 
 1187
 00:45:28,360 --> 00:45:30,840
-to be able to know the real situation of
 authority within a company in the area
 
 1188
 00:45:30,840 --> 00:45:33,600
-authority within a company in the area
 of organizational identity
 
 1189
 00:45:33,600 --> 00:45:36,520
-of organizational identity
 then you're going to need a feature in
 
 1190
 00:45:36,520 --> 00:45:38,720
-then you're going to need a feature in
 your in your identity solution that
 
 1191
 00:45:38,720 --> 00:45:41,920
-your in your identity solution that
 gives you that. What level of assurance
 
 1192
 00:45:41,920 --> 00:45:45,760
-gives you that. What level of assurance
 to know that it's really the person who
 
 1193
 00:45:45,760 --> 00:45:47,480
-to know that it's really the person who
 is supposed to be able to be
 
 1194
 00:45:47,480 --> 00:45:49,240
-is supposed to be able to be
 authorized to get that credential? Do
 
 1195
 00:45:49,240 --> 00:45:52,000
-authorized to get that credential? Do
 they have that role? What level of
 
 1196
 00:45:52,000 --> 00:45:55,440
-they have that role? What level of
 security am I comfortable with?
 
 1197
 00:45:55,440 --> 00:45:58,240
-security am I comfortable with?
 Do I need automated verification? Those
 
 1198
 00:45:58,240 --> 00:46:00,080
-Do I need automated verification? Those
 types of things. And when you answer
 
 1199
 00:46:00,080 --> 00:46:04,280
-types of things. And when you answer
 those questions the law then gives you a
 
 1200
 00:46:04,280 --> 00:46:07,120
-those questions the law then gives you a
 guideline or a road map
 
 1201
 00:46:07,120 --> 00:46:10,200
-guideline or a road map
 in order to be able to pick
 
 1202
 00:46:10,200 --> 00:46:13,600
-in order to be able to pick
 a good solution. And for me, I think
 
 1203
 00:46:13,600 --> 00:46:17,640
-a good solution. And for me, I think
 that changing the dynamic of
 
 1204
 00:46:17,640 --> 00:46:20,760
-that changing the dynamic of
 being able to come at the law in
 
 1205
 00:46:20,760 --> 00:46:25,550
-being able to come at the law in
 that way would be an advantage.
 
 1206
@@ -6015,157 +4850,126 @@ I'm pretty certain that our friends from
 
 1207
 00:46:29,720 --> 00:46:32,240
-I'm pretty certain that our friends from
 Libertas are no longer here.
 
 1208
 00:46:32,240 --> 00:46:34,200
-Libertas are no longer here.
 So I think I'm safe to say this without
 
 1209
 00:46:34,200 --> 00:46:35,440
-So I think I'm safe to say this without
 getting a water bottle checked to my
 
 1210
 00:46:35,440 --> 00:46:36,880
-getting a water bottle checked to my
 head.
 
 1211
 00:46:36,880 --> 00:46:39,160
-head.
 I would
 
 1212
 00:46:39,160 --> 00:46:40,960
-I would
 at this point if I could wave a magic
 
 1213
 00:46:40,960 --> 00:46:41,960
-at this point if I could wave a magic
 wand
 
 1214
 00:46:41,960 --> 00:46:45,040
-wand
 I would get rid of section 510 from the
 
 1215
 00:46:45,040 --> 00:46:46,920
-I would get rid of section 510 from the
 HHS
 
 1216
 00:46:46,920 --> 00:46:50,160
-HHS
 labor bill. That section of that law
 
 1217
 00:46:50,160 --> 00:46:52,600
-labor bill. That section of that law
 made it essentially
 
 1218
 00:46:52,600 --> 00:46:54,760
-made it essentially
 illegal for the federal government to
 
 1219
 00:46:54,760 --> 00:46:58,160
-illegal for the federal government to
 issue a national patient identifier.
 
 1220
 00:46:58,160 --> 00:47:01,160
-issue a national patient identifier.
 And I agreed with all of the reasons
 
 1221
 00:47:01,160 --> 00:47:03,160
-And I agreed with all of the reasons
 that law was in place in terms of
 
 1222
 00:47:03,160 --> 00:47:06,920
-that law was in place in terms of
 privacy and the concerns for patients up
 
 1223
 00:47:06,920 --> 00:47:09,560
-privacy and the concerns for patients up
 until very recently with some of the
 
 1224
 00:47:09,560 --> 00:47:11,760
-until very recently with some of the
 work that's been happening with SEDI and
 
 1225
 00:47:11,760 --> 00:47:14,440
-work that's been happening with SEDI and
 other initiatives. And so now today
 
 1226
 00:47:14,440 --> 00:47:17,600
-other initiatives. And so now today
 knowing that I that we have
 
 1227
 00:47:17,600 --> 00:47:19,800
-knowing that I that we have
 a way to do that national patient
 
 1228
 00:47:19,800 --> 00:47:22,320
-a way to do that national patient
 identifier that is privacy preserving,
 
 1229
 00:47:22,320 --> 00:47:24,920
-identifier that is privacy preserving,
 that manages to keep the patient in
 
 1230
 00:47:24,920 --> 00:47:27,600
-that manages to keep the patient in
 charge of themselves digitally,
 
 1231
 00:47:27,600 --> 00:47:29,280
-charge of themselves digitally,
 I think that should be repealed
 
 1232
 00:47:29,280 --> 00:47:33,120
-I think that should be repealed
 immediately. And again, if Connor or
 
 1233
 00:47:33,120 --> 00:47:34,800
-immediately. And again, if Connor or
 Jason from
 
 1234
 00:47:34,800 --> 00:47:37,680
-Jason from
 Libertas see this, we can talk later
 
 1235
 00:47:37,680 --> 00:47:40,760
-Libertas see this, we can talk later
 about the implications.
 
 1236
 00:47:40,760 --> 00:47:43,692
-about the implications.
 This is an unfair question for me.
 
 1237
 00:47:43,692 --> 00:47:45,830
-This is an unfair question for me.
 [laughter]
 
 1238
@@ -6175,432 +4979,346 @@ Cuz
 
 1239
 00:47:48,520 --> 00:47:50,160
-Cuz
 there's this bad thing that happens when
 
 1240
 00:47:50,160 --> 00:47:52,120
-there's this bad thing that happens when
 I say what we want to do in regulation
 
 1241
 00:47:52,120 --> 00:47:54,280
-I say what we want to do in regulation
 then I have to make recommendations.
 
 1242
 00:47:54,280 --> 00:47:56,000
-then I have to make recommendations.
 It ends up happening.
 
 1243
 00:47:56,000 --> 00:47:59,800
-It ends up happening.
 Now some of this I've said
 
 1244
 00:47:59,800 --> 00:48:01,880
-Now some of this I've said
 big picture we know privacy and security
 
 1245
 00:48:01,880 --> 00:48:04,720
-big picture we know privacy and security
 is broken in the country. The amount
 
 1246
 00:48:04,720 --> 00:48:07,280
-is broken in the country. The amount
 of correlation happening with your data
 
 1247
 00:48:07,280 --> 00:48:09,040
-of correlation happening with your data
 and how that profiling and the
 
 1248
 00:48:09,040 --> 00:48:10,880
-and how that profiling and the
 scoring and predictive analytics is
 
 1249
 00:48:10,880 --> 00:48:13,240
-scoring and predictive analytics is
 occurring in every sector, private
 
 1250
 00:48:13,240 --> 00:48:15,720
-occurring in every sector, private
 sector, public sector, healthKERI,
 
 1251
 00:48:15,720 --> 00:48:18,680
-sector, public sector, healthKERI,
 social services, education. You would be
 
 1252
 00:48:18,680 --> 00:48:20,400
-social services, education. You would be
 amazed in this room and we have seen me
 
 1253
 00:48:20,400 --> 00:48:23,080
-amazed in this room and we have seen me
 and George have seen these systems. And
 
 1254
 00:48:23,080 --> 00:48:24,400
-and George have seen these systems. And
 so I'm coming at it from a different
 
 1255
 00:48:24,400 --> 00:48:26,320
-so I'm coming at it from a different
 perspective of what is coming from the
 
 1256
 00:48:26,320 --> 00:48:28,920
-perspective of what is coming from the
 private sector industry and how that
 
 1257
 00:48:28,920 --> 00:48:30,520
-private sector industry and how that
 would be used to exploit for
 
 1258
 00:48:30,520 --> 00:48:32,600
-would be used to exploit for
 monetary or the public sector side to
 
 1259
 00:48:32,600 --> 00:48:34,080
-monetary or the public sector side to
 try to influence you to make
 
 1260
 00:48:34,080 --> 00:48:35,680
-try to influence you to make
 different decisions.
 
 1261
 00:48:35,680 --> 00:48:37,880
-different decisions.
 I had seven years of experience in
 
 1262
 00:48:37,880 --> 00:48:39,960
-I had seven years of experience in
 privacy and security with human
 
 1263
 00:48:39,960 --> 00:48:42,920
-privacy and security with human
 services in Utah and I know HIPAA does
 
 1264
 00:48:42,920 --> 00:48:44,040
-services in Utah and I know HIPAA does
 not work and the levels of
 
 1265
 00:48:44,040 --> 00:48:46,960
-not work and the levels of
 non-compliance for both privacy and
 
 1266
 00:48:46,960 --> 00:48:50,080
-non-compliance for both privacy and
 security. There's maximum use of data,
 
 1267
 00:48:50,080 --> 00:48:51,720
-security. There's maximum use of data,
 but these other things are viewed as
 
 1268
 00:48:51,720 --> 00:48:53,200
-but these other things are viewed as
 just hindrances or there's not the
 
 1269
 00:48:53,200 --> 00:48:55,080
-just hindrances or there's not the
 expertise to do.
 
 1270
 00:48:55,080 --> 00:48:57,360
-expertise to do.
 So my
 
 1271
 00:48:57,360 --> 00:48:59,000
-So my
 And I think this was alluded to
 
 1272
 00:48:59,000 --> 00:49:01,200
-And I think this was alluded to
 on the legislative panel on the
 
 1273
 00:49:01,200 --> 00:49:03,840
-on the legislative panel on the
 steady summit. What I am working
 
 1274
 00:49:03,840 --> 00:49:05,280
-steady summit. What I am working
 toward is
 
 1275
 00:49:05,280 --> 00:49:06,880
-toward is
 I think there needs to be a total
 
 1276
 00:49:06,880 --> 00:49:10,600
-I think there needs to be a total
 rewrite of the approach. And so our
 
 1277
 00:49:10,600 --> 00:49:12,640
-rewrite of the approach. And so our
 goal is that you know, starting with
 
 1278
 00:49:12,640 --> 00:49:13,880
-goal is that you know, starting with
 identity
 
 1279
 00:49:13,880 --> 00:49:17,160
-identity
 end-to-end verifiability and zero trust.
 
 1280
 00:49:17,160 --> 00:49:20,520
-end-to-end verifiability and zero trust.
 Move toward the duty of loyalty
 
 1281
 00:49:20,520 --> 00:49:22,440
-Move toward the duty of loyalty
 model where anybody with your data
 
 1282
 00:49:22,440 --> 00:49:24,160
-model where anybody with your data
 should be acting in your best interest
 
 1283
 00:49:24,160 --> 00:49:25,720
-should be acting in your best interest
 and this cross all industry. This
 
 1284
 00:49:25,720 --> 00:49:27,680
-and this cross all industry. This
 crosses healthKERI, this crosses
 
 1285
 00:49:27,680 --> 00:49:30,360
-crosses healthKERI, this crosses
 financial. And if you're aligned with
 
 1286
 00:49:30,360 --> 00:49:32,800
-financial. And if you're aligned with
 that end-to-end verifiability, we
 
 1287
 00:49:32,800 --> 00:49:34,480
-that end-to-end verifiability, we
 modernize the laws for provenance
 
 1288
 00:49:34,480 --> 00:49:36,320
-modernize the laws for provenance
 requirements, we figure out, you know,
 
 1289
 00:49:36,320 --> 00:49:38,280
-requirements, we figure out, you know,
 how to track these terms,
 
 1290
 00:49:38,280 --> 00:49:40,440
-how to track these terms,
 Then we will be creating also some
 
 1291
 00:49:40,440 --> 00:49:43,440
-Then we will be creating also some
 extreme safe harbors for entities to act
 
 1292
 00:49:43,440 --> 00:49:45,440
-extreme safe harbors for entities to act
 To work within knowing mistakes are
 
 1293
 00:49:45,440 --> 00:49:47,360
-To work within knowing mistakes are
 going to happen, but I think that will
 
 1294
 00:49:47,360 --> 00:49:49,360
-going to happen, but I think that will
 create a more balanced free market and
 
 1295
 00:49:49,360 --> 00:49:52,000
-create a more balanced free market and
 set us up for coming in the age of
 
 1296
 00:49:52,000 --> 00:49:55,160
-set us up for coming in the age of
 of AI and automation, but anything
 
 1297
 00:49:55,160 --> 00:49:58,000
-of AI and automation, but anything
 absent a total overhaul
 
 1298
 00:49:58,000 --> 00:49:59,800
-absent a total overhaul
 for both public and the consumer
 
 1299
 00:49:59,800 --> 00:50:01,200
-for both public and the consumer
 side,
 
 1300
 00:50:01,200 --> 00:50:02,880
-side,
 it's going to be a very fragmented
 
 1301
 00:50:02,880 --> 00:50:05,360
-it's going to be a very fragmented
 disparate market and the public is going
 
 1302
 00:50:05,360 --> 00:50:07,200
-disparate market and the public is going
 to be confused and businesses are going
 
 1303
 00:50:07,200 --> 00:50:09,800
-to be confused and businesses are going
 to struggle to maintain our economic
 
 1304
 00:50:09,800 --> 00:50:12,800
-to struggle to maintain our economic
 dominance that we have here in the US.
 
 1305
 00:50:12,800 --> 00:50:14,840
-dominance that we have here in the US.
 So, since Chris pulled me in by saying
 
 1306
 00:50:14,840 --> 00:50:16,360
-So, since Chris pulled me in by saying
 I'd seen some of this stuff, too, I'm
 
 1307
 00:50:16,360 --> 00:50:18,560
-I'd seen some of this stuff, too, I'm
 just going to say, yes, that's true. I
 
 1308
 00:50:18,560 --> 00:50:20,120
-just going to say, yes, that's true. I
 mean, it's there have been many times
 
 1309
 00:50:20,120 --> 00:50:21,600
-mean, it's there have been many times
 when we've effectively done our
 
 1310
 00:50:21,600 --> 00:50:23,240
-when we've effectively done our
 architecture reviews and opened up a
 
 1311
 00:50:23,240 --> 00:50:24,680
-architecture reviews and opened up a
 system just to find that it has a
 
 1312
 00:50:24,680 --> 00:50:28,120
-system just to find that it has a
 digital hamster wheel still spinning and
 
 1313
 00:50:28,120 --> 00:50:30,000
-digital hamster wheel still spinning and
 we have needed to change and some of
 
 1314
 00:50:30,000 --> 00:50:31,720
-we have needed to change and some of
 that's going to be in behavior, as we've
 
 1315
 00:50:31,720 --> 00:50:34,280
-that's going to be in behavior, as we've
 talked about, and the incentives need to
 
 1316
 00:50:34,280 --> 00:50:36,320
-talked about, and the incentives need to
 be there to help us with the change.
 
 1317
 00:50:36,320 --> 00:50:38,920
-be there to help us with the change.
 So, as we started this day out, Sam had
 
 1318
 00:50:38,920 --> 00:50:41,120
-So, as we started this day out, Sam had
 made a bold statement that this is the
 
 1319
 00:50:41,120 --> 00:50:43,760
-made a bold statement that this is the
 potentially the year of KERI. I think
 
 1320
 00:50:43,760 --> 00:50:45,120
-potentially the year of KERI. I think
 from what we've heard from this panel,
 
 1321
 00:50:45,120 --> 00:50:47,800
-from what we've heard from this panel,
 that's been corroborated. So, Sam, put
 
 1322
 00:50:47,800 --> 00:50:49,320
-that's been corroborated. So, Sam, put
 one more in the win column. Can we have
 
 1323
 00:50:49,320 --> 00:50:51,680
-one more in the win column. Can we have
 a round of applause FOR OUR PANEL?
 
 1324
 00:50:51,680 --> 00:50:54,270
-a round of applause FOR OUR PANEL?
 [applause]
 
 1325

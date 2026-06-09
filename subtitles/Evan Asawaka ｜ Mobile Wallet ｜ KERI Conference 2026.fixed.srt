@@ -1,41 +1,34 @@
-﻿1
+1
 00:00:07,749 --> 00:00:11,679
 Yeah. So we have been developing a web
 wallet for KERI essentially just as
 
 2
 00:00:11,679 --> 00:00:14,240
-wallet for KERI essentially just as
 you know more wallets more platforms
 
 3
 00:00:14,240 --> 00:00:15,759
-you know more wallets more platforms
 better.
 
 4
 00:00:15,759 --> 00:00:18,800
-better.
 All right. So initially Sam set out
 
 5
 00:00:18,800 --> 00:00:22,400
-All right. So initially Sam set out
 these goals where we wanted to create a
 
 6
 00:00:22,400 --> 00:00:26,560
-these goals where we wanted to create a
 fully web native wallet because
 
 7
 00:00:26,560 --> 00:00:28,240
-fully web native wallet because
 currently the Locksmith application is a
 
 8
 00:00:28,240 --> 00:00:31,429
-currently the Locksmith application is a
 desktop application.
 
 9
@@ -49,82 +42,66 @@ it to run entirely in the browser
 
 11
 00:00:37,120 --> 00:00:40,320
-it to run entirely in the browser
 with no like server or anything running
 
 12
 00:00:40,320 --> 00:00:44,000
-with no like server or anything running
 KERIpy on the back end. Which,
 
 13
 00:00:44,000 --> 00:00:46,879
-KERIpy on the back end. Which,
 Proved to be a challenge in fact.
 
 14
 00:00:46,879 --> 00:00:48,879
-Proved to be a challenge in fact.
 Yeah. So again, we wanted everything to
 
 15
 00:00:48,879 --> 00:00:50,160
-Yeah. So again, we wanted everything to
 happen in the browser so you can have
 
 16
 00:00:50,160 --> 00:00:52,640
-happen in the browser so you can have
 all of your keys locally created and
 
 17
 00:00:52,640 --> 00:00:54,719
-all of your keys locally created and
 stored on your device. Don't have to
 
 18
 00:00:54,719 --> 00:00:55,760
-stored on your device. Don't have to
 worry about them being stored on some
 
 19
 00:00:55,760 --> 00:00:58,800
-worry about them being stored on some
 server. Then we could just send you
 
 20
 00:00:58,800 --> 00:01:02,160
-server. Then we could just send you
 this application and you would get your
 
 21
 00:01:02,160 --> 00:01:05,600
-this application and you would get your
 Your in browser wallet
 
 22
 00:01:05,600 --> 00:01:06,799
-Your in browser wallet
 and we also wanted it to be
 
 23
 00:01:06,799 --> 00:01:08,240
-and we also wanted it to be
 persistent because that would be a
 
 24
 00:01:08,240 --> 00:01:10,880
-persistent because that would be a
 little bit useless if it wasn't.
 
 25
 00:01:10,880 --> 00:01:13,280
-little bit useless if it wasn't.
 So some challenges running Python in a
 
 26
 00:01:13,280 --> 00:01:18,149
-So some challenges running Python in a
 web assembly was the first big hurdle.
 
 27
@@ -138,457 +115,366 @@ yeah Python is run on CPython which is a
 
 29
 00:01:23,520 --> 00:01:26,960
-yeah Python is run on CPython which is a
 you know C written interpreter.
 
 30
 00:01:26,960 --> 00:01:28,799
-you know C written interpreter.
 The cryptography had to work in the
 
 31
 00:01:28,799 --> 00:01:31,439
-The cryptography had to work in the
 browser and this basically meant that
 
 32
 00:01:31,439 --> 00:01:34,320
-browser and this basically meant that
 KERI couldn't drag LMDB into the
 
 33
 00:01:34,320 --> 00:01:37,439
-KERI couldn't drag LMDB into the
 webpath because LMDB relies on MAPAP
 
 34
 00:01:37,439 --> 00:01:38,960
-webpath because LMDB relies on MAPAP
 which is not supported in web
 
 35
 00:01:38,960 --> 00:01:41,360
-which is not supported in web
 assembly.
 
 36
 00:01:41,360 --> 00:01:43,920
-assembly.
 And yeah, again, we want this to be
 
 37
 00:01:43,920 --> 00:01:45,520
-And yeah, again, we want this to be
 not a one tab, one reload type of
 
 38
 00:01:45,520 --> 00:01:47,200
-not a one tab, one reload type of
 wallet. We want it to actually be like a
 
 39
 00:01:47,200 --> 00:01:48,320
-wallet. We want it to actually be like a
 production grade wallet that we can
 
 40
 00:01:48,320 --> 00:01:50,720
-production grade wallet that we can
 deploy where you can just take the
 
 41
 00:01:50,720 --> 00:01:52,640
-deploy where you can just take the
 files, serve them yourself, even if you
 
 42
 00:01:52,640 --> 00:01:54,399
-files, serve them yourself, even if you
 wanted to, and be able to have your own
 
 43
 00:01:54,399 --> 00:01:57,520
-wanted to, and be able to have your own
 identifiers that you can manage from a
 
 44
 00:01:57,520 --> 00:01:59,040
-identifiers that you can manage from a
 browser and not have to download an
 
 45
 00:01:59,040 --> 00:02:01,840
-browser and not have to download an
 application on specific
 
 46
 00:02:01,840 --> 00:02:03,680
-application on specific
 architectures. So getting Python into
 
 47
 00:02:03,680 --> 00:02:06,240
-architectures. So getting Python into
 the browser was a interesting
 
 48
 00:02:06,240 --> 00:02:09,840
-the browser was a interesting
 challenge. We found Piodide which is
 
 49
 00:02:09,840 --> 00:02:12,319
-challenge. We found Piodide which is
 essentially the Python interpreter
 
 50
 00:02:12,319 --> 00:02:14,720
-essentially the Python interpreter
 compiled to web assembly which allows it
 
 51
 00:02:14,720 --> 00:02:18,239
-compiled to web assembly which allows it
 to run into in the browser which
 
 52
 00:02:18,239 --> 00:02:20,080
-to run into in the browser which
 means that you can then run any Python
 
 53
 00:02:20,080 --> 00:02:22,080
-means that you can then run any Python
 native packages
 
 54
 00:02:22,080 --> 00:02:24,080
-native packages
 and for all the non-Python native
 
 55
 00:02:24,080 --> 00:02:27,120
-and for all the non-Python native
 packages that was a medium challenge
 
 56
 00:02:27,120 --> 00:02:28,400
-packages that was a medium challenge
 And then we have PycScript as like
 
 57
 00:02:28,400 --> 00:02:30,000
-And then we have PycScript as like
 the browser bridge so you can launch off
 
 58
 00:02:30,000 --> 00:02:31,920
-the browser bridge so you can launch off
 web workers in the browser and it
 
 59
 00:02:31,920 --> 00:02:33,040
-web workers in the browser and it
 interfaces with like the browser
 
 60
 00:02:33,040 --> 00:02:34,480
-interfaces with like the browser
 database so you can have again that
 
 61
 00:02:34,480 --> 00:02:37,040
-database so you can have again that
 persistent storage
 
 62
 00:02:37,040 --> 00:02:38,959
-persistent storage
 which is exactly what I put on my
 
 63
 00:02:38,959 --> 00:02:41,920
-which is exactly what I put on my
 slides.
 
 64
 00:02:41,920 --> 00:02:44,720
-slides.
 So to do this we had to again go through
 
 65
 00:02:44,720 --> 00:02:46,560
-So to do this we had to again go through
 the dependencies of KERIpy get them
 
 66
 00:02:46,560 --> 00:02:48,160
-the dependencies of KERIpy get them
 to work in the browser which started
 
 67
 00:02:48,160 --> 00:02:51,519
-to work in the browser which started
 with pi sodium which is
 
 68
 00:02:51,519 --> 00:02:54,000
-with pi sodium which is
 a python wrapper for lib sodium which is
 
 69
 00:02:54,000 --> 00:02:57,120
-a python wrapper for lib sodium which is
 a C library. So I had to take lib sodium
 
 70
 00:02:57,120 --> 00:03:00,480
-a C library. So I had to take lib sodium
 compile it to target web assembly and
 
 71
 00:03:00,480 --> 00:03:03,040
-compile it to target web assembly and
 then I re I changed some of the code in
 
 72
 00:03:03,040 --> 00:03:05,280
-then I re I changed some of the code in
 pi sodium so that it loaded the packaged
 
 73
 00:03:05,280 --> 00:03:07,519
-pi sodium so that it loaded the packaged
 lib sodium that I created called it py
 
 74
 00:03:07,519 --> 00:03:09,440
-lib sodium that I created called it py
 chloride because it's like you know
 
 75
 00:03:09,440 --> 00:03:12,560
-chloride because it's like you know
 sodium chloride yeah that was Sam's idea
 
 76
 00:03:12,560 --> 00:03:15,200
-sodium chloride yeah that was Sam's idea
 I'll give credit where credit blake 3
 
 77
 00:03:15,200 --> 00:03:18,080
-I'll give credit where credit blake 3
 is written in rust I had to compile this
 
 78
 00:03:18,080 --> 00:03:22,159
-is written in rust I had to compile this
 web assembly and also in the in an
 
 79
 00:03:22,159 --> 00:03:24,239
-web assembly and also in the in an
 attempt to get ready for future proofing
 
 80
 00:03:24,239 --> 00:03:27,760
-attempt to get ready for future proofing
 we took this PIQS which is an open
 
 81
 00:03:27,760 --> 00:03:32,560
-we took this PIQS which is an open
 quantum secure safety yeah library for
 
 82
 00:03:32,560 --> 00:03:35,840
-quantum secure safety yeah library for
 key creation and
 
 83
 00:03:35,840 --> 00:03:37,599
-key creation and
 made it web assembly compatible. So that
 
 84
 00:03:37,599 --> 00:03:40,000
-made it web assembly compatible. So that
 will be coming in the future hopefully
 
 85
 00:03:40,000 --> 00:03:43,519
-will be coming in the future hopefully
 before quantum computers.
 
 86
 00:03:43,519 --> 00:03:45,440
-before quantum computers.
 All right. Yes. Yeah. So we had to so in
 
 87
 00:03:45,440 --> 00:03:47,599
-All right. Yes. Yeah. So we had to so in
 KERIpy itself we had to make it web
 
 88
 00:03:47,599 --> 00:03:50,720
-KERIpy itself we had to make it web
 assembly safe which meant creating a
 
 89
 00:03:50,720 --> 00:03:53,680
-assembly safe which meant creating a
 second database backing which used
 
 90
 00:03:53,680 --> 00:03:55,599
-second database backing which used
 index DB which runs in the browser. We
 
 91
 00:03:55,599 --> 00:03:58,879
-index DB which runs in the browser. We
 created webdber instead of lmdvrer
 
 92
 00:03:58,879 --> 00:04:00,400
-created webdber instead of lmdvrer
 which means we're no longer relying on
 
 93
 00:04:00,400 --> 00:04:02,400
-which means we're no longer relying on
 the memory mapb.
 
 94
 00:04:02,400 --> 00:04:04,319
-the memory mapb.
 And we also had to make it so that the
 
 95
 00:04:04,319 --> 00:04:08,480
-And we also had to make it so that the
 imports don't randomly import lmdb so
 
 96
 00:04:08,480 --> 00:04:10,720
-imports don't randomly import lmdb so
 that it works in the browser. And again,
 
 97
 00:04:10,720 --> 00:04:13,120
-that it works in the browser. And again,
 this webder allowed us to create like a
 
 98
 00:04:13,120 --> 00:04:15,680
-this webder allowed us to create like a
 persistent storage in the browser that
 
 99
 00:04:15,680 --> 00:04:17,759
-persistent storage in the browser that
 can survive when you press reload on
 
 100
 00:04:17,759 --> 00:04:19,040
-can survive when you press reload on
 accident and then you lose all your keys
 
 101
 00:04:19,040 --> 00:04:19,840
-accident and then you lose all your keys
 because that would suck. Can
 
 102
 00:04:19,840 --> 00:04:21,440
-because that would suck. Can
 I ask you can I ask you a question?
 
 103
 00:04:21,440 --> 00:04:21,919
-I ask you can I ask you a question?
 Mhm.
 
 104
 00:04:21,919 --> 00:04:22,479
-Mhm.
 On that.
 
 105
 00:04:22,479 --> 00:04:23,040
-On that.
 Sure.
 
 106
 00:04:23,040 --> 00:04:26,479
-Sure.
 So is that
 
 107
 00:04:26,479 --> 00:04:28,160
-So is that
 from a technical perspective? Is
 
 108
 00:04:28,160 --> 00:04:30,160
-from a technical perspective? Is
 there an abstract class for that or is
 
 109
 00:04:30,160 --> 00:04:32,560
-there an abstract class for that or is
 that not implemented with an
 
 110
 00:04:32,560 --> 00:04:33,040
-that not implemented with an
 abstract?
 
 111
 00:04:33,040 --> 00:04:36,000
-abstract?
 Yeah, we created a base baser
 
 112
 00:04:36,000 --> 00:04:39,120
-Yeah, we created a base baser
 Or wait that's for basers. No,
 
 113
 00:04:39,120 --> 00:04:41,360
-Or wait that's for basers. No,
 for the database we u made a second
 
 114
 00:04:41,360 --> 00:04:43,280
-for the database we u made a second
 class just for this one.
 
 115
 00:04:43,280 --> 00:04:44,639
-class just for this one.
 Okay. So it's like what is it that
 
 116
 00:04:44,639 --> 00:04:46,080
-Okay. So it's like what is it that
 called duct typing or something? It's
 
 117
 00:04:46,080 --> 00:04:46,720
-called duct typing or something? It's
 like just the same.
 
 118
 00:04:46,720 --> 00:04:48,720
-like just the same.
 Yeah, we duct typed it all the same
 
 119
 00:04:48,720 --> 00:04:53,830
-Yeah, we duct typed it all the same
 functions just with index DB.
 
 120
@@ -602,222 +488,178 @@ but you ask a question but
 
 122
 00:04:56,960 --> 00:04:57,520
-but you ask a question but
 go ahead.
 
 123
 00:04:57,520 --> 00:04:59,919
-go ahead.
 I'm not familiar with K pi so I
 
 124
 00:04:59,919 --> 00:05:01,199
-I'm not familiar with K pi so I
 understand none of the words on
 
 125
 00:05:01,199 --> 00:05:02,080
-understand none of the words on
 Oh, okay.
 
 126
 00:05:02,080 --> 00:05:05,440
-Oh, okay.
 Except for like just from like a
 
 127
 00:05:05,440 --> 00:05:07,840
-Except for like just from like a
 more of a web centric mentality like I
 
 128
 00:05:07,840 --> 00:05:11,360
-more of a web centric mentality like I
 know like how is it storing data?
 
 129
 00:05:11,360 --> 00:05:14,320
-know like how is it storing data?
 We're we're using Pycript's API
 
 130
 00:05:14,320 --> 00:05:15,440
-We're we're using Pycript's API
 actually which is one of the reasons why
 
 131
 00:05:15,440 --> 00:05:17,120
-actually which is one of the reasons why
 we chose to use it. They have a storage
 
 132
 00:05:17,120 --> 00:05:20,960
-we chose to use it. They have a storage
 API that exposes basically a couple
 
 133
 00:05:20,960 --> 00:05:24,560
-API that exposes basically a couple
 useful functions that we can then use to
 
 134
 00:05:24,560 --> 00:05:26,639
-useful functions that we can then use to
 store our data persistently.
 
 135
 00:05:26,639 --> 00:05:28,240
-store our data persistently.
 What is web DB?
 
 136
 00:05:28,240 --> 00:05:30,880
-What is web DB?
 WebDer is the class is the ducttyped
 
 137
 00:05:30,880 --> 00:05:32,479
-WebDer is the class is the ducttyped
 class
 
 138
 00:05:32,479 --> 00:05:35,120
-class
 for LMDBRE and KERIpy. CarPie is the
 
 139
 00:05:35,120 --> 00:05:37,039
-for LMDBRE and KERIpy. CarPie is the
 core KERI repository.
 
 140
 00:05:37,039 --> 00:05:39,840
-core KERI repository.
 Okay. That implements
 
 141
 00:05:39,840 --> 00:05:40,160
-Okay. That implements
 okay
 
 142
 00:05:40,160 --> 00:05:41,520
-okay
 the protocol.
 
 143
 00:05:41,520 --> 00:05:42,960
-the protocol.
 We can talk more after.
 
 144
 00:05:42,960 --> 00:05:44,000
-We can talk more after.
 Okay.
 
 145
 00:05:44,000 --> 00:05:45,840
-Okay.
 Yeah. This is like basically the
 
 146
 00:05:45,840 --> 00:05:46,479
-Yeah. This is like basically the
 nitty-gritty of
 
 147
 00:05:46,479 --> 00:05:49,440
-nitty-gritty of
 this is some of the pi the KERIpy
 
 148
 00:05:49,440 --> 00:05:50,960
-this is some of the pi the KERIpy
 internals
 
 149
 00:05:50,960 --> 00:05:53,440
-internals
 of the library itself. Web db is a
 
 150
 00:05:53,440 --> 00:05:55,360
-of the library itself. Web db is a
 KERIpy
 
 151
 00:05:55,360 --> 00:05:56,720
-KERIpy
 so is ho.
 
 152
 00:05:56,720 --> 00:05:58,720
-so is ho.
 Ho is a separate library. It's an
 
 153
 00:05:58,720 --> 00:06:00,400
-Ho is a separate library. It's an
 asynchronous library that gets
 
 154
 00:06:00,400 --> 00:06:02,080
-asynchronous library that gets
 used.
 
 155
 00:06:02,080 --> 00:06:04,560
-used.
 Yeah. And Sam had to extend HIO actually
 
 156
 00:06:04,560 --> 00:06:07,120
-Yeah. And Sam had to extend HIO actually
 for this to be possible because the
 
 157
 00:06:07,120 --> 00:06:09,759
-for this to be possible because the
 browser and JavaScript uses
 
 158
 00:06:09,759 --> 00:06:13,120
-browser and JavaScript uses
 asynchronous calls and HIO did not
 
 159
 00:06:13,120 --> 00:06:15,039
-asynchronous calls and HIO did not
 before and so Sam had to add an
 
 160
 00:06:15,039 --> 00:06:17,280
-before and so Sam had to add an
 asynchronous interface into HIO we can
 
 161
 00:06:17,280 --> 00:06:19,440
-asynchronous interface into HIO we can
 then use to persist our database.
 
 162
 00:06:19,440 --> 00:06:22,160
-then use to persist our database.
 So are all these all these changes now
 
 163
 00:06:22,160 --> 00:06:24,560
-So are all these all these changes now
 today committed into
 
 164
 00:06:24,560 --> 00:06:25,440
-today committed into
 car pie?
 
 165
 00:06:25,440 --> 00:06:30,230
-car pie?
 It's on a branch but yeah
 
 166
@@ -827,112 +669,90 @@ works. We have the UI. It's just like a
 
 167
 00:06:34,400 --> 00:06:35,840
-works. We have the UI. It's just like a
 very basic JavaScript shell which
 
 168
 00:06:35,840 --> 00:06:39,199
-very basic JavaScript shell which
 launches our PIScript web workers that
 
 169
 00:06:39,199 --> 00:06:40,720
-launches our PIScript web workers that
 then call into KERI pine heo which
 
 170
 00:06:40,720 --> 00:06:42,080
-then call into KERI pine heo which
 allow us to run Python in the browser
 
 171
 00:06:42,080 --> 00:06:43,840
-allow us to run Python in the browser
 and those call out to index DB which
 
 172
 00:06:43,840 --> 00:06:46,240
-and those call out to index DB which
 stores it persistently.
 
 173
 00:06:46,240 --> 00:06:50,319
-stores it persistently.
 Yeah let's see
 
 174
 00:06:50,319 --> 00:06:53,520
-Yeah let's see
 keys are created in browser arrives.
 
 175
 00:06:53,520 --> 00:06:55,199
-keys are created in browser arrives.
 No server side key management. Don't
 
 176
 00:06:55,199 --> 00:06:58,319
-No server side key management. Don't
 worry guys here comes the demo.
 
 177
 00:06:58,319 --> 00:06:59,840
-worry guys here comes the demo.
 Before you get the demo guys
 
 178
 00:06:59,840 --> 00:07:01,520
-Before you get the demo guys
 Yeah. Shoot.
 
 179
 00:07:01,520 --> 00:07:03,919
-Yeah. Shoot.
 So, what' you guys do about keeper? How
 
 180
 00:07:03,919 --> 00:07:06,080
-So, what' you guys do about keeper? How
 are you encrypting keys?
 
 181
 00:07:06,080 --> 00:07:09,120
-are you encrypting keys?
 Made a web keeper that interfaces
 
 182
 00:07:09,120 --> 00:07:11,919
-Made a web keeper that interfaces
 with
 
 183
 00:07:11,919 --> 00:07:13,360
-with
 to do the encryption before putting it
 
 184
 00:07:13,360 --> 00:07:15,520
-to do the encryption before putting it
 in index DB.
 
 185
 00:07:15,520 --> 00:07:18,479
-in index DB.
 Yeah, I think so.
 
 186
 00:07:18,479 --> 00:07:19,840
-Yeah, I think so.
 I could look at the code. I can tell you
 
 187
 00:07:19,840 --> 00:07:22,720
-I could look at the code. I can tell you
 what I did. I don't know. I did a lot
 
 188
 00:07:22,720 --> 00:07:26,309
-what I did. I don't know. I did a lot
 of this like a couple months ago.
 
 189
@@ -942,92 +762,74 @@ database implementation, I would make a
 
 190
 00:07:31,680 --> 00:07:35,199
-database implementation, I would make a
 duct type class for another data store.
 
 191
 00:07:35,199 --> 00:07:39,199
-duct type class for another data store.
 Correct. Yeah. And then you'd have to
 
 192
 00:07:39,199 --> 00:07:41,919
-Correct. Yeah. And then you'd have to
 create like a baser for that class and a
 
 193
 00:07:41,919 --> 00:07:43,120
-create like a baser for that class and a
 keeper for that class.
 
 194
 00:07:43,120 --> 00:07:43,919
-keeper for that class.
 Really?
 
 195
 00:07:43,919 --> 00:07:47,199
-Really?
 Probably. Yeah.
 
 196
 00:07:47,199 --> 00:07:49,360
-Probably. Yeah.
 Anyway,
 
 197
 00:07:49,360 --> 00:07:51,840
-Anyway,
 here's the here's it running in the
 
 198
 00:07:51,840 --> 00:07:55,520
-here's the here's it running in the
 web. So, I just copied Locksmith's UI
 
 199
 00:07:55,520 --> 00:07:58,000
-web. So, I just copied Locksmith's UI
 because that felt intuitive.
 
 200
 00:07:58,000 --> 00:08:00,000
-because that felt intuitive.
 Again, this is just being hosted
 
 201
 00:08:00,000 --> 00:08:01,759
-Again, this is just being hosted
 locally. Eventually, I think we're going
 
 202
 00:08:01,759 --> 00:08:04,160
-locally. Eventually, I think we're going
 to want to deploy like a the KERI
 
 203
 00:08:04,160 --> 00:08:05,599
-to want to deploy like a the KERI
 Foundation will want to deploy like a,
 
 204
 00:08:05,599 --> 00:08:07,680
-Foundation will want to deploy like a,
 you know, basic rate limited version for
 
 205
 00:08:07,680 --> 00:08:09,680
-you know, basic rate limited version for
 the features that require witness and
 
 206
 00:08:09,680 --> 00:08:12,479
-the features that require witness and
 watcher access. So, I have some vaults.
 
 207
 00:08:12,479 --> 00:08:19,430
-watcher access. So, I have some vaults.
 See, I was testing some vaults out.
 
 208
@@ -1037,17 +839,14 @@ the vault.
 
 209
 00:08:23,840 --> 00:08:26,479
-the vault.
 We can create local identifiers. I'll
 
 210
 00:08:26,479 --> 00:08:29,360
-We can create local identifiers. I'll
 make one for Evan. Oh, those are emojis.
 
 211
 00:08:29,360 --> 00:08:40,149
-make one for Evan. Oh, those are emojis.
 I'll do an emoji.
 
 212
@@ -1057,27 +856,22 @@ Awesome.
 
 213
 00:08:43,200 --> 00:08:44,080
-Awesome.
 Easter egg.
 
 214
 00:08:44,080 --> 00:08:45,040
-Easter egg.
 Yep.
 
 215
 00:08:45,040 --> 00:08:46,800
-Yep.
 Solid alias. Yep.
 
 216
 00:08:46,800 --> 00:08:47,760
-Solid alias. Yep.
 And
 
 217
 00:08:47,760 --> 00:08:51,190
-And
 my ly
 
 218
@@ -1087,12 +881,10 @@ last night. Those might work. I created
 
 219
 00:08:54,959 --> 00:08:59,519
-last night. Those might work. I created
 the plug-in page.
 
 220
 00:08:59,519 --> 00:09:04,310
-the plug-in page.
 So let's see if it actually works.
 
 221
@@ -1102,157 +894,126 @@ The KERI Foundation plugin. So in
 
 222
 00:09:08,880 --> 00:09:11,519
-The KERI Foundation plugin. So in
 Locksmith which Phil demoed yesterday
 
 223
 00:09:11,519 --> 00:09:13,600
-Locksmith which Phil demoed yesterday
 which they then donated to open source
 
 224
 00:09:13,600 --> 00:09:15,760
-which they then donated to open source
 the idea is that because it's open
 
 225
 00:09:15,760 --> 00:09:17,600
-the idea is that because it's open
 source anyone who wants to provide
 
 226
 00:09:17,600 --> 00:09:19,760
-source anyone who wants to provide
 witness and watcher infrastructure can
 
 227
 00:09:19,760 --> 00:09:21,120
-witness and watcher infrastructure can
 create like a plugin
 
 228
 00:09:21,120 --> 00:09:21,839
-create like a plugin
 right
 
 229
 00:09:21,839 --> 00:09:24,240
-right
 and then you can connect to these
 
 230
 00:09:24,240 --> 00:09:27,040
-and then you can connect to these
 different providers plugins and get oh
 
 231
 00:09:27,040 --> 00:09:31,760
-different providers plugins and get oh
 it worked nice yeah so it works
 
 232
 00:09:31,760 --> 00:09:34,720
-it worked nice yeah so it works
 you can get witnesses in the browser
 
 233
 00:09:34,720 --> 00:09:37,920
-you can get witnesses in the browser
 so that plugin is pointed to some
 
 234
 00:09:37,920 --> 00:09:39,440
-so that plugin is pointed to some
 external infrastructure or
 
 235
 00:09:39,440 --> 00:09:41,920
-external infrastructure or
 it's pointed to the witness and watcher
 
 236
 00:09:41,920 --> 00:09:43,360
-it's pointed to the witness and watcher
 service that healthcare also so
 
 237
 00:09:43,360 --> 00:09:44,720
-service that healthcare also so
 graciously donated that is running
 
 238
 00:09:44,720 --> 00:09:46,720
-graciously donated that is running
 locally on my machine right now. So
 
 239
 00:09:46,720 --> 00:09:47,040
-locally on my machine right now. So
 again
 
 240
 00:09:47,040 --> 00:09:48,560
-again
 the same thing I de demoed yesterday.
 
 241
 00:09:48,560 --> 00:09:49,760
-the same thing I de demoed yesterday.
 Yeah, he demoed this yesterday just
 
 242
 00:09:49,760 --> 00:09:50,720
-Yeah, he demoed this yesterday just
 spinning up your own local
 
 243
 00:09:50,720 --> 00:09:52,399
-spinning up your own local
 infrastructure.
 
 244
 00:09:52,399 --> 00:09:54,560
-infrastructure.
 Help or the KERI Foundation is going
 
 245
 00:09:54,560 --> 00:09:58,080
-Help or the KERI Foundation is going
 to provide I think like a basic API
 
 246
 00:09:58,080 --> 00:10:00,000
-to provide I think like a basic API
 which will allow you to interface with
 
 247
 00:10:00,000 --> 00:10:02,720
-which will allow you to interface with
 our plug-in and then you can grab our
 
 248
 00:10:02,720 --> 00:10:05,600
-our plug-in and then you can grab our
 deployed witnesses and watchers on our
 
 249
 00:10:05,600 --> 00:10:07,360
-deployed witnesses and watchers on our
 service. That sound right?
 
 250
 00:10:07,360 --> 00:10:08,480
-service. That sound right?
 Close enough.
 
 251
 00:10:08,480 --> 00:10:10,480
-Close enough.
 Yeah.
 
 252
 00:10:10,480 --> 00:10:12,160
-Yeah.
 Have a plug car foundation will have a
 
 253
@@ -1262,87 +1023,70 @@ plugin. Other providers will have
 
 254
 00:10:13,760 --> 00:10:15,360
-plugin. Other providers will have
 plugins as well that they can provide.
 
 255
 00:10:15,360 --> 00:10:16,480
-plugins as well that they can provide.
 Yeah. So we're going to host all of
 
 256
 00:10:16,480 --> 00:10:19,040
-Yeah. So we're going to host all of
 our services or we have hosted our
 
 257
 00:10:19,040 --> 00:10:20,320
-our services or we have hosted our
 services on Digital Ocean.
 
 258
 00:10:20,320 --> 00:10:22,480
-services on Digital Ocean.
 Yeah. I'm doing this all running locally
 
 259
 00:10:22,480 --> 00:10:24,640
-Yeah. I'm doing this all running locally
 because it was faster for testing
 
 260
 00:10:24,640 --> 00:10:29,839
-because it was faster for testing
 essentially. Yeah, and so
 
 261
 00:10:29,839 --> 00:10:31,200
-essentially. Yeah, and so
 it's working in the browser. The next
 
 262
 00:10:31,200 --> 00:10:32,959
-it's working in the browser. The next
 thing I have I have a lot to show guys.
 
 263
 00:10:32,959 --> 00:10:37,360
-thing I have I have a lot to show guys.
 I've also been working on trying to
 
 264
 00:10:37,360 --> 00:10:40,880
-I've also been working on trying to
 get Locksmith
 
 265
 00:10:40,880 --> 00:10:43,760
-get Locksmith
 able to
 
 266
 00:10:43,760 --> 00:10:45,279
-able to
 have multiple plugins so that we can
 
 267
 00:10:45,279 --> 00:10:47,279
-have multiple plugins so that we can
 show that, you know, in this open source
 
 268
 00:10:47,279 --> 00:10:49,040
-show that, you know, in this open source
 ecosystem, anyone can come in and
 
 269
 00:10:49,040 --> 00:10:52,079
-ecosystem, anyone can come in and
 provide their own provide their own
 
 270
 00:10:52,079 --> 00:11:00,069
-provide their own provide their own
 witnesses and watchers as a service. So,
 
 271
@@ -1352,32 +1096,26 @@ Let me make sure this is working.
 
 272
 00:11:04,399 --> 00:11:07,200
-Let me make sure this is working.
 Okay,
 
 273
 00:11:07,200 --> 00:11:08,800
-Okay,
 here's locks. Here's the KERI
 
 274
 00:11:08,800 --> 00:11:09,760
-here's locks. Here's the KERI
 foundation.
 
 275
 00:11:09,760 --> 00:11:10,959
-foundation.
 This one's desktop.
 
 276
 00:11:10,959 --> 00:11:12,560
-This one's desktop.
 This is desktop. This is the desktop
 
 277
 00:11:12,560 --> 00:11:17,030
-This is desktop. This is the desktop
 app.
 
 278
@@ -1396,12 +1134,10 @@ my name.
 
 281
 00:11:29,120 --> 00:11:31,920
-my name.
 With an emoji. No. What? No emojis here,
 
 282
 00:11:31,920 --> 00:11:36,310
-With an emoji. No. What? No emojis here,
 guys. I'm sorry.
 
 283
@@ -1411,67 +1147,54 @@ Try again.
 
 284
 00:11:38,880 --> 00:11:41,360
-Try again.
 So, this is Locksmith, the open sourced
 
 285
 00:11:41,360 --> 00:11:42,079
-So, this is Locksmith, the open sourced
 version.
 
 286
 00:11:42,079 --> 00:11:42,880
-version.
 Okay. On the
 
 287
 00:11:42,880 --> 00:11:43,360
-Okay. On the
 desktop.
 
 288
 00:11:43,360 --> 00:11:45,360
-desktop.
 On desktop. This is the desktop app.
 
 289
 00:11:45,360 --> 00:11:46,800
-On desktop. This is the desktop app.
 So, we just doing this for comparison
 
 290
 00:11:46,800 --> 00:11:47,839
-So, we just doing this for comparison
 with the web one.
 
 291
 00:11:47,839 --> 00:11:50,079
-with the web one.
 Yeah, the web one is not as far along. I
 
 292
 00:11:50,079 --> 00:11:52,560
-Yeah, the web one is not as far along. I
 have plugins working on the desktop
 
 293
 00:11:52,560 --> 00:11:54,880
-have plugins working on the desktop
 one to demonstrate that you can have
 
 294
 00:11:54,880 --> 00:11:56,560
-one to demonstrate that you can have
 multiple providers giving you witnesses
 
 295
 00:11:56,560 --> 00:11:58,560
-multiple providers giving you witnesses
 and watchers. So, we have our KERI
 
 296
 00:11:58,560 --> 00:12:03,509
-and watchers. So, we have our KERI
 foundation plugin.
 
 297
@@ -1481,72 +1204,58 @@ identifier. I think Ryan showed this
 
 298
 00:12:07,600 --> 00:12:10,000
-identifier. I think Ryan showed this
 yesterday, but
 
 299
 00:12:10,000 --> 00:12:13,120
-yesterday, but
 it's basically just talking to
 
 300
 00:12:13,120 --> 00:12:15,920
-it's basically just talking to
 Oh, it worked. I'm not going to scan. It
 
 301
 00:12:15,920 --> 00:12:18,160
-Oh, it worked. I'm not going to scan. It
 works a lot faster when it's local.
 
 302
 00:12:18,160 --> 00:12:20,480
-works a lot faster when it's local.
 Does work a lot faster when it's local.
 
 303
 00:12:20,480 --> 00:12:23,040
-Does work a lot faster when it's local.
 And then I have a second plugin here.
 
 304
 00:12:23,040 --> 00:12:24,000
-And then I have a second plugin here.
 Well, actually, that wasn't anything
 
 305
 00:12:24,000 --> 00:12:25,360
-Well, actually, that wasn't anything
 impressive. So, I can add one of my
 
 306
 00:12:25,360 --> 00:12:27,440
-impressive. So, I can add one of my
 local identifiers in the KERI
 
 307
 00:12:27,440 --> 00:12:30,480
-local identifiers in the KERI
 Foundation plugin.
 
 308
 00:12:30,480 --> 00:12:33,680
-Foundation plugin.
 And then I can grab witnesses from the
 
 309
 00:12:33,680 --> 00:12:35,600
-And then I can grab witnesses from the
 KERI Foundation infrastructure which is
 
 310
 00:12:35,600 --> 00:12:38,560
-KERI Foundation infrastructure which is
 running locally.
 
 311
 00:12:38,560 --> 00:12:40,560
-running locally.
 And I have to provision and register
 
 312
@@ -1556,22 +1265,18 @@ them.
 
 313
 00:12:43,040 --> 00:12:45,040
-them.
 It's like kind of similar to
 
 314
 00:12:45,040 --> 00:12:46,399
-It's like kind of similar to
 healthcare because they left some shared
 
 315
 00:12:46,399 --> 00:12:49,600
-healthcare because they left some shared
 components. So I used a lot of them.
 
 316
 00:12:49,600 --> 00:12:53,910
-components. So I used a lot of them.
 And then I can grab this.
 
 317
@@ -1586,142 +1291,114 @@ witness from KERI Foundation
 
 319
 00:13:14,639 --> 00:13:16,480
-witness from KERI Foundation
 infrastructure ideally once it's
 
 320
 00:13:16,480 --> 00:13:19,040
-infrastructure ideally once it's
 deployed. And then say you as an
 
 321
 00:13:19,040 --> 00:13:21,200
-deployed. And then say you as an
 individual or corporation want to also
 
 322
 00:13:21,200 --> 00:13:23,519
-individual or corporation want to also
 provide witness infrastructure. You
 
 323
 00:13:23,519 --> 00:13:26,800
-provide witness infrastructure. You
 would create a plugin for Locksmith.
 
 324
 00:13:26,800 --> 00:13:28,720
-would create a plugin for Locksmith.
 I copied and pasted the folders so they
 
 325
 00:13:28,720 --> 00:13:30,399
-I copied and pasted the folders so they
 look very suspiciously similar.
 
 326
 00:13:30,399 --> 00:13:31,839
-look very suspiciously similar.
 Can I ask a question here?
 
 327
 00:13:31,839 --> 00:13:32,480
-Can I ask a question here?
 Yep.
 
 328
 00:13:32,480 --> 00:13:34,480
-Yep.
 So this
 
 329
 00:13:34,480 --> 00:13:35,519
-So this
 creating a plugin.
 
 330
 00:13:35,519 --> 00:13:36,160
-creating a plugin.
 Mhm.
 
 331
 00:13:36,160 --> 00:13:38,880
-Mhm.
 Do I have control over the UI?
 
 332
 00:13:38,880 --> 00:13:39,200
-Do I have control over the UI?
 Yeah.
 
 333
 00:13:39,200 --> 00:13:39,839
-Yeah.
 Yes.
 
 334
 00:13:39,839 --> 00:13:41,839
-Yes.
 And totally. And so if I want to have
 
 335
 00:13:41,839 --> 00:13:44,000
-And totally. And so if I want to have
 some enterprise
 
 336
 00:13:44,000 --> 00:13:47,040
-some enterprise
 whatever specific thing or any
 
 337
 00:13:47,040 --> 00:13:49,279
-whatever specific thing or any
 service I want I can I can integrate
 
 338
 00:13:49,279 --> 00:13:50,320
-service I want I can I can integrate
 that as a plugin.
 
 339
 00:13:50,320 --> 00:13:52,720
-that as a plugin.
 Totally. Yeah. And you probably want to
 
 340
 00:13:52,720 --> 00:13:54,480
-Totally. Yeah. And you probably want to
 again because this is fully open source
 
 341
 00:13:54,480 --> 00:13:56,959
-again because this is fully open source
 to get it like contributed to the you
 
 342
 00:13:56,959 --> 00:13:58,399
-to get it like contributed to the you
 could either contribute it like upstream
 
 343
 00:13:58,399 --> 00:14:00,079
-could either contribute it like upstream
 to like the one in the KERI
 
 344
 00:14:00,079 --> 00:14:01,680
-to like the one in the KERI
 Foundation repo or you could just clone
 
 345
 00:14:01,680 --> 00:14:02,800
-Foundation repo or you could just clone
 it and deploy it as your own
 
 346
 00:14:02,800 --> 00:14:05,990
-it and deploy it as your own
 application.
 
 347
@@ -1735,82 +1412,66 @@ Okay. Yeah. Yeah. And so just as an
 
 349
 00:14:10,240 --> 00:14:12,480
-Okay. Yeah. Yeah. And so just as an
 example, when we first did the plug-in
 
 350
 00:14:12,480 --> 00:14:14,399
-example, when we first did the plug-in
 concept, we were thinking just SaaS
 
 351
 00:14:14,399 --> 00:14:16,079
-concept, we were thinking just SaaS
 providers would put a plug in here so
 
 352
 00:14:16,079 --> 00:14:18,240
-providers would put a plug in here so
 that you'd get watchers and witnesses
 
 353
 00:14:18,240 --> 00:14:20,320
-that you'd get watchers and witnesses
 from anyone. But then we found use case
 
 354
 00:14:20,320 --> 00:14:23,519
-from anyone. But then we found use case
 for the cred enterprise credential
 
 355
 00:14:23,519 --> 00:14:25,199
-for the cred enterprise credential
 issuance platform that we're building.
 
 356
 00:14:25,199 --> 00:14:26,959
-issuance platform that we're building.
 The user interface is a plug into
 
 357
 00:14:26,959 --> 00:14:28,959
-The user interface is a plug into
 Locksmith and it just made sense because
 
 358
 00:14:28,959 --> 00:14:30,480
-Locksmith and it just made sense because
 if you're building any kind of user
 
 359
 00:14:30,480 --> 00:14:33,199
-if you're building any kind of user
 interface that could use KERI, it's a
 
 360
 00:14:33,199 --> 00:14:35,279
-interface that could use KERI, it's a
 great place to put it.
 
 361
 00:14:35,279 --> 00:14:35,440
-great place to put it.
 As
 
 362
 00:14:35,440 --> 00:14:36,720
-As
 long as you're like writing Python and
 
 363
 00:14:36,720 --> 00:14:40,880
-long as you're like writing Python and
 pass six. Yeah. Oh, yeah.
 
 364
 00:14:40,880 --> 00:14:45,509
-pass six. Yeah. Oh, yeah.
 Or like a cloth.
 
 365
@@ -1820,57 +1481,46 @@ it.
 
 366
 00:14:49,680 --> 00:14:52,000
-it.
 All right. So, I'm creating my test
 
 367
 00:14:52,000 --> 00:14:53,680
-All right. So, I'm creating my test
 infrastructure account. I'm not going to
 
 368
 00:14:53,680 --> 00:14:56,079
-infrastructure account. I'm not going to
 scan this one. And then I can go to my
 
 369
 00:14:56,079 --> 00:14:59,120
-scan this one. And then I can go to my
 identifiers. I can grab the same local
 
 370
 00:14:59,120 --> 00:15:01,760
-identifiers. I can grab the same local
 Eban identifier. You can see and it has
 
 371
 00:15:01,760 --> 00:15:03,199
-Eban identifier. You can see and it has
 the witnesses. It doesn't have all the
 
 372
 00:15:03,199 --> 00:15:04,720
-the witnesses. It doesn't have all the
 the fancy schmancy tooling that
 
 373
 00:15:04,720 --> 00:15:07,120
-the fancy schmancy tooling that
 Healthcare showed quite yet.
 
 374
 00:15:07,120 --> 00:15:11,120
-Healthcare showed quite yet.
 So now I have four witness servers
 
 375
 00:15:11,120 --> 00:15:14,639
-So now I have four witness servers
 running for this one. So I can add four
 
 376
 00:15:14,639 --> 00:15:22,949
-running for this one. So I can add four
 witnesses here.
 
 377
@@ -1880,12 +1530,10 @@ witnesses. I can also roach it out
 
 378
 00:15:35,440 --> 00:15:36,560
-witnesses. I can also roach it out
 the other witness, but I'm not going to
 
 379
 00:15:36,560 --> 00:15:39,990
-the other witness, but I'm not going to
 do that.
 
 380
@@ -1899,12 +1547,10 @@ I'm using Google authenticator on my
 
 382
 00:15:46,560 --> 00:15:48,959
-I'm using Google authenticator on my
 phone, so no one password copying like
 
 383
 00:15:48,959 --> 00:15:56,710
-phone, so no one password copying like
 Phil was showing yesterday for me.
 
 384
@@ -1914,42 +1560,34 @@ Yeah, but now they've expired. I'm just
 
 385
 00:16:01,440 --> 00:16:02,480
-Yeah, but now they've expired. I'm just
 kidding.
 
 386
 00:16:02,480 --> 00:16:04,000
-kidding.
 All right, there you go. They're in. So
 
 387
 00:16:04,000 --> 00:16:06,320
-All right, there you go. They're in. So
 now I have again it took it sequence
 
 388
 00:16:06,320 --> 00:16:07,920
-now I have again it took it sequence
 number is two because I rotated in two
 
 389
 00:16:07,920 --> 00:16:09,279
-number is two because I rotated in two
 sets of witnesses from two different
 
 390
 00:16:09,279 --> 00:16:11,120
-sets of witnesses from two different
 providers and there are five total
 
 391
 00:16:11,120 --> 00:16:13,120
-providers and there are five total
 witnesses witnessing my local
 
 392
 00:16:13,120 --> 00:16:20,870
-witnesses witnessing my local
 identifier. So, it works.
 
 393
@@ -1959,102 +1597,82 @@ yeah, I've been trying to make it easy
 
 394
 00:16:26,480 --> 00:16:28,079
-yeah, I've been trying to make it easy
 for anybody who wants to create a plugin
 
 395
 00:16:28,079 --> 00:16:30,079
-for anybody who wants to create a plugin
 to create their own plugin. I was
 
 396
 00:16:30,079 --> 00:16:32,000
-to create their own plugin. I was
 thinking u I've had many different
 
 397
 00:16:32,000 --> 00:16:34,079
-thinking u I've had many different
 approaches as to how I best thought
 
 398
 00:16:34,079 --> 00:16:36,880
-approaches as to how I best thought
 this possible. So, my newest approach
 
 399
 00:16:36,880 --> 00:16:38,320
-this possible. So, my newest approach
 was to create just like a templating
 
 400
 00:16:38,320 --> 00:16:42,320
-was to create just like a templating
 folder basically that would kind of
 
 401
 00:16:42,320 --> 00:16:44,720
-folder basically that would kind of
 just give you like a one UI page that
 
 402
 00:16:44,720 --> 00:16:47,279
-just give you like a one UI page that
 you could use as a template so that it
 
 403
 00:16:47,279 --> 00:16:48,720
-you could use as a template so that it
 would Claude could actually be smart
 
 404
 00:16:48,720 --> 00:16:50,480
-would Claude could actually be smart
 when he does it. Yeah.
 
 405
 00:16:50,480 --> 00:16:55,120
-when he does it. Yeah.
 So Sam introduced the concept of
 
 406
 00:16:55,120 --> 00:16:58,480
-So Sam introduced the concept of
 what was it called? Observer registar. I
 
 407
 00:16:58,480 --> 00:17:00,160
-what was it called? Observer registar. I
 still need to figure out what all
 
 408
 00:17:00,160 --> 00:17:05,039
-still need to figure out what all
 that is. But so similarly here the
 
 409
 00:17:05,039 --> 00:17:07,520
-that is. But so similarly here the
 plugin you could I suppose manage
 
 410
 00:17:07,520 --> 00:17:10,160
-plugin you could I suppose manage
 those kinds of things as well
 
 411
 00:17:10,160 --> 00:17:12,240
-those kinds of things as well
 eventually. Yeah I think the observer
 
 412
 00:17:12,240 --> 00:17:14,319
-eventually. Yeah I think the observer
 and the registar stuff.
 
 413
 00:17:14,319 --> 00:17:15,919
-and the registar stuff.
 Are they just extensions of witnesses
 
 414
@@ -2064,22 +1682,18 @@ and watchers? I guess I don't know
 
 415
 00:17:18,480 --> 00:17:20,959
-and watchers? I guess I don't know
 they monitor a different thing.
 
 416
 00:17:20,959 --> 00:17:22,240
-they monitor a different thing.
 Yeah those monitor your
 
 417
 00:17:22,240 --> 00:17:25,039
-Yeah those monitor your
 credentials. So, but if I wanted to make
 
 418
 00:17:25,039 --> 00:17:30,310
-credentials. So, but if I wanted to make
 a plugin for that, I could mention
 
 419
@@ -2089,102 +1703,82 @@ Yeah, I don't we haven't gone down that
 
 420
 00:17:32,880 --> 00:17:35,360
-Yeah, I don't we haven't gone down that
 road yet. So,
 
 421
 00:17:35,360 --> 00:17:37,520
-road yet. So,
 wait, sorry, what was the question?
 
 422
 00:17:37,520 --> 00:17:40,640
-wait, sorry, what was the question?
 If the plugin could be used for
 
 423
 00:17:40,640 --> 00:17:43,039
-If the plugin could be used for
 helping implement the registars and
 
 424
 00:17:43,039 --> 00:17:43,919
-helping implement the registars and
 observers.
 
 425
 00:17:43,919 --> 00:17:45,840
-observers.
 Yeah, absolutely. I mean, it would it
 
 426
 00:17:45,840 --> 00:17:47,360
-Yeah, absolutely. I mean, it would it
 would just be the user interface into
 
 427
 00:17:47,360 --> 00:17:49,440
-would just be the user interface into
 those. So if you stand up a SaaS platform
 
 428
 00:17:49,440 --> 00:17:51,600
-those. So if you stand up a SaaS platform
 that has APIs to allow you to stand up
 
 429
 00:17:51,600 --> 00:17:53,360
-that has APIs to allow you to stand up
 registars and observers that absolutely
 
 430
 00:17:53,360 --> 00:17:55,120
-registars and observers that absolutely
 you could add it to your interface here
 
 431
 00:17:55,120 --> 00:17:57,360
-you could add it to your interface here
 in your plugin to reserve those for
 
 432
 00:17:57,360 --> 00:18:00,240
-in your plugin to reserve those for
 you
 
 433
 00:18:00,240 --> 00:18:01,600
-you
 which is similar to the witness and
 
 434
 00:18:01,600 --> 00:18:04,000
-which is similar to the witness and
 watch you have to services out there.
 
 435
 00:18:04,000 --> 00:18:07,039
-watch you have to services out there.
 It's just UI to connect manage
 
 436
 00:18:07,039 --> 00:18:08,320
-It's just UI to connect manage
 the relationship.
 
 437
 00:18:08,320 --> 00:18:10,559
-the relationship.
 That's exactly right.
 
 438
 00:18:10,559 --> 00:18:15,600
-That's exactly right.
 Yep. Sweet.
 
 439
 00:18:15,600 --> 00:18:16,799
-Yep. Sweet.
 Okay that was most of the things I
 
 440
@@ -2194,437 +1788,350 @@ wanted to show. I mean this is cool
 
 441
 00:18:18,320 --> 00:18:21,520
-wanted to show. I mean this is cool
 because it shows the how we are car
 
 442
 00:18:21,520 --> 00:18:22,960
-because it shows the how we are car
 Foundation. We're open source accepting
 
 443
 00:18:22,960 --> 00:18:24,880
-Foundation. We're open source accepting
 multiple providers and it's possible.
 
 444
 00:18:24,880 --> 00:18:25,120
-multiple providers and it's possible.
 Yeah.
 
 445
 00:18:25,120 --> 00:18:27,520
-Yeah.
 So then what's the status of the
 
 446
 00:18:27,520 --> 00:18:31,120
-So then what's the status of the
 mobile because we did web and desktop
 
 447
 00:18:31,120 --> 00:18:33,360
-mobile because we did web and desktop
 the mobile is Jay do you want to take
 
 448
 00:18:33,360 --> 00:18:34,160
-the mobile is Jay do you want to take
 this one?
 
 449
 00:18:34,160 --> 00:18:34,799
-this one?
 I'm sorry.
 
 450
 00:18:34,799 --> 00:18:36,080
-I'm sorry.
 You want to take what's the status of
 
 451
 00:18:36,080 --> 00:18:37,840
-You want to take what's the status of
 the mobile? Jayzar been working on
 
 452
 00:18:37,840 --> 00:18:38,160
-the mobile? Jayzar been working on
 mobile
 
 453
 00:18:38,160 --> 00:18:40,400
-mobile
 be deployed sometime in the near future
 
 454
 00:18:40,400 --> 00:18:44,000
-be deployed sometime in the near future
 as soon as it gets the account info
 
 455
 00:18:44,000 --> 00:18:47,039
-as soon as it gets the account info
 from Sam for the iOS and Android stores.
 
 456
 00:18:47,039 --> 00:18:48,640
-from Sam for the iOS and Android stores.
 It's the same code though that runs the
 
 457
 00:18:48,640 --> 00:18:50,000
-It's the same code though that runs the
 web wallet. It's the same code.
 
 458
 00:18:50,000 --> 00:18:51,039
-web wallet. It's the same code.
 It's it's the same code.
 
 459
 00:18:51,039 --> 00:18:52,799
-It's it's the same code.
 So it's just being deployed.
 
 460
 00:18:52,799 --> 00:18:55,760
-So it's just being deployed.
 It the iOS and Android code are just in
 
 461
 00:18:55,760 --> 00:18:57,919
-It the iOS and Android code are just in
 wrappers that run almost like a pseudo
 
 462
 00:18:57,919 --> 00:19:00,480
-wrappers that run almost like a pseudo
 browser and we just deploy pretty much
 
 463
 00:19:00,480 --> 00:19:02,880
-browser and we just deploy pretty much
 the same code onto it.
 
 464
 00:19:02,880 --> 00:19:05,440
-the same code onto it.
 So it's the web essentially version.
 
 465
 00:19:05,440 --> 00:19:07,440
-So it's the web essentially version.
 Yeah. And yeah, it's it's pretty much
 
 466
 00:19:07,440 --> 00:19:09,760
-Yeah. And yeah, it's it's pretty much
 just it's just the web app.
 
 467
 00:19:09,760 --> 00:19:11,200
-just it's just the web app.
 So it's doing all the same stuff you
 
 468
 00:19:11,200 --> 00:19:16,000
-So it's doing all the same stuff you
 said the Wom and all the WebDers
 
 469
 00:19:16,000 --> 00:19:17,440
-said the Wom and all the WebDers
 mobile.
 
 470
 00:19:17,440 --> 00:19:19,280
-mobile.
 Yes. Yeah.
 
 471
 00:19:19,280 --> 00:19:22,400
-Yes. Yeah.
 Is there a mailbox as part of this?
 
 472
 00:19:22,400 --> 00:19:25,520
-Is there a mailbox as part of this?
 No, not yet.
 
 473
 00:19:25,520 --> 00:19:26,000
-No, not yet.
 Probably.
 
 474
 00:19:26,000 --> 00:19:27,440
-Probably.
 So
 
 475
 00:19:27,440 --> 00:19:29,679
-So
 So on e either the phone, you know, or
 
 476
 00:19:29,679 --> 00:19:32,880
-So on e either the phone, you know, or
 or a browser page, right? Let's let's
 
 477
 00:19:32,880 --> 00:19:35,120
-or a browser page, right? Let's let's
 let's say I'm an issuer. Mhm.
 
 478
 00:19:35,120 --> 00:19:38,559
-let's say I'm an issuer. Mhm.
 issue. You have a credential offer or
 
 479
 00:19:38,559 --> 00:19:39,760
-issue. You have a credential offer or
 grant
 
 480
 00:19:39,760 --> 00:19:42,559
-grant
 And your phone is off or your browser
 
 481
 00:19:42,559 --> 00:19:45,760
-And your phone is off or your browser
 is not on at the moment.
 
 482
 00:19:45,760 --> 00:19:47,919
-is not on at the moment.
 Will that will there be a mailbox in
 
 483
 00:19:47,919 --> 00:19:50,000
-Will that will there be a mailbox in
 between to pick it up?
 
 484
 00:19:50,000 --> 00:19:52,080
-between to pick it up?
 That I mean I would assume it would go
 
 485
 00:19:52,080 --> 00:19:53,840
-That I mean I would assume it would go
 to your witnesses or something.
 
 486
 00:19:53,840 --> 00:19:55,440
-to your witnesses or something.
 Yeah. So that's a common misconception.
 
 487
 00:19:55,440 --> 00:19:57,120
-Yeah. So that's a common misconception.
 So when we originally deployed
 
 488
 00:19:57,120 --> 00:19:59,360
-So when we originally deployed
 witnesses, we did make mailboxes a part
 
 489
 00:19:59,360 --> 00:20:01,200
-witnesses, we did make mailboxes a part
 of the witness deployment simply because
 
 490
 00:20:01,200 --> 00:20:02,799
-of the witness deployment simply because
 we were moving very fast and had nowhere
 
 491
 00:20:02,799 --> 00:20:03,919
-we were moving very fast and had nowhere
 else to hang them. Okay,
 
 492
 00:20:03,919 --> 00:20:05,120
-else to hang them. Okay,
 we didn't want to create a whole new
 
 493
 00:20:05,120 --> 00:20:07,440
-we didn't want to create a whole new
 service at the time. So, we have since
 
 494
 00:20:07,440 --> 00:20:09,200
-service at the time. So, we have since
 moved away from that. Healthcare does
 
 495
 00:20:09,200 --> 00:20:11,760
-moved away from that. Healthcare does
 provide mailboxes as a bespoke thing you
 
 496
 00:20:11,760 --> 00:20:14,080
-provide mailboxes as a bespoke thing you
 can reserve and I was going to demo that
 
 497
 00:20:14,080 --> 00:20:15,919
-can reserve and I was going to demo that
 yesterday but ran out of time and then
 
 498
 00:20:15,919 --> 00:20:18,080
-yesterday but ran out of time and then
 and then you just launch a Locksmith
 
 499
 00:20:18,080 --> 00:20:20,320
-and then you just launch a Locksmith
 turn it on say activate this mailbox and
 
 500
 00:20:20,320 --> 00:20:22,000
-turn it on say activate this mailbox and
 now you can get messages on it and if
 
 501
 00:20:22,000 --> 00:20:23,440
-now you can get messages on it and if
 you miss any messages they're stored
 
 502
 00:20:23,440 --> 00:20:24,799
-you miss any messages they're stored
 forward so they sit here.
 
 503
 00:20:24,799 --> 00:20:26,000
-forward so they sit here.
 Are those on your platform like you're
 
 504
 00:20:26,000 --> 00:20:26,400
-Are those on your platform like you're
 storing?
 
 505
 00:20:26,400 --> 00:20:27,600
-storing?
 Those are platform. So then
 
 506
 00:20:27,600 --> 00:20:29,039
-Those are platform. So then
 it's a very simple small service. It's
 
 507
 00:20:29,039 --> 00:20:30,320
-it's a very simple small service. It's
 it's basically if you were to look at
 
 508
 00:20:30,320 --> 00:20:31,840
-it's basically if you were to look at
 the code inside of KY you just pull out
 
 509
 00:20:31,840 --> 00:20:33,039
-the code inside of KY you just pull out
 the mailbox stuff. Yeah, because there
 
 510
 00:20:33,039 --> 00:20:34,159
-the mailbox stuff. Yeah, because there
 is mailbox up in the right
 
 511
 00:20:34,159 --> 00:20:35,600
-is mailbox up in the right
 that could be hosted anywhere.
 
 512
 00:20:35,600 --> 00:20:36,720
-that could be hosted anywhere.
 Absolutely. It's just like any other
 
 513
 00:20:36,720 --> 00:20:37,840
-Absolutely. It's just like any other
 resource, right?
 
 514
 00:20:37,840 --> 00:20:38,559
-resource, right?
 Yep. Yeah.
 
 515
 00:20:38,559 --> 00:20:41,120
-Yep. Yeah.
 Yeah. Yeah. Again, we got this code
 
 516
 00:20:41,120 --> 00:20:43,440
-Yeah. Yeah. Again, we got this code
 recently from healthcare. So,
 
 517
 00:20:43,440 --> 00:20:44,480
-recently from healthcare. So,
 awesome work. And
 
 518
 00:20:44,480 --> 00:20:46,240
-awesome work. And
 we're we're there's there's a long
 
 519
 00:20:46,240 --> 00:20:48,159
-we're we're there's there's a long
 list of features we're we're aiming to
 
 520
 00:20:48,159 --> 00:20:49,120
-list of features we're we're aiming to
 add. So,
 
 521
 00:20:49,120 --> 00:20:51,440
-add. So,
 just hit the ones that were priorities
 
 522
 00:20:51,440 --> 00:20:53,679
-just hit the ones that were priorities
 for the conference first. And awesome.
 
 523
 00:20:53,679 --> 00:20:55,280
-for the conference first. And awesome.
 I mean, again, you can you can always go
 
 524
 00:20:55,280 --> 00:20:56,880
-I mean, again, you can you can always go
 into the open source repos, create
 
 525
 00:20:56,880 --> 00:20:58,799
-into the open source repos, create
 issues for features you want to see, and
 
 526
 00:20:58,799 --> 00:21:00,320
-issues for features you want to see, and
 We can address those as they come in
 
 527
 00:21:00,320 --> 00:21:03,350
-We can address those as they come in
 as well.
 
 528
@@ -2634,72 +2141,58 @@ Or fork and build.
 
 529
 00:21:05,520 --> 00:21:05,840
-Or fork and build.
 Yeah,
 
 530
 00:21:05,840 --> 00:21:08,559
-Yeah,
 absolutely.
 
 531
 00:21:08,559 --> 00:21:10,799
-absolutely.
 So did I understand you correctly
 
 532
 00:21:10,799 --> 00:21:13,200
-So did I understand you correctly
 that you had you said five witnesses
 
 533
 00:21:13,200 --> 00:21:15,280
-that you had you said five witnesses
 were monitoring? Well, five witnesses
 
 534
 00:21:15,280 --> 00:21:17,840
-were monitoring? Well, five witnesses
 were associated with your identifier.
 
 535
 00:21:17,840 --> 00:21:19,679
-were associated with your identifier.
 Okay. That's the same amount of
 
 536
 00:21:19,679 --> 00:21:22,320
-Okay. That's the same amount of
 witnesses that GLE maintains in the
 
 537
 00:21:22,320 --> 00:21:25,039
-witnesses that GLE maintains in the
 infrastructure and the same that we
 
 538
 00:21:25,039 --> 00:21:28,960
-infrastructure and the same that we
 require from QDIs to contribute to with
 
 539
 00:21:28,960 --> 00:21:31,919
-require from QDIs to contribute to with
 only a small overlap for shared
 
 540
 00:21:31,919 --> 00:21:36,000
-only a small overlap for shared
 resources in effect. Should we be
 
 541
 00:21:36,000 --> 00:21:39,360
-resources in effect. Should we be
 also perhaps providing guidance to
 
 542
 00:21:39,360 --> 00:21:44,870
-also perhaps providing guidance to
 wallet holders? Credential holders
 
 543
@@ -2713,586 +2206,464 @@ or guidance as to how many witnesses
 
 545
 00:21:47,280 --> 00:21:48,159
-or guidance as to how many witnesses
 they should be.
 
 546
 00:21:48,159 --> 00:21:50,000
-they should be.
 True. Yeah. Well, yeah. If there's
 
 547
 00:21:50,000 --> 00:21:51,280
-True. Yeah. Well, yeah. If there's
 particular requirements for it, then
 
 548
 00:21:51,280 --> 00:21:52,480
-particular requirements for it, then
 yeah, absolutely.
 
 549
 00:21:52,480 --> 00:21:54,400
-yeah, absolutely.
 Yeah. Sam's recommendation was
 
 550
 00:21:54,400 --> 00:21:55,280
-Yeah. Sam's recommendation was
 was five.
 
 551
 00:21:55,280 --> 00:21:58,400
-was five.
 It was either one or four
 
 552
 00:21:58,400 --> 00:22:00,640
-It was either one or four
 with a Yeah. cuz he says three when you
 
 553
 00:22:00,640 --> 00:22:02,480
-with a Yeah. cuz he says three when you
 have three or four as your th signing
 
 554
 00:22:02,480 --> 00:22:04,799
-have three or four as your th signing
 threshold for witnesses you can't be
 
 555
 00:22:04,799 --> 00:22:06,799
-threshold for witnesses you can't be
 eclipsed and then if you have one well
 
 556
 00:22:06,799 --> 00:22:08,080
-eclipsed and then if you have one well
 it's less secure because your one could
 
 557
 00:22:08,080 --> 00:22:08,640
-it's less secure because your one could
 be
 
 558
 00:22:08,640 --> 00:22:09,200
-be
 compromised
 
 559
-00:22:09,200 --> 00:22:09,840
-compromised
-compromised
+00:22:09,840 --> 00:22:10,559
+but yeah
 
 560
-00:22:09,840 --> 00:22:10,559
-compromised
-but yeah
+00:22:10,559 --> 00:22:11,120
+okay
 
 561
-00:22:10,559 --> 00:22:11,120
-but yeah
-okay
+00:22:11,120 --> 00:22:13,520
+yeah I think a mission of the KERI
 
 562
-00:22:11,120 --> 00:22:13,520
-okay
-yeah I think a mission of the KERI
+00:22:13,520 --> 00:22:15,679
+Foundation is going to also be to
 
 563
-00:22:13,520 --> 00:22:15,679
-yeah I think a mission of the KERI
-Foundation is going to also be to
+00:22:15,679 --> 00:22:17,919
+provide
 
 564
-00:22:15,679 --> 00:22:17,919
-Foundation is going to also be to
-provide
+00:22:17,919 --> 00:22:20,960
+documentation with recommendations and I
 
 565
-00:22:17,919 --> 00:22:20,960
-provide
-documentation with recommendations and I
+00:22:20,960 --> 00:22:22,720
+would guess it will grow to span
 
 566
-00:22:20,960 --> 00:22:22,720
-documentation with recommendations and I
-would guess it will grow to span
+00:22:22,720 --> 00:22:25,440
+ecosystems so like if you're if you
 
 567
-00:22:22,720 --> 00:22:25,440
-would guess it will grow to span
-ecosystems so like if you're if you
+00:22:25,440 --> 00:22:26,960
+need if you're going to become a QBI
 
 568
-00:22:25,440 --> 00:22:26,960
-ecosystems so like if you're if you
-need if you're going to become a QBI
+00:22:26,960 --> 00:22:28,559
+here's what you will need to consider
 
 569
-00:22:26,960 --> 00:22:28,559
-need if you're going to become a QBI
-here's what you will need to consider
+00:22:28,559 --> 00:22:29,679
+here are the recommend recommendations
 
 570
-00:22:28,559 --> 00:22:29,679
-here's what you will need to consider
-here are the recommend recommendations
+00:22:29,679 --> 00:22:31,120
+you're going to have to follow if you're
 
 571
-00:22:29,679 --> 00:22:31,120
-here are the recommend recommendations
-you're going to have to follow if you're
+00:22:31,120 --> 00:22:32,799
+going to be doing this in healthcare.
 
 572
-00:22:31,120 --> 00:22:32,799
-you're going to have to follow if you're
-going to be doing this in healthcare.
+00:22:32,799 --> 00:22:34,720
+Here's other things. I suspect that
 
 573
-00:22:32,799 --> 00:22:34,720
-going to be doing this in healthcare.
-Here's other things. I suspect that
+00:22:34,720 --> 00:22:36,640
+KERI Foundation will be a central
 
 574
-00:22:34,720 --> 00:22:36,640
-Here's other things. I suspect that
-KERI Foundation will be a central
+00:22:36,640 --> 00:22:37,760
+location for that stuff.
 
 575
-00:22:36,640 --> 00:22:37,760
-KERI Foundation will be a central
-location for that stuff.
+00:22:37,760 --> 00:22:40,720
+Well, I've already got those kinds of
 
 576
-00:22:37,760 --> 00:22:40,720
-location for that stuff.
-Well, I've already got those kinds of
+00:22:40,720 --> 00:22:42,720
+requirements in the ecosystem governance
 
 577
-00:22:40,720 --> 00:22:42,720
-Well, I've already got those kinds of
-requirements in the ecosystem governance
+00:22:42,720 --> 00:22:44,400
+framework for QBIs. Yes.
 
 578
-00:22:42,720 --> 00:22:44,400
-requirements in the ecosystem governance
-framework for QBIs. Yes.
+00:22:44,400 --> 00:22:46,559
+Because obviously we issue credentials
 
 579
-00:22:44,400 --> 00:22:46,559
-framework for QBIs. Yes.
-Because obviously we issue credentials
+00:22:46,559 --> 00:22:47,919
+to the QBIS.
 
 580
-00:22:46,559 --> 00:22:47,919
-Because obviously we issue credentials
-to the QBIS.
+00:22:47,919 --> 00:22:49,919
+But I could put in the credential
 
 581
-00:22:47,919 --> 00:22:49,919
-to the QBIS.
-But I could put in the credential
+00:22:49,919 --> 00:22:53,200
+frameworks for the legal entity one, the
 
 582
-00:22:49,919 --> 00:22:53,200
-But I could put in the credential
-frameworks for the legal entity one, the
+00:22:53,200 --> 00:22:57,440
+ECRS and the OS. A recommendation of
 
 583
-00:22:53,200 --> 00:22:57,440
-frameworks for the legal entity one, the
-ECRS and the OS. A recommendation of
+00:22:57,440 --> 00:23:00,559
+how many witnesses should be
 
 584
-00:22:57,440 --> 00:23:00,559
-ECRS and the OS. A recommendation of
-how many witnesses should be
+00:23:00,559 --> 00:23:01,679
+associated with.
 
 585
-00:23:00,559 --> 00:23:01,679
-how many witnesses should be
-associated with.
+00:23:01,679 --> 00:23:02,640
+Yeah, absolutely.
 
 586
-00:23:01,679 --> 00:23:02,640
-associated with.
-Yeah, absolutely.
+00:23:02,640 --> 00:23:05,039
+That would be the right place to put.
 
 587
-00:23:02,640 --> 00:23:05,039
-Yeah, absolutely.
-That would be the right place to put.
+00:23:05,039 --> 00:23:05,840
+Okay.
 
 588
-00:23:05,039 --> 00:23:05,840
-That would be the right place to put.
-Okay.
-
-589
 00:23:05,840 --> 00:23:10,789
-Okay.
 All right. Thank you.
 
-590
+589
 00:23:12,070 --> 00:23:15,280
 Anybody have other questions, things you
 want to say, comments, concerns? Yeah.
 
-591
+590
 00:23:15,280 --> 00:23:17,039
-want to say, comments, concerns? Yeah.
 I just have a general question. I'm
+
+591
+00:23:17,039 --> 00:23:20,080
+not very familiar with KERIpy and I'm
 
 592
-00:23:17,039 --> 00:23:20,080
-I just have a general question. I'm
-not very familiar with KERIpy and I'm
+00:23:20,080 --> 00:23:22,000
+I'm doing my own like very lightweight
 
 593
-00:23:20,080 --> 00:23:22,000
-not very familiar with KERIpy and I'm
-I'm doing my own like very lightweight
+00:23:22,000 --> 00:23:24,320
+kind of educational JavaScript
 
 594
-00:23:22,000 --> 00:23:24,320
-I'm doing my own like very lightweight
-kind of educational JavaScript
+00:23:24,320 --> 00:23:26,400
+implementation and as soon as you as
 
 595
-00:23:24,320 --> 00:23:26,400
-kind of educational JavaScript
-implementation and as soon as you as
+00:23:26,400 --> 00:23:27,600
+soon as you try something like that you
 
 596
-00:23:26,400 --> 00:23:27,600
-implementation and as soon as you as
-soon as you try something like that you
+00:23:27,600 --> 00:23:30,159
+notice how extensive the spec is. So
 
 597
-00:23:27,600 --> 00:23:30,159
-soon as you try something like that you
-notice how extensive the spec is. So
-
-598
 00:23:30,159 --> 00:23:35,909
-notice how extensive the spec is. So
 it's like on step five
 
-599
+598
 00:23:38,470 --> 00:23:39,840
 but so you're doing this in the web
 but you're not reimplementing with
 
-600
+599
 00:23:39,840 --> 00:23:42,159
-but you're not reimplementing with
 JavaScript you're wrapping KERIpy. So
+
+600
+00:23:42,159 --> 00:23:45,840
+you basically get all the like how
 
 601
-00:23:42,159 --> 00:23:45,840
-JavaScript you're wrapping KERIpy. So
-you basically get all the like how
+00:23:45,840 --> 00:23:47,280
+much of the spec does KERIpy
 
 602
-00:23:45,840 --> 00:23:47,280
-you basically get all the like how
-much of the spec does KERIpy
+00:23:47,280 --> 00:23:48,480
+implement
 
 603
-00:23:47,280 --> 00:23:48,480
-much of the spec does KERIpy
-implement
+00:23:48,480 --> 00:23:51,200
+like pretty much all of it or
 
 604
-00:23:48,480 --> 00:23:51,200
-implement
-like pretty much all of it or
+00:23:51,200 --> 00:23:56,159
+it so KERIpy as it stands right now in
 
 605
-00:23:51,200 --> 00:23:56,159
-like pretty much all of it or
-it so KERIpy as it stands right now in
+00:23:56,159 --> 00:24:00,400
+there's three branches 1.2x and 1.3x
 
 606
-00:23:56,159 --> 00:24:00,400
-it so KERIpy as it stands right now in
-there's three branches 1.2x and 1.3x
+00:24:00,400 --> 00:24:03,360
+those implement full KERI of KERI and
 
 607
-00:24:00,400 --> 00:24:03,360
-there's three branches 1.2x and 1.3x
-those implement full KERI of KERI and
+00:24:03,360 --> 00:24:05,840
+ACDC of 1.0
 
 608
-00:24:03,360 --> 00:24:05,840
-those implement full KERI of KERI and
-ACDC of 1.0
+00:24:05,840 --> 00:24:08,159
+and KERI has since evolved
 
 609
-00:24:05,840 --> 00:24:08,159
-ACDC of 1.0
-and KERI has since evolved
+00:24:08,159 --> 00:24:11,600
+significantly into 2.0. What these guys
 
 610
-00:24:08,159 --> 00:24:11,600
-and KERI has since evolved
-significantly into 2.0. What these guys
+00:24:11,600 --> 00:24:14,880
+are well so one of their missions
 
 611
-00:24:11,600 --> 00:24:14,880
-significantly into 2.0. What these guys
-are well so one of their missions
+00:24:14,880 --> 00:24:17,600
+besides just put out these tools is to
 
 612
-00:24:14,880 --> 00:24:17,600
-are well so one of their missions
-besides just put out these tools is to
+00:24:17,600 --> 00:24:19,760
+take KERIpy and completely upgrade it
 
 613
-00:24:17,600 --> 00:24:19,760
-besides just put out these tools is to
-take KERIpy and completely upgrade it
+00:24:19,760 --> 00:24:22,720
+to 2.0. That is still work in progress
 
 614
-00:24:19,760 --> 00:24:22,720
-take KERIpy and completely upgrade it
-to 2.0. That is still work in progress
+00:24:22,720 --> 00:24:26,320
+and it is the current main branch on
 
 615
-00:24:22,720 --> 00:24:26,320
-to 2.0. That is still work in progress
-and it is the current main branch on
+00:24:26,320 --> 00:24:28,799
+KERIpy represents that work.
 
 616
-00:24:26,320 --> 00:24:28,799
-and it is the current main branch on
-KERIpy represents that work.
+00:24:28,799 --> 00:24:32,799
+Okay. So it will of course eventually
 
 617
-00:24:28,799 --> 00:24:32,799
-KERIpy represents that work.
-Okay. So it will of course eventually
+00:24:32,799 --> 00:24:34,880
+implement certainly the entire KERI
 
 618
-00:24:32,799 --> 00:24:34,880
-Okay. So it will of course eventually
-implement certainly the entire KERI
+00:24:34,880 --> 00:24:38,240
+spec and I would guess the first
 
 619
-00:24:34,880 --> 00:24:38,240
-implement certainly the entire KERI
-spec and I would guess the first
+00:24:38,240 --> 00:24:40,960
+milestone is as much of the ACD specs
 
 620
-00:24:38,240 --> 00:24:40,960
-spec and I would guess the first
-milestone is as much of the ACD specs
+00:24:40,960 --> 00:24:45,360
+ACDC spec as is needed to satisfy SEDI.
 
 621
-00:24:40,960 --> 00:24:45,360
-milestone is as much of the ACD specs
-ACDC spec as is needed to satisfy SEDI.
+00:24:45,360 --> 00:24:47,520
+So I'm suspecting that's probably Sam's
 
 622
-00:24:45,360 --> 00:24:47,520
-ACDC spec as is needed to satisfy SEDI.
-So I'm suspecting that's probably Sam's
+00:24:47,520 --> 00:24:50,000
+big goal for getting KERIpy to where
 
 623
-00:24:47,520 --> 00:24:50,000
-So I'm suspecting that's probably Sam's
-big goal for getting KERIpy to where
+00:24:50,000 --> 00:24:51,440
+it needs to be.
 
 624
-00:24:50,000 --> 00:24:51,440
-big goal for getting KERIpy to where
-it needs to be.
+00:24:51,440 --> 00:24:53,440
+But it seems like with this strategy
 
 625
-00:24:51,440 --> 00:24:53,440
-it needs to be.
-But it seems like with this strategy
+00:24:53,440 --> 00:24:56,559
+whatever the feature completeness is of
 
 626
-00:24:53,440 --> 00:24:56,559
-But it seems like with this strategy
-whatever the feature completeness is of
+00:24:56,559 --> 00:24:58,400
+KERIpy you kind of get that for free.
 
 627
-00:24:56,559 --> 00:24:58,400
-whatever the feature completeness is of
-KERIpy you kind of get that for free.
+00:24:58,400 --> 00:24:59,919
+You get that from this
 
 628
-00:24:58,400 --> 00:24:59,919
-KERIpy you kind of get that for free.
-You get that from this
+00:24:59,919 --> 00:25:01,600
+except
 
 629
-00:24:59,919 --> 00:25:01,600
-You get that from this
-except
+00:25:01,600 --> 00:25:03,919
+is there is there a distinct UI in the
 
 630
-00:25:01,600 --> 00:25:03,919
-except
-is there is there a distinct UI in the
+00:25:03,919 --> 00:25:06,400
+browser like do you have like could you
 
 631
-00:25:03,919 --> 00:25:06,400
-is there is there a distinct UI in the
-browser like do you have like could you
+00:25:06,400 --> 00:25:08,159
+have a situation where the desktop is
 
 632
-00:25:06,400 --> 00:25:08,159
-browser like do you have like could you
-have a situation where the desktop is
+00:25:08,159 --> 00:25:10,400
+ahead of the browser because the browser
 
 633
-00:25:08,159 --> 00:25:10,400
-have a situation where the desktop is
-ahead of the browser because the browser
+00:25:10,400 --> 00:25:12,880
+hasn't written the HTML templates to
 
 634
-00:25:10,400 --> 00:25:12,880
-ahead of the browser because the browser
-hasn't written the HTML templates to
+00:25:12,880 --> 00:25:13,679
+Yes. Okay.
 
 635
-00:25:12,880 --> 00:25:13,679
-hasn't written the HTML templates to
-Yes. Okay.
+00:25:13,679 --> 00:25:16,240
+Yep. Yep. Those are so those are Yeah.
 
 636
-00:25:13,679 --> 00:25:16,240
-Yes. Okay.
-Yep. Yep. Those are so those are Yeah.
+00:25:16,240 --> 00:25:18,640
+Those are separate UI implementations.
 
 637
-00:25:16,240 --> 00:25:18,640
-Yep. Yep. Those are so those are Yeah.
-Those are separate UI implementations.
+00:25:18,640 --> 00:25:21,039
+Yeah. that could come slightly opposite
 
 638
-00:25:18,640 --> 00:25:21,039
-Those are separate UI implementations.
-Yeah. that could come slightly opposite
+00:25:21,039 --> 00:25:22,799
+and I would suspect they'll eventually
 
 639
-00:25:21,039 --> 00:25:22,799
-Yeah. that could come slightly opposite
-and I would suspect they'll eventually
+00:25:22,799 --> 00:25:25,200
+grow to be somewhat separate simply
 
 640
-00:25:22,799 --> 00:25:25,200
-and I would suspect they'll eventually
-grow to be somewhat separate simply
+00:25:25,200 --> 00:25:26,400
+because of the paradigm of running
 
 641
-00:25:25,200 --> 00:25:26,400
-grow to be somewhat separate simply
-because of the paradigm of running
+00:25:26,400 --> 00:25:28,799
+something in the web and mobile versus a
 
 642
-00:25:26,400 --> 00:25:28,799
-because of the paradigm of running
-something in the web and mobile versus a
+00:25:28,799 --> 00:25:29,600
+desktop app.
 
 643
-00:25:28,799 --> 00:25:29,600
-something in the web and mobile versus a
-desktop app.
+00:25:29,600 --> 00:25:30,080
+Yeah.
 
 644
-00:25:29,600 --> 00:25:30,080
-desktop app.
-Yeah.
+00:25:30,080 --> 00:25:32,159
+Just like if you look at one password
 
 645
-00:25:30,080 --> 00:25:32,159
-Yeah.
-Just like if you look at one password
+00:25:32,159 --> 00:25:33,840
+looks similar but there's quite a bit of
 
 646
-00:25:32,159 --> 00:25:33,840
-Just like if you look at one password
-looks similar but there's quite a bit of
+00:25:33,840 --> 00:25:35,360
+difference functionality between their
 
 647
-00:25:33,840 --> 00:25:35,360
-looks similar but there's quite a bit of
-difference functionality between their
+00:25:35,360 --> 00:25:37,120
+plugin and the desktop app.
 
 648
-00:25:35,360 --> 00:25:37,120
-difference functionality between their
-plugin and the desktop app.
+00:25:37,120 --> 00:25:39,039
+Yeah.
 
 649
-00:25:37,120 --> 00:25:39,039
-plugin and the desktop app.
-Yeah.
+00:25:39,039 --> 00:25:43,360
+So the Locksmith desktop app is that
 
 650
-00:25:39,039 --> 00:25:43,360
-Yeah.
-So the Locksmith desktop app is that
+00:25:43,360 --> 00:25:46,000
+also Python everything?
 
 651
-00:25:43,360 --> 00:25:46,000
-So the Locksmith desktop app is that
-also Python everything?
+00:25:46,000 --> 00:25:48,320
+Yes. And what's the
 
 652
-00:25:46,000 --> 00:25:48,320
-also Python everything?
-Yes. And what's the
+00:25:48,320 --> 00:25:49,120
+pi side?
 
 653
-00:25:48,320 --> 00:25:49,120
-Yes. And what's the
-pi side?
+00:25:49,120 --> 00:25:49,919
+Pi side six.
 
 654
-00:25:49,120 --> 00:25:49,919
-pi side?
-Pi side six.
+00:25:50,880 --> 00:25:53,279
+Yeah, it's pretty good to work
 
 655
-00:25:49,919 --> 00:25:50,880
-Pi side six.
-Pi side six.
+00:25:53,279 --> 00:25:53,760
+with.
 
 656
-00:25:50,880 --> 00:25:53,279
-Pi side six.
-Yeah, it's pretty good to work
-
-657
-00:25:53,279 --> 00:25:53,760
-Yeah, it's pretty good to work
-with.
-
-658
 00:25:53,760 --> 00:25:58,549
-with.
 Yeah,
 
-659
+657
 00:26:02,070 --> 00:26:04,159
 and that's that works cross platform.
 So, Mac and everything.
 
-660
+658
 00:26:04,159 --> 00:26:05,840
-So, Mac and everything.
 Yeah.
 
-661
+659
 00:26:05,840 --> 00:26:14,310
-Yeah.
 Windows.
 

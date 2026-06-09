@@ -1,746 +1,598 @@
-﻿1
+1
 00:00:06,789 --> 00:00:08,880
 So I guess I talked too much
 yesterday,
 
 2
 00:00:08,880 --> 00:00:11,040
-yesterday,
 so I guess I'm gonna be swallowing the
 
 3
 00:00:11,040 --> 00:00:12,880
-so I guess I'm gonna be swallowing the
 mic today.
 
 4
 00:00:12,880 --> 00:00:15,360
-mic today.
 Anyway, like to thank everybody for
 
 5
 00:00:15,360 --> 00:00:18,400
-Anyway, like to thank everybody for
 showing up. Today we're going to
 
 6
 00:00:18,400 --> 00:00:20,080
-showing up. Today we're going to
 talk about a little bit about the
 
 7
 00:00:20,080 --> 00:00:23,119
-talk about a little bit about the
 future. So, I did the past yesterday,
 
 8
 00:00:23,119 --> 00:00:24,800
-future. So, I did the past yesterday,
 the present. Today's a little bit about
 
 9
 00:00:24,800 --> 00:00:27,680
-the present. Today's a little bit about
 the future, a little bit about the past.
 
 10
 00:00:27,680 --> 00:00:29,519
-the future, a little bit about the past.
 And I have a little teaser there. saving
 
 11
 00:00:29,519 --> 00:00:32,160
-And I have a little teaser there. saving
 the internet. I mean, the reason I
 
 12
 00:00:32,160 --> 00:00:34,559
-the internet. I mean, the reason I
 started doing identity was I wanted to
 
 13
 00:00:34,559 --> 00:00:36,239
-started doing identity was I wanted to
 save the internet. I wanted to fix the
 
 14
 00:00:36,239 --> 00:00:38,640
-save the internet. I wanted to fix the
 broken internet. And I didn't realize I
 
 15
 00:00:38,640 --> 00:00:40,960
-broken internet. And I didn't realize I
 had to had to work on identity to do
 
 16
 00:00:40,960 --> 00:00:43,600
-had to had to work on identity to do
 that. And I know other people probably
 
 17
 00:00:43,600 --> 00:00:46,239
-that. And I know other people probably
 knew that better than I did, but I
 
 18
 00:00:46,239 --> 00:00:48,160
-knew that better than I did, but I
 didn't realize that. So, one of the
 
 19
 00:00:48,160 --> 00:00:50,640
-didn't realize that. So, one of the
 things that the future of the KERI
 
 20
 00:00:50,640 --> 00:00:53,600
-things that the future of the KERI
 suite is about more and more
 
 21
 00:00:53,600 --> 00:00:56,960
-suite is about more and more
 applications that use ACDCs,
 
 22
 00:00:56,960 --> 00:01:01,280
-applications that use ACDCs,
 right? And those gave my talk la
 
 23
 00:01:01,280 --> 00:01:04,000
-right? And those gave my talk la
 last night talked a little bit about
 
 24
 00:01:04,000 --> 00:01:06,560
-last night talked a little bit about
 what an ACDC is. So I just want to
 
 25
 00:01:06,560 --> 00:01:09,200
-what an ACDC is. So I just want to
 review it a little bit. An ACDC is this
 
 26
 00:01:09,200 --> 00:01:11,040
-review it a little bit. An ACDC is this
 generic
 
 27
 00:01:11,040 --> 00:01:13,920
-generic
 graph structure for representing data.
 
 28
 00:01:13,920 --> 00:01:15,840
-graph structure for representing data.
 And when we represent data in graphs, we
 
 29
 00:01:15,840 --> 00:01:18,240
-And when we represent data in graphs, we
 get all kinds of useful properties. And
 
 30
 00:01:18,240 --> 00:01:21,439
-get all kinds of useful properties. And
 so we've got a vertex and edges. And we
 
 31
 00:01:21,439 --> 00:01:23,759
-so we've got a vertex and edges. And we
 can use those to do all sorts of fun
 
 32
 00:01:23,759 --> 00:01:25,600
-can use those to do all sorts of fun
 things. But the most important thing
 
 33
 00:01:25,600 --> 00:01:27,920
-things. But the most important thing
 that ACDC's provide is perpetually
 
 34
 00:01:27,920 --> 00:01:30,000
-that ACDC's provide is perpetually
 verifiable issuances. That's the hard
 
 35
 00:01:30,000 --> 00:01:31,680
-verifiable issuances. That's the hard
 problem. It's solved that wasn't solved
 
 36
 00:01:31,680 --> 00:01:34,159
-problem. It's solved that wasn't solved
 before. And now that we have perpetually
 
 37
 00:01:34,159 --> 00:01:36,159
-before. And now that we have perpetually
 verifiable issuances, we can do all
 
 38
 00:01:36,159 --> 00:01:37,360
-verifiable issuances, we can do all
 sorts of things we couldn't have done
 
 39
 00:01:37,360 --> 00:01:39,439
-sorts of things we couldn't have done
 before.
 
 40
 00:01:39,439 --> 00:01:41,840
-before.
 Each fragment is separately
 
 41
 00:01:41,840 --> 00:01:43,439
-Each fragment is separately
 authenticatable.
 
 42
 00:01:43,439 --> 00:01:45,920
-authenticatable.
 So that provides something that a normal
 
 43
 00:01:45,920 --> 00:01:48,240
-So that provides something that a normal
 graph data structure doesn't do. Lots of
 
 44
 00:01:48,240 --> 00:01:50,399
-graph data structure doesn't do. Lots of
 people have graph data structures, but
 
 45
 00:01:50,399 --> 00:01:52,640
-people have graph data structures, but
 the whole data structure source from the
 
 46
 00:01:52,640 --> 00:01:55,840
-the whole data structure source from the
 same source. Where with ACDC's, every
 
 47
 00:01:55,840 --> 00:01:57,680
-same source. Where with ACDC's, every
 every node in the graph can have a
 
 48
 00:01:57,680 --> 00:01:59,600
-every node in the graph can have a
 different source. So you can use them
 
 49
 00:01:59,600 --> 00:02:00,960
-different source. So you can use them
 for a lot of different things that you
 
 50
 00:02:00,960 --> 00:02:03,600
-for a lot of different things that you
 couldn't use a graph data structure for.
 
 51
 00:02:03,600 --> 00:02:05,759
-couldn't use a graph data structure for.
 And these are the things that you
 
 52
 00:02:05,759 --> 00:02:08,160
-And these are the things that you
 can do with it. Delegable, attenuable,
 
 53
 00:02:08,160 --> 00:02:10,640
-can do with it. Delegable, attenuable,
 aggravable, revable, revocable,
 
 54
 00:02:10,640 --> 00:02:13,200
-aggravable, revable, revocable,
 transferable, authority. And so we have
 
 55
 00:02:13,200 --> 00:02:15,120
-transferable, authority. And so we have
 some talks today. Phil's going to be
 
 56
 00:02:15,120 --> 00:02:18,879
-some talks today. Phil's going to be
 talking both Phil's Phil and
 
 57
 00:02:18,879 --> 00:02:21,599
-talking both Phil's Phil and
 Phil Windley about authorizations. We're
 
 58
 00:02:21,599 --> 00:02:23,680
-Phil Windley about authorizations. We're
 going to talk about stuff like that
 
 59
 00:02:23,680 --> 00:02:25,200
-going to talk about stuff like that
 so that's some of the things that now
 
 60
 00:02:25,200 --> 00:02:28,319
-so that's some of the things that now
 that we have solved identity we solve
 
 61
 00:02:28,319 --> 00:02:31,280
-that we have solved identity we solve
 basic issuances now we can start to do
 
 62
 00:02:31,280 --> 00:02:33,519
-basic issuances now we can start to do
 more complicated things with ACDC's and
 
 63
 00:02:33,519 --> 00:02:35,760
-more complicated things with ACDC's and
 so I see the future people are going to
 
 64
 00:02:35,760 --> 00:02:38,560
-so I see the future people are going to
 find more and more things to use ACDCs
 
 65
 00:02:38,560 --> 00:02:43,760
-find more and more things to use ACDCs
 for. So the idea is we with ACDC's we
 
 66
 00:02:43,760 --> 00:02:46,080
-for. So the idea is we with ACDC's we
 can have highfidelity modeling of real
 
 67
 00:02:46,080 --> 00:02:48,720
-can have highfidelity modeling of real
 world authority structures. Can you guys
 
 68
 00:02:48,720 --> 00:02:52,319
-world authority structures. Can you guys
 hear me? I can't tell. Okay.
 
 69
 00:02:52,319 --> 00:02:54,640
-hear me? I can't tell. Okay.
 I can't hear myself because normally I
 
 70
 00:02:54,640 --> 00:02:56,239
-I can't hear myself because normally I
 talk really loud and my whole head
 
 71
 00:02:56,239 --> 00:02:58,640
-talk really loud and my whole head
 resonates with my own sound. So it
 
 72
 00:02:58,640 --> 00:03:01,440
-resonates with my own sound. So it
 sounds like nothing's happening. So one
 
 73
 00:03:01,440 --> 00:03:03,680
-sounds like nothing's happening. So one
 of one of the things that we can do with
 
 74
 00:03:03,680 --> 00:03:07,760
-of one of the things that we can do with
 ACDC's is we can bridge AC KERI and
 
 75
 00:03:07,760 --> 00:03:10,879
-ACDC's is we can bridge AC KERI and
 ACDC's solve the cross trust domain
 
 76
 00:03:10,879 --> 00:03:13,760
-ACDC's solve the cross trust domain
 transfer problem in an elegant way and
 
 77
 00:03:13,760 --> 00:03:16,239
-transfer problem in an elegant way and
 that's a hard problem to solve.
 
 78
 00:03:16,239 --> 00:03:19,519
-that's a hard problem to solve.
 Recursive privilege escalation attacks
 
 79
 00:03:19,519 --> 00:03:22,080
-Recursive privilege escalation attacks
 are a
 
 80
 00:03:22,080 --> 00:03:24,800
-are a
 Negative
 
 81
 00:03:24,800 --> 00:03:26,319
-Negative
 consequence
 
 82
 00:03:26,319 --> 00:03:30,000
-consequence
 of using identity systems that don't
 
 83
 00:03:30,000 --> 00:03:32,080
-of using identity systems that don't
 solve the cross trust domain transfer
 
 84
 00:03:32,080 --> 00:03:35,040
-solve the cross trust domain transfer
 problem. Instead, what they do is just
 
 85
 00:03:35,040 --> 00:03:36,799
-problem. Instead, what they do is just
 increase the size of the one trust
 
 86
 00:03:36,799 --> 00:03:39,040
-increase the size of the one trust
 domain because since you can't bridge
 
 87
 00:03:39,040 --> 00:03:41,120
-domain because since you can't bridge
 trust domains, make your trust domain
 
 88
 00:03:41,120 --> 00:03:42,879
-trust domains, make your trust domain
 bigger. And that means now that you can
 
 89
 00:03:42,879 --> 00:03:44,560
-bigger. And that means now that you can
 do recursive privilege escalation
 
 90
 00:03:44,560 --> 00:03:47,200
-do recursive privilege escalation
 attacks. If you keep your trust domains
 
 91
 00:03:47,200 --> 00:03:50,239
-attacks. If you keep your trust domains
 small and bridge them properly, then you
 
 92
 00:03:50,239 --> 00:03:51,519
-small and bridge them properly, then you
 don't have recursive privilege
 
 93
 00:03:51,519 --> 00:03:53,920
-don't have recursive privilege
 escalation attacks. And so with KERI,
 
 94
 00:03:53,920 --> 00:03:57,439
-escalation attacks. And so with KERI,
 we can solve that problem. So the idea
 
 95
 00:03:57,439 --> 00:03:59,040
-we can solve that problem. So the idea
 is
 
 96
 00:03:59,040 --> 00:04:02,560
-is
 that we have two trust domains and we
 
 97
 00:04:02,560 --> 00:04:04,319
-that we have two trust domains and we
 use ACDC's
 
 98
 00:04:04,319 --> 00:04:07,439
-use ACDC's
 to move data trust authority between
 
 99
 00:04:07,439 --> 00:04:09,760
-to move data trust authority between
 those domains. That was a cool effect,
 
 100
 00:04:09,760 --> 00:04:11,360
-those domains. That was a cool effect,
 right?
 
 101
 00:04:11,360 --> 00:04:14,799
-right?
 So perpetual identity leads to
 
 102
 00:04:14,799 --> 00:04:17,280
-So perpetual identity leads to
 perpetual issuances means, and I'm going
 
 103
 00:04:17,280 --> 00:04:19,440
-perpetual issuances means, and I'm going
 to steal Daniel Hardman's phrase,
 
 104
 00:04:19,440 --> 00:04:21,919
-to steal Daniel Hardman's phrase,
 lossless trust transfer.
 
 105
 00:04:21,919 --> 00:04:24,800
-lossless trust transfer.
 We don't lose trust when we use carrying
 
 106
 00:04:24,800 --> 00:04:26,880
-We don't lose trust when we use carrying
 ACDC's to move trust across trust
 
 107
 00:04:26,880 --> 00:04:29,280
-ACDC's to move trust across trust
 domains.
 
 108
 00:04:29,280 --> 00:04:31,919
-domains.
 So if I have ephemeral identity, then I
 
 109
 00:04:31,919 --> 00:04:34,800
-So if I have ephemeral identity, then I
 only get ephemeral in issuances. That
 
 110
 00:04:34,800 --> 00:04:36,960
-only get ephemeral in issuances. That
 means every time I trust I do trust
 
 111
 00:04:36,960 --> 00:04:39,360
-means every time I trust I do trust
 transfer, it's lossy. And that's what
 
 112
 00:04:39,360 --> 00:04:40,800
-transfer, it's lossy. And that's what
 we're living with right now in the
 
 113
 00:04:40,800 --> 00:04:42,400
-we're living with right now in the
 internet.
 
 114
 00:04:42,400 --> 00:04:45,040
-internet.
 So now that I can have lossless conveyor
 
 115
 00:04:45,040 --> 00:04:49,199
-So now that I can have lossless conveyor
 of trust, I can also use it to bridge
 
 116
 00:04:49,199 --> 00:04:52,720
-of trust, I can also use it to bridge
 ephemeral trust domains and the bridge
 
 117
 00:04:52,720 --> 00:04:55,040
-ephemeral trust domains and the bridge
 doesn't lose anything. Normally when you
 
 118
 00:04:55,040 --> 00:04:57,360
-doesn't lose anything. Normally when you
 take cables and connect them together,
 
 119
 00:04:57,360 --> 00:05:00,240
-take cables and connect them together,
 every connection is lossy. And so the
 
 120
 00:05:00,240 --> 00:05:02,479
-every connection is lossy. And so the
 longer the connections, the less
 
 121
 00:05:02,479 --> 00:05:04,240
-longer the connections, the less
 signal you get. But if I have really
 
 122
 00:05:04,240 --> 00:05:06,880
-signal you get. But if I have really
 high fidelity connections, then I lose
 
 123
 00:05:06,880 --> 00:05:09,440
-high fidelity connections, then I lose
 it in other places. And so this is this
 
 124
 00:05:09,440 --> 00:05:12,400
-it in other places. And so this is this
 allows us to take any application that's
 
 125
 00:05:12,400 --> 00:05:16,880
-allows us to take any application that's
 currently using the current stuff
 
 126
 00:05:16,880 --> 00:05:20,720
-currently using the current stuff
 right and we can bridge it better. So a
 
 127
 00:05:20,720 --> 00:05:22,560
-right and we can bridge it better. So a
 lot of the discussions people have is
 
 128
 00:05:22,560 --> 00:05:25,680
-lot of the discussions people have is
 well I want to use ACDC with whatever it
 
 129
 00:05:25,680 --> 00:05:27,199
-well I want to use ACDC with whatever it
 is
 
 130
 00:05:27,199 --> 00:05:30,240
-is
 you know the some existing system. Well,
 
 131
 00:05:30,240 --> 00:05:32,880
-you know the some existing system. Well,
 it's okay for us to use it to bridge
 
 132
 00:05:32,880 --> 00:05:34,720
-it's okay for us to use it to bridge
 those existing systems as long as we
 
 133
 00:05:34,720 --> 00:05:38,160
-those existing systems as long as we
 understand that we don't corrupt the
 
 134
 00:05:38,160 --> 00:05:41,840
-understand that we don't corrupt the
 ACDC's with lossy stuff, right? And so
 
 135
 00:05:41,840 --> 00:05:43,680
-ACDC's with lossy stuff, right? And so
 I already mentioned that the whole
 
 136
 00:05:43,680 --> 00:05:46,479
-I already mentioned that the whole
 idea is we can remove this is
 
 137
 00:05:46,479 --> 00:05:49,039
-idea is we can remove this is
 like the bane of current security.
 
 138
 00:05:49,039 --> 00:05:50,800
-like the bane of current security.
 This thing recursive privilege
 
 139
 00:05:50,800 --> 00:05:53,199
-This thing recursive privilege
 escalation attack vulnerabilities. It's
 
 140
 00:05:53,199 --> 00:05:56,320
-escalation attack vulnerabilities. It's
 it's horrible and we can we can mitigate
 
 141
 00:05:56,320 --> 00:05:58,080
-it's horrible and we can we can mitigate
 that.
 
 142
 00:05:58,080 --> 00:06:00,479
-that.
 So I'm going to talk about when we talk
 
 143
 00:06:00,479 --> 00:06:03,520
-So I'm going to talk about when we talk
 about end to end right in the in the in
 
 144
 00:06:03,520 --> 00:06:06,240
-about end to end right in the in the in
 the world we talk about edges but we
 
 145
 00:06:06,240 --> 00:06:08,400
-the world we talk about edges but we
 also talk about ends and in KERI
 
 146
 00:06:08,400 --> 00:06:10,400
-also talk about ends and in KERI
 they're pretty much the same thing
 
 147
 00:06:10,400 --> 00:06:12,960
-they're pretty much the same thing
 because each AID is its own identity
 
 148
 00:06:12,960 --> 00:06:15,919
-because each AID is its own identity
 provider we're using keys at the edge
 
 149
 00:06:15,919 --> 00:06:21,510
-provider we're using keys at the edge
 the edge is where authentication happens
 
 150
@@ -750,72 +602,58 @@ third party IDPs no relying parties no
 
 151
 00:06:27,520 --> 00:06:29,759
-third party IDPs no relying parties no
 trusted intermediaries.
 
 152
 00:06:29,759 --> 00:06:31,759
-trusted intermediaries.
 So we remove a whole layer of
 
 153
 00:06:31,759 --> 00:06:34,000
-So we remove a whole layer of
 infrastructure. It just goes away. Now
 
 154
 00:06:34,000 --> 00:06:35,680
-infrastructure. It just goes away. Now
 if somebody says you got to have it, you
 
 155
 00:06:35,680 --> 00:06:37,919
-if somebody says you got to have it, you
 got to have a relying party. You got
 
 156
 00:06:37,919 --> 00:06:40,240
-got to have a relying party. You got
 to have an ooth server. Fine. Leave it
 
 157
 00:06:40,240 --> 00:06:43,440
-to have an ooth server. Fine. Leave it
 in there. But don't use it to expand its
 
 158
 00:06:43,440 --> 00:06:45,600
-in there. But don't use it to expand its
 trust domain. Go. Well, you want to
 
 159
 00:06:45,600 --> 00:06:47,120
-trust domain. Go. Well, you want to
 bridge these two trust domains. Don't
 
 160
 00:06:47,120 --> 00:06:49,360
-bridge these two trust domains. Don't
 bridge them with more lossy stuff.
 
 161
 00:06:49,360 --> 00:06:53,440
-bridge them with more lossy stuff.
 Bridge them with KERI and ACDC's.
 
 162
 00:06:53,440 --> 00:06:57,600
-Bridge them with KERI and ACDC's.
 So in KERI an end to end and an edge to
 
 163
 00:06:57,600 --> 00:07:01,120
-So in KERI an end to end and an edge to
 edge they mean the same thing right?
 
 164
 00:07:01,120 --> 00:07:03,440
-edge they mean the same thing right?
 We the middle doesn't matter the middle
 
 165
@@ -825,557 +663,446 @@ is just a store and forward network.
 
 166
 00:07:07,520 --> 00:07:10,639
-is just a store and forward network.
 So that leads us to the next thing
 
 167
 00:07:10,639 --> 00:07:12,720
-So that leads us to the next thing
 that's going to happen in KERI more
 
 168
 00:07:12,720 --> 00:07:15,599
-that's going to happen in KERI more
 and more and this is authorization.
 
 169
 00:07:15,599 --> 00:07:18,720
-and more and this is authorization.
 What do I mean by that? Well I got this
 
 170
 00:07:18,720 --> 00:07:20,800
-What do I mean by that? Well I got this
 word down here. I love I love making
 
 171
 00:07:20,800 --> 00:07:22,880
-word down here. I love I love making
 anacronyms. I know somebody
 
 172
 00:07:22,880 --> 00:07:24,639
-anacronyms. I know somebody
 said that's problem for people to
 
 173
 00:07:24,639 --> 00:07:26,160
-said that's problem for people to
 understand but you guys you guys you
 
 174
 00:07:26,160 --> 00:07:28,560
-understand but you guys you guys you
 guys are the tech people. So edge
 
 175
 00:07:28,560 --> 00:07:31,360
-guys are the tech people. So edge
 verifiable access control. So what does
 
 176
 00:07:31,360 --> 00:07:33,919
-verifiable access control. So what does
 that mean?
 
 177
 00:07:33,919 --> 00:07:35,520
-that mean?
 Well,
 
 178
 00:07:35,520 --> 00:07:38,160
-Well,
 I'm defining authorization
 
 179
 00:07:38,160 --> 00:07:41,199
-I'm defining authorization
 to access a resource is granted by the
 
 180
 00:07:41,199 --> 00:07:42,800
-to access a resource is granted by the
 resource controller. So I'm going to say
 
 181
 00:07:42,800 --> 00:07:44,720
-resource controller. So I'm going to say
 there's some authority that has
 
 182
 00:07:44,720 --> 00:07:47,599
-there's some authority that has
 authority over a resource and if some
 
 183
 00:07:47,599 --> 00:07:50,960
-authority over a resource and if some
 other entity wants to get access to that
 
 184
 00:07:50,960 --> 00:07:52,880
-other entity wants to get access to that
 resource that authority controller
 
 185
 00:07:52,880 --> 00:07:55,680
-resource that authority controller
 grants that access and that access comes
 
 186
 00:07:55,680 --> 00:07:58,800
-grants that access and that access comes
 through an authorization.
 
 187
 00:07:58,800 --> 00:08:01,840
-through an authorization.
 So each authority is itself an edge in
 
 188
 00:08:01,840 --> 00:08:05,199
-So each authority is itself an edge in
 KERI with respect to other authorities
 
 189
 00:08:05,199 --> 00:08:07,840
-KERI with respect to other authorities
 resources because it's all edgetoedge
 
 190
 00:08:07,840 --> 00:08:10,160
-resources because it's all edgetoedge
 end to end.
 
 191
 00:08:10,160 --> 00:08:12,400
-end to end.
 So each authority can authorize access
 
 192
 00:08:12,400 --> 00:08:14,720
-So each authority can authorize access
 by any other edge to its resources via
 
 193
 00:08:14,720 --> 00:08:17,680
-by any other edge to its resources via
 an ACDC. That's the whole point of
 
 194
 00:08:17,680 --> 00:08:22,479
-an ACDC. That's the whole point of
 delegable aggraable authority is that
 
 195
 00:08:22,479 --> 00:08:24,639
-delegable aggraable authority is that
 you grant authority to somebody and now
 
 196
 00:08:24,639 --> 00:08:27,280
-you grant authority to somebody and now
 they can access your resources
 
 197
 00:08:27,280 --> 00:08:28,720
-they can access your resources
 because you're the you're the you're
 
 198
 00:08:28,720 --> 00:08:30,960
-because you're the you're the you're
 authority who can grant that access.
 
 199
 00:08:30,960 --> 00:08:33,680
-authority who can grant that access.
 Each issuer in ACDC graph is potentially
 
 200
 00:08:33,680 --> 00:08:37,680
-Each issuer in ACDC graph is potentially
 both a resource authority and an edge.
 
 201
 00:08:37,680 --> 00:08:40,320
-both a resource authority and an edge.
 Mutually authenticated edge accessor and
 
 202
 00:08:40,320 --> 00:08:42,800
-Mutually authenticated edge accessor and
 resource authority prevent impersonation
 
 203
 00:08:42,800 --> 00:08:45,120
-resource authority prevent impersonation
 attacks. A lot of the impersonation
 
 204
 00:08:45,120 --> 00:08:47,920
-attacks. A lot of the impersonation
 attacks come because there's a mis
 
 205
 00:08:47,920 --> 00:08:50,959
-attacks come because there's a mis
 there's a misunders a misconfiguration
 
 206
 00:08:50,959 --> 00:08:54,399
-there's a misunders a misconfiguration
 of how those two talk with respect
 
 207
 00:08:54,399 --> 00:08:57,040
-of how those two talk with respect
 to each other. You look at how VPNs, you
 
 208
 00:08:57,040 --> 00:09:01,360
-to each other. You look at how VPNs, you
 know, common VPN problem is that I
 
 209
 00:09:01,360 --> 00:09:04,720
-know, common VPN problem is that I
 have a VPN and I give an edge access
 
 210
 00:09:04,720 --> 00:09:07,920
-have a VPN and I give an edge access
 through the VPN, but the VPN isn't
 
 211
 00:09:07,920 --> 00:09:11,040
-through the VPN, but the VPN isn't
 mutually authenticating in a strong way.
 
 212
 00:09:11,040 --> 00:09:13,120
-mutually authenticating in a strong way.
 So, the edge thinks that it's talking to
 
 213
 00:09:13,120 --> 00:09:15,440
-So, the edge thinks that it's talking to
 the VPN, but it's not. It's talking to
 
 214
 00:09:15,440 --> 00:09:18,320
-the VPN, but it's not. It's talking to
 an impersonation of the VPN. So, when it
 
 215
 00:09:18,320 --> 00:09:20,399
-an impersonation of the VPN. So, when it
 when it grants access, it thinks, "Oh,
 
 216
 00:09:20,399 --> 00:09:23,040
-when it grants access, it thinks, "Oh,
 okay. I can now share my other
 
 217
 00:09:23,040 --> 00:09:25,360
-okay. I can now share my other
 credentials to what'sever on the other
 
 218
 00:09:25,360 --> 00:09:27,360
-credentials to what'sever on the other
 side of the VPN. But I'm not I'm not on
 
 219
 00:09:27,360 --> 00:09:29,600
-side of the VPN. But I'm not I'm not on
 the VPN I thought I was because I don't
 
 220
 00:09:29,600 --> 00:09:31,519
-the VPN I thought I was because I don't
 have strong mutual authentication. I've
 
 221
 00:09:31,519 --> 00:09:34,080
-have strong mutual authentication. I've
 got a shared secret and that and that
 
 222
 00:09:34,080 --> 00:09:36,560
-got a shared secret and that and that
 means now that I'm going to disclose to
 
 223
 00:09:36,560 --> 00:09:39,680
-means now that I'm going to disclose to
 that other end my credentials to
 
 224
 00:09:39,680 --> 00:09:42,160
-that other end my credentials to
 get further into the system and I and
 
 225
 00:09:42,160 --> 00:09:45,120
-get further into the system and I and
 and rinse and repeat, right? But if we
 
 226
 00:09:45,120 --> 00:09:47,440
-and rinse and repeat, right? But if we
 have strong mutual authentication at
 
 227
 00:09:47,440 --> 00:09:51,519
-have strong mutual authentication at
 every edge, then there is no recursive
 
 228
 00:09:51,519 --> 00:09:54,800
-every edge, then there is no recursive
 privilege escalation attack.
 
 229
 00:09:54,800 --> 00:09:59,600
-privilege escalation attack.
 So, so we basically, you know do
 
 230
 00:09:59,600 --> 00:10:01,600
-So, so we basically, you know do
 this with ACDC. So, I'm going to show us
 
 231
 00:10:01,600 --> 00:10:04,240
-this with ACDC. So, I'm going to show us
 I'm going to show you how we can use an
 
 232
 00:10:04,240 --> 00:10:07,040
-I'm going to show you how we can use an
 ACDC. This is a proposal.
 
 233
 00:10:07,040 --> 00:10:08,959
-ACDC. This is a proposal.
 I haven't written a white paper on it
 
 234
 00:10:08,959 --> 00:10:10,720
-I haven't written a white paper on it
 yet. I started writing a white paper on
 
 235
 00:10:10,720 --> 00:10:12,240
-yet. I started writing a white paper on
 it but I haven't finished published it
 
 236
 00:10:12,240 --> 00:10:15,440
-it but I haven't finished published it
 yet of how we can just repurpose ACDC's
 
 237
 00:10:15,440 --> 00:10:18,240
-yet of how we can just repurpose ACDC's
 as generic authorizations.
 
 238
 00:10:18,240 --> 00:10:21,920
-as generic authorizations.
 So if you so there those of you
 
 239
 00:10:21,920 --> 00:10:24,240
-So if you so there those of you
 who aren't familiar with an ACDC these
 
 240
 00:10:24,240 --> 00:10:27,200
-who aren't familiar with an ACDC these
 are the top level fields version type it
 
 241
 00:10:27,200 --> 00:10:31,279
-are the top level fields version type it
 set a UYU ID the issuer the ACDC the
 
 242
 00:10:31,279 --> 00:10:34,160
-set a UYU ID the issuer the ACDC the
 registry for the ACDC state the schema
 
 243
 00:10:34,160 --> 00:10:36,959
-registry for the ACDC state the schema
 section attribute edge and rule section.
 
 244
 00:10:36,959 --> 00:10:40,480
-section attribute edge and rule section.
 So if in the
 
 245
 00:10:40,480 --> 00:10:43,519
-So if in the
 in the there's two registries here.
 
 246
 00:10:43,519 --> 00:10:46,000
-in the there's two registries here.
 There's an issuance registry
 
 247
 00:10:46,000 --> 00:10:49,760
-There's an issuance registry
 and we can now add a usage registry and
 
 248
 00:10:49,760 --> 00:10:51,839
-and we can now add a usage registry and
 the way we manage that is in the
 
 249
 00:10:51,839 --> 00:10:54,800
-the way we manage that is in the
 attribute section. The attribute section
 
 250
 00:10:54,800 --> 00:10:59,200
-attribute section. The attribute section
 itself has a set a UYU ID the issue AID
 
 251
 00:10:59,200 --> 00:11:01,200
-itself has a set a UYU ID the issue AID
 and it also can have a registry
 
 252
 00:11:01,200 --> 00:11:04,320
-and it also can have a registry
 identifier and then a resource map. The
 
 253
 00:11:04,320 --> 00:11:07,519
-identifier and then a resource map. The
 resource map over here looks like
 
 254
 00:11:07,519 --> 00:11:09,600
-resource map over here looks like
 object capabilities. You basically have
 
 255
 00:11:09,600 --> 00:11:12,320
-object capabilities. You basically have
 a route and then a set of capabilities.
 
 256
 00:11:12,320 --> 00:11:13,839
-a route and then a set of capabilities.
 So it's a list of things like read,
 
 257
 00:11:13,839 --> 00:11:16,800
-So it's a list of things like read,
 write, execute, whatever it is standard
 
 258
 00:11:16,800 --> 00:11:19,200
-write, execute, whatever it is standard
 standard access control. All we do is we
 
 259
 00:11:19,200 --> 00:11:22,480
-standard access control. All we do is we
 just augment ACDC's to have a resource
 
 260
 00:11:22,480 --> 00:11:26,000
-just augment ACDC's to have a resource
 list and it and we can implement any
 
 261
 00:11:26,000 --> 00:11:28,000
-list and it and we can implement any
 sort of authorization
 
 262
 00:11:28,000 --> 00:11:31,040
-sort of authorization
 system and but what we get are some
 
 263
 00:11:31,040 --> 00:11:32,560
-system and but what we get are some
 properties that you that are
 
 264
 00:11:32,560 --> 00:11:34,160
-properties that you that are
 difficult to get in other ways without
 
 265
 00:11:34,160 --> 00:11:36,160
-difficult to get in other ways without
 ACDC's.
 
 266
 00:11:36,160 --> 00:11:39,200
-ACDC's.
 So this stuff is actually in the
 
 267
 00:11:39,200 --> 00:11:41,600
-So this stuff is actually in the
 spec but I'm pretty sure almost nobody's
 
 268
 00:11:41,600 --> 00:11:46,800
-spec but I'm pretty sure almost nobody's
 read it. The right here the
 
 269
 00:11:46,800 --> 00:11:49,120
-read it. The right here the
 issue ID people know about but in the
 
 270
 00:11:49,120 --> 00:11:50,800
-issue ID people know about but in the
 spec we actually have a registry
 
 271
 00:11:50,800 --> 00:11:53,760
-spec we actually have a registry
 identifier defined but this registry
 
 272
 00:11:53,760 --> 00:11:55,440
-identifier defined but this registry
 identifier is different from that
 
 273
 00:11:55,440 --> 00:11:57,279
-identifier is different from that
 registry identifier. This is the issuer
 
 274
 00:11:57,279 --> 00:12:00,079
-registry identifier. This is the issuer
 registry. This is the issue registry.
 
 275
 00:12:00,079 --> 00:12:02,480
-registry. This is the issue registry.
 Why does it why does the issue want a
 
 276
 00:12:02,480 --> 00:12:05,509
-Why does it why does the issue want a
 registry?
 
 277
@@ -1385,17 +1112,14 @@ know if they it so let's say here's the
 
 278
 00:12:15,760 --> 00:12:18,000
-know if they it so let's say here's the
 use case somebody gave me an
 
 279
 00:12:18,000 --> 00:12:19,600
-use case somebody gave me an
 authorization let's say this is my
 
 280
 00:12:19,600 --> 00:12:22,629
-authorization let's say this is my
 authorization
 
 281
@@ -1405,172 +1129,138 @@ been compromised
 
 282
 00:12:28,560 --> 00:12:31,440
-been compromised
 now in ACDC if I want to present it
 
 283
 00:12:31,440 --> 00:12:34,399
-now in ACDC if I want to present it
 requires at the very least signing it so
 
 284
 00:12:34,399 --> 00:12:36,880
-requires at the very least signing it so
 compromise looks like an a compromise of
 
 285
 00:12:36,880 --> 00:12:39,760
-compromise looks like an a compromise of
 my signing infrastructure now if it's a
 
 286
 00:12:39,760 --> 00:12:42,160
-my signing infrastructure now if it's a
 token compromise Looks like somebody
 
 287
 00:12:42,160 --> 00:12:44,480
-token compromise Looks like somebody
 just steals the token. It's an easy
 
 288
 00:12:44,480 --> 00:12:46,959
-just steals the token. It's an easy
 compromise. You know, it's much harder
 
 289
 00:12:46,959 --> 00:12:49,680
-compromise. You know, it's much harder
 to steal my private keys. But let's say
 
 290
 00:12:49,680 --> 00:12:52,560
-to steal my private keys. But let's say
 someone has stole my private keys.
 
 291
 00:12:52,560 --> 00:12:55,680
-someone has stole my private keys.
 They can then present
 
 292
 00:12:55,680 --> 00:12:58,160
-They can then present
 my authorization someplace and I don't
 
 293
 00:12:58,160 --> 00:13:00,240
-my authorization someplace and I don't
 know that they've stole my private keys
 
 294
 00:13:00,240 --> 00:13:04,560
-know that they've stole my private keys
 unless I require that a verifier check
 
 295
 00:13:04,560 --> 00:13:07,600
-unless I require that a verifier check
 that the presentation is anchored in my
 
 296
 00:13:07,600 --> 00:13:10,240
-that the presentation is anchored in my
 registry. So every time I do a
 
 297
 00:13:10,240 --> 00:13:12,000
-registry. So every time I do a
 presentation I anchor in the registry.
 
 298
 00:13:12,000 --> 00:13:15,519
-presentation I anchor in the registry.
 The verifier checks that the issuer
 
 299
 00:13:15,519 --> 00:13:17,279
-The verifier checks that the issuer
 issued it by checking the issuer
 
 300
 00:13:17,279 --> 00:13:21,440
-issued it by checking the issuer
 registry but checks that the presenter
 
 301
 00:13:21,440 --> 00:13:24,560
-registry but checks that the presenter
 actually says I want ultra security when
 
 302
 00:13:24,560 --> 00:13:27,279
-actually says I want ultra security when
 I present. So don't verify the
 
 303
 00:13:27,279 --> 00:13:28,720
-I present. So don't verify the
 presentation unless I anchor the
 
 304
 00:13:28,720 --> 00:13:30,639
-presentation unless I anchor the
 presentation. Makes the presentation
 
 305
 00:13:30,639 --> 00:13:33,200
-presentation. Makes the presentation
 less ephemeral. But it also means now
 
 306
 00:13:33,200 --> 00:13:36,560
-less ephemeral. But it also means now
 that if I have really re really
 
 307
 00:13:36,560 --> 00:13:39,680
-that if I have really re really
 strong security over presentations and
 
 308
 00:13:39,680 --> 00:13:42,800
-strong security over presentations and
 if somebody steals my private keys as a
 
 309
 00:13:42,800 --> 00:13:44,880
-if somebody steals my private keys as a
 as a presenter,
 
 310
 00:13:44,880 --> 00:13:46,800
-as a presenter,
 I know that they stole them because they
 
 311
 00:13:46,800 --> 00:13:48,880
-I know that they stole them because they
 the only way that they can they can gain
 
 312
 00:13:48,880 --> 00:13:52,800
-the only way that they can they can gain
 access is to anchor it in my registry
 
 313
 00:13:52,800 --> 00:13:55,600
-access is to anchor it in my registry
 that I control. And so that's that
 
 314
 00:13:55,600 --> 00:13:59,120
-that I control. And so that's that
 allows me to detect compromise of my of
 
 315
 00:13:59,120 --> 00:14:05,269
-allows me to detect compromise of my of
 my credentials.
 
 316
@@ -1580,47 +1270,38 @@ said. Here's the issuance registry
 
 317
 00:14:10,720 --> 00:14:14,959
-said. Here's the issuance registry
 With a presentation. The issue just
 
 318
 00:14:14,959 --> 00:14:17,680
-With a presentation. The issue just
 signs the presentation. The verifier
 
 319
 00:14:17,680 --> 00:14:21,440
-signs the presentation. The verifier
 checks it checks its observer checks the
 
 320
 00:14:21,440 --> 00:14:23,519
-checks it checks its observer checks the
 registar controlled by the issuer says
 
 321
 00:14:23,519 --> 00:14:28,240
-registar controlled by the issuer says
 okay it's good. The ACDC is fine.
 
 322
 00:14:28,240 --> 00:14:30,240
-okay it's good. The ACDC is fine.
 This is what it looks like over here in
 
 323
 00:14:30,240 --> 00:14:34,079
-This is what it looks like over here in
 terms of the Key Event Log of
 
 324
 00:14:34,079 --> 00:14:37,760
-terms of the Key Event Log of
 the issuer and then the re the reg
 
 325
 00:14:37,760 --> 00:14:41,030
-the issuer and then the re the reg
 registry.
 
 326
@@ -1630,77 +1311,62 @@ and the and the observers.
 
 327
 00:14:46,480 --> 00:14:48,480
-and the and the observers.
 But if I'm doing a usage registry, what
 
 328
 00:14:48,480 --> 00:14:51,040
-But if I'm doing a usage registry, what
 does it look like? Well, the
 
 329
 00:14:51,040 --> 00:14:54,000
-does it look like? Well, the
 presentation itself gets anchored in a
 
 330
 00:14:54,000 --> 00:14:56,800
-presentation itself gets anchored in a
 in a in a registry that's controlled by
 
 331
 00:14:56,800 --> 00:14:59,680
-in a in a registry that's controlled by
 the issue. So this one is
 
 332
 00:14:59,680 --> 00:15:02,240
-the issue. So this one is
 controlled this registar is the issue's
 
 333
 00:15:02,240 --> 00:15:06,000
-controlled this registar is the issue's
 registar and now the verifier checks
 
 334
 00:15:06,000 --> 00:15:08,160
-registar and now the verifier checks
 here. So the verifier would have to
 
 335
 00:15:08,160 --> 00:15:10,959
-here. So the verifier would have to
 check two registries has to check the
 
 336
 00:15:10,959 --> 00:15:13,279
-check two registries has to check the
 issuers's registry and the presenter's
 
 337
 00:15:13,279 --> 00:15:15,600
-issuers's registry and the presenter's
 registry.
 
 338
 00:15:15,600 --> 00:15:19,199
-registry.
 But that makes it so
 
 339
 00:15:19,199 --> 00:15:21,839
-But that makes it so
 that both the issuer and the user
 
 340
 00:15:21,839 --> 00:15:23,680
-that both the issuer and the user
 can detect if either one has been
 
 341
 00:15:23,680 --> 00:15:28,949
-can detect if either one has been
 compromised and the verifier knows it.
 
 342
@@ -1710,32 +1376,26 @@ anchored in the in the in the issue
 
 343
 00:15:43,519 --> 00:15:45,040
-anchored in the in the in the issue
 registry
 
 344
 00:15:45,040 --> 00:15:47,199
-registry
 and you can see the state of the
 
 345
 00:15:47,199 --> 00:15:49,040
-and you can see the state of the
 presentation and you can share one
 
 346
 00:15:49,040 --> 00:15:50,720
-presentation and you can share one
 registry for all your presentations
 
 347
 00:15:50,720 --> 00:15:53,120
-registry for all your presentations
 because it's one controller of the
 
 348
 00:15:53,120 --> 00:15:58,710
-because it's one controller of the
 registry.
 
 349
@@ -1745,92 +1405,74 @@ difficult problem in authorizations
 
 350
 00:16:09,920 --> 00:16:13,040
-difficult problem in authorizations
 and that's when you have delegation
 
 351
 00:16:13,040 --> 00:16:16,480
-and that's when you have delegation
 and we didn't solve this problem from
 
 352
 00:16:16,480 --> 00:16:18,160
-and we didn't solve this problem from
 the vLEI
 
 353
 00:16:18,160 --> 00:16:20,480
-the vLEI
 in this in this explicit way but this is
 
 354
 00:16:20,480 --> 00:16:22,560
-in this in this explicit way but this is
 in the spec
 
 355
 00:16:22,560 --> 00:16:26,079
-in the spec
 So but it solves the problem of
 
 356
 00:16:26,079 --> 00:16:28,320
-So but it solves the problem of
 chained authoriz authorizations in a
 
 357
 00:16:28,320 --> 00:16:32,399
-chained authoriz authorizations in a
 delegation chain where the delegate
 
 358
 00:16:32,399 --> 00:16:35,600
-delegation chain where the delegate
 issues an authorization and then the
 
 359
 00:16:35,600 --> 00:16:37,839
-issues an authorization and then the
 delegates authority to issue the
 
 360
 00:16:37,839 --> 00:16:40,959
-delegates authority to issue the
 authorization gets revoked. So the
 
 361
 00:16:40,959 --> 00:16:42,959
-authorization gets revoked. So the
 question is
 
 362
 00:16:42,959 --> 00:16:46,720
-question is
 What happens when a delegate's
 
 363
 00:16:46,720 --> 00:16:49,600
-What happens when a delegate's
 authority or delegate's authority to
 
 364
 00:16:49,600 --> 00:16:52,079
-authority or delegate's authority to
 issue authorization is revoked. What is
 
 365
 00:16:52,079 --> 00:16:54,639
-issue authorization is revoked. What is
 the status as any authorizations or
 
 366
 00:16:54,639 --> 00:16:56,560
-the status as any authorizations or
 entitlements that it issued before its
 
 367
 00:16:56,560 --> 00:17:02,790
-entitlements that it issued before its
 authority was revoked? Are they revoked?
 
 368
@@ -1840,207 +1482,166 @@ in some cases,
 
 369
 00:17:08,319 --> 00:17:10,240
-in some cases,
 right? Let's say I'm a company and I
 
 370
 00:17:10,240 --> 00:17:12,880
-right? Let's say I'm a company and I
 issue a purchase order. My purchases
 
 371
 00:17:12,880 --> 00:17:14,799
-issue a purchase order. My purchases
 agent while he works for me issues a
 
 372
 00:17:14,799 --> 00:17:16,959
-agent while he works for me issues a
 purchase order. Purchase order has a
 
 373
 00:17:16,959 --> 00:17:19,199
-purchase order. Purchase order has a
 90-day expiration on it. It's valid for
 
 374
 00:17:19,199 --> 00:17:21,360
-90-day expiration on it. It's valid for
 90 days, right?
 
 375
 00:17:21,360 --> 00:17:23,679
-90 days, right?
 And then I fire the guy because he
 
 376
 00:17:23,679 --> 00:17:26,559
-And then I fire the guy because he
 wasn't showing up for work, right? Do I
 
 377
 00:17:26,559 --> 00:17:29,360
-wasn't showing up for work, right? Do I
 have to go through every purchase order
 
 378
 00:17:29,360 --> 00:17:31,919
-have to go through every purchase order
 that he signed off on
 
 379
 00:17:31,919 --> 00:17:37,440
-that he signed off on
 and reissue it? Well, if it's on paper,
 
 380
 00:17:37,440 --> 00:17:39,600
-and reissue it? Well, if it's on paper,
 everybody assumes that it's still valid,
 
 381
 00:17:39,600 --> 00:17:42,559
-everybody assumes that it's still valid,
 right? But if it's electronic, if it's
 
 382
 00:17:42,559 --> 00:17:44,400
-right? But if it's electronic, if it's
 digital of an ACDC and it's got in a
 
 383
 00:17:44,400 --> 00:17:47,200
-digital of an ACDC and it's got in a
 revocation registry, I could revoke all
 
 384
 00:17:47,200 --> 00:17:50,640
-revocation registry, I could revoke all
 of them and then reissue them. But maybe
 
 385
 00:17:50,640 --> 00:17:52,799
-of them and then reissue them. But maybe
 I'm okay with what he issued. I The
 
 386
 00:17:52,799 --> 00:17:54,240
-I'm okay with what he issued. I The
 reason he got fired wasn't because he
 
 387
 00:17:54,240 --> 00:17:56,400
-reason he got fired wasn't because he
 was misuing purchase orders. He got
 
 388
 00:17:56,400 --> 00:17:58,880
-was misuing purchase orders. He got
 fired because he violated HR or
 
 389
 00:17:58,880 --> 00:18:01,120
-fired because he violated HR or
 something, right? So everything that he
 
 390
 00:18:01,120 --> 00:18:03,120
-something, right? So everything that he
 did officially is still good. But he
 
 391
 00:18:03,120 --> 00:18:05,280
-did officially is still good. But he
 doesn't work for me anymore. But if I
 
 392
 00:18:05,280 --> 00:18:09,039
-doesn't work for me anymore. But if I
 revoke his authority, I break the chain
 
 393
 00:18:09,039 --> 00:18:11,200
-revoke his authority, I break the chain
 of authority. And if I don't have any
 
 394
 00:18:11,200 --> 00:18:13,520
-of authority. And if I don't have any
 other mechanism, then I am forced to
 
 395
 00:18:13,520 --> 00:18:16,320
-other mechanism, then I am forced to
 reissue everything that he did.
 
 396
 00:18:16,320 --> 00:18:18,240
-reissue everything that he did.
 So that's a that's a hard problem of
 
 397
 00:18:18,240 --> 00:18:20,320
-So that's a that's a hard problem of
 delegation. And we don't solve these
 
 398
 00:18:20,320 --> 00:18:21,840
-delegation. And we don't solve these
 these problems in general in
 
 399
 00:18:21,840 --> 00:18:23,679
-these problems in general in
 decentralized identity. If I have a
 
 400
 00:18:23,679 --> 00:18:25,520
-decentralized identity. If I have a
 database, I can solve any problem. If I
 
 401
 00:18:25,520 --> 00:18:27,039
-database, I can solve any problem. If I
 have a centralized database, all
 
 402
 00:18:27,039 --> 00:18:28,960
-have a centralized database, all
 problems are all of these problems are
 
 403
 00:18:28,960 --> 00:18:31,520
-problems are all of these problems are
 easy. It's just software. But if it's a
 
 404
 00:18:31,520 --> 00:18:34,480
-easy. It's just software. But if it's a
 distributed decentralized, I have to
 
 405
 00:18:34,480 --> 00:18:36,240
-distributed decentralized, I have to
 solve it cryptographically. I have to
 
 406
 00:18:36,240 --> 00:18:37,600
-solve it cryptographically. I have to
 figure out how I'm going to do it in a
 
 407
 00:18:37,600 --> 00:18:40,000
-figure out how I'm going to do it in a
 decentralized way. So the way how do we
 
 408
 00:18:40,000 --> 00:18:42,480
-decentralized way. So the way how do we
 do that?
 
 409
 00:18:42,480 --> 00:18:48,070
-do that?
 Well, here's a way that we can do that.
 
 410
@@ -2054,22 +1655,18 @@ When the chain is broken. All right. So,
 
 412
 00:18:51,919 --> 00:18:54,080
-When the chain is broken. All right. So,
 this is how we do it. We do it with
 
 413
 00:18:54,080 --> 00:18:57,679
-this is how we do it. We do it with
 something called a bound blinded
 
 414
 00:18:57,679 --> 00:19:01,520
-something called a bound blinded
 ACDC register.
 
 415
 00:19:01,520 --> 00:19:05,760
-ACDC register.
 what did I put that? Reco.
 
 416
@@ -2079,252 +1676,202 @@ Oh, yeah. That should have been that
 
 417
 00:19:07,840 --> 00:19:11,520
-Oh, yeah. That should have been that
 should have been re reversion.
 
 418
 00:19:11,520 --> 00:19:13,840
-should have been re reversion.
 I misspelled that. All right. Anyway, so
 
 419
 00:19:13,840 --> 00:19:16,320
-I misspelled that. All right. Anyway, so
 this is how it works. So, we have this
 
 420
 00:19:16,320 --> 00:19:17,840
-this is how it works. So, we have this
 situation.
 
 421
 00:19:17,840 --> 00:19:20,400
-situation.
 We have this situation here. We have an
 
 422
 00:19:20,400 --> 00:19:22,799
-We have this situation here. We have an
 issue AID.
 
 423
 00:19:22,799 --> 00:19:26,960
-issue AID.
 The there's there the issue issues is
 
 424
 00:19:26,960 --> 00:19:30,400
-The there's there the issue issues is
 the issuer of another ACDC. So we have
 
 425
 00:19:30,400 --> 00:19:32,720
-the issuer of another ACDC. So we have
 a chained set of ACDC's. There's an
 
 426
 00:19:32,720 --> 00:19:36,080
-a chained set of ACDC's. There's an
 edge pointing back from the delegated
 
 427
 00:19:36,080 --> 00:19:38,799
-edge pointing back from the delegated
 one back to the delegating one. Okay. So
 
 428
 00:19:38,799 --> 00:19:43,520
-one back to the delegating one. Okay. So
 that's the setup. So now we have
 
 429
 00:19:43,520 --> 00:19:46,960
-that's the setup. So now we have
 the issuer uses this bound blinded state
 
 430
 00:19:46,960 --> 00:19:48,480
-the issuer uses this bound blinded state
 registry
 
 431
 00:19:48,480 --> 00:19:50,559
-registry
 and the thing that it adds is the
 
 432
 00:19:50,559 --> 00:19:53,919
-and the thing that it adds is the
 sequence number and the SAID
 
 433
 00:19:53,919 --> 00:19:57,679
-sequence number and the SAID
 of the key state of the issue who is
 
 434
 00:19:57,679 --> 00:20:00,559
-of the key state of the issue who is
 also the issuer. Right? Right. The guy
 
 435
 00:20:00,559 --> 00:20:02,480
-also the issuer. Right? Right. The guy
 in the middle is both an issuer and an
 
 436
 00:20:02,480 --> 00:20:05,679
-in the middle is both an issuer and an
 issue. He's an issue of his delegator
 
 437
 00:20:05,679 --> 00:20:07,760
-issue. He's an issue of his delegator
 and he gets to issue stuff himself.
 
 438
 00:20:07,760 --> 00:20:10,080
-and he gets to issue stuff himself.
 Right. So it's a delegated chain but
 
 439
 00:20:10,080 --> 00:20:12,960
-Right. So it's a delegated chain but
 what we're doing is we're binding
 
 440
 00:20:12,960 --> 00:20:16,400
-what we're doing is we're binding
 whoops we're binding the key state of
 
 441
 00:20:16,400 --> 00:20:20,160
-whoops we're binding the key state of
 the issue at the time
 
 442
 00:20:20,160 --> 00:20:23,440
-the issue at the time
 we give him authority
 
 443
 00:20:23,440 --> 00:20:26,240
-we give him authority
 right so right here we issue to him
 
 444
 00:20:26,240 --> 00:20:29,919
-right so right here we issue to him
 authority and we bind his key state and
 
 445
 00:20:29,919 --> 00:20:32,400
-authority and we bind his key state and
 then when we revoke his authority we
 
 446
 00:20:32,400 --> 00:20:35,360
-then when we revoke his authority we
 also bind his key state what that says is
 
 447
 00:20:35,360 --> 00:20:38,720
-also bind his key state what that says is
 is between two and five
 
 448
 00:20:38,720 --> 00:20:42,559
-is between two and five
 He has the authority to issue things
 
 449
 00:20:42,559 --> 00:20:44,640
-He has the authority to issue things
 and here's his registry. He can issue
 
 450
 00:20:44,640 --> 00:20:47,120
-and here's his registry. He can issue
 things in his registry. So in this list
 
 451
 00:20:47,120 --> 00:20:51,520
-things in his registry. So in this list
 right here, right? He can do things
 
 452
 00:20:51,520 --> 00:20:53,360
-right here, right? He can do things
 to this other thing and they all
 
 453
 00:20:53,360 --> 00:20:58,960
-to this other thing and they all
 work. But once but number six
 
 454
 00:20:58,960 --> 00:21:02,080
-work. But once but number six
 here, he doesn't have authority anymore.
 
 455
 00:21:02,080 --> 00:21:04,799
-here, he doesn't have authority anymore.
 So even though he's got an update event,
 
 456
 00:21:04,799 --> 00:21:07,120
-So even though he's got an update event,
 that update event, the bottom one's not
 
 457
 00:21:07,120 --> 00:21:09,120
-that update event, the bottom one's not
 not verifiable because he doesn't have
 
 458
 00:21:09,120 --> 00:21:11,919
-not verifiable because he doesn't have
 authority to change that. So we have
 
 459
 00:21:11,919 --> 00:21:13,919
-authority to change that. So we have
 a problem.
 
 460
 00:21:13,919 --> 00:21:16,960
-a problem.
 So with this,
 
 461
 00:21:16,960 --> 00:21:20,320
-So with this,
 the only way that this works is if the
 
 462
 00:21:20,320 --> 00:21:23,120
-the only way that this works is if the
 issuances over here
 
 463
 00:21:23,120 --> 00:21:26,960
-issuances over here
 are all time expired. Well, it's kind of
 
 464
 00:21:26,960 --> 00:21:29,200
-are all time expired. Well, it's kind of
 I'll just point at it. Maybe it's better
 
 465
 00:21:29,200 --> 00:21:31,679
-I'll just point at it. Maybe it's better
 to just do it over here. Can you see my
 
 466
 00:21:31,679 --> 00:21:35,669
-to just do it over here. Can you see my
 cursor?
 
 467
@@ -2334,167 +1881,134 @@ Oh, it's Yeah, revocation recovation.
 
 468
 00:21:41,200 --> 00:21:42,880
-Oh, it's Yeah, revocation recovation.
 Oh, it's not showing up. All right. It's
 
 469
 00:21:42,880 --> 00:21:45,600
-Oh, it's not showing up. All right. It's
 probably because this thing's on. So
 
 470
 00:21:45,600 --> 00:21:48,799
-probably because this thing's on. So
 so what happens is that the type
 
 471
 00:21:48,799 --> 00:21:52,880
-so what happens is that the type
 of ACDC that he can issue here have to
 
 472
 00:21:52,880 --> 00:21:55,520
-of ACDC that he can issue here have to
 have some sort of timeout because they
 
 473
 00:21:55,520 --> 00:21:57,679
-have some sort of timeout because they
 themselves can't be revocable because we
 
 474
 00:21:57,679 --> 00:21:59,520
-themselves can't be revocable because we
 have an ambiguity about what we do about
 
 475
 00:21:59,520 --> 00:22:01,840
-have an ambiguity about what we do about
 it when we revoke his authority. But as
 
 476
 00:22:01,840 --> 00:22:03,760
-it when we revoke his authority. But as
 long as it times out or something then
 
 477
 00:22:03,760 --> 00:22:05,760
-long as it times out or something then
 it'll just selfrevoke.
 
 478
 00:22:05,760 --> 00:22:07,760
-it'll just selfrevoke.
 So how do we solve that problem? That's
 
 479
 00:22:07,760 --> 00:22:10,400
-So how do we solve that problem? That's
 the that's the harder problem. So this
 
 480
 00:22:10,400 --> 00:22:12,320
-the that's the harder problem. So this
 is not in the spec. This is actually a
 
 481
 00:22:12,320 --> 00:22:16,080
-is not in the spec. This is actually a
 proposal for the spec. We add
 
 482
 00:22:16,080 --> 00:22:20,960
-proposal for the spec. We add
 another we add another event. Oh
 
 483
 00:22:20,960 --> 00:22:23,919
-another we add another event. Oh
 No that's the next one. So the way
 
 484
 00:22:23,919 --> 00:22:27,280
-No that's the next one. So the way
 we can solve it's not written up
 
 485
 00:22:27,280 --> 00:22:28,720
-we can solve it's not written up
 in the spec but this is an easy
 
 486
 00:22:28,720 --> 00:22:31,440
-in the spec but this is an easy
 modification of the spec is that because
 
 487
 00:22:31,440 --> 00:22:34,320
-modification of the spec is that because
 there's an edge right here
 
 488
 00:22:34,320 --> 00:22:36,480
-there's an edge right here
 that points back to the issuing
 
 489
 00:22:36,480 --> 00:22:38,080
-that points back to the issuing
 authority
 
 490
 00:22:38,080 --> 00:22:41,120
-authority
 we can do a reversion of authority. So
 
 491
 00:22:41,120 --> 00:22:44,559
-we can do a reversion of authority. So
 let me give the example. Let's say
 
 492
 00:22:44,559 --> 00:22:47,440
-let me give the example. Let's say
 that I'm a I'm a lieutenant of a of a
 
 493
 00:22:47,440 --> 00:22:50,240
-that I'm a I'm a lieutenant of a of a
 company and I take one of one of the
 
 494
 00:22:50,240 --> 00:22:52,559
-company and I take one of one of the
 members of the company and I give him an
 
 495
 00:22:52,559 --> 00:22:54,640
-members of the company and I give him an
 order and I say you're going to go over
 
 496
 00:22:54,640 --> 00:22:59,919
-order and I say you're going to go over
 there, right? And he goes over there,
 
 497
 00:22:59,919 --> 00:23:01,679
-there, right? And he goes over there,
 right? He has authority to do it. I told
 
 498
 00:23:01,679 --> 00:23:06,880
-right? He has authority to do it. I told
 him to do something. Let's say that I
 
 499
 00:23:06,880 --> 00:23:09,679
-him to do something. Let's say that I
 I resend that order. He can't he
 
 500
 00:23:09,679 --> 00:23:13,350
-I resend that order. He can't he
 can't do that anymore.
 
 501
@@ -2504,192 +2018,154 @@ authority to do that still rests in me,
 
 502
 00:23:17,919 --> 00:23:22,159
-authority to do that still rests in me,
 the lieutenant. I can I can go
 
 503
 00:23:22,159 --> 00:23:25,120
-the lieutenant. I can I can go
 over there and do it or I can I can, you
 
 504
 00:23:25,120 --> 00:23:28,400
-over there and do it or I can I can, you
 know, authorize whatever it is myself.
 
 505
 00:23:28,400 --> 00:23:31,919
-know, authorize whatever it is myself.
 So, the authority always reverts to me
 
 506
 00:23:31,919 --> 00:23:34,320
-So, the authority always reverts to me
 as the higher authority. So what we do
 
 507
 00:23:34,320 --> 00:23:37,360
-as the higher authority. So what we do
 is that when a subordinate or a
 
 508
 00:23:37,360 --> 00:23:40,559
-is that when a subordinate or a
 delegate loses authority because we've
 
 509
 00:23:40,559 --> 00:23:44,000
-delegate loses authority because we've
 revoked it, any outstanding issuances
 
 510
 00:23:44,000 --> 00:23:47,200
-revoked it, any outstanding issuances
 that were validly issued that we want to
 
 511
 00:23:47,200 --> 00:23:50,000
-that were validly issued that we want to
 dynamically revoke the revocation now
 
 512
 00:23:50,000 --> 00:23:52,159
-dynamically revoke the revocation now
 becomes the responsibility of the
 
 513
 00:23:52,159 --> 00:23:54,159
-becomes the responsibility of the
 delegator. It just reverts back to the
 
 514
 00:23:54,159 --> 00:23:56,480
-delegator. It just reverts back to the
 delegator. And because we have an edge,
 
 515
 00:23:56,480 --> 00:23:58,960
-delegator. And because we have an edge,
 we know who the delegator is. And so all
 
 516
 00:23:58,960 --> 00:24:00,559
-we know who the delegator is. And so all
 we have to do is make a policy change
 
 517
 00:24:00,559 --> 00:24:04,799
-we have to do is make a policy change
 that says in this case
 
 518
 00:24:04,799 --> 00:24:09,039
-that says in this case
 where I revoked there you go where I
 
 519
 00:24:09,039 --> 00:24:11,360
-where I revoked there you go where I
 revoked his authority
 
 520
 00:24:11,360 --> 00:24:13,120
-revoked his authority
 right here.
 
 521
 00:24:13,120 --> 00:24:17,039
-right here.
 So that I need so you see this one
 
 522
 00:24:17,039 --> 00:24:19,440
-So that I need so you see this one
 over here is issue I can't revoke
 
 523
 00:24:19,440 --> 00:24:22,159
-over here is issue I can't revoke
 because he's been revoked over here in
 
 524
 00:24:22,159 --> 00:24:24,960
-because he's been revoked over here in
 number five. But guess who can revoke
 
 525
 00:24:24,960 --> 00:24:28,960
-number five. But guess who can revoke
 it? See the line that comes back here?
 
 526
 00:24:28,960 --> 00:24:31,760
-it? See the line that comes back here?
 He can revoke it. And a ver verifier
 
 527
 00:24:31,760 --> 00:24:34,159
-He can revoke it. And a ver verifier
 just needs to know that's
 
 528
 00:24:34,159 --> 00:24:36,799
-just needs to know that's
 the policy.
 
 529
 00:24:36,799 --> 00:24:39,520
-the policy.
 It just looks it up and says, "Oh, okay.
 
 530
 00:24:39,520 --> 00:24:41,919
-It just looks it up and says, "Oh, okay.
 The approximate delegate doesn't
 
 531
 00:24:41,919 --> 00:24:43,600
-The approximate delegate doesn't
 have authority because it's his
 
 532
 00:24:43,600 --> 00:24:45,039
-have authority because it's his
 authority has been revoked. The chain's
 
 533
 00:24:45,039 --> 00:24:48,559
-authority has been revoked. The chain's
 broken." But any subsequent actions on
 
 534
 00:24:48,559 --> 00:24:51,200
-broken." But any subsequent actions on
 that ACDC are still the responsibility
 
 535
 00:24:51,200 --> 00:24:53,600
-that ACDC are still the responsibility
 of the delegator. And so the delegator
 
 536
 00:24:53,600 --> 00:24:55,360
-of the delegator. And so the delegator
 can revoke it. So now we can have
 
 537
 00:24:55,360 --> 00:24:58,080
-can revoke it. So now we can have
 dynamically revocable credentials and
 
 538
 00:24:58,080 --> 00:25:00,400
-dynamically revocable credentials and
 break the chain and still dynamically
 
 539
 00:25:00,400 --> 00:25:07,750
-break the chain and still dynamically
 revoke them. Yeah.
 
 540
@@ -2699,97 +2175,78 @@ you can the reversion of authority
 
 541
 00:25:13,520 --> 00:25:14,960
-you can the reversion of authority
 can go all the way up to the top of the
 
 542
 00:25:14,960 --> 00:25:17,279
-can go all the way up to the top of the
 chain. You can break you can break the
 
 543
 00:25:17,279 --> 00:25:19,279
-chain. You can break you can break the
 leak as many times you want and you just
 
 544
 00:25:19,279 --> 00:25:22,000
-leak as many times you want and you just
 keep you just rinse and repeat all you
 
 545
 00:25:22,000 --> 00:25:24,400
-keep you just rinse and repeat all you
 just ascend the chain. So now you have
 
 546
 00:25:24,400 --> 00:25:26,559
-just ascend the chain. So now you have
 an elegant solution
 
 547
 00:25:26,559 --> 00:25:30,640
-an elegant solution
 for dynamically revocable delegated
 
 548
 00:25:30,640 --> 00:25:33,120
-for dynamically revocable delegated
 credentials all the way down. You can
 
 549
 00:25:33,120 --> 00:25:35,520
-credentials all the way down. You can
 break the chain any number of times and
 
 550
 00:25:35,520 --> 00:25:37,919
-break the chain any number of times and
 still control those credentials
 
 551
 00:25:37,919 --> 00:25:39,520
-still control those credentials
 dynamically.
 
 552
 00:25:39,520 --> 00:25:43,840
-dynamically.
 So we have solved a really hard problem
 
 553
 00:25:43,840 --> 00:25:47,200
-So we have solved a really hard problem
 that in ephemeral authorizations isn't a
 
 554
 00:25:47,200 --> 00:25:49,760
-that in ephemeral authorizations isn't a
 problem because no authorizations last
 
 555
 00:25:49,760 --> 00:25:52,000
-problem because no authorizations last
 long enough that you care. But if I'm
 
 556
 00:25:52,000 --> 00:25:55,360
-long enough that you care. But if I'm
 doing perpetually issued authorizations
 
 557
 00:25:55,360 --> 00:25:58,000
-doing perpetually issued authorizations
 that last indefinitely unless they're
 
 558
 00:25:58,000 --> 00:26:00,559
-that last indefinitely unless they're
 revoked and I'm doing a chain, I need to
 
 559
 00:26:00,559 --> 00:26:06,230
-revoked and I'm doing a chain, I need to
 solve that problem.
 
 560
@@ -2799,57 +2256,46 @@ the authority to the delegator when the
 
 561
 00:26:11,600 --> 00:26:14,159
-the authority to the delegator when the
 delegates authority is revoked and that
 
 562
 00:26:14,159 --> 00:26:16,159
-delegates authority is revoked and that
 allows you to continue to control those
 
 563
 00:26:16,159 --> 00:26:18,960
-allows you to continue to control those
 those issuances.
 
 564
 00:26:18,960 --> 00:26:21,360
-those issuances.
 Now we can do it even better. This
 
 565
 00:26:21,360 --> 00:26:24,880
-Now we can do it even better. This
 requires something not in the spec.
 
 566
 00:26:24,880 --> 00:26:26,960
-requires something not in the spec.
 So this is a proposal to add in the spec
 
 567
 00:26:26,960 --> 00:26:29,360
-So this is a proposal to add in the spec
 and that's just adding one additional
 
 568
 00:26:29,360 --> 00:26:32,240
-and that's just adding one additional
 one additional update. It's called a
 
 569
 00:26:32,240 --> 00:26:35,760
-one additional update. It's called a
 transfer event. So if we look over here,
 
 570
 00:26:35,760 --> 00:26:40,240
-transfer event. So if we look over here,
 where did I put it? Yeah, here we go.
 
 571
 00:26:40,240 --> 00:26:44,640
-where did I put it? Yeah, here we go.
 There we go. Where is it? Incept
 
 572
@@ -2859,152 +2305,122 @@ Oh, I forgot where I saw it. There it
 
 573
 00:26:46,400 --> 00:26:48,640
-Oh, I forgot where I saw it. There it
 is. Oh, number three. I can't see it.
 
 574
 00:26:48,640 --> 00:26:50,720
-is. Oh, number three. I can't see it.
 Yeah, number three is transfer event. So
 
 575
 00:26:50,720 --> 00:26:52,400
-Yeah, number three is transfer event. So
 we have an inception event and a
 
 576
 00:26:52,400 --> 00:26:55,440
-we have an inception event and a
 transfer event. Those are analogous to
 
 577
 00:26:55,440 --> 00:26:58,240
-transfer event. Those are analogous to
 an inception event and a rotation event
 
 578
 00:26:58,240 --> 00:27:00,960
-an inception event and a rotation event
 in a Key Event Log. So in a transaction
 
 579
 00:27:00,960 --> 00:27:04,159
-in a Key Event Log. So in a transaction
 event log, we now have meta control
 
 580
 00:27:04,159 --> 00:27:06,480
-event log, we now have meta control
 events. We always had we had the
 
 581
 00:27:06,480 --> 00:27:09,039
-events. We always had we had the
 inception event which establishes the
 
 582
 00:27:09,039 --> 00:27:11,200
-inception event which establishes the
 who's the who's the authority over the
 
 583
 00:27:11,200 --> 00:27:14,000
-who's the who's the authority over the
 registry. Now we have a transfer event
 
 584
 00:27:14,000 --> 00:27:16,960
-registry. Now we have a transfer event
 that says we can transfer we can
 
 585
 00:27:16,960 --> 00:27:20,880
-that says we can transfer we can
 transfer authority to a different
 
 586
 00:27:20,880 --> 00:27:24,080
-transfer authority to a different
 AID. So that allows us to do a an
 
 587
 00:27:24,080 --> 00:27:26,480
-AID. So that allows us to do a an
 authority transfer. So it's not just
 
 588
 00:27:26,480 --> 00:27:28,960
-authority transfer. So it's not just
 reversion. We have a reversion of
 
 589
 00:27:28,960 --> 00:27:31,679
-reversion. We have a reversion of
 control. The reversion allows us to
 
 590
 00:27:31,679 --> 00:27:33,840
-control. The reversion allows us to
 issue a transfer event. Now we have a
 
 591
 00:27:33,840 --> 00:27:36,880
-issue a transfer event. Now we have a
 new dele delegate that now is a control
 
 592
 00:27:36,880 --> 00:27:38,480
-new dele delegate that now is a control
 of all those credentials that are
 
 593
 00:27:38,480 --> 00:27:40,799
-of all those credentials that are
 controlled by that registry. So we could
 
 594
 00:27:40,799 --> 00:27:42,880
-controlled by that registry. So we could
 do a seamless transfer all the way down
 
 595
 00:27:42,880 --> 00:27:44,799
-do a seamless transfer all the way down
 at every level. And all we have to do is
 
 596
 00:27:44,799 --> 00:27:46,799
-at every level. And all we have to do is
 add one event. And the main thing in
 
 597
 00:27:46,799 --> 00:27:49,679
-add one event. And the main thing in
 this event is just that it's it's got
 
 598
 00:27:49,679 --> 00:27:52,559
-this event is just that it's it's got
 Whoops. It's got the issuer. It's got
 
 599
 00:27:52,559 --> 00:27:55,760
-Whoops. It's got the issuer. It's got
 the new the new issuer AID, not the
 
 600
 00:27:55,760 --> 00:27:57,840
-the new the new issuer AID, not the
 issuer back here. The issuer at the at
 
 601
 00:27:57,840 --> 00:28:01,039
-issuer back here. The issuer at the at
 the end.
 
 602
 00:28:01,039 --> 00:28:08,310
-the end.
 Yeah.
 
 603
@@ -3014,747 +2430,598 @@ is that every event
 
 604
 00:28:14,799 --> 00:28:17,360
-is that every event
 in all of these registries is anchored
 
 605
 00:28:17,360 --> 00:28:20,480
-in all of these registries is anchored
 to somebody's Key Event Log.
 
 606
 00:28:20,480 --> 00:28:23,279
-to somebody's Key Event Log.
 So that's perpetually verifiable
 
 607
 00:28:23,279 --> 00:28:26,159
-So that's perpetually verifiable
 because all of the all of the security
 
 608
 00:28:26,159 --> 00:28:27,760
-because all of the all of the security
 mechanisms that protect the key event
 
 609
 00:28:27,760 --> 00:28:29,440
-mechanisms that protect the key event
 log protect everything anchored to the
 
 610
 00:28:29,440 --> 00:28:31,440
-log protect everything anchored to the
 Key Event Log.
 
 611
 00:28:31,440 --> 00:28:34,559
-Key Event Log.
 Right? So post transfer you want to
 
 612
 00:28:34,559 --> 00:28:38,000
-Right? So post transfer you want to
 minimize the number of nodes you have to
 
 613
 00:28:38,000 --> 00:28:39,520
-minimize the number of nodes you have to
 recurse through in order to get your
 
 614
 00:28:39,520 --> 00:28:41,360
-recurse through in order to get your
 verifications to work.
 
 615
 00:28:41,360 --> 00:28:43,600
-verifications to work.
 Well, you're not minimizing them be
 
 616
 00:28:43,600 --> 00:28:45,760
-Well, you're not minimizing them be
 you're not changing the number because
 
 617
 00:28:45,760 --> 00:28:48,159
-you're not changing the number because
 you have a train a chain. So you always
 
 618
 00:28:48,159 --> 00:28:50,159
-you have a train a chain. So you always
 have to verify the whole chain. Yeah.
 
 619
 00:28:50,159 --> 00:28:50,399
-have to verify the whole chain. Yeah.
 So,
 
 620
 00:28:50,399 --> 00:28:51,840
-So,
 so you didn't increase the length of the
 
 621
 00:28:51,840 --> 00:28:54,320
-so you didn't increase the length of the
 chain, you just switched a branch in the
 
 622
 00:28:54,320 --> 00:28:55,840
-chain, you just switched a branch in the
 chain,
 
 623
 00:28:55,840 --> 00:28:57,360
-chain,
 right? So, there's a dead branch in the
 
 624
 00:28:57,360 --> 00:28:58,720
-right? So, there's a dead branch in the
 chain because the employee got fired.
 
 625
 00:28:58,720 --> 00:29:00,320
-chain because the employee got fired.
 They're gone, right? And I don't want to
 
 626
 00:29:00,320 --> 00:29:02,399
-They're gone, right? And I don't want to
 maintain his logs forever.
 
 627
 00:29:02,399 --> 00:29:02,799
-maintain his logs forever.
 Well,
 
 628
 00:29:02,799 --> 00:29:04,799
-Well,
 his K logs, right?
 
 629
 00:29:04,799 --> 00:29:06,640
-his K logs, right?
 No, you don't have to maintain his key
 
 630
 00:29:06,640 --> 00:29:09,520
-No, you don't have to maintain his key
 event logs, you know. Well, yeah, you do
 
 631
 00:29:09,520 --> 00:29:12,080
-event logs, you know. Well, yeah, you do
 have to maintain his Key Event Logs for
 
 632
 00:29:12,080 --> 00:29:14,000
-have to maintain his Key Event Logs for
 as long as those issuances are valid
 
 633
 00:29:14,000 --> 00:29:15,120
-as long as those issuances are valid
 because that's the only way you can
 
 634
 00:29:15,120 --> 00:29:17,200
-because that's the only way you can
 verify the original issuance.
 
 635
 00:29:17,200 --> 00:29:18,240
-verify the original issuance.
 That was my question.
 
 636
 00:29:18,240 --> 00:29:21,440
-That was my question.
 Yeah. So, so, so, so you wouldn't do it
 
 637
 00:29:21,440 --> 00:29:23,600
-Yeah. So, so, so, so you wouldn't do it
 for you, you wouldn't do it for
 
 638
 00:29:23,600 --> 00:29:27,520
-for you, you wouldn't do it for
 something that was more that
 
 639
 00:29:27,520 --> 00:29:29,440
-something that was more that
 was,
 
 640
 00:29:29,440 --> 00:29:31,039
-was,
 you know, this would allow something
 
 641
 00:29:31,039 --> 00:29:33,520
-you know, this would allow something
 that's longer lived
 
 642
 00:29:33,520 --> 00:29:35,600
-that's longer lived
 like let's say an employee issues a
 
 643
 00:29:35,600 --> 00:29:37,919
-like let's say an employee issues a
 purchase order that you want to be
 
 644
 00:29:37,919 --> 00:29:40,960
-purchase order that you want to be
 dynamic revocable, but you're you're
 
 645
 00:29:40,960 --> 00:29:42,320
-dynamic revocable, but you're you're
 not going to have it sit out there for
 
 646
 00:29:42,320 --> 00:29:44,480
-not going to have it sit out there for
 more than a year, right? So, you could
 
 647
 00:29:44,480 --> 00:29:46,159
-more than a year, right? So, you could
 transfer to a new employee. It still
 
 648
 00:29:46,159 --> 00:29:48,080
-transfer to a new employee. It still
 lasts a year, but you could still revoke
 
 649
 00:29:48,080 --> 00:29:49,440
-lasts a year, but you could still revoke
 it if you found out there was something
 
 650
 00:29:49,440 --> 00:29:53,120
-it if you found out there was something
 wrong with it. If you're the
 
 651
 00:29:53,120 --> 00:29:55,279
-wrong with it. If you're the
 state of Are we out of time? Oh, you're
 
 652
 00:29:55,279 --> 00:29:58,080
-state of Are we out of time? Oh, you're
 just asking questions. Okay. Let me
 
 653
 00:29:58,080 --> 00:30:01,440
-just asking questions. Okay. Let me
 let me Yeah, go ahead. I guess
 
 654
 00:30:01,440 --> 00:30:02,960
-let me Yeah, go ahead. I guess
 I was just curious because you
 
 655
 00:30:02,960 --> 00:30:04,720
-I was just curious because you
 nailed it with key rotation can already
 
 656
 00:30:04,720 --> 00:30:07,760
-nailed it with key rotation can already
 transfer control. You're just So, is
 
 657
 00:30:07,760 --> 00:30:10,559
-transfer control. You're just So, is
 this analogous to a sort of
 
 658
 00:30:10,559 --> 00:30:13,039
-this analogous to a sort of
 Well, the difference here is that
 
 659
 00:30:13,039 --> 00:30:17,200
-Well, the difference here is that
 is that key rotation is
 
 660
 00:30:17,200 --> 00:30:20,799
-is that key rotation is
 Heavy weight transfer because you're
 
 661
 00:30:20,799 --> 00:30:23,039
-Heavy weight transfer because you're
 talking about control of the AIDs.
 
 662
 00:30:23,039 --> 00:30:23,840
-talking about control of the AIDs.
 Yep.
 
 663
 00:30:23,840 --> 00:30:26,159
-Yep.
 Right. And so in the case of an employee
 
 664
 00:30:26,159 --> 00:30:28,559
-Right. And so in the case of an employee
 leaving, you would at very least have to
 
 665
 00:30:28,559 --> 00:30:30,159
-leaving, you would at very least have to
 have a multi-IG
 
 666
 00:30:30,159 --> 00:30:32,480
-have a multi-IG
 so that multiple employees controlled
 
 667
 00:30:32,480 --> 00:30:35,039
-so that multiple employees controlled
 the AID and one of them rotated out.
 
 668
 00:30:35,039 --> 00:30:37,360
-the AID and one of them rotated out.
 This allows you to avoid any of those
 
 669
 00:30:37,360 --> 00:30:38,000
-This allows you to avoid any of those
 issues
 
 670
 00:30:38,000 --> 00:30:39,120
-issues
 because you're doing it on the registry
 
 671
 00:30:39,120 --> 00:30:39,520
-because you're doing it on the registry
 level.
 
 672
 00:30:39,520 --> 00:30:40,720
-level.
 You're doing on the registry level
 
 673
 00:30:40,720 --> 00:30:42,720
-You're doing on the registry level
 instead of the KEL level. So, it's a
 
 674
 00:30:42,720 --> 00:30:45,200
-instead of the KEL level. So, it's a
 much lighter weight, easier to manage
 
 675
 00:30:45,200 --> 00:30:49,120
-much lighter weight, easier to manage
 situation for doing things at scale.
 
 676
 00:30:49,120 --> 00:30:50,480
-situation for doing things at scale.
 What I'm wondering though is that it
 
 677
 00:30:50,480 --> 00:30:52,399
-What I'm wondering though is that it
 could this be a point of failure if
 
 678
 00:30:52,399 --> 00:30:55,120
-could this be a point of failure if
 someone were to key compromise and then
 
 679
 00:30:55,120 --> 00:30:57,440
-someone were to key compromise and then
 Transfer a registry toward a
 
 680
 00:30:57,440 --> 00:30:58,640
-Transfer a registry toward a
 malicious controller out.
 
 681
 00:30:58,640 --> 00:31:01,200
-malicious controller out.
 Well, well, anytime you compromise keys,
 
 682
 00:31:01,200 --> 00:31:03,120
-Well, well, anytime you compromise keys,
 you can do something malicious, right?
 
 683
 00:31:03,120 --> 00:31:04,480
-you can do something malicious, right?
 But you can't do it without being
 
 684
 00:31:04,480 --> 00:31:05,520
-But you can't do it without being
 detected, right?
 
 685
 00:31:05,520 --> 00:31:08,000
-detected, right?
 Which means you recover from it,
 
 686
 00:31:08,000 --> 00:31:08,720
-Which means you recover from it,
 right?
 
 687
 00:31:08,720 --> 00:31:11,279
-right?
 So that's the point.
 
 688
 00:31:11,279 --> 00:31:12,960
-So that's the point.
 Okay. I'm just trying to understand if
 
 689
 00:31:12,960 --> 00:31:14,880
-Okay. I'm just trying to understand if
 it opens up potentially any like
 
 690
 00:31:14,880 --> 00:31:16,880
-it opens up potentially any like
 vulnerabilities, but I'm not
 
 691
 00:31:16,880 --> 00:31:18,799
-vulnerabilities, but I'm not
 not any not any new ones.
 
 692
 00:31:18,799 --> 00:31:21,520
-not any not any new ones.
 Okay, good.
 
 693
 00:31:21,520 --> 00:31:26,640
-Okay, good.
 All right. does. So this now
 
 694
 00:31:26,640 --> 00:31:30,799
-All right. does. So this now
 means that we can maintain control over
 
 695
 00:31:30,799 --> 00:31:34,159
-means that we can maintain control over
 issuances out at the edge of our graph
 
 696
 00:31:34,159 --> 00:31:35,840
-issuances out at the edge of our graph
 authorizations
 
 697
 00:31:35,840 --> 00:31:38,080
-authorizations
 and they can survive for long periods of
 
 698
 00:31:38,080 --> 00:31:40,240
-and they can survive for long periods of
 time and we have dynamic control over
 
 699
 00:31:40,240 --> 00:31:42,559
-time and we have dynamic control over
 them and we can change control over them
 
 700
 00:31:42,559 --> 00:31:44,399
-them and we can change control over them
 dynamically.
 
 701
 00:31:44,399 --> 00:31:47,440
-dynamically.
 Not all issuances benefit from that.
 
 702
 00:31:47,440 --> 00:31:48,960
-Not all issuances benefit from that.
 There's some you don't want to do that
 
 703
 00:31:48,960 --> 00:31:51,679
-There's some you don't want to do that
 for. But in the cases where you have
 
 704
 00:31:51,679 --> 00:31:54,320
-for. But in the cases where you have
 really long lived things like
 
 705
 00:31:54,320 --> 00:31:56,880
-really long lived things like
 guardianship, right? So this is an
 
 706
 00:31:56,880 --> 00:31:59,120
-guardianship, right? So this is an
 example of guardianship. You have a
 
 707
 00:31:59,120 --> 00:32:02,000
-example of guardianship. You have a
 child who has parents that are that are
 
 708
 00:32:02,000 --> 00:32:03,919
-child who has parents that are that are
 guardians over the parents and they get
 
 709
 00:32:03,919 --> 00:32:07,679
-guardians over the parents and they get
 divorced. Who's the new guardian?
 
 710
 00:32:07,679 --> 00:32:09,679
-divorced. Who's the new guardian?
 Do you want to reissue the birth
 
 711
 00:32:09,679 --> 00:32:12,240
-Do you want to reissue the birth
 certificate to the child or do you want
 
 712
 00:32:12,240 --> 00:32:13,760
-certificate to the child or do you want
 to transfer control of the birth
 
 713
 00:32:13,760 --> 00:32:16,080
-to transfer control of the birth
 certificate to the new guardian? You
 
 714
 00:32:16,080 --> 00:32:18,080
-certificate to the new guardian? You
 want to transfer control. You don't want
 
 715
 00:32:18,080 --> 00:32:22,000
-want to transfer control. You don't want
 to reissue the birth certificate
 
 716
 00:32:22,000 --> 00:32:24,240
-to reissue the birth certificate
 and lots of authority structures in
 
 717
 00:32:24,240 --> 00:32:25,840
-and lots of authority structures in
 corporations
 
 718
 00:32:25,840 --> 00:32:28,399
-corporations
 that have to do with things like who has
 
 719
 00:32:28,399 --> 00:32:31,919
-that have to do with things like who has
 control over the domain name registar
 
 720
 00:32:31,919 --> 00:32:34,640
-control over the domain name registar
 for the company.
 
 721
 00:32:34,640 --> 00:32:36,880
-for the company.
 Do you want to reissue all your domain
 
 722
 00:32:36,880 --> 00:32:41,200
-Do you want to reissue all your domain
 names every time that person moves? Or
 
 723
 00:32:41,200 --> 00:32:42,880
-names every time that person moves? Or
 do you want to have some mechanism that
 
 724
 00:32:42,880 --> 00:32:46,720
-do you want to have some mechanism that
 you can transfer control?
 
 725
 00:32:46,720 --> 00:32:49,279
-you can transfer control?
 And do you want that mechanism to be a
 
 726
 00:32:49,279 --> 00:32:51,360
-And do you want that mechanism to be a
 multi-IG group where you have a group of
 
 727
 00:32:51,360 --> 00:32:54,799
-multi-IG group where you have a group of
 IT people that all have, you know,
 
 728
 00:32:54,799 --> 00:32:56,720
-IT people that all have, you know,
 a threshold control? You could do it
 
 729
 00:32:56,720 --> 00:33:00,240
-a threshold control? You could do it
 that way or you could do it this way. In
 
 730
 00:33:00,240 --> 00:33:01,679
-that way or you could do it this way. In
 some cases, this is going to be more
 
 731
 00:33:01,679 --> 00:33:04,640
-some cases, this is going to be more
 scalable because it's not it's not
 
 732
 00:33:04,640 --> 00:33:07,440
-scalable because it's not it's not
 requiring tight coordination for key
 
 733
 00:33:07,440 --> 00:33:09,519
-requiring tight coordination for key
 management.
 
 734
 00:33:09,519 --> 00:33:13,679
-management.
 All right. And any so this so
 
 735
 00:33:13,679 --> 00:33:16,159
-All right. And any so this so
 this would be in version 1.1 of the
 
 736
 00:33:16,159 --> 00:33:20,159
-this would be in version 1.1 of the
 ACD spec. My proposal would be to add
 
 737
 00:33:20,159 --> 00:33:23,440
-ACD spec. My proposal would be to add
 add another event. So basically we're
 
 738
 00:33:23,440 --> 00:33:25,600
-add another event. So basically we're
 just adding one event so we can do
 
 739
 00:33:25,600 --> 00:33:28,399
-just adding one event so we can do
 control transfer on a registry. And I
 
 740
 00:33:28,399 --> 00:33:30,159
-control transfer on a registry. And I
 didn't think of it a year ago when I
 
 741
 00:33:30,159 --> 00:33:32,080
-didn't think of it a year ago when I
 wrote up the registry, but as I was
 
 742
 00:33:32,080 --> 00:33:34,000
-wrote up the registry, but as I was
 thinking about this problem some more, I
 
 743
 00:33:34,000 --> 00:33:35,679
-thinking about this problem some more, I
 said, "No, no, we probably should
 
 744
 00:33:35,679 --> 00:33:37,279
-said, "No, no, we probably should
 add that one." And I actually changed it
 
 745
 00:33:37,279 --> 00:33:38,640
-add that one." And I actually changed it
 three or four times because I kept
 
 746
 00:33:38,640 --> 00:33:40,480
-three or four times because I kept
 trying to decide what I needed. And I
 
 747
 00:33:40,480 --> 00:33:43,200
-trying to decide what I needed. And I
 realized that it just needs to just the
 
 748
 00:33:43,200 --> 00:33:44,640
-realized that it just needs to just the
 only thing it needs to have is the
 
 749
 00:33:44,640 --> 00:33:46,399
-only thing it needs to have is the
 issuers's AID. Everything else is the
 
 750
 00:33:46,399 --> 00:33:49,279
-issuers's AID. Everything else is the
 same as the inception event.
 
 751
 00:33:49,279 --> 00:33:54,159
-same as the inception event.
 It just declares a new issuer.
 
 752
 00:33:54,159 --> 00:33:55,919
-It just declares a new issuer.
 So it's the event type is the only thing
 
 753
@@ -3764,52 +3031,42 @@ that changes. Any
 
 754
 00:33:58,720 --> 00:34:02,159
-that changes. Any
 other questions before I move on?
 
 755
 00:34:02,159 --> 00:34:04,880
-other questions before I move on?
 Yeah.
 
 756
 00:34:04,880 --> 00:34:07,679
-Yeah.
 Does VI authority fit into this somehow?
 
 757
 00:34:07,679 --> 00:34:10,960
-Does VI authority fit into this somehow?
 Yeah, we right now VLIs don't solve
 
 758
 00:34:10,960 --> 00:34:13,599
-Yeah, we right now VLIs don't solve
 these problems. So with the VLI, what
 
 759
 00:34:13,599 --> 00:34:16,560
-these problems. So with the VLI, what
 you have right now is you have a
 
 760
 00:34:16,560 --> 00:34:21,599
-you have right now is you have a
 grace period. when you're issuing QBI
 
 761
 00:34:21,599 --> 00:34:24,800
-grace period. when you're issuing QBI
 loses its authority, all of the VI they
 
 762
 00:34:24,800 --> 00:34:27,040
-loses its authority, all of the VI they
 issue are still valid for a grace
 
 763
 00:34:27,040 --> 00:34:31,510
-issue are still valid for a grace
 period. Carla wants to answer.
 
 764
@@ -3819,27 +3076,22 @@ Yes. And I knew that this was coming
 
 765
 00:34:37,599 --> 00:34:39,200
-Yes. And I knew that this was coming
 Because Kevin told me that you were
 
 766
 00:34:39,200 --> 00:34:42,399
-Because Kevin told me that you were
 working on it. And so we have been
 
 767
 00:34:42,399 --> 00:34:45,760
-working on it. And so we have been
 looking at a way in order to be able
 
 768
 00:34:45,760 --> 00:34:47,839
-looking at a way in order to be able
 not to have to go back to the legal
 
 769
 00:34:47,839 --> 00:34:51,829
-not to have to go back to the legal
 entities
 
 770
@@ -3849,242 +3101,194 @@ you're going to have to hire a new QVI
 
 771
 00:34:56,720 --> 00:34:59,119
-you're going to have to hire a new QVI
 and recreate everything that you
 
 772
 00:34:59,119 --> 00:35:02,640
-and recreate everything that you
 have. And so this way we can transfer
 
 773
 00:35:02,640 --> 00:35:05,359
-have. And so this way we can transfer
 control to GLEIF and then as the legal
 
 774
 00:35:05,359 --> 00:35:08,160
-control to GLEIF and then as the legal
 entities hire their new QVIS we can
 
 775
 00:35:08,160 --> 00:35:10,240
-entities hire their new QVIS we can
 transfer control again to the new
 
 776
 00:35:10,240 --> 00:35:12,960
-transfer control again to the new
 that's what happens is GLEIF now becomes
 
 777
 00:35:12,960 --> 00:35:15,680
-that's what happens is GLEIF now becomes
 the authority not the QVI
 
 778
 00:35:15,680 --> 00:35:17,520
-the authority not the QVI
 and then you don't have to make the
 
 779
 00:35:17,520 --> 00:35:21,119
-and then you don't have to make the
 transfer control be forever. It can just
 
 780
 00:35:21,119 --> 00:35:24,480
-transfer control be forever. It can just
 now be a dynamic time period to give you
 
 781
 00:35:24,480 --> 00:35:26,880
-now be a dynamic time period to give you
 a grace period to find a new QVI and
 
 782
 00:35:26,880 --> 00:35:29,599
-a grace period to find a new QVI and
 reissue. But now the grace
 
 783
 00:35:29,599 --> 00:35:32,640
-reissue. But now the grace
 period now is dynamic instead of fixed,
 
 784
 00:35:32,640 --> 00:35:34,400
-period now is dynamic instead of fixed,
 right? Right now it's fixed to what? 90
 
 785
 00:35:34,400 --> 00:35:35,280
-right? Right now it's fixed to what? 90
 days. Yeah.
 
 786
 00:35:35,280 --> 00:35:36,960
-days. Yeah.
 Okay. Sam, I'm gonna give you a
 
 787
 00:35:36,960 --> 00:35:39,920
-Okay. Sam, I'm gonna give you a
 practical example of I work for a civil
 
 788
 00:35:39,920 --> 00:35:41,680
-practical example of I work for a civil
 engineering firm. I have my engineer
 
 789
 00:35:41,680 --> 00:35:44,320
-engineering firm. I have my engineer
 stamp. I've stamped the bridge as being
 
 790
 00:35:44,320 --> 00:35:47,200
-stamp. I've stamped the bridge as being
 ready to build or meeting spec. I leave
 
 791
 00:35:47,200 --> 00:35:49,359
-ready to build or meeting spec. I leave
 the company. What is the company going
 
 792
 00:35:49,359 --> 00:35:52,000
-the company. What is the company going
 to do? H I'm trying to see that how that
 
 793
 00:35:52,000 --> 00:35:53,599
-to do? H I'm trying to see that how that
 hierarchy would work, especially
 
 794
 00:35:53,599 --> 00:35:55,200
-hierarchy would work, especially
 considering that in the traditional
 
 795
 00:35:55,200 --> 00:35:56,880
-considering that in the traditional
 world, we just file those blueprints and
 
 796
 00:35:56,880 --> 00:35:58,800
-world, we just file those blueprints and
 that engineer stamp is always on there
 
 797
 00:35:58,800 --> 00:36:00,079
-that engineer stamp is always on there
 and we consider it valid.
 
 798
 00:36:00,079 --> 00:36:03,040
-and we consider it valid.
 Well, right now the engineering stamp
 
 799
 00:36:03,040 --> 00:36:05,440
-Well, right now the engineering stamp
 doesn't isn't dynamically revocable.
 
 800
 00:36:05,440 --> 00:36:07,280
-doesn't isn't dynamically revocable.
 There's no mechanism to do that. So,
 
 801
 00:36:07,280 --> 00:36:10,560
-There's no mechanism to do that. So,
 this only applies to engineering stamps
 
 802
 00:36:10,560 --> 00:36:12,720
-this only applies to engineering stamps
 that you already need to dynamically
 
 803
 00:36:12,720 --> 00:36:14,320
-that you already need to dynamically
 revoke.
 
 804
 00:36:14,320 --> 00:36:17,200
-revoke.
 So if you and because it's very
 
 805
 00:36:17,200 --> 00:36:19,599
-So if you and because it's very
 difficult to do dynamic revocation
 
 806
 00:36:19,599 --> 00:36:22,400
-difficult to do dynamic revocation
 almost no real world issuances have
 
 807
 00:36:22,400 --> 00:36:25,119
-almost no real world issuances have
 dynamic re revocation but because now
 
 808
 00:36:25,119 --> 00:36:27,280
-dynamic re revocation but because now
 we're doing this stuff crypto actively
 
 809
 00:36:27,280 --> 00:36:28,960
-we're doing this stuff crypto actively
 all of a sudden all sorts of use cases
 
 810
 00:36:28,960 --> 00:36:30,640
-all of a sudden all sorts of use cases
 where we want them to be dynamic
 
 811
 00:36:30,640 --> 00:36:32,560
-where we want them to be dynamic
 revocable but we never thought it
 
 812
 00:36:32,560 --> 00:36:34,240
-revocable but we never thought it
 possible so we didn't and we just lived
 
 813
 00:36:34,240 --> 00:36:37,280
-possible so we didn't and we just lived
 with it now become good applications. So
 
 814
 00:36:37,280 --> 00:36:39,440
-with it now become good applications. So
 we're talking about using ACDCs in new
 
 815
 00:36:39,440 --> 00:36:43,520
-we're talking about using ACDCs in new
 ways. You can re refactor
 
 816
 00:36:43,520 --> 00:36:48,160
-ways. You can re refactor
 multiple licensing regimes to have
 
 817
 00:36:48,160 --> 00:36:51,440
-multiple licensing regimes to have
 dynamically revokable licenses and it's
 
 818
 00:36:51,440 --> 00:36:56,550
-dynamically revokable licenses and it's
 practically workable.
 
 819
@@ -4099,157 +3303,126 @@ is the basic idea of this transfer
 
 821
 00:37:08,720 --> 00:37:10,240
-is the basic idea of this transfer
 registry
 
 822
 00:37:10,240 --> 00:37:12,400
-registry
 that you create with that you're
 
 823
 00:37:12,400 --> 00:37:15,119
-that you create with that you're
 delegating or changing transferring
 
 824
 00:37:15,119 --> 00:37:17,119
-delegating or changing transferring
 control over a set of identifiers to a
 
 825
 00:37:17,119 --> 00:37:19,119
-control over a set of identifiers to a
 new identifier. So it creates a
 
 826
 00:37:19,119 --> 00:37:19,760
-new identifier. So it creates a
 registry.
 
 827
 00:37:19,760 --> 00:37:21,760
-registry.
 No, you're changing control of the
 
 828
 00:37:21,760 --> 00:37:22,880
-No, you're changing control of the
 registry.
 
 829
 00:37:22,880 --> 00:37:25,599
-registry.
 One identifier, the reg registry's
 
 830
 00:37:25,599 --> 00:37:27,280
-One identifier, the reg registry's
 identifier. That's what you're changing
 
 831
 00:37:27,280 --> 00:37:27,920
-identifier. That's what you're changing
 control of.
 
 832
 00:37:27,920 --> 00:37:29,200
-control of.
 Yeah, I misspoke there. That's right.
 
 833
 00:37:29,200 --> 00:37:31,280
-Yeah, I misspoke there. That's right.
 Okay. So just the registry that you
 
 834
 00:37:31,280 --> 00:37:32,320
-Okay. So just the registry that you
 might have already issued many
 
 835
 00:37:32,320 --> 00:37:34,560
-might have already issued many
 credentials from and so is essentially
 
 836
 00:37:34,560 --> 00:37:38,320
-credentials from and so is essentially
 or one credential that has state changes
 
 837
 00:37:38,320 --> 00:37:40,160
-or one credential that has state changes
 and you don't you don't want to reissue
 
 838
 00:37:40,160 --> 00:37:42,320
-and you don't you don't want to reissue
 that credential. You want the credential
 
 839
 00:37:42,320 --> 00:37:44,640
-that credential. You want the credential
 to continue to have viability. You just
 
 840
 00:37:44,640 --> 00:37:46,720
-to continue to have viability. You just
 want to change who has the authority to
 
 841
 00:37:46,720 --> 00:37:48,079
-want to change who has the authority to
 change the state of the credential.
 
 842
 00:37:48,079 --> 00:37:49,119
-change the state of the credential.
 That's all you're doing.
 
 843
 00:37:49,119 --> 00:37:49,760
-That's all you're doing.
 Got it?
 
 844
 00:37:49,760 --> 00:37:51,599
-Got it?
 And you're doing that. And so I want
 
 845
 00:37:51,599 --> 00:37:53,760
-And you're doing that. And so I want
 to point out something out here. See
 
 846
 00:37:53,760 --> 00:37:55,280
-to point out something out here. See
 this event right here, the transfer
 
 847
 00:37:55,280 --> 00:37:57,520
-this event right here, the transfer
 event. See it has two arrows going to
 
 848
 00:37:57,520 --> 00:38:00,160
-event. See it has two arrows going to
 it. That because a validator first has
 
 849
 00:38:00,160 --> 00:38:02,880
-it. That because a validator first has
 to verify that the that the reverting
 
 850
 00:38:02,880 --> 00:38:06,480
-to verify that the that the reverting
 authority approved it and has to verify
 
 851
 00:38:06,480 --> 00:38:11,190
-authority approved it and has to verify
 that the new authority approved it.
 
 852
@@ -4259,7 +3432,6 @@ they don't care because it's just the
 
 853
 00:38:14,480 --> 00:38:17,670
-they don't care because it's just the
 new authority.
 
 854
@@ -4274,1057 +3446,846 @@ reversion in place in order to have a
 
 856
 00:38:33,680 --> 00:38:35,520
-reversion in place in order to have a
 properly functional transfer registry
 
 857
 00:38:35,520 --> 00:38:37,520
-properly functional transfer registry
 of this type? Yes, there's another type
 
 858
 00:38:37,520 --> 00:38:39,440
-of this type? Yes, there's another type
 of transfer registry that we haven't
 
 859
 00:38:39,440 --> 00:38:42,480
-of transfer registry that we haven't
 defined yet that I have and I have a
 
 860
 00:38:42,480 --> 00:38:45,119
-defined yet that I have and I have a
 outstanding issue on KERIpy that's
 
 861
 00:38:45,119 --> 00:38:46,480
-outstanding issue on KERIpy that's
 different from this. Okay,
 
 862
 00:38:46,480 --> 00:38:49,440
-different from this. Okay,
 this is reversion for a hierarchy of
 
 863
 00:38:49,440 --> 00:38:52,880
-this is reversion for a hierarchy of
 authorizations and delegation, not a not
 
 864
 00:38:52,880 --> 00:38:55,760
-authorizations and delegation, not a not
 not a replacement for asset transfer.
 
 865
 00:38:55,760 --> 00:38:57,599
-not a replacement for asset transfer.
 Ned's going to give a talk on secure
 
 866
 00:38:57,599 --> 00:39:00,800
-Ned's going to give a talk on secure
 asset transfer later today. So you can
 
 867
 00:39:00,800 --> 00:39:03,599
-asset transfer later today. So you can
 ask one clarifying question. Yes.
 
 868
 00:39:03,599 --> 00:39:07,119
-ask one clarifying question. Yes.
 So previously earlier in this talk you I
 
 869
 00:39:07,119 --> 00:39:08,480
-So previously earlier in this talk you I
 thought there was another methodology
 
 870
 00:39:08,480 --> 00:39:10,720
-thought there was another methodology
 where it was like two through four was
 
 871
 00:39:10,720 --> 00:39:13,680
-where it was like two through four was
 valid. So that's a different style where
 
 872
 00:39:13,680 --> 00:39:15,200
-valid. So that's a different style where
 it's a different style of dealing with
 
 873
 00:39:15,200 --> 00:39:17,599
-it's a different style of dealing with
 the same problem. Just one is the same
 
 874
 00:39:17,599 --> 00:39:18,079
-the same problem. Just one is the same
 in order.
 
 875
 00:39:18,079 --> 00:39:20,240
-in order.
 It's the same thing. It's just this says
 
 876
 00:39:20,240 --> 00:39:23,119
-It's the same thing. It's just this says
 once you're invalid, what do you do with
 
 877
 00:39:23,119 --> 00:39:27,440
-once you're invalid, what do you do with
 the ACDC of the controlling authority?
 
 878
 00:39:27,440 --> 00:39:30,160
-the ACDC of the controlling authority?
 It nobody's in charge of it. So you can
 
 879
 00:39:30,160 --> 00:39:33,680
-It nobody's in charge of it. So you can
 revert back to the this delegator and
 
 880
 00:39:33,680 --> 00:39:36,400
-revert back to the this delegator and
 now the deleg delegator is in control.
 
 881
 00:39:36,400 --> 00:39:38,480
-now the deleg delegator is in control.
 But that now imposes a burden on the
 
 882
 00:39:38,480 --> 00:39:40,320
-But that now imposes a burden on the
 delegator to have to make control it
 
 883
 00:39:40,320 --> 00:39:41,359
-delegator to have to make control it
 from that point on.
 
 884
 00:39:41,359 --> 00:39:42,880
-from that point on.
 Right. I just thought I understood
 
 885
 00:39:42,880 --> 00:39:45,440
-Right. I just thought I understood
 previously like to answer his question
 
 886
 00:39:45,440 --> 00:39:50,880
-previously like to answer his question
 about you know the
 
 887
 00:39:50,880 --> 00:39:53,280
-about you know the
 use case where you could potentially
 
 888
 00:39:53,280 --> 00:39:55,280
-use case where you could potentially
 just keep
 
 889
 00:39:55,280 --> 00:39:58,079
-just keep
 Just a certain set subset of the
 
 890
 00:39:58,079 --> 00:39:59,920
-Just a certain set subset of the
 issue issuances of the credentials
 
 891
 00:39:59,920 --> 00:40:00,640
-issue issuances of the credentials
 previously.
 
 892
 00:40:00,640 --> 00:40:02,240
-previously.
 Yeah, that works as long as the
 
 893
 00:40:02,240 --> 00:40:04,480
-Yeah, that works as long as the
 delegated credentials expire on their
 
 894
 00:40:04,480 --> 00:40:08,079
-delegated credentials expire on their
 own. if they're dynamically revocable
 
 895
 00:40:08,079 --> 00:40:10,400
-own. if they're dynamically revocable
 and you break the chain, you can't
 
 896
 00:40:10,400 --> 00:40:12,880
-and you break the chain, you can't
 revoke them after you broken the chain.
 
 897
 00:40:12,880 --> 00:40:15,680
-revoke them after you broken the chain.
 So, it works for conventional
 
 898
 00:40:15,680 --> 00:40:18,400
-So, it works for conventional
 issuances that time out. If I have a
 
 899
 00:40:18,400 --> 00:40:20,480
-issuances that time out. If I have a
 food handlers permit that times out in a
 
 900
 00:40:20,480 --> 00:40:23,119
-food handlers permit that times out in a
 year, I can fire the employee that
 
 901
 00:40:23,119 --> 00:40:24,640
-year, I can fire the employee that
 issued it and it's still valid, but
 
 902
 00:40:24,640 --> 00:40:26,720
-issued it and it's still valid, but
 it'll expire in a year. But if I have
 
 903
 00:40:26,720 --> 00:40:28,320
-it'll expire in a year. But if I have
 something that I want to be able to
 
 904
 00:40:28,320 --> 00:40:31,359
-something that I want to be able to
 revoke any point in time, then I can't I
 
 905
 00:40:31,359 --> 00:40:33,599
-revoke any point in time, then I can't I
 can't break the chain and still I have
 
 906
 00:40:33,599 --> 00:40:35,440
-can't break the chain and still I have
 to define what that means. So, I can
 
 907
 00:40:35,440 --> 00:40:38,960
-to define what that means. So, I can
 define I could say, well, it means X,
 
 908
 00:40:38,960 --> 00:40:40,640
-define I could say, well, it means X,
 right? But we want to make it so that we
 
 909
 00:40:40,640 --> 00:40:43,119
-right? But we want to make it so that we
 can actually verify and enforce it
 
 910
 00:40:43,119 --> 00:40:45,520
-can actually verify and enforce it
 cryptographically.
 
 911
 00:40:45,520 --> 00:40:47,920
-cryptographically.
 I sound like somebody that doesn't
 
 912
 00:40:47,920 --> 00:40:51,680
-I sound like somebody that doesn't
 have a voice. All right. So,
 
 913
 00:40:51,680 --> 00:40:52,880
-have a voice. All right. So,
 So I'm going to move on because
 
 914
 00:40:52,880 --> 00:40:54,400
-So I'm going to move on because
 we're going to run out of time. I have a
 
 915
 00:40:54,400 --> 00:40:56,480
-we're going to run out of time. I have a
 couple more slides. So, the other thing
 
 916
 00:40:56,480 --> 00:41:00,240
-couple more slides. So, the other thing
 we can do is that edge verifi evac can
 
 917
 00:41:00,240 --> 00:41:03,280
-we can do is that edge verifi evac can
 also mean edge verifiable agent control.
 
 918
 00:41:03,280 --> 00:41:05,040
-also mean edge verifiable agent control.
 Now, here's the thing.
 
 919
 00:41:05,040 --> 00:41:06,880
-Now, here's the thing.
 An agent
 
 920
 00:41:06,880 --> 00:41:09,520
-An agent
 is an authorized
 
 921
 00:41:09,520 --> 00:41:11,200
-is an authorized
 delegate
 
 922
 00:41:11,200 --> 00:41:14,319
-delegate
 of a natural person, a legal
 
 923
 00:41:14,319 --> 00:41:17,280
-of a natural person, a legal
 entity, right? An agent can be another
 
 924
 00:41:17,280 --> 00:41:19,599
-entity, right? An agent can be another
 natural personal legal entity. It can be
 
 925
 00:41:19,599 --> 00:41:22,000
-natural personal legal entity. It can be
 a piece of software. It can be an AI.
 
 926
 00:41:22,000 --> 00:41:25,760
-a piece of software. It can be an AI.
 The term agent means so nothing in
 
 927
 00:41:25,760 --> 00:41:28,079
-The term agent means so nothing in
 anything that I showed you before is any
 
 928
 00:41:28,079 --> 00:41:31,280
-anything that I showed you before is any
 different if it's a person or an AI
 
 929
 00:41:31,280 --> 00:41:33,119
-different if it's a person or an AI
 that's in the delegation chain. It all
 
 930
 00:41:33,119 --> 00:41:35,680
-that's in the delegation chain. It all
 works the same. So now if you're worried
 
 931
 00:41:35,680 --> 00:41:38,480
-works the same. So now if you're worried
 about whether your agentic AI has
 
 932
 00:41:38,480 --> 00:41:41,200
-about whether your agentic AI has
 permission to do X, you can
 
 933
 00:41:41,200 --> 00:41:42,960
-permission to do X, you can
 cryptographically verify that it had
 
 934
 00:41:42,960 --> 00:41:44,720
-cryptographically verify that it had
 permission to do X and you can revoke
 
 935
 00:41:44,720 --> 00:41:46,560
-permission to do X and you can revoke
 its permission to do X and any verifier
 
 936
 00:41:46,560 --> 00:41:50,000
-its permission to do X and any verifier
 can verify that. It doesn't matter.
 
 937
 00:41:50,000 --> 00:41:52,160
-can verify that. It doesn't matter.
 You just give the agent an AID, a
 
 938
 00:41:52,160 --> 00:41:54,560
-You just give the agent an AID, a
 delegated AID,
 
 939
 00:41:54,560 --> 00:41:56,880
-delegated AID,
 right? So that's the original meaning of
 
 940
 00:41:56,880 --> 00:41:58,400
-right? So that's the original meaning of
 the word agent. So when see people say
 
 941
 00:41:58,400 --> 00:42:01,839
-the word agent. So when see people say
 agentic AI, they're just software agents
 
 942
 00:42:01,839 --> 00:42:03,280
-agentic AI, they're just software agents
 that are a little bit smarter than
 
 943
 00:42:03,280 --> 00:42:06,160
-that are a little bit smarter than
 software agents used to be, right? The
 
 944
 00:42:06,160 --> 00:42:08,720
-software agents used to be, right? The
 ACDC mechanisms are exactly the same.
 
 945
 00:42:08,720 --> 00:42:10,800
-ACDC mechanisms are exactly the same.
 They don't change. So if I want to do
 
 946
 00:42:10,800 --> 00:42:14,960
-They don't change. So if I want to do
 EVAC, I do evac.
 
 947
 00:42:14,960 --> 00:42:16,880
-EVAC, I do evac.
 So you may want to have regul
 
 948
 00:42:16,880 --> 00:42:19,839
-So you may want to have regul
 regulations require attributes in your
 
 949
 00:42:19,839 --> 00:42:23,280
-regulations require attributes in your
 chain that says this agent is a person
 
 950
 00:42:23,280 --> 00:42:26,400
-chain that says this agent is a person
 versus an AI. you might want to disclose
 
 951
 00:42:26,400 --> 00:42:28,640
-versus an AI. you might want to disclose
 that. But as far as verifying their
 
 952
 00:42:28,640 --> 00:42:31,200
-that. But as far as verifying their
 authority and what they do with it, it
 
 953
 00:42:31,200 --> 00:42:33,359
-authority and what they do with it, it
 ACDC's accommodated without any
 
 954
 00:42:33,359 --> 00:42:35,359
-ACDC's accommodated without any
 changes. Yeah. So, one of the other
 
 955
 00:42:35,359 --> 00:42:37,440
-changes. Yeah. So, one of the other
 problems with delegation is controlling
 
 956
 00:42:37,440 --> 00:42:41,680
-problems with delegation is controlling
 the recursion of delegation. And so
 
 957
 00:42:41,680 --> 00:42:43,520
-the recursion of delegation. And so
 there's a bunch of, you know, weird
 
 958
 00:42:43,520 --> 00:42:45,760
-there's a bunch of, you know, weird
 stuff in X509 for how to do that. I'm
 
 959
 00:42:45,760 --> 00:42:47,760
-stuff in X509 for how to do that. I'm
 just wondering what mechanisms exist
 
 960
 00:42:47,760 --> 00:42:50,640
-just wondering what mechanisms exist
 here to manage the
 
 961
 00:42:50,640 --> 00:42:52,800
-here to manage the
 the degree of delegation that a
 
 962
 00:42:52,800 --> 00:42:53,280
-the degree of delegation that a
 delegate.
 
 963
 00:42:53,280 --> 00:42:54,480
-delegate.
 What do you mean? What do you mean by
 
 964
 00:42:54,480 --> 00:42:55,839
-What do you mean? What do you mean by
 recursion? Like how many levels
 
 965
 00:42:55,839 --> 00:42:57,599
-recursion? Like how many levels
 a delegate can delegate to another
 
 966
 00:42:57,599 --> 00:42:58,400
-a delegate can delegate to another
 delegate?
 
 967
 00:42:58,400 --> 00:43:01,599
-delegate?
 Oh yeah. So in KERI
 
 968
 00:43:01,599 --> 00:43:04,880
-Oh yeah. So in KERI
 When you have ACDC's
 
 969
 00:43:04,880 --> 00:43:07,680
-When you have ACDC's
 they're edge operators and so you can
 
 970
 00:43:07,680 --> 00:43:09,680
-they're edge operators and so you can
 have an edge operators that says do not
 
 971
 00:43:09,680 --> 00:43:12,319
-have an edge operators that says do not
 delegator you can have a configuration
 
 972
 00:43:12,319 --> 00:43:14,640
-delegator you can have a configuration
 for a delegated AID that says do not
 
 973
 00:43:14,640 --> 00:43:17,280
-for a delegated AID that says do not
 delegate. So you can say how many layers
 
 974
 00:43:17,280 --> 00:43:19,440
-delegate. So you can say how many layers
 down you can have delegation. Right? But
 
 975
 00:43:19,440 --> 00:43:21,760
-down you can have delegation. Right? But
 I'm familiar with that. It's like is it
 
 976
 00:43:21,760 --> 00:43:23,839
-I'm familiar with that. It's like is it
 is it do you have a whole policy engine
 
 977
 00:43:23,839 --> 00:43:25,920
-is it do you have a whole policy engine
 for how far you delegate? Well, actually
 
 978
 00:43:25,920 --> 00:43:27,440
-for how far you delegate? Well, actually
 you can have a whole policy engine with
 
 979
 00:43:27,440 --> 00:43:30,000
-you can have a whole policy engine with
 ACDCs because we have edge operators. So
 
 980
 00:43:30,000 --> 00:43:32,079
-ACDCs because we have edge operators. So
 you can you can make it as complicated
 
 981
 00:43:32,079 --> 00:43:36,480
-you can you can make it as complicated
 as you want or as simple as you want,
 
 982
 00:43:36,480 --> 00:43:39,280
-as you want or as simple as you want,
 right? But ACDC's don't care,
 
 983
 00:43:39,280 --> 00:43:41,599
-right? But ACDC's don't care,
 right? It's up to the user application.
 
 984
 00:43:41,599 --> 00:43:44,240
-right? It's up to the user application.
 The cryptographic verifiability is I
 
 985
 00:43:44,240 --> 00:43:46,720
-The cryptographic verifiability is I
 have an edge. The edge has properties.
 
 986
 00:43:46,720 --> 00:43:48,480
-have an edge. The edge has properties.
 The properties can define whether that
 
 987
 00:43:48,480 --> 00:43:52,880
-The properties can define whether that
 edge allows further delegation or not.
 
 988
 00:43:52,880 --> 00:43:54,400
-edge allows further delegation or not.
 Does that make sense? Did you guys
 
 989
 00:43:54,400 --> 00:43:56,160
-Does that make sense? Did you guys
 understand?
 
 990
 00:43:56,160 --> 00:43:58,480
-understand?
 Yeah. Okay.
 
 991
 00:43:58,480 --> 00:44:00,240
-Yeah. Okay.
 All right.
 
 992
 00:44:00,240 --> 00:44:01,920
-All right.
 Safety. So, I'm going to change topics.
 
 993
 00:44:01,920 --> 00:44:03,440
-Safety. So, I'm going to change topics.
 I have a couple of questions. All right.
 
 994
 00:44:03,440 --> 00:44:06,480
-I have a couple of questions. All right.
 Back here. Well, I guess it's the same
 
 995
 00:44:06,480 --> 00:44:09,119
-Back here. Well, I guess it's the same
 with natural people and
 
 996
 00:44:09,119 --> 00:44:11,359
-with natural people and
 organizations to natural people.
 
 997
 00:44:11,359 --> 00:44:14,480
-organizations to natural people.
 How would you enforce if possible
 
 998
 00:44:14,480 --> 00:44:17,440
-How would you enforce if possible
 attenuation such that you know
 
 999
 00:44:17,440 --> 00:44:20,800
-attenuation such that you know
 subsequent delegates or delegates do not
 
 1000
 00:44:20,800 --> 00:44:23,520
-subsequent delegates or delegates do not
 acquire more powers than the
 
 1001
 00:44:23,520 --> 00:44:25,680
-acquire more powers than the
 so there's two governance mechanisms
 
 1002
 00:44:25,680 --> 00:44:28,960
-so there's two governance mechanisms
 that we use in ACDC's for that one is
 
 1003
 00:44:28,960 --> 00:44:32,240
-that we use in ACDC's for that one is
 called an ecosystem governance framework
 
 1004
 00:44:32,240 --> 00:44:36,000
-called an ecosystem governance framework
 okay so for the LEI the vLEI there are
 
 1005
 00:44:36,000 --> 00:44:39,200
-okay so for the LEI the vLEI there are
 200 pages of documents that say this is
 
 1006
 00:44:39,200 --> 00:44:41,920
-200 pages of documents that say this is
 what you can do with these ACDC's they
 
 1007
 00:44:41,920 --> 00:44:44,079
-what you can do with these ACDC's they
 define the delegation what you can
 
 1008
 00:44:44,079 --> 00:44:46,079
-define the delegation what you can
 delegate how much you can delegate how
 
 1009
 00:44:46,079 --> 00:44:47,920
-delegate how much you can delegate how
 many layers of delegation what the
 
 1010
 00:44:47,920 --> 00:44:50,720
-many layers of delegation what the
 ACDC's are who does that right that
 
 1011
 00:44:50,720 --> 00:44:54,400
-ACDC's are who does that right that
 doesn't have to be encoded into the
 
 1012
 00:44:54,400 --> 00:44:57,280
-doesn't have to be encoded into the
 ACDC's themselves because the schema
 
 1013
 00:44:57,280 --> 00:45:00,319
-ACDC's themselves because the schema
 for the ACDC which is an immutable
 
 1014
 00:45:00,319 --> 00:45:04,000
-for the ACDC which is an immutable
 schema is defined to be the schema and
 
 1015
 00:45:04,000 --> 00:45:05,839
-schema is defined to be the schema and
 then you look up the ecosystem
 
 1016
 00:45:05,839 --> 00:45:07,280
-then you look up the ecosystem
 governance framework for that schema and
 
 1017
 00:45:07,280 --> 00:45:10,000
-governance framework for that schema and
 you go oh this is how I use these guys
 
 1018
 00:45:10,000 --> 00:45:13,040
-you go oh this is how I use these guys
 So, so in a real world you're
 
 1019
 00:45:13,040 --> 00:45:15,839
-So, so in a real world you're
 probably going to have quite fixed
 
 1020
 00:45:15,839 --> 00:45:18,480
-probably going to have quite fixed
 well-rigidly defined ecosystem
 
 1021
 00:45:18,480 --> 00:45:20,000
-well-rigidly defined ecosystem
 governance frameworks because that's how
 
 1022
 00:45:20,000 --> 00:45:22,560
-governance frameworks because that's how
 the real world works. We don't go
 
 1023
 00:45:22,560 --> 00:45:26,800
-the real world works. We don't go
 around and say, "Hey I want to be
 
 1024
 00:45:26,800 --> 00:45:30,079
-around and say, "Hey I want to be
 a real estate agent." Agent, right? Hear
 
 1025
 00:45:30,079 --> 00:45:32,960
-a real estate agent." Agent, right? Hear
 the word agent. What are the rules for
 
 1026
 00:45:32,960 --> 00:45:34,640
-the word agent. What are the rules for
 real estate agents? How can they
 
 1027
 00:45:34,640 --> 00:45:37,839
-real estate agents? How can they
 operate? What things can they can
 
 1028
 00:45:37,839 --> 00:45:39,359
-operate? What things can they can
 and do? Well, there's a whole body of
 
 1029
 00:45:39,359 --> 00:45:42,560
-and do? Well, there's a whole body of
 regulation about it. We don't have to we
 
 1030
 00:45:42,560 --> 00:45:46,240
-regulation about it. We don't have to we
 don't have to we just have to say, well,
 
 1031
 00:45:46,240 --> 00:45:47,760
-don't have to we just have to say, well,
 we're going to make it so they can
 
 1032
 00:45:47,760 --> 00:45:49,680
-we're going to make it so they can
 verify that they're an agent. We can
 
 1033
 00:45:49,680 --> 00:45:51,599
-verify that they're an agent. We can
 reference all the regulations that apply
 
 1034
 00:45:51,599 --> 00:45:54,480
-reference all the regulations that apply
 to them as an agent. Now, we've modeled
 
 1035
 00:45:54,480 --> 00:45:56,960
-to them as an agent. Now, we've modeled
 the real world authority that already
 
 1036
 00:45:56,960 --> 00:45:59,520
-the real world authority that already
 exists, but we just made it so that they
 
 1037
 00:45:59,520 --> 00:46:01,599
-exists, but we just made it so that they
 can do the verification
 
 1038
 00:46:01,599 --> 00:46:04,240
-can do the verification
 quickly and securely without
 
 1039
 00:46:04,240 --> 00:46:06,960
-quickly and securely without
 impersonation or fraud. We don't have
 
 1040
 00:46:06,960 --> 00:46:10,240
-impersonation or fraud. We don't have
 to build all of that the rulemaking
 
 1041
 00:46:10,240 --> 00:46:13,599
-to build all of that the rulemaking
 stuff if we don't if we don't have to.
 
 1042
 00:46:13,599 --> 00:46:16,079
-stuff if we don't if we don't have to.
 There's no reason to do that. But if we
 
 1043
 00:46:16,079 --> 00:46:18,160
-There's no reason to do that. But if we
 want to add
 
 1044
 00:46:18,160 --> 00:46:21,680
-want to add
 some of that because it's practical,
 
 1045
 00:46:21,680 --> 00:46:24,079
-some of that because it's practical,
 then we can encode it in the edge logic
 
 1046
 00:46:24,079 --> 00:46:26,400
-then we can encode it in the edge logic
 with edge operators. But we want to we
 
 1047
 00:46:26,400 --> 00:46:28,400
-with edge operators. But we want to we
 want to make that as we want to minimize
 
 1048
 00:46:28,400 --> 00:46:30,800
-want to make that as we want to minimize
 that. What tends to happen is people try
 
 1049
 00:46:30,800 --> 00:46:33,520
-that. What tends to happen is people try
 to model all of the stuff in the world,
 
 1050
 00:46:33,520 --> 00:46:36,880
-to model all of the stuff in the world,
 real world, in data and then they get
 
 1051
 00:46:36,880 --> 00:46:40,079
-real world, in data and then they get
 data that can't that is ambiguous. They
 
 1052
 00:46:40,079 --> 00:46:42,480
-data that can't that is ambiguous. They
 get ontologies that don't that aren't
 
 1053
 00:46:42,480 --> 00:46:45,599
-get ontologies that don't that aren't
 that are broken.
 
 1054
 00:46:45,599 --> 00:46:48,720
-that are broken.
 Yes. Yeah. We've been toying with
 
 1055
 00:46:48,720 --> 00:46:51,040
-Yes. Yeah. We've been toying with
 with this delegation structure a bit
 
 1056
 00:46:51,040 --> 00:46:52,720
-with this delegation structure a bit
 more from an application perspective,
 
 1057
 00:46:52,720 --> 00:46:55,040
-more from an application perspective,
 right? An agentic AI is not one thing.
 
 1058
 00:46:55,040 --> 00:46:56,560
-right? An agentic AI is not one thing.
 It's a spectrum, right? So in other
 
 1059
 00:46:56,560 --> 00:46:58,800
-It's a spectrum, right? So in other
 words, there are rule based on the lower
 
 1060
 00:46:58,800 --> 00:47:01,520
-words, there are rule based on the lower
 end and you have loose guidelines and we
 
 1061
 00:47:01,520 --> 00:47:05,200
-end and you have loose guidelines and we
 want to see if the agent that
 
 1062
 00:47:05,200 --> 00:47:07,040
-want to see if the agent that
 is taking control and delegating to
 
 1063
 00:47:07,040 --> 00:47:09,599
-is taking control and delegating to
 further agents did it right in the
 
 1064
 00:47:09,599 --> 00:47:12,000
-further agents did it right in the
 context of those guidelines. Right. So
 
 1065
 00:47:12,000 --> 00:47:14,319
-context of those guidelines. Right. So
 it is a loosely defined structure. Well,
 
 1066
 00:47:14,319 --> 00:47:46,150
-it is a loosely defined structure. Well,
 it Well, I Yeah.
 
 1067
@@ -5334,97 +4295,78 @@ one. So, so trying to build other
 
 1068
 00:48:24,720 --> 00:48:26,960
-one. So, so trying to build other
 systems, you're welcome to do that. I'm
 
 1069
 00:48:26,960 --> 00:48:28,720
-systems, you're welcome to do that. I'm
 just saying that we can't solve the
 
 1070
 00:48:28,720 --> 00:48:31,200
-just saying that we can't solve the
 problem that ACDC solves right now.
 
 1071
 00:48:31,200 --> 00:48:32,880
-problem that ACDC solves right now.
 Whatever you're doing isn't solving that
 
 1072
 00:48:32,880 --> 00:48:34,720
-Whatever you're doing isn't solving that
 problem because you don't have you're
 
 1073
 00:48:34,720 --> 00:48:36,720
-problem because you don't have you're
 not you if you're not using ACDC's to
 
 1074
 00:48:36,720 --> 00:48:38,480
-not you if you're not using ACDC's to
 solve it and you're not doing this then
 
 1075
 00:48:38,480 --> 00:48:40,720
-solve it and you're not doing this then
 I know what you're not able to do. But
 
 1076
 00:48:40,720 --> 00:48:42,160
-I know what you're not able to do. But
 you can certainly do other things. Does
 
 1077
 00:48:42,160 --> 00:48:44,640
-you can certainly do other things. Does
 that make sense? I'm not prescribing for
 
 1078
 00:48:44,640 --> 00:48:46,559
-that make sense? I'm not prescribing for
 you how you want to solve identic AI.
 
 1079
 00:48:46,559 --> 00:48:48,319
-you how you want to solve identic AI.
 I'm just saying that if you want to
 
 1080
 00:48:48,319 --> 00:48:51,839
-I'm just saying that if you want to
 solve the act of modeling the authority
 
 1081
 00:48:51,839 --> 00:48:54,400
-solve the act of modeling the authority
 chain in a cryptographically verifiable
 
 1082
 00:48:54,400 --> 00:48:57,280
-chain in a cryptographically verifiable
 way and the elements of that chain
 
 1083
 00:48:57,280 --> 00:49:00,079
-way and the elements of that chain
 happen to be agents, it doesn't change
 
 1084
 00:49:00,079 --> 00:49:02,000
-happen to be agents, it doesn't change
 it doesn't change the mechanism. The
 
 1085
 00:49:02,000 --> 00:49:04,319
-it doesn't change the mechanism. The
 mechanism works just as well either way,
 
 1086
 00:49:04,319 --> 00:49:15,589
-mechanism works just as well either way,
 right? Yeah.
 
 1087
@@ -5434,122 +4376,98 @@ privilege built into the system so that
 
 1088
 00:49:20,160 --> 00:49:22,480
-privilege built into the system so that
 there isn't an opportunity for a
 
 1089
 00:49:22,480 --> 00:49:24,720
-there isn't an opportunity for a
 delegate to introduce more privilege
 
 1090
 00:49:24,720 --> 00:49:26,240
-delegate to introduce more privilege
 than what was delegated to him
 
 1091
 00:49:26,240 --> 00:49:27,280
-than what was delegated to him
 originally.
 
 1092
 00:49:27,280 --> 00:49:29,280
-originally.
 And is the mechan is the enforcement
 
 1093
 00:49:29,280 --> 00:49:31,359
-And is the mechan is the enforcement
 mechanism on the shoulders of the
 
 1094
 00:49:31,359 --> 00:49:33,839
-mechanism on the shoulders of the
 verifier or there's something intrinsic
 
 1095
 00:49:33,839 --> 00:49:36,559
-verifier or there's something intrinsic
 in the structure that prevents that? No,
 
 1096
 00:49:36,559 --> 00:49:38,160
-in the structure that prevents that? No,
 because the only people the only person
 
 1097
 00:49:38,160 --> 00:49:40,480
-because the only people the only person
 that enforces it is the verifier.
 
 1098
 00:49:40,480 --> 00:49:41,920
-that enforces it is the verifier.
 Otherwise, what you're going to have to
 
 1099
 00:49:41,920 --> 00:49:44,480
-Otherwise, what you're going to have to
 have is a policy engine that the
 
 1100
 00:49:44,480 --> 00:49:47,760
-have is a policy engine that the
 verifier asks to enforce it for them.
 
 1101
 00:49:47,760 --> 00:49:49,520
-verifier asks to enforce it for them.
 Right. So, you've just moved the
 
 1102
 00:49:49,520 --> 00:49:51,680
-Right. So, you've just moved the
 enforcement someplace else, but it's but
 
 1103
 00:49:51,680 --> 00:49:53,680
-enforcement someplace else, but it's but
 it's still it's Yeah,
 
 1104
 00:49:53,680 --> 00:49:55,440
-it's still it's Yeah,
 that's the part that I think a lot
 
 1105
 00:49:55,440 --> 00:49:57,520
-that's the part that I think a lot
 of the industry will have difficult
 
 1106
 00:49:57,520 --> 00:49:58,480
-of the industry will have difficult
 accepting.
 
 1107
 00:49:58,480 --> 00:50:00,240
-accepting.
 Yeah, I'm I'm sure they will. And
 
 1108
 00:50:00,240 --> 00:50:01,440
-Yeah, I'm I'm sure they will. And
 Phil, I think you're going to talk about
 
 1109
 00:50:01,440 --> 00:50:03,200
-Phil, I think you're going to talk about
 some of that, right? Or he's writing a
 
 1110
 00:50:03,200 --> 00:50:06,160
-some of that, right? Or he's writing a
 book on it. So, I don't I'm talking to
 
 1111
 00:50:06,160 --> 00:50:09,750
-book on it. So, I don't I'm talking to
 you, Phil Wley.
 
 1112
@@ -5559,17 +4477,14 @@ Phil.
 
 1113
 00:50:13,839 --> 00:50:16,240
-Phil.
 Oh, he asked a question and I said,
 
 1114
 00:50:16,240 --> 00:50:18,160
-Oh, he asked a question and I said,
 "You're writing a book on authorization
 
 1115
 00:50:18,160 --> 00:50:22,069
-"You're writing a book on authorization
 policy for ag."
 
 1116
@@ -5579,272 +4494,218 @@ Later.
 
 1117
 00:50:24,400 --> 00:50:25,119
-Later.
 It's all right. I
 
 1118
 00:50:25,119 --> 00:50:26,319
-It's all right. I
 Sorry. What was the question? I
 
 1119
 00:50:26,319 --> 00:50:27,520
-Sorry. What was the question? I
 apologize.
 
 1120
 00:50:27,520 --> 00:50:29,920
-apologize.
 Well, well, I just I just explained how
 
 1121
 00:50:29,920 --> 00:50:32,000
-Well, well, I just I just explained how
 we could use ACDC's to do delegate
 
 1122
 00:50:32,000 --> 00:50:35,440
-we could use ACDC's to do delegate
 authority, and Ed asked, "Well, lease
 
 1123
 00:50:35,440 --> 00:50:38,079
-authority, and Ed asked, "Well, lease
 privilege for the delegate to
 
 1124
 00:50:38,079 --> 00:50:39,760
-privilege for the delegate to
 be able to do stuff. How do you enforce
 
 1125
 00:50:39,760 --> 00:50:42,319
-be able to do stuff. How do you enforce
 that? And I said, right, well, right now
 
 1126
 00:50:42,319 --> 00:50:44,720
-that? And I said, right, well, right now
 the in a decentralized system, the
 
 1127
 00:50:44,720 --> 00:50:47,119
-the in a decentralized system, the
 verifier can enforce it or you could
 
 1128
 00:50:47,119 --> 00:50:49,520
-verifier can enforce it or you could
 have a policy engine that the verifier
 
 1129
 00:50:49,520 --> 00:50:51,839
-have a policy engine that the verifier
 refers to that enforces it. But
 
 1130
 00:50:51,839 --> 00:50:54,000
-refers to that enforces it. But
 but that's you know that
 
 1131
 00:50:54,000 --> 00:50:57,599
-but that's you know that
 yeah so basically I think there are
 
 1132
 00:50:57,599 --> 00:51:00,720
-yeah so basically I think there are
 two big avenues of how you would do this
 
 1133
 00:51:00,720 --> 00:51:03,839
-two big avenues of how you would do this
 with delegation. One is delegation as
 
 1134
 00:51:03,839 --> 00:51:06,480
-with delegation. One is delegation as
 data. The other one is delegation as
 
 1135
 00:51:06,480 --> 00:51:08,480
-data. The other one is delegation as
 policy where you essentially write new
 
 1136
 00:51:08,480 --> 00:51:11,839
-policy where you essentially write new
 policies for the delegation
 
 1137
 00:51:11,839 --> 00:51:13,920
-policies for the delegation
 instead of relying on a broad set of
 
 1138
 00:51:13,920 --> 00:51:17,520
-instead of relying on a broad set of
 policies. in delegation as data ACDC's
 
 1139
 00:51:17,520 --> 00:51:19,040
-policies. in delegation as data ACDC's
 especially with what you've described
 
 1140
 00:51:19,040 --> 00:51:23,200
-especially with what you've described
 today are really nice because you
 
 1141
 00:51:23,200 --> 00:51:26,800
-today are really nice because you
 can put all of the delegation in the
 
 1142
 00:51:26,800 --> 00:51:30,240
-can put all of the delegation in the
 ACDC the credential and then you know as
 
 1143
 00:51:30,240 --> 00:51:32,160
-ACDC the credential and then you know as
 you've pointed out you can keep that
 
 1144
 00:51:32,160 --> 00:51:35,359
-you've pointed out you can keep that
 from expanding you can revoke it you can
 
 1145
 00:51:35,359 --> 00:51:38,160
-from expanding you can revoke it you can
 revoke the whole chain when necessary so
 
 1146
 00:51:38,160 --> 00:51:40,319
-revoke the whole chain when necessary so
 yeah I think that's I mean that's a
 
 1147
 00:51:40,319 --> 00:51:42,000
-yeah I think that's I mean that's a
 broad approach right as you write it
 
 1148
 00:51:42,000 --> 00:51:44,960
-broad approach right as you write it
 policies that interpret the data in the
 
 1149
 00:51:44,960 --> 00:51:46,319
-policies that interpret the data in the
 delegation credential.
 
 1150
 00:51:46,319 --> 00:51:48,480
-delegation credential.
 Yeah. And to Ned's point, that's not how
 
 1151
 00:51:48,480 --> 00:51:50,079
-Yeah. And to Ned's point, that's not how
 most people do it now. So they may not
 
 1152
 00:51:50,079 --> 00:51:52,480
-most people do it now. So they may not
 like it,
 
 1153
 00:51:52,480 --> 00:51:55,680
-like it,
 which is a valid point.
 
 1154
 00:51:55,680 --> 00:51:58,079
-which is a valid point.
 So I'm going to change topics for the
 
 1155
 00:51:58,079 --> 00:52:00,079
-So I'm going to change topics for the
 last five minutes.
 
 1156
 00:52:00,079 --> 00:52:04,160
-last five minutes.
 The internet is a dangerous place.
 
 1157
 00:52:04,160 --> 00:52:07,040
-The internet is a dangerous place.
 What we want, what I would like, I hope
 
 1158
 00:52:07,040 --> 00:52:11,760
-What we want, what I would like, I hope
 some of you want this is a digital re
 
 1159
 00:52:11,760 --> 00:52:14,960
-some of you want this is a digital re
 Refu god with my voice I can't say it
 
 1160
 00:52:14,960 --> 00:52:16,559
-Refu god with my voice I can't say it
 refuge
 
 1161
 00:52:16,559 --> 00:52:19,760
-refuge
 An online shelter,
 
 1162
 00:52:19,760 --> 00:52:22,640
-An online shelter,
 an internet sanctuary,
 
 1163
 00:52:22,640 --> 00:52:25,359
-an internet sanctuary,
 a surveillance asylum.
 
 1164
 00:52:25,359 --> 00:52:27,359
-a surveillance asylum.
 Well, we're protected from all of these
 
 1165
 00:52:27,359 --> 00:52:29,280
-Well, we're protected from all of these
 things when we go online, when we use
 
 1166
 00:52:29,280 --> 00:52:31,200
-things when we go online, when we use
 the internet. We want to be able to use
 
 1167
 00:52:31,200 --> 00:52:34,880
-the internet. We want to be able to use
 the internet and be safe
 
 1168
 00:52:34,880 --> 00:52:38,240
-the internet and be safe
 and I messed that up. It hit two
 
 1169
 00:52:38,240 --> 00:52:40,640
-and I messed that up. It hit two
 things. So,
 
 1170
 00:52:40,640 --> 00:52:49,750
-things. So,
 so if we think about those
 
 1171
@@ -5854,292 +4715,234 @@ participants.
 
 1172
 00:52:54,000 --> 00:52:55,680
-participants.
 If they're not accountable, it won't be
 
 1173
 00:52:55,680 --> 00:52:57,680
-If they're not accountable, it won't be
 safe.
 
 1174
 00:52:57,680 --> 00:53:00,000
-safe.
 If you if you can act in any way you
 
 1175
 00:53:00,000 --> 00:53:01,839
-If you if you can act in any way you
 want and there's no there's no
 
 1176
 00:53:01,839 --> 00:53:04,640
-want and there's no there's no
 repercussions, there's no consequences,
 
 1177
 00:53:04,640 --> 00:53:06,640
-repercussions, there's no consequences,
 it's going to incentivize bad behavior.
 
 1178
 00:53:06,640 --> 00:53:08,000
-it's going to incentivize bad behavior.
 And that's what the internet is. That's
 
 1179
 00:53:08,000 --> 00:53:10,079
-And that's what the internet is. That's
 what the internet is in a safe place cuz
 
 1180
 00:53:10,079 --> 00:53:12,079
-what the internet is in a safe place cuz
 we there's no accountability on the
 
 1181
 00:53:12,079 --> 00:53:14,559
-we there's no accountability on the
 internet. It never it never came with it
 
 1182
 00:53:14,559 --> 00:53:16,319
-internet. It never it never came with it
 in the first place. And everybody
 
 1183
 00:53:16,319 --> 00:53:18,000
-in the first place. And everybody
 assumed that well people will just act
 
 1184
 00:53:18,000 --> 00:53:19,760
-assumed that well people will just act
 the way they normally do. I have a
 
 1185
 00:53:19,760 --> 00:53:22,240
-the way they normally do. I have a
 really good example of this. My
 
 1186
 00:53:22,240 --> 00:53:24,240
-really good example of this. My
 daughter who you all saw sing, right?
 
 1187
 00:53:24,240 --> 00:53:26,559
-daughter who you all saw sing, right?
 Yeah. She has a pretty substantial
 
 1188
 00:53:26,559 --> 00:53:29,359
-Yeah. She has a pretty substantial
 internet presence, lots of followers,
 
 1189
 00:53:29,359 --> 00:53:31,599
-internet presence, lots of followers,
 and there's a lot of trolls that will go
 
 1190
 00:53:31,599 --> 00:53:33,760
-and there's a lot of trolls that will go
 onto her
 
 1191
 00:53:33,760 --> 00:53:37,760
-onto her
 Instagram or Tik Tok or
 
 1192
 00:53:37,760 --> 00:53:40,319
-Instagram or Tik Tok or
 all kinds of really horrible things.
 
 1193
 00:53:40,319 --> 00:53:41,920
-all kinds of really horrible things.
 Well, you know what my wife likes to do,
 
 1194
 00:53:41,920 --> 00:53:44,319
-Well, you know what my wife likes to do,
 who you all met, is when they're do
 
 1195
 00:53:44,319 --> 00:53:45,920
-who you all met, is when they're do
 really horrible things and they say
 
 1196
 00:53:45,920 --> 00:53:48,559
-really horrible things and they say
 stuff like that occasionally, she will
 
 1197
 00:53:48,559 --> 00:53:50,800
-stuff like that occasionally, she will
 go research them and they're always
 
 1198
 00:53:50,800 --> 00:53:53,520
-go research them and they're always
 using some, you know, alias. They think
 
 1199
 00:53:53,520 --> 00:53:55,599
-using some, you know, alias. They think
 they have anonymity. She'll go figure
 
 1200
 00:53:55,599 --> 00:53:58,240
-they have anonymity. She'll go figure
 out who they are and then she'll go ask
 
 1201
 00:53:58,240 --> 00:54:00,000
-out who they are and then she'll go ask
 them, "Why did you say this about my
 
 1202
 00:54:00,000 --> 00:54:01,520
-them, "Why did you say this about my
 daughter?"
 
 1203
 00:54:01,520 --> 00:54:05,359
-daughter?"
 And they will sKRAMble for the hills.
 
 1204
 00:54:05,359 --> 00:54:06,960
-And they will sKRAMble for the hills.
 It's just like, "Wait a minute. You know
 
 1205
 00:54:06,960 --> 00:54:08,880
-It's just like, "Wait a minute. You know
 who I am? you know that I said this
 
 1206
 00:54:08,880 --> 00:54:11,680
-who I am? you know that I said this
 vulgar thing and sometimes they're just
 
 1207
 00:54:11,680 --> 00:54:14,000
-vulgar thing and sometimes they're just
 average people in your neighborhood who
 
 1208
 00:54:14,000 --> 00:54:15,920
-average people in your neighborhood who
 act like they don't do this. Well, why
 
 1209
 00:54:15,920 --> 00:54:17,280
-act like they don't do this. Well, why
 do they do it on the internet? Because
 
 1210
 00:54:17,280 --> 00:54:20,319
-do they do it on the internet? Because
 they can get away with it. But and
 
 1211
 00:54:20,319 --> 00:54:22,079
-they can get away with it. But and
 what she always likes to say to them is,
 
 1212
 00:54:22,079 --> 00:54:24,000
-what she always likes to say to them is,
 "So, if you met my daughter in person,
 
 1213
 00:54:24,000 --> 00:54:26,079
-"So, if you met my daughter in person,
 would you say that to her in person?"
 
 1214
 00:54:26,079 --> 00:54:27,359
-would you say that to her in person?"
 When they go, "Of course not." Well,
 
 1215
 00:54:27,359 --> 00:54:29,520
-When they go, "Of course not." Well,
 then why do you say it online? And the
 
 1216
 00:54:29,520 --> 00:54:31,599
-then why do you say it online? And the
 difference is there's no accountability
 
 1217
 00:54:31,599 --> 00:54:33,599
-difference is there's no accountability
 online. So, if you want safety, you have
 
 1218
 00:54:33,599 --> 00:54:35,680
-online. So, if you want safety, you have
 to have accountability. Here's the other
 
 1219
 00:54:35,680 --> 00:54:37,599
-to have accountability. Here's the other
 thing that people don't don't believe me
 
 1220
 00:54:37,599 --> 00:54:39,920
-thing that people don't don't believe me
 when I say this. Privacy requires
 
 1221
 00:54:39,920 --> 00:54:41,760
-when I say this. Privacy requires
 accountability. People think privacy
 
 1222
 00:54:41,760 --> 00:54:44,400
-accountability. People think privacy
 requires being able to hide. You can't
 
 1223
 00:54:44,400 --> 00:54:46,079
-requires being able to hide. You can't
 have privacy if without accountability.
 
 1224
 00:54:46,079 --> 00:54:49,200
-have privacy if without accountability.
 Here's why. Second parties to repeated
 
 1225
 00:54:49,200 --> 00:54:50,800
-Here's why. Second parties to repeated
 interactions can correlate the first
 
 1226
 00:54:50,800 --> 00:54:54,000
-interactions can correlate the first
 parties. If I interact with you, even
 
 1227
 00:54:54,000 --> 00:54:55,839
-parties. If I interact with you, even
 though we're both anonymous, the
 
 1228
 00:54:55,839 --> 00:54:57,680
-though we're both anonymous, the
 interaction themselves is enough to
 
 1229
 00:54:57,680 --> 00:55:01,109
-interaction themselves is enough to
 correlate.
 
 1230
@@ -6149,52 +4952,42 @@ and have privacy.
 
 1231
 00:55:07,200 --> 00:55:09,440
-and have privacy.
 I can't.
 
 1232
 00:55:09,440 --> 00:55:12,319
-I can't.
 So any interaction system that does not
 
 1233
 00:55:12,319 --> 00:55:14,160
-So any interaction system that does not
 enable first parties to hold second
 
 1234
 00:55:14,160 --> 00:55:16,240
-enable first parties to hold second
 parties accountable is fundamentally
 
 1235
 00:55:16,240 --> 00:55:18,640
-parties accountable is fundamentally
 incompatible with privacy.
 
 1236
 00:55:18,640 --> 00:55:20,960
-incompatible with privacy.
 You can't get there unless you start
 
 1237
 00:55:20,960 --> 00:55:22,960
-You can't get there unless you start
 with accountability.
 
 1238
 00:55:22,960 --> 00:55:24,720
-with accountability.
 And you and you don't get privacy by
 
 1239
 00:55:24,720 --> 00:55:27,119
-And you and you don't get privacy by
 hiding. You get privacy by interacting
 
 1240
 00:55:27,119 --> 00:55:30,630
-hiding. You get privacy by interacting
 with
 
 1241
@@ -6208,432 +5001,346 @@ Surveillance asylums where the
 
 1243
 00:55:37,760 --> 00:55:39,280
-Surveillance asylums where the
 participants
 
 1244
 00:55:39,280 --> 00:55:41,280
-participants
 hold each other accountable and you can
 
 1245
 00:55:41,280 --> 00:55:42,800
-hold each other accountable and you can
 trust that they'll act in the way you
 
 1246
 00:55:42,800 --> 00:55:45,520
-trust that they'll act in the way you
 want and everybody else is excluded.
 
 1247
 00:55:45,520 --> 00:55:47,440
-want and everybody else is excluded.
 That's the whole point. If I want to
 
 1248
 00:55:47,440 --> 00:55:51,440
-That's the whole point. If I want to
 interact with him or her, right, and I
 
 1249
 00:55:51,440 --> 00:55:53,040
-interact with him or her, right, and I
 can hold him accountable, then I have a
 
 1250
 00:55:53,040 --> 00:55:55,280
-can hold him accountable, then I have a
 trusted interaction. If I can't hold
 
 1251
 00:55:55,280 --> 00:55:58,079
-trusted interaction. If I can't hold
 them accountable, I can't trust it. But
 
 1252
 00:55:58,079 --> 00:55:59,760
-them accountable, I can't trust it. But
 what I want to do is I want to have that
 
 1253
 00:55:59,760 --> 00:56:02,079
-what I want to do is I want to have that
 interaction and not have anybody else
 
 1254
 00:56:02,079 --> 00:56:04,240
-interaction and not have anybody else
 surveil it.
 
 1255
 00:56:04,240 --> 00:56:06,000
-surveil it.
 And that's and that's what we really
 
 1256
 00:56:06,000 --> 00:56:09,119
-And that's and that's what we really
 want. We want contextualized
 
 1257
 00:56:09,119 --> 00:56:11,599
-want. We want contextualized
 confidentiality with accountability. And
 
 1258
 00:56:11,599 --> 00:56:14,400
-confidentiality with accountability. And
 how do we do that? Well, there's a
 
 1259
 00:56:14,400 --> 00:56:15,920
-how do we do that? Well, there's a
 protocol called the trustbanning
 
 1260
 00:56:15,920 --> 00:56:17,839
-protocol called the trustbanning
 protocol that combined with the KERI
 
 1261
 00:56:17,839 --> 00:56:20,400
-protocol that combined with the KERI
 suite allows us to create and control
 
 1262
 00:56:20,400 --> 00:56:22,640
-suite allows us to create and control
 safe relationships where interactions
 
 1263
 00:56:22,640 --> 00:56:24,079
-safe relationships where interactions
 protected from surveillance by third
 
 1264
 00:56:24,079 --> 00:56:26,000
-protected from surveillance by third
 parties and second parties are held
 
 1265
 00:56:26,000 --> 00:56:28,000
-parties and second parties are held
 accountable for any information shared
 
 1266
 00:56:28,000 --> 00:56:31,359
-accountable for any information shared
 with or by them. And so my
 
 1267
 00:56:31,359 --> 00:56:36,720
-with or by them. And so my
 breakout talk this today will be
 
 1268
 00:56:36,720 --> 00:56:39,760
-breakout talk this today will be
 talking about the TSP protocol
 
 1269
 00:56:39,760 --> 00:56:43,040
-talking about the TSP protocol
 and how we can do that. So that's I got
 
 1270
 00:56:43,040 --> 00:56:43,839
-and how we can do that. So that's I got
 Keep going.
 
 1271
 00:56:43,839 --> 00:56:45,359
-Keep going.
 We only got a minute.
 
 1272
 00:56:45,359 --> 00:56:45,839
-We only got a minute.
 Keep going.
 
 1273
 00:56:45,839 --> 00:56:49,119
-Keep going.
 Oh, go ahead. Five minutes. 10 minutes.
 
 1274
 00:56:49,119 --> 00:56:49,520
-Oh, go ahead. Five minutes. 10 minutes.
 Okay.
 
 1275
 00:56:49,520 --> 00:56:51,920
-Okay.
 You can have some of my time.
 
 1276
 00:56:51,920 --> 00:56:54,559
-You can have some of my time.
 All right.
 
 1277
 00:56:54,559 --> 00:56:58,079
-All right.
 Okay. So when I do this analysis, I
 
 1278
 00:56:58,079 --> 00:56:59,760
-Okay. So when I do this analysis, I
 always use this model. I find, you know
 
 1279
 00:56:59,760 --> 00:57:01,680
-always use this model. I find, you know
 what they say all models are wrong,
 
 1280
 00:57:01,680 --> 00:57:03,599
-what they say all models are wrong,
 but some models are useful. I find this
 
 1281
 00:57:03,599 --> 00:57:06,960
-but some models are useful. I find this
 a very useful model. Any
 
 1282
 00:57:06,960 --> 00:57:08,880
-a very useful model. Any
 interaction on the internet involves the
 
 1283
 00:57:08,880 --> 00:57:11,920
-interaction on the internet involves the
 first party and second party.
 
 1284
 00:57:11,920 --> 00:57:14,880
-first party and second party.
 I can encrypt the communications between
 
 1285
 00:57:14,880 --> 00:57:17,040
-I can encrypt the communications between
 the first party and the second party
 
 1286
 00:57:17,040 --> 00:57:19,520
-the first party and the second party
 so that the content isn't observable by
 
 1287
 00:57:19,520 --> 00:57:21,280
-so that the content isn't observable by
 any other party.
 
 1288
 00:57:21,280 --> 00:57:24,000
-any other party.
 But if I'm using the internet, what I
 
 1289
 00:57:24,000 --> 00:57:27,520
-But if I'm using the internet, what I
 can't protect is the metadata of the
 
 1290
 00:57:27,520 --> 00:57:29,760
-can't protect is the metadata of the
 fact that I sent data over the internet.
 
 1291
 00:57:29,760 --> 00:57:32,319
-fact that I sent data over the internet.
 It has to be routable.
 
 1292
 00:57:32,319 --> 00:57:35,280
-It has to be routable.
 Routing tables are public. Routing
 
 1293
 00:57:35,280 --> 00:57:37,760
-Routing tables are public. Routing
 information is subpoenaable.
 
 1294
 00:57:37,760 --> 00:57:40,480
-information is subpoenaable.
 All of that metadata is not protected.
 
 1295
 00:57:40,480 --> 00:57:43,119
-All of that metadata is not protected.
 The Supreme Court even said so. Right?
 
 1296
 00:57:43,119 --> 00:57:45,440
-The Supreme Court even said so. Right?
 Reasonable expectation of privacy is
 
 1297
 00:57:45,440 --> 00:57:49,760
-Reasonable expectation of privacy is
 limited to content,
 
 1298
 00:57:49,760 --> 00:57:53,440
-limited to content,
 not non-content metadata. Non-content
 
 1299
 00:57:53,440 --> 00:57:55,760
-not non-content metadata. Non-content
 metadata is how you get from first party
 
 1300
 00:57:55,760 --> 00:58:00,480
-metadata is how you get from first party
 to second party. So, so if I can if I
 
 1301
 00:58:00,480 --> 00:58:04,240
-to second party. So, so if I can if I
 can correlate out from the metadata who
 
 1302
 00:58:04,240 --> 00:58:06,240
-can correlate out from the metadata who
 the first party and second party are,
 
 1303
 00:58:06,240 --> 00:58:08,559
-the first party and second party are,
 I've already defeated privacy in
 
 1304
 00:58:08,559 --> 00:58:10,799
-I've already defeated privacy in
 general. There's no privacy on the
 
 1305
 00:58:10,799 --> 00:58:13,359
-general. There's no privacy on the
 internet ever. Never has been, never
 
 1306
 00:58:13,359 --> 00:58:16,160
-internet ever. Never has been, never
 will be. If you use that definition,
 
 1307
 00:58:16,160 --> 00:58:19,119
-will be. If you use that definition,
 right? But what I can do is I have
 
 1308
 00:58:19,119 --> 00:58:22,960
-right? But what I can do is I have
 privacy where I can make it so that
 
 1309
 00:58:22,960 --> 00:58:24,720
-privacy where I can make it so that
 I that they don't know who the first
 
 1310
 00:58:24,720 --> 00:58:26,720
-I that they don't know who the first
 party and the second party are because
 
 1311
 00:58:26,720 --> 00:58:28,240
-party and the second party are because
 the first party and second party they
 
 1312
 00:58:28,240 --> 00:58:29,520
-the first party and second party they
 see aren't the first party and second
 
 1313
 00:58:29,520 --> 00:58:31,599
-see aren't the first party and second
 party that matter.
 
 1314
 00:58:31,599 --> 00:58:35,839
-party that matter.
 And so the basic idea is I don't use
 
 1315
 00:58:35,839 --> 00:58:38,880
-And so the basic idea is I don't use
 clandestine means to get privacy. I use
 
 1316
 00:58:38,880 --> 00:58:40,880
-clandestine means to get privacy. I use
 covert means
 
 1317
 00:58:40,880 --> 00:58:43,119
-covert means
 and covert means you have a cover
 
 1318
 00:58:43,119 --> 00:58:46,240
-and covert means you have a cover
 identity that basically
 
 1319
 00:58:46,240 --> 00:58:49,359
-identity that basically
 provides a layer of protection to some
 
 1320
 00:58:49,359 --> 00:58:51,359
-provides a layer of protection to some
 activity that you're doing that isn't
 
 1321
 00:58:51,359 --> 00:58:53,839
-activity that you're doing that isn't
 observable. Clandestine just means
 
 1322
 00:58:53,839 --> 00:58:57,359
-observable. Clandestine just means
 you're not observable. But any
 
 1323
 00:58:57,359 --> 00:58:59,760
-you're not observable. But any
 information that's broadcast is
 
 1324
 00:58:59,760 --> 00:59:02,000
-information that's broadcast is
 eventually observable. So clandestine
 
 1325
 00:59:02,000 --> 00:59:03,520
-eventually observable. So clandestine
 can only be used for epherrmal
 
 1326
 00:59:03,520 --> 00:59:06,000
-can only be used for epherrmal
 applications. And I spent 20 years and
 
 1327
 00:59:06,000 --> 00:59:10,240
-applications. And I spent 20 years and
 20, you know, millions of dollars of
 
 1328
 00:59:10,240 --> 00:59:15,910
-20, you know, millions of dollars of
 federal money building clandestine
 
 1329
@@ -6647,511 +5354,409 @@ and at some point we said, "Oh, we
 
 1331
 00:59:23,040 --> 00:59:25,520
-and at some point we said, "Oh, we
 got to make them covert because we
 
 1332
 00:59:25,520 --> 00:59:30,000
-got to make them covert because we
 need persistent literal
 
 1333
 00:59:30,000 --> 00:59:31,599
-need persistent literal
 surveillance." That was the name of the
 
 1334
 00:59:31,599 --> 00:59:34,880
-surveillance." That was the name of the
 program. And when we went from ephemeral
 
 1335
 00:59:34,880 --> 00:59:37,040
-program. And when we went from ephemeral
 to persistent surveillance, we had to
 
 1336
 00:59:37,040 --> 00:59:40,079
-to persistent surveillance, we had to
 change our concept of operations.
 
 1337
 00:59:40,079 --> 00:59:41,680
-change our concept of operations.
 And that's what I'm saying is we have to
 
 1338
 00:59:41,680 --> 00:59:44,000
-And that's what I'm saying is we have to
 change that. So this is the model. And
 
 1339
 00:59:44,000 --> 00:59:45,599
-change that. So this is the model. And
 then and to get from first party, second
 
 1340
 00:59:45,599 --> 00:59:47,599
-then and to get from first party, second
 party, I have to have an intermediaries.
 
 1341
 00:59:47,599 --> 00:59:49,520
-party, I have to have an intermediaries.
 The intermediaries
 
 1342
 00:59:49,520 --> 00:59:51,440
-The intermediaries
 can surveil stuff that a third party
 
 1343
 00:59:51,440 --> 00:59:55,200
-can surveil stuff that a third party
 can't. Your ISP is an intermediary.
 
 1344
 00:59:55,200 --> 00:59:58,480
-can't. Your ISP is an intermediary.
 So given that model, these are the
 
 1345
 00:59:58,480 --> 01:00:01,200
-So given that model, these are the
 two principles that we use. One is end
 
 1346
 01:00:01,200 --> 01:00:03,359
-two principles that we use. One is end
 toend verifiability which tells me that
 
 1347
 01:00:03,359 --> 01:00:06,559
-toend verifiability which tells me that
 I know who the parties are. The parties
 
 1348
 01:00:06,559 --> 01:00:09,760
-I know who the parties are. The parties
 know each other and the other so and if
 
 1349
 01:00:09,760 --> 01:00:11,599
-know each other and the other so and if
 I have KERI then I get ambient
 
 1350
 01:00:11,599 --> 01:00:14,079
-I have KERI then I get ambient
 verifiability any day anywhere anytime
 
 1351
 01:00:14,079 --> 01:00:16,480
-verifiability any day anywhere anytime
 by anybody of who it came from. So I
 
 1352
 01:00:16,480 --> 01:00:19,440
-by anybody of who it came from. So I
 can hold the source accountable
 
 1353
 01:00:19,440 --> 01:00:23,040
-can hold the source accountable
 right non-repudiation.
 
 1354
 01:00:23,040 --> 01:00:25,599
-right non-repudiation.
 Now the duel of that is what I
 
 1355
 01:00:25,599 --> 01:00:28,640
-Now the duel of that is what I
 call only at end viewability. I need to
 
 1356
 01:00:28,640 --> 01:00:31,359
-call only at end viewability. I need to
 be able to send information to somebody
 
 1357
 01:00:31,359 --> 01:00:33,599
-be able to send information to somebody
 and have reasonable confidence that
 
 1358
 01:00:33,599 --> 01:00:36,000
-and have reasonable confidence that
 they're the only ones that got it.
 
 1359
 01:00:36,000 --> 01:00:37,839
-they're the only ones that got it.
 Because the only way I can hold the
 
 1360
 01:00:37,839 --> 01:00:40,160
-Because the only way I can hold the
 second party accountable is if I know
 
 1361
 01:00:40,160 --> 01:00:42,799
-second party accountable is if I know
 they're the leaker of data.
 
 1362
 01:00:42,799 --> 01:00:45,200
-they're the leaker of data.
 Because if I send encrypted data to a
 
 1363
 01:00:45,200 --> 01:00:47,520
-Because if I send encrypted data to a
 second party that they can decrypt, they
 
 1364
 01:00:47,520 --> 01:00:50,319
-second party that they can decrypt, they
 have the data. I no longer have any
 
 1365
 01:00:50,319 --> 01:00:52,079
-have the data. I no longer have any
 ability to restrict where that data
 
 1366
 01:00:52,079 --> 01:00:54,480
-ability to restrict where that data
 goes. There's no technological mean
 
 1367
 01:00:54,480 --> 01:00:56,160
-goes. There's no technological mean
 means that allows me to protect that
 
 1368
 01:00:56,160 --> 01:00:58,240
-means that allows me to protect that
 data once the second party has it. I
 
 1369
 01:00:58,240 --> 01:01:00,559
-data once the second party has it. I
 have to trust the second party. So I
 
 1370
 01:01:00,559 --> 01:01:02,400
-have to trust the second party. So I
 have no privacy of any information I
 
 1371
 01:01:02,400 --> 01:01:04,240
-have no privacy of any information I
 share with the second party if the
 
 1372
 01:01:04,240 --> 01:01:05,760
-share with the second party if the
 second party can share it with somebody
 
 1373
 01:01:05,760 --> 01:01:08,799
-second party can share it with somebody
 else. So there's no longer technology
 
 1374
 01:01:08,799 --> 01:01:11,920
-else. So there's no longer technology
 here. It's all legal, regulatory, and
 
 1375
 01:01:11,920 --> 01:01:13,839
-here. It's all legal, regulatory, and
 economic.
 
 1376
 01:01:13,839 --> 01:01:16,240
-economic.
 So if any information that I interact
 
 1377
 01:01:16,240 --> 01:01:18,480
-So if any information that I interact
 with or share in the internet once it
 
 1378
 01:01:18,480 --> 01:01:19,839
-with or share in the internet once it
 gets to the second party the second
 
 1379
 01:01:19,839 --> 01:01:21,359
-gets to the second party the second
 party wants to collude with anybody they
 
 1380
 01:01:21,359 --> 01:01:24,319
-party wants to collude with anybody they
 want to then I have no privacy.
 
 1381
 01:01:24,319 --> 01:01:26,720
-want to then I have no privacy.
 The only privacy only comes if I can
 
 1382
 01:01:26,720 --> 01:01:29,599
-The only privacy only comes if I can
 trust the second party to respect
 
 1383
 01:01:29,599 --> 01:01:31,760
-trust the second party to respect
 the terms and conditions that which is
 
 1384
 01:01:31,760 --> 01:01:33,680
-the terms and conditions that which is
 called confidentiality of the
 
 1385
 01:01:33,680 --> 01:01:36,799
-called confidentiality of the
 information I give them. So what I need
 
 1386
 01:01:36,799 --> 01:01:39,040
-information I give them. So what I need
 is a mechanism for sending information
 
 1387
 01:01:39,040 --> 01:01:41,200
-is a mechanism for sending information
 from here to there
 
 1388
 01:01:41,200 --> 01:01:43,359
-from here to there
 that is asymmetric. So I need to use
 
 1389
 01:01:43,359 --> 01:01:45,280
-that is asymmetric. So I need to use
 hybrid public key encryption so that I
 
 1390
 01:01:45,280 --> 01:01:48,319
-hybrid public key encryption so that I
 have asymmetric encryption and I send it
 
 1391
 01:01:48,319 --> 01:01:50,960
-have asymmetric encryption and I send it
 to one end. I don't use group
 
 1392
 01:01:50,960 --> 01:01:53,280
-to one end. I don't use group
 encryption. I don't do I don't do shared
 
 1393
 01:01:53,280 --> 01:01:57,200
-encryption. I don't do I don't do shared
 secret encryption. I use hyper
 
 1394
 01:01:57,200 --> 01:01:59,040
-secret encryption. I use hyper
 public key which is technically shared
 
 1395
 01:01:59,040 --> 01:02:01,520
-public key which is technically shared
 secret encryption but I don't but the
 
 1396
 01:02:01,520 --> 01:02:04,000
-secret encryption but I don't but the
 key on my end is ephemeral. So I have a
 
 1397
 01:02:04,000 --> 01:02:06,319
-key on my end is ephemeral. So I have a
 reasonable confidence that only the
 
 1398
 01:02:06,319 --> 01:02:08,799
-reasonable confidence that only the
 targeted one got it and I can I can in
 
 1399
 01:02:08,799 --> 01:02:10,720
-targeted one got it and I can I can in
 include information in it that makes it
 
 1400
 01:02:10,720 --> 01:02:12,640
-include information in it that makes it
 unique to that end which they can get
 
 1401
 01:02:12,640 --> 01:02:14,559
-unique to that end which they can get
 rid of if they if they're smart but it
 
 1402
 01:02:14,559 --> 01:02:16,079
-rid of if they if they're smart but it
 makes it really hard for them. So I said
 
 1403
 01:02:16,079 --> 01:02:18,480
-makes it really hard for them. So I said
 reasonable confidence. What that means
 
 1404
 01:02:18,480 --> 01:02:20,960
-reasonable confidence. What that means
 is that I have this property of end only
 
 1405
 01:02:20,960 --> 01:02:23,520
-is that I have this property of end only
 viewability. The end that I intend to is
 
 1406
 01:02:23,520 --> 01:02:25,280
-viewability. The end that I intend to is
 the only one that can view it. So
 
 1407
 01:02:25,280 --> 01:02:27,119
-the only one that can view it. So
 there's one data one where one time by
 
 1408
 01:02:27,119 --> 01:02:30,319
-there's one data one where one time by
 one body and that means that it's
 
 1409
 01:02:30,319 --> 01:02:33,599
-one body and that means that it's
 undeniable. Now they can deny it.
 
 1410
 01:02:33,599 --> 01:02:35,599
-undeniable. Now they can deny it.
 Plausible deniability.
 
 1411
 01:02:35,599 --> 01:02:38,079
-Plausible deniability.
 I can't prove, may not be able to prove
 
 1412
 01:02:38,079 --> 01:02:41,119
-I can't prove, may not be able to prove
 it, but I know. And guess what I do when
 
 1413
 01:02:41,119 --> 01:02:44,640
-it, but I know. And guess what I do when
 I know? I break the interaction. I
 
 1414
 01:02:44,640 --> 01:02:46,160
-I know? I break the interaction. I
 exclude them from my interaction
 
 1415
 01:02:46,160 --> 01:02:48,480
-exclude them from my interaction
 profile. I stop talking to them. I stop
 
 1416
 01:02:48,480 --> 01:02:49,839
-profile. I stop talking to them. I stop
 sharing data with them because I can't
 
 1417
 01:02:49,839 --> 01:02:52,640
-sharing data with them because I can't
 trust them. So the whole point is I need
 
 1418
 01:02:52,640 --> 01:02:55,359
-trust them. So the whole point is I need
 to be able to control who I talk to and
 
 1419
 01:02:55,359 --> 01:02:57,440
-to be able to control who I talk to and
 who talks to me. And I need to do it in
 
 1420
 01:02:57,440 --> 01:02:59,920
-who talks to me. And I need to do it in
 a mechanism that allows me to decide
 
 1421
 01:02:59,920 --> 01:03:02,079
-a mechanism that allows me to decide
 that and to and to control the
 
 1422
 01:03:02,079 --> 01:03:03,760
-that and to and to control the
 boundaries of that. And that's the way I
 
 1423
 01:03:03,760 --> 01:03:06,880
-boundaries of that. And that's the way I
 do it. And so the TSB protocol
 
 1424
 01:03:06,880 --> 01:03:10,559
-do it. And so the TSB protocol
 lets you decide with whom they interact,
 
 1425
 01:03:10,559 --> 01:03:13,839
-lets you decide with whom they interact,
 what they share and why. And so you have
 
 1426
 01:03:13,839 --> 01:03:15,839
-what they share and why. And so you have
 control over your internet presence and
 
 1427
 01:03:15,839 --> 01:03:18,799
-control over your internet presence and
 your context when you do this. And we
 
 1428
 01:03:18,799 --> 01:03:20,720
-your context when you do this. And we
 use relationships graphs. And this will
 
 1429
 01:03:20,720 --> 01:03:23,039
-use relationships graphs. And this will
 I've got, you know, this is actually
 
 1430
 01:03:23,039 --> 01:03:25,200
-I've got, you know, this is actually
 into my talk for this afternoon. So,
 
 1431
 01:03:25,200 --> 01:03:27,520
-into my talk for this afternoon. So,
 I'll stop there.
 
 1432
 01:03:27,520 --> 01:03:31,799
-I'll stop there.
 Great. Thank you.
 

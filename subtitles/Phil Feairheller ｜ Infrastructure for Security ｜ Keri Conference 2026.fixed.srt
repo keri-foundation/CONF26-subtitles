@@ -1,416 +1,334 @@
-﻿1
+1
 00:00:04,110 --> 00:00:05,560
 Hi everyone. Thanks for showing up
 today. My name, for those of you who
 
 2
 00:00:05,560 --> 00:00:07,760
-today. My name, for those of you who
 don't know me, is Phil Feairheller and
 
 3
 00:00:07,760 --> 00:00:10,760
-don't know me, is Phil Feairheller and
 the CTO and co-founder of Health KERI.
 
 4
 00:00:10,760 --> 00:00:12,560
-the CTO and co-founder of Health KERI.
 We are specializing in bringing KERI
 
 5
 00:00:12,560 --> 00:00:14,000
-We are specializing in bringing KERI
 technology, as the name would suggest,
 
 6
 00:00:14,000 --> 00:00:16,560
-technology, as the name would suggest,
 into healthcare, in particular data
 
 7
 00:00:16,560 --> 00:00:17,600
-into healthcare, in particular data
 exchange in healthcare to help
 
 8
 00:00:17,600 --> 00:00:19,800
-exchange in healthcare to help
 facilitate trust across the healthcare
 
 9
 00:00:19,800 --> 00:00:21,840
-facilitate trust across the healthcare
 ecosystem. I realized I forgot a intro
 
 10
 00:00:21,840 --> 00:00:23,360
-ecosystem. I realized I forgot a intro
 slide, so I'm just doing it without a
 
 11
 00:00:23,360 --> 00:00:24,200
-slide, so I'm just doing it without a
 slide.
 
 12
 00:00:24,200 --> 00:00:27,080
-slide.
 So, in my job, I end up teaching KERI
 
 13
 00:00:27,080 --> 00:00:28,760
-So, in my job, I end up teaching KERI
 very often to a lot of different people,
 
 14
 00:00:28,760 --> 00:00:30,120
-very often to a lot of different people,
 in particular people who have never even
 
 15
 00:00:30,120 --> 00:00:32,080
-in particular people who have never even
 heard of it before. Sometimes maybe
 
 16
 00:00:32,080 --> 00:00:34,240
-heard of it before. Sometimes maybe
 they've heard of PKI, sometimes they've
 
 17
 00:00:34,240 --> 00:00:36,480
-they've heard of PKI, sometimes they've
 heard of X509s, but they've never heard
 
 18
 00:00:36,480 --> 00:00:38,960
-heard of X509s, but they've never heard
 of KERI. And this is one of my favorite
 
 19
 00:00:38,960 --> 00:00:41,880
-of KERI. And this is one of my favorite
 slides to teach KERI because it starts
 
 20
 00:00:41,880 --> 00:00:44,040
-slides to teach KERI because it starts
 at the very bottom of the layers that
 
 21
 00:00:44,040 --> 00:00:46,560
-at the very bottom of the layers that
 make KERI the security protocol that it
 
 22
 00:00:46,560 --> 00:00:48,920
-make KERI the security protocol that it
 is. And when Sam first asked me to do
 
 23
 00:00:48,920 --> 00:00:51,200
-is. And when Sam first asked me to do
 this talk on KERI infrastructure, I
 
 24
 00:00:51,200 --> 00:00:52,520
-this talk on KERI infrastructure, I
 immediately thought of this slide
 
 25
 00:00:52,520 --> 00:00:54,040
-immediately thought of this slide
 because the infrastructure that I'm
 
 26
 00:00:54,040 --> 00:00:55,360
-because the infrastructure that I'm
 going to talk about is very clearly
 
 27
 00:00:55,360 --> 00:00:57,840
-going to talk about is very clearly
 spelled out in the layers of security
 
 28
 00:00:57,840 --> 00:01:00,400
-spelled out in the layers of security
 that make up the KERI stack. So, I
 
 29
 00:01:00,400 --> 00:01:02,000
-that make up the KERI stack. So, I
 won't do the whole spiel that I usually
 
 30
 00:01:02,000 --> 00:01:03,760
-won't do the whole spiel that I usually
 do for this, but very quickly, starting
 
 31
 00:01:03,760 --> 00:01:05,080
-do for this, but very quickly, starting
 at the bottom of the self-certifying
 
 32
 00:01:05,080 --> 00:01:07,560
-at the bottom of the self-certifying
 identifiers and CESR, for folks that
 
 33
 00:01:07,560 --> 00:01:09,520
-identifiers and CESR, for folks that
 who know PKI, I always like to say that
 
 34
 00:01:09,520 --> 00:01:11,920
-who know PKI, I always like to say that
 KERI solves the two hard problems of
 
 35
 00:01:11,920 --> 00:01:14,280
-KERI solves the two hard problems of
 PKI. One is creating a cryptographic
 
 36
 00:01:14,280 --> 00:01:16,080
-PKI. One is creating a cryptographic
 binding between the identifier and the
 
 37
 00:01:16,080 --> 00:01:18,080
-binding between the identifier and the
 first set of keys, and the second hard
 
 38
 00:01:18,080 --> 00:01:20,080
-first set of keys, and the second hard
 problem it solves is key rotation,
 
 39
 00:01:20,080 --> 00:01:21,920
-problem it solves is key rotation,
 creating the cryptographic binding to
 
 40
 00:01:21,920 --> 00:01:24,200
-creating the cryptographic binding to
 every other set of keys. And we are able
 
 41
 00:01:24,200 --> 00:01:25,880
-every other set of keys. And we are able
 to do that with CESR, which is our
 
 42
 00:01:25,880 --> 00:01:27,640
-to do that with CESR, which is our
 encoding format for exchanging
 
 43
 00:01:27,640 --> 00:01:30,600
-encoding format for exchanging
 cryptographic primitives at scale.
 
 44
 00:01:30,600 --> 00:01:32,200
-cryptographic primitives at scale.
 So, the next layer up is pre-rotation
 
 45
 00:01:32,200 --> 00:01:33,880
-So, the next layer up is pre-rotation
 Key Event Logs. Already touched on what
 
 46
 00:01:33,880 --> 00:01:36,560
-Key Event Logs. Already touched on what
 pre-rotation is, and the Key Event Logs
 
 47
 00:01:36,560 --> 00:01:38,400
-pre-rotation is, and the Key Event Logs
 are of course the data structure,
 
 48
 00:01:38,400 --> 00:01:40,120
-are of course the data structure,
 append-only data structure that allows
 
 49
 00:01:40,120 --> 00:01:41,720
-append-only data structure that allows
 us to communicate changes in our key
 
 50
 00:01:41,720 --> 00:01:43,880
-us to communicate changes in our key
 state that anyone else in the world can
 
 51
 00:01:43,880 --> 00:01:45,320
-state that anyone else in the world can
 verify without ever having to phone
 
 52
 00:01:45,320 --> 00:01:47,800
-verify without ever having to phone
 home. Layer three delegation distributed
 
 53
 00:01:47,800 --> 00:01:49,360
-home. Layer three delegation distributed
 group multisig,
 
 54
 00:01:49,360 --> 00:01:52,120
-group multisig,
 that is something that we only talk to I
 
 55
 00:01:52,120 --> 00:01:53,400
-that is something that we only talk to I
 only talk to when I'm dealing with more
 
 56
 00:01:53,400 --> 00:01:55,120
-only talk to when I'm dealing with more
 advanced audiences, talking about
 
 57
 00:01:55,120 --> 00:01:56,880
-advanced audiences, talking about
 KERI's ability to do delegation both at
 
 58
 00:01:56,880 --> 00:01:59,200
-KERI's ability to do delegation both at
 the identifier level as well as
 
 59
 00:01:59,200 --> 00:02:01,480
-the identifier level as well as
 attenuated delegation with ACDC
 
 60
 00:02:01,480 --> 00:02:03,520
-attenuated delegation with ACDC
 credentials and distributed group
 
 61
 00:02:03,520 --> 00:02:06,080
-credentials and distributed group
 multisig is one of the more fun
 
 62
 00:02:06,080 --> 00:02:07,760
-multisig is one of the more fun
 technologies in KERI. I love working
 
 63
 00:02:07,760 --> 00:02:08,920
-technologies in KERI. I love working
 with it. I love building it when we were
 
 64
 00:02:08,920 --> 00:02:11,240
-with it. I love building it when we were
 at GLEIF, but we don't really dig too
 
 65
 00:02:11,240 --> 00:02:13,560
-at GLEIF, but we don't really dig too
 much into it. And so then if you think
 
 66
 00:02:13,560 --> 00:02:14,440
-much into it. And so then if you think
 about what I'm going to talk about
 
 67
 00:02:14,440 --> 00:02:17,520
-about what I'm going to talk about
 today, the wallets and then the watchers
 
 68
 00:02:17,520 --> 00:02:20,400
-today, the wallets and then the watchers
 and the witnesses, the first the layers
 
 69
 00:02:20,400 --> 00:02:21,560
-and the witnesses, the first the layers
 one through three that I just talked
 
 70
 00:02:21,560 --> 00:02:23,240
-one through three that I just talked
 about are all in the wallet. So I'll be
 
 71
 00:02:23,240 --> 00:02:25,160
-about are all in the wallet. So I'll be
 able to demo most of these Okay,
 
 72
 00:02:25,160 --> 00:02:26,880
-able to demo most of these Okay,
 actually all of these capabilities today
 
 73
 00:02:26,880 --> 00:02:29,000
-actually all of these capabilities today
 with the wallet. It's our wallet called
 
 74
 00:02:29,000 --> 00:02:30,680
-with the wallet. It's our wallet called
 Locksmith. And then when you get to
 
 75
 00:02:30,680 --> 00:02:32,360
-Locksmith. And then when you get to
 layer four, witnesses and watchers,
 
 76
 00:02:32,360 --> 00:02:33,760
-layer four, witnesses and watchers,
 those are the other components that I'll
 
 77
 00:02:33,760 --> 00:02:35,600
-those are the other components that I'll
 talk about today that we've donated it
 
 78
 00:02:35,600 --> 00:02:37,760
-talk about today that we've donated it
 to the KERI Foundation for open source.
 
 79
 00:02:37,760 --> 00:02:39,560
-to the KERI Foundation for open source.
 And those are of course the layer that
 
 80
 00:02:39,560 --> 00:02:41,880
-And those are of course the layer that
 allows us to make our Key Event Logs
 
 81
 00:02:41,880 --> 00:02:43,920
-allows us to make our Key Event Logs
 available to other people and keep an
 
 82
 00:02:43,920 --> 00:02:45,560
-available to other people and keep an
 eye on anyone else we're doing business
 
 83
 00:02:45,560 --> 00:02:49,510
-eye on anyone else we're doing business
 with, keep an eye on their key state.
 
 84
@@ -420,117 +338,94 @@ application that we've built over time.
 
 85
 00:02:53,320 --> 00:02:55,000
-application that we've built over time.
 It actually started as a pet project of
 
 86
 00:02:55,000 --> 00:02:56,320
-It actually started as a pet project of
 mine because I was tired of using the
 
 87
 00:02:56,320 --> 00:02:58,200
-mine because I was tired of using the
 command line. Most of the work that we
 
 88
 00:02:58,200 --> 00:03:00,400
-command line. Most of the work that we
 did at GLEIF was done building out the
 
 89
 00:03:00,400 --> 00:03:02,959
-did at GLEIF was done building out the
 command line and then actually creating
 
 90
 00:03:02,959 --> 00:03:04,880
-command line and then actually creating
 the entire
 
 91
 00:03:04,880 --> 00:03:07,519
-the entire
 GLEIF authorized representative system
 
 92
 00:03:07,519 --> 00:03:09,297
-GLEIF authorized representative system
 with the KERI command line. And
 
 93
 00:03:09,297 --> 00:03:10,760
-with the KERI command line. And
 at one point I just got tired
 
 94
 00:03:10,760 --> 00:03:11,262
-at one point I just got tired
 of
 
 95
 00:03:11,262 --> 00:03:11,440
-of
 [laughter]
 
 96
 00:03:11,440 --> 00:03:12,560
-[laughter]
 using the command line over and over
 
 97
 00:03:12,560 --> 00:03:14,000
-using the command line over and over
 again particularly when trying to demo
 
 98
 00:03:14,000 --> 00:03:15,560
-again particularly when trying to demo
 KERI to people. So I just started
 
 99
 00:03:15,560 --> 00:03:16,640
-KERI to people. So I just started
 playing around with what it would look
 
 100
 00:03:16,640 --> 00:03:18,400
-playing around with what it would look
 like to create a wallet and took the
 
 101
 00:03:18,400 --> 00:03:20,680
-like to create a wallet and took the
 KERI command line from KERIpy and
 
 102
 00:03:20,680 --> 00:03:22,040
-KERI command line from KERIpy and
 just started building little features
 
 103
 00:03:22,040 --> 00:03:24,239
-just started building little features
 one at a time into this and eventually
 
 104
 00:03:24,239 --> 00:03:25,440
-one at a time into this and eventually
 it became a tool that I was using all
 
 105
 00:03:25,440 --> 00:03:26,680
-it became a tool that I was using all
 the time and we figured it would be very
 
 106
 00:03:26,680 --> 00:03:28,360
-the time and we figured it would be very
 useful and started making it a
 
 107
 00:03:28,360 --> 00:03:30,630
-useful and started making it a
 production quality wallet.
 
 108
@@ -540,47 +435,38 @@ mean by core and I'm going to be demoing
 
 109
 00:03:34,000 --> 00:03:35,800
-mean by core and I'm going to be demoing
 it here in a minute, you'll see the core
 
 110
 00:03:35,800 --> 00:03:36,760
-it here in a minute, you'll see the core
 is basically all the KERI
 
 111
 00:03:36,760 --> 00:03:38,000
-is basically all the KERI
 functionality. Just core KERI
 
 112
 00:03:38,000 --> 00:03:39,480
-functionality. Just core KERI
 functionality for working with your key
 
 113
 00:03:39,480 --> 00:03:41,800
-functionality for working with your key
 state locally, creating what we call
 
 114
 00:03:41,800 --> 00:03:43,519
-state locally, creating what we call
 vaults which if you know KERIpy
 
 115
 00:03:43,519 --> 00:03:45,160
-vaults which if you know KERIpy
 they're called Habery's. Sorry Sam,
 
 116
 00:03:45,160 --> 00:03:46,200
-they're called Habery's. Sorry Sam,
 couldn't call them Habery's in my
 
 117
 00:03:46,200 --> 00:03:48,630
-couldn't call them Habery's in my
 product.
 
 118
@@ -594,537 +480,430 @@ vaults, doing delegation, multisig,
 
 120
 00:03:53,480 --> 00:03:54,920
-vaults, doing delegation, multisig,
 Provisioning with provisioning
 
 121
 00:03:54,920 --> 00:03:56,920
-Provisioning with provisioning
 witnesses is actually on our on our SaaS
 
 122
 00:03:56,920 --> 00:03:59,000
-witnesses is actually on our on our SaaS
 platform, but working with witnesses,
 
 123
 00:03:59,000 --> 00:04:00,960
-platform, but working with witnesses,
 doing key rotations, etc. etc. We also
 
 124
 00:04:00,960 --> 00:04:03,600
-doing key rotations, etc. etc. We also
 have sections for all the work you do
 
 125
 00:04:03,600 --> 00:04:06,640
-have sections for all the work you do
 with a credential, so uploading schema,
 
 126
 00:04:06,640 --> 00:04:07,959
-with a credential, so uploading schema,
 issuing credentials, granting
 
 127
 00:04:07,959 --> 00:04:09,440
-issuing credentials, granting
 credentials, doing the whole IPEX
 
 128
 00:04:09,440 --> 00:04:11,280
-credentials, doing the whole IPEX
 exchange, as well as receiving
 
 129
 00:04:11,280 --> 00:04:12,840
-exchange, as well as receiving
 credentials and using them in various
 
 130
 00:04:12,840 --> 00:04:14,920
-credentials and using them in various
 ways. There's no server required for
 
 131
 00:04:14,920 --> 00:04:16,720
-ways. There's no server required for
 the core Locksmith wallet. You can
 
 132
 00:04:16,720 --> 00:04:18,640
-the core Locksmith wallet. You can
 create all of your stuff locally for
 
 133
 00:04:18,640 --> 00:04:20,040
-create all of your stuff locally for
 everything that you would need to
 
 134
 00:04:20,040 --> 00:04:21,239
-everything that you would need to
 potentially share with someone, we have
 
 135
 00:04:21,239 --> 00:04:23,240
-potentially share with someone, we have
 an export feature. So, if you create an
 
 136
 00:04:23,240 --> 00:04:24,840
-an export feature. So, if you create an
 identifier, you do a couple key
 
 137
 00:04:24,840 --> 00:04:26,120
-identifier, you do a couple key
 rotations, you want to share it with
 
 138
 00:04:26,120 --> 00:04:28,200
-rotations, you want to share it with
 someone, you can just export the CESR
 
 139
 00:04:28,200 --> 00:04:29,680
-someone, you can just export the CESR
 of the Key Event Log and email to
 
 140
 00:04:29,680 --> 00:04:31,360
-of the Key Event Log and email to
 someone.
 
 141
 00:04:31,360 --> 00:04:32,840
-someone.
 And then finally, it's extensible by
 
 142
 00:04:32,840 --> 00:04:34,320
-And then finally, it's extensible by
 design. We'll we'll get into that
 
 143
 00:04:34,320 --> 00:04:36,320
-design. We'll we'll get into that
 quite a bit. When we first started
 
 144
 00:04:36,320 --> 00:04:38,520
-quite a bit. When we first started
 adding features for our SaaS platform,
 
 145
 00:04:38,520 --> 00:04:40,440
-adding features for our SaaS platform,
 and the healthKERI SaaS platform is
 
 146
 00:04:40,440 --> 00:04:41,960
-and the healthKERI SaaS platform is
 really just KERI infrastructure.
 
 147
 00:04:41,960 --> 00:04:43,320
-really just KERI infrastructure.
 We're allowing folks to provision
 
 148
 00:04:43,320 --> 00:04:45,400
-We're allowing folks to provision
 witnesses and watchers and use them with
 
 149
 00:04:45,400 --> 00:04:46,880
-witnesses and watchers and use them with
 their identifiers for doing business
 
 150
 00:04:46,880 --> 00:04:49,240
-their identifiers for doing business
 with each other, we realized actually it
 
 151
 00:04:49,240 --> 00:04:50,640
-with each other, we realized actually it
 was just because of where we put it on
 
 152
 00:04:50,640 --> 00:04:52,200
-was just because of where we put it on
 the user interface, it looked like a
 
 153
 00:04:52,200 --> 00:04:53,720
-the user interface, it looked like a
 plugin. And we thought, well, you know
 
 154
 00:04:53,720 --> 00:04:55,480
-plugin. And we thought, well, you know
 what? If we do really want to donate
 
 155
 00:04:55,480 --> 00:04:56,720
-what? If we do really want to donate
 this to open source, we're not going to
 
 156
 00:04:56,720 --> 00:04:58,560
-this to open source, we're not going to
 donate that part of the product to open
 
 157
 00:04:58,560 --> 00:05:01,520
-donate that part of the product to open
 source, so why not wrap the interaction
 
 158
 00:05:01,520 --> 00:05:05,440
-source, so why not wrap the interaction
 with our SaaS services into a plugin API
 
 159
 00:05:05,440 --> 00:05:07,360
-with our SaaS services into a plugin API
 and make it so that anyone can provide
 
 160
 00:05:07,360 --> 00:05:09,919
-and make it so that anyone can provide
 plugins to that system. And so, I
 
 161
 00:05:09,919 --> 00:05:12,240
-plugins to that system. And so, I
 believe later today or maybe tomorrow
 
 162
 00:05:12,240 --> 00:05:14,480
-believe later today or maybe tomorrow
 we'll see some of the gentlemen from the
 
 163
 00:05:14,480 --> 00:05:16,080
-we'll see some of the gentlemen from the
 KERI Foundation who have taken this
 
 164
 00:05:16,080 --> 00:05:18,080
-KERI Foundation who have taken this
 open source core and integrated their
 
 165
 00:05:18,080 --> 00:05:19,760
-open source core and integrated their
 own plugin to deal with their own SaaS
 
 166
 00:05:19,760 --> 00:05:22,880
-own plugin to deal with their own SaaS
 services. And Two presentations this
 
 167
 00:05:22,880 --> 00:05:25,280
-services. And Two presentations this
 afternoon. Great. On just that? Yeah.
 
 168
 00:05:25,280 --> 00:05:26,880
-afternoon. Great. On just that? Yeah.
 Excellent.
 
 169
 00:05:26,880 --> 00:05:28,440
-Excellent.
 And so, what we've also done with it
 
 170
 00:05:28,440 --> 00:05:30,880
-And so, what we've also done with it
 over time is part of the business
 
 171
 00:05:30,880 --> 00:05:32,120
-over time is part of the business
 that we're getting into, you heard Jared
 
 172
 00:05:32,120 --> 00:05:33,640
-that we're getting into, you heard Jared
 talk about today, we're starting to
 
 173
 00:05:33,640 --> 00:05:36,480
-talk about today, we're starting to
 bring the vLEI into healthcare. So,
 
 174
 00:05:36,480 --> 00:05:38,120
-bring the vLEI into healthcare. So,
 we're helping folks with the issuance of
 
 175
 00:05:38,120 --> 00:05:39,680
-we're helping folks with the issuance of
 credentials, particularly vLEI
 
 176
 00:05:39,680 --> 00:05:41,720
-credentials, particularly vLEI
 credentials. So, we've added a new
 
 177
 00:05:41,720 --> 00:05:44,560
-credentials. So, we've added a new
 component underneath our plugin for our
 
 178
 00:05:44,560 --> 00:05:46,440
-component underneath our plugin for our
 SaaS platform that is a credential
 
 179
 00:05:46,440 --> 00:05:48,400
-SaaS platform that is a credential
 issuance management protocol or
 
 180
 00:05:48,400 --> 00:05:50,120
-issuance management protocol or
 plug-in. And so that will interact with
 
 181
 00:05:50,120 --> 00:05:52,600
-plug-in. And so that will interact with
 a server component, really wrapping all
 
 182
 00:05:52,600 --> 00:05:55,440
-a server component, really wrapping all
 of the hard parts of the hardest part of
 
 183
 00:05:55,440 --> 00:05:57,080
-of the hard parts of the hardest part of
 of issuing the vLEIs is managing the
 
 184
 00:05:57,080 --> 00:05:59,080
-of issuing the vLEIs is managing the
 multisig identifiers required and the
 
 185
 00:05:59,080 --> 00:06:01,360
-multisig identifiers required and the
 coordination between participants and
 
 186
 00:06:01,360 --> 00:06:02,960
-coordination between participants and
 how they see the credentials and how
 
 187
 00:06:02,960 --> 00:06:04,560
-how they see the credentials and how
 they interact with each other,
 
 188
 00:06:04,560 --> 00:06:06,880
-they interact with each other,
 notifications, etc. when issuing
 
 189
 00:06:06,880 --> 00:06:08,640
-notifications, etc. when issuing
 credentials across an enterprise by
 
 190
 00:06:08,640 --> 00:06:10,240
-credentials across an enterprise by
 various parties who may not be sitting
 
 191
 00:06:10,240 --> 00:06:12,640
-various parties who may not be sitting
 in the same room all the time.
 
 192
 00:06:12,640 --> 00:06:13,760
-in the same room all the time.
 Let's see where we're going here. So the
 
 193
 00:06:13,760 --> 00:06:15,800
-Let's see where we're going here. So the
 KERI core already talked about it a
 
 194
 00:06:15,800 --> 00:06:18,040
-KERI core already talked about it a
 little bit and I'm honestly not really
 
 195
 00:06:18,040 --> 00:06:19,320
-little bit and I'm honestly not really
 sure where to go to the demo, so I may
 
 196
 00:06:19,320 --> 00:06:20,600
-sure where to go to the demo, so I may
 just tell on the slides and go right
 
 197
 00:06:20,600 --> 00:06:22,200
-just tell on the slides and go right
 over soon, but
 
 198
 00:06:22,200 --> 00:06:23,600
-over soon, but
 this is just all the basic stuff you
 
 199
 00:06:23,600 --> 00:06:25,360
-this is just all the basic stuff you
 would do with a with a KERI
 
 200
 00:06:25,360 --> 00:06:26,880
-would do with a with a KERI
 system. So create your identifiers,
 
 201
 00:06:26,880 --> 00:06:29,000
-system. So create your identifiers,
 manage them, do rotations, like I said,
 
 202
 00:06:29,000 --> 00:06:30,240
-manage them, do rotations, like I said,
 export them, share them with other
 
 203
 00:06:30,240 --> 00:06:31,400
-export them, share them with other
 folks.
 
 204
 00:06:31,400 --> 00:06:33,400
-folks.
 We've broken out group identifiers into
 
 205
 00:06:33,400 --> 00:06:35,080
-We've broken out group identifiers into
 its own section. We initially
 
 206
 00:06:35,080 --> 00:06:36,400
-its own section. We initially
 experimented with having it as just
 
 207
 00:06:36,400 --> 00:06:38,800
-experimented with having it as just
 another type of identifier you create
 
 208
 00:06:38,800 --> 00:06:40,040
-another type of identifier you create
 and that was a little bit unwieldy, so
 
 209
 00:06:40,040 --> 00:06:41,160
-and that was a little bit unwieldy, so
 we have our own separate group
 
 210
 00:06:41,160 --> 00:06:43,240
-we have our own separate group
 identifier section. The ability to do
 
 211
 00:06:43,240 --> 00:06:45,120
-identifier section. The ability to do
 delegation with any identifier that you
 
 212
 00:06:45,120 --> 00:06:46,640
-delegation with any identifier that you
 create, you can send challenge
 
 213
 00:06:46,640 --> 00:06:48,240
-create, you can send challenge
 responses. I already mentioned the
 
 214
 00:06:48,240 --> 00:06:49,760
-responses. I already mentioned the
 credential schemas and then working with
 
 215
 00:06:49,760 --> 00:06:50,880
-credential schemas and then working with
 witnesses
 
 216
 00:06:50,880 --> 00:06:52,520
-witnesses
 and watchers as a matter of fact. And
 
 217
 00:06:52,520 --> 00:06:55,160
-and watchers as a matter of fact. And
 then kind of tangential to what you get
 
 218
 00:06:55,160 --> 00:06:57,400
-then kind of tangential to what you get
 with a normal KERI wallet, but much
 
 219
 00:06:57,400 --> 00:06:59,960
-with a normal KERI wallet, but much
 needed is a full notification system
 
 220
 00:06:59,960 --> 00:07:01,800
-needed is a full notification system
 integrated with KERI messages that go
 
 221
 00:07:01,800 --> 00:07:03,880
-integrated with KERI messages that go
 back and forth. So if you receive KERI
 
 222
 00:07:03,880 --> 00:07:05,880
-back and forth. So if you receive KERI
 messages like IPEX messages for a grant
 
 223
 00:07:05,880 --> 00:07:08,320
-messages like IPEX messages for a grant
 that you were given, they turn into
 
 224
 00:07:08,320 --> 00:07:09,880
-that you were given, they turn into
 notifications inside of the user
 
 225
 00:07:09,880 --> 00:07:12,240
-notifications inside of the user
 interface, kind of separate from the
 
 226
 00:07:12,240 --> 00:07:17,030
-interface, kind of separate from the
 actual IXN message itself. What's next?
 
 227
@@ -1134,67 +913,54 @@ part Let's see in this last one. Yeah,
 
 228
 00:07:22,120 --> 00:07:23,400
-part Let's see in this last one. Yeah,
 you can see it down at the bottom here.
 
 229
 00:07:23,400 --> 00:07:25,000
-you can see it down at the bottom here.
 Can you see my cursor there? Yeah. So
 
 230
 00:07:25,000 --> 00:07:26,280
-Can you see my cursor there? Yeah. So
 down at the bottom here, this is the
 
 231
 00:07:26,280 --> 00:07:28,160
-down at the bottom here, this is the
 healthKeri plug-in and this is what
 
 232
 00:07:28,160 --> 00:07:31,560
-healthKeri plug-in and this is what
 you would access to be able to reserve
 
 233
 00:07:31,560 --> 00:07:34,520
-you would access to be able to reserve
 resources on our SaaS platform in much
 
 234
 00:07:34,520 --> 00:07:36,640
-resources on our SaaS platform in much
 the same way that you would go
 
 235
 00:07:36,640 --> 00:07:39,520
-the same way that you would go
 reserve a VM from Digital Ocean or from
 
 236
 00:07:39,520 --> 00:07:41,480
-reserve a VM from Digital Ocean or from
 AWS. And so we tried to keep that
 
 237
 00:07:41,480 --> 00:07:43,760
-AWS. And so we tried to keep that
 comfortable for people who are used to
 
 238
 00:07:43,760 --> 00:07:45,320
-comfortable for people who are used to
 dealing with cloud services to say, "Oh,
 
 239
 00:07:45,320 --> 00:07:46,800
-dealing with cloud services to say, "Oh,
 I need another witness. I can just go
 
 240
 00:07:46,800 --> 00:07:49,670
-I need another witness. I can just go
 rent him, if you will."
 
 241
@@ -1204,142 +970,114 @@ Plug-in, you will see the ability to
 
 242
 00:07:53,320 --> 00:07:56,280
-Plug-in, you will see the ability to
 access identifiers, witnesses. We
 
 243
 00:07:56,280 --> 00:07:57,920
-access identifiers, witnesses. We
 give you the opportunity to publish
 
 244
 00:07:57,920 --> 00:07:59,440
-give you the opportunity to publish
 credentials, which is
 
 245
 00:07:59,440 --> 00:08:00,600
-credentials, which is
 we're we're going to do a lot more with
 
 246
 00:08:00,600 --> 00:08:02,040
-we're we're going to do a lot more with
 that in the future once the KERI
 
 247
 00:08:02,040 --> 00:08:04,000
-that in the future once the KERI
 Foundation starts working on observers
 
 248
 00:08:04,000 --> 00:08:06,040
-Foundation starts working on observers
 and registrars. This is just kind of
 
 249
 00:08:06,040 --> 00:08:08,120
-and registrars. This is just kind of
 a lightweight version of that. We
 
 250
 00:08:08,120 --> 00:08:10,600
-a lightweight version of that. We
 have a connections feature which steps
 
 251
 00:08:10,600 --> 00:08:12,600
-have a connections feature which steps
 kind of outside of OOBIs if you just want
 
 252
 00:08:12,600 --> 00:08:14,000
-kind of outside of OOBIs if you just want
 to do quick connections with each other
 
 253
 00:08:14,000 --> 00:08:15,400
-to do quick connections with each other
 and you know the other person is using
 
 254
 00:08:15,400 --> 00:08:18,120
-and you know the other person is using
 Locksmith at our SaaS platform. And then
 
 255
 00:08:18,120 --> 00:08:20,320
-Locksmith at our SaaS platform. And then
 watched identifiers is our watcher
 
 256
 00:08:20,320 --> 00:08:22,520
-watched identifiers is our watcher
 network. And I'll talk more about that
 
 257
 00:08:22,520 --> 00:08:23,520
-network. And I'll talk more about that
 later.
 
 258
 00:08:23,520 --> 00:08:25,480
-later.
 Mailboxes so that you can get
 
 259
 00:08:25,480 --> 00:08:26,919
-Mailboxes so that you can get
 these messages sent back and forth to
 
 260
 00:08:26,919 --> 00:08:28,520
-these messages sent back and forth to
 each other. And then finally servers and
 
 261
 00:08:28,520 --> 00:08:29,800
-each other. And then finally servers and
 profiles I'll touch on when I do the
 
 262
 00:08:29,800 --> 00:08:31,440
-profiles I'll touch on when I do the
 demo.
 
 263
 00:08:31,440 --> 00:08:32,440
-demo.
 Okay, so we're going to stop
 
 264
 00:08:32,440 --> 00:08:36,120
-Okay, so we're going to stop
 there and I'm going to switch over
 
 265
 00:08:36,120 --> 00:08:38,320
-there and I'm going to switch over
 To the demo. So this is Locksmith.
 
 266
 00:08:38,320 --> 00:08:39,640
-To the demo. So this is Locksmith.
 Again, I have two of them running here.
 
 267
 00:08:39,640 --> 00:08:40,960
-Again, I have two of them running here.
 I don't know how awkward that is to see
 
 268
 00:08:40,960 --> 00:08:42,080
-I don't know how awkward that is to see
 on the screen. Maybe I'll just center
 
 269
 00:08:42,080 --> 00:08:44,870
-on the screen. Maybe I'll just center
 them both.
 
 270
@@ -1349,97 +1087,78 @@ little bit awkward.
 
 271
 00:08:48,000 --> 00:08:49,600
-little bit awkward.
 Okay, so I have two Locksmiths here so
 
 272
 00:08:49,600 --> 00:08:51,040
-Okay, so I have two Locksmiths here so
 that I can demo some of the features of
 
 273
 00:08:51,040 --> 00:08:53,200
-that I can demo some of the features of
 going back and forth between them. But
 
 274
 00:08:53,200 --> 00:08:55,800
-going back and forth between them. But
 as I mentioned, we call
 
 275
 00:08:55,800 --> 00:08:57,800
-as I mentioned, we call
 Your database environments which you
 
 276
 00:08:57,800 --> 00:08:59,800
-Your database environments which you
 can separate out groups of identifiers
 
 277
 00:08:59,800 --> 00:09:01,200
-can separate out groups of identifiers
 within a KERI system, we call them
 
 278
 00:09:01,200 --> 00:09:03,120
-within a KERI system, we call them
 vaults. And so we have the ability to
 
 279
 00:09:03,120 --> 00:09:05,120
-vaults. And so we have the ability to
 create a new vault. You can give it a
 
 280
 00:09:05,120 --> 00:09:08,360
-create a new vault. You can give it a
 name. So I'm going to go with Alice.
 
 281
 00:09:08,360 --> 00:09:10,720
-name. So I'm going to go with Alice.
 And create a vault. One of the things we
 
 282
 00:09:10,720 --> 00:09:14,320
-And create a vault. One of the things we
 focused on here is making it very
 
 283
 00:09:14,320 --> 00:09:16,560
-focused on here is making it very
 simple to do very simple things. So when
 
 284
 00:09:16,560 --> 00:09:18,480
-simple to do very simple things. So when
 you're creating an identifier, there's a
 
 285
 00:09:18,480 --> 00:09:19,960
-you're creating an identifier, there's a
 lot of things you can do and it can be
 
 286
 00:09:19,960 --> 00:09:21,640
-lot of things you can do and it can be
 very complicated and complex to
 
 287
 00:09:21,640 --> 00:09:23,960
-very complicated and complex to
 understand what all the knobs and
 
 288
 00:09:23,960 --> 00:09:26,680
-understand what all the knobs and
 buttons do on creating an identifier.
 
 289
 00:09:26,680 --> 00:09:28,960
-buttons do on creating an identifier.
 Same with creating a vault here. And so
 
 290
@@ -1449,182 +1168,146 @@ we tried to make it so that in the very
 
 291
 00:09:30,800 --> 00:09:32,040
-we tried to make it so that in the very
 simple case, if you know what you're
 
 292
 00:09:32,040 --> 00:09:33,080
-simple case, if you know what you're
 doing, you just need to do something
 
 293
 00:09:33,080 --> 00:09:34,760
-doing, you just need to do something
 quickly, type in a name and go and
 
 294
 00:09:34,760 --> 00:09:35,839
-quickly, type in a name and go and
 you're done. So that's what we did with
 
 295
 00:09:35,839 --> 00:09:37,240
-you're done. So that's what we did with
 creating in a vault you could creating a
 
 296
 00:09:37,240 --> 00:09:39,120
-creating in a vault you could creating a
 vault. You can do two-factor auth with
 
 297
 00:09:39,120 --> 00:09:41,040
-vault. You can do two-factor auth with
 it if you want. Not really that
 
 298
 00:09:41,040 --> 00:09:42,760
-it if you want. Not really that
 meaningful or important, but you can cuz
 
 299
 00:09:42,760 --> 00:09:44,400
-meaningful or important, but you can cuz
 someone requested it from us. So, now
 
 300
 00:09:44,400 --> 00:09:46,200
-someone requested it from us. So, now
 I'm going to open the vault.
 
 301
 00:09:46,200 --> 00:09:47,720
-I'm going to open the vault.
 And here I am in a KERI environment.
 
 302
 00:09:47,720 --> 00:09:50,040
-And here I am in a KERI environment.
 Over here on the left-hand side, I have
 
 303
 00:09:50,040 --> 00:09:51,600
-Over here on the left-hand side, I have
 my menu which gives me the ability to
 
 304
 00:09:51,600 --> 00:09:53,080
-my menu which gives me the ability to
 work with all the items I talked about
 
 305
 00:09:53,080 --> 00:09:55,160
-work with all the items I talked about
 before. Identifiers are my local
 
 306
 00:09:55,160 --> 00:09:57,400
-before. Identifiers are my local
 identifiers. Remote identifiers are
 
 307
 00:09:57,400 --> 00:09:59,600
-identifiers. Remote identifiers are
 those with people other people who I'm
 
 308
 00:09:59,600 --> 00:10:02,160
-those with people other people who I'm
 doing business with. Group multisigs,
 
 309
 00:10:02,160 --> 00:10:05,000
-doing business with. Group multisigs,
 credentials, proxies, and the
 
 310
 00:10:05,000 --> 00:10:06,720
-credentials, proxies, and the
 settings. So, the set I'll just touch on
 
 311
 00:10:06,720 --> 00:10:07,920
-settings. So, the set I'll just touch on
 the settings very quickly inside of
 
 312
 00:10:07,920 --> 00:10:10,200
-the settings very quickly inside of
 here. These for those of you who have
 
 313
 00:10:10,200 --> 00:10:12,480
-here. These for those of you who have
 worked very closely with KERI under the
 
 314
 00:10:12,480 --> 00:10:15,560
-worked very closely with KERI under the
 hoods, these are various knobs and
 
 315
 00:10:15,560 --> 00:10:17,160
-hoods, these are various knobs and
 buttons you can turn to configure your
 
 316
 00:10:17,160 --> 00:10:18,480
-buttons you can turn to configure your
 environment whether you want a temporary
 
 317
 00:10:18,480 --> 00:10:19,840
-environment whether you want a temporary
 data store where if you want to change
 
 318
 00:10:19,840 --> 00:10:21,200
-data store where if you want to change
 the directory where we store things by
 
 319
 00:10:21,200 --> 00:10:24,920
-the directory where we store things by
 default, etc. etc. We have a plugin that
 
 320
 00:10:24,920 --> 00:10:26,760
-default, etc. etc. We have a plugin that
 I'll be demoing tomorrow that interacts
 
 321
 00:10:26,760 --> 00:10:29,320
-I'll be demoing tomorrow that interacts
 directly with Locksmith for gaining
 
 322
 00:10:29,320 --> 00:10:32,480
-directly with Locksmith for gaining
 access to getting things signed for you
 
 323
 00:10:32,480 --> 00:10:34,320
-access to getting things signed for you
 Submitting IPEX grants so that you
 
 324
 00:10:34,320 --> 00:10:35,880
-Submitting IPEX grants so that you
 can log onto a website, that sort of
 
 325
 00:10:35,880 --> 00:10:37,680
-can log onto a website, that sort of
 thing. You can configure that here as
 
 326
 00:10:37,680 --> 00:10:39,510
-thing. You can configure that here as
 well.
 
 327
@@ -1634,142 +1317,114 @@ said, we try and make things very
 
 328
 00:10:42,080 --> 00:10:44,000
-said, we try and make things very
 simple. So, I'm Alice and I want to
 
 329
 00:10:44,000 --> 00:10:45,800
-simple. So, I'm Alice and I want to
 create an identifier. I just did. So,
 
 330
 00:10:45,800 --> 00:10:47,800
-create an identifier. I just did. So,
 now I have a KERI identifier. It's got
 
 331
 00:10:47,800 --> 00:10:49,760
-now I have a KERI identifier. It's got
 a Key Event Log, only an inception
 
 332
 00:10:49,760 --> 00:10:51,760
-a Key Event Log, only an inception
 event. And if I look at it, you can see
 
 333
 00:10:51,760 --> 00:10:54,200
-event. And if I look at it, you can see
 that I created it. It has a public key.
 
 334
 00:10:54,200 --> 00:10:55,920
-that I created it. It has a public key.
 No witnesses or anything like that
 
 335
 00:10:55,920 --> 00:10:57,080
-No witnesses or anything like that
 yet. And there's my Key Event Log. So,
 
 336
 00:10:57,080 --> 00:10:58,920
-yet. And there's my Key Event Log. So,
 that was really easy. And that's one of
 
 337
 00:10:58,920 --> 00:11:00,080
-that was really easy. And that's one of
 the things that we really want to
 
 338
 00:11:00,080 --> 00:11:02,320
-the things that we really want to
 emphasize here is how quickly we can do
 
 339
 00:11:02,320 --> 00:11:03,760
-emphasize here is how quickly we can do
 things. Now, if we want to get more
 
 340
 00:11:03,760 --> 00:11:06,120
-things. Now, if we want to get more
 complicated with it, you can go into our
 
 341
 00:11:06,120 --> 00:11:08,240
-complicated with it, you can go into our
 advanced configuration and you have all
 
 342
 00:11:08,240 --> 00:11:09,800
-advanced configuration and you have all
 of these options available to you. You
 
 343
 00:11:09,800 --> 00:11:11,480
-of these options available to you. You
 can we can do a keychain if you want to
 
 344
 00:11:11,480 --> 00:11:13,080
-can we can do a keychain if you want to
 do a hierarchical deterministic
 
 345
 00:11:13,080 --> 00:11:15,080
-do a hierarchical deterministic
 keychain. You can create that here. You
 
 346
 00:11:15,080 --> 00:11:17,480
-keychain. You can create that here. You
 can have a salt which you can look at,
 
 347
 00:11:17,480 --> 00:11:19,400
-can have a salt which you can look at,
 copy and paste, and save in your one
 
 348
 00:11:19,400 --> 00:11:21,520
-copy and paste, and save in your one
 password so that you could recover this
 
 349
 00:11:21,520 --> 00:11:23,520
-password so that you could recover this
 identifier and all of its keys in the
 
 350
 00:11:23,520 --> 00:11:26,000
-identifier and all of its keys in the
 in the case of a catastrophic event. If
 
 351
 00:11:26,000 --> 00:11:28,600
-in the case of a catastrophic event. If
 you're if you're a little more
 
 352
 00:11:28,600 --> 00:11:29,720
-you're if you're a little more
 concerned about security, you can just
 
 353
 00:11:29,720 --> 00:11:31,080
-concerned about security, you can just
 do a random key so that you could never
 
 354
 00:11:31,080 --> 00:11:33,000
-do a random key so that you could never
 get it back if you lose your keys.
 
 355
 00:11:33,000 --> 00:11:34,600
-get it back if you lose your keys.
 Underneath that, we have our signing
 
 356
@@ -1779,62 +1434,50 @@ thresholds. So, you have the number of
 
 357
 00:11:36,680 --> 00:11:38,360
-thresholds. So, you have the number of
 signing keys in the signing threshold.
 
 358
 00:11:38,360 --> 00:11:40,720
-signing keys in the signing threshold.
 This is only the M of N support. We
 
 359
 00:11:40,720 --> 00:11:42,000
-This is only the M of N support. We
 haven't built in the support for
 
 360
 00:11:42,000 --> 00:11:43,880
-haven't built in the support for
 fractionally weighted thresholds yet. We
 
 361
 00:11:43,880 --> 00:11:46,040
-fractionally weighted thresholds yet. We
 will eventually. Some of the other
 
 362
 00:11:46,040 --> 00:11:47,640
-will eventually. Some of the other
 features when you create an identifier,
 
 363
 00:11:47,640 --> 00:11:48,920
-features when you create an identifier,
 you can go with establishment only or do
 
 364
 00:11:48,920 --> 00:11:51,160
-you can go with establishment only or do
 not delegate. And then if you choose
 
 365
 00:11:51,160 --> 00:11:53,160
-not delegate. And then if you choose
 delegation, you can delegate from some
 
 366
 00:11:53,160 --> 00:11:55,520
-delegation, you can delegate from some
 other identifier, whether it's a local
 
 367
 00:11:55,520 --> 00:11:57,720
-other identifier, whether it's a local
 or a remote identifier. So, I'm not
 
 368
 00:11:57,720 --> 00:12:01,310
-or a remote identifier. So, I'm not
 going to create any of that right now.
 
 369
@@ -1853,77 +1496,62 @@ I'll come back to that in a minute.
 
 372
 00:12:09,040 --> 00:12:11,200
-I'll come back to that in a minute.
 And then in our group identifier
 
 373
 00:12:11,200 --> 00:12:12,480
-And then in our group identifier
 section, if you wanted to go ahead and
 
 374
 00:12:12,480 --> 00:12:14,000
-section, if you wanted to go ahead and
 create a group identifier, you give it a
 
 375
 00:12:14,000 --> 00:12:16,200
-create a group identifier, you give it a
 name, you select your local identifier
 
 376
 00:12:16,200 --> 00:12:18,120
-name, you select your local identifier
 that you want to use to join that group,
 
 377
 00:12:18,120 --> 00:12:19,280
-that you want to use to join that group,
 and then you would select your other
 
 378
 00:12:19,280 --> 00:12:21,760
-and then you would select your other
 participants.
 
 379
 00:12:21,760 --> 00:12:25,000
-participants.
 And again, a group identifier is
 
 380
 00:12:25,000 --> 00:12:26,840
-And again, a group identifier is
 exactly like any other identifier in
 
 381
 00:12:26,840 --> 00:12:28,520
-exactly like any other identifier in
 KERI. It's just that the keys are
 
 382
 00:12:28,520 --> 00:12:30,520
-KERI. It's just that the keys are
 shared across different machines. So,
 
 383
 00:12:30,520 --> 00:12:32,280
-shared across different machines. So,
 all the other options for specifying
 
 384
 00:12:32,280 --> 00:12:33,760
-all the other options for specifying
 your thresholds, whether it's
 
 385
 00:12:33,760 --> 00:12:35,640
-your thresholds, whether it's
 establishment only or do not delegate,
 
 386
 00:12:35,640 --> 00:12:38,710
-establishment only or do not delegate,
 all apply in here as well.
 
 387
@@ -1933,122 +1561,98 @@ discovery built into that
 
 388
 00:12:44,080 --> 00:12:46,760
-discovery built into that
 drop down for adding group?
 
 389
 00:12:46,760 --> 00:12:48,640
-drop down for adding group?
 Yes, so the other participants would
 
 390
 00:12:48,640 --> 00:12:50,120
-Yes, so the other participants would
 be coming from your remote identifiers
 
 391
 00:12:50,120 --> 00:12:52,360
-be coming from your remote identifiers
 here. So, any identifiers that you OOBI
 
 392
 00:12:52,360 --> 00:12:54,400
-here. So, any identifiers that you OOBI
 with and you've connected with become
 
 393
 00:12:54,400 --> 00:12:55,800
-with and you've connected with become
 candidates for joining a group
 
 394
 00:12:55,800 --> 00:12:57,240
-candidates for joining a group
 multisig. So, you already have to know
 
 395
 00:12:57,240 --> 00:12:59,360
-multisig. So, you already have to know
 about their Key Event Log, and that's in
 
 396
 00:12:59,360 --> 00:13:01,640
-about their Key Event Log, and that's in
 that's because of the protocol used to
 
 397
 00:13:01,640 --> 00:13:04,600
-that's because of the protocol used to
 create a group multisig. It involves
 
 398
 00:13:04,600 --> 00:13:07,160
-create a group multisig. It involves
 taking keys from the key from individual
 
 399
 00:13:07,160 --> 00:13:09,000
-taking keys from the key from individual
 identifiers from all the participants
 
 400
 00:13:09,000 --> 00:13:11,000
-identifiers from all the participants
 involved. And only the public keys, we
 
 401
 00:13:11,000 --> 00:13:13,120
-involved. And only the public keys, we
 don't share the private keys. So, that's
 
 402
 00:13:13,120 --> 00:13:14,839
-don't share the private keys. So, that's
 where they came from.
 
 403
 00:13:14,839 --> 00:13:17,120
-where they came from.
 Is that a different concept than like a
 
 404
 00:13:17,120 --> 00:13:19,120
-Is that a different concept than like a
 connection, a more general connection,
 
 405
 00:13:19,120 --> 00:13:21,240
-connection, a more general connection,
 or is it specifically scoped to
 
 406
 00:13:21,240 --> 00:13:22,640
-or is it specifically scoped to
 Multisig
 
 407
 00:13:22,640 --> 00:13:24,520
-Multisig
 group identifier? When you say that,
 
 408
 00:13:24,520 --> 00:13:25,920
-group identifier? When you say that,
 are you referring to remote identifiers?
 
 409
 00:13:25,920 --> 00:13:28,120
-are you referring to remote identifiers?
 Yeah. So remote identifiers are just
 
 410
 00:13:28,120 --> 00:13:30,600
-Yeah. So remote identifiers are just
 ones you OOBI's with. So, in KERIpy, I
 
 411
 00:13:30,600 --> 00:13:32,070
-ones you OOBI's with. So, in KERIpy, I
 think they're called contacts in KERI
 
 412
@@ -2058,22 +1662,18 @@ That's what the remote identifiers
 
 413
 00:13:34,160 --> 00:13:36,040
-That's what the remote identifiers
 are here.
 
 414
 00:13:36,040 --> 00:13:37,160
-are here.
 It could be anything. Issuing a
 
 415
 00:13:37,160 --> 00:13:39,320
-It could be anything. Issuing a
 credential to receiving a
 
 416
 00:13:39,320 --> 00:13:42,750
-credential to receiving a
 credential from, anything at all.
 
 417
@@ -2083,32 +1683,26 @@ forgot to do something, so you're going
 
 418
 00:13:46,160 --> 00:13:47,680
-forgot to do something, so you're going
 to see a little bit of behind the scenes
 
 419
 00:13:47,680 --> 00:13:49,080
-to see a little bit of behind the scenes
 here.
 
 420
 00:13:49,080 --> 00:13:51,080
-here.
 So, I cuz that I realized I don't have a
 
 421
 00:13:51,080 --> 00:13:52,514
-So, I cuz that I realized I don't have a
 can.
 
 422
 00:13:52,514 --> 00:13:53,880
-can.
 [laughter]
 
 423
 00:13:53,880 --> 00:14:00,190
-[laughter]
 What do you mean?
 
 424
@@ -2128,17 +1722,14 @@ All right. Cool. We should be good to go
 
 427
 00:14:13,480 --> 00:14:15,440
-All right. Cool. We should be good to go
 now.
 
 428
 00:14:15,440 --> 00:14:17,240
-now.
 I'll re-center and size them a little
 
 429
 00:14:17,240 --> 00:14:20,014
-I'll re-center and size them a little
 more.
 
 430
@@ -2148,82 +1739,66 @@ Okay. So, we were in the middle of
 
 431
 00:14:30,800 --> 00:14:33,360
-Okay. So, we were in the middle of
 creating Alice, so we will open up her
 
 432
 00:14:33,360 --> 00:14:35,680
-creating Alice, so we will open up her
 vault again, and we'll go over to remote
 
 433
 00:14:35,680 --> 00:14:37,640
-vault again, and we'll go over to remote
 identifiers. Good, there they are. Those
 
 434
 00:14:37,640 --> 00:14:39,480
-identifiers. Good, there they are. Those
 are the two identifiers for our SaaS
 
 435
 00:14:39,480 --> 00:14:42,280
-are the two identifiers for our SaaS
 platform. And so, they are configured to
 
 436
 00:14:42,280 --> 00:14:44,320
-platform. And so, they are configured to
 load when I And these are configured op-
 
 437
 00:14:44,320 --> 00:14:46,120
-load when I And these are configured op-
 configuration options you can add when
 
 438
 00:14:46,120 --> 00:14:48,920
-configuration options you can add when
 you package and ship your version of
 
 439
 00:14:48,920 --> 00:14:50,880
-you package and ship your version of
 Locksmith. Those are OOBIs that he will
 
 440
 00:14:50,880 --> 00:14:52,920
-Locksmith. Those are OOBIs that he will
 automatically resolve when he starts up,
 
 441
 00:14:52,920 --> 00:14:54,680
-automatically resolve when he starts up,
 so that he has access to them here. For
 
 442
 00:14:54,680 --> 00:14:56,440
-so that he has access to them here. For
 in our particular case, verifying the
 
 443
 00:14:56,440 --> 00:15:00,360
-in our particular case, verifying the
 signatures against our SaaS platform
 
 444
 00:15:00,360 --> 00:15:03,720
-signatures against our SaaS platform
 for gaining access.
 
 445
 00:15:03,720 --> 00:15:05,839
-for gaining access.
 So, let's go over to the Health KERI,
 
 446
 00:15:05,839 --> 00:15:09,150
-So, let's go over to the Health KERI,
 SaaS platform. So, this is
 
 447
@@ -2233,112 +1808,90 @@ account within Health KERI. And the
 
 448
 00:15:13,160 --> 00:15:14,720
-account within Health KERI. And the
 reason why I'm doing this, it won't be
 
 449
 00:15:14,720 --> 00:15:16,120
-reason why I'm doing this, it won't be
 it won't take very long, but this gives
 
 450
 00:15:16,120 --> 00:15:17,839
-it won't take very long, but this gives
 me the ability to provision witnesses,
 
 451
 00:15:17,839 --> 00:15:19,440
-me the ability to provision witnesses,
 so we can talk about the witnesses that
 
 452
 00:15:19,440 --> 00:15:21,320
-so we can talk about the witnesses that
 we have, and then also to start watching
 
 453
 00:15:21,320 --> 00:15:22,960
-we have, and then also to start watching
 identifiers inside of the healthKERI
 
 454
 00:15:22,960 --> 00:15:24,920
-identifiers inside of the healthKERI
 watcher network so we can see the
 
 455
 00:15:24,920 --> 00:15:26,840
-watcher network so we can see the
 interplay there. And then I can talk
 
 456
 00:15:26,840 --> 00:15:28,120
-interplay there. And then I can talk
 more about what we, you know, what's
 
 457
 00:15:28,120 --> 00:15:29,240
-more about what we, you know, what's
 going to be available for all of you
 
 458
 00:15:29,240 --> 00:15:31,560
-going to be available for all of you
 folks to start working with. So I am
 
 459
 00:15:31,560 --> 00:15:33,320
-folks to start working with. So I am
 in Alice, so I will very quickly create
 
 460
 00:15:33,320 --> 00:15:34,480
-in Alice, so I will very quickly create
 Alice and this is one of the key
 
 461
 00:15:34,480 --> 00:15:37,760
-Alice and this is one of the key
 differentiators of what we do with
 
 462
 00:15:37,760 --> 00:15:39,680
-differentiators of what we do with
 our SaaS platform. There are no usernames
 
 463
 00:15:39,680 --> 00:15:42,800
-our SaaS platform. There are no usernames
 and passwords. There are only usernames
 
 464
 00:15:42,800 --> 00:15:45,280
-and passwords. There are only usernames
 and KERI identifiers. So you aren't
 
 465
 00:15:45,280 --> 00:15:46,560
-and KERI identifiers. So you aren't
 uploading a password here, you're
 
 466
 00:15:46,560 --> 00:15:48,680
-uploading a password here, you're
 selecting a local KERI identifier and
 
 467
 00:15:48,680 --> 00:15:49,840
-selecting a local KERI identifier and
 actually I actually I don't want to do
 
 468
 00:15:49,840 --> 00:15:52,560
-actually I actually I don't want to do
 that one. Hold on. Identifiers, skip
 
 469
 00:15:52,560 --> 00:15:56,630
-that one. Hold on. Identifiers, skip
 this step.
 
 470
@@ -2360,77 +1913,62 @@ identifier that the public key and
 
 474
 00:16:08,760 --> 00:16:10,440
-identifier that the public key and
 Key Event Log of that identifier will
 
 475
 00:16:10,440 --> 00:16:12,520
-Key Event Log of that identifier will
 be stored on our services and anything
 
 476
 00:16:12,520 --> 00:16:15,360
-be stored on our services and anything
 that I send to the SaaS platform API will
 
 477
 00:16:15,360 --> 00:16:17,360
-that I send to the SaaS platform API will
 be signed and encrypted and anything
 
 478
 00:16:17,360 --> 00:16:19,360
-be signed and encrypted and anything
 that it responds with will also be
 
 479
 00:16:19,360 --> 00:16:21,560
-that it responds with will also be
 signed and encrypted from their AID. So
 
 480
 00:16:21,560 --> 00:16:23,320
-signed and encrypted from their AID. So
 we have all of our communications
 
 481
 00:16:23,320 --> 00:16:25,720
-we have all of our communications
 between our local Locksmith plugin and
 
 482
 00:16:25,720 --> 00:16:27,520
-between our local Locksmith plugin and
 our SaaS platform secured with what we
 
 483
 00:16:27,520 --> 00:16:29,440
-our SaaS platform secured with what we
 call ESSR which is encrypt send sign
 
 484
 00:16:29,440 --> 00:16:32,000
-call ESSR which is encrypt send sign
 receiver which is also a protocol
 
 485
 00:16:32,000 --> 00:16:34,120
-receiver which is also a protocol
 that's built into KERIpy.
 
 486
 00:16:34,120 --> 00:16:35,080
-that's built into KERIpy.
 So I'm going to continue into
 
 487
 00:16:35,080 --> 00:16:38,120
-So I'm going to continue into
 the account creation. This is Alice.
 
 488
 00:16:38,120 --> 00:16:41,150
-the account creation. This is Alice.
 She's on the internet.
 
 489
@@ -2453,112 +1991,90 @@ we first created our SaaS platform, we
 
 493
 00:16:54,000 --> 00:16:55,520
-we first created our SaaS platform, we
 based everything off of an individual
 
 494
 00:16:55,520 --> 00:16:57,320
-based everything off of an individual
 user and you would provision your own
 
 495
 00:16:57,320 --> 00:16:58,600
-user and you would provision your own
 businesses and watchers and that
 
 496
 00:16:58,600 --> 00:17:01,080
-businesses and watchers and that
 immediately was revealed to be
 
 497
 00:17:01,080 --> 00:17:03,600
-immediately was revealed to be
 very much too limiting because
 
 498
 00:17:03,600 --> 00:17:04,760
-very much too limiting because
 people would want to share accounts. So
 
 499
 00:17:04,760 --> 00:17:06,120
-people would want to share accounts. So
 we switched over to a model where we
 
 500
 00:17:06,120 --> 00:17:07,760
-we switched over to a model where we
 have teams and if any of you are
 
 501
 00:17:07,760 --> 00:17:09,240
-have teams and if any of you are
 familiar with using Digital Ocean, it's
 
 502
 00:17:09,240 --> 00:17:11,480
-familiar with using Digital Ocean, it's
 very much modeled off of their
 
 503
 00:17:11,480 --> 00:17:13,520
-very much modeled off of their
 approach for how you share resources
 
 504
 00:17:13,520 --> 00:17:16,079
-approach for how you share resources
 across teams. And this came in
 
 505
 00:17:16,079 --> 00:17:18,480
-across teams. And this came in
 handy later when we started working with
 
 506
 00:17:18,480 --> 00:17:20,360
-handy later when we started working with
 provisioning services inside of
 
 507
 00:17:20,360 --> 00:17:22,600
-provisioning services inside of
 enterprises where you have maybe a cloud
 
 508
 00:17:22,600 --> 00:17:24,880
-enterprises where you have maybe a cloud
 service that needs an identifier and it
 
 509
 00:17:24,880 --> 00:17:26,720
-service that needs an identifier and it
 also needs things like witnesses and
 
 510
 00:17:26,720 --> 00:17:29,160
-also needs things like witnesses and
 watchers, how you bring that server into
 
 511
 00:17:29,160 --> 00:17:30,760
-watchers, how you bring that server into
 your platform so he can start doing
 
 512
 00:17:30,760 --> 00:17:32,760
-your platform so he can start doing
 KERI things and reserving resources
 
 513
 00:17:32,760 --> 00:17:36,440
-KERI things and reserving resources
 from your KERI account. So this is team
 
 514
 00:17:36,440 --> 00:17:43,390
-from your KERI account. So this is team
 Alice
 
 515
@@ -2568,22 +2084,18 @@ access code and as of right now we don't
 
 516
 00:17:47,960 --> 00:17:49,640
-access code and as of right now we don't
 have billing built into our system so we
 
 517
 00:17:49,640 --> 00:17:51,200
-have billing built into our system so we
 just base it off access codes. I hand
 
 518
 00:17:51,200 --> 00:17:52,960
-just base it off access codes. I hand
 out access codes when people want to get
 
 519
 00:17:52,960 --> 00:17:55,150
-out access codes when people want to get
 an account on our system.
 
 520
@@ -2598,372 +2110,298 @@ integration where you're collecting
 
 522
 00:18:05,080 --> 00:18:07,520
-integration where you're collecting
 their role. No, not in this. No, we
 
 523
 00:18:07,520 --> 00:18:09,280
-their role. No, not in this. No, we
 don't require a vLEI to gain access to
 
 524
 00:18:09,280 --> 00:18:11,080
-don't require a vLEI to gain access to
 our to our platform. Okay, so I've gone
 
 525
 00:18:11,080 --> 00:18:13,320
-our to our platform. Okay, so I've gone
 ahead gone ahead and created an account
 
 526
 00:18:13,320 --> 00:18:15,080
-ahead gone ahead and created an account
 Inside of health KERI. I've added a
 
 527
 00:18:15,080 --> 00:18:17,160
-Inside of health KERI. I've added a
 team to that account.
 
 528
 00:18:17,160 --> 00:18:18,680
-team to that account.
 And now I'm going to add an identifier.
 
 529
 00:18:18,680 --> 00:18:20,360
-And now I'm going to add an identifier.
 And this is a little bit of an awkward
 
 530
 00:18:20,360 --> 00:18:22,600
-And this is a little bit of an awkward
 step but one that we were required to do
 
 531
 00:18:22,600 --> 00:18:24,400
-step but one that we were required to do
 for all of the other things you would
 
 532
 00:18:24,400 --> 00:18:25,920
-for all of the other things you would
 want to do on our SaaS platform. And what
 
 533
 00:18:25,920 --> 00:18:27,880
-want to do on our SaaS platform. And what
 I mean by that is when we provision
 
 534
 00:18:27,880 --> 00:18:29,840
-I mean by that is when we provision
 witnesses, slightly different from what
 
 535
 00:18:29,840 --> 00:18:31,400
-witnesses, slightly different from what
 many other many of the other witness
 
 536
 00:18:31,400 --> 00:18:33,120
-many other many of the other witness
 deployments are right now, when we
 
 537
 00:18:33,120 --> 00:18:34,840
-deployments are right now, when we
 provision witnesses, we provision them
 
 538
 00:18:34,840 --> 00:18:37,600
-provision witnesses, we provision them
 only for a single AID. So every witness
 
 539
 00:18:37,600 --> 00:18:39,360
-only for a single AID. So every witness
 that you get on our service will only
 
 540
 00:18:39,360 --> 00:18:42,640
-that you get on our service will only
 ever witness for the AID you gave it.
 
 541
 00:18:42,640 --> 00:18:45,400
-ever witness for the AID you gave it.
 And that's a security measure and also
 
 542
 00:18:45,400 --> 00:18:46,920
-And that's a security measure and also
 it helps us keep the scale of all the
 
 543
 00:18:46,920 --> 00:18:48,800
-it helps us keep the scale of all the
 witnesses very low so that we can
 
 544
 00:18:48,800 --> 00:18:50,440
-witnesses very low so that we can
 have a lot of witnesses because we know
 
 545
 00:18:50,440 --> 00:18:52,520
-have a lot of witnesses because we know
 each one will only ever witness for one
 
 546
 00:18:52,520 --> 00:18:55,200
-each one will only ever witness for one
 AID. And so in order to do that, we have
 
 547
 00:18:55,200 --> 00:18:57,760
-AID. And so in order to do that, we have
 to give it the AID to witness for.
 
 548
 00:18:57,760 --> 00:18:59,360
-to give it the AID to witness for.
 So that's an example of why we had to
 
 549
 00:18:59,360 --> 00:19:02,040
-So that's an example of why we had to
 create a first step that when you want
 
 550
 00:19:02,040 --> 00:19:03,520
-create a first step that when you want
 to start using our system, you have to
 
 551
 00:19:03,520 --> 00:19:05,640
-to start using our system, you have to
 give us an identifier to start working
 
 552
 00:19:05,640 --> 00:19:08,120
-give us an identifier to start working
 with. Are there any special caveat for
 
 553
 00:19:08,120 --> 00:19:10,720
-with. Are there any special caveat for
 group identifiers? No.
 
 554
 00:19:10,720 --> 00:19:12,280
-group identifiers? No.
 No.
 
 555
 00:19:12,280 --> 00:19:14,760
-No.
 Correct. Absolutely, yep.
 
 556
 00:19:14,760 --> 00:19:17,800
-Correct. Absolutely, yep.
 Okay. So in addition to that, I can
 
 557
 00:19:17,800 --> 00:19:19,520
-Okay. So in addition to that, I can
 if I have, for example, maybe an
 
 558
 00:19:19,520 --> 00:19:21,080
-if I have, for example, maybe an
 identifier on a phone and I want
 
 559
 00:19:21,080 --> 00:19:22,840
-identifier on a phone and I want
 witnesses for it, I can actually do that
 
 560
 00:19:22,840 --> 00:19:24,360
-witnesses for it, I can actually do that
 as well from here and I'll show you how
 
 561
 00:19:24,360 --> 00:19:26,200
-as well from here and I'll show you how
 you integrate with that later. But
 
 562
 00:19:26,200 --> 00:19:27,880
-you integrate with that later. But
 so, when you first upload an account
 
 563
 00:19:27,880 --> 00:19:29,720
-so, when you first upload an account
 identifier, it can be a remote
 
 564
 00:19:29,720 --> 00:19:31,120
-identifier, it can be a remote
 identifier that you OOBI'd with so you
 
 565
 00:19:31,120 --> 00:19:32,360
-identifier that you OOBI'd with so you
 can get resources for some other
 
 566
 00:19:32,360 --> 00:19:34,400
-can get resources for some other
 identifier or a local one from this
 
 567
 00:19:34,400 --> 00:19:36,560
-identifier or a local one from this
 wallet. In addition, we added a
 
 568
 00:19:36,560 --> 00:19:38,080
-wallet. In addition, we added a
 feature of making this identifier
 
 569
 00:19:38,080 --> 00:19:40,800
-feature of making this identifier
 publicly available and that's just the
 
 570
 00:19:40,800 --> 00:19:43,640
-publicly available and that's just the
 healthcare platform global OOBI system so
 
 571
 00:19:43,640 --> 00:19:45,320
-healthcare platform global OOBI system so
 that whenever you upload an identifier,
 
 572
 00:19:45,320 --> 00:19:46,760
-that whenever you upload an identifier,
 we immediately create a new OOBI for you
 
 573
 00:19:46,760 --> 00:19:48,440
-we immediately create a new OOBI for you
 that you can hand out to anyone and
 
 574
 00:19:48,440 --> 00:19:50,800
-that you can hand out to anyone and
 it'll work for all roles within your
 
 575
 00:19:50,800 --> 00:19:52,080
-it'll work for all roles within your
 system. And for those of you who know
 
 576
 00:19:52,080 --> 00:19:54,200
-system. And for those of you who know
 the details of KERI,
 
 577
 00:19:54,200 --> 00:19:56,640
-the details of KERI,
 if you OOBI against a specific role, you
 
 578
 00:19:56,640 --> 00:19:58,760
-if you OOBI against a specific role, you
 only get back the responses
 
 579
 00:19:58,760 --> 00:20:01,120
-only get back the responses
 for that role like for a witness. So,
 
 580
 00:20:01,120 --> 00:20:02,800
-for that role like for a witness. So,
 this just gives you everything back with
 
 581
 00:20:02,800 --> 00:20:05,080
-this just gives you everything back with
 one single OOBI. So, I'm going to upload
 
 582
 00:20:05,080 --> 00:20:06,840
-one single OOBI. So, I'm going to upload
 Yep, got to select it first. I'm going
 
 583
 00:20:06,840 --> 00:20:09,520
-Yep, got to select it first. I'm going
 to upload the Alice identifier.
 
 584
 00:20:09,520 --> 00:20:11,160
-to upload the Alice identifier.
 And you can see that now our SaaS
 
 585
 00:20:11,160 --> 00:20:13,240
-And you can see that now our SaaS
 platform knows about this identifier.
 
 586
 00:20:13,240 --> 00:20:15,680
-platform knows about this identifier.
 It's associated with our account. It has
 
 587
 00:20:15,680 --> 00:20:17,600
-It's associated with our account. It has
 our sequence number.
 
 588
 00:20:17,600 --> 00:20:19,760
-our sequence number.
 And broken out on this grid is both the
 
 589
 00:20:19,760 --> 00:20:21,560
-And broken out on this grid is both the
 local sequence number that I have on my
 
 590
 00:20:21,560 --> 00:20:23,280
-local sequence number that I have on my
 machine and the sequence number that the
 
 591
 00:20:23,280 --> 00:20:26,040
-machine and the sequence number that the
 remote system has for me. And those
 
 592
 00:20:26,040 --> 00:20:27,480
-remote system has for me. And those
 can get out of sync if I do a bunch of
 
 593
 00:20:27,480 --> 00:20:28,920
-can get out of sync if I do a bunch of
 rotations and don't come back and update
 
 594
 00:20:28,920 --> 00:20:31,160
-rotations and don't come back and update
 healthKERI except for when watchers are
 
 595
 00:20:31,160 --> 00:20:32,150
-healthKERI except for when watchers are
 involved.
 
 596
@@ -2973,7 +2411,6 @@ So, from here I'm going to just jump
 
 597
 00:20:37,600 --> 00:20:40,950
-So, from here I'm going to just jump
 back real quick to
 
 598
@@ -2987,52 +2424,42 @@ application, not the healthcare platform
 
 600
 00:20:45,880 --> 00:20:47,320
-application, not the healthcare platform
 side, and talk about our creden-
 
 601
 00:20:47,320 --> 00:20:49,240
-side, and talk about our creden-
 credential management system. So, inside
 
 602
 00:20:49,240 --> 00:20:50,600
-credential management system. So, inside
 of here, we have the ability to issue
 
 603
 00:20:50,600 --> 00:20:52,960
-of here, we have the ability to issue
 credentials. We broke credentials out
 
 604
 00:20:52,960 --> 00:20:54,760
-credentials. We broke credentials out
 into those that you have issued, those
 
 605
 00:20:54,760 --> 00:20:56,640
-into those that you have issued, those
 that you have received, and then
 
 606
 00:20:56,640 --> 00:20:58,080
-that you have received, and then
 accepted offers is something very
 
 607
 00:20:58,080 --> 00:20:59,880
-accepted offers is something very
 particular to the demo I will be doing
 
 608
 00:20:59,880 --> 00:21:01,640
-particular to the demo I will be doing
 tomorrow.
 
 609
 00:21:01,640 --> 00:21:03,000
-tomorrow.
 And for those of you who were here at
 
 610
@@ -3042,72 +2469,58 @@ SEDI and saw me do it yesterday, it's
 
 611
 00:21:05,000 --> 00:21:07,800
-SEDI and saw me do it yesterday, it's
 where we have integrated IPEX
 
 612
 00:21:07,800 --> 00:21:10,000
-where we have integrated IPEX
 protocol into our OAuth servers so that
 
 613
 00:21:10,000 --> 00:21:11,760
-protocol into our OAuth servers so that
 you can do a credential presentation of
 
 614
 00:21:11,760 --> 00:21:13,840
-you can do a credential presentation of
 an offer without the actual credential
 
 615
 00:21:13,840 --> 00:21:16,520
-an offer without the actual credential
 itself and require the site to sign your
 
 616
 00:21:16,520 --> 00:21:18,080
-itself and require the site to sign your
 terms and conditions before you give
 
 617
 00:21:18,080 --> 00:21:20,360
-terms and conditions before you give
 them the full credential. Those signed
 
 618
 00:21:20,360 --> 00:21:23,560
-them the full credential. Those signed
 receipts, signed offers show up here.
 
 619
 00:21:23,560 --> 00:21:24,800
-receipts, signed offers show up here.
 And then finally we have the ability to
 
 620
 00:21:24,800 --> 00:21:26,640
-And then finally we have the ability to
 do schema.
 
 621
 00:21:26,640 --> 00:21:29,040
-do schema.
 We can upload schema from any source.
 
 622
 00:21:29,040 --> 00:21:31,160
-We can upload schema from any source.
 I'm going to go ahead and grab the QVI
 
 623
 00:21:31,160 --> 00:21:32,520
-I'm going to go ahead and grab the QVI
 schema just cuz I know it doesn't have
 
 624
 00:21:32,520 --> 00:21:35,990
-schema just cuz I know it doesn't have
 any
 
 625
@@ -3117,182 +2530,146 @@ Doesn't have any chains on it. So we put
 
 626
 00:21:40,040 --> 00:21:41,560
-Doesn't have any chains on it. So we put
 the OOBI in there and it automatically
 
 627
 00:21:41,560 --> 00:21:43,680
-the OOBI in there and it automatically
 pulls out the SAID for you just so you
 
 628
 00:21:43,680 --> 00:21:46,080
-pulls out the SAID for you just so you
 see you have that tuple of the
 
 629
 00:21:46,080 --> 00:21:48,200
-see you have that tuple of the
 identifier as well as the OOBI. And then
 
 630
 00:21:48,200 --> 00:21:49,920
-identifier as well as the OOBI. And then
 this is another use case where we looked
 
 631
 00:21:49,920 --> 00:21:52,080
-this is another use case where we looked
 at it and said, "Okay,
 
 632
 00:21:52,080 --> 00:21:55,000
-at it and said, "Okay,
 credential registry makes sense to me,
 
 633
 00:21:55,000 --> 00:21:56,480
-credential registry makes sense to me,
 but that's cuz Sam has explained them to
 
 634
 00:21:56,480 --> 00:21:58,000
-but that's cuz Sam has explained them to
 me about five times, maybe probably more
 
 635
 00:21:58,000 --> 00:21:59,040
-me about five times, maybe probably more
 than that.
 
 636
 00:21:59,040 --> 00:22:00,880
-than that.
 It was really hard for us to explain to
 
 637
 00:22:00,880 --> 00:22:03,280
-It was really hard for us to explain to
 people what they're doing in that first
 
 638
 00:22:03,280 --> 00:22:04,400
-people what they're doing in that first
 step before you're allowed to issue
 
 639
 00:22:04,400 --> 00:22:05,600
-step before you're allowed to issue
 credentials. You have to create a
 
 640
 00:22:05,600 --> 00:22:06,840
-credentials. You have to create a
 registry. Well, what's that? What name
 
 641
 00:22:06,840 --> 00:22:08,600
-registry. Well, what's that? What name
 do I give it? "Where does it live?" And
 
 642
 00:22:08,600 --> 00:22:10,480
-do I give it? "Where does it live?" And
 so instead of doing that we tried to
 
 643
 00:22:10,480 --> 00:22:12,320
-so instead of doing that we tried to
 hide all that and this is open for
 
 644
 00:22:12,320 --> 00:22:13,680
-hide all that and this is open for
 debate. This will now be an open source.
 
 645
 00:22:13,680 --> 00:22:15,320
-debate. This will now be an open source.
 So if folks don't like this it can be
 
 646
 00:22:15,320 --> 00:22:18,480
-So if folks don't like this it can be
 undone, but we've decided that instead
 
 647
 00:22:18,480 --> 00:22:20,600
-undone, but we've decided that instead
 we've added a step to uploading a schema
 
 648
 00:22:20,600 --> 00:22:22,440
-we've added a step to uploading a schema
 that says, "I want to use this for
 
 649
 00:22:22,440 --> 00:22:24,200
-that says, "I want to use this for
 credential issuance." So when you select
 
 650
 00:22:24,200 --> 00:22:26,200
-credential issuance." So when you select
 that, you select an identifier who's
 
 651
 00:22:26,200 --> 00:22:27,280
-that, you select an identifier who's
 going to be the issuer for that
 
 652
 00:22:27,280 --> 00:22:29,880
-going to be the issuer for that
 particular type of credential. And when
 
 653
 00:22:29,880 --> 00:22:32,000
-particular type of credential. And when
 you load the schema, not only does it
 
 654
 00:22:32,000 --> 00:22:33,480
-you load the schema, not only does it
 load the schema, but it has now created
 
 655
 00:22:33,480 --> 00:22:35,440
-load the schema, but it has now created
 a credential registry behind the scenes.
 
 656
 00:22:35,440 --> 00:22:36,880
-a credential registry behind the scenes.
 So that is completely hidden from the
 
 657
 00:22:36,880 --> 00:22:38,920
-So that is completely hidden from the
 user and we think that's probably a good
 
 658
 00:22:38,920 --> 00:22:40,040
-user and we think that's probably a good
 thing,
 
 659
 00:22:40,040 --> 00:22:41,560
-thing,
 but again open for debate and we're
 
 660
 00:22:41,560 --> 00:22:43,360
-but again open for debate and we're
 willing to accept feedback on that. Did
 
 661
 00:22:43,360 --> 00:22:45,270
-willing to accept feedback on that. Did
 you have a question? Yeah, so
 
 662
@@ -3302,107 +2679,86 @@ registry per schema type?
 
 663
 00:22:47,400 --> 00:22:48,240
-registry per schema type?
 Yep.
 
 664
 00:22:48,240 --> 00:22:50,280
-Yep.
 Yep. It was just a an allowance that we
 
 665
 00:22:50,280 --> 00:22:51,400
-Yep. It was just a an allowance that we
 made to try and make it a little bit
 
 666
 00:22:51,400 --> 00:22:53,600
-made to try and make it a little bit
 easier for the user.
 
 667
 00:22:53,600 --> 00:22:55,320
-easier for the user.
 So and then when you come into our issue
 
 668
 00:22:55,320 --> 00:22:56,360
-So and then when you come into our issue
 credential screen, I'm not going to
 
 669
 00:22:56,360 --> 00:22:57,400
-credential screen, I'm not going to
 issue any credentials but I just want to
 
 670
 00:22:57,400 --> 00:23:00,320
-issue any credentials but I just want to
 show you really quickly. You select the
 
 671
 00:23:00,320 --> 00:23:02,120
-show you really quickly. You select the
 type that you want. We dig into the
 
 672
 00:23:02,120 --> 00:23:05,160
-type that you want. We dig into the
 schema and present fields for you. These
 
 673
 00:23:05,160 --> 00:23:06,920
-schema and present fields for you. These
 are as typed as we can make them based
 
 674
 00:23:06,920 --> 00:23:08,320
-are as typed as we can make them based
 on the JSON schema in each of the
 
 675
 00:23:08,320 --> 00:23:10,200
-on the JSON schema in each of the
 credentials cuz you cannot specify
 
 676
 00:23:10,200 --> 00:23:12,200
-credentials cuz you cannot specify
 formats and stuff in schema
 
 677
 00:23:12,200 --> 00:23:14,200
-formats and stuff in schema
 if you don't want to.
 
 678
 00:23:14,200 --> 00:23:15,760
-if you don't want to.
 Calling out required fields and stuff
 
 679
 00:23:15,760 --> 00:23:16,960
-Calling out required fields and stuff
 like that just to make credential
 
 680
 00:23:16,960 --> 00:23:19,040
-like that just to make credential
 issuance a little bit little bit easier
 
 681
 00:23:19,040 --> 00:23:21,240
-issuance a little bit little bit easier
 for the user without hardcoding into
 
 682
 00:23:21,240 --> 00:23:23,320
-for the user without hardcoding into
 this app knowledge of any specific
 
 683
 00:23:23,320 --> 00:23:26,150
-this app knowledge of any specific
 schema type.
 
 684
@@ -3412,212 +2768,170 @@ the healthKERI plugin.
 
 685
 00:23:30,720 --> 00:23:32,320
-the healthKERI plugin.
 And
 
 686
 00:23:32,320 --> 00:23:34,000
-And
 there we go. Perfect example. So this
 
 687
 00:23:34,000 --> 00:23:36,040
-there we go. Perfect example. So this
 this identifier is now out of sync and
 
 688
 00:23:36,040 --> 00:23:37,840
-this identifier is now out of sync and
 that is because I created a credential
 
 689
 00:23:37,840 --> 00:23:39,280
-that is because I created a credential
 registry with it which had which had to
 
 690
 00:23:39,280 --> 00:23:41,160
-registry with it which had which had to
 create an anchor into my Key Event Log
 
 691
 00:23:41,160 --> 00:23:42,720
-create an anchor into my Key Event Log
 and now he's out of sync so you can see
 
 692
 00:23:42,720 --> 00:23:44,960
-and now he's out of sync so you can see
 that he's not
 
 693
 00:23:44,960 --> 00:23:47,080
-that he's not
 the remote server doesn't have my most
 
 694
 00:23:47,080 --> 00:23:49,480
-the remote server doesn't have my most
 up-to-date key state.
 
 695
 00:23:49,480 --> 00:23:51,520
-up-to-date key state.
 So I'm just going to go ahead and update
 
 696
 00:23:51,520 --> 00:23:53,240
-So I'm just going to go ahead and update
 that. And so this tells me that I'm
 
 697
 00:23:53,240 --> 00:23:54,680
-that. And so this tells me that I'm
 going to be taking the local key state
 
 698
 00:23:54,680 --> 00:23:56,200
-going to be taking the local key state
 where I'm at one
 
 699
 00:23:56,200 --> 00:23:57,880
-where I'm at one
 and pushing it up to the remote server
 
 700
 00:23:57,880 --> 00:24:00,160
-and pushing it up to the remote server
 who is at key state zero for this and
 
 701
 00:24:00,160 --> 00:24:01,680
-who is at key state zero for this and
 updating now we're in sync. So he now
 
 702
 00:24:01,680 --> 00:24:04,080
-updating now we're in sync. So he now
 knows about my most recent key events.
 
 703
 00:24:04,080 --> 00:24:04,840
-knows about my most recent key events.
 So now we're going to move on to
 
 704
 00:24:04,840 --> 00:24:07,440
-So now we're going to move on to
 witnesses and this is Does it make sense
 
 705
 00:24:07,440 --> 00:24:09,080
-witnesses and this is Does it make sense
 to go back to the
 
 706
 00:24:09,080 --> 00:24:11,040
-to go back to the
 slideshow?
 
 707
 00:24:11,040 --> 00:24:12,520
-slideshow?
 So yeah, so I'll just go over this slide
 
 708
 00:24:12,520 --> 00:24:14,000
-So yeah, so I'll just go over this slide
 very quickly.
 
 709
 00:24:14,000 --> 00:24:17,520
-very quickly.
 So this is witness as a service and as I
 
 710
 00:24:17,520 --> 00:24:18,960
-So this is witness as a service and as I
 mentioned earlier this gives you the
 
 711
 00:24:18,960 --> 00:24:21,080
-mentioned earlier this gives you the
 ability to reserve individual witnesses
 
 712
 00:24:21,080 --> 00:24:23,240
-ability to reserve individual witnesses
 for your AID. Any number of witnesses
 
 713
 00:24:23,240 --> 00:24:25,000
-for your AID. Any number of witnesses
 you want. We have geographically
 
 714
 00:24:25,000 --> 00:24:27,280
-you want. We have geographically
 disperse witness infrastructure so you
 
 715
 00:24:27,280 --> 00:24:28,280
-disperse witness infrastructure so you
 get to pick where you want your
 
 716
 00:24:28,280 --> 00:24:30,080
-get to pick where you want your
 witnesses deployed, how many you want
 
 717
 00:24:30,080 --> 00:24:31,760
-witnesses deployed, how many you want
 deployed and then you get to pick your
 
 718
 00:24:31,760 --> 00:24:33,000
-deployed and then you get to pick your
 threshold that you want of those
 
 719
 00:24:33,000 --> 00:24:35,600
-threshold that you want of those
 witnesses and our user interface will
 
 720
 00:24:35,600 --> 00:24:38,800
-witnesses and our user interface will
 default to the most logical threshold
 
 721
 00:24:38,800 --> 00:24:40,040
-default to the most logical threshold
 based on the What's the name of that
 
 722
 00:24:40,040 --> 00:24:41,880
-based on the What's the name of that
 algorithm?
 
 723
 00:24:41,880 --> 00:24:43,520
-algorithm?
 The Kawa algorithm. So the
 
 724
 00:24:43,520 --> 00:24:45,280
-The Kawa algorithm. So the
 number of witnesses that you should have
 
 725
 00:24:45,280 --> 00:24:46,600
-number of witnesses that you should have
 in your threshold versus the number of
 
 726
 00:24:46,600 --> 00:24:48,790
-in your threshold versus the number of
 witnesses that you have.
 
 727
@@ -3627,22 +2941,18 @@ as any cloud resource. The core of this
 
 728
 00:24:53,200 --> 00:24:54,640
-as any cloud resource. The core of this
 is open source. I know we're going to
 
 729
 00:24:54,640 --> 00:24:56,720
-is open source. I know we're going to
 see demos of the KERI Foundation folks
 
 730
 00:24:56,720 --> 00:24:58,040
-see demos of the KERI Foundation folks
 who have already put it into production
 
 731
 00:24:58,040 --> 00:25:00,950
-who have already put it into production
 in their systems.
 
 732
@@ -3652,42 +2962,34 @@ put it on one
 
 733
 00:25:04,560 --> 00:25:06,960
-put it on one
 VM and reserve as many witnesses as you
 
 734
 00:25:06,960 --> 00:25:09,320
-VM and reserve as many witnesses as you
 think that VM can support. And then what
 
 735
 00:25:09,320 --> 00:25:10,840
-think that VM can support. And then what
 we've done behind the scenes for us is
 
 736
 00:25:10,840 --> 00:25:12,400
-we've done behind the scenes for us is
 that we spread that out across multiple
 
 737
 00:25:12,400 --> 00:25:14,720
-that we spread that out across multiple
 hosts and we have a round robin and I'll
 
 738
 00:25:14,720 --> 00:25:16,640
-hosts and we have a round robin and I'll
 talk about how we deploy all this later
 
 739
 00:25:16,640 --> 00:25:18,560
-talk about how we deploy all this later
 That we can then pick from for any
 
 740
 00:25:18,560 --> 00:25:20,790
-That we can then pick from for any
 particular region.
 
 741
@@ -3697,147 +2999,118 @@ KERI Core at the very beginning of my
 
 742
 00:25:25,280 --> 00:25:27,600
-KERI Core at the very beginning of my
 work at healthKeri, the ability for a
 
 743
 00:25:27,600 --> 00:25:29,680
-work at healthKeri, the ability for a
 two-factor off for witnesses. So we have
 
 744
 00:25:29,680 --> 00:25:33,160
-two-factor off for witnesses. So we have
 a one-time passcode that you select
 
 745
 00:25:33,160 --> 00:25:34,920
-a one-time passcode that you select
 that you authenticate with the witness.
 
 746
 00:25:34,920 --> 00:25:36,240
-that you authenticate with the witness.
 He gives you back the one-time passcode,
 
 747
 00:25:36,240 --> 00:25:37,440
-He gives you back the one-time passcode,
 then you have to enter that anytime you
 
 748
 00:25:37,440 --> 00:25:39,320
-then you have to enter that anytime you
 do a key rotation. And that's to make
 
 749
 00:25:39,320 --> 00:25:40,760
-do a key rotation. And that's to make
 sure that your witnesses won't just
 
 750
 00:25:40,760 --> 00:25:42,560
-sure that your witnesses won't just
 accept the Key Event Log for you from
 
 751
 00:25:42,560 --> 00:25:43,760
-accept the Key Event Log for you from
 anyone. You have to provide that
 
 752
 00:25:43,760 --> 00:25:45,440
-anyone. You have to provide that
 one-time password with it. There are
 
 753
 00:25:45,440 --> 00:25:48,000
-one-time password with it. There are
 other ways to do this. We could use our
 
 754
 00:25:48,000 --> 00:25:50,880
-other ways to do this. We could use our
 our proprietary API with the ESSR to
 
 755
 00:25:50,880 --> 00:25:54,440
-our proprietary API with the ESSR to
 accept events for your witnesses, but we
 
 756
 00:25:54,440 --> 00:25:56,560
-accept events for your witnesses, but we
 thought that was more vendor lock-in
 
 757
 00:25:56,560 --> 00:25:57,960
-thought that was more vendor lock-in
 than we really were comfortable with, so
 
 758
 00:25:57,960 --> 00:25:59,200
-than we really were comfortable with, so
 we went with this one-time password
 
 759
 00:25:59,200 --> 00:26:00,560
-we went with this one-time password
 solution. They are
 
 760
 00:26:00,560 --> 00:26:02,120
-solution. They are
 non-promiscuous. They will only witness
 
 761
 00:26:02,120 --> 00:26:04,080
-non-promiscuous. They will only witness
 for the people for the one AID that you
 
 762
 00:26:04,080 --> 00:26:06,280
-for the people for the one AID that you
 reserve them for. Each witness has its
 
 763
 00:26:06,280 --> 00:26:08,400
-reserve them for. Each witness has its
 own dedicated key store, so there's no
 
 764
 00:26:08,400 --> 00:26:10,160
-own dedicated key store, so there's no
 mixing of keys in like a MongoDB
 
 765
 00:26:10,160 --> 00:26:11,960
-mixing of keys in like a MongoDB
 or anything. They each have their own
 
 766
 00:26:11,960 --> 00:26:14,520
-or anything. They each have their own
 private LMDB and we manage that across
 
 767
 00:26:14,520 --> 00:26:16,280
-private LMDB and we manage that across
 multiple servers. This makes it fairly
 
 768
 00:26:16,280 --> 00:26:18,640
-multiple servers. This makes it fairly
 scalable, pretty easy to deploy, and
 
 769
 00:26:18,640 --> 00:26:20,440
-scalable, pretty easy to deploy, and
 designed for and in our case implemented
 
 770
 00:26:20,440 --> 00:26:23,990
-designed for and in our case implemented
 with geographic distribution.
 
 771
@@ -3847,457 +3120,366 @@ need to talk through this.
 
 772
 00:26:27,400 --> 00:26:29,440
-need to talk through this.
 So here we are. So let's add a witness.
 
 773
 00:26:29,440 --> 00:26:30,760
-So here we are. So let's add a witness.
 So when you open up the create a witness
 
 774
 00:26:30,760 --> 00:26:32,120
-So when you open up the create a witness
 screen, it will of course make you
 
 775
 00:26:32,120 --> 00:26:33,440
-screen, it will of course make you
 select an identifier, so I'm going to
 
 776
 00:26:33,440 --> 00:26:36,120
-select an identifier, so I'm going to
 select Alice. In our system right now
 
 777
 00:26:36,120 --> 00:26:37,640
-select Alice. In our system right now
 we have four regions deployed. We have
 
 778
 00:26:37,640 --> 00:26:39,800
-we have four regions deployed. We have
 New York, Frankfurt, Singapore, and
 
 779
 00:26:39,800 --> 00:26:42,120
-New York, Frankfurt, Singapore, and
 Sydney. And you get to choose where you
 
 780
 00:26:42,120 --> 00:26:43,800
-Sydney. And you get to choose where you
 want your witnesses deployed. So I've
 
 781
 00:26:43,800 --> 00:26:45,920
-want your witnesses deployed. So I've
 already chose I've already selected
 
 782
 00:26:45,920 --> 00:26:47,360
-already chose I've already selected
 Alice as the identifier that I want
 
 783
 00:26:47,360 --> 00:26:49,440
-Alice as the identifier that I want
 witnesses for. I can add as many as I
 
 784
 00:26:49,440 --> 00:26:52,040
-witnesses for. I can add as many as I
 want in each region. It gives you a
 
 785
 00:26:52,040 --> 00:26:54,160
-want in each region. It gives you a
 suggestion of a name for that witness in
 
 786
 00:26:54,160 --> 00:26:55,600
-suggestion of a name for that witness in
 that region. You can name them anything
 
 787
 00:26:55,600 --> 00:26:57,320
-that region. You can name them anything
 you want.
 
 788
 00:26:57,320 --> 00:26:58,640
-you want.
 If you want to, I'm just going to go
 
 789
 00:26:58,640 --> 00:27:01,200
-If you want to, I'm just going to go
 ahead and reserve a witness in each of
 
 790
 00:27:01,200 --> 00:27:03,200
-ahead and reserve a witness in each of
 the regions.
 
 791
 00:27:03,200 --> 00:27:03,880
-the regions.
 And then I'm going to choose an
 
 792
 00:27:03,880 --> 00:27:05,840
-And then I'm going to choose an
 authentication method.
 
 793
 00:27:05,840 --> 00:27:07,920
-authentication method.
 Trade-off here between security and
 
 794
 00:27:07,920 --> 00:27:10,240
-Trade-off here between security and
 friction, ease of use.
 
 795
 00:27:10,240 --> 00:27:12,080
-friction, ease of use.
 We've given you the ability to have
 
 796
 00:27:12,080 --> 00:27:13,960
-We've given you the ability to have
 an individual one-time passcode for each
 
 797
 00:27:13,960 --> 00:27:16,360
-an individual one-time passcode for each
 witness that you reserve. At four,
 
 798
 00:27:16,360 --> 00:27:18,040
-witness that you reserve. At four,
 that's really onerous, so I wouldn't
 
 799
 00:27:18,040 --> 00:27:19,520
-that's really onerous, so I wouldn't
 even do it at four. At 12, I couldn't
 
 800
 00:27:19,520 --> 00:27:21,280
-even do it at four. At 12, I couldn't
 even imagine it. So, we also give you
 
 801
 00:27:21,280 --> 00:27:23,440
-even imagine it. So, we also give you
 the opportunity to do a batch one-time
 
 802
 00:27:23,440 --> 00:27:25,680
-the opportunity to do a batch one-time
 passcode. One-time passcode for all of
 
 803
 00:27:25,680 --> 00:27:28,200
-passcode. One-time passcode for all of
 your witnesses for this AID, and that
 
 804
 00:27:28,200 --> 00:27:30,640
-your witnesses for this AID, and that
 way you can only enter it once, only
 
 805
 00:27:30,640 --> 00:27:32,360
-way you can only enter it once, only
 enter one code once when you do a full
 
 806
 00:27:32,360 --> 00:27:34,040
-enter one code once when you do a full
 rotation.
 
 807
 00:27:34,040 --> 00:27:35,840
-rotation.
 So, we're going to select batch,
 
 808
 00:27:35,840 --> 00:27:37,320
-So, we're going to select batch,
 create our witnesses, and you can see
 
 809
 00:27:37,320 --> 00:27:39,560
-create our witnesses, and you can see
 here I've now spun up four witnesses.
 
 810
 00:27:39,560 --> 00:27:41,240
-here I've now spun up four witnesses.
 Pretty fast. This is actually witnesses
 
 811
 00:27:41,240 --> 00:27:43,040
-Pretty fast. This is actually witnesses
 spinning up in our SaaS platform. It's
 
 812
 00:27:43,040 --> 00:27:44,440
-spinning up in our SaaS platform. It's
 very light touch for getting a single
 
 813
 00:27:44,440 --> 00:27:46,120
-very light touch for getting a single
 witness to spin up.
 
 814
 00:27:46,120 --> 00:27:47,960
-witness to spin up.
 Each one has its own identifier. You can
 
 815
 00:27:47,960 --> 00:27:49,800
-Each one has its own identifier. You can
 see them here. They're non-transferable
 
 816
 00:27:49,800 --> 00:27:51,840
-see them here. They're non-transferable
 identifiers, as you would imagine. Here
 
 817
 00:27:51,840 --> 00:27:53,320
-identifiers, as you would imagine. Here
 are the OOBIs right here that you can
 
 818
 00:27:53,320 --> 00:27:55,360
-are the OOBIs right here that you can
 copy and paste if you wanted to.
 
 819
 00:27:55,360 --> 00:27:57,760
-copy and paste if you wanted to.
 You can also toggle on QR codes for
 
 820
 00:27:57,760 --> 00:27:59,560
-You can also toggle on QR codes for
 those OOBIs. So, if you're doing this
 
 821
 00:27:59,560 --> 00:28:01,680
-those OOBIs. So, if you're doing this
 for a device that's on a mobile phone,
 
 822
 00:28:01,680 --> 00:28:03,240
-for a device that's on a mobile phone,
 and you need to scan in these so that
 
 823
 00:28:03,240 --> 00:28:04,640
-and you need to scan in these so that
 you can now gain access to them for that
 
 824
 00:28:04,640 --> 00:28:07,000
-you can now gain access to them for that
 device, you can do that here with these,
 
 825
 00:28:07,000 --> 00:28:10,230
-device, you can do that here with these,
 QR codes. And then finally, we provide
 
 826
 00:28:10,240 --> 00:28:11,720
-QR codes. And then finally, we provide
 the opportunity for you to right here
 
 827
 00:28:11,720 --> 00:28:13,600
-the opportunity for you to right here
 grab those OOBIs out of this screen and
 
 828
 00:28:13,600 --> 00:28:15,080
-grab those OOBIs out of this screen and
 just introduce to all of them. So, I'm
 
 829
 00:28:15,080 --> 00:28:16,680
-just introduce to all of them. So, I'm
 going to go ahead and do this. I'm now
 
 830
 00:28:16,680 --> 00:28:18,880
-going to go ahead and do this. I'm now
 OOBI'ing with each witness individually
 
 831
 00:28:18,880 --> 00:28:21,040
-OOBI'ing with each witness individually
 and saving him into my database. And
 
 832
 00:28:21,040 --> 00:28:23,280
-and saving him into my database. And
 then we did the authentication step,
 
 833
 00:28:23,280 --> 00:28:24,200
-then we did the authentication step,
 where I called into the
 
 834
 00:28:24,200 --> 00:28:26,680
-where I called into the
 witness, and this was really tricky to
 
 835
 00:28:26,680 --> 00:28:29,120
-witness, and this was really tricky to
 get right because this like sort of a
 
 836
 00:28:29,120 --> 00:28:31,640
-get right because this like sort of a
 trust a TOFU (trust on first use) case,
 
 837
 00:28:31,640 --> 00:28:33,880
-trust a TOFU (trust on first use) case,
 where that witness wasn't authenticated
 
 838
 00:28:33,880 --> 00:28:35,360
-where that witness wasn't authenticated
 anybody, but he would only accept things
 
 839
 00:28:35,360 --> 00:28:37,920
-anybody, but he would only accept things
 from me. So, I was able to sign one
 
 840
 00:28:37,920 --> 00:28:39,440
-from me. So, I was able to sign one
 request to him to get the one-time
 
 841
 00:28:39,440 --> 00:28:40,840
-request to him to get the one-time
 passcode back from him, and it was
 
 842
 00:28:40,840 --> 00:28:42,640
-passcode back from him, and it was
 encrypted between the two of us. So, now
 
 843
 00:28:42,640 --> 00:28:44,880
-encrypted between the two of us. So, now
 I have the one-time passcode here. I
 
 844
 00:28:44,880 --> 00:28:46,400
-I have the one-time passcode here. I
 can, again, I could scan that into the
 
 845
 00:28:46,400 --> 00:28:49,440
-can, again, I could scan that into the
 one-time passcode feature on my phone or
 
 846
 00:28:49,440 --> 00:28:51,200
-one-time passcode feature on my phone or
 in this case I'm going to copy it and
 
 847
 00:28:51,200 --> 00:28:52,880
-in this case I'm going to copy it and
 put it in
 
 848
 00:28:52,880 --> 00:28:54,160
-put it in
 one password so I can actually
 
 849
 00:28:54,160 --> 00:28:55,840
-one password so I can actually
 do things with these witnesses
 
 850
 00:28:55,840 --> 00:28:57,400
-do things with these witnesses
 afterwards.
 
 851
 00:28:57,400 --> 00:28:58,360
-afterwards.
 So, I don't know if any of you knew
 
 852
 00:28:58,360 --> 00:28:59,800
-So, I don't know if any of you knew
 this, but
 
 853
 00:28:59,800 --> 00:29:01,160
-this, but
 What's that?
 
 854
 00:29:01,160 --> 00:29:03,960
-What's that?
 We need your one password. No, no, I use
 
 855
 00:29:03,960 --> 00:29:05,560
-We need your one password. No, no, I use
 my fingerprint. You don't have that
 
 856
 00:29:05,560 --> 00:29:07,800
-my fingerprint. You don't have that
 again.
 
 857
 00:29:07,800 --> 00:29:09,200
-again.
 I just wanted you to type it out for us
 
 858
 00:29:09,200 --> 00:29:11,040
-I just wanted you to type it out for us
 on the Nope.
 
 859
 00:29:11,040 --> 00:29:11,920
-on the Nope.
 So, I don't know if you knew this, but
 
 860
 00:29:11,920 --> 00:29:13,120
-So, I don't know if you knew this, but
 when I discovered this like wow, that's
 
 861
 00:29:13,120 --> 00:29:14,280
-when I discovered this like wow, that's
 cool. They have they have a one-time
 
 862
 00:29:14,280 --> 00:29:17,430
-cool. They have they have a one-time
 password support.
 
 863
@@ -4307,57 +3489,46 @@ Yep, absolutely. Yeah.
 
 864
 00:29:20,120 --> 00:29:21,800
-Yep, absolutely. Yeah.
 Yeah, they have a they have OP command
 
 865
 00:29:21,800 --> 00:29:23,280
-Yeah, they have a they have OP command
 line, very cool. Two words or two
 
 866
 00:29:23,280 --> 00:29:25,080
-line, very cool. Two words or two
 letters, I love that. But anyway, and
 
 867
 00:29:25,080 --> 00:29:26,680
-letters, I love that. But anyway, and
 then finally, the last step would have
 
 868
 00:29:26,680 --> 00:29:28,320
-then finally, the last step would have
 be of course rotation this in. I could
 
 869
 00:29:28,320 --> 00:29:29,720
-be of course rotation this in. I could
 just go do this manually, but we've
 
 870
 00:29:29,720 --> 00:29:31,240
-just go do this manually, but we've
 added the ability to do a rotation right
 
 871
 00:29:31,240 --> 00:29:33,560
-added the ability to do a rotation right
 here on the screen. It brings up common
 
 872
 00:29:33,560 --> 00:29:34,800
-here on the screen. It brings up common
 defaults that you'd use. You want your
 
 873
 00:29:34,800 --> 00:29:36,080
-defaults that you'd use. You want your
 new your next keys or signing
 
 874
 00:29:36,080 --> 00:29:38,470
-new your next keys or signing
 thresholds. We select the TOAD, the
 
 875
@@ -4371,32 +3542,26 @@ makes sense for four witnesses. And
 
 877
 00:29:48,320 --> 00:29:49,440
-makes sense for four witnesses. And
 these are the four witnesses we just
 
 878
 00:29:49,440 --> 00:29:51,440
-these are the four witnesses we just
 created. You can add more or remove here
 
 879
 00:29:51,440 --> 00:29:52,600
-created. You can add more or remove here
 if you wanted to, but we'll just go
 
 880
 00:29:52,600 --> 00:29:54,360
-if you wanted to, but we'll just go
 ahead and rotate them in. And of course
 
 881
 00:29:54,360 --> 00:29:56,120
-ahead and rotate them in. And of course
 now it's asking for my one-time passcode
 
 882
 00:29:56,120 --> 00:29:58,670
-now it's asking for my one-time passcode
 so I'm going to go over here.
 
 883
@@ -4406,12 +3571,10 @@ going to wait till it goes it rolls over
 
 884
 00:30:01,320 --> 00:30:03,920
-going to wait till it goes it rolls over
 to the next 30 seconds.
 
 885
 00:30:03,920 --> 00:30:07,590
-to the next 30 seconds.
 1:30
 
 886
@@ -4421,7 +3584,6 @@ All right, now I'm going to grab that.
 
 887
 00:30:10,640 --> 00:30:15,430
-All right, now I'm going to grab that.
 Paste that in here and do a rotation.
 
 888
@@ -4431,237 +3593,190 @@ four witnesses rotated into my
 
 889
 00:30:19,160 --> 00:30:21,600
-four witnesses rotated into my
 identifier. I have a You can see over
 
 890
 00:30:21,600 --> 00:30:22,960
-identifier. I have a You can see over
 here on this side. I'm now at sequence
 
 891
 00:30:22,960 --> 00:30:24,080
-here on this side. I'm now at sequence
 number two. I was at sequence number
 
 892
 00:30:24,080 --> 00:30:26,040
-number two. I was at sequence number
 one. All four witnesses gave me
 
 893
 00:30:26,040 --> 00:30:27,480
-one. All four witnesses gave me
 receipts. There's my threshold. There's
 
 894
 00:30:27,480 --> 00:30:29,760
-receipts. There's my threshold. There's
 my new public key. And because this is a
 
 895
 00:30:29,760 --> 00:30:31,800
-my new public key. And because this is a
 remote identifier and we know that we're
 
 896
 00:30:31,800 --> 00:30:32,880
-remote identifier and we know that we're
 given the opportunity to just go ahead
 
 897
 00:30:32,880 --> 00:30:34,120
-given the opportunity to just go ahead
 and upload the new event that you just
 
 898
 00:30:34,120 --> 00:30:36,160
-and upload the new event that you just
 used to rotate in those witnesses into
 
 899
 00:30:36,160 --> 00:30:37,800
-used to rotate in those witnesses into
 your upstream server. So, we'll update
 
 900
 00:30:37,800 --> 00:30:40,120
-your upstream server. So, we'll update
 that. I'm now done with this. You
 
 901
 00:30:40,120 --> 00:30:41,840
-that. I'm now done with this. You
 see here I've created these four
 
 902
 00:30:41,840 --> 00:30:43,400
-see here I've created these four
 witnesses. These are my account
 
 903
 00:30:43,400 --> 00:30:45,920
-witnesses. These are my account
 witnesses. You're now paying for them.
 
 904
 00:30:45,920 --> 00:30:47,280
-witnesses. You're now paying for them.
 They're a monthly service, but very
 
 905
 00:30:47,280 --> 00:30:49,440
-They're a monthly service, but very
 very cheap. The controller is Alice.
 
 906
 00:30:49,440 --> 00:30:51,000
-very cheap. The controller is Alice.
 This is each of the AIDs for those
 
 907
 00:30:51,000 --> 00:30:52,760
-This is each of the AIDs for those
 witnesses, and these are the regions
 
 908
 00:30:52,760 --> 00:30:54,280
-witnesses, and these are the regions
 that they're on. So, I now have
 
 909
 00:30:54,280 --> 00:30:55,640
-that they're on. So, I now have
 witnesses spread out around the world
 
 910
 00:30:55,640 --> 00:30:57,400
-witnesses spread out around the world
 for this identifier. So, someone would
 
 911
 00:30:57,400 --> 00:30:58,680
-for this identifier. So, someone would
 immediately now have to attack four
 
 912
 00:30:58,680 --> 00:31:00,240
-immediately now have to attack four
 different places around the world to
 
 913
 00:31:00,240 --> 00:31:02,040
-different places around the world to
 eclipse my witnesses. And that was
 
 914
 00:31:02,040 --> 00:31:03,520
-eclipse my witnesses. And that was
 pretty easy, right? I think it was
 
 915
 00:31:03,520 --> 00:31:04,680
-pretty easy, right? I think it was
 pretty easy.
 
 916
 00:31:04,680 --> 00:31:05,480
-pretty easy.
 So.
 
 917
 00:31:05,480 --> 00:31:06,116
-So.
 Thank you.
 
 918
 00:31:06,116 --> 00:31:07,680
-Thank you.
 [applause]
 
 919
 00:31:07,680 --> 00:31:08,880
-[applause]
 And then
 
 920
 00:31:08,880 --> 00:31:10,120
-And then
 And then if we come over here, you can
 
 921
 00:31:10,120 --> 00:31:13,080
-And then if we come over here, you can
 see that we have updated to our new
 
 922
 00:31:13,080 --> 00:31:15,600
-see that we have updated to our new
 key state to this remote server
 
 923
 00:31:15,600 --> 00:31:17,200
-key state to this remote server
 To our remote SaaS platform, and
 
 924
 00:31:17,200 --> 00:31:19,040
-To our remote SaaS platform, and
 we're now at sequence number two. If you
 
 925
 00:31:19,040 --> 00:31:20,360
-we're now at sequence number two. If you
 click on this, you can see this is the
 
 926
 00:31:20,360 --> 00:31:22,080
-click on this, you can see this is the
 public OOBI I was talking about cuz I
 
 927
 00:31:22,080 --> 00:31:23,800
-public OOBI I was talking about cuz I
 said "May hey, make this guy public." I
 
 928
 00:31:23,800 --> 00:31:25,560
-said "May hey, make this guy public." I
 5 minutes left?
 
 929
 00:31:25,560 --> 00:31:27,960
-5 minutes left?
 Oh, man, that went fast.
 
 930
 00:31:27,960 --> 00:31:29,200
-Oh, man, that went fast.
 I'm not even close to done. All right,
 
 931
 00:31:29,200 --> 00:31:30,400
-I'm not even close to done. All right,
 well all right, let's see if I can do
 
 932
 00:31:30,400 --> 00:31:31,520
-well all right, let's see if I can do
 this really quick. All right, so let's
 
 933
 00:31:31,520 --> 00:31:34,040
-this really quick. All right, so let's
 get to watchers really fast.
 
 934
 00:31:34,040 --> 00:31:35,680
-get to watchers really fast.
 And to do that, I'm going to create a
 
 935
 00:31:35,680 --> 00:31:40,150
-And to do that, I'm going to create a
 whole new account. So, let's create Bob.
 
 936
@@ -4671,7 +3786,6 @@ you see how fast this can actually work,
 
 937
 00:31:45,760 --> 00:31:49,790
-you see how fast this can actually work,
 right?
 
 938
@@ -4681,12 +3795,10 @@ copied. So, now this is where you get to
 
 939
 00:31:53,720 --> 00:31:55,920
-copied. So, now this is where you get to
 see remote identifiers. I grabbed
 
 940
 00:31:55,920 --> 00:32:01,127
-see remote identifiers. I grabbed
 Alice's OOBI, so I'm just going to
 
 941
@@ -4696,52 +3808,42 @@ now I have Alice. So, now I'm connected
 
 942
 00:32:05,600 --> 00:32:07,680
-now I have Alice. So, now I'm connected
 to Alice. I'll go over here. Oh, no, I
 
 943
 00:32:07,680 --> 00:32:10,560
-to Alice. I'll go over here. Oh, no, I
 got to create an account. Bob.
 
 944
 00:32:10,560 --> 00:32:13,640
-got to create an account. Bob.
 I boo Oh, jeez, sorry. Bob.
 
 945
 00:32:13,640 --> 00:32:16,160
-I boo Oh, jeez, sorry. Bob.
 That was a zero. It wasn't a second O.
 
 946
 00:32:16,160 --> 00:32:20,920
-That was a zero. It wasn't a second O.
 Continue to account access. Bob.
 
 947
 00:32:20,920 --> 00:32:22,752
-Continue to account access. Bob.
 Bob, wonderful.
 
 948
 00:32:22,752 --> 00:32:23,120
-Bob, wonderful.
 [laughter]
 
 949
 00:32:23,120 --> 00:32:24,960
-[laughter]
 Bob, that. Want to use the healthKERI
 
 950
 00:32:24,960 --> 00:32:26,920
-Bob, that. Want to use the healthKERI
 identifier for that?
 
 951
 00:32:26,920 --> 00:32:30,430
-identifier for that?
 Did I not Did I just Thank you. KERI
 OOBI.
 
@@ -4762,217 +3864,174 @@ access. These are one-time access codes,
 
 955
 00:32:49,080 --> 00:32:50,080
-access. These are one-time access codes,
 by the way, if I didn't mention that
 
 956
 00:32:50,080 --> 00:32:51,480
-by the way, if I didn't mention that
 before.
 
 957
 00:32:51,480 --> 00:32:55,280
-before.
 We're going to grab Bob, paste.
 
 958
 00:32:55,280 --> 00:32:58,800
-We're going to grab Bob, paste.
 Paste, continue to invites, no invites.
 
 959
 00:32:58,800 --> 00:33:01,240
-Paste, continue to invites, no invites.
 Go to identifiers. Let's add Bob an
 
 960
 00:33:01,240 --> 00:33:02,360
-Go to identifiers. Let's add Bob an
 identifier. Although, I don't think I
 
 961
 00:33:02,360 --> 00:33:03,800
-identifier. Although, I don't think I
 need to do this, but anyway, you can
 
 962
 00:33:03,800 --> 00:33:05,640
-need to do this, but anyway, you can
 just see how quick this is. And now,
 
 963
 00:33:05,640 --> 00:33:06,800
-just see how quick this is. And now,
 let's go to the last step, watcher
 
 964
 00:33:06,800 --> 00:33:07,920
-let's go to the last step, watcher
 network. So, very quickly, I want to
 
 965
 00:33:07,920 --> 00:33:09,440
-network. So, very quickly, I want to
 mention that we initially implemented
 
 966
 00:33:09,440 --> 00:33:11,480
-mention that we initially implemented
 our watcher network the same way we did
 
 967
 00:33:11,480 --> 00:33:14,320
-our watcher network the same way we did
 witnesses. You have to rent individual
 
 968
 00:33:14,320 --> 00:33:16,160
-witnesses. You have to rent individual
 watchers and assign them to watch
 
 969
 00:33:16,160 --> 00:33:17,520
-watchers and assign them to watch
 people. So, if I wanted to have like
 
 970
 00:33:17,520 --> 00:33:19,480
-people. So, if I wanted to have like
 five watchers watching Sam's ID, I'd
 
 971
 00:33:19,480 --> 00:33:20,720
-five watchers watching Sam's ID, I'd
 have to go and get five watchers and
 
 972
 00:33:20,720 --> 00:33:22,560
-have to go and get five watchers and
 I'll say watch Sam's ID. That way, it
 
 973
 00:33:22,560 --> 00:33:24,400
-I'll say watch Sam's ID. That way, it
 was it didn't work well. I talked with
 
 974
 00:33:24,400 --> 00:33:25,640
-was it didn't work well. I talked with
 Sam about it. He said it's no more
 
 975
 00:33:25,640 --> 00:33:29,440
-Sam about it. He said it's no more
 secure giving them VMs inside of our
 
 976
 00:33:29,440 --> 00:33:30,760
-secure giving them VMs inside of our
 infrastructure than if I just created a
 
 977
 00:33:30,760 --> 00:33:32,640
-infrastructure than if I just created a
 global watcher network. And so, that's
 
 978
 00:33:32,640 --> 00:33:34,120
-global watcher network. And so, that's
 what we did. We created a global watcher
 
 979
 00:33:34,120 --> 00:33:36,000
-what we did. We created a global watcher
 network. So, instead of having to worry
 
 980
 00:33:36,000 --> 00:33:37,360
-network. So, instead of having to worry
 about renting your own watchers and
 
 981
 00:33:37,360 --> 00:33:39,280
-about renting your own watchers and
 assigning them and managing them, we
 
 982
 00:33:39,280 --> 00:33:40,680
-assigning them and managing them, we
 just tell you
 
 983
 00:33:40,680 --> 00:33:42,520
-just tell you
 tell us an identifier you want to watch.
 
 984
 00:33:42,520 --> 00:33:44,040
-tell us an identifier you want to watch.
 We'll distribute it across our global
 
 985
 00:33:44,040 --> 00:33:45,880
-We'll distribute it across our global
 watcher network for you at random in
 
 986
 00:33:45,880 --> 00:33:48,120
-watcher network for you at random in
 different locations, and we'll keep an
 
 987
 00:33:48,120 --> 00:33:49,200
-different locations, and we'll keep an
 eye on it for you. So, that's what we've
 
 988
 00:33:49,200 --> 00:33:51,480
-eye on it for you. So, that's what we've
 done. So, getting a watched identifier
 
 989
 00:33:51,480 --> 00:33:53,000
-done. So, getting a watched identifier
 is as simple as selecting one of your
 
 990
 00:33:53,000 --> 00:33:55,760
-is as simple as selecting one of your
 remote identifiers and say watch. He
 
 991
 00:33:55,760 --> 00:33:56,960
-remote identifiers and say watch. He
 immediately pulled the key state for
 
 992
 00:33:56,960 --> 00:33:59,120
-immediately pulled the key state for
 that watcher down, and now telling our
 
 993
 00:33:59,120 --> 00:34:01,000
-that watcher down, and now telling our
 system to go watch that identifier. The
 
 994
 00:34:01,000 --> 00:34:04,120
-system to go watch that identifier. The
 value of that, of course, is that now I
 
 995
 00:34:04,120 --> 00:34:06,600
-value of that, of course, is that now I
 can come over here to Alice, and in the
 
 996
 00:34:06,600 --> 00:34:10,040
-can come over here to Alice, and in the
 regular KERI side of the plugin, lock
 
 997
 00:34:10,040 --> 00:34:11,669
-regular KERI side of the plugin, lock
 that.
 
 998
@@ -4982,312 +4041,250 @@ quick then.
 
 999
 00:34:15,000 --> 00:34:16,560
-quick then.
 I'm going to rotate Alice's
 
 1000
 00:34:16,560 --> 00:34:19,159
-I'm going to rotate Alice's
 identifier, do a key rotation. I got to
 
 1001
 00:34:19,159 --> 00:34:21,399
-identifier, do a key rotation. I got to
 get my one-time passcode.
 
 1002
 00:34:21,399 --> 00:34:24,960
-get my one-time passcode.
 Grab that. 15 seconds should be plenty.
 
 1003
 00:34:24,960 --> 00:34:27,480
-Grab that. 15 seconds should be plenty.
 Rotate. There, I've now rotated. I have
 
 1004
 00:34:27,480 --> 00:34:29,120
-Rotate. There, I've now rotated. I have
 all four witnesses
 
 1005
 00:34:29,120 --> 00:34:30,800
-all four witnesses
 Pulled down for him. And if
 
 1006
 00:34:30,800 --> 00:34:33,120
-Pulled down for him. And if
 everything works correctly, Bob will now
 
 1007
 00:34:33,120 --> 00:34:35,399
-everything works correctly, Bob will now
 get a notice that Alice
 
 1008
 00:34:35,399 --> 00:34:37,080
-get a notice that Alice
 has done an update. This takes a lot
 
 1009
 00:34:37,080 --> 00:34:38,440
-has done an update. This takes a lot
 longer than I wanted it to doing a demo,
 
 1010
 00:34:38,440 --> 00:34:39,600
-longer than I wanted it to doing a demo,
 but that's because I have all my numbers
 
 1011
 00:34:39,600 --> 00:34:41,040
-but that's because I have all my numbers
 kind of spun down. There it is, it just
 
 1012
 00:34:41,040 --> 00:34:43,280
-kind of spun down. There it is, it just
 showed up. Just so I don't burn my CPU
 
 1013
 00:34:43,280 --> 00:34:45,800
-showed up. Just so I don't burn my CPU
 out. So, I just received a notification.
 
 1014
 00:34:45,800 --> 00:34:47,159
-out. So, I just received a notification.
 This is again the integration of
 
 1015
 00:34:47,159 --> 00:34:48,879
-This is again the integration of
 notification notifications into our
 
 1016
 00:34:48,879 --> 00:34:50,080
-notification notifications into our
 system.
 
 1017
 00:34:50,080 --> 00:34:51,360
-system.
 The notification is available in the
 
 1018
 00:34:51,360 --> 00:34:52,399
-The notification is available in the
 open source plug-in, and you can
 
 1019
 00:34:52,399 --> 00:34:53,919
-open source plug-in, and you can
 integrate it anything you want. So,
 
 1020
 00:34:53,919 --> 00:34:55,720
-integrate it anything you want. So,
 whatever you add to the to the health
 
 1021
 00:34:55,720 --> 00:34:57,960
-whatever you add to the to the health
 KERI if as a plug-in, you can integrate
 
 1022
 00:34:57,960 --> 00:34:59,640
-KERI if as a plug-in, you can integrate
 into the notification systems to drive
 
 1023
 00:34:59,640 --> 00:35:01,720
-into the notification systems to drive
 that as well. Now that I see that I have
 
 1024
 00:35:01,720 --> 00:35:03,720
-that as well. Now that I see that I have
 new key state for Alice, we made the
 
 1025
 00:35:03,720 --> 00:35:05,280
-new key state for Alice, we made the
 decision not to automatically pull that
 
 1026
 00:35:05,280 --> 00:35:06,840
-decision not to automatically pull that
 key state down for you. So, I would just
 
 1027
 00:35:06,840 --> 00:35:09,120
-key state down for you. So, I would just
 go into my watched identifiers. You can
 
 1028
 00:35:09,120 --> 00:35:11,160
-go into my watched identifiers. You can
 see that he is now Alice is now out of
 
 1029
 00:35:11,160 --> 00:35:13,200
-see that he is now Alice is now out of
 date, and I want to do a sync, and now
 
 1030
 00:35:13,200 --> 00:35:15,240
-date, and I want to do a sync, and now
 I'm up to date with Alice.
 
 1031
 00:35:15,240 --> 00:35:17,120
-I'm up to date with Alice.
 So, one last thing I'll point out is
 
 1032
 00:35:17,120 --> 00:35:19,960
-So, one last thing I'll point out is
 that's all well and good, but I'm
 
 1033
 00:35:19,960 --> 00:35:21,960
-that's all well and good, but I'm
 doing it manually. Where this really
 
 1034
 00:35:21,960 --> 00:35:23,680
-doing it manually. Where this really
 comes into play is when you're deploying
 
 1035
 00:35:23,680 --> 00:35:26,120
-comes into play is when you're deploying
 servers into enterprise infrastructure,
 
 1036
 00:35:26,120 --> 00:35:28,120
-servers into enterprise infrastructure,
 and you have a server that has an
 
 1037
 00:35:28,120 --> 00:35:30,360
-and you have a server that has an
 identifier and that is let's say for
 
 1038
 00:35:30,360 --> 00:35:32,120
-identifier and that is let's say for
 example an OAuth server that's
 
 1039
 00:35:32,120 --> 00:35:34,520
-example an OAuth server that's
 validating vLEI's coming in, but needs to
 
 1040
 00:35:34,520 --> 00:35:36,160
-validating vLEI's coming in, but needs to
 keep up to date with the key state of
 
 1041
 00:35:36,160 --> 00:35:38,000
-keep up to date with the key state of
 any of the identifiers that it is now
 
 1042
 00:35:38,000 --> 00:35:40,720
-any of the identifiers that it is now
 interacted with. You can provision it so
 
 1043
 00:35:40,720 --> 00:35:41,840
-interacted with. You can provision it so
 that it can connect through this
 
 1044
 00:35:41,840 --> 00:35:43,760
-that it can connect through this
 authorization server feature inside of
 
 1045
 00:35:43,760 --> 00:35:46,520
-authorization server feature inside of
 our SaaS platform, so that it now has the
 
 1046
 00:35:46,520 --> 00:35:48,680
-our SaaS platform, so that it now has the
 authority to ask our platform to watch
 
 1047
 00:35:48,680 --> 00:35:50,880
-authority to ask our platform to watch
 identifiers on its behalf, and it will
 
 1048
 00:35:50,880 --> 00:35:52,040
-identifiers on its behalf, and it will
 and I'll talk a lot more about this
 
 1049
 00:35:52,040 --> 00:35:54,320
-and I'll talk a lot more about this
 tomorrow. It will then have a SAID car
 
 1050
 00:35:54,320 --> 00:35:56,480
-tomorrow. It will then have a SAID car
 running that is its local watcher that
 
 1051
 00:35:56,480 --> 00:35:57,600
-running that is its local watcher that
 integrates with the healthKERI we
 
 1052
 00:35:57,600 --> 00:35:59,680
-integrates with the healthKERI we
 watcher platform to keep up to date on
 
 1053
 00:35:59,680 --> 00:36:01,520
-watcher platform to keep up to date on
 key state changes so that anyone that
 
 1054
 00:36:01,520 --> 00:36:03,280
-key state changes so that anyone that
 you're using to anyone that is using you
 
 1055
 00:36:03,280 --> 00:36:05,000
-you're using to anyone that is using you
 to authenticate into a system can do a
 
 1056
 00:36:05,000 --> 00:36:06,280
-to authenticate into a system can do a
 key rotation anytime they want and
 
 1057
 00:36:06,280 --> 00:36:08,000
-key rotation anytime they want and
 automatically get updates.
 
 1058
 00:36:08,000 --> 00:36:08,880
-automatically get updates.
 So,
 
 1059
 00:36:08,880 --> 00:36:10,240
-So,
 I just real quick I'll go to questions I
 
 1060
 00:36:10,240 --> 00:36:13,960
-I just real quick I'll go to questions I
 guess.
 
 1061
@@ -5302,57 +4299,46 @@ that you're running? So, right now we're
 
 1063
 00:36:24,200 --> 00:36:27,080
-that you're running? So, right now we're
 in four regions, and the same regions
 
 1064
 00:36:27,080 --> 00:36:28,200
-in four regions, and the same regions
 that we are in the witness in the
 
 1065
 00:36:28,200 --> 00:36:29,240
-that we are in the witness in the
 witness network that are on different
 
 1066
 00:36:29,240 --> 00:36:30,600
-witness network that are on different
 data centers than the walk than the
 
 1067
 00:36:30,600 --> 00:36:31,920
-data centers than the walk than the
 witnesses are.
 
 1068
 00:36:31,920 --> 00:36:34,320
-witnesses are.
 So, yeah. And so, then we have
 
 1069
 00:36:34,320 --> 00:36:35,920
-So, yeah. And so, then we have
 I think I three servers in each of the
 
 1070
 00:36:35,920 --> 00:36:38,240
-I think I three servers in each of the
 regions. And we just pick them at random
 
 1071
 00:36:38,240 --> 00:36:40,200
-regions. And we just pick them at random
 when you ask us to watch. We do four
 
 1072
 00:36:40,200 --> 00:36:42,280
-when you ask us to watch. We do four
 watchers. So, pick them at random, one
 
 1073
 00:36:42,280 --> 00:36:44,870
-watchers. So, pick them at random, one
 in each region.
 
 1074
@@ -5362,22 +4348,18 @@ get to how we're deploying the services.
 
 1075
 00:36:47,800 --> 00:36:49,880
-get to how we're deploying the services.
 Oh, well. No, it was only 40 minutes.
 
 1076
 00:36:49,880 --> 00:36:51,560
-Oh, well. No, it was only 40 minutes.
 I know. I realized that when you told me
 
 1077
 00:36:51,560 --> 00:36:52,615
-I know. I realized that when you told me
 I had 5 minutes left.
 
 1078
 00:36:52,615 --> 00:36:55,470
-I had 5 minutes left.
 [laughter]
 
 1079

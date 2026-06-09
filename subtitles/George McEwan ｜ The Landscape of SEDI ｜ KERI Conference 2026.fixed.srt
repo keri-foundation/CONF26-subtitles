@@ -1,166 +1,134 @@
-﻿1
+1
 00:00:04,470 --> 00:00:06,560
 So everyone, I'm George McEwan. I'm the
 privacy architect for the state of Utah.
 
 2
 00:00:06,560 --> 00:00:08,240
-privacy architect for the state of Utah.
 So there's a lot of synchronicity that
 
 3
 00:00:08,240 --> 00:00:10,719
-So there's a lot of synchronicity that
 happens when you go to these various
 
 4
 00:00:10,719 --> 00:00:12,880
-happens when you go to these various
 events. And amazingly enough, I'm going
 
 5
 00:00:12,880 --> 00:00:14,240
-events. And amazingly enough, I'm going
 to talk a little bit about healthcare in
 
 6
 00:00:14,240 --> 00:00:15,920
-to talk a little bit about healthcare in
 the rural healthc care setting and why
 
 7
 00:00:15,920 --> 00:00:18,000
-the rural healthc care setting and why
 we look at it the way we do. So one of
 
 8
 00:00:18,000 --> 00:00:19,119
-we look at it the way we do. So one of
 the things I'm going to make very clear
 
 9
 00:00:19,119 --> 00:00:20,960
-the things I'm going to make very clear
 is that the state is going to declare
 
 10
 00:00:20,960 --> 00:00:23,039
-is that the state is going to declare
 some boundaries in what it does in the
 
 11
 00:00:23,039 --> 00:00:24,960
-some boundaries in what it does in the
 KERI infrastructure and what the
 
 12
 00:00:24,960 --> 00:00:27,119
-KERI infrastructure and what the
 expectations are for the community
 
 13
 00:00:27,119 --> 00:00:29,359
-expectations are for the community
 because one of the things we learned as
 
 14
 00:00:29,359 --> 00:00:32,320
-because one of the things we learned as
 I was the IT director during the COVID
 
 15
 00:00:32,320 --> 00:00:34,559
-I was the IT director during the COVID
 era at the department of health there
 
 16
 00:00:34,559 --> 00:00:36,559
-era at the department of health there
 was definitely some resistance to where
 
 17
 00:00:36,559 --> 00:00:39,760
-was definitely some resistance to where
 government had offered the technologies
 
 18
 00:00:39,760 --> 00:00:42,719
-government had offered the technologies
 or applications or worked with platform
 
 19
 00:00:42,719 --> 00:00:44,559
-or applications or worked with platform
 providers to provide things like
 
 20
 00:00:44,559 --> 00:00:47,280
-providers to provide things like
 exposure notification and the backlash
 
 21
 00:00:47,280 --> 00:00:50,399
-exposure notification and the backlash
 was very intense. That's
 
 22
 00:00:50,399 --> 00:00:52,320
-was very intense. That's
 probably the best word I can use. And so
 
 23
 00:00:52,320 --> 00:00:54,000
-probably the best word I can use. And so
 we realize that where government can
 
 24
 00:00:54,000 --> 00:00:56,000
-we realize that where government can
 help and we can set regulations and we
 
 25
 00:00:56,000 --> 00:00:58,480
-help and we can set regulations and we
 can set frameworks in play, there's
 
 26
 00:00:58,480 --> 00:00:59,760
-can set frameworks in play, there's
 definitely a spot where the government
 
 27
 00:00:59,760 --> 00:01:01,680
-definitely a spot where the government
 has an edge and we say this is private
 
 28
 00:01:01,680 --> 00:01:04,239
-has an edge and we say this is private
 sector and for the individual to handle.
 
 29
 00:01:04,239 --> 00:01:05,360
-sector and for the individual to handle.
 So, what I'm going to do is I'm going to
 
 30
 00:01:05,360 --> 00:01:06,720
-So, what I'm going to do is I'm going to
 run you through a little bit of a
 
 31
 00:01:06,720 --> 00:01:09,280
-run you through a little bit of a
 presentation that we do with we'll
 
 32
 00:01:09,280 --> 00:01:12,240
-presentation that we do with we'll
 call them non- nerds, normal people.
 
 33
 00:01:12,240 --> 00:01:13,920
-call them non- nerds, normal people.
 Because we can talk in shorthand in the
 
 34
@@ -170,1872 +138,1498 @@ SEDI community and in the KERI
 
 35
 00:01:15,600 --> 00:01:17,840
-SEDI community and in the KERI
 community and cyber security. We have
 
 36
 00:01:17,840 --> 00:01:19,360
-community and cyber security. We have
 words they don't understand. So, what
 
 37
 00:01:19,360 --> 00:01:20,799
-words they don't understand. So, what
 we've did is we put together kind of a
 
 38
 00:01:20,799 --> 00:01:23,119
-we've did is we put together kind of a
 generic presentation that we add slides
 
 39
 00:01:23,119 --> 00:01:25,119
-generic presentation that we add slides
 to depending on who we're talking to.
 
 40
 00:01:25,119 --> 00:01:28,479
-to depending on who we're talking to.
 So, realistically, we hit them on these
 
 41
 00:01:28,479 --> 00:01:30,880
-So, realistically, we hit them on these
 points. Digital identity is here. It's
 
 42
 00:01:30,880 --> 00:01:33,200
-points. Digital identity is here. It's
 coming. It's going to be something. Now,
 
 43
 00:01:33,200 --> 00:01:34,799
-coming. It's going to be something. Now,
 one of the I would say the beauties of
 
 44
 00:01:34,799 --> 00:01:37,600
-one of the I would say the beauties of
 the SEDI program is Chris Bramwell
 
 45
 00:01:37,600 --> 00:01:39,680
-the SEDI program is Chris Bramwell
 said, "Well, we could take this and
 
 46
 00:01:39,680 --> 00:01:41,520
-said, "Well, we could take this and
 put this against what are the
 
 47
 00:01:41,520 --> 00:01:43,759
-put this against what are the
 constitutional rights that someone has."
 
 48
 00:01:43,759 --> 00:01:46,479
-constitutional rights that someone has."
 And by doing so, you get past all of the
 
 49
 00:01:46,479 --> 00:01:48,960
-And by doing so, you get past all of the
 vendor needs to make money. You get you
 
 50
 00:01:48,960 --> 00:01:50,159
-vendor needs to make money. You get you
 get right down to the root of the
 
 51
 00:01:50,159 --> 00:01:51,840
-get right down to the root of the
 problem, which is there needs to be
 
 52
 00:01:51,840 --> 00:01:54,000
-problem, which is there needs to be
 accountability and that your rights need
 
 53
 00:01:54,000 --> 00:01:56,479
-accountability and that your rights need
 to be preserved and that privacy is not
 
 54
 00:01:56,479 --> 00:01:59,439
-to be preserved and that privacy is not
 impossible when you are talking about
 
 55
 00:01:59,439 --> 00:02:01,680
-impossible when you are talking about
 digitally issued credentials. And of
 
 56
 00:02:01,680 --> 00:02:04,560
-digitally issued credentials. And of
 course then we get into our the stakes.
 
 57
 00:02:04,560 --> 00:02:07,119
-course then we get into our the stakes.
 If the government doesn't choose or
 
 58
 00:02:07,119 --> 00:02:09,920
-If the government doesn't choose or
 regulate, the market does it itself. And
 
 59
 00:02:09,920 --> 00:02:13,120
-regulate, the market does it itself. And
 the goals of a open market are a
 
 60
 00:02:13,120 --> 00:02:14,319
-the goals of a open market are a
 little bit different than what a
 
 61
 00:02:14,319 --> 00:02:16,640
-little bit different than what a
 government needs to be providing the
 
 62
 00:02:16,640 --> 00:02:18,879
-government needs to be providing the
 services that a citizen would want. And
 
 63
 00:02:18,879 --> 00:02:20,800
-services that a citizen would want. And
 of course, we know that besides
 
 64
 00:02:20,800 --> 00:02:22,480
-of course, we know that besides
 governments, there's also organizations
 
 65
 00:02:22,480 --> 00:02:24,480
-governments, there's also organizations
 that put together specifications that
 
 66
 00:02:24,480 --> 00:02:26,319
-that put together specifications that
 may or may not be rooted in the same
 
 67
 00:02:26,319 --> 00:02:27,760
-may or may not be rooted in the same
 value system that we're trying to
 
 68
 00:02:27,760 --> 00:02:30,480
-value system that we're trying to
 maintain. So we're very adamant that we
 
 69
 00:02:30,480 --> 00:02:33,200
-maintain. So we're very adamant that we
 want to make sure that whatever we do in
 
 70
 00:02:33,200 --> 00:02:35,200
-want to make sure that whatever we do in
 the SEDI environment, it's reflective of
 
 71
 00:02:35,200 --> 00:02:37,280
-the SEDI environment, it's reflective of
 the values, goals, and rights that are
 
 72
 00:02:37,280 --> 00:02:40,879
-the values, goals, and rights that are
 held here in America. Now, it is not
 
 73
 00:02:40,879 --> 00:02:43,200
-held here in America. Now, it is not
 hard for this statement to be believed
 
 74
 00:02:43,200 --> 00:02:46,480
-hard for this statement to be believed
 by all of you, right? Whoever has the
 
 75
 00:02:46,480 --> 00:02:49,200
-by all of you, right? Whoever has the
 data has the control. And the model
 
 76
 00:02:49,200 --> 00:02:51,680
-data has the control. And the model
 right now, everything to the left or
 
 77
 00:02:51,680 --> 00:02:54,959
-right now, everything to the left or
 sorry, my right everything over there
 
 78
 00:02:54,959 --> 00:02:57,760
-sorry, my right everything over there
 is how we work today. Your identity is
 
 79
 00:02:57,760 --> 00:03:00,400
-is how we work today. Your identity is
 owned by other individuals. It's granted
 
 80
 00:03:00,400 --> 00:03:02,159
-owned by other individuals. It's granted
 back to you with limited rights. And
 
 81
 00:03:02,159 --> 00:03:04,000
-back to you with limited rights. And
 then if you've ever looked through all
 
 82
 00:03:04,000 --> 00:03:08,159
-then if you've ever looked through all
 those long user licenses, in effect,
 
 83
 00:03:08,159 --> 00:03:10,560
-those long user licenses, in effect,
 you've given up all control for the
 
 84
 00:03:10,560 --> 00:03:12,720
-you've given up all control for the
 services that you that you have. And
 
 85
 00:03:12,720 --> 00:03:14,480
-services that you that you have. And
 this isn't limited to just, hey, I got
 
 86
 00:03:14,480 --> 00:03:17,040
-this isn't limited to just, hey, I got
 myself an email address for free. Your
 
 87
 00:03:17,040 --> 00:03:19,040
-myself an email address for free. Your
 financial institutions do this. your
 
 88
 00:03:19,040 --> 00:03:22,720
-financial institutions do this. your
 hospitals and your HMOs, your care
 
 89
 00:03:22,720 --> 00:03:24,720
-hospitals and your HMOs, your care
 organizations, they're holding a lot of
 
 90
 00:03:24,720 --> 00:03:26,879
-organizations, they're holding a lot of
 the data that belongs to you. And
 
 91
 00:03:26,879 --> 00:03:29,280
-the data that belongs to you. And
 because it's set up that way, you are
 
 92
 00:03:29,280 --> 00:03:31,519
-because it's set up that way, you are
 basically powerless to do anything about
 
 93
 00:03:31,519 --> 00:03:33,280
-basically powerless to do anything about
 it. And in a lot of cases, you'll find
 
 94
 00:03:33,280 --> 00:03:36,080
-it. And in a lot of cases, you'll find
 that incorrect data may be used in
 
 95
 00:03:36,080 --> 00:03:39,519
-that incorrect data may be used in
 profiling you to create an improper
 
 96
 00:03:39,519 --> 00:03:42,080
-profiling you to create an improper
 picture of who you are.
 
 97
 00:03:42,080 --> 00:03:44,720
-picture of who you are.
 So really what we want to accomplish
 
 98
 00:03:44,720 --> 00:03:46,799
-So really what we want to accomplish
 inside the study framework is the idea
 
 99
 00:03:46,799 --> 00:03:49,680
-inside the study framework is the idea
 that you are the individual who controls
 
 100
 00:03:49,680 --> 00:03:52,159
-that you are the individual who controls
 that information because whatever the
 
 101
 00:03:52,159 --> 00:03:54,319
-that information because whatever the
 wherever the information sits it is fair
 
 102
 00:03:54,319 --> 00:03:57,200
-wherever the information sits it is fair
 to say without contradiction that
 
 103
 00:03:57,200 --> 00:04:00,159
-to say without contradiction that
 impacts the financial outcomes. It
 
 104
 00:04:00,159 --> 00:04:02,480
-impacts the financial outcomes. It
 impacts your opportunities. There are a
 
 105
 00:04:02,480 --> 00:04:04,480
-impacts your opportunities. There are a
 lot of things that get impacted because
 
 106
 00:04:04,480 --> 00:04:06,560
-lot of things that get impacted because
 you don't control what should
 
 107
 00:04:06,560 --> 00:04:09,680
-you don't control what should
 rightfully be yours. And this is not to
 
 108
 00:04:09,680 --> 00:04:11,280
-rightfully be yours. And this is not to
 say that everyone did it for a nefarious
 
 109
 00:04:11,280 --> 00:04:13,439
-say that everyone did it for a nefarious
 purpose. I mean, profit-seeking motive.
 
 110
 00:04:13,439 --> 00:04:15,360
-purpose. I mean, profit-seeking motive.
 We're a capitalist society. Yeah, that's
 
 111
 00:04:15,360 --> 00:04:17,359
-We're a capitalist society. Yeah, that's
 understood. But the problem is we built
 
 112
 00:04:17,359 --> 00:04:20,160
-understood. But the problem is we built
 everything to be so exploitative of you
 
 113
 00:04:20,160 --> 00:04:22,240
-everything to be so exploitative of you
 that we forgot that you are the
 
 114
 00:04:22,240 --> 00:04:24,320
-that we forgot that you are the
 individual who ultimately gets hurt if
 
 115
 00:04:24,320 --> 00:04:26,240
-individual who ultimately gets hurt if
 something goes wrong. In the state of
 
 116
 00:04:26,240 --> 00:04:28,000
-something goes wrong. In the state of
 Utah, inside government, there's a
 
 117
 00:04:28,000 --> 00:04:29,759
-Utah, inside government, there's a
 there's a very good way that we look at
 
 118
 00:04:29,759 --> 00:04:32,240
-there's a very good way that we look at
 data. When we make a data error in
 
 119
 00:04:32,240 --> 00:04:34,800
-data. When we make a data error in
 government, it's a negative outcome for
 
 120
 00:04:34,800 --> 00:04:38,080
-government, it's a negative outcome for
 a real person. Classic example, oh the
 
 121
 00:04:38,080 --> 00:04:40,160
-a real person. Classic example, oh the
 Medicaid eligibility system, which is a
 
 122
 00:04:40,160 --> 00:04:42,560
-Medicaid eligibility system, which is a
 real time system, goes down for a couple
 
 123
 00:04:42,560 --> 00:04:44,160
-real time system, goes down for a couple
 hours. Now, if you're standard IT,
 
 124
 00:04:44,160 --> 00:04:45,840
-hours. Now, if you're standard IT,
 you're like, big deal. Things happen.
 
 125
 00:04:45,840 --> 00:04:47,919
-you're like, big deal. Things happen.
 We'll get it back up. No big deal. But
 
 126
 00:04:47,919 --> 00:04:49,680
-We'll get it back up. No big deal. But
 then when the Medicaid director marches
 
 127
 00:04:49,680 --> 00:04:52,000
-then when the Medicaid director marches
 in with their flesh hook and rips a
 
 128
 00:04:52,000 --> 00:04:54,400
-in with their flesh hook and rips a
 pound off of you and says, "Right now,
 
 129
 00:04:54,400 --> 00:04:56,560
-pound off of you and says, "Right now,
 somewhere in Utah, there is a single
 
 130
 00:04:56,560 --> 00:04:59,600
-somewhere in Utah, there is a single
 mother who took two buses two hours out
 
 131
 00:04:59,600 --> 00:05:02,240
-mother who took two buses two hours out
 of their day to go to the pharmacy to
 
 132
 00:05:02,240 --> 00:05:04,880
-of their day to go to the pharmacy to
 get medication for pain management." and
 
 133
 00:05:04,880 --> 00:05:07,039
-get medication for pain management." and
 the pharmacy directors at that
 
 134
 00:05:07,039 --> 00:05:09,440
-the pharmacy directors at that
 facility said, "We can give you one pill
 
 135
 00:05:09,440 --> 00:05:10,720
-facility said, "We can give you one pill
 because we can't confirm your
 
 136
 00:05:10,720 --> 00:05:13,120
-because we can't confirm your
 eligibility. You'll need to come back."
 
 137
 00:05:13,120 --> 00:05:14,800
-eligibility. You'll need to come back."
 That's the sort of situation we deal
 
 138
 00:05:14,800 --> 00:05:16,960
-That's the sort of situation we deal
 with when we talk about our data errors.
 
 139
 00:05:16,960 --> 00:05:18,720
-with when we talk about our data errors.
 And of course, we try very hard in
 
 140
 00:05:18,720 --> 00:05:20,400
-And of course, we try very hard in
 government to be good stewards of that
 
 141
 00:05:20,400 --> 00:05:23,199
-government to be good stewards of that
 data. But realistically, if the
 
 142
 00:05:23,199 --> 00:05:25,199
-data. But realistically, if the
 individual has a lot more control, who's
 
 143
 00:05:25,199 --> 00:05:27,759
-individual has a lot more control, who's
 a better advocate than you? You are
 
 144
 00:05:27,759 --> 00:05:28,880
-a better advocate than you? You are
 definitely going to be your best
 
 145
 00:05:28,880 --> 00:05:30,560
-definitely going to be your best
 advocate.
 
 146
 00:05:30,560 --> 00:05:32,720
-advocate.
 Now, when we get into the concepts of
 
 147
 00:05:32,720 --> 00:05:34,479
-Now, when we get into the concepts of
 state endorsed digital identity, we
 
 148
 00:05:34,479 --> 00:05:36,639
-state endorsed digital identity, we
 really try to keep this as simple as
 
 149
 00:05:36,639 --> 00:05:39,039
-really try to keep this as simple as
 possible. And this is this is probably
 
 150
 00:05:39,039 --> 00:05:40,080
-possible. And this is this is probably
 way too high. And everyone's like,
 
 151
 00:05:40,080 --> 00:05:41,919
-way too high. And everyone's like,
 "Yeah, I get this slide immediately."
 
 152
 00:05:41,919 --> 00:05:43,520
-"Yeah, I get this slide immediately."
 But what we try and explain to them is
 
 153
 00:05:43,520 --> 00:05:45,759
-But what we try and explain to them is
 those core concepts that we put into the
 
 154
 00:05:45,759 --> 00:05:49,360
-those core concepts that we put into the
 bill of rights that identity is yours.
 
 155
 00:05:49,360 --> 00:05:51,280
-bill of rights that identity is yours.
 It's not issued by the state, but the
 
 156
 00:05:51,280 --> 00:05:52,880
-It's not issued by the state, but the
 state has a role to endorse it for
 
 157
 00:05:52,880 --> 00:05:54,720
-state has a role to endorse it for
 certain legal purposes. And of course,
 
 158
 00:05:54,720 --> 00:05:57,280
-certain legal purposes. And of course,
 we get into the concept of what is a
 
 159
 00:05:57,280 --> 00:05:59,199
-we get into the concept of what is a
 digital identity? how does it get
 
 160
 00:05:59,199 --> 00:06:01,120
-digital identity? how does it get
 created a little bit and then we go into
 
 161
 00:06:01,120 --> 00:06:02,639
-created a little bit and then we go into
 the whole idea of how it becomes your
 
 162
 00:06:02,639 --> 00:06:04,400
-the whole idea of how it becomes your
 state endorsed digital identity through
 
 163
 00:06:04,400 --> 00:06:07,520
-state endorsed digital identity through
 this process of vetting. Now there are
 
 164
 00:06:07,520 --> 00:06:10,720
-this process of vetting. Now there are
 some potentially debatable questions on
 
 165
 00:06:10,720 --> 00:06:12,800
-some potentially debatable questions on
 here. U we don't get into the politics
 
 166
 00:06:12,800 --> 00:06:14,960
-here. U we don't get into the politics
 of this but we do know that there are
 
 167
 00:06:14,960 --> 00:06:17,600
-of this but we do know that there are
 some markers that need to uniquely
 
 168
 00:06:17,600 --> 00:06:19,759
-some markers that need to uniquely
 identify you to be part of that digital
 
 169
 00:06:19,759 --> 00:06:21,520
-identify you to be part of that digital
 identity. And this isn't to say that
 
 170
 00:06:21,520 --> 00:06:23,360
-identity. And this isn't to say that
 these are forever attributes. For
 
 171
 00:06:23,360 --> 00:06:27,039
-these are forever attributes. For
 example, your address, your biometric of
 
 172
 00:06:27,039 --> 00:06:28,960
-example, your address, your biometric of
 your face, those are going to change.
 
 173
 00:06:28,960 --> 00:06:30,720
-your face, those are going to change.
 And we have existing laws that handle
 
 174
 00:06:30,720 --> 00:06:32,639
-And we have existing laws that handle
 that. So, for example, if you are
 
 175
 00:06:32,639 --> 00:06:35,199
-that. So, for example, if you are
 getting a driver's license 16, that's
 
 176
 00:06:35,199 --> 00:06:37,199
-getting a driver's license 16, that's
 not valid for more than 5 years because
 
 177
 00:06:37,199 --> 00:06:38,720
-not valid for more than 5 years because
 we know you're going to change by the
 
 178
 00:06:38,720 --> 00:06:40,800
-we know you're going to change by the
 time you get to college. And of course,
 
 179
 00:06:40,800 --> 00:06:43,440
-time you get to college. And of course,
 with the residents here in Utah who have
 
 180
 00:06:43,440 --> 00:06:46,160
-with the residents here in Utah who have
 driver's licenses who are over 18, it's
 
 181
 00:06:46,160 --> 00:06:47,840
-driver's licenses who are over 18, it's
 a 10-year window. So there are
 
 182
 00:06:47,840 --> 00:06:49,360
-a 10-year window. So there are
 opportunities for those things to be
 
 183
 00:06:49,360 --> 00:06:52,000
-opportunities for those things to be
 changed as part of the credential or to
 
 184
 00:06:52,000 --> 00:06:53,600
-changed as part of the credential or to
 For lack of a better term lose the
 
 185
 00:06:53,600 --> 00:06:55,199
-For lack of a better term lose the
 endorsement.
 
 186
 00:06:55,199 --> 00:06:58,080
-endorsement.
 Now when we talk about healthcare data
 
 187
 00:06:58,080 --> 00:06:59,919
-Now when we talk about healthcare data
 there are a ton of different places
 
 188
 00:06:59,919 --> 00:07:02,240
-there are a ton of different places
 where this applies. Now we had
 
 189
 00:07:02,240 --> 00:07:03,919
-where this applies. Now we had
 healthKERI talking about the provider
 
 190
 00:07:03,919 --> 00:07:06,720
-healthKERI talking about the provider
 payer relationship. That's just one of a
 
 191
 00:07:06,720 --> 00:07:09,599
-payer relationship. That's just one of a
 myriad of relationships that exist
 
 192
 00:07:09,599 --> 00:07:11,440
-myriad of relationships that exist
 between you and your healthcare
 
 193
 00:07:11,440 --> 00:07:12,720
-between you and your healthcare
 interactions. Whether that's the
 
 194
 00:07:12,720 --> 00:07:15,360
-interactions. Whether that's the
 ownership of your individual data, your
 
 195
 00:07:15,360 --> 00:07:17,280
-ownership of your individual data, your
 desire to participate in some sort of
 
 196
 00:07:17,280 --> 00:07:19,199
-desire to participate in some sort of
 demographic mapping. Today, today we
 
 197
 00:07:19,199 --> 00:07:21,120
-demographic mapping. Today, today we
 don't do that. Today we have systems
 
 198
 00:07:21,120 --> 00:07:24,479
-don't do that. Today we have systems
 that basically at government control
 
 199
 00:07:24,479 --> 00:07:26,800
-that basically at government control
 take your data and aggregate it for
 
 200
 00:07:26,800 --> 00:07:29,919
-take your data and aggregate it for
 research purposes.
 
 201
 00:07:29,919 --> 00:07:31,120
-research purposes.
 And for some people, that's not
 
 202
 00:07:31,120 --> 00:07:33,280
-And for some people, that's not
 shocking. But when you when you go to a
 
 203
 00:07:33,280 --> 00:07:34,560
-shocking. But when you when you go to a
 state and you say, "Hey, do you have an
 
 204
 00:07:34,560 --> 00:07:37,199
-state and you say, "Hey, do you have an
 All-Payer Claims Database?" If the
 
 205
 00:07:37,199 --> 00:07:39,520
-All-Payer Claims Database?" If the
 person's in the no, that means that
 
 206
 00:07:39,520 --> 00:07:41,360
-person's in the no, that means that
 every encounter you have that's part of
 
 207
 00:07:41,360 --> 00:07:44,000
-every encounter you have that's part of
 your insurance program in that state
 
 208
 00:07:44,000 --> 00:07:46,400
-your insurance program in that state
 with your physician and the notes
 
 209
 00:07:46,400 --> 00:07:48,639
-with your physician and the notes
 associated with all your ICD10 codes,
 
 210
 00:07:48,639 --> 00:07:50,400
-associated with all your ICD10 codes,
 everything that happened during that
 
 211
 00:07:50,400 --> 00:07:52,960
-everything that happened during that
 medical encounter is now in a government
 
 212
 00:07:52,960 --> 00:07:56,800
-medical encounter is now in a government
 database for the purposes of looking at
 
 213
 00:07:56,800 --> 00:07:59,280
-database for the purposes of looking at
 healthcare outcomes. Did patient A and
 
 214
 00:07:59,280 --> 00:08:00,879
-healthcare outcomes. Did patient A and
 patient B who received different
 
 215
 00:08:00,879 --> 00:08:02,400
-patient B who received different
 medications, which one had the better
 
 216
 00:08:02,400 --> 00:08:04,960
-medications, which one had the better
 outcome? So there's a lot of good
 
 217
 00:08:04,960 --> 00:08:06,879
-outcome? So there's a lot of good
 intentions in terms of why these data
 
 218
 00:08:06,879 --> 00:08:09,440
-intentions in terms of why these data
 sets exist. But I will also tell you the
 
 219
 00:08:09,440 --> 00:08:11,199
-sets exist. But I will also tell you the
 most dangerous thing in government is a
 
 220
 00:08:11,199 --> 00:08:13,120
-most dangerous thing in government is a
 well-meaning bureaucrat. It's not that
 
 221
 00:08:13,120 --> 00:08:14,000
-well-meaning bureaucrat. It's not that
 they're trying to do something
 
 222
 00:08:14,000 --> 00:08:15,840
-they're trying to do something
 nefarious, but sometimes they try and
 
 223
 00:08:15,840 --> 00:08:18,160
-nefarious, but sometimes they try and
 get hold of data and put it together to
 
 224
 00:08:18,160 --> 00:08:20,400
-get hold of data and put it together to
 create a picture. Well, where you don't
 
 225
 00:08:20,400 --> 00:08:22,160
-create a picture. Well, where you don't
 have any interface to this and you don't
 
 226
 00:08:22,160 --> 00:08:24,240
-have any interface to this and you don't
 have any control over that data, there's
 
 227
 00:08:24,240 --> 00:08:26,240
-have any control over that data, there's
 the possibility that inference,
 
 228
 00:08:26,240 --> 00:08:28,879
-the possibility that inference,
 that conclusion may help you, it may
 
 229
 00:08:28,879 --> 00:08:30,560
-that conclusion may help you, it may
 harm you. So this is part of the reason
 
 230
 00:08:30,560 --> 00:08:32,399
-harm you. So this is part of the reason
 we want to start looking at how we
 
 231
 00:08:32,399 --> 00:08:34,560
-we want to start looking at how we
 switch this model around so that you
 
 232
 00:08:34,560 --> 00:08:37,200
-switch this model around so that you
 have more executive control and how your
 
 233
 00:08:37,200 --> 00:08:40,479
-have more executive control and how your
 digital twin story gets told.
 
 234
 00:08:40,479 --> 00:08:43,519
-digital twin story gets told.
 Now when we talk to them about the state
 
 235
 00:08:43,519 --> 00:08:45,120
-Now when we talk to them about the state
 endorsed digital identity, we also like
 
 236
 00:08:45,120 --> 00:08:46,800
-endorsed digital identity, we also like
 to help people understand this
 
 237
 00:08:46,800 --> 00:08:49,519
-to help people understand this
 concept of perpetual identity. And this
 
 238
 00:08:49,519 --> 00:08:51,440
-concept of perpetual identity. And this
 is where we differ with the mobile
 
 239
 00:08:51,440 --> 00:08:53,440
-is where we differ with the mobile
 driver's license community and they're
 
 240
 00:08:53,440 --> 00:08:54,720
-driver's license community and they're
 saying you can use it for everything.
 
 241
 00:08:54,720 --> 00:08:56,160
-saying you can use it for everything.
 I'm like, you can use it for everything
 
 242
 00:08:56,160 --> 00:08:58,000
-I'm like, you can use it for everything
 that you don't mind having burned down
 
 243
 00:08:58,000 --> 00:08:59,920
-that you don't mind having burned down
 if you move to a new state. That's
 
 244
 00:08:59,920 --> 00:09:02,800
-if you move to a new state. That's
 totally fine. But in our particular
 
 245
 00:09:02,800 --> 00:09:04,240
-totally fine. But in our particular
 instance, we want to be able to say that
 
 246
 00:09:04,240 --> 00:09:06,720
-instance, we want to be able to say that
 there are certain documents that you may
 
 247
 00:09:06,720 --> 00:09:09,680
-there are certain documents that you may
 associate with your SEDI and they
 
 248
 00:09:09,680 --> 00:09:11,440
-associate with your SEDI and they
 could be your medical records, you know,
 
 249
 00:09:11,440 --> 00:09:13,040
-could be your medical records, you know,
 your digital driver's license. Any of
 
 250
 00:09:13,040 --> 00:09:15,839
-your digital driver's license. Any of
 these items that you have associated
 
 251
 00:09:15,839 --> 00:09:18,560
-these items that you have associated
 with your SEDI can be created and you
 
 252
 00:09:18,560 --> 00:09:20,640
-with your SEDI can be created and you
 may have information that you are going
 
 253
 00:09:20,640 --> 00:09:22,880
-may have information that you are going
 to selfassociate like, hey, here's my
 
 254
 00:09:22,880 --> 00:09:25,519
-to selfassociate like, hey, here's my
 claims history. Here's some of my MRI
 
 255
 00:09:25,519 --> 00:09:27,360
-claims history. Here's some of my MRI
 scans, things that you have in your
 
 256
 00:09:27,360 --> 00:09:28,959
-scans, things that you have in your
 possession that you want to get into
 
 257
 00:09:28,959 --> 00:09:31,360
-possession that you want to get into
 your digital records but currently
 
 258
 00:09:31,360 --> 00:09:32,640
-your digital records but currently
 don't have. And this is where these
 
 259
 00:09:32,640 --> 00:09:34,160
-don't have. And this is where these
 functionalities like blue button are
 
 260
 00:09:34,160 --> 00:09:37,519
-functionalities like blue button are
 fantastic is you have the ability to say
 
 261
 00:09:37,519 --> 00:09:39,760
-fantastic is you have the ability to say
 this is categorically my MRI. I'm going
 
 262
 00:09:39,760 --> 00:09:41,440
-this is categorically my MRI. I'm going
 to send it to you electronically. You
 
 263
 00:09:41,440 --> 00:09:43,200
-to send it to you electronically. You
 can pull it directly into my into my
 
 264
 00:09:43,200 --> 00:09:45,440
-can pull it directly into my into my
 record set. That's the level of control
 
 265
 00:09:45,440 --> 00:09:48,000
-record set. That's the level of control
 that we want to have. not go to doctor
 
 266
 00:09:48,000 --> 00:09:51,360
-that we want to have. not go to doctor
 office A, pay $50 for a doc fee to have
 
 267
 00:09:51,360 --> 00:09:54,880
-office A, pay $50 for a doc fee to have
 them really, it still cracks me up, fax
 
 268
 00:09:54,880 --> 00:09:57,120
-them really, it still cracks me up, fax
 information to doctor B, and then
 
 269
 00:09:57,120 --> 00:09:58,720
-information to doctor B, and then
 hopefully they didn't lose anything in
 
 270
 00:09:58,720 --> 00:10:00,720
-hopefully they didn't lose anything in
 translation and the whole packet's
 
 271
 00:10:00,720 --> 00:10:02,560
-translation and the whole packet's
 complete, which you generally find out
 
 272
 00:10:02,560 --> 00:10:04,320
-complete, which you generally find out
 on your next medical appointment that
 
 273
 00:10:04,320 --> 00:10:06,399
-on your next medical appointment that
 it's not somebody dropped pages 8
 
 274
 00:10:06,399 --> 00:10:07,680
-it's not somebody dropped pages 8
 through 12, and now you got to go
 
 275
 00:10:07,680 --> 00:10:09,279
-through 12, and now you got to go
 through this whole cycle again. So, we
 
 276
 00:10:09,279 --> 00:10:10,800
-through this whole cycle again. So, we
 have these inefficiencies that are in
 
 277
 00:10:10,800 --> 00:10:12,800
-have these inefficiencies that are in
 the system the way we run it today. And
 
 278
 00:10:12,800 --> 00:10:14,399
-the system the way we run it today. And
 we're telling people, no, if once you're
 
 279
 00:10:14,399 --> 00:10:16,560
-we're telling people, no, if once you're
 in control of this, you can start to
 
 280
 00:10:16,560 --> 00:10:19,040
-in control of this, you can start to
 aggregate your data as necessary. And of
 
 281
 00:10:19,040 --> 00:10:20,720
-aggregate your data as necessary. And of
 course, we talk about the concept of
 
 282
 00:10:20,720 --> 00:10:23,279
-course, we talk about the concept of
 perpetual ownership. If I move from Utah
 
 283
 00:10:23,279 --> 00:10:25,680
-perpetual ownership. If I move from Utah
 to Texas, there are certain privileges
 
 284
 00:10:25,680 --> 00:10:28,079
-to Texas, there are certain privileges
 that go away. I don't keep a Utah
 
 285
 00:10:28,079 --> 00:10:30,000
-that go away. I don't keep a Utah
 driver's endorsement anymore. I have to
 
 286
 00:10:30,000 --> 00:10:32,480
-driver's endorsement anymore. I have to
 go get a Texas one. But everything else
 
 287
 00:10:32,480 --> 00:10:35,839
-go get a Texas one. But everything else
 that I had associated with my SEDI is
 
 288
 00:10:35,839 --> 00:10:38,480
-that I had associated with my SEDI is
 still valid. And in fact, because I have
 
 289
 00:10:38,480 --> 00:10:40,959
-still valid. And in fact, because I have
 a SEDI that's authorized by Utah or
 
 290
 00:10:40,959 --> 00:10:44,079
-a SEDI that's authorized by Utah or
 endorsed by Utah, Texas can say, "We
 
 291
 00:10:44,079 --> 00:10:45,519
-endorsed by Utah, Texas can say, "We
 know that's Utah. So, we're going to
 
 292
 00:10:45,519 --> 00:10:47,440
-know that's Utah. So, we're going to
 accept these baseline facts that you've
 
 293
 00:10:47,440 --> 00:10:49,360
-accept these baseline facts that you've
 asserted. We can bring you right into
 
 294
 00:10:49,360 --> 00:10:51,680
-asserted. We can bring you right into
 the system and we can move on." And hey,
 
 295
 00:10:51,680 --> 00:10:54,000
-the system and we can move on." And hey,
 guess what? You can go get your Texas
 
 296
 00:10:54,000 --> 00:10:56,399
-guess what? You can go get your Texas
 driver's license endorsement without all
 
 297
 00:10:56,399 --> 00:10:58,079
-driver's license endorsement without all
 the reproofs that we have to do along
 
 298
 00:10:58,079 --> 00:11:00,160
-the reproofs that we have to do along
 the way.
 
 299
 00:11:00,160 --> 00:11:03,680
-the way.
 So when we looked at SEDI as a
 
 300
 00:11:03,680 --> 00:11:05,760
-So when we looked at SEDI as a
 functional item, we wanted to build into
 
 301
 00:11:05,760 --> 00:11:07,360
-functional item, we wanted to build into
 the framework some very important
 
 302
 00:11:07,360 --> 00:11:09,040
-the framework some very important
 principles. And of course you can see
 
 303
 00:11:09,040 --> 00:11:10,560
-principles. And of course you can see
 them up here. We break them into some
 
 304
 00:11:10,560 --> 00:11:12,640
-them up here. We break them into some
 general categories. Now this is where I
 
 305
 00:11:12,640 --> 00:11:15,600
-general categories. Now this is where I
 want you as KERI experts to start
 
 306
 00:11:15,600 --> 00:11:17,760
-want you as KERI experts to start
 ticking off in your mind which one of
 
 307
 00:11:17,760 --> 00:11:20,000
-ticking off in your mind which one of
 these items are solved by KERI, which
 
 308
 00:11:20,000 --> 00:11:22,240
-these items are solved by KERI, which
 one of these ones are actually enhanced
 
 309
 00:11:22,240 --> 00:11:24,640
-one of these ones are actually enhanced
 by KERI, and also when we get to the
 
 310
 00:11:24,640 --> 00:11:26,160
-by KERI, and also when we get to the
 end, I'm going to give you a little
 
 311
 00:11:26,160 --> 00:11:27,600
-end, I'm going to give you a little
 here's what we're not going to do at the
 
 312
 00:11:27,600 --> 00:11:29,600
-here's what we're not going to do at the
 state level. Okay? So privacy and
 
 313
 00:11:29,600 --> 00:11:32,000
-state level. Okay? So privacy and
 autonomy this is pretty straightforward.
 
 314
 00:11:32,000 --> 00:11:34,399
-autonomy this is pretty straightforward.
 We want you to have interactions with
 
 315
 00:11:34,399 --> 00:11:36,320
-We want you to have interactions with
 your digital identity that the
 
 316
 00:11:36,320 --> 00:11:38,399
-your digital identity that the
 government does not monitor has no
 
 317
 00:11:38,399 --> 00:11:41,760
-government does not monitor has no
 capability to and also third parties.
 
 318
 00:11:41,760 --> 00:11:44,320
-capability to and also third parties.
 We do not want crossontext correlation.
 
 319
 00:11:44,320 --> 00:11:45,839
-We do not want crossontext correlation.
 We want you to have individual
 
 320
 00:11:45,839 --> 00:11:48,399
-We want you to have individual
 relationships and as such there are
 
 321
 00:11:48,399 --> 00:11:50,399
-relationships and as such there are
 technologies that will do that. Funny I
 
 322
 00:11:50,399 --> 00:11:51,519
-technologies that will do that. Funny I
 think there's one in the room here
 
 323
 00:11:51,519 --> 00:11:53,600
-think there's one in the room here
 that might do that. We do want you to
 
 324
 00:11:53,600 --> 00:11:54,959
-that might do that. We do want you to
 have this capability of selective
 
 325
 00:11:54,959 --> 00:11:57,519
-have this capability of selective
 disclosure. I was telling Mike a
 
 326
 00:11:57,519 --> 00:12:00,720
-disclosure. I was telling Mike a
 story where I went to my grandkids,
 
 327
 00:12:00,720 --> 00:12:03,120
-story where I went to my grandkids,
 picked them up for a fun day out and we
 
 328
 00:12:03,120 --> 00:12:05,200
-picked them up for a fun day out and we
 went to a trampoline place and the first
 
 329
 00:12:05,200 --> 00:12:07,839
-went to a trampoline place and the first
 thing they did was get grandpa to sign a
 
 330
 00:12:07,839 --> 00:12:10,160
-thing they did was get grandpa to sign a
 liability waiver. And as I was looking
 
 331
 00:12:10,160 --> 00:12:12,800
-liability waiver. And as I was looking
 at it, I first thing I thought is, you
 
 332
 00:12:12,800 --> 00:12:15,279
-at it, I first thing I thought is, you
 do not need my birthday. You just need
 
 333
 00:12:15,279 --> 00:12:16,959
-do not need my birthday. You just need
 to know that I'm old enough to enter
 
 334
 00:12:16,959 --> 00:12:18,959
-to know that I'm old enough to enter
 into a release of liability. And I kind
 
 335
 00:12:18,959 --> 00:12:21,279
-into a release of liability. And I kind
 of sparked because not only would that
 
 336
 00:12:21,279 --> 00:12:23,120
-of sparked because not only would that
 be a problem, I don't actually have
 
 337
 00:12:23,120 --> 00:12:25,200
-be a problem, I don't actually have
 permission for my daughter to release
 
 338
 00:12:25,200 --> 00:12:26,800
-permission for my daughter to release
 liability for her children. So there's
 
 339
 00:12:26,800 --> 00:12:28,160
-liability for her children. So there's
 some other things that could get cleaned
 
 340
 00:12:28,160 --> 00:12:30,560
-some other things that could get cleaned
 up in that situation, but this is part
 
 341
 00:12:30,560 --> 00:12:32,800
-up in that situation, but this is part
 of the community education. This is the
 
 342
 00:12:32,800 --> 00:12:35,040
-of the community education. This is the
 open sourcing of privacy we hope to have
 
 343
 00:12:35,040 --> 00:12:37,279
-open sourcing of privacy we hope to have
 happen is I'm not going to have every
 
 344
 00:12:37,279 --> 00:12:38,639
-happen is I'm not going to have every
 single interaction where I'm going to be
 
 345
 00:12:38,639 --> 00:12:40,959
-single interaction where I'm going to be
 able to ask why, but we do want to get
 
 346
 00:12:40,959 --> 00:12:43,760
-able to ask why, but we do want to get
 people and just across the world saying,
 
 347
 00:12:43,760 --> 00:12:45,519
-people and just across the world saying,
 "Do you really need that for this
 
 348
 00:12:45,519 --> 00:12:47,920
-"Do you really need that for this
 transaction?" And that's part of where I
 
 349
 00:12:47,920 --> 00:12:50,240
-transaction?" And that's part of where I
 say in keeping with what Chris has
 
 350
 00:12:50,240 --> 00:12:52,480
-say in keeping with what Chris has
 said, a 10-year journey. Now, if you
 
 351
 00:12:52,480 --> 00:12:55,920
-said, a 10-year journey. Now, if you
 think back in cyber security, how long
 
 352
 00:12:55,920 --> 00:12:57,440
-think back in cyber security, how long
 did it get people to understand the
 
 353
 00:12:57,440 --> 00:12:59,920
-did it get people to understand the
 Nigerian prince scam before we could go
 
 354
 00:12:59,920 --> 00:13:02,320
-Nigerian prince scam before we could go
 on to that's a fishing email and then
 
 355
 00:13:02,320 --> 00:13:04,639
-on to that's a fishing email and then
 that became part of the lexicon that
 
 356
 00:13:04,639 --> 00:13:07,839
-that became part of the lexicon that
 people use? It took a long time. I
 
 357
 00:13:07,839 --> 00:13:09,680
-people use? It took a long time. I
 call it about a 15-year window just
 
 358
 00:13:09,680 --> 00:13:11,040
-call it about a 15-year window just
 going back over my history and saying,
 
 359
 00:13:11,040 --> 00:13:12,480
-going back over my history and saying,
 "Yeah, it's about when we got people to
 
 360
 00:13:12,480 --> 00:13:14,880
-"Yeah, it's about when we got people to
 understand it." And still we fall for
 
 361
 00:13:14,880 --> 00:13:16,800
-understand it." And still we fall for
 these things. But this is the same
 
 362
 00:13:16,800 --> 00:13:18,079
-these things. But this is the same
 journey we're going to be on with
 
 363
 00:13:18,079 --> 00:13:20,240
-journey we're going to be on with
 selective disclosure. We have to get
 
 364
 00:13:20,240 --> 00:13:21,680
-selective disclosure. We have to get
 people understanding. No, no, no. You're
 
 365
 00:13:21,680 --> 00:13:24,000
-people understanding. No, no, no. You're
 in the driver's seat. You don't have to
 
 366
 00:13:24,000 --> 00:13:26,000
-in the driver's seat. You don't have to
 give up this information to be able to
 
 367
 00:13:26,000 --> 00:13:28,959
-give up this information to be able to
 receive services. Now, there's a major
 
 368
 00:13:28,959 --> 00:13:30,800
-receive services. Now, there's a major
 medical provider that I'm not going to
 
 369
 00:13:30,800 --> 00:13:32,639
-medical provider that I'm not going to
 mention them by name, but when you go in
 
 370
 00:13:32,639 --> 00:13:34,959
-mention them by name, but when you go in
 to receive services, they give you this
 
 371
 00:13:34,959 --> 00:13:36,720
-to receive services, they give you this
 great set of disclosures. And one of
 
 372
 00:13:36,720 --> 00:13:39,360
-great set of disclosures. And one of
 them is basically a blanket that says
 
 373
 00:13:39,360 --> 00:13:41,360
-them is basically a blanket that says
 you're seating all your rights for all
 
 374
 00:13:41,360 --> 00:13:43,040
-you're seating all your rights for all
 your data that we may use in research
 
 375
 00:13:43,040 --> 00:13:45,360
-your data that we may use in research
 purposes including biological samples.
 
 376
 00:13:45,360 --> 00:13:47,519
-purposes including biological samples.
 We don't have to notify you. And by the
 
 377
 00:13:47,519 --> 00:13:49,200
-We don't have to notify you. And by the
 way, if you don't agree to this, we're
 
 378
 00:13:49,200 --> 00:13:51,920
-way, if you don't agree to this, we're
 not treating you. That is scary that
 
 379
 00:13:51,920 --> 00:13:54,079
-not treating you. That is scary that
 they have that capability. But as we get
 
 380
 00:13:54,079 --> 00:13:56,160
-they have that capability. But as we get
 a community that's becoming more savvy
 
 381
 00:13:56,160 --> 00:13:57,680
-a community that's becoming more savvy
 about these things, not just small
 
 382
 00:13:57,680 --> 00:13:59,199
-about these things, not just small
 groups like us, but the larger
 
 383
 00:13:59,199 --> 00:14:01,600
-groups like us, but the larger
 community, we can affect change and make
 
 384
 00:14:01,600 --> 00:14:04,880
-community, we can affect change and make
 those policies flat out illegal. Okay?
 
 385
 00:14:04,880 --> 00:14:06,560
-those policies flat out illegal. Okay?
 And of course, one of the things that I
 
 386
 00:14:06,560 --> 00:14:09,279
-And of course, one of the things that I
 do want to mention is personas in the
 
 387
 00:14:09,279 --> 00:14:11,279
-do want to mention is personas in the
 term that we're using it in is basically
 
 388
 00:14:11,279 --> 00:14:13,519
-term that we're using it in is basically
 helping people understand. You don't
 
 389
 00:14:13,519 --> 00:14:14,959
-helping people understand. You don't
 have to stand there at the counter and
 
 390
 00:14:14,959 --> 00:14:17,440
-have to stand there at the counter and
 pick element A, element B, element.
 
 391
 00:14:17,440 --> 00:14:19,279
-pick element A, element B, element.
 There are certain transactions you're
 
 392
 00:14:19,279 --> 00:14:20,959
-There are certain transactions you're
 going to have that are going to be
 
 393
 00:14:20,959 --> 00:14:23,279
-going to have that are going to be
 standard. You know, if you if you go to
 
 394
 00:14:23,279 --> 00:14:25,920
-standard. You know, if you if you go to
 a bar or you might have a pub crawling a
 
 395
 00:14:25,920 --> 00:14:27,839
-a bar or you might have a pub crawling a
 persona that says, "Here's my name,
 
 396
 00:14:27,839 --> 00:14:30,320
-persona that says, "Here's my name,
 here's my face, and here's when I want
 
 397
 00:14:30,320 --> 00:14:32,560
-here's my face, and here's when I want
 you to cut me off and call the Uber for
 
 398
 00:14:32,560 --> 00:14:34,800
-you to cut me off and call the Uber for
 me." That's going to be something that
 
 399
 00:14:34,800 --> 00:14:36,880
-me." That's going to be something that
 we would expect the wallets to start
 
 400
 00:14:36,880 --> 00:14:39,279
-we would expect the wallets to start
 supporting is how do I map these things
 
 401
 00:14:39,279 --> 00:14:41,920
-supporting is how do I map these things
 very quickly so I can get to through
 
 402
 00:14:41,920 --> 00:14:43,680
-very quickly so I can get to through
 the interaction as frictionally
 
 403
 00:14:43,680 --> 00:14:46,560
-the interaction as frictionally
 frictionless as possible.
 
 404
 00:14:46,560 --> 00:14:48,720
-frictionless as possible.
 So we get the next one going. Okay, I
 
 405
 00:14:48,720 --> 00:14:50,959
-So we get the next one going. Okay, I
 talked a little bit very fast about
 
 406
 00:14:50,959 --> 00:14:53,279
-talked a little bit very fast about
 delegation and guardianship the other
 
 407
 00:14:53,279 --> 00:14:55,440
-delegation and guardianship the other
 day. Probably faster than I should have,
 
 408
 00:14:55,440 --> 00:15:00,150
-day. Probably faster than I should have,
 but we'll talk about it some more.
 
 409
@@ -2045,142 +1639,114 @@ the most critical relationships that we
 
 410
 00:15:04,720 --> 00:15:06,800
-the most critical relationships that we
 see both from a government and a
 
 411
 00:15:06,800 --> 00:15:09,440
-see both from a government and a
 societal capability. From a government
 
 412
 00:15:09,440 --> 00:15:12,079
-societal capability. From a government
 standpoint, there are multiple programs
 
 413
 00:15:12,079 --> 00:15:14,480
-standpoint, there are multiple programs
 that operate based on the relationship
 
 414
 00:15:14,480 --> 00:15:17,440
-that operate based on the relationship
 that a parent has to a child a
 
 415
 00:15:17,440 --> 00:15:20,320
-that a parent has to a child a
 caregiver to a foster child. You can you
 
 416
 00:15:20,320 --> 00:15:21,920
-caregiver to a foster child. You can you
 can go down the litany of them and
 
 417
 00:15:21,920 --> 00:15:23,600
-can go down the litany of them and
 you'll find there's a lot. In the story
 
 418
 00:15:23,600 --> 00:15:26,320
-you'll find there's a lot. In the story
 I told yesterday about getting a durable
 
 419
 00:15:26,320 --> 00:15:28,639
-I told yesterday about getting a durable
 medical power of attorney for my
 
 420
 00:15:28,639 --> 00:15:30,320
-medical power of attorney for my
 father while he was basically passed out
 
 421
 00:15:30,320 --> 00:15:32,959
-father while he was basically passed out
 on the bed. He doesn't really remember
 
 422
 00:15:32,959 --> 00:15:35,920
-on the bed. He doesn't really remember
 that. And there are situations where he
 
 423
 00:15:35,920 --> 00:15:38,399
-that. And there are situations where he
 may want to rescind that. How does he do
 
 424
 00:15:38,399 --> 00:15:40,639
-may want to rescind that. How does he do
 that? All we've got is a scroll on a
 
 425
 00:15:40,639 --> 00:15:42,160
-that? All we've got is a scroll on a
 piece of paper that I can guarantee you
 
 426
 00:15:42,160 --> 00:15:44,240
-piece of paper that I can guarantee you
 is not his signature, but it will hold
 
 427
 00:15:44,240 --> 00:15:46,399
-is not his signature, but it will hold
 up in court because a notary came, took
 
 428
 00:15:46,399 --> 00:15:47,920
-up in court because a notary came, took
 400 bucks in hash from me and said,
 
 429
 00:15:47,920 --> 00:15:50,320
-400 bucks in hash from me and said,
 "Yep, he had a positive
 
 430
 00:15:50,320 --> 00:15:52,800
-"Yep, he had a positive
 acknowledgement of what happened." So,
 
 431
 00:15:52,800 --> 00:15:54,639
-acknowledgement of what happened." So,
 when we have these situations of where
 
 432
 00:15:54,639 --> 00:15:56,880
-when we have these situations of where
 we have vulnerable individuals who need
 
 433
 00:15:56,880 --> 00:15:59,680
-we have vulnerable individuals who need
 assistance or you have an aging adult
 
 434
 00:15:59,680 --> 00:16:01,839
-assistance or you have an aging adult
 who quite frankly need you to help them
 
 435
 00:16:01,839 --> 00:16:03,839
-who quite frankly need you to help them
 with their finances and other
 
 436
 00:16:03,839 --> 00:16:07,040
-with their finances and other
 items, it's really cumbersome today.
 
 437
 00:16:07,040 --> 00:16:09,040
-items, it's really cumbersome today.
 And I've had to do this for one relative
 
 438
@@ -2190,1962 +1756,1570 @@ where we had to bring the court order
 
 439
 00:16:10,800 --> 00:16:12,959
-where we had to bring the court order
 down to the bank and then they went
 
 440
 00:16:12,959 --> 00:16:14,000
-down to the bank and then they went
 through this whole trust and
 
 441
 00:16:14,000 --> 00:16:16,560
-through this whole trust and
 verification proc process. They called
 
 442
 00:16:16,560 --> 00:16:18,560
-verification proc process. They called
 the courts. They wanted the make
 
 443
 00:16:18,560 --> 00:16:21,120
-the courts. They wanted the make
 sure that the all the numbers matched
 
 444
 00:16:21,120 --> 00:16:23,279
-sure that the all the numbers matched
 up on the case and everything. It was
 
 445
 00:16:23,279 --> 00:16:26,240
-up on the case and everything. It was
 ridiculous. And it and fortunately, they
 
 446
 00:16:26,240 --> 00:16:28,000
-ridiculous. And it and fortunately, they
 only had one bank. I was thinking, what
 
 447
 00:16:28,000 --> 00:16:30,079
-only had one bank. I was thinking, what
 if they had like an investment portfolio
 
 448
 00:16:30,079 --> 00:16:32,160
-if they had like an investment portfolio
 completely separate and that investment
 
 449
 00:16:32,160 --> 00:16:35,600
-completely separate and that investment
 company isn't even in my state? I
 
 450
 00:16:35,600 --> 00:16:37,360
-company isn't even in my state? I
 got chills on how long that would take
 
 451
 00:16:37,360 --> 00:16:40,240
-got chills on how long that would take
 me to help them out. And with the
 
 452
 00:16:40,240 --> 00:16:42,399
-me to help them out. And with the
 technologies that KERI is providing,
 
 453
 00:16:42,399 --> 00:16:44,399
-technologies that KERI is providing,
 there's the ability to really do that
 
 454
 00:16:44,399 --> 00:16:46,639
-there's the ability to really do that
 quickly through these the these designed
 
 455
 00:16:46,639 --> 00:16:48,959
-quickly through these the these designed
 and delegated guardian relationships.
 
 456
 00:16:48,959 --> 00:16:50,959
-and delegated guardian relationships.
 And as I mentioned in that little
 
 457
 00:16:50,959 --> 00:16:52,720
-And as I mentioned in that little
 vignette yesterday that all my brothers
 
 458
 00:16:52,720 --> 00:16:54,079
-vignette yesterday that all my brothers
 and sisters were sitting around the
 
 459
 00:16:54,079 --> 00:16:56,000
-and sisters were sitting around the
 table arguing,
 
 460
 00:16:56,000 --> 00:16:59,279
-table arguing,
 I realized there's six adults here that
 
 461
 00:16:59,279 --> 00:17:02,000
-I realized there's six adults here that
 could come to some consensus on what is
 
 462
 00:17:02,000 --> 00:17:04,640
-could come to some consensus on what is
 best for the situation. And it would be
 
 463
 00:17:04,640 --> 00:17:06,480
-best for the situation. And it would be
 in the interest of my father or my
 
 464
 00:17:06,480 --> 00:17:08,079
-in the interest of my father or my
 mother to have us have that sort of
 
 465
 00:17:08,079 --> 00:17:10,720
-mother to have us have that sort of
 capability. So multi- signature to be
 
 466
 00:17:10,720 --> 00:17:13,439
-capability. So multi- signature to be
 able to authorize these activities.
 
 467
 00:17:13,439 --> 00:17:15,919
-able to authorize these activities.
 Totally important. Now we talked a
 
 468
 00:17:15,919 --> 00:17:18,160
-Totally important. Now we talked a
 little bit about agentic AI. It's
 
 469
 00:17:18,160 --> 00:17:19,839
-little bit about agentic AI. It's
 coming. I'm playing with a lot of
 
 470
 00:17:19,839 --> 00:17:21,280
-coming. I'm playing with a lot of
 them. They're still in my little
 
 471
 00:17:21,280 --> 00:17:22,880
-them. They're still in my little
 sandbox, but some of them are getting
 
 472
 00:17:22,880 --> 00:17:25,280
-sandbox, but some of them are getting
 more useful. And one of the things that
 
 473
 00:17:25,280 --> 00:17:28,400
-more useful. And one of the things that
 I would find extremely useful is I was
 
 474
 00:17:28,400 --> 00:17:30,240
-I would find extremely useful is I was
 playing around with Open Claw and I
 
 475
 00:17:30,240 --> 00:17:31,840
-playing around with Open Claw and I
 decided I wanted to
 
 476
 00:17:31,840 --> 00:17:34,640
-decided I wanted to
 implement Geminis's or Google CLI
 
 477
 00:17:34,640 --> 00:17:37,600
-implement Geminis's or Google CLI
 and it's like well I usually ask Grock
 
 478
 00:17:37,600 --> 00:17:39,120
-and it's like well I usually ask Grock
 how to do that but I thought I would ask
 
 479
 00:17:39,120 --> 00:17:41,679
-how to do that but I thought I would ask
 Gemini directly and it came up with this
 
 480
 00:17:41,679 --> 00:17:43,520
-Gemini directly and it came up with this
 big fat don't do that is a
 
 481
 00:17:43,520 --> 00:17:45,760
-big fat don't do that is a
 violation of our policies and terms and
 
 482
 00:17:45,760 --> 00:17:47,520
-violation of our policies and terms and
 conditions and we will shut you down no
 
 483
 00:17:47,520 --> 00:17:51,280
-conditions and we will shut you down no
 ifs ands or buts you know bad you.
 
 484
 00:17:51,280 --> 00:17:54,640
-ifs ands or buts you know bad you.
 And I realized as I thought through what
 
 485
 00:17:54,640 --> 00:17:55,919
-And I realized as I thought through what
 would have been the implications of
 
 486
 00:17:55,919 --> 00:17:59,440
-would have been the implications of
 losing my I call it my burner account,
 
 487
 00:17:59,440 --> 00:18:02,720
-losing my I call it my burner account,
 but I have not dozens, I have hundreds
 
 488
 00:18:02,720 --> 00:18:04,799
-but I have not dozens, I have hundreds
 of logins that are tied to that.
 
 489
 00:18:04,799 --> 00:18:07,039
-of logins that are tied to that.
 Hundreds of logins. So if that company
 
 490
 00:18:07,039 --> 00:18:09,520
-Hundreds of logins. So if that company
 decided to take it away from me, I would
 
 491
 00:18:09,520 --> 00:18:11,600
-decided to take it away from me, I would
 break my digital life in more ways than
 
 492
 00:18:11,600 --> 00:18:14,080
-break my digital life in more ways than
 one. So
 
 493
 00:18:14,080 --> 00:18:15,760
-one. So
 here's your product placement idea. If
 
 494
 00:18:15,760 --> 00:18:18,640
-here's your product placement idea. If
 anyone wants to add this, I would love
 
 495
 00:18:18,640 --> 00:18:21,280
-anyone wants to add this, I would love
 that once my SEDI goes live that I have
 
 496
 00:18:21,280 --> 00:18:23,200
-that once my SEDI goes live that I have
 the capability to go and break all those
 
 497
 00:18:23,200 --> 00:18:24,799
-the capability to go and break all those
 relationships automatically and
 
 498
 00:18:24,799 --> 00:18:27,520
-relationships automatically and
 reassociate them with an identity that I
 
 499
 00:18:27,520 --> 00:18:29,760
-reassociate them with an identity that I
 physically control. That's where I want
 
 500
 00:18:29,760 --> 00:18:32,240
-physically control. That's where I want
 to end up because at the end of the day,
 
 501
 00:18:32,240 --> 00:18:35,520
-to end up because at the end of the day,
 if we leave all those accounts and logins
 
 502
 00:18:35,520 --> 00:18:37,520
-if we leave all those accounts and logins
 out there, we're seeding our power to
 
 503
 00:18:37,520 --> 00:18:39,919
-out there, we're seeding our power to
 control our own destiny. And of course,
 
 504
 00:18:39,919 --> 00:18:41,520
-control our own destiny. And of course,
 we've talked about the permission and
 
 505
 00:18:41,520 --> 00:18:44,640
-we've talked about the permission and
 consent the demo for KERI blocks.
 
 506
 00:18:44,640 --> 00:18:47,120
-consent the demo for KERI blocks.
 some of you might have seen at IIIW was
 
 507
 00:18:47,120 --> 00:18:48,480
-some of you might have seen at IIIW was
 fantastic. For those who didn't, and
 
 508
 00:18:48,480 --> 00:18:49,760
-fantastic. For those who didn't, and
 I'll just give you the two-minute
 
 509
 00:18:49,760 --> 00:18:52,240
-I'll just give you the two-minute
 overview, the goals are the same.
 
 510
 00:18:52,240 --> 00:18:54,320
-overview, the goals are the same.
 Parents do not want their children in
 
 511
 00:18:54,320 --> 00:18:56,559
-Parents do not want their children in
 environments where there are predators.
 
 512
 00:18:56,559 --> 00:18:57,919
-environments where there are predators.
 And we know that there are online
 
 513
 00:18:57,919 --> 00:19:00,080
-And we know that there are online
 communities that despite their best
 
 514
 00:19:00,080 --> 00:19:02,640
-communities that despite their best
 efforts, wink the profit
 
 515
 00:19:02,640 --> 00:19:04,400
-efforts, wink the profit
 motive is still there. So, they're not
 
 516
 00:19:04,400 --> 00:19:06,320
-motive is still there. So, they're not
 investing in the technologies that will
 
 517
 00:19:06,320 --> 00:19:08,720
-investing in the technologies that will
 protect children. And in this particular
 
 518
 00:19:08,720 --> 00:19:11,840
-protect children. And in this particular
 example, we had a parent credential,
 
 519
 00:19:11,840 --> 00:19:14,960
-example, we had a parent credential,
 a SEDI based credential that did a
 
 520
 00:19:14,960 --> 00:19:17,280
-a SEDI based credential that did a
 derivative credential for their child
 
 521
 00:19:17,280 --> 00:19:19,679
-derivative credential for their child
 and said, "This is my child. This they
 
 522
 00:19:19,679 --> 00:19:22,320
-and said, "This is my child. This they
 are 13 and they can be on this system
 
 523
 00:19:22,320 --> 00:19:25,120
-are 13 and they can be on this system
 from 5 to 7:00 p.m. two nights a week
 
 524
 00:19:25,120 --> 00:19:27,600
-from 5 to 7:00 p.m. two nights a week
 and they can only talk to other children
 
 525
 00:19:27,600 --> 00:19:30,000
-and they can only talk to other children
 who have a validated study credential."
 
 526
 00:19:30,000 --> 00:19:31,760
-who have a validated study credential."
 And it's fun to watch the chat window
 
 527
 00:19:31,760 --> 00:19:34,160
-And it's fun to watch the chat window
 and all the people disappear who are not
 
 528
 00:19:34,160 --> 00:19:36,160
-and all the people disappear who are not
 able to talk to your child. Now, some
 
 529
 00:19:36,160 --> 00:19:37,360
-able to talk to your child. Now, some
 people think that's that's overly
 
 530
 00:19:37,360 --> 00:19:38,720
-people think that's that's overly
 restrictive. You're going to have your
 
 531
 00:19:38,720 --> 00:19:41,440
-restrictive. You're going to have your
 genius child get around it anyway. That
 
 532
 00:19:41,440 --> 00:19:43,440
-genius child get around it anyway. That
 is where we do have that interface
 
 533
 00:19:43,440 --> 00:19:46,080
-is where we do have that interface
 between technology and law. Especially
 
 534
 00:19:46,080 --> 00:19:47,919
-between technology and law. Especially
 in Utah, we've talked a lot about the
 
 535
 00:19:47,919 --> 00:19:49,760
-in Utah, we've talked a lot about the
 harms to children through social media
 
 536
 00:19:49,760 --> 00:19:52,080
-harms to children through social media
 and other ways. I don't think it's it's
 
 537
 00:19:52,080 --> 00:19:53,760
-and other ways. I don't think it's it's
 going to be too much of a stretch once
 
 538
 00:19:53,760 --> 00:19:56,720
-going to be too much of a stretch once
 the technology is ubiquitous to have
 
 539
 00:19:56,720 --> 00:19:59,520
-the technology is ubiquitous to have
 the law catch up to help parents
 
 540
 00:19:59,520 --> 00:20:01,520
-the law catch up to help parents
 manage their children's online
 
 541
 00:20:01,520 --> 00:20:03,919
-manage their children's online
 environments. Okay. Security and
 
 542
 00:20:03,919 --> 00:20:06,400
-environments. Okay. Security and
 recovery. One of the things that when I
 
 543
 00:20:06,400 --> 00:20:08,480
-recovery. One of the things that when I
 read Sam's paper for the very first
 
 544
 00:20:08,480 --> 00:20:11,760
-read Sam's paper for the very first
 time, I was like, "Okay, why is it that
 
 545
 00:20:11,760 --> 00:20:13,760
-time, I was like, "Okay, why is it that
 we've been doing PKI this way for like
 
 546
 00:20:13,760 --> 00:20:16,559
-we've been doing PKI this way for like
 25 years at this point and nobody
 
 547
 00:20:16,559 --> 00:20:18,080
-25 years at this point and nobody
 figured out this really obvious thing,
 
 548
 00:20:18,080 --> 00:20:19,760
-figured out this really obvious thing,
 which is if you can't tell what the key
 
 549
 00:20:19,760 --> 00:20:21,840
-which is if you can't tell what the key
 state is and where you're going next,
 
 550
 00:20:21,840 --> 00:20:23,520
-state is and where you're going next,
 you're back to that whole trust model
 
 551
 00:20:23,520 --> 00:20:25,520
-you're back to that whole trust model
 and all the things we did to make CA's
 
 552
 00:20:25,520 --> 00:20:27,440
-and all the things we did to make CA's
 work and the intermediate certificate
 
 553
 00:20:27,440 --> 00:20:28,640
-work and the intermediate certificate
 and by the way, get rid of this one."
 
 554
 00:20:28,640 --> 00:20:31,520
-and by the way, get rid of this one."
 And I was like, Sam, it was genius how
 
 555
 00:20:31,520 --> 00:20:33,440
-And I was like, Sam, it was genius how
 simple it was when you looked at it, but
 
 556
 00:20:33,440 --> 00:20:35,280
-simple it was when you looked at it, but
 it was like it was one of those things
 
 557
 00:20:35,280 --> 00:20:37,280
-it was like it was one of those things
 that until somebody came up with that
 
 558
 00:20:37,280 --> 00:20:38,640
-that until somebody came up with that
 answer, we were going to still suffer
 
 559
 00:20:38,640 --> 00:20:40,960
-answer, we were going to still suffer
 from the same problem. So where KERI
 
 560
 00:20:40,960 --> 00:20:42,720
-from the same problem. So where KERI
 has done a lot of things to help us out
 
 561
 00:20:42,720 --> 00:20:44,559
-has done a lot of things to help us out
 and of course like Sam and I have talked
 
 562
 00:20:44,559 --> 00:20:45,919
-and of course like Sam and I have talked
 about this over the last three years
 
 563
 00:20:45,919 --> 00:20:48,480
-about this over the last three years
 about detection of compromise, the KERI
 
 564
 00:20:48,480 --> 00:20:52,480
-about detection of compromise, the KERI
 specification continues to get
 
 565
 00:20:52,480 --> 00:20:54,159
-specification continues to get
 updated to meet the real world
 
 566
 00:20:54,159 --> 00:20:56,880
-updated to meet the real world
 demands that we have. And one of those
 
 567
 00:20:56,880 --> 00:20:58,799
-demands that we have. And one of those
 is this whole idea of the mutual
 
 568
 00:20:58,799 --> 00:21:00,400
-is this whole idea of the mutual
 authentication. We've just talked about
 
 569
 00:21:00,400 --> 00:21:02,400
-authentication. We've just talked about
 that with the phones. We've talked about
 
 570
 00:21:02,400 --> 00:21:05,120
-that with the phones. We've talked about
 that with healthcare providers. And I
 
 571
 00:21:05,120 --> 00:21:07,039
-that with healthcare providers. And I
 will predict something that is going to
 
 572
 00:21:07,039 --> 00:21:08,559
-will predict something that is going to
 be in the future. So we have health
 
 573
 00:21:08,559 --> 00:21:10,240
-be in the future. So we have health
 information networks all across the
 
 574
 00:21:10,240 --> 00:21:12,320
-information networks all across the
 United States. And they make a lot of
 
 575
 00:21:12,320 --> 00:21:14,240
-United States. And they make a lot of
 money brokering the transaction or
 
 576
 00:21:14,240 --> 00:21:16,320
-money brokering the transaction or
 uplifting it from one EDI format to
 
 577
 00:21:16,320 --> 00:21:18,960
-uplifting it from one EDI format to
 another. What a world it would be is if
 
 578
 00:21:18,960 --> 00:21:21,039
-another. What a world it would be is if
 I'm the provider and I can reach out
 
 579
 00:21:21,039 --> 00:21:22,640
-I'm the provider and I can reach out
 directly to a discovered payer
 
 580
 00:21:22,640 --> 00:21:24,640
-directly to a discovered payer
 interface. we have this mutual
 
 581
 00:21:24,640 --> 00:21:28,000
-interface. we have this mutual
 authentication and I can just move that
 
 582
 00:21:28,000 --> 00:21:31,120
-authentication and I can just move that
 significantly changes the overhead that
 
 583
 00:21:31,120 --> 00:21:33,760
-significantly changes the overhead that
 a provider office has to have. I mean I
 
 584
 00:21:33,760 --> 00:21:36,320
-a provider office has to have. I mean I
 I know that my dentist for example he
 
 585
 00:21:36,320 --> 00:21:38,240
-I know that my dentist for example he
 has
 
 586
 00:21:38,240 --> 00:21:40,400
-has
 about nine administrative personnel.
 
 587
 00:21:40,400 --> 00:21:42,559
-about nine administrative personnel.
 He's one dentist with two hygienists but
 
 588
 00:21:42,559 --> 00:21:44,240
-He's one dentist with two hygienists but
 he does a lot of work in social
 
 589
 00:21:44,240 --> 00:21:46,320
-he does a lot of work in social
 services programs and he has to have
 
 590
 00:21:46,320 --> 00:21:48,640
-services programs and he has to have
 that level of people to continue to keep
 
 591
 00:21:48,640 --> 00:21:50,799
-that level of people to continue to keep
 up with the paperwork. And of course
 
 592
 00:21:50,799 --> 00:21:52,559
-up with the paperwork. And of course
 that's kind of reflected in his pricing.
 
 593
 00:21:52,559 --> 00:21:54,640
-that's kind of reflected in his pricing.
 So every couple years he goes off plan
 
 594
 00:21:54,640 --> 00:21:56,400
-So every couple years he goes off plan
 and I have to pay more to use his
 
 595
 00:21:56,400 --> 00:21:58,320
-and I have to pay more to use his
 services. But if we could get those
 
 596
 00:21:58,320 --> 00:22:00,159
-services. But if we could get those
 administrative burdens lowered, think of
 
 597
 00:22:00,159 --> 00:22:03,440
-administrative burdens lowered, think of
 where we could go.
 
 598
 00:22:03,440 --> 00:22:05,120
-where we could go.
 No credential works unless there's
 
 599
 00:22:05,120 --> 00:22:07,120
-No credential works unless there's
 comprehensive utility. One of the
 
 600
 00:22:07,120 --> 00:22:09,360
-comprehensive utility. One of the
 long-standing jokes about the mobile
 
 601
 00:22:09,360 --> 00:22:12,240
-long-standing jokes about the mobile
 driver's license is that it works at the
 
 602
 00:22:12,240 --> 00:22:15,679
-driver's license is that it works at the
 TSA. Well, it doesn't. Their terminals
 
 603
 00:22:15,679 --> 00:22:17,120
-TSA. Well, it doesn't. Their terminals
 are down. They're like, "Well, hey, do
 
 604
 00:22:17,120 --> 00:22:18,720
-are down. They're like, "Well, hey, do
 you have your physical license?" And
 
 605
 00:22:18,720 --> 00:22:20,640
-you have your physical license?" And
 I've heard this one myself because that
 
 606
 00:22:20,640 --> 00:22:22,320
-I've heard this one myself because that
 interaction will go a lot faster than
 
 607
 00:22:22,320 --> 00:22:23,919
-interaction will go a lot faster than
 trying to play around with the terminal.
 
 608
 00:22:23,919 --> 00:22:26,960
-trying to play around with the terminal.
 So it doesn't have a lot of usability
 
 609
 00:22:26,960 --> 00:22:30,640
-So it doesn't have a lot of usability
 and the models were wrong.
 
 610
 00:22:30,640 --> 00:22:32,240
-and the models were wrong.
 One of those models was is we tried to
 
 611
 00:22:32,240 --> 00:22:33,760
-One of those models was is we tried to
 monetize in the wrong way or at least
 
 612
 00:22:33,760 --> 00:22:36,880
-monetize in the wrong way or at least
 vendors did. In our case the
 
 613
 00:22:36,880 --> 00:22:39,440
-vendors did. In our case the
 our we're an alcohol control state. So
 
 614
 00:22:39,440 --> 00:22:41,600
-our we're an alcohol control state. So
 you have to go to a state liquor store.
 
 615
 00:22:41,600 --> 00:22:43,120
-you have to go to a state liquor store.
 But when you are the director of the
 
 616
 00:22:43,120 --> 00:22:44,480
-But when you are the director of the
 state liquor store and a vendor comes to
 
 617
 00:22:44,480 --> 00:22:45,919
-state liquor store and a vendor comes to
 you and says, "Hey, by the way, I need
 
 618
 00:22:45,919 --> 00:22:48,559
-you and says, "Hey, by the way, I need
 you to pay X number of dollars per month
 
 619
 00:22:48,559 --> 00:22:50,559
-you to pay X number of dollars per month
 per store to be able to accept this
 
 620
 00:22:50,559 --> 00:22:51,679
-per store to be able to accept this
 digital credential." And they're like,
 
 621
 00:22:51,679 --> 00:22:53,760
-digital credential." And they're like,
 "Wait a minute. Isn't that issued by
 
 622
 00:22:53,760 --> 00:22:55,600
-"Wait a minute. Isn't that issued by
 public safety?
 
 623
 00:22:55,600 --> 00:22:58,640
-public safety?
 Why do I pay money to public
 
 624
 00:22:58,640 --> 00:23:00,880
-Why do I pay money to public
 safety or to a vendor to accept a
 
 625
 00:23:00,880 --> 00:23:02,559
-safety or to a vendor to accept a
 credential that the state issued?" And
 
 626
 00:23:02,559 --> 00:23:04,880
-credential that the state issued?" And
 of course, their answer was so logical.
 
 627
 00:23:04,880 --> 00:23:06,640
-of course, their answer was so logical.
 Well, I can look at the I can look at
 
 628
 00:23:06,640 --> 00:23:08,480
-Well, I can look at the I can look at
 the state ID or I can look at the
 
 629
 00:23:08,480 --> 00:23:11,280
-the state ID or I can look at the
 driver's license for free. So adoption
 
 630
 00:23:11,280 --> 00:23:13,679
-driver's license for free. So adoption
 is a problem. There are a numbers of
 
 631
 00:23:13,679 --> 00:23:16,400
-is a problem. There are a numbers of
 areas where we hope to see functionality
 
 632
 00:23:16,400 --> 00:23:18,159
-areas where we hope to see functionality
 come along like I talked about replacing
 
 633
 00:23:18,159 --> 00:23:20,000
-come along like I talked about replacing
 username and passwords or taking over
 
 634
 00:23:20,000 --> 00:23:22,400
-username and passwords or taking over
 accounts. We want to make sure that this
 
 635
 00:23:22,400 --> 00:23:24,559
-accounts. We want to make sure that this
 area which is where the ACDC comes in
 
 636
 00:23:24,559 --> 00:23:27,679
-area which is where the ACDC comes in
 great is offline verification. I can't
 
 637
 00:23:27,679 --> 00:23:29,760
-great is offline verification. I can't
 have my environment completely breaking
 
 638
 00:23:29,760 --> 00:23:31,840
-have my environment completely breaking
 because I don't have online access at
 
 639
 00:23:31,840 --> 00:23:34,400
-because I don't have online access at
 all times. Now, Joe Jackson during our
 
 640
 00:23:34,400 --> 00:23:37,280
-all times. Now, Joe Jackson during our
 our study panel, he talked about our
 
 641
 00:23:37,280 --> 00:23:40,559
-our study panel, he talked about our
 offhighway vehicle OV certificate
 
 642
 00:23:40,559 --> 00:23:42,880
-offhighway vehicle OV certificate
 that we did. And when Joe and I talked
 
 643
 00:23:42,880 --> 00:23:44,720
-that we did. And when Joe and I talked
 about it, I said, "Joe, this is fine for
 
 644
 00:23:44,720 --> 00:23:47,360
-about it, I said, "Joe, this is fine for
 X509 technology. Completely fine. It's a
 
 645
 00:23:47,360 --> 00:23:49,520
-X509 technology. Completely fine. It's a
 lifetime endorsement. It's never
 
 646
 00:23:49,520 --> 00:23:52,240
-lifetime endorsement. It's never
 revocable and you have to supply a
 
 647
 00:23:52,240 --> 00:23:54,159
-revocable and you have to supply a
 primary credential with it. So, just
 
 648
 00:23:54,159 --> 00:23:56,240
-primary credential with it. So, just
 because you show the QR code and it has
 
 649
 00:23:56,240 --> 00:23:58,240
-because you show the QR code and it has
 your information embedded in it, you
 
 650
 00:23:58,240 --> 00:24:00,159
-your information embedded in it, you
 have to show a driver's license." So we
 
 651
 00:24:00,159 --> 00:24:02,480
-have to show a driver's license." So we
 said, let's go down the road with this
 
 652
 00:24:02,480 --> 00:24:05,200
-said, let's go down the road with this
 one because we want to make sure that
 
 653
 00:24:05,200 --> 00:24:06,400
-one because we want to make sure that
 there's an appetite for these
 
 654
 00:24:06,400 --> 00:24:08,799
-there's an appetite for these
 credentials and that it would be
 
 655
 00:24:08,799 --> 00:24:10,960
-credentials and that it would be
 extremely low risk. So Joe told you a
 
 656
 00:24:10,960 --> 00:24:12,720
-extremely low risk. So Joe told you a
 little bit about and things we've
 
 657
 00:24:12,720 --> 00:24:15,039
-little bit about and things we've
 learned along the way there. But I'll
 
 658
 00:24:15,039 --> 00:24:16,640
-learned along the way there. But I'll
 tell you what, the funniest thing that
 
 659
 00:24:16,640 --> 00:24:19,279
-tell you what, the funniest thing that
 happened is once we release those, the
 
 660
 00:24:19,279 --> 00:24:21,200
-happened is once we release those, the
 boating community, everyone who's owns a
 
 661
 00:24:21,200 --> 00:24:22,799
-boating community, everyone who's owns a
 boat, I've heard this story like 40
 
 662
 00:24:22,799 --> 00:24:25,279
-boat, I've heard this story like 40
 times now. They're like, I own a boat
 
 663
 00:24:25,279 --> 00:24:27,279
-times now. They're like, I own a boat
 and you guys have this OHV thing that I
 
 664
 00:24:27,279 --> 00:24:29,360
-and you guys have this OHV thing that I
 could have on my phone. Why do I have to
 
 665
 00:24:29,360 --> 00:24:31,360
-could have on my phone. Why do I have to
 have a printed PDF? And they always say
 
 666
 00:24:31,360 --> 00:24:34,240
-have a printed PDF? And they always say
 paper on my boat. We're in the water.
 
 667
 00:24:34,240 --> 00:24:36,559
-paper on my boat. We're in the water.
 Why do I have to have paper? So, we kind
 
 668
 00:24:36,559 --> 00:24:38,400
-Why do I have to have paper? So, we kind
 of smile and say things are coming. The
 
 669
 00:24:38,400 --> 00:24:40,480
-of smile and say things are coming. The
 the appetite is there for these
 
 670
 00:24:40,480 --> 00:24:43,440
-the appetite is there for these
 credentials. We have no loss of ideas
 
 671
 00:24:43,440 --> 00:24:45,120
-credentials. We have no loss of ideas
 and use cases of where we want them to
 
 672
 00:24:45,120 --> 00:24:49,919
-and use cases of where we want them to
 go. Key to the whole success is the open
 
 673
 00:24:49,919 --> 00:24:52,640
-go. Key to the whole success is the open
 standards, no vendor lockin.
 
 674
 00:24:52,640 --> 00:24:55,440
-standards, no vendor lockin.
 We have been very clear to the community
 
 675
 00:24:55,440 --> 00:24:58,480
-We have been very clear to the community
 that security by obscurity is never
 
 676
 00:24:58,480 --> 00:24:59,919
-that security by obscurity is never
 going to be a solution we're ever going
 
 677
 00:24:59,919 --> 00:25:01,440
-going to be a solution we're ever going
 to be interested. Somebody brings me a
 
 678
 00:25:01,440 --> 00:25:02,960
-to be interested. Somebody brings me a
 closed source package and says it's
 
 679
 00:25:02,960 --> 00:25:05,600
-closed source package and says it's
 magic, I don't believe them. I want to
 
 680
 00:25:05,600 --> 00:25:08,480
-magic, I don't believe them. I want to
 see under the hood and in some cases I
 
 681
 00:25:08,480 --> 00:25:10,640
-see under the hood and in some cases I
 lack the time these days, but if I can
 
 682
 00:25:10,640 --> 00:25:12,799
-lack the time these days, but if I can
 get down into the code and look at A
 
 683
 00:25:12,799 --> 00:25:15,520
-get down into the code and look at A
 plus B does equal C, I get a lot more
 
 684
 00:25:15,520 --> 00:25:17,760
-plus B does equal C, I get a lot more
 comfortable. And I try to point out to
 
 685
 00:25:17,760 --> 00:25:20,400
-comfortable. And I try to point out to
 non-technical people, the reason Apache
 
 686
 00:25:20,400 --> 00:25:23,919
-non-technical people, the reason Apache
 is such a successful project and how has
 
 687
 00:25:23,919 --> 00:25:26,240
-is such a successful project and how has
 the high level of security it does is
 
 688
 00:25:26,240 --> 00:25:28,559
-the high level of security it does is
 there's lots of people looking at it and
 
 689
 00:25:28,559 --> 00:25:30,720
-there's lots of people looking at it and
 that's where we need to be in identity
 
 690
 00:25:30,720 --> 00:25:33,279
-that's where we need to be in identity
 systems and identity credentials because
 
 691
 00:25:33,279 --> 00:25:35,360
-systems and identity credentials because
 I can tell you across this room and I
 
 692
 00:25:35,360 --> 00:25:36,960
-I can tell you across this room and I
 know some of you by face, some of you by
 
 693
 00:25:36,960 --> 00:25:39,120
-know some of you by face, some of you by
 name, there is a lot of expertise that
 
 694
 00:25:39,120 --> 00:25:42,080
-name, there is a lot of expertise that
 can get into a room and say A and B are
 
 695
 00:25:42,080 --> 00:25:44,640
-can get into a room and say A and B are
 not equaling C and here's why. And as a
 
 696
 00:25:44,640 --> 00:25:47,200
-not equaling C and here's why. And as a
 state, I don't want to have to broker
 
 697
 00:25:47,200 --> 00:25:49,840
-state, I don't want to have to broker
 broker that and be able to say, "Yeah,
 
 698
 00:25:49,840 --> 00:25:51,760
-broker that and be able to say, "Yeah,
 we made that decision on our own. We
 
 699
 00:25:51,760 --> 00:25:53,440
-we made that decision on our own. We
 want the community to support us because
 
 700
 00:25:53,440 --> 00:25:56,400
-want the community to support us because
 ultimately the beauty of this is it's
 
 701
 00:25:56,400 --> 00:25:58,799
-ultimately the beauty of this is it's
 your data." And by golly, you're going
 
 702
 00:25:58,799 --> 00:26:00,400
-your data." And by golly, you're going
 to care about your data. So, I'm going
 
 703
 00:26:00,400 --> 00:26:02,240
-to care about your data. So, I'm going
 to get some really good feedback as we
 
 704
 00:26:02,240 --> 00:26:04,799
-to get some really good feedback as we
 go along in this program, which we have.
 
 705
 00:26:04,799 --> 00:26:06,720
-go along in this program, which we have.
 And we enjoy the fact that you can do
 
 706
 00:26:06,720 --> 00:26:08,799
-And we enjoy the fact that you can do
 that. And as Chris has said, if a
 
 707
 00:26:08,799 --> 00:26:10,880
-that. And as Chris has said, if a
 standard requires you to pay to be able
 
 708
 00:26:10,880 --> 00:26:12,559
-standard requires you to pay to be able
 to understand your interface between you
 
 709
 00:26:12,559 --> 00:26:14,159
-to understand your interface between you
 and your government or how your identity
 
 710
 00:26:14,159 --> 00:26:16,000
-and your government or how your identity
 works, that's a non-starter for us. We
 
 711
 00:26:16,000 --> 00:26:18,480
-works, that's a non-starter for us. We
 just we just won't go there.
 
 712
 00:26:18,480 --> 00:26:20,720
-just we just won't go there.
 Now, this part about any app becoming a
 
 713
 00:26:20,720 --> 00:26:23,200
-Now, this part about any app becoming a
 wallet, what we mean by that is we do
 
 714
 00:26:23,200 --> 00:26:24,640
-wallet, what we mean by that is we do
 have some digital credentials in the
 
 715
 00:26:24,640 --> 00:26:26,400
-have some digital credentials in the
 state already. For example, if you
 
 716
 00:26:26,400 --> 00:26:28,000
-state already. For example, if you
 download the Department of Natural
 
 717
 00:26:28,000 --> 00:26:30,720
-download the Department of Natural
 Resources app, you can get a QR code for
 
 718
 00:26:30,720 --> 00:26:32,159
-Resources app, you can get a QR code for
 your fishing license and your hunting
 
 719
 00:26:32,159 --> 00:26:34,320
-your fishing license and your hunting
 license. That's great. But that's only
 
 720
 00:26:34,320 --> 00:26:36,480
-license. That's great. But that's only
 inside their little tiny ecosystem. We
 
 721
 00:26:36,480 --> 00:26:37,840
-inside their little tiny ecosystem. We
 want to be able to broaden that out. But
 
 722
 00:26:37,840 --> 00:26:38,799
-want to be able to broaden that out. But
 that doesn't mean they have to throw
 
 723
 00:26:38,799 --> 00:26:40,400
-that doesn't mean they have to throw
 away their app because they've they've
 
 724
 00:26:40,400 --> 00:26:41,919
-away their app because they've they've
 invested some good money in it. They
 
 725
 00:26:41,919 --> 00:26:44,159
-invested some good money in it. They
 also have some poaching features.
 
 726
 00:26:44,159 --> 00:26:45,760
-also have some poaching features.
 So you can take a picture of a carcass
 
 727
 00:26:45,760 --> 00:26:48,320
-So you can take a picture of a carcass
 and a GPS and it will send it to you DNR
 
 728
 00:26:48,320 --> 00:26:50,159
-and a GPS and it will send it to you DNR
 enforcement officers. So we don't want
 
 729
 00:26:50,159 --> 00:26:51,760
-enforcement officers. So we don't want
 to say no you got to you got to go
 
 730
 00:26:51,760 --> 00:26:54,320
-to say no you got to you got to go
 through the wallet only there but there
 
 731
 00:26:54,320 --> 00:26:56,720
-through the wallet only there but there
 are going to be instances where we will
 
 732
 00:26:56,720 --> 00:26:58,480
-are going to be instances where we will
 see extension of study credentials
 
 733
 00:26:58,480 --> 00:27:00,320
-see extension of study credentials
 inside existing applications in the
 
 734
 00:27:00,320 --> 00:27:02,799
-inside existing applications in the
 state. The other thing that we are
 
 735
 00:27:02,799 --> 00:27:05,279
-state. The other thing that we are
 very aware of is the first mover
 
 736
 00:27:05,279 --> 00:27:07,039
-very aware of is the first mover
 advantage for a lot of people is not
 
 737
 00:27:07,039 --> 00:27:09,120
-advantage for a lot of people is not
 going to be going through the platforms.
 
 738
 00:27:09,120 --> 00:27:10,400
-going to be going through the platforms.
 They're going to be doing their own
 
 739
 00:27:10,400 --> 00:27:13,039
-They're going to be doing their own
 trusted apps. To me, there are many
 
 740
 00:27:13,039 --> 00:27:15,120
-trusted apps. To me, there are many
 roots of trust that can come into your
 
 741
 00:27:15,120 --> 00:27:17,760
-roots of trust that can come into your
 relationships. For example, I may trust
 
 742
 00:27:17,760 --> 00:27:20,320
-relationships. For example, I may trust
 my bank and you say, "Hey, we're going
 
 743
 00:27:20,320 --> 00:27:22,159
-my bank and you say, "Hey, we're going
 to help you out with your Wells Fargo
 
 744
 00:27:22,159 --> 00:27:24,000
-to help you out with your Wells Fargo
 wallet and we know about these
 
 745
 00:27:24,000 --> 00:27:26,080
-wallet and we know about these
 pre-key rotations and we provide a
 
 746
 00:27:26,080 --> 00:27:28,000
-pre-key rotations and we provide a
 service where you can escrow those keys
 
 747
 00:27:28,000 --> 00:27:30,720
-service where you can escrow those keys
 with us and using your multisig
 
 748
 00:27:30,720 --> 00:27:33,679
-with us and using your multisig
 capability. Us plus you plus whatever
 
 749
 00:27:33,679 --> 00:27:36,159
-capability. Us plus you plus whatever
 you know key material you have, we can
 
 750
 00:27:36,159 --> 00:27:38,080
-you know key material you have, we can
 unlock your next key for you. That's
 
 751
 00:27:38,080 --> 00:27:40,240
-unlock your next key for you. That's
 fine and that's perfect. And I want to
 
 752
 00:27:40,240 --> 00:27:42,240
-fine and that's perfect. And I want to
 harp on this just a little bit. The
 
 753
 00:27:42,240 --> 00:27:45,120
-harp on this just a little bit. The
 state's credential is the SEDI. We are
 
 754
 00:27:45,120 --> 00:27:47,039
-state's credential is the SEDI. We are
 not the wallet. We're not your key
 
 755
 00:27:47,039 --> 00:27:49,679
-not the wallet. We're not your key
 escrow. We're not your key recovery. I
 
 756
 00:27:49,679 --> 00:27:51,600
-escrow. We're not your key recovery. I
 kind of smile and my wife says
 
 757
 00:27:51,600 --> 00:27:52,880
-kind of smile and my wife says
 this a lot. She's a children's
 
 758
 00:27:52,880 --> 00:27:54,399
-this a lot. She's a children's
 librarian. She works in a public
 
 759
 00:27:54,399 --> 00:27:57,440
-librarian. She works in a public
 library. She has a little counter. It's
 
 760
 00:27:57,440 --> 00:27:59,279
-library. She has a little counter. It's
 almost her personal drinking game where
 
 761
 00:27:59,279 --> 00:28:02,399
-almost her personal drinking game where
 she says, and I quote, "I'm sorry, I do
 
 762
 00:28:02,399 --> 00:28:04,480
-she says, and I quote, "I'm sorry, I do
 not know your Gmail password. I can't
 
 763
 00:28:04,480 --> 00:28:06,240
-not know your Gmail password. I can't
 help you with that. Do you have somebody
 
 764
 00:28:06,240 --> 00:28:08,720
-help you with that. Do you have somebody
 you can call to help you with that?" And
 
 765
 00:28:08,720 --> 00:28:10,480
-you can call to help you with that?" And
 she has people who argue with her. No,
 
 766
 00:28:10,480 --> 00:28:12,559
-she has people who argue with her. No,
 no, I used this computer yesterday. You
 
 767
 00:28:12,559 --> 00:28:15,679
-no, I used this computer yesterday. You
 should know my password. And so from the
 
 768
 00:28:15,679 --> 00:28:17,440
-should know my password. And so from the
 state, I suspect we're going to get
 
 769
 00:28:17,440 --> 00:28:18,640
-state, I suspect we're going to get
 something like that where people are
 
 770
 00:28:18,640 --> 00:28:20,080
-something like that where people are
 going to be like, well, you issued it.
 
 771
 00:28:20,080 --> 00:28:22,240
-going to be like, well, you issued it.
 You should know how to recover my keys.
 
 772
 00:28:22,240 --> 00:28:24,320
-You should know how to recover my keys.
 Nope. That and that's part of this whole
 
 773
 00:28:24,320 --> 00:28:26,399
-Nope. That and that's part of this whole
 idea of, hey, I'm turning it over to
 
 774
 00:28:26,399 --> 00:28:28,960
-idea of, hey, I'm turning it over to
 you. Now, with the wallets, one of the
 
 775
 00:28:28,960 --> 00:28:30,880
-you. Now, with the wallets, one of the
 things I do also want to say is that the
 
 776
 00:28:30,880 --> 00:28:32,399
-things I do also want to say is that the
 state definitely is going to be looking
 
 777
 00:28:32,399 --> 00:28:34,880
-state definitely is going to be looking
 for third parties who will go and audit
 
 778
 00:28:34,880 --> 00:28:37,120
-for third parties who will go and audit
 wallets and provide some we'll call
 
 779
 00:28:37,120 --> 00:28:39,039
-wallets and provide some we'll call
 them seals of approval. What I
 
 780
 00:28:39,039 --> 00:28:41,039
-them seals of approval. What I
 anticipate happening is when you go to
 
 781
 00:28:41,039 --> 00:28:42,960
-anticipate happening is when you go to
 the state to get your
 
 782
 00:28:42,960 --> 00:28:45,200
-the state to get your
 endorsement for your study is we're
 
 783
 00:28:45,200 --> 00:28:46,960
-endorsement for your study is we're
 expecting a cryptographic hash and a
 
 784
 00:28:46,960 --> 00:28:48,559
-expecting a cryptographic hash and a
 signature of the application you're
 
 785
 00:28:48,559 --> 00:28:51,039
-signature of the application you're
 using. And I can say okay yeah that's
 
 786
 00:28:51,039 --> 00:28:53,039
-using. And I can say okay yeah that's
 one of the ones we recognize as meeting
 
 787
 00:28:53,039 --> 00:28:54,799
-one of the ones we recognize as meeting
 the standards of the state. We will go
 
 788
 00:28:54,799 --> 00:28:57,120
-the standards of the state. We will go
 ahead and finish up this issuance
 
 789
 00:28:57,120 --> 00:28:59,279
-ahead and finish up this issuance
 process and give it to you. But or
 
 790
 00:28:59,279 --> 00:29:00,960
-process and give it to you. But or
 Steve McCown Steve McCown's going to
 
 791
 00:29:00,960 --> 00:29:02,960
-Steve McCown Steve McCown's going to
 take the source code directly and he's
 
 792
 00:29:02,960 --> 00:29:04,480
-take the source code directly and he's
 going to compile his own wallet and make
 
 793
 00:29:04,480 --> 00:29:06,720
-going to compile his own wallet and make
 sure it meets his requirements. So when
 
 794
 00:29:06,720 --> 00:29:09,360
-sure it meets his requirements. So when
 Steve comes to the state and says here's
 
 795
 00:29:09,360 --> 00:29:11,520
-Steve comes to the state and says here's
 my wallet and in the presentation he
 
 796
 00:29:11,520 --> 00:29:13,279
-my wallet and in the presentation he
 provides us a hash and a signature we
 
 797
 00:29:13,279 --> 00:29:16,559
-provides us a hash and a signature we
 don't know we'll say okay Steve we're
 
 798
 00:29:16,559 --> 00:29:18,480
-don't know we'll say okay Steve we're
 happy to issue to this to you but we
 
 799
 00:29:18,480 --> 00:29:20,799
-happy to issue to this to you but we
 also want you to affirmatively consent
 
 800
 00:29:20,799 --> 00:29:22,480
-also want you to affirmatively consent
 that the state doesn't know anything
 
 801
 00:29:22,480 --> 00:29:24,799
-that the state doesn't know anything
 about the security of what you're doing.
 
 802
 00:29:24,799 --> 00:29:27,200
-about the security of what you're doing.
 Yes, you want it. Here you go. Because
 
 803
 00:29:27,200 --> 00:29:28,720
-Yes, you want it. Here you go. Because
 we do want that freedom of choice and
 
 804
 00:29:28,720 --> 00:29:30,559
-we do want that freedom of choice and
 the ability for people to operate, but
 
 805
 00:29:30,559 --> 00:29:32,720
-the ability for people to operate, but
 we also want to have that
 
 806
 00:29:32,720 --> 00:29:34,480
-we also want to have that
 guardianship that the state has, which
 
 807
 00:29:34,480 --> 00:29:36,720
-guardianship that the state has, which
 is the public interest to say, we know
 
 808
 00:29:36,720 --> 00:29:38,799
-is the public interest to say, we know
 you're not all techies and if you bring
 
 809
 00:29:38,799 --> 00:29:41,360
-you're not all techies and if you bring
 us something that you got your .ru wallet
 
 810
 00:29:41,360 --> 00:29:43,200
-us something that you got your .ru wallet
 and it seems like it was the right idea.
 
 811
 00:29:43,200 --> 00:29:44,799
-and it seems like it was the right idea.
 We want to make you aware of what that
 
 812
 00:29:44,799 --> 00:29:46,640
-We want to make you aware of what that
 potential security risk would be. So,
 
 813
 00:29:46,640 --> 00:29:48,080
-potential security risk would be. So,
 that's something I expect to see coming
 
 814
 00:29:48,080 --> 00:29:50,320
-that's something I expect to see coming
 in the ecosystem.
 
 815
 00:29:50,320 --> 00:29:53,679
-in the ecosystem.
 Now we at the end of our slide deck
 
 816
 00:29:53,679 --> 00:29:56,720
-Now we at the end of our slide deck
 always go back to what is the
 
 817
 00:29:56,720 --> 00:29:59,919
-always go back to what is the
 key points we want and we want you to be
 
 818
 00:29:59,919 --> 00:30:02,480
-key points we want and we want you to be
 in charge. We want you to determine who
 
 819
 00:30:02,480 --> 00:30:04,880
-in charge. We want you to determine who
 you share data with, when you share it
 
 820
 00:30:04,880 --> 00:30:07,600
-you share data with, when you share it
 with them, and why that matters in the
 
 821
 00:30:07,600 --> 00:30:10,880
-with them, and why that matters in the
 healthcare environment is we know that
 
 822
 00:30:10,880 --> 00:30:12,799
-healthcare environment is we know that
 data can be weaponized against you in
 
 823
 00:30:12,799 --> 00:30:15,919
-data can be weaponized against you in
 the health space. And if you
 
 824
 00:30:15,919 --> 00:30:18,399
-the health space. And if you
 have no visibility to that and AI models
 
 825
 00:30:18,399 --> 00:30:21,039
-have no visibility to that and AI models
 are starting to be used and I'll say
 
 826
 00:30:21,039 --> 00:30:22,880
-are starting to be used and I'll say
 quite frankly in inappropriate ways to
 
 827
 00:30:22,880 --> 00:30:25,279
-quite frankly in inappropriate ways to
 come to like billing and costing
 
 828
 00:30:25,279 --> 00:30:27,520
-come to like billing and costing
 decisions, you have to be made aware of
 
 829
 00:30:27,520 --> 00:30:29,679
-decisions, you have to be made aware of
 that. So you have to have control over
 
 830
 00:30:29,679 --> 00:30:32,230
-that. So you have to have control over
 that.
 
 831
@@ -4155,1487 +3329,1190 @@ you've been here the last two days.
 
 832
 00:30:35,200 --> 00:30:38,240
-you've been here the last two days.
 What's the interoperability? Well, we
 
 833
 00:30:38,240 --> 00:30:40,080
-What's the interoperability? Well, we
 are going to have to be interoperable.
 
 834
 00:30:40,080 --> 00:30:42,799
-are going to have to be interoperable.
 We can't expect that every state is
 
 835
 00:30:42,799 --> 00:30:44,799
-We can't expect that every state is
 going to say, you know, we believe
 
 836
 00:30:44,799 --> 00:30:46,720
-going to say, you know, we believe
 exactly how Utah believes and we think
 
 837
 00:30:46,720 --> 00:30:49,279
-exactly how Utah believes and we think
 their technology choices are great and
 
 838
 00:30:49,279 --> 00:30:52,480
-their technology choices are great and
 we are going to go that way.
 
 839
 00:30:52,480 --> 00:30:53,840
-we are going to go that way.
 I don't know if you noticed during the
 
 840
 00:30:53,840 --> 00:30:56,159
-I don't know if you noticed during the
 panel with Joe and our representative
 
 841
 00:30:56,159 --> 00:30:59,120
-panel with Joe and our representative
 from California, Joe had said we have to
 
 842
 00:30:59,120 --> 00:31:00,559
-from California, Joe had said we have to
 agree that we're solving the same
 
 843
 00:31:00,559 --> 00:31:02,159
-agree that we're solving the same
 problem. If we're not, then
 
 844
 00:31:02,159 --> 00:31:05,039
-problem. If we're not, then
 interoperability isn't a question. And I
 
 845
 00:31:05,039 --> 00:31:06,880
-interoperability isn't a question. And I
 completely agree with where Joe was at
 
 846
 00:31:06,880 --> 00:31:08,559
-completely agree with where Joe was at
 on that. We definitely want to make sure
 
 847
 00:31:08,559 --> 00:31:10,720
-on that. We definitely want to make sure
 that we're solving the same issue and
 
 848
 00:31:10,720 --> 00:31:12,399
-that we're solving the same issue and
 that we're moving forward in something
 
 849
 00:31:12,399 --> 00:31:14,159
-that we're moving forward in something
 that is rational for all of us. So
 
 850
 00:31:14,159 --> 00:31:16,640
-that is rational for all of us. So
 digital reciprocity between states is
 
 851
 00:31:16,640 --> 00:31:17,760
-digital reciprocity between states is
 something we're going to have to deal
 
 852
 00:31:17,760 --> 00:31:19,360
-something we're going to have to deal
 with. We definitely want to make sure
 
 853
 00:31:19,360 --> 00:31:21,520
-with. We definitely want to make sure
 that, hey, if you've ditched all your
 
 854
 00:31:21,520 --> 00:31:23,840
-that, hey, if you've ditched all your
 your plastic, you jumped on a plane and
 
 855
 00:31:23,840 --> 00:31:25,120
-your plastic, you jumped on a plane and
 you're suddenly in Oregon and you get
 
 856
 00:31:25,120 --> 00:31:27,600
-you're suddenly in Oregon and you get
 pulled over in your rental car, your
 
 857
 00:31:27,600 --> 00:31:29,919
-pulled over in your rental car, your
 digital driver's license has to be
 
 858
 00:31:29,919 --> 00:31:31,760
-digital driver's license has to be
 something that can be considered valid
 
 859
 00:31:31,760 --> 00:31:34,159
-something that can be considered valid
 in all jurisdictions. And that's
 
 860
 00:31:34,159 --> 00:31:36,559
-in all jurisdictions. And that's
 quite frankly a format war that it's not
 
 861
 00:31:36,559 --> 00:31:38,159
-quite frankly a format war that it's not
 my problem right now that I'm trying to
 
 862
 00:31:38,159 --> 00:31:40,159
-my problem right now that I'm trying to
 solve. I'm trying to solve the core
 
 863
 00:31:40,159 --> 00:31:42,720
-solve. I'm trying to solve the core
 identity issues for Utah residents. Now,
 
 864
 00:31:42,720 --> 00:31:45,360
-identity issues for Utah residents. Now,
 of course, we have the
 
 865
 00:31:45,360 --> 00:31:48,720
-of course, we have the
 Olympics coming up 2034.
 
 866
 00:31:48,720 --> 00:31:49,919
-Olympics coming up 2034.
 There's probably going to be digital
 
 867
 00:31:49,919 --> 00:31:51,919
-There's probably going to be digital
 credentials that come to us from other
 
 868
 00:31:51,919 --> 00:31:53,760
-credentials that come to us from other
 jurisdictions even outside the United
 
 869
 00:31:53,760 --> 00:31:56,240
-jurisdictions even outside the United
 States. Well, we are building this
 
 870
 00:31:56,240 --> 00:31:58,000
-States. Well, we are building this
 system around the concept of American
 
 871
 00:31:58,000 --> 00:31:59,919
-system around the concept of American
 values. And what it is no tracking,
 
 872
 00:31:59,919 --> 00:32:01,519
-values. And what it is no tracking,
 no surveillance, no, you know, no
 
 873
 00:32:01,519 --> 00:32:03,760
-no surveillance, no, you know, no
 monitoring. So, in those cases, we may
 
 874
 00:32:03,760 --> 00:32:05,200
-monitoring. So, in those cases, we may
 say, "Yeah, that's a valid credential
 
 875
 00:32:05,200 --> 00:32:06,960
-say, "Yeah, that's a valid credential
 from where you came from." We might
 
 876
 00:32:06,960 --> 00:32:08,720
-from where you came from." We might
 issue a temporary one while you're here
 
 877
 00:32:08,720 --> 00:32:10,240
-issue a temporary one while you're here
 for the Olympics to allow you to
 
 878
 00:32:10,240 --> 00:32:11,679
-for the Olympics to allow you to
 interface and do the things that you
 
 879
 00:32:11,679 --> 00:32:13,600
-interface and do the things that you
 need to do, but we're certainly not
 
 880
 00:32:13,600 --> 00:32:15,360
-need to do, but we're certainly not
 going to phone home to a foreign server
 
 881
 00:32:15,360 --> 00:32:17,600
-going to phone home to a foreign server
 and participate in state surveillance on
 
 882
 00:32:17,600 --> 00:32:19,440
-and participate in state surveillance on
 behalf of a of a foreign government. We
 
 883
 00:32:19,440 --> 00:32:21,679
-behalf of a of a foreign government. We
 just won't do that. So, when it comes to
 
 884
 00:32:21,679 --> 00:32:24,399
-just won't do that. So, when it comes to
 the healthcare interoperability issues,
 
 885
 00:32:24,399 --> 00:32:26,080
-the healthcare interoperability issues,
 we want to make sure that the blast
 
 886
 00:32:26,080 --> 00:32:28,480
-we want to make sure that the blast
 radius is always one. And this is the
 
 887
 00:32:28,480 --> 00:32:30,880
-radius is always one. And this is the
 thing that I hate to say it, but we're
 
 888
 00:32:30,880 --> 00:32:32,399
-thing that I hate to say it, but we're
 finally getting to the point where data
 
 889
 00:32:32,399 --> 00:32:34,559
-finally getting to the point where data
 breaches, people are understanding that
 
 890
 00:32:34,559 --> 00:32:36,559
-breaches, people are understanding that
 your data continues to get lost because
 
 891
 00:32:36,559 --> 00:32:38,399
-your data continues to get lost because
 they're in central systems, these huge
 
 892
 00:32:38,399 --> 00:32:41,840
-they're in central systems, these huge
 honeypots. If we do this right, people
 
 893
 00:32:41,840 --> 00:32:42,799
-honeypots. If we do this right, people
 are still going to get social
 
 894
 00:32:42,799 --> 00:32:44,320
-are still going to get social
 engineered. But if the blast radius is
 
 895
 00:32:44,320 --> 00:32:46,159
-engineered. But if the blast radius is
 one, that's a much better situation for
 
 896
 00:32:46,159 --> 00:32:47,600
-one, that's a much better situation for
 us to be able to handle than having a
 
 897
 00:32:47,600 --> 00:32:49,360
-us to be able to handle than having a
 blast radius of, oh, 100 million records
 
 898
 00:32:49,360 --> 00:32:50,960
-blast radius of, oh, 100 million records
 were lost. Would you like some free
 
 899
 00:32:50,960 --> 00:32:53,039
-were lost. Would you like some free
 credit monitoring and hope things work
 
 900
 00:32:53,039 --> 00:32:56,559
-credit monitoring and hope things work
 out for you? And when we look at the
 
 901
 00:32:56,559 --> 00:32:59,120
-out for you? And when we look at the
 overall cyber security risk, there's
 
 902
 00:32:59,120 --> 00:33:00,559
-overall cyber security risk, there's
 definitely going to be some things that
 
 903
 00:33:00,559 --> 00:33:01,919
-definitely going to be some things that
 we are going to look at from the from
 
 904
 00:33:01,919 --> 00:33:03,840
-we are going to look at from the from
 the wallet provider community, key
 
 905
 00:33:03,840 --> 00:33:05,600
-the wallet provider community, key
 escrow and how that's done is going to
 
 906
 00:33:05,600 --> 00:33:07,440
-escrow and how that's done is going to
 be super important to us because it's
 
 907
 00:33:07,440 --> 00:33:09,360
-be super important to us because it's
 not your identity if somebody else has
 
 908
 00:33:09,360 --> 00:33:11,200
-not your identity if somebody else has
 full access to your keys and can perform
 
 909
 00:33:11,200 --> 00:33:13,279
-full access to your keys and can perform
 rotations without your permission. You
 
 910
 00:33:13,279 --> 00:33:14,720
-rotations without your permission. You
 know, I got asked the other day, well,
 
 911
 00:33:14,720 --> 00:33:17,519
-know, I got asked the other day, well,
 what happens if I'm
 
 912
 00:33:17,519 --> 00:33:20,799
-what happens if I'm
 at the border and the law enforcement
 
 913
 00:33:20,799 --> 00:33:24,320
-at the border and the law enforcement
 agency requires my phone from me and
 
 914
 00:33:24,320 --> 00:33:26,399
-agency requires my phone from me and
 they copy my whole phone and then
 
 915
 00:33:26,399 --> 00:33:28,000
-they copy my whole phone and then
 they wander away and now I know they've
 
 916
 00:33:28,000 --> 00:33:31,120
-they wander away and now I know they've
 got my current keys. Well, Sam, you can
 
 917
 00:33:31,120 --> 00:33:32,880
-got my current keys. Well, Sam, you can
 put this on a t-shirt if you want, but I
 
 918
 00:33:32,880 --> 00:33:34,799
-put this on a t-shirt if you want, but I
 just said when in doubt, rotate out. You
 
 919
 00:33:34,799 --> 00:33:36,320
-just said when in doubt, rotate out. You
 don't have to stay with that key pair.
 
 920
 00:33:36,320 --> 00:33:38,000
-don't have to stay with that key pair.
 When you get your phone back, move on to
 
 921
 00:33:38,000 --> 00:33:40,240
-When you get your phone back, move on to
 your next set. So, I'm going to give you
 
 922
 00:33:40,240 --> 00:33:42,000
-your next set. So, I'm going to give you
 a situation that happens in rural
 
 923
 00:33:42,000 --> 00:33:43,760
-a situation that happens in rural
 healthcare because we talked all about
 
 924
 00:33:43,760 --> 00:33:45,840
-healthcare because we talked all about
 these things in kind of this really
 
 925
 00:33:45,840 --> 00:33:48,240
-these things in kind of this really
 large buckets, but when I was down
 
 926
 00:33:48,240 --> 00:33:49,600
-large buckets, but when I was down
 talking to rural healthcare, we had to
 
 927
 00:33:49,600 --> 00:33:52,240
-talking to rural healthcare, we had to
 have some specific examples of how rural
 
 928
 00:33:52,240 --> 00:33:54,880
-have some specific examples of how rural
 healthcare is hurt by not having a good
 
 929
 00:33:54,880 --> 00:33:57,200
-healthcare is hurt by not having a good
 identity system that can provide instant
 
 930
 00:33:57,200 --> 00:33:58,960
-identity system that can provide instant
 validation and of assertions of
 
 931
 00:33:58,960 --> 00:34:01,440
-validation and of assertions of
 credentials. So, if you look up there,
 
 932
 00:34:01,440 --> 00:34:04,320
-credentials. So, if you look up there,
 50,000 to 100,000 is the and this is
 
 933
 00:34:04,320 --> 00:34:06,720
-50,000 to 100,000 is the and this is
 across the nation, not just Utah. this
 
 934
 00:34:06,720 --> 00:34:08,560
-across the nation, not just Utah. this
 peer-reviewed studies that they can
 
 935
 00:34:08,560 --> 00:34:10,480
-peer-reviewed studies that they can
 bring in a doctor or say a critical care
 
 936
 00:34:10,480 --> 00:34:12,480
-bring in a doctor or say a critical care
 nurse and getting to the point of having
 
 937
 00:34:12,480 --> 00:34:14,879
-nurse and getting to the point of having
 the original documentation validated.
 
 938
 00:34:14,879 --> 00:34:16,800
-the original documentation validated.
 They're basically sweeping floors or
 
 939
 00:34:16,800 --> 00:34:18,240
-They're basically sweeping floors or
 doing something else or working in a
 
 940
 00:34:18,240 --> 00:34:20,079
-doing something else or working in a
 non-risk position while those
 
 941
 00:34:20,079 --> 00:34:23,280
-non-risk position while those
 credentials get validated. 50 to 100,000
 
 942
 00:34:23,280 --> 00:34:25,599
-credentials get validated. 50 to 100,000
 per provider they bring into the system.
 
 943
 00:34:25,599 --> 00:34:27,040
-per provider they bring into the system.
 And the tragedy is when you look at
 
 944
 00:34:27,040 --> 00:34:28,720
-And the tragedy is when you look at
 these small healthcare systems in these
 
 945
 00:34:28,720 --> 00:34:30,720
-these small healthcare systems in these
 rural settings, you may get hospital
 
 946
 00:34:30,720 --> 00:34:33,839
-rural settings, you may get hospital
 privileges for this rural hospital 50
 
 947
 00:34:33,839 --> 00:34:35,520
-privileges for this rural hospital 50
 miles down the road where you might want
 
 948
 00:34:35,520 --> 00:34:37,200
-miles down the road where you might want
 to work on a weekend or provide
 
 949
 00:34:37,200 --> 00:34:39,359
-to work on a weekend or provide
 services. You're not accredited. So you
 
 950
 00:34:39,359 --> 00:34:40,159
-services. You're not accredited. So you
 have to go through this whole
 
 951
 00:34:40,159 --> 00:34:42,320
-have to go through this whole
 credentiing process again. So it's
 
 952
 00:34:42,320 --> 00:34:44,720
-credentiing process again. So it's
 really hard for people who have made the
 
 953
 00:34:44,720 --> 00:34:46,560
-really hard for people who have made the
 commitment as a healthcare provider to
 
 954
 00:34:46,560 --> 00:34:48,960
-commitment as a healthcare provider to
 be in a rural community to be able to
 
 955
 00:34:48,960 --> 00:34:51,679
-be in a rural community to be able to
 service more than one. It becomes a
 
 956
 00:34:51,679 --> 00:34:53,839
-service more than one. It becomes a
 nightmare and a paper castle. So, we're
 
 957
 00:34:53,839 --> 00:34:56,560
-nightmare and a paper castle. So, we're
 looking at SEDI and the subsequent
 
 958
 00:34:56,560 --> 00:34:59,119
-looking at SEDI and the subsequent
 credentials that get that get in
 
 959
 00:34:59,119 --> 00:35:01,280
-credentials that get that get in
 endorsed by the, you know, medical
 
 960
 00:35:01,280 --> 00:35:03,280
-endorsed by the, you know, medical
 organizations and others. We want them
 
 961
 00:35:03,280 --> 00:35:05,119
-organizations and others. We want them
 to be able to show up with an ACDC in
 
 962
 00:35:05,119 --> 00:35:06,240
-to be able to show up with an ACDC in
 the middle of the night and say, "Here
 
 963
 00:35:06,240 --> 00:35:07,520
-the middle of the night and say, "Here
 you go. Here's my whole chain of
 
 964
 00:35:07,520 --> 00:35:09,760
-you go. Here's my whole chain of
 credentials." And all those boxes get
 
 965
 00:35:09,760 --> 00:35:11,440
-credentials." And all those boxes get
 ticked and that person goes to work
 
 966
 00:35:11,440 --> 00:35:13,359
-ticked and that person goes to work
 doing the job that they want to do in
 
 967
 00:35:13,359 --> 00:35:15,680
-doing the job that they want to do in
 that rural community. And of course, one
 
 968
 00:35:15,680 --> 00:35:18,960
-that rural community. And of course, one
 of the things that we don't want to
 
 969
 00:35:18,960 --> 00:35:20,560
-of the things that we don't want to
 Underplay is the fact that these
 
 970
 00:35:20,560 --> 00:35:23,119
-Underplay is the fact that these
 rural healthcare systems compliance is
 
 971
 00:35:23,119 --> 00:35:25,359
-rural healthcare systems compliance is
 a huge issue. You blow up one thing and
 
 972
 00:35:25,359 --> 00:35:26,640
-a huge issue. You blow up one thing and
 you suddenly get all your payments
 
 973
 00:35:26,640 --> 00:35:29,040
-you suddenly get all your payments
 stopped. In a lot of cases, that can
 
 974
 00:35:29,040 --> 00:35:31,040
-stopped. In a lot of cases, that can
 be detrimental to the organization. I
 
 975
 00:35:31,040 --> 00:35:32,960
-be detrimental to the organization. I
 know for a fact that in the state of
 
 976
 00:35:32,960 --> 00:35:36,240
-know for a fact that in the state of
 Utah skilled nursing facilities for
 
 977
 00:35:36,240 --> 00:35:39,040
-Utah skilled nursing facilities for
 long-term hospice care patients, their
 
 978
 00:35:39,040 --> 00:35:40,800
-long-term hospice care patients, their
 hash flow is about 2 and a half to 3
 
 979
 00:35:40,800 --> 00:35:42,960
-hash flow is about 2 and a half to 3
 weeks. So, if you get an interruption in
 
 980
 00:35:42,960 --> 00:35:44,720
-weeks. So, if you get an interruption in
 payments, you're calling relatives and
 
 981
 00:35:44,720 --> 00:35:46,000
-payments, you're calling relatives and
 saying, "You need to find somewhere else
 
 982
 00:35:46,000 --> 00:35:47,680
-saying, "You need to find somewhere else
 because I can't afford to keep my
 
 983
 00:35:47,680 --> 00:35:50,320
-because I can't afford to keep my
 facility open." So, it's a real risk.
 
 984
 00:35:50,320 --> 00:35:53,280
-facility open." So, it's a real risk.
 All right, let's talk about us. I
 
 985
 00:35:53,280 --> 00:35:54,320
-All right, let's talk about us. I
 don't know if I'm going to try and get
 
 986
 00:35:54,320 --> 00:35:56,640
-don't know if I'm going to try and get
 this as good as phonehome, but I want to
 
 987
 00:35:56,640 --> 00:36:00,240
-this as good as phonehome, but I want to
 kill the clipboard. I am so sick and
 
 988
 00:36:00,240 --> 00:36:02,800
-kill the clipboard. I am so sick and
 tired of going to an organization that
 
 989
 00:36:02,800 --> 00:36:04,880
-tired of going to an organization that
 has my medical records, and every time I
 
 990
 00:36:04,880 --> 00:36:07,040
-has my medical records, and every time I
 come in, they want all this demographic
 
 991
 00:36:07,040 --> 00:36:10,320
-come in, they want all this demographic
 data they already have.
 
 992
 00:36:10,320 --> 00:36:12,160
-data they already have.
 It drives me insane and I hope it drives
 
 993
 00:36:12,160 --> 00:36:13,520
-It drives me insane and I hope it drives
 you insane, too, because it's like,
 
 994
 00:36:13,520 --> 00:36:16,320
-you insane, too, because it's like,
 look, you know who I am. Think if I
 
 995
 00:36:16,320 --> 00:36:18,000
-look, you know who I am. Think if I
 attest to things haven't changed since
 
 996
 00:36:18,000 --> 00:36:19,599
-attest to things haven't changed since
 the last time I saw you, but I'm here
 
 997
 00:36:19,599 --> 00:36:21,680
-the last time I saw you, but I'm here
 for a sniffle or a broken arm, I don't
 
 998
 00:36:21,680 --> 00:36:23,440
-for a sniffle or a broken arm, I don't
 need miles of paperwork to tell you the
 
 999
 00:36:23,440 --> 00:36:25,599
-need miles of paperwork to tell you the
 things that I you already know about me.
 
 1000
 00:36:25,599 --> 00:36:27,599
-things that I you already know about me.
 And I will say I've been rendered
 
 1001
 00:36:27,599 --> 00:36:29,440
-And I will say I've been rendered
 functionally illiterate by computers. My
 
 1002
 00:36:29,440 --> 00:36:31,839
-functionally illiterate by computers. My
 handwriting is awful. So half the time
 
 1003
 00:36:31,839 --> 00:36:33,599
-handwriting is awful. So half the time
 when I'm in these places, they're like,
 
 1004
 00:36:33,599 --> 00:36:35,440
-when I'm in these places, they're like,
 "Is that an E or is that an A?" I'm
 
 1005
 00:36:35,440 --> 00:36:37,280
-"Is that an E or is that an A?" I'm
 like, " I don't know. I'm in
 
 1006
 00:36:37,280 --> 00:36:38,880
-like, " I don't know. I'm in
 pain. I'm in a doctor's office. I'm not
 
 1007
 00:36:38,880 --> 00:36:40,400
-pain. I'm in a doctor's office. I'm not
 really interested in a critique about my
 
 1008
 00:36:40,400 --> 00:36:43,200
-really interested in a critique about my
 my handwriting. And so what we really
 
 1009
 00:36:43,200 --> 00:36:45,040
-my handwriting. And so what we really
 want to do with this kill the clipboard
 
 1010
 00:36:45,040 --> 00:36:47,119
-want to do with this kill the clipboard
 is reduce these inaccuracies that come
 
 1011
 00:36:47,119 --> 00:36:49,760
-is reduce these inaccuracies that come
 in. And for the love of everything, why
 
 1012
 00:36:49,760 --> 00:36:51,760
-in. And for the love of everything, why
 do you have to get a copy a physical
 
 1013
 00:36:51,760 --> 00:36:54,160
-do you have to get a copy a physical
 copy of my medical card when I provided
 
 1014
 00:36:54,160 --> 00:36:56,800
-copy of my medical card when I provided
 it to you a month ago? And part of this
 
 1015
 00:36:56,800 --> 00:36:58,480
-it to you a month ago? And part of this
 is not the it's not the fault of the
 
 1016
 00:36:58,480 --> 00:37:00,880
-is not the it's not the fault of the
 front-end worker. They have a set of
 
 1017
 00:37:00,880 --> 00:37:02,400
-front-end worker. They have a set of
 procedures that are trying to do risk
 
 1018
 00:37:02,400 --> 00:37:04,960
-procedures that are trying to do risk
 reduction. And so this is the way that
 
 1019
 00:37:04,960 --> 00:37:07,520
-reduction. And so this is the way that
 we operate our systems. And from my
 
 1020
 00:37:07,520 --> 00:37:09,760
-we operate our systems. And from my
 perspective, if I could just go in and
 
 1021
 00:37:09,760 --> 00:37:12,079
-perspective, if I could just go in and
 do a tap and say, "Yeah, let me just
 
 1022
 00:37:12,079 --> 00:37:14,160
-do a tap and say, "Yeah, let me just
 punch the items on the iPad of where I
 
 1023
 00:37:14,160 --> 00:37:16,720
-punch the items on the iPad of where I
 hurt and how bad, that's a much better
 
 1024
 00:37:16,720 --> 00:37:18,320
-hurt and how bad, that's a much better
 experience for me as an individual." And
 
 1025
 00:37:18,320 --> 00:37:20,480
-experience for me as an individual." And
 I also know that the data errors aren't
 
 1026
 00:37:20,480 --> 00:37:21,839
-I also know that the data errors aren't
 going to be because you couldn't read my
 
 1027
 00:37:21,839 --> 00:37:24,079
-going to be because you couldn't read my
 spelling or you transposed a number on
 
 1028
 00:37:24,079 --> 00:37:26,720
-spelling or you transposed a number on
 my medical card. It all came across in a
 
 1029
 00:37:26,720 --> 00:37:28,960
-my medical card. It all came across in a
 trustable transaction or series of chain
 
 1030
 00:37:28,960 --> 00:37:30,960
-trustable transaction or series of chain
 credentials that we can now move forward
 
 1031
 00:37:30,960 --> 00:37:33,680
-credentials that we can now move forward
 on the situation. So that's the utopia I
 
 1032
 00:37:33,680 --> 00:37:36,720
-on the situation. So that's the utopia I
 look for. Now as I said at the SEDI
 
 1033
 00:37:36,720 --> 00:37:39,119
-look for. Now as I said at the SEDI
 summit we look at this in government in
 
 1034
 00:37:39,119 --> 00:37:41,280
-summit we look at this in government in
 in a lot of different ways but if you
 
 1035
 00:37:41,280 --> 00:37:43,280
-in a lot of different ways but if you
 take any process whether it's government
 
 1036
 00:37:43,280 --> 00:37:46,160
-take any process whether it's government
 or whether it's business look at the pie
 
 1037
 00:37:46,160 --> 00:37:48,240
-or whether it's business look at the pie
 chart of how much of that transaction is
 
 1038
 00:37:48,240 --> 00:37:51,280
-chart of how much of that transaction is
 trust verification risk management and
 
 1039
 00:37:51,280 --> 00:37:52,960
-trust verification risk management and
 all the other things you actually do
 
 1040
 00:37:52,960 --> 00:37:55,359
-all the other things you actually do
 before you get to service delivery. It's
 
 1041
 00:37:55,359 --> 00:37:57,520
-before you get to service delivery. It's
 inordinate the amount of time we spend
 
 1042
 00:37:57,520 --> 00:37:59,520
-inordinate the amount of time we spend
 in making these things work because
 
 1043
 00:37:59,520 --> 00:38:01,520
-in making these things work because
 we're we're resetting the trust model
 
 1044
 00:38:01,520 --> 00:38:04,000
-we're we're resetting the trust model
 every single time. In government, where
 
 1045
 00:38:04,000 --> 00:38:06,640
-every single time. In government, where
 this hurts us so much is that we
 
 1046
 00:38:06,640 --> 00:38:08,480
-this hurts us so much is that we
 actually have to staff people who are
 
 1047
 00:38:08,480 --> 00:38:11,839
-actually have to staff people who are
 part of that front office to injust
 
 1048
 00:38:11,839 --> 00:38:13,520
-part of that front office to injust
 this paperwork, make some value
 
 1049
 00:38:13,520 --> 00:38:15,520
-this paperwork, make some value
 judgments, move things forward, and it's
 
 1050
 00:38:15,520 --> 00:38:17,440
-judgments, move things forward, and it's
 not something that is sustainable. So
 
 1051
 00:38:17,440 --> 00:38:20,240
-not something that is sustainable. So
 Utah has experienced record growth over
 
 1052
 00:38:20,240 --> 00:38:21,839
-Utah has experienced record growth over
 the last decade. We're just growing,
 
 1053
 00:38:21,839 --> 00:38:24,240
-the last decade. We're just growing,
 growing. Well, we don't want to grow
 
 1054
 00:38:24,240 --> 00:38:26,320
-growing. Well, we don't want to grow
 government at the same
 
 1055
 00:38:26,320 --> 00:38:29,280
-government at the same
 rate. I can't keep hiring people to
 
 1056
 00:38:29,280 --> 00:38:31,119
-rate. I can't keep hiring people to
 ingest this physical paperwork. I have
 
 1057
 00:38:31,119 --> 00:38:32,800
-ingest this physical paperwork. I have
 to remain in the digital realm, but I
 
 1058
 00:38:32,800 --> 00:38:36,000
-to remain in the digital realm, but I
 have to be accurate.
 
 1059
 00:38:36,000 --> 00:38:39,280
-have to be accurate.
 So, we are facing this dilemma
 
 1060
 00:38:39,280 --> 00:38:41,599
-So, we are facing this dilemma
 everywhere in the United States. As
 
 1061
 00:38:41,599 --> 00:38:44,000
-everywhere in the United States. As
 populations grow, as you know, civil
 
 1062
 00:38:44,000 --> 00:38:46,560
-populations grow, as you know, civil
 servants retire, next generation may not
 
 1063
 00:38:46,560 --> 00:38:48,320
-servants retire, next generation may not
 be looking for that sort of work because
 
 1064
 00:38:48,320 --> 00:38:50,160
-be looking for that sort of work because
 generally it doesn't pay really well. In
 
 1065
 00:38:50,160 --> 00:38:51,839
-generally it doesn't pay really well. In
 fact, it doesn't ever pay really well.
 
 1066
 00:38:51,839 --> 00:38:54,000
-fact, it doesn't ever pay really well.
 But you those are the individuals we
 
 1067
 00:38:54,000 --> 00:38:55,200
-But you those are the individuals we
 want to be able to have a good
 
 1068
 00:38:55,200 --> 00:38:57,280
-want to be able to have a good
 experience with us. But we're not just
 
 1069
 00:38:57,280 --> 00:38:58,560
-experience with us. But we're not just
 going to keep adding and adding and
 
 1070
 00:38:58,560 --> 00:39:00,400
-going to keep adding and adding and
 adding. So we have to get the digital
 
 1071
 00:39:00,400 --> 00:39:05,119
-adding. So we have to get the digital
 systems working to our best effect.
 
 1072
 00:39:05,119 --> 00:39:08,800
-systems working to our best effect.
 So when we look at overall the situation
 
 1073
 00:39:08,800 --> 00:39:11,280
-So when we look at overall the situation
 that SEDI can solve, it's not a situation
 
 1074
 00:39:11,280 --> 00:39:13,920
-that SEDI can solve, it's not a situation
 of where it solves only one problem. It
 
 1075
 00:39:13,920 --> 00:39:15,920
-of where it solves only one problem. It
 solves a number of problems. So when
 
 1076
 00:39:15,920 --> 00:39:18,160
-solves a number of problems. So when
 you're thinking about your specific
 
 1077
 00:39:18,160 --> 00:39:20,560
-you're thinking about your specific
 marketplace that you work in and how
 
 1078
 00:39:20,560 --> 00:39:22,640
-marketplace that you work in and how
 KERI is going to make things a lot
 
 1079
 00:39:22,640 --> 00:39:24,720
-KERI is going to make things a lot
 better, We see it as an underpinning
 
 1080
 00:39:24,720 --> 00:39:26,400
-better, We see it as an underpinning
 that breaks a lot of the
 
 1081
 00:39:26,400 --> 00:39:28,560
-that breaks a lot of the
 traditional models and lets us move on.
 
 1082
 00:39:28,560 --> 00:39:30,560
-traditional models and lets us move on.
 I look forward to a world, you know,
 
 1083
 00:39:30,560 --> 00:39:32,960
-I look forward to a world, you know,
 endpoints where I can identify and
 
 1084
 00:39:32,960 --> 00:39:34,800
-endpoints where I can identify and
 move things around without an
 
 1085
 00:39:34,800 --> 00:39:36,640
-move things around without an
 intermediary. I know Chris and I have
 
 1086
 00:39:36,640 --> 00:39:38,880
-intermediary. I know Chris and I have
 talked about this a lot is that when
 
 1087
 00:39:38,880 --> 00:39:41,280
-talked about this a lot is that when
 this is live and you have these items
 
 1088
 00:39:41,280 --> 00:39:43,920
-this is live and you have these items
 available to you in a functional format
 
 1089
 00:39:43,920 --> 00:39:45,760
-available to you in a functional format
 with utility, we're going to have a lot
 
 1090
 00:39:45,760 --> 00:39:47,440
-with utility, we're going to have a lot
 of people who are going, "What's my
 
 1091
 00:39:47,440 --> 00:39:49,359
-of people who are going, "What's my
 purpose in life now?" Because I've had
 
 1092
 00:39:49,359 --> 00:39:51,200
-purpose in life now?" Because I've had
 my job as an intermediary for a long
 
 1093
 00:39:51,200 --> 00:39:53,440
-my job as an intermediary for a long
 time. But I'll tell you what, there's
 
 1094
 00:39:53,440 --> 00:39:54,560
-time. But I'll tell you what, there's
 always going to be something new for
 
 1095
 00:39:54,560 --> 00:39:57,359
-always going to be something new for
 people to do. I love history and one
 
 1096
 00:39:57,359 --> 00:39:58,960
-people to do. I love history and one
 of the things I find funny is when the
 
 1097
 00:39:58,960 --> 00:40:00,560
-of the things I find funny is when the
 automobiles were first allowed in
 
 1098
 00:40:00,560 --> 00:40:03,280
-automobiles were first allowed in
 London, it was a requirement that you
 
 1099
 00:40:03,280 --> 00:40:05,200
-London, it was a requirement that you
 had a signalman walk in front of your
 
 1100
 00:40:05,200 --> 00:40:06,960
-had a signalman walk in front of your
 vehicle with a bell and he'd ring the
 
 1101
 00:40:06,960 --> 00:40:09,119
-vehicle with a bell and he'd ring the
 bell to make sure as you put it away
 
 1102
 00:40:09,119 --> 00:40:11,200
-bell to make sure as you put it away
 that the horses were not startled and
 
 1103
 00:40:11,200 --> 00:40:12,960
-that the horses were not startled and
 they even extended that into the evening
 
 1104
 00:40:12,960 --> 00:40:15,440
-they even extended that into the evening
 where he would carry a lantern. We don't
 
 1105
 00:40:15,440 --> 00:40:17,760
-where he would carry a lantern. We don't
 have signalmen in front of cars today.
 
 1106
 00:40:17,760 --> 00:40:20,800
-have signalmen in front of cars today.
 They do something else. And as we
 
 1107
 00:40:20,800 --> 00:40:23,119
-They do something else. And as we
 move forward with our new user
 
 1108
 00:40:23,119 --> 00:40:25,119
-move forward with our new user
 centric, you know, sovereign
 
 1109
 00:40:25,119 --> 00:40:26,640
-centric, you know, sovereign
 environment, I think we're going to see
 
 1110
 00:40:26,640 --> 00:40:28,320
-environment, I think we're going to see
 some significant changes in
 
 1111
 00:40:28,320 --> 00:40:30,000
-some significant changes in
 marketplaces. But it's not just going to
 
 1112
 00:40:30,000 --> 00:40:31,599
-marketplaces. But it's not just going to
 be driven by the state. We can set
 
 1113
 00:40:31,599 --> 00:40:34,480
-be driven by the state. We can set
 governance. We can set law. But as a
 
 1114
 00:40:34,480 --> 00:40:36,079
-governance. We can set law. But as a
 larger community, we need to ask those
 
 1115
 00:40:36,079 --> 00:40:37,920
-larger community, we need to ask those
 questions why we do the things the way
 
 1116
 00:40:37,920 --> 00:40:40,000
-questions why we do the things the way
 we do. And if we are not afraid of those
 
 1117
 00:40:40,000 --> 00:40:42,079
-we do. And if we are not afraid of those
 questions, not only in business, but in
 
 1118
 00:40:42,079 --> 00:40:43,680
-questions, not only in business, but in
 government, we're going to see these
 
 1119
 00:40:43,680 --> 00:40:45,920
-government, we're going to see these
 massive improvements along the way.
 
 1120
 00:40:45,920 --> 00:40:47,599
-massive improvements along the way.
 Okay, we have like three minutes. It's
 
 1121
 00:40:47,599 --> 00:40:48,800
-Okay, we have like three minutes. It's
 always hard to be the one who's like
 
 1122
 00:40:48,800 --> 00:40:50,560
-always hard to be the one who's like
 backed up against lunch because the
 
 1123
 00:40:50,560 --> 00:40:52,720
-backed up against lunch because the
 questions drop off. So, if you don't ask
 
 1124
 00:40:52,720 --> 00:40:54,720
-questions drop off. So, if you don't ask
 your question now, that's okay. Find me
 
 1125
 00:40:54,720 --> 00:40:56,880
-your question now, that's okay. Find me
 at lunch or over the next day
 
 1126
 00:40:56,880 --> 00:40:58,960
-at lunch or over the next day
 or so. Do we have any questions I can
 
 1127
 00:40:58,960 --> 00:41:01,280
-or so. Do we have any questions I can
 answer in the next couple of seconds,
 
 1128
 00:41:01,280 --> 00:41:08,870
-answer in the next couple of seconds,
 minutes, whatever.
 
 1129
@@ -5650,476 +4527,381 @@ one.
 
 1131
 00:41:18,480 --> 00:41:21,119
-one.
 All right. My question is about on
 
 1132
 00:41:21,119 --> 00:41:23,200
-All right. My question is about on
 the delegation slide. You mentioned
 
 1133
 00:41:23,200 --> 00:41:25,280
-the delegation slide. You mentioned
 several populations where it's super
 
 1134
 00:41:25,280 --> 00:41:27,119
-several populations where it's super
 relevant and one of them is like
 
 1135
 00:41:27,119 --> 00:41:30,400
-relevant and one of them is like
 unhoused population and migrants and
 
 1136
 00:41:30,400 --> 00:41:33,359
-unhoused population and migrants and
 what how does delegation look in that
 
 1137
 00:41:33,359 --> 00:41:37,119
-what how does delegation look in that
 case? Who's the delegator?
 
 1138
 00:41:37,119 --> 00:41:39,839
-case? Who's the delegator?
 So in that specific case I'll tell
 
 1139
 00:41:39,839 --> 00:41:41,440
-So in that specific case I'll tell
 you what we find with homeless
 
 1140
 00:41:41,440 --> 00:41:42,960
-you what we find with homeless
 population specifically in the
 
 1141
 00:41:42,960 --> 00:41:44,880
-population specifically in the
 healthcare environment. So when we have
 
 1142
 00:41:44,880 --> 00:41:46,079
-healthcare environment. So when we have
 an encounter with somebody who's
 
 1143
 00:41:46,079 --> 00:41:48,000
-an encounter with somebody who's
 homeless, the best we can do is put them
 
 1144
 00:41:48,000 --> 00:41:49,520
-homeless, the best we can do is put them
 on something like emergency Medicaid,
 
 1145
 00:41:49,520 --> 00:41:51,359
-on something like emergency Medicaid,
 which is super expensive for the state,
 
 1146
 00:41:51,359 --> 00:41:52,880
-which is super expensive for the state,
 and we can provide those critical
 
 1147
 00:41:52,880 --> 00:41:54,960
-and we can provide those critical
 services that keep them from
 
 1148
 00:41:54,960 --> 00:41:57,119
-services that keep them from
 dying, but that's not long-term
 
 1149
 00:41:57,119 --> 00:41:58,480
-dying, but that's not long-term
 maintenance. It's not
 
 1150
 00:41:58,480 --> 00:42:00,560
-maintenance. It's not
 prophylactic medications or anything of
 
 1151
 00:42:00,560 --> 00:42:02,720
-prophylactic medications or anything of
 that nature. Those don't come until we
 
 1152
 00:42:02,720 --> 00:42:04,960
-that nature. Those don't come until we
 have identified that individual. And
 
 1153
 00:42:04,960 --> 00:42:06,640
-have identified that individual. And
 given that we might have to query them
 
 1154
 00:42:06,640 --> 00:42:08,079
-given that we might have to query them
 like where were you born approximately
 
 1155
 00:42:08,079 --> 00:42:09,839
-like where were you born approximately
 when were you born all these items that
 
 1156
 00:42:09,839 --> 00:42:12,560
-when were you born all these items that
 we case work it's assigned to them. It
 
 1157
 00:42:12,560 --> 00:42:15,280
-we case work it's assigned to them. It
 is generally 6 to 8 weeks before we have
 
 1158
 00:42:15,280 --> 00:42:17,760
-is generally 6 to 8 weeks before we have
 documentation in hand that we can now
 
 1159
 00:42:17,760 --> 00:42:20,079
-documentation in hand that we can now
 say we have identified you and we can
 
 1160
 00:42:20,079 --> 00:42:21,599
-say we have identified you and we can
 now move you off of the emergency
 
 1161
 00:42:21,599 --> 00:42:23,440
-now move you off of the emergency
 Medicaid and put you on to a different
 
 1162
 00:42:23,440 --> 00:42:26,319
-Medicaid and put you on to a different
 service. The tragedy is once they
 
 1163
 00:42:26,319 --> 00:42:27,920
-service. The tragedy is once they
 hand them that packet of information
 
 1164
 00:42:27,920 --> 00:42:30,319
-hand them that packet of information
 within 30 days the majority of them have
 
 1165
 00:42:30,319 --> 00:42:32,079
-within 30 days the majority of them have
 lost their documentation. And it's like
 
 1166
 00:42:32,079 --> 00:42:34,240
-lost their documentation. And it's like
 well of course they're unhoused. they're
 
 1167
 00:42:34,240 --> 00:42:35,680
-well of course they're unhoused. they're
 not going to walk around with
 
 1168
 00:42:35,680 --> 00:42:38,000
-not going to walk around with
 a manilla folder under their arm. So,
 
 1169
 00:42:38,000 --> 00:42:39,760
-a manilla folder under their arm. So,
 how do you solve that problem? Well,
 
 1170
 00:42:39,760 --> 00:42:41,839
-how do you solve that problem? Well,
 there's a couple ways you can do it. One
 
 1171
 00:42:41,839 --> 00:42:43,920
-there's a couple ways you can do it. One
 of the I was at a conference and I
 
 1172
 00:42:43,920 --> 00:42:45,680
-of the I was at a conference and I
 was just being flip and I said, "Well,
 
 1173
 00:42:45,680 --> 00:42:47,920
-was just being flip and I said, "Well,
 why don't we do a system called Nomad?"
 
 1174
 00:42:47,920 --> 00:42:49,040
-why don't we do a system called Nomad?"
 And they were like, "What do you mean by
 
 1175
 00:42:49,040 --> 00:42:52,319
-And they were like, "What do you mean by
 that?" I said, " National Online
 
 1176
 00:42:52,319 --> 00:42:54,319
-that?" I said, " National Online
 Assisted Documentation, you know, or
 
 1177
 00:42:54,319 --> 00:42:56,000
-Assisted Documentation, you know, or
 management of assist of documentation."
 
 1178
 00:42:56,000 --> 00:42:58,800
-management of assist of documentation."
 So we are looking at opportunities in it
 
 1179
 00:42:58,800 --> 00:43:00,480
-So we are looking at opportunities in it
 that could do something like that which
 
 1180
 00:43:00,480 --> 00:43:01,920
-that could do something like that which
 is basically there are some things
 
 1181
 00:43:01,920 --> 00:43:03,119
-is basically there are some things
 you're always going to have with you and
 
 1182
 00:43:03,119 --> 00:43:03,839
-you're always going to have with you and
 those are going to be some of your
 
 1183
 00:43:03,839 --> 00:43:05,760
-those are going to be some of your
 biometrics and if you are willing to
 
 1184
 00:43:05,760 --> 00:43:07,520
-biometrics and if you are willing to
 work with the state to get you
 
 1185
 00:43:07,520 --> 00:43:10,480
-work with the state to get you
 identified and put you into a national
 
 1186
 00:43:10,480 --> 00:43:12,000
-identified and put you into a national
 data store that's encrypted to your
 
 1187
 00:43:12,000 --> 00:43:14,400
-data store that's encrypted to your
 biometrics then we have means for how we
 
 1188
 00:43:14,400 --> 00:43:16,079
-biometrics then we have means for how we
 can get those people on the system.
 
 1189
 00:43:16,079 --> 00:43:18,079
-can get those people on the system.
 There are care relationships that exist
 
 1190
 00:43:18,079 --> 00:43:20,800
-There are care relationships that exist
 inside the state like foster care or we
 
 1191
 00:43:20,800 --> 00:43:23,680
-inside the state like foster care or we
 have battered women who are put in like
 
 1192
 00:43:23,680 --> 00:43:26,319
-have battered women who are put in like
 safe harbor shelters. So there are some
 
 1193
 00:43:26,319 --> 00:43:28,400
-safe harbor shelters. So there are some
 there are some relationships that we
 
 1194
 00:43:28,400 --> 00:43:31,040
-there are some relationships that we
 need to clarify in not only in law but
 
 1195
 00:43:31,040 --> 00:43:32,560
-need to clarify in not only in law but
 how that works digitally because there
 
 1196
 00:43:32,560 --> 00:43:34,079
-how that works digitally because there
 are certain rights that get communicated
 
 1197
 00:43:34,079 --> 00:43:36,800
-are certain rights that get communicated
 to each group. So as we move along there
 
 1198
 00:43:36,800 --> 00:43:38,880
-to each group. So as we move along there
 will be both a policy side and a
 
 1199
 00:43:38,880 --> 00:43:40,960
-will be both a policy side and a
 software technology side to work on it.
 
 1200
 00:43:40,960 --> 00:43:43,839
-software technology side to work on it.
 But the interesting thing is we do
 
 1201
 00:43:43,839 --> 00:43:45,440
-But the interesting thing is we do
 think that the easiest relationship for
 
 1202
 00:43:45,440 --> 00:43:47,040
-think that the easiest relationship for
 us to solve right off the bat is the
 
 1203
 00:43:47,040 --> 00:43:49,040
-us to solve right off the bat is the
 parent child relationship. That's pretty
 
 1204
 00:43:49,040 --> 00:43:51,040
-parent child relationship. That's pretty
 easy to prove. But when we get into some
 
 1205
 00:43:51,040 --> 00:43:52,880
-easy to prove. But when we get into some
 of these more complicated
 
 1206
 00:43:52,880 --> 00:43:55,200
-of these more complicated
 situations, so say for example, a
 
 1207
 00:43:55,200 --> 00:43:57,520
-situations, so say for example, a
 Medicaid household is defined by the
 
 1208
 00:43:57,520 --> 00:43:58,960
-Medicaid household is defined by the
 number of people living under the same
 
 1209
 00:43:58,960 --> 00:44:01,119
-number of people living under the same
 roof and what happens if you have an
 
 1210
 00:44:01,119 --> 00:44:04,319
-roof and what happens if you have an
 acrimonious divorce. Party A has a lot
 
 1211
 00:44:04,319 --> 00:44:07,040
-acrimonious divorce. Party A has a lot
 of KYC data to try and infiltrate what
 
 1212
 00:44:07,040 --> 00:44:08,640
-of KYC data to try and infiltrate what
 party B is doing. So the state's going
 
 1213
 00:44:08,640 --> 00:44:10,000
-party B is doing. So the state's going
 to have to be very careful as we roll
 
 1214
 00:44:10,000 --> 00:44:11,920
-to have to be very careful as we roll
 these out to make sure that when we do
 
 1215
 00:44:11,920 --> 00:44:13,760
-these out to make sure that when we do
 endorse something like a parent child
 
 1216
 00:44:13,760 --> 00:44:15,839
-endorse something like a parent child
 relationship that we do have a glass
 
 1217
 00:44:15,839 --> 00:44:17,520
-relationship that we do have a glass
 break where we can go and turn that off
 
 1218
 00:44:17,520 --> 00:44:20,079
-break where we can go and turn that off
 so that we keep everyone safe.
 
 1219
 00:44:20,079 --> 00:44:22,400
-so that we keep everyone safe.
 Okay, I think you is we're at lunch.
 
 1220
 00:44:22,400 --> 00:44:23,839
-Okay, I think you is we're at lunch.
 So, thank you again. I look forward to
 
 1221
 00:44:23,839 --> 00:44:25,760
-So, thank you again. I look forward to
 talking to you individually. Reach me
 
 1222
 00:44:25,760 --> 00:44:27,520
-talking to you individually. Reach me
 out to me at any time. I'm always
 
 1223
 00:44:27,520 --> 00:44:29,280
-out to me at any time. I'm always
 willing to talk about both the tech and
 
 1224
 00:44:29,280 --> 00:44:32,000
-willing to talk about both the tech and
 the policy. Thank you very much.
 
 1225
 00:44:32,000 --> 00:44:35,000
-the policy. Thank you very much.
 Thanks.
 
