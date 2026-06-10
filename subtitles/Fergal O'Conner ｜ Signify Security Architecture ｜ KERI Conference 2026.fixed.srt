@@ -3548,7 +3548,7 @@ another one from one of the you know
 
 878
 00:37:07,040 --> 00:37:10,800
-QBIS or providers. What and you
+QVIS or providers. What and you
 
 879
 00:37:10,800 --> 00:37:13,280
@@ -3978,7 +3978,7 @@ GLEIF ecosystem right you can move from
 
 985
 00:40:46,400 --> 00:40:48,640
-QBI to QBI. So there are ways to
+QVI to QVI. So there are ways to
 
 986
 00:40:48,640 --> 00:40:53,680

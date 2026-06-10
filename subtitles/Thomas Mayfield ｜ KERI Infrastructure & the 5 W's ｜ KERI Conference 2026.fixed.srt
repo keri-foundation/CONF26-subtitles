@@ -279,7 +279,7 @@ cryptographic keys. There is no registry
 
 70
 00:03:14,480 --> 00:03:16,720
-or registar that grants you your
+or registrar that grants you your
 
 71
 00:03:16,720 --> 00:03:18,400
@@ -1478,7 +1478,7 @@ example, this is how GLEIF can recover a
 
 368
 00:16:06,959 --> 00:16:09,839
-compromised QVI's AID.
+compromised QVIs AID.
 
 369
 00:16:09,839 --> 00:16:12,480
