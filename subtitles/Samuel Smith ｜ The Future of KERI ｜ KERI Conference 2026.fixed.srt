@@ -1282,7 +1282,7 @@ checks it checks its observer checks the
 
 320
 00:14:21,440 --> 00:14:23,519
-registar controlled by the issuer says
+registrar controlled by the issuer says
 
 321
 00:14:23,519 --> 00:14:28,240
@@ -1306,7 +1306,7 @@ registry.
 
 326
 00:14:43,670 --> 00:14:46,480
-But if and then we have the registars
+But if and then we have the registrars
 and the and the observers.
 
 327
@@ -1331,11 +1331,11 @@ the issue. So this one is
 
 332
 00:14:59,680 --> 00:15:02,240
-controlled this registar is the issue's
+controlled this registrar is the issue's
 
 333
 00:15:02,240 --> 00:15:06,000
-registar and now the verifier checks
+registrar and now the verifier checks
 
 334
 00:15:06,000 --> 00:15:08,160
@@ -2890,7 +2890,7 @@ that have to do with things like who has
 
 719
 00:32:28,399 --> 00:32:31,919
-control over the domain name registar
+control over the domain name registrar
 
 720
 00:32:31,919 --> 00:32:34,640
@@ -3055,7 +3055,7 @@ you have right now is you have a
 
 760
 00:34:16,560 --> 00:34:21,599
-grace period. when you're issuing QBI
+grace period. when you're issuing QVI
 
 761
 00:34:21,599 --> 00:34:24,800

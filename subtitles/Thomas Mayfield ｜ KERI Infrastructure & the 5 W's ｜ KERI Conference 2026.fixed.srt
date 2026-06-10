@@ -279,7 +279,7 @@ cryptographic keys. There is no registry
 
 70
 00:03:14,480 --> 00:03:16,720
-or registar that grants you your
+or registrar that grants you your
 
 71
 00:03:16,720 --> 00:03:18,400
@@ -1329,7 +1329,7 @@ credentials chain back through the
 
 331
 00:14:31,680 --> 00:14:35,120
-schemas and issuers to a root of trust.
+schemas and issuers to a Root of Trust.
 
 332
 00:14:35,120 --> 00:14:37,600
@@ -1430,7 +1430,7 @@ delegate authority through ACDC's down
 
 356
 00:15:33,040 --> 00:15:37,120
-from a route of trust. GLEIF's VI system
+from a Root of Trust. GLEIF's VI system
 
 357
 00:15:37,120 --> 00:15:38,800
@@ -1478,7 +1478,7 @@ example, this is how GLEIF can recover a
 
 368
 00:16:06,959 --> 00:16:09,839
-compromised QVI's AID.
+compromised QVIs AID.
 
 369
 00:16:09,839 --> 00:16:12,480
@@ -2421,7 +2421,7 @@ clients wallet where you now have this
 
 601
 00:27:28,320 --> 00:27:30,559
-endto-end route of trust. So when you
+endto-end Root of Trust. So when you
 
 602
 00:27:30,559 --> 00:27:34,559
@@ -2433,7 +2433,7 @@ financial products you have this very
 
 604
 00:27:36,960 --> 00:27:40,880
-robust compliance root of trust.
+robust compliance Root of Trust.
 
 605
 00:27:40,880 --> 00:27:46,960
