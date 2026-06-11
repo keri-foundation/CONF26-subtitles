@@ -2534,7 +2534,7 @@ effectively they are using what's
 
 629
 00:28:49,919 --> 00:28:52,799
-known as did verifiable history did VH
+known as DID Verifiable History (didvh)
 
 630
 00:28:52,799 --> 00:28:56,320
