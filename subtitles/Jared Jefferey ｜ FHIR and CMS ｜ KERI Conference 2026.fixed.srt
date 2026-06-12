@@ -3722,7 +3722,7 @@ I'll go super quick. It starts with
 
 927
 00:35:07,839 --> 00:35:09,839
-the trust anchors which for the VLI is
+the trust anchors which for the vLEI is
 
 928
 00:35:09,839 --> 00:35:12,480

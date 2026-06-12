@@ -3043,11 +3043,11 @@ Does VI authority fit into this somehow?
 
 757
 00:34:07,679 --> 00:34:10,960
-Yeah, we right now VLIs don't solve
+Yeah, we right now vLEI don't solve
 
 758
 00:34:10,960 --> 00:34:13,599
-these problems. So with the VLI, what
+these problems. So with the vLEI, what
 
 759
 00:34:13,599 --> 00:34:16,560
