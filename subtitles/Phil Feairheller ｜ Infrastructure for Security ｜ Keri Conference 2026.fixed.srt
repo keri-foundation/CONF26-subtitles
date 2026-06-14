@@ -4201,7 +4201,7 @@ example an OAuth server that's
 
 1039
 00:35:32,120 --> 00:35:34,520
-validating vLEI's coming in, but needs to
+validating vLEIs coming in, but needs to
 
 1040
 00:35:34,520 --> 00:35:36,160
