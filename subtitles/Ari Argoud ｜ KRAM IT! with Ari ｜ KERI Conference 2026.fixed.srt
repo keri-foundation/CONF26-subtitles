@@ -1948,27 +1948,27 @@ loss.
 
 488
 00:20:18,799 --> 00:20:22,799
-congestion and now your latency.
+congestion and now your latency [inaudible]
 
 489
 00:20:22,799 --> 00:20:26,080
-So taper could simulate that using the
+– So [inaudible] could simulate that using the
 
 490
 00:20:26,080 --> 00:20:28,480
-denial somewhere in the network
+Denial of Service attack somewhere in the network
 
 491
 00:20:28,480 --> 00:20:31,039
-and then and then and then it into the
+– and then [inaudible] it into the
 
 492
 00:20:31,039 --> 00:20:32,240
-window. Okay.
+window.
 
 493
 00:20:32,240 --> 00:20:34,960
-Yes, that's so another to reiterate
+– Yes, so to reiterate
 
 494
 00:20:34,960 --> 00:20:36,960
@@ -1992,7 +1992,7 @@ of network latency. Perhaps an
 
 499
 00:20:43,280 --> 00:20:45,120
-attacker is dosing you or maybe you're
+attacker is DDossing you or maybe you're
 
 500
 00:20:45,120 --> 00:20:47,679
@@ -2007,12 +2007,12 @@ need more time to process. So
 anyways, now we're going to talk about
 
 503
-00:20:51,360 --> 00:20:56,400
+00:20:51,360 --> 00:20:54,641
 how we address these. So
 
 504
 00:20:56,400 --> 00:21:00,799
-oh now this is the right slide. We
+… oh… now this is the right slide. We
 
 505
 00:21:00,799 --> 00:21:02,799
@@ -2099,12 +2099,11 @@ and the new increased timeliness window.
 And that actually covers both gap replay
 
 526
-00:21:49,840 --> 00:21:54,870
+00:21:49,840 --> 00:21:52,464
 attacks and gap first play attacks.
 
 527
 00:21:58,230 --> 00:22:00,480
-Let's see here.
 Then we have a little bit about the
 
 528
@@ -2161,24 +2160,22 @@ going to be message types. And these are
 
 541
 00:22:36,720 --> 00:22:40,159
-going to be
+going to be…
 
 542
 00:22:40,159 --> 00:22:44,720
-these are going to be thinking on the
+These are going to be…
 
 543
-00:22:44,720 --> 00:22:50,149
-word for it
+00:22:49,990 --> 00:22:52,668
+route. Yeah, sorry.
 
 544
-00:22:53,990 --> 00:22:56,400
-route. Yeah, sorry.
+00:22:53,945 --> 00:22:56,400
 And the denial systems supports wild
 
 545
-00:22:56,400 --> 00:22:59,120
-and the denial systems supports wild
+00:22:56,425 --> 00:22:59,120
 carding through empty fields. So these
 
 546
@@ -2195,15 +2192,15 @@ deny all KERI v1 messages for KRAM
 
 549
 00:23:07,919 --> 00:23:12,720
-or well we're not going to use KRAM on
+or we're not going to use KRAM on
 
 550
 00:23:12,720 --> 00:23:15,520
-KERI v1 messages right and for these
+KERI v1 messages, right, and for these
 
 551
 00:23:15,520 --> 00:23:17,200
-it's we're not going to use KRAM on
+we're not going to use KRAM on
 
 552
 00:23:17,200 --> 00:23:20,559
@@ -2214,56 +2211,55 @@ KERI v2 messages with a pro message
 type and then any route and for the
 
 554
-00:23:23,440 --> 00:23:25,840
-third one we're not going to be using or
+00:23:23,440 --> 00:23:27,013
+third one we're not going to
 
 555
-00:23:25,840 --> 00:23:27,039
-we're not going to use we're not going
+00:23:27,039 --> 00:23:30,799
+feed messages through KRAM for KERI
 
 556
-00:23:27,039 --> 00:23:30,799
-to feed messages through KRAM for KERI
-
-557
 00:23:30,799 --> 00:23:33,280
 version two reply messages with a
 
-558
+557
 00:23:33,280 --> 00:23:36,880
-slashend route.
+“/end” route.
 
-559
+558
 00:23:36,880 --> 00:23:39,679
 And the denial logic is applied at the
 
-560
+559
 00:23:39,679 --> 00:23:42,720
 top before we even get into any of the
 
-561
+560
 00:23:42,720 --> 00:23:45,280
-Message processing stuff that we
+message processing stuff that we
 
-562
+561
 00:23:45,280 --> 00:23:48,400
 discussed earlier.
 
-563
+562
 00:23:48,400 --> 00:23:51,600
 That is pretty much all I have. Well, I
 
-564
+563
 00:23:51,600 --> 00:23:54,159
 was also gonna say
 
-565
+564
 00:23:54,159 --> 00:23:57,990
 that
 
-566
-00:23:59,830 --> 00:24:01,520
+565
+00:23:58,014 --> 00:23:59,755
 a lot of people worked on this. Sam
+
+566
+00:23:59,779 --> 00:24:01,520
 wrote the white paper. Several other
 
 567
@@ -2287,468 +2283,474 @@ I know that many other people are going
 to work on it before it's complete. So,
 
 572
-00:24:10,159 --> 00:24:15,750
+00:24:10,159 --> 00:24:13,139
 I give them a round of applause.
 
 573
-00:24:18,870 --> 00:24:23,269
+00:24:15,837 --> 00:24:18,930
 Does anyone have any other questions?
-I run a little short.
 
 574
-00:24:24,149 --> 00:24:26,320
-Yes.
-Where do you see this being put into
+00:24:18,955 --> 00:24:20,774
+I run a little short.
 
 575
-00:24:26,320 --> 00:24:29,279
-application within I mean let's just say
+00:24:23,161 --> 00:24:23,939
+– Yes.
 
 576
-00:24:29,279 --> 00:24:31,600
-the healthcare
+00:24:23,963 --> 00:24:26,320
+– Where do you see this being put into
 
 577
+00:24:26,320 --> 00:24:29,279
+application within, I mean, let's just say
+
+578
+00:24:29,279 --> 00:24:31,600
+the healthKERI
+
+579
 00:24:31,600 --> 00:24:32,880
 platform.
 
-578
+580
 00:24:32,880 --> 00:24:37,679
-So this is going to be like for say
+– So this is going to be like for say
 
-579
+581
 00:24:37,679 --> 00:24:39,039
 for example for our account
 
-580
+582
 00:24:39,039 --> 00:24:41,360
 communications with ESSR they could use
 
-581
-00:24:41,360 --> 00:24:45,600
-this for any credential
-
-582
-00:24:45,600 --> 00:24:47,919
-presentations they could use this right.
-
 583
+00:24:41,360 --> 00:24:45,600
+this. For any credential
+
+584
+00:24:45,600 --> 00:24:47,919
+presentations they could use this, right.
+
+585
 00:24:47,919 --> 00:24:50,240
 So, we were talking a little or we
 
-584
+586
 00:24:50,240 --> 00:24:53,039
 haven't talked about this yet, but
 
-585
+587
 00:24:53,039 --> 00:24:54,400
-actually I'm going to abstain because
+actually… I'm going to abstain because
 
-586
+588
 00:24:54,400 --> 00:24:55,520
 I'm not sure if I'm supposed to say that
 
-587
+589
 00:24:55,520 --> 00:24:58,320
 yet, but those two use cases are
 
-588
-00:24:58,320 --> 00:25:00,559
-pretty relevant to us as a healthcare.
-
-589
-00:25:00,559 --> 00:25:05,990
-Absolutely.
-
 590
-00:25:13,190 --> 00:25:14,240
+00:24:58,320 --> 00:25:00,559
+pretty relevant to us as healthKERI.
+
+591
+00:25:00,559 --> 00:25:01,343
+– Absolutely.
+
+592
+00:25:12,857 --> 00:25:14,240
 Yeah. Anywhere we're accepting messages.
 Yes.
 
-591
+593
 00:25:14,240 --> 00:25:16,640
 In particular, all the messages are
 
-592
+594
 00:25:16,640 --> 00:25:17,279
 messages.
 
-593
+595
 00:25:17,279 --> 00:25:20,720
-Yes. So, IPEX EXN messages all covered
+Yes. So, IPEX EXN messages, all covered
 
-594
+596
 00:25:20,720 --> 00:25:23,200
 by KRAM.
 
-595
+597
 00:25:23,200 --> 00:25:23,520
 Yes.
 
-596
+598
 00:25:23,520 --> 00:25:25,200
 I just want to understand the problem a
 
-597
+599
 00:25:25,200 --> 00:25:26,720
 little bit better of why we need to keep
 
-598
+600
 00:25:26,720 --> 00:25:29,120
 this just I think that's what he had
 
-599
+601
 00:25:29,120 --> 00:25:29,520
 asked.
 
-600
+602
 00:25:29,520 --> 00:25:30,000
 Oh, sure.
 
-601
+603
 00:25:30,000 --> 00:25:32,640
 I understand it replaces the knots, but
 
-602
+604
 00:25:32,640 --> 00:25:36,640
 why is that beneficial? Like what?
 
-603
+605
 00:25:36,640 --> 00:25:37,200
 What?
 
-604
+606
 00:25:37,200 --> 00:25:40,000
-Yeah. Just so if you have a non I
+Yeah. Just so if you have a nonce I
 
-605
+607
 00:25:40,000 --> 00:25:41,520
 assume it's kind of like a temporary
 
-606
+608
 00:25:41,520 --> 00:25:42,400
 token.
 
-607
+609
 00:25:42,400 --> 00:25:42,799
 Yes,
 
-608
+610
 00:25:42,799 --> 00:25:44,400
 that's what I've used in the past. that
 
-609
+611
 00:25:44,400 --> 00:25:47,360
 then it would increase the database size
 
-610
+612
 00:25:47,360 --> 00:25:50,159
 or maybe you have to have
 
-611
+613
 00:25:50,159 --> 00:25:51,679
 connectivity back to I'm trying to
 
-612
+614
 00:25:51,679 --> 00:25:54,640
 figure out why.
 
-613
+615
 00:25:54,640 --> 00:25:58,080
 It's like an elegant way of solving
 
-614
+616
 00:25:58,080 --> 00:26:01,120
 it's like an elegant way of solving
 replay attacks without attaching nonces
 
-615
+617
 00:26:01,120 --> 00:26:03,600
 to every message because the time itself
 
-616
+618
 00:26:03,600 --> 00:26:06,720
 functions as the nonce
 
-617
+619
 00:26:06,720 --> 00:26:08,320
 like the time attached to the message.
 
-618
+620
 00:26:08,320 --> 00:26:10,080
 It's not you know it's not that we don't
 
-619
+621
 00:26:10,080 --> 00:26:12,000
 have a non the time is the non right
 
-620
+622
 00:26:12,000 --> 00:26:13,120
 and with the knots you're talking about
 
-621
+623
 00:26:13,120 --> 00:26:16,720
 interactive authentification right
 
-622
+624
 00:26:16,720 --> 00:26:18,000
 this is fully not interactive
 
-623
+625
 00:26:18,000 --> 00:26:20,480
 so if you think about think about
 
-624
+626
 00:26:20,480 --> 00:26:25,760
 network latency we're doing at scale
 
-625
+627
 00:26:25,760 --> 00:26:27,600
 requests
 
-626
+628
 00:26:27,600 --> 00:26:30,000
 every request
 
-627
+629
 00:26:30,000 --> 00:26:32,240
 has to create a TCP connection because
 
-628
+630
 00:26:32,240 --> 00:26:35,120
 has to be it has to be a secure channel
 
-629
+631
 00:26:35,120 --> 00:26:37,760
 otherwise you can't can't control it so
 
-630
+632
 00:26:37,760 --> 00:26:39,919
 All asynchronous messaging is off the is
 
-631
+633
 00:26:39,919 --> 00:26:41,679
 off the table. This allow this will work
 
-632
+634
 00:26:41,679 --> 00:26:43,279
 with just as well with asynchronous
 
-633
+635
 00:26:43,279 --> 00:26:45,200
 messaging as synchronous messaging.
 
-634
+636
 00:26:45,200 --> 00:26:47,440
 It'll work just fine where the
 
-635
+637
 00:26:47,440 --> 00:26:49,039
 sender and receiver use a completely
 
-636
+638
 00:26:49,039 --> 00:26:50,960
 different channel. Doesn't matter.
 
-637
+639
 00:26:50,960 --> 00:26:51,520
 Okay?
 
-638
+640
 00:26:51,520 --> 00:26:53,279
 Because there's no interaction, right?
 
-639
+641
 00:26:53,279 --> 00:26:54,960
 So now you can get rid of all of those
 
-640
+642
 00:26:54,960 --> 00:26:58,000
 constraints and then the latency for a
 
-641
+643
 00:26:58,000 --> 00:27:01,840
 request is zero because the request
 
-642
+644
 00:27:01,840 --> 00:27:04,320
 either goes through or it doesn't.
 
-643
+645
 00:27:04,320 --> 00:27:06,480
 Whereas if it's interactive, you send a
 
-644
+646
 00:27:06,480 --> 00:27:08,400
 request, you get a reply, you send a
 
-645
+647
 00:27:08,400 --> 00:27:11,200
 response, and now you've got three you
 
-646
+648
 00:27:11,200 --> 00:27:13,440
 got three passes across your network,
 
-647
+649
 00:27:13,440 --> 00:27:15,120
 which if your network's loaded or
 
-648
+650
 00:27:15,120 --> 00:27:18,400
 congested, you triple the your latency
 
-649
+651
 00:27:18,400 --> 00:27:20,880
 always. And when you go to scale, that
 
-650
+652
 00:27:20,880 --> 00:27:24,240
 doesn't scale well. And you know, so
 
-651
+653
 00:27:24,240 --> 00:27:27,520
 so that's a that's a reason not to use
 
-652
+654
 00:27:27,520 --> 00:27:28,960
 interactive.
 
-653
+655
 00:27:28,960 --> 00:27:29,919
 So to re
 
-654
+656
 00:27:29,919 --> 00:27:32,400
 two reasons, one asynchronous messaging
 
-655
+657
 00:27:32,400 --> 00:27:35,679
 asynchronous and remove the remove
 
-656
+658
 00:27:35,679 --> 00:27:37,440
 the latency at scale.
 
-657
+659
 00:27:37,440 --> 00:27:40,880
 So to reiterate for the microphone
 
-658
+660
 00:27:40,880 --> 00:27:44,559
 this is asynchronous which traditional
 
-659
+661
 00:27:44,559 --> 00:27:48,240
 nonsspased authentication is not and
 
-660
+662
 00:27:48,240 --> 00:27:52,240
 this also works at scale without having
 
-661
+663
 00:27:52,240 --> 00:27:54,799
 to rely on the traditional mode of
 
-662
+664
 00:27:54,799 --> 00:27:57,200
 exchanging several messages in order to
 
-663
+665
 00:27:57,200 --> 00:28:00,799
 meet the same meet the same
 
-664
+666
 00:28:00,799 --> 00:28:02,320
 functionality.
 
-665
+667
 00:28:02,320 --> 00:28:04,880
 So explaining a little about the problem
 
-666
+668
 00:28:04,880 --> 00:28:06,240
 statement, right? You know what's what
 
-667
+669
 00:28:06,240 --> 00:28:08,799
 was the difference between KERI not
 
-668
+670
 00:28:08,799 --> 00:28:12,159
 having CRA and now CRA existing and I'm
 
-669
+671
 00:28:12,159 --> 00:28:15,360
 just maybe restating is the but we just
 
-670
+672
 00:28:15,360 --> 00:28:18,320
 restated for the replay attack but so
 
-671
+673
 00:28:18,320 --> 00:28:20,720
 was that a vulnerability and existing
 
-672
+674
 00:28:20,720 --> 00:28:22,399
 vulnerability right now?
 
-673
+675
 00:28:22,399 --> 00:28:22,960
 Yes.
 
-674
+676
 00:28:22,960 --> 00:28:25,840
 Okay. KRAM has been proposed for quite
 
-675
+677
 00:28:25,840 --> 00:28:28,480
 quite some time but nobody thought it
 
-676
+678
 00:28:28,480 --> 00:28:32,389
 was important to
 
-677
+679
 00:28:35,430 --> 00:28:38,080
 So, so in our authentication server, we
 have a custom build replay
 
-678
+680
 00:28:38,080 --> 00:28:40,000
 and so we can now get rid of that once
 
-679
+681
 00:28:40,000 --> 00:28:42,559
 we upgrade KERI 2.0.
 
-680
+682
 00:28:42,559 --> 00:28:44,399
 Yeah. So, that was traditionally not
 
-681
+683
 00:28:44,399 --> 00:28:46,799
 covered by the KERI suite or KERIpy
 
-682
+684
 00:28:46,799 --> 00:28:49,200
 as
 
-683
+685
 00:28:49,200 --> 00:28:52,080
 it
 
-684
+686
 00:28:52,080 --> 00:28:56,470
 build their own attack.
 
-685
+687
 00:28:58,470 --> 00:29:03,669
 We wanted we wanted it to be something
 that everybody gets for free. Awesome.
 
-686
+688
 00:29:12,149 --> 00:29:15,720
 All right,
 get me out of here.
