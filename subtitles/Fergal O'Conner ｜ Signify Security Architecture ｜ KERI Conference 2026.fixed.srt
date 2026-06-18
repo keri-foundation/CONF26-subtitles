@@ -616,7 +616,7 @@ building directly on KERIpy. In the
 
 154
 00:05:59,840 --> 00:06:01,680
-kan foundation we've also built a full
+KERI Foundation we've also built a full
 
 155
 00:06:01,680 --> 00:06:04,080
@@ -3958,7 +3958,7 @@ backup file. So then you can migrate to
 
 981
 00:40:30,640 --> 00:40:32,480
-your own career or a different career
+your own KERI or a different KERI
 
 982
 00:40:32,480 --> 00:40:34,880
@@ -3974,7 +3974,7 @@ exactly
 
 985
 00:40:37,200 --> 00:40:39,760
-export and then as long as a career
+export and then as long as a KERI
 
 986
 00:40:39,760 --> 00:40:42,960
@@ -4030,7 +4030,7 @@ A lot of cost and resources into
 
 999
 00:41:08,880 --> 00:41:11,520
-actually how we back up the career data.
+actually how we back up the KERI data.
 
 1000
 00:41:11,520 --> 00:41:14,240
