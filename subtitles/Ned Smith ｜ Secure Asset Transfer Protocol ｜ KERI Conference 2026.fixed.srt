@@ -1119,7 +1119,7 @@ it could be anything. It could be a
 
 279
 00:13:05,680 --> 00:13:08,240
-certificate. There could be a did
+certificate. There could be a DID
 
 280
 00:13:08,240 --> 00:13:10,639

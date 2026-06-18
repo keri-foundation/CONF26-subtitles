@@ -1128,7 +1128,7 @@ So the latest LTS.
 
 283
 00:10:53,279 --> 00:10:57,519
-It does depend on libsodium
+It does depend on Libsodium
 
 284
 00:10:57,519 --> 00:11:00,880

@@ -5575,7 +5575,7 @@ non-shared ledger. But, technically
 
 1380
 00:54:50,920 --> 00:54:52,320
-under the hood, it is a it is a
+under the hood, it is a
 
 1381
 00:54:52,320 --> 00:54:54,480

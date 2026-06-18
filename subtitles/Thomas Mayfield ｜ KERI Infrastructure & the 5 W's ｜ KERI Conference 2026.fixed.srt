@@ -485,7 +485,7 @@ Now that you understand the foundations,
 
 122
 00:05:21,440 --> 00:05:23,440
-AIDs and kels, let's talk about the
+AIDs and KELs, let's talk about the
 
 123
 00:05:23,440 --> 00:05:25,120

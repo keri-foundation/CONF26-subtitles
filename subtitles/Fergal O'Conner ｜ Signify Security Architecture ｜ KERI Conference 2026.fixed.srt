@@ -1740,11 +1740,11 @@ because of stateless is to fetch the
 
 434
 00:17:06,720 --> 00:17:09,520
-state of the kels for direct mode. So
+state of the KELs for direct mode. So
 
 435
 00:17:09,520 --> 00:17:12,319
-it fetches both the kels of each of them
+it fetches both the KELs of each of them
 
 436
 00:17:12,319 --> 00:17:13,919
@@ -2104,7 +2104,7 @@ and then we in we do a cryptobox seal
 
 524
 00:21:01,440 --> 00:21:03,840
-with lip sodium to encrypt it to the
+with Libsodium to encrypt it to the
 
 525
 00:21:03,840 --> 00:21:07,120
