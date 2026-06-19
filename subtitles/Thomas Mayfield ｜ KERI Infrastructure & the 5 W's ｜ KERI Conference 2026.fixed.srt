@@ -2624,7 +2624,7 @@ is synchronized.
 
 652
 00:29:50,159 --> 00:29:52,799
-We contribute to Web of Trust. Fergal
+We contribute to WebOfTrust. Fergal
 
 653
 00:29:52,799 --> 00:29:54,559
