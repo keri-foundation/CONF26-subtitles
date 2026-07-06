@@ -3561,9 +3561,8 @@ same kinds of principles that we
 wanted to promote in the first place.
 
 891
-00:34:27,149 --> 00:34:27,960
-I did want to just say,
-if you
+00:34:24,735 --> 00:34:27,745
+– I did want to say,
 
 892
 00:34:27,960 --> 00:34:29,560
@@ -3679,7 +3678,7 @@ this is really not a
 
 920
 00:35:25,240 --> 00:35:27,840
-2026 kind of a thing. This is a That's a
+2026 kind of a thing. That's a
 
 921
 00:35:27,840 --> 00:35:31,280
@@ -3695,7 +3694,7 @@ these things without them, because you
 
 924
 00:35:34,880 --> 00:35:36,640
-can't You can't describe something
+can't describe something
 
 925
 00:35:36,640 --> 00:35:38,400
@@ -3743,7 +3742,7 @@ with value proposition in mind, and with
 
 936
 00:36:00,280 --> 00:36:02,200
-words that people understand. That's If
+words that people understand. If
 
 937
 00:36:02,200 --> 00:36:04,160
@@ -3755,7 +3754,7 @@ biggest one.
 
 939
 00:36:05,680 --> 00:36:07,420
-Yeah, and so I agree. I
+– So I agree. I
 
 940
 00:36:07,420 --> 00:36:08,120
@@ -3787,7 +3786,7 @@ money. And I wish that wasn't the case.
 
 947
 00:36:21,000 --> 00:36:22,080
-I wish we could talk about healthKERI
+I wish we could talk about healthcare
 
 948
 00:36:22,080 --> 00:36:23,880
@@ -3815,11 +3814,11 @@ forms. One is if companies like
 
 954
 00:36:33,720 --> 00:36:35,200
-Healthcare can come and improve out a
+HealthKERI can come and improve out a
 
 955
 00:36:35,200 --> 00:36:38,320
-model that carried drives dollars for
+model that KERI drives dollars for
 
 956
 00:36:38,320 --> 00:36:40,200
@@ -3859,7 +3858,7 @@ The other side of this is for the
 
 965
 00:36:54,080 --> 00:36:55,960
-customers the groups that will be paying
+customers, the groups that will be paying
 
 966
 00:36:55,960 --> 00:36:57,880
@@ -3895,7 +3894,7 @@ this automatically, they will save on
 
 974
 00:37:11,560 --> 00:37:14,200
-COGS. So, I think it's it's both the
+COGS. So, I think it's both the
 
 975
 00:37:14,200 --> 00:37:16,400
@@ -3919,7 +3918,7 @@ your acronyms.
 
 980
 00:37:25,520 --> 00:37:27,800
-So, one industry that does not get rid
+– So, one industry that does not get rid
 
 981
 00:37:27,800 --> 00:37:30,160
@@ -3939,7 +3938,7 @@ the industry and I said this at the
 
 985
 00:37:35,760 --> 00:37:37,280
-steady summit
+SEDI summit
 
 986
 00:37:37,280 --> 00:37:39,640
@@ -3958,12 +3957,11 @@ technologists, and the legal
 departments to move this way and so
 
 990
-00:37:47,790 --> 00:37:47,800
-
+00:37:47,800 --> 00:37:49,508
+some of our tools would be like the
 
 991
-00:37:47,800 --> 00:37:51,240
-some of our tools would be like the
+00:37:49,532 --> 00:37:51,240
 reciprocal verifiability. You want
 
 992
@@ -4044,7 +4042,7 @@ example. We say, "Your AI agent must
 
 1011
 00:38:33,680 --> 00:38:36,360
-have, you know, some verifiable form to
+have some verifiable form to
 
 1012
 00:38:36,360 --> 00:38:38,080
@@ -4075,396 +4073,392 @@ regulators can help with to move
 things.
 
 1019
-00:38:54,230 --> 00:38:57,320
+00:38:52,291 --> 00:38:54,323
 I want to pull a few threads together
-here. The yes, we need to speak in very
 
 1020
-00:38:57,320 --> 00:39:00,720
-plain language to folks as to what
+00:38:54,366 --> 00:38:57,339
+here. The yes, we need to speak in very
 
 1021
-00:39:00,720 --> 00:39:03,080
-they what we're trying to do. The
+00:38:57,375 --> 00:39:00,720
+plain language to folks as to what
 
 1022
+00:39:00,720 --> 00:39:03,080
+we're trying to do. The
+
+1023
 00:39:03,080 --> 00:39:05,680
 problem is yes, legal and government
 
-1023
+1024
 00:39:05,680 --> 00:39:07,880
 love their acronyms. So, we've got to
 
-1024
+1025
 00:39:07,880 --> 00:39:10,870
 also meet them there.
 
-1025
-00:39:10,870 --> 00:39:10,880
-
-
 1026
-00:39:10,880 --> 00:39:16,280
+00:39:10,880 --> 00:39:13,372
 What we need to do is really think about
-don't make it too complicated.
 
 1027
+00:39:13,396 --> 00:39:16,280
+don't make it too complicated.
+
+1028
 00:39:16,280 --> 00:39:18,280
 And also try and tie it back to things
 
-1028
+1029
 00:39:18,280 --> 00:39:19,920
 they understand.
 
-1029
-00:39:19,920 --> 00:39:22,640
-Jokingly tell a story about how I
-
 1030
-00:39:22,640 --> 00:39:25,520
-actually got blue button built at CMS
+00:39:19,920 --> 00:39:22,640
+I jokingly tell a story about how I
 
 1031
+00:39:22,640 --> 00:39:25,520
+actually got blue Button Built at CMS
+
+1032
 00:39:25,520 --> 00:39:28,120
 and got it out through ATO, their
 
-1032
+1033
 00:39:28,120 --> 00:39:30,560
 authorization to operate, so that it
 
-1033
-00:39:30,560 --> 00:39:32,360
-went out and into the into the
-
 1034
+00:39:30,560 --> 00:39:32,360
+went out and into the
+
+1035
 00:39:32,360 --> 00:39:33,840
 marketplace.
 
-1035
+1036
 00:39:33,840 --> 00:39:35,760
 And I say, "I basically designed the
 
-1036
+1037
 00:39:35,760 --> 00:39:37,400
 project so nobody had to make a
 
-1037
+1038
 00:39:37,400 --> 00:39:38,680
 decision,
 
-1038
+1039
 00:39:38,680 --> 00:39:41,200
 right? So, that you always could point
 
-1039
+1040
 00:39:41,200 --> 00:39:43,440
 to precedent so that they could say,
 
-1040
+1041
 00:39:43,440 --> 00:39:45,360
 'You've already done that.'"
 
-1041
-00:39:45,360 --> 00:39:47,440
-And if you look at if you were listening
-
 1042
+00:39:45,360 --> 00:39:47,440
+And if you were listening
+
+1043
 00:39:47,440 --> 00:39:49,920
 to what we were saying this morning,
 
-1043
+1044
 00:39:49,920 --> 00:39:51,640
 a lot of what we've done there is to
 
-1044
+1045
 00:39:51,640 --> 00:39:54,560
 say, "This is just a small change on top
 
-1045
+1046
 00:39:54,560 --> 00:39:56,760
 of what you're doing already. It's the
 
-1046
+1047
 00:39:56,760 --> 00:39:58,920
 same type of technology. It's just a
 
-1047
+1048
 00:39:58,920 --> 00:40:02,720
 different cryptographic key, right?" So,
 
-1048
-00:40:02,720 --> 00:40:06,360
-that you able to make help them make
-
 1049
+00:40:02,720 --> 00:40:06,360
+that you help them make
+
+1050
 00:40:06,360 --> 00:40:08,720
 the intellectual jump.
 
-1050
-00:40:08,720 --> 00:40:11,040
-One other thing to consider is what is
-
 1051
+00:40:08,720 --> 00:40:11,040
+– One other thing to consider is what is
+
+1052
 00:40:11,040 --> 00:40:13,440
 the use case you're building for? We've
 
-1052
+1053
 00:40:13,440 --> 00:40:16,240
 had many verifiable credential companies
 
-1053
+1054
 00:40:16,240 --> 00:40:18,880
 come in from KERI and every space
 
-1054
+1055
 00:40:18,880 --> 00:40:21,360
 and they're selling a product for a use
 
-1055
+1056
 00:40:21,360 --> 00:40:23,760
 case which is not the low-hanging fruit
 
-1056
+1057
 00:40:23,760 --> 00:40:25,960
 that's needed. And so there are many
 
-1057
+1058
 00:40:25,960 --> 00:40:27,600
 entities with really smart people if you
 
-1058
+1059
 00:40:27,600 --> 00:40:29,480
 simplify what you're doing enough but
 
-1059
+1060
 00:40:29,480 --> 00:40:31,880
 hit that right use case and there's some
 
-1060
-00:40:31,880 --> 00:40:33,040
-out there. This isn't the healthKERI
-
 1061
+00:40:31,880 --> 00:40:33,040
+out there. This isn't the healthcare
+
+1062
 00:40:33,040 --> 00:40:35,320
 industry but we had we had Maverick in
 
-1062
-00:40:35,320 --> 00:40:36,680
-here on the first two days of the steady
-
 1063
+00:40:35,320 --> 00:40:36,680
+here on the first two days of the SEDI
+
+1064
 00:40:36,680 --> 00:40:38,680
 summit and they actually said, "Hey, if
 
-1064
-00:40:38,680 --> 00:40:41,280
-you one, we've already made steady
-
 1065
+00:40:38,680 --> 00:40:41,280
+you want, we've already made SEDI
+
+1066
 00:40:41,280 --> 00:40:42,920
 legal for purchase of alcohol and
 
-1066
+1067
 00:40:42,920 --> 00:40:44,640
 tobacco." And they said, "Well, if you
 
-1067
+1068
 00:40:44,640 --> 00:40:46,240
 have the implementation guide, we could
 
-1068
+1069
 00:40:46,240 --> 00:40:47,680
 have this implemented in 6 months and
 
-1069
-00:40:47,680 --> 00:40:49,520
-we'll start accepting steady." And
-
 1070
+00:40:47,680 --> 00:40:49,520
+we'll start accepting SEDI." And
+
+1071
 00:40:49,520 --> 00:40:51,880
 that's cuz there is a product market fit
 
-1071
+1072
 00:40:51,880 --> 00:40:53,200
 there that perfectly aligned with the
 
-1072
-00:40:53,200 --> 00:40:55,520
-protocol we're looking at for steady. So
-
 1073
-00:40:55,520 --> 00:40:57,680
-what are the right healthKERI use cases
+00:40:53,200 --> 00:40:55,520
+protocol we're looking at for SEDI. So
 
 1074
+00:40:55,520 --> 00:40:57,680
+what are the right healthcare use cases
+
+1075
 00:40:57,680 --> 00:41:00,360
 as well when and we don't need the whole
 
-1075
+1076
 00:41:00,360 --> 00:41:02,680
 platform. I think it's what's that to
 
-1076
+1077
 00:41:02,680 --> 00:41:05,120
 get you in the door to show value and if
 
-1077
+1078
 00:41:05,120 --> 00:41:06,720
 you do that, then you can build from
 
-1078
+1079
 00:41:06,720 --> 00:41:08,160
 there. Yeah.
 
-1079
-00:41:08,160 --> 00:41:10,440
-Fant- fantastic point and you're
-
 1080
+00:41:08,160 --> 00:41:10,440
+Fantastic point and you're
+
+1081
 00:41:10,440 --> 00:41:11,560
 right. This is all tying together. I
 
-1081
+1082
 00:41:11,560 --> 00:41:13,680
 love when a when a panel just leads
 
-1082
-00:41:13,680 --> 00:41:15,800
-towards that natural conclusion. For me,
-
 1083
-00:41:15,800 --> 00:41:17,480
-it's let's talk about the ultimate
+00:41:13,680 --> 00:41:15,800
+towards that natural conclusion.
 
 1084
-00:41:17,480 --> 00:41:19,040
-stakeholder in the healthKERI industry
+00:41:15,800 --> 00:41:17,480
+Let's talk about the ultimate
 
 1085
+00:41:17,480 --> 00:41:19,040
+stakeholder in the healthcare industry
+
+1086
 00:41:19,040 --> 00:41:21,560
 and that's the patient. We know that the
 
-1086
+1087
 00:41:21,560 --> 00:41:24,000
 trust is broken in terms of the personal
 
-1087
+1088
 00:41:24,000 --> 00:41:25,760
 data and the protections around it. We
 
-1088
+1089
 00:41:25,760 --> 00:41:27,800
 say HIPAA a lot but that doesn't mean
 
-1089
+1090
 00:41:27,800 --> 00:41:29,040
 anything when you're lying in the
 
-1090
+1091
 00:41:29,040 --> 00:41:31,880
 hospital bed and
 
-1091
+1092
 00:41:31,880 --> 00:41:33,720
 we do have some representation on here
 
-1092
+1093
 00:41:33,720 --> 00:41:35,160
 from people who are in government or
 
-1093
+1094
 00:41:35,160 --> 00:41:36,800
 who've done some pretty remarkable
 
-1094
+1095
 00:41:36,800 --> 00:41:39,000
 things with government regulation trying
 
-1095
+1096
 00:41:39,000 --> 00:41:41,480
 to help the industry move forward. So if
 
-1096
+1097
 00:41:41,480 --> 00:41:44,160
 you can give me your closing remarks
 
-1097
+1098
 00:41:44,160 --> 00:41:46,280
 individually and if you had the magic
 
-1098
+1099
 00:41:46,280 --> 00:41:47,720
 wand that you could change one
 
-1099
+1100
 00:41:47,720 --> 00:41:50,680
 regulation or add something at a state
 
-1100
+1101
 00:41:50,680 --> 00:41:53,040
 level or a federal level that could
 
-1101
+1102
 00:41:53,040 --> 00:41:54,720
 really kickstart everything in the right
 
-1102
-00:41:54,720 --> 00:42:00,750
+1103
+00:41:54,720 --> 00:41:56,615
 direction, what would that be?
 
-1103
-00:42:02,710 --> 00:42:04,360
-Well, I'll tell you know, CMS is the
-is the organization that has the biggest
-
 1104
-00:42:04,360 --> 00:42:06,640
-hammer. They're I mean their hammer is
+00:42:00,842 --> 00:42:03,479
+– Well, I'll tell you know, CMS is the
 
 1105
+00:42:03,503 --> 00:42:04,360
+is the organization that has the biggest
+
+1106
+00:42:04,360 --> 00:42:06,640
+hammer. I mean their hammer is
+
+1107
 00:42:06,640 --> 00:42:08,040
 actually
 
-1106
+1108
 00:42:08,040 --> 00:42:10,440
 is it a spoon with sugar in it or is it
 
-1107
+1109
 00:42:10,440 --> 00:42:11,520
 hammer? I don't know which, but it's
 
-1108
+1110
 00:42:11,520 --> 00:42:16,040
 very, very, very authoritative and
 
-1109
+1111
 00:42:16,040 --> 00:42:18,840
-powerful. So, they their two their two
+powerful. So, their two
 
-1110
+1112
 00:42:18,840 --> 00:42:22,080
 opportunities are reimbursement
 
-1111
+1113
 00:42:22,080 --> 00:42:23,280
 and
 
-1112
-00:42:23,280 --> 00:42:25,800
-Regulation. So, when they regulate,
-
-1113
-00:42:25,800 --> 00:42:26,590
-Regulation. So, when they regulate
-
 1114
-00:42:26,590 --> 00:42:26,600
-
+00:42:23,280 --> 00:42:25,800
+regulation. So, when they regulate,
 
 1115
 00:42:26,600 --> 00:42:31,000
-they
-you know, if for instance, they were to
+if for instance, they were to
 
 1116
 00:42:31,000 --> 00:42:32,440
@@ -4472,11 +4466,11 @@ require
 
 1117
 00:42:32,440 --> 00:42:35,480
-provider organizations to all have FEAL
+provider organizations to all have
 
 1118
 00:42:35,480 --> 00:42:37,640
-eyes in order to get into the national
+vLEIs in order to get into the national
 
 1119
 00:42:37,640 --> 00:42:38,880
@@ -4508,7 +4502,7 @@ So, this would be a huge opportunity for
 
 1126
 00:42:50,800 --> 00:42:53,120
-them. There's they haven't
+them. They haven't
 
 1127
 00:42:53,120 --> 00:42:55,200
@@ -4527,295 +4521,291 @@ I'm trying to bring them forward and say
 once they can pronounce it, I'm hoping
 
 1131
-00:43:02,720 --> 00:43:08,350
+00:43:02,720 --> 00:43:05,556
 that they can also support it.
 
 1132
-00:43:11,070 --> 00:43:15,110
-It's a tough one. I
-I think I've moved beyond this, but back
+00:43:09,159 --> 00:43:11,063
+– It's a tough one. I
 
 1133
-00:43:15,110 --> 00:43:15,120
-
+00:43:11,087 --> 00:43:15,110
+I think I've moved beyond this, but back
 
 1134
-00:43:15,120 --> 00:43:21,560
-when I was with CMS sort of 2017,
-2018, there was a lot of talk about
+00:43:15,120 --> 00:43:18,328
+when I was with CMS, sort of 2017,
 
 1135
+00:43:18,352 --> 00:43:21,560
+2018, there was a lot of talk about
+
+1136
 00:43:21,560 --> 00:43:23,240
 Medicare for all.
 
-1136
-00:43:23,240 --> 00:43:25,440
-And I was saying, "No, no, let's Why
-
 1137
+00:43:23,240 --> 00:43:25,440
+And I was saying, "No, no. Why
+
+1138
 00:43:25,440 --> 00:43:27,440
 don't we just start with Medicare
 
-1138
+1139
 00:43:27,440 --> 00:43:30,240
 registration for all? So, that you got a
 
-1139
+1140
 00:43:30,240 --> 00:43:33,560
 standard ID that you could take." And I
 
-1140
+1141
 00:43:33,560 --> 00:43:35,520
 I've sort of moved beyond that to say
 
-1141
+1142
 00:43:35,520 --> 00:43:37,120
 what I would love to see is probably
 
-1142
+1143
 00:43:37,120 --> 00:43:39,520
 regulation that says,
 
-1143
+1144
 00:43:39,520 --> 00:43:42,520
 "If I as a patient
 
-1144
+1145
 00:43:42,520 --> 00:43:47,600
 present an identifier or an identity to
 
-1145
+1146
 00:43:47,600 --> 00:43:50,520
 a practitioner, to an organization in
 
-1146
-00:43:50,520 --> 00:43:52,320
-healthKERI,
-
 1147
+00:43:50,520 --> 00:43:52,320
+healthcare,
+
+1148
 00:43:52,320 --> 00:43:54,160
 you should damn well put that into my
 
-1148
-00:43:54,160 --> 00:43:55,480
-record
-
 1149
-00:43:55,480 --> 00:43:56,800
-so that
+00:43:54,160 --> 00:43:55,480
+record.
 
 1150
-00:43:56,800 --> 00:43:59,640
-Yeah, so that it then starts as you as
+00:43:59,640 --> 00:44:01,440
+As they start sharing data and you go to
 
 1151
-00:43:59,640 --> 00:44:01,440
-they start sharing data and you go to
-
-1152
 00:44:01,440 --> 00:44:03,760
 more and more places, you can actually
 
-1153
+1152
 00:44:03,760 --> 00:44:07,160
 patient match. I had a colleague
 
-1154
+1153
 00:44:07,160 --> 00:44:09,720
 in the ideal lab at CMS who was there to
 
-1155
+1154
 00:44:09,720 --> 00:44:11,640
 do patient matching.
 
-1156
+1155
 00:44:11,640 --> 00:44:13,280
-You'll know who he is if he ever sees
+You'll know who he is, if he ever sees
+
+1156
+00:44:13,280 --> 00:44:16,040
+the video.
 
 1157
-00:44:13,280 --> 00:44:16,040
-the video. Yeah, and
+00:44:16,040 --> 00:44:17,462
+Every time I went
 
 1158
-00:44:16,040 --> 00:44:17,840
-I would always every time I went to see
+00:44:17,501 --> 00:44:20,800
+to see him, I'd say, you know, patient
 
 1159
-00:44:17,840 --> 00:44:18,880
-him
-
-1160
-00:44:18,880 --> 00:44:20,800
-see him I'd say, you know, patient
-
-1161
 00:44:20,800 --> 00:44:22,720
 matching is so much easier when you
 
-1162
+1160
 00:44:22,720 --> 00:44:27,830
 involve the patient.
 
-1163
-00:44:30,350 --> 00:44:32,120
-So I haven't become a healthKERI expert
+1161
+00:44:27,866 --> 00:44:30,223
+– So I haven't become a healthcare expert
+
+1162
+00:44:30,248 --> 00:44:32,120
 overnight. So
 
-1164
+1163
 00:44:32,120 --> 00:44:33,800
 I'm going to take a little bit of a
 
-1165
+1164
 00:44:33,800 --> 00:44:36,000
 different tack here.
 
-1166
+1165
 00:44:36,000 --> 00:44:39,840
 I would like to be able to see any law
 
-1167
+1166
 00:44:39,840 --> 00:44:42,640
 going forward that
 
-1168
+1167
 00:44:42,640 --> 00:44:44,840
 involves identity
 
-1169
+1168
 00:44:44,840 --> 00:44:47,880
 in order to be able to come at it from
 
-1170
+1169
 00:44:47,880 --> 00:44:51,400
 what are you trying to accomplish? What
 
-1171
+1170
 00:44:51,400 --> 00:44:53,680
 benefits are you trying
 
-1172
+1171
 00:44:53,680 --> 00:44:57,520
 to gain? So what features then do you
 
-1173
+1172
 00:44:57,520 --> 00:45:00,720
 need in order to be able to have in a
 
-1174
+1173
 00:45:00,720 --> 00:45:02,240
 solution?
 
-1175
+1174
 00:45:02,240 --> 00:45:06,320
 Or to have the law be principle-based.
 
-1176
+1175
 00:45:06,320 --> 00:45:09,840
 If you have need for
 
-1177
+1176
 00:45:09,840 --> 00:45:13,640
 to be able to protect for example
 
-1178
+1177
 00:45:13,640 --> 00:45:16,240
 children or elderly parents, do you
 
-1179
+1178
 00:45:16,240 --> 00:45:18,920
 need delegation?
 
-1180
+1179
 00:45:18,920 --> 00:45:21,880
 Are you trying to be able to
 
-1181
+1180
 00:45:21,880 --> 00:45:24,800
 instantiate or give credentials in order
 
-1182
+1181
 00:45:24,800 --> 00:45:28,360
 to be able to know the real situation of
 
-1183
+1182
 00:45:28,360 --> 00:45:30,840
 authority within a company in the area
 
-1184
+1183
 00:45:30,840 --> 00:45:33,600
 of organizational identity
 
-1185
+1184
 00:45:33,600 --> 00:45:36,520
 then you're going to need a feature in
 
-1186
+1185
 00:45:36,520 --> 00:45:38,720
 your in your identity solution that
 
-1187
+1186
 00:45:38,720 --> 00:45:41,920
 gives you that. What level of assurance
 
-1188
+1187
 00:45:41,920 --> 00:45:45,760
 to know that it's really the person who
 
-1189
+1188
 00:45:45,760 --> 00:45:47,480
 is supposed to be able to be
 
-1190
+1189
 00:45:47,480 --> 00:45:49,240
 authorized to get that credential? Do
 
-1191
+1190
 00:45:49,240 --> 00:45:52,000
 they have that role? What level of
 
-1192
+1191
 00:45:52,000 --> 00:45:55,440
 security am I comfortable with?
 
-1193
+1192
 00:45:55,440 --> 00:45:58,240
 Do I need automated verification? Those
 
-1194
+1193
 00:45:58,240 --> 00:46:00,080
 types of things. And when you answer
 
-1195
+1194
 00:46:00,080 --> 00:46:04,280
 those questions the law then gives you a
 
-1196
+1195
 00:46:04,280 --> 00:46:07,120
 guideline or a road map
 
-1197
+1196
 00:46:07,120 --> 00:46:10,200
 in order to be able to pick
 
-1198
+1197
 00:46:10,200 --> 00:46:13,600
 a good solution. And for me, I think
 
-1199
+1198
 00:46:13,600 --> 00:46:17,640
 that changing the dynamic of
 
-1200
+1199
 00:46:17,640 --> 00:46:20,760
 being able to come at the law in
 
-1201
-00:46:20,760 --> 00:46:25,550
+1200
+00:46:20,760 --> 00:46:23,553
 that way would be an advantage.
 
+1201
+00:46:25,516 --> 00:46:27,606
+– So I've been looking around the room and
+
 1202
-00:46:27,510 --> 00:46:29,720
-So I've been looking around the room and
+00:46:27,630 --> 00:46:29,720
 I'm pretty certain that our friends from
 
 1203
@@ -4896,7 +4886,7 @@ other initiatives. And so now today
 
 1222
 00:47:14,440 --> 00:47:17,600
-knowing that I that we have
+knowing that we have
 
 1223
 00:47:17,600 --> 00:47:19,800
@@ -4936,144 +4926,143 @@ about the implications.
 
 1232
 00:47:40,760 --> 00:47:43,692
-This is an unfair question for me.
+– This is an unfair question for me.
 
 1233
 00:47:43,692 --> 00:47:45,830
 [laughter]
 
 1234
-00:47:47,670 --> 00:47:48,520
-What would you like to do?
-Cuz
+00:47:45,921 --> 00:47:48,295
+– What would you like to do?
 
 1235
+00:47:48,319 --> 00:47:48,520
+– Cuz
+
+1236
 00:47:48,520 --> 00:47:50,160
 there's this bad thing that happens when
 
-1236
+1237
 00:47:50,160 --> 00:47:52,120
 I say what we want to do in regulation
 
-1237
+1238
 00:47:52,120 --> 00:47:54,280
 then I have to make recommendations.
 
-1238
+1239
 00:47:54,280 --> 00:47:56,000
 It ends up happening.
 
-1239
+1240
 00:47:56,000 --> 00:47:59,800
 Now some of this I've said
 
-1240
+1241
 00:47:59,800 --> 00:48:01,880
 big picture we know privacy and security
 
-1241
+1242
 00:48:01,880 --> 00:48:04,720
 is broken in the country. The amount
 
-1242
+1243
 00:48:04,720 --> 00:48:07,280
 of correlation happening with your data
 
-1243
+1244
 00:48:07,280 --> 00:48:09,040
 and how that profiling and the
 
-1244
+1245
 00:48:09,040 --> 00:48:10,880
 scoring and predictive analytics is
 
-1245
+1246
 00:48:10,880 --> 00:48:13,240
 occurring in every sector, private
 
-1246
-00:48:13,240 --> 00:48:15,720
-sector, public sector, healthKERI,
-
 1247
+00:48:13,240 --> 00:48:15,720
+sector, public sector, healthcare,
+
+1248
 00:48:15,720 --> 00:48:18,680
 social services, education. You would be
 
-1248
-00:48:18,680 --> 00:48:20,400
-amazed in this room and we have seen me
-
 1249
+00:48:18,680 --> 00:48:20,400
+amazed in this room and me
+
+1250
 00:48:20,400 --> 00:48:23,080
 and George have seen these systems. And
 
-1250
+1251
 00:48:23,080 --> 00:48:24,400
 so I'm coming at it from a different
 
-1251
+1252
 00:48:24,400 --> 00:48:26,320
 perspective of what is coming from the
 
-1252
+1253
 00:48:26,320 --> 00:48:28,920
 private sector industry and how that
 
-1253
+1254
 00:48:28,920 --> 00:48:30,520
 would be used to exploit for
 
-1254
+1255
 00:48:30,520 --> 00:48:32,600
 monetary or the public sector side to
 
-1255
+1256
 00:48:32,600 --> 00:48:34,080
 try to influence you to make
 
-1256
+1257
 00:48:34,080 --> 00:48:35,680
 different decisions.
 
-1257
+1258
 00:48:35,680 --> 00:48:37,880
 I had seven years of experience in
 
-1258
+1259
 00:48:37,880 --> 00:48:39,960
 privacy and security with human
 
-1259
+1260
 00:48:39,960 --> 00:48:42,920
 services in Utah and I know HIPAA does
 
-1260
+1261
 00:48:42,920 --> 00:48:44,040
 not work and the levels of
 
-1261
+1262
 00:48:44,040 --> 00:48:46,960
 non-compliance for both privacy and
 
-1262
+1263
 00:48:46,960 --> 00:48:50,080
 security. There's maximum use of data,
 
-1263
+1264
 00:48:50,080 --> 00:48:51,720
 but these other things are viewed as
 
-1264
+1265
 00:48:51,720 --> 00:48:53,200
 just hindrances or there's not the
 
-1265
+1266
 00:48:53,200 --> 00:48:55,080
 expertise to do.
-
-1266
-00:48:55,080 --> 00:48:57,360
-So my
 
 1267
 00:48:57,360 --> 00:48:59,000
@@ -5085,7 +5074,7 @@ on the legislative panel on the
 
 1269
 00:49:01,200 --> 00:49:03,840
-steady summit. What I am working
+SEDI summit. What I am working
 
 1270
 00:49:03,840 --> 00:49:05,280
@@ -5125,11 +5114,11 @@ should be acting in your best interest
 
 1279
 00:49:24,160 --> 00:49:25,720
-and this cross all industry. This
+and this crosses all industry. This
 
 1280
 00:49:25,720 --> 00:49:27,680
-crosses healthKERI, this crosses
+crosses healthcare, this crosses
 
 1281
 00:49:27,680 --> 00:49:30,360
@@ -5157,11 +5146,11 @@ Then we will be creating also some
 
 1287
 00:49:40,440 --> 00:49:43,440
-extreme safe harbors for entities to act
+extreme safe harbors for entities to act…
 
 1288
 00:49:43,440 --> 00:49:45,440
-To work within knowing mistakes are
+to work with knowing mistakes are
 
 1289
 00:49:45,440 --> 00:49:47,360
@@ -5181,7 +5170,7 @@ of AI and automation, but anything
 
 1293
 00:49:55,160 --> 00:49:58,000
-absent a total overhaul
+absent… a total overhaul
 
 1294
 00:49:58,000 --> 00:49:59,800
@@ -5213,7 +5202,7 @@ dominance that we have here in the US.
 
 1301
 00:50:12,800 --> 00:50:14,840
-So, since Chris pulled me in by saying
+– So, since Chris pulled me in by saying
 
 1302
 00:50:14,840 --> 00:50:16,360
@@ -5285,14 +5274,12 @@ one more in the win column. Can we have
 
 1319
 00:50:49,320 --> 00:50:51,680
-a round of applause FOR OUR PANEL?
+a round of applause for our panel?
 
 1320
 00:50:51,680 --> 00:50:54,270
 [applause]
 
 1321
-00:50:56,255 --> 00:50:58,285
-THANK YOU.
-[applause]
-
+00:50:54,493 --> 00:50:58,285
+Thank you. [applause]
