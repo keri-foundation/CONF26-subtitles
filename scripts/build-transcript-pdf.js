@@ -104,7 +104,13 @@ function parseFilename(filename) {
 // ─── Cue → paragraph grouping ───────────────────────────────────────────────
 
 const SENTENCE_END = /[.!?]["'”’)\]]?$/;
+const SENTENCE_BOUNDARY = /[.!?]["'”’)\]]?(?:\s|$)/g;
 const FILLER = /^\s*[\[(](?:inaudible|applause|laughter|music|silence|indistinct|cross ?talk)[^\])]*[\])]\s*$/i;
+
+function countSentences(text) {
+  const matches = text.match(SENTENCE_BOUNDARY);
+  return matches ? matches.length : 0;
+}
 
 function groupIntoParagraphs(cues) {
   // Drop the opening title cue (the talk's own title slide) and bracketed
@@ -127,20 +133,27 @@ function groupIntoParagraphs(cues) {
 
   for (const cue of cleaned) {
     if (!current) {
-      current = { start: cue.start, text: cue.text };
+      current = { start: cue.start, text: cue.text, sentences: countSentences(cue.text) };
       continue;
     }
 
-    const gap = cue.start - current.start;
-    const endsSentence = SENTENCE_END.test(current.text);
-    const longEnough = current.text.length >= 80;
+    const gap = cue.start - current.end;
+    current.end = cue.end;
 
-    if ((endsSentence && longEnough) || gap > 6) {
+    const endsSentence = SENTENCE_END.test(current.text);
+    const sentenceCount = current.sentences;
+    const longEnough = current.text.length >= 220;
+
+    // Break into a new paragraph only after a sentence boundary AND once we've
+    // accumulated at least two sentences (so paragraphs read as fluent prose,
+    // not one-line caption fragments). Long silences also force a break.
+    if ((endsSentence && sentenceCount >= 2 && longEnough) || gap > 12) {
       flush();
-      current = { start: cue.start, text: cue.text };
+      current = { start: cue.start, end: cue.end, text: cue.text, sentences: countSentences(cue.text) };
     } else {
       const needsSpace = !current.text.endsWith(" ") && !cue.text.startsWith(" ");
       current.text += (needsSpace ? " " : "") + cue.text;
+      current.sentences += countSentences(cue.text);
     }
   }
   flush();
@@ -192,10 +205,7 @@ function buildHtml(talks, generatedOn) {
   const chapters = talks
     .map((t, i) => {
       const paragraphs = t.paragraphs
-        .map(
-          (p) =>
-            `<p><span class="ts">${formatTimestamp(p.start)}</span>${esc(p.text)}</p>`
-        )
+        .map((p) => `<p>${esc(p.text)}</p>`)
         .join("\n");
 
       return `
@@ -480,23 +490,14 @@ function buildHtml(talks, generatedOn) {
   /* ─── Transcript body ─── */
   .transcript { columns: 1; }
   .transcript p {
-    margin: 0 0 2.8mm 0;
-    text-indent: 0;
+    margin: 0 0 2.4mm 0;
+    text-indent: 6mm;
     orphans: 3;
     widows: 3;
     text-align: justify;
     hyphens: auto;
   }
-  .transcript p .ts {
-    display: inline-block;
-    min-width: 14mm;
-    margin-right: 3mm;
-    font-family: "SF Mono", "Menlo", monospace;
-    font-size: 7.5pt;
-    color: #b89058;
-    letter-spacing: 0.04em;
-    vertical-align: baseline;
-  }
+  .transcript p:first-child { text-indent: 0; }
 
   /* First paragraph after opener: drop cap */
   .transcript p:first-child::first-letter {
