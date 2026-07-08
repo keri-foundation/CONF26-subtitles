@@ -28,7 +28,7 @@ Authentication Mechanism
 
 8
 00:00:17,920 --> 00:00:22,720
-and this is for all non KEL
+and this is for all non-KEL
 
 9
 00:00:22,720 --> 00:00:25,760
@@ -60,7 +60,7 @@ essentially a replacement for
 
 16
 00:00:39,120 --> 00:00:40,960
-shared secretbased account management.
+shared-secret-based account management.
 
 17
 00:00:40,960 --> 00:00:42,559
@@ -104,7 +104,7 @@ then replay that message at a later time
 
 27
 00:01:07,040 --> 00:01:10,159
-and you could have a or the
+and you could have a ..., or the
 
 28
 00:01:10,159 --> 00:01:11,439
@@ -120,7 +120,7 @@ one which could cause all kinds of
 
 31
 00:01:15,360 --> 00:01:17,200
-problems with you know like if you
+problems, like if you
 
 32
 00:01:17,200 --> 00:01:18,400
@@ -128,7 +128,7 @@ were signing on to an account or
 
 33
 00:01:18,400 --> 00:01:19,600
-something you could have someone who is
+something, you could have someone who is
 
 34
 00:01:19,600 --> 00:01:23,280
@@ -156,7 +156,7 @@ whether that time stamp falls within an
 
 40
 00:01:32,960 --> 00:01:35,600
-acceptable window relative to its own
+acceptable [time] window relative to its own
 
 41
 00:01:35,600 --> 00:01:37,360
@@ -192,7 +192,7 @@ single method and KRAM is applied
 
 49
 00:01:55,119 --> 00:01:57,520
-immediately after some basic allow deny
+immediately after some basic 'allow deny'
 
 50
 00:01:57,520 --> 00:01:59,680
@@ -200,7 +200,7 @@ logic if in case you want to filter for
 
 51
 00:01:59,680 --> 00:02:01,520
-given identifiers right in case you want
+given identifiers, in case you want
 
 52
 00:02:01,520 --> 00:02:04,719
@@ -212,7 +212,7 @@ should note here that KRAM is designed
 
 54
 00:02:06,079 --> 00:02:08,879
-for KERI v2 which is not out yet.
+for KERI v2 which is not out yet. [update July26: v2.0 is out]
 
 55
 00:02:08,879 --> 00:02:10,800
@@ -364,11 +364,11 @@ identifier for that message.
 
 92
 00:03:33,534 --> 00:03:36,431
-– So it's unique per message even in the
+– So it's unique per message even if 
 
 93
 00:03:36,456 --> 00:03:38,239
-[inaudible] thread.
+applied in a thread.
 
 94
 00:03:38,239 --> 00:03:39,440
@@ -416,7 +416,7 @@ then they must have identical contents
 
 105
 00:04:08,080 --> 00:04:12,560
-and time stamps. So then seals
+and time stamps. So then Seals,
 
 106
 00:04:12,560 --> 00:04:14,799
@@ -432,7 +432,7 @@ tree of hashes or to a particular
 
 109
 00:04:20,880 --> 00:04:23,680
-event in the key event sequence. And
+event in the key-event sequence. And
 
 110
 00:04:23,680 --> 00:04:26,320
@@ -500,7 +500,7 @@ created and then adding that to your
 
 126
 00:05:06,880 --> 00:05:10,160
-KEL, you know and then continuing
+KEL, and then continuing
 
 127
 00:05:10,160 --> 00:05:11,840
@@ -560,7 +560,7 @@ multi key signature and for the purposes
 
 141
 00:05:47,840 --> 00:05:50,000
-in eventually that matters. It is
+in .., eventually that matters, it is
 
 142
 00:05:50,000 --> 00:05:51,919
@@ -584,7 +584,7 @@ things out is because…
 
 147
 00:06:02,800 --> 00:06:05,759
-do amplification and DeOS mitigation.
+do Amplification and DoS (Denial of Service) mitigation.
 
 148
 00:06:05,759 --> 00:06:09,759
@@ -600,7 +600,7 @@ get into the more expensive
 
 151
 00:06:14,400 --> 00:06:16,000
-authentication based
+authentication-based
 
 152
 00:06:16,000 --> 00:06:18,560
@@ -704,11 +704,11 @@ devices. The receiver needs to
 
 177
 00:07:15,120 --> 00:07:18,479
-collect those signatures
+collect those signatures,
 
 178
 00:07:18,479 --> 00:07:21,599
-needs to collect those signatures
+needs to collect those signatures,
 
 179
 00:07:21,599 --> 00:07:24,629
@@ -736,7 +736,7 @@ So this is where we have different
 
 185
 00:07:41,199 --> 00:07:44,400
-KRAM windows. KRAM uses a long lag
+KRAM [time] windows. KRAM uses a long lag
 
 186
 00:07:44,400 --> 00:07:47,680
@@ -788,15 +788,15 @@ the authentication mechanism that we
 
 198
 00:08:12,800 --> 00:08:15,120
-kind of sus out in the beginning of the
+suss out in the beginning of the
 
 199
 00:08:15,120 --> 00:08:17,440
-KRAM It method which is why this is
+KRAM-It method, which is why this [talk] is
 
 200
 00:08:17,440 --> 00:08:21,360
-called KRAM It with Ari.
+called 'KRAM It with Ari.'
 
 201
 00:08:21,360 --> 00:08:23,599
@@ -952,1797 +952,1793 @@ be sent by malicious bad actors.
 
 239
 00:09:59,200 --> 00:10:01,920
-– In current use protocols. How is that
+– In current-use protocols, how is that
 
 240
 00:10:01,920 --> 00:10:03,845
 mitigated?
 
 241
-00:10:03,952 --> 00:10:04,962
-[inaudible]
+00:10:03,952 --> 00:10:06,533
+- OAuth2 or other examples
 
 242
-00:10:05,046 --> 00:10:06,533
-or other examples.
-
-243
 00:10:06,557 --> 00:10:09,471
 – I don't know. I've only studied
 
-244
+243
 00:10:09,496 --> 00:10:12,480
 KERI, so I couldn't tell you how OAuth 2.0
 
-245
+244
 00:10:12,480 --> 00:10:13,120
 does it.
 
-246
+245
 00:10:13,120 --> 00:10:16,880
 [inaudible] approach in most secure channel
 
-247
+246
 00:10:16,880 --> 00:10:17,920
 – is it a nonce
 
-248
+247
 00:10:17,920 --> 00:10:22,079
 – by TLS is you do a challenge response.
 
-249
+248
 00:10:22,079 --> 00:10:25,839
 So it's you […] with three messages. So you send
 
-250
+249
 00:10:25,839 --> 00:10:30,399
 a request, the host sends you back a
 
-251
+250
 00:10:30,399 --> 00:10:33,600
 nonce, you sign the nonce or encrypt the
 
-252
+251
 00:10:33,600 --> 00:10:35,839
 nonce, send it back and then they decrypt
 
-253
+252
 00:10:35,839 --> 00:10:38,800
 it or verify the signature and that
 
-254
+253
 00:10:38,800 --> 00:10:41,200
 nonce is basically
 
-255
+254
 00:10:41,200 --> 00:10:43,760
 not replayable as long as they don't
 
-256
+255
 00:10:43,760 --> 00:10:45,920
 ever generate the same nonce and accept
 
-257
+256
 00:10:45,920 --> 00:10:49,839
 it. That means they either
 
-258
+257
 00:10:49,839 --> 00:10:52,640
 assume an ephemeral secure session so
 
-259
+258
 00:10:52,640 --> 00:10:54,880
 they don't have to save the nonces but if
 
-260
+259
 00:10:54,880 --> 00:10:58,160
 you want something like multisig
 
-261
+260
 00:10:58,160 --> 00:11:01,279
 that can span multiple sessions then
 
-262
+261
 00:11:01,279 --> 00:11:02,880
 your host because now you have to store
 
-263
+262
 00:11:02,880 --> 00:11:06,079
 all those nonces forever get replayed.
 
-264
+263
 00:11:06,079 --> 00:11:08,240
 So, when you look at Replay
 
-265
+264
 00:11:08,240 --> 00:11:11,120
 Attack Protection, when you go away from
 
-266
+265
 00:11:11,120 --> 00:11:14,480
 ephemeral interactions to things that
 
-267
+266
 00:11:14,480 --> 00:11:16,480
 have to last for long periods of time,
 
-268
+267
 00:11:16,480 --> 00:11:18,320
 most of the existing mechanisms just
 
-269
+268
 00:11:18,320 --> 00:11:19,600
 don't work. They just
 
-270
+269
 00:11:19,600 --> 00:11:22,000
 don't scale. You have to remember things
 
-271
+270
 00:11:22,000 --> 00:11:24,399
 forever or you have to start to build
 
-272
+271
 00:11:24,399 --> 00:11:26,000
 provable caches.
 
-273
+272
 00:11:26,000 --> 00:11:29,040
 – Statistically random with large
 
-274
+273
 00:11:29,040 --> 00:11:32,870
 – Yeah,
 
-275
+274
 00:11:32,895 --> 00:11:33,980
 – That makes sense actually.
 
-276
+275
 00:11:34,068 --> 00:11:34,565
 – Okay. – I want to ask
 
-277
+276
 00:11:35,040 --> 00:11:35,920
 to summarize.
 
-278
+277
 00:11:35,920 --> 00:11:40,880
 To summarize… other authentication
 
-279
+278
 00:11:40,880 --> 00:11:44,079
 mechanisms like OAuth 2.0 do multi-
 
-280
+279
 00:11:44,079 --> 00:11:47,519
 message authentication via nonces which
 
-281
+280
 00:11:47,519 --> 00:11:52,788
-are not scalable as such. Okay.
+are not scalable as such.
 
-282
+281
 00:11:58,476 --> 00:11:59,869
 Now,
 
-283
+282
 00:12:00,160 --> 00:12:02,399
 talk about some fundamental protections
 
-284
+283
 00:12:02,399 --> 00:12:04,240
 of KRAM.
 
-285
+284
 00:12:04,240 --> 00:12:06,320
 So, the first thing that we're going to
 
-286
+285
 00:12:06,320 --> 00:12:08,800
 do when well, we're ordering
 
-287
+286
 00:12:08,800 --> 00:12:12,639
 these by the cheapest means of
 
-288
+287
 00:12:12,639 --> 00:12:14,720
 making sure that your message is
 
-289
+288
 00:12:14,720 --> 00:12:18,399
 authenticated per the given point
 
-290
+289
 00:12:18,399 --> 00:12:20,639
 in the protection that you're at. So the
 
-291
+290
 00:12:20,639 --> 00:12:21,839
 first thing that we want to do is we
 
-292
+291
 00:12:21,839 --> 00:12:23,480
 want to look up this
 
-293
+292
 00:12:23,505 --> 00:12:25,324
 message. Like we said, it's got a SAID on
 
-294
+293
 00:12:25,349 --> 00:12:27,920
 it which is unique. So we're looking it
 
-295
+294
 00:12:27,920 --> 00:12:31,360
 up against a cache. And if that message
 
-296
+295
 00:12:31,360 --> 00:12:34,000
 is there in that cache already, then we
 
-297
+296
 00:12:34,000 --> 00:12:36,320
 know it's a duplicate because no message
 
-298
+297
 00:12:36,320 --> 00:12:38,160
 can have the same set as a message
 
-299
+298
 00:12:38,160 --> 00:12:39,839
 that's already existed. So you know
 
-300
+299
 00:12:39,839 --> 00:12:41,839
 you've got something funny going on if
 
-301
+300
 00:12:41,839 --> 00:12:44,800
 you're… or well it could be
 
-302
+301
 00:12:44,800 --> 00:12:46,320
 it could not be something funny. It
 
-303
+302
 00:12:46,320 --> 00:12:47,839
 could also just be someone who's
 
-304
+303
 00:12:47,839 --> 00:12:49,200
 legitimately trying to send a message
 
-305
+304
 00:12:49,200 --> 00:12:51,440
 again. But the point being that the
 
-306
+305
 00:12:51,440 --> 00:12:53,279
 first thing we do cache lookup cache
 
-307
+306
 00:12:53,279 --> 00:12:57,040
 lookup and drop if we already
 
-308
+307
 00:12:57,040 --> 00:13:00,880
 have something there. We are also
 
-309
+308
 00:13:00,880 --> 00:13:03,040
 checking to see if these are multikey
 
-310
+309
 00:13:03,040 --> 00:13:05,760
 messages because we can have a message
 
-311
+310
 00:13:05,760 --> 00:13:09,680
 that has the same SAID but has
 
-312
+311
 00:13:09,680 --> 00:13:11,920
 additional signatures that must be
 
-313
+312
 00:13:11,920 --> 00:13:13,600
 collected towards a threshold. So there
 
-314
+313
 00:13:13,600 --> 00:13:15,839
 is a little bit of nuance with respects
 
-315
+314
 00:13:15,839 --> 00:13:19,040
-to multi
+to multi-key
+
+315
+00:13:19,040 --> 00:13:21,920
+messages.
 
 316
-00:13:19,040 --> 00:13:21,920
-key messages.
+00:13:21,920 --> 00:13:23,600
+Next, you're going to do a timeliness
 
 317
-00:13:21,920 --> 00:13:23,600
-Next you're going to do a timeliness
-
-318
 00:13:23,600 --> 00:13:25,519
 check which only occurs for uncashed
 
-319
+318
 00:13:25,519 --> 00:13:29,200
 messages. And you're going to do this
 
-320
+319
 00:13:29,200 --> 00:13:30,880
 nice little formula here. This
 
-321
+320
 00:13:30,880 --> 00:13:32,560
 is the real magic behind KRAM or at
 
-322
+321
 00:13:32,560 --> 00:13:34,720
 least some of it which is a receiver
 
-323
+322
 00:13:34,720 --> 00:13:40,320
 date time minus drift minus ML which is
 
-324
+323
 00:13:40,320 --> 00:13:44,959
-going to be sort of a…
+going to be a…
+
+324
+00:13:44,959 --> 00:13:47,360
+this is a variable, this could be
 
 325
-00:13:44,959 --> 00:13:47,360
-this is a variable like this could be
-
-326
 00:13:47,360 --> 00:13:49,360
 different depending on whether you have
 
-327
+326
 00:13:49,360 --> 00:13:52,079
-a multi key it might be a longer lag or
+a multi key, it might be a longer lag or
 
-328
+327
 00:13:52,079 --> 00:13:56,399
 whether you have a zip wherein you're
 
-329
+328
 00:13:56,399 --> 00:13:58,000
 going to be waiting for an even longer
 
-330
+329
 00:13:58,000 --> 00:14:00,480
 time to do different negotiations of
 
-331
+330
 00:14:00,480 --> 00:14:02,480
 contracts or multiple messages within
 
-332
+331
 00:14:02,480 --> 00:14:06,639
 within a given very long time window.
 
-333
+332
 00:14:06,639 --> 00:14:10,560
 So right, do you see here ML equals SL, i.e.
 
-334
+333
 00:14:10,584 --> 00:14:12,320
 we're doing for seal reference and
 
-335
+334
 00:14:12,320 --> 00:14:14,240
 single key we swap this out for a short
 
-336
+335
 00:14:14,240 --> 00:14:18,560
-lag long lag for multi key etc.
+lag, long lag for multi key, etc.
 
-337
+336
 00:14:18,560 --> 00:14:19,440
 Next you're going to try to
 
-338
+337
 00:14:19,440 --> 00:14:21,440
 authenticate. you're going to resolve
 
-339
+338
 00:14:21,440 --> 00:14:24,079
 the auth seal type by checking the seal
 
-340
+339
 00:14:24,079 --> 00:14:25,920
 reference first because it's cheap and
 
-341
+340
 00:14:25,920 --> 00:14:28,480
 then you're going to go on to signatures
 
-342
+341
 00:14:28,480 --> 00:14:31,839
 and with single key you just have to
 
-343
+342
 00:14:31,839 --> 00:14:35,839
-validate cache and accept. Multi key.
+validate cache and accept. Multi key,
+
+343
+00:14:35,839 --> 00:14:37,600
+again, you're going to verify the
 
 344
-00:14:35,839 --> 00:14:37,600
-Again, you're going to verify the
-
-345
 00:14:37,600 --> 00:14:39,600
 available signatures and then you're
 
-346
+345
 00:14:39,600 --> 00:14:41,519
 going to take a look at that threshold
 
-347
+346
 00:14:41,519 --> 00:14:43,680
 And see if it's met at that point.
 
-348
+347
 00:14:43,680 --> 00:14:47,600
 And if not, then you're going to
 
-349
+348
 00:14:47,600 --> 00:14:49,120
 you're going to well, you're basically
 
-350
+349
 00:14:49,120 --> 00:14:50,720
 just collecting those and waiting for
 
-351
+350
 00:14:50,720 --> 00:14:52,800
 more messages to come in until that
 
-352
+351
 00:14:52,800 --> 00:14:56,480
 threshold is met. It's important to
 
-353
+352
 00:14:56,480 --> 00:14:59,760
-note that the prune windows always
+note that the prune [time] windows always
 
-354
+353
 00:14:59,760 --> 00:15:02,320
 must be greater than the accept windows
 
-355
+354
 00:15:02,320 --> 00:15:04,160
 which is going to prevent gap attacks
 
-356
+355
 00:15:04,160 --> 00:15:06,800
 during configuration changes. And again
 
-357
+356
 00:15:06,800 --> 00:15:09,040
 we're doing… Yes?
 
-358
+357
 00:15:09,040 --> 00:15:11,279
 – The window is a measure of timing.
 
-359
+358
 00:15:11,279 --> 00:15:14,079
 – Yeah, it's a sliding
 
-360
+359
 00:15:14,079 --> 00:15:16,560
 window. So a given window will be an
 
-361
+360
 00:15:16,560 --> 00:15:18,800
 offset in one direction and another.
 
-362
+361
 00:15:18,800 --> 00:15:21,839
 Right. So like if it's what time is it?
 
-363
+362
 00:15:21,839 --> 00:15:24,320
-Three. – Or [inaudible]
+Three. – Or wall-clock time?
 
-364
+363
 00:15:24,320 --> 00:15:25,279
 – Say that last part again.
 
-365
+364
 00:15:25,279 --> 00:15:27,120
 – Is the expectation that it's wall-
 
-366
+365
 00:15:27,120 --> 00:15:29,839
 clock time or something else like tick
 
-367
+366
 00:15:29,839 --> 00:15:30,560
 counts?
 
-368
+367
 00:15:30,560 --> 00:15:31,920
 – It's going to be wall-clock time,
 
-369
+368
 00:15:31,920 --> 00:15:33,120
 right? Network time.
 
-370
+369
 00:15:33,120 --> 00:15:34,480
 – Network time.
 
-371
+370
 00:15:34,480 --> 00:15:37,199
 – Yes. So…
 
-372
+371
 00:15:37,199 --> 00:15:39,360
 – So is there a dependency to have secure
 
-373
+372
 00:15:39,360 --> 00:15:41,040
 time?
 
-374
+373
 00:15:41,040 --> 00:15:43,360
 – Yes. Well, no. Okay.
 
-375
+374
 00:15:43,360 --> 00:15:44,480
 – No.
 
-376
+375
 00:15:44,480 --> 00:15:45,279
 No. No.
 
-377
+376
 00:15:45,279 --> 00:15:46,111
 – What's secure? What do you mean
 
-378
+377
 00:15:46,136 --> 00:15:46,631
 secure time?
 
-379
+378
 00:15:46,656 --> 00:15:50,720
 – Time is always relative to the host. So it
 
-380
+379
 00:15:50,720 --> 00:15:52,720
 doesn't matter what an attacker
 
-381
+380
 00:15:52,720 --> 00:15:54,480
 does. If they're not
 
-382
+381
 00:15:54,480 --> 00:15:57,120
 synchronized with the host time, they
 
-383
+382
 00:15:57,120 --> 00:15:59,680
 can't lie about the time, right? And
 
-384
+383
 00:15:59,680 --> 00:16:02,480
 and if the host records the timing, they
 
-385
+384
 00:16:02,480 --> 00:16:05,279
 can't do a clock replicate attack on
 
-386
+385
 00:16:05,279 --> 00:16:07,920
 it. So that when they spin back up, you
 
-387
+386
 00:16:07,920 --> 00:16:10,399
 know, they can't like push the time
 
-388
+387
 00:16:10,399 --> 00:16:14,000
 back, you know. – So time, but the
 
-389
+388
 00:16:14,000 --> 00:16:15,440
 security is the
 
-390
+389
 00:16:15,440 --> 00:16:17,519
 the host itself. And the
 
-391
+390
 00:16:17,519 --> 00:16:23,430
 assumption is the attack [inaudible]
 
-392
+391
 00:16:23,837 --> 00:16:24,422
 – So to be clear…
 
-393
+392
 00:16:24,447 --> 00:16:27,199
 – I don't know what you mean by secure clock
 
-394
+393
 00:16:27,199 --> 00:16:30,480
 but those [inaudible]
 
-395
+394
 00:16:30,480 --> 00:16:33,600
 [inaudible]
 
-396
+395
 00:16:33,600 --> 00:16:36,399
 – Yeah. But in this case server you just
 
-397
+396
 00:16:36,399 --> 00:16:37,360
 you are the server.
 
-398
+397
 00:16:37,360 --> 00:16:38,480
 – Yeah. You are the server.
 
-399
+398
 00:16:38,480 --> 00:16:41,920
 – Okay. So you are the server which is the
 
-400
+399
 00:16:41,920 --> 00:16:43,680
 security essentially to answer your
 
-401
+400
 00:16:43,680 --> 00:16:47,279
 question. Okay. That for the microphone.
 
-402
+401
 00:16:47,279 --> 00:16:49,360
 Let's see. Did I miss anything on
 
-403
+402
 00:16:49,360 --> 00:16:51,519
 here?
 
-404
+403
 00:16:51,519 --> 00:16:54,000
 Oh, right. Key State Protection.
 
-405
+404
 00:16:54,000 --> 00:16:57,279
 It's good to be aware that this is for
 
-406
+405
 00:16:57,304 --> 00:17:00,160
 a single given key state. And if
 
-407
+406
 00:17:00,160 --> 00:17:03,279
 sender key state changes in the duration
 
-408
+407
 00:17:03,279 --> 00:17:06,959
 of a given, you know, messaging
 
-409
+408
 00:17:06,959 --> 00:17:08,240
 exchange, like if you're collecting
 
-410
+409
 00:17:08,240 --> 00:17:10,160
 signatures on a multisig and the sender
 
-411
+410
 00:17:10,160 --> 00:17:11,839
 key state changes at some point during
 
-412
+411
 00:17:11,839 --> 00:17:14,959
 that, then that messaging operation
 
-413
+412
 00:17:14,959 --> 00:17:17,600
 is going to have to happen again.
 
-414
+413
 00:17:17,624 --> 00:17:19,679
 – You said gonna have to what?
 
-415
+414
 00:17:19,679 --> 00:17:21,199
 – It's gonna have to happen again.
 
-416
+415
 00:17:21,199 --> 00:17:21,839
 – Oh, yes.
 
-417
+416
 00:17:21,839 --> 00:17:24,079
 – Yes. Okay, good. You're looking at me. I was
 
-418
+417
 00:17:24,079 --> 00:17:25,360
 like…
 
-419
+418
 00:17:25,360 --> 00:17:28,240
 – I didn't hear what you said. I didn't
 
-420
+419
 00:17:28,240 --> 00:17:29,200
 hear the…
 
-421
+420
 00:17:29,200 --> 00:17:32,480
 – Thank you. Okay. Now we get to talk
 
-422
+421
 00:17:32,480 --> 00:17:35,120
 about the cool stuff. So, it's all cool
 
-423
+422
 00:17:35,120 --> 00:17:39,520
 stuff. I'm just kidding. These are
 
-424
+423
 00:17:39,520 --> 00:17:42,480
 kind of… they're not introduced by KRAM,
 
-425
+424
 00:17:42,480 --> 00:17:47,280
 but having KRAM as a Replay Attack
 
-426
+425
 00:17:47,280 --> 00:17:51,280
 Defense introduces other modes of
 
-427
+426
 00:17:51,304 --> 00:17:53,600
 exploitation. So we have gap replay
 
-428
+427
 00:17:53,600 --> 00:17:57,039
 attack and gap first play attack.
 
-429
+428
 00:17:57,039 --> 00:17:58,559
 Essentially…
 
-430
+429
 00:17:58,583 --> 00:18:00,160
 I'm actually going to move on to the
 
-431
+430
 00:18:00,160 --> 00:18:01,679
 next slide because I have some nice
 
-432
+431
 00:18:01,679 --> 00:18:04,559
 visuals here for you. For a gap replay
 
-433
+432
 00:18:04,559 --> 00:18:07,120
 attack. Here we have our timeliness
 
-434
+433
 00:18:07,120 --> 00:18:09,600
 window. We have our message being sent.
 
-435
+434
 00:18:09,600 --> 00:18:11,760
 It's accepted and cached and then the
 
-436
+435
 00:18:11,760 --> 00:18:14,080
 message gets pruned. You have an old
 
-437
+436
 00:18:14,080 --> 00:18:18,000
 timeliness window right here. And after
 
-438
+437
 00:18:18,000 --> 00:18:20,320
 the message is sent, before it's
 
-439
+438
 00:18:20,320 --> 00:18:22,559
 accepted, a bad actor is going to go and
 
-440
+439
 00:18:22,559 --> 00:18:25,440
 grab that message. Right?
 
-441
+440
 00:18:25,440 --> 00:18:28,720
 Next, the timeliness window expires. The
 
-442
+441
 00:18:28,720 --> 00:18:31,360
 message is pruned, but then you as the
 
-443
+442
 00:18:31,360 --> 00:18:33,600
 server or the receiver is going to
 
-444
+443
 00:18:33,600 --> 00:18:35,520
 change your timeliness window and
 
-445
+444
 00:18:35,520 --> 00:18:38,559
 increase it. So here after the message
 
-446
+445
 00:18:38,559 --> 00:18:41,760
 is pruned a bad actor can replay that
 
-447
+446
 00:18:41,760 --> 00:18:44,240
 message in this little vulnerable gap
 
-448
+447
 00:18:44,240 --> 00:18:45,840
 right here. We're going to talk about
 
-449
+448
 00:18:45,840 --> 00:18:48,400
 how we solve these with KRAM but these
 
-450
+449
 00:18:48,400 --> 00:18:50,400
 are complications that are introduced
 
-451
+450
 00:18:50,400 --> 00:18:52,080
 that need to be addressed.
 
-452
+451
 00:18:52,080 --> 00:18:53,840
 – You dynamically change [inaudible]
 
-453
+452
 00:18:53,840 --> 00:18:57,360
 – If you dynamically change windows
 
-454
+453
 00:18:57,360 --> 00:18:59,120
 – Yes exactly. So this is when you have a
 
-455
+454
 00:18:59,120 --> 00:19:01,919
 running system and you want to change
 
-456
+455
 00:19:01,919 --> 00:19:03,520
 your timeliness window for a given
 
-457
+456
 00:19:03,520 --> 00:19:07,679
 message type or other configuration.
 
-458
+457
 00:19:07,679 --> 00:19:11,600
 So for a gap…
 
-459
+458
 00:19:11,600 --> 00:19:14,480
 hold on… sorry this one should say gap
 
-460
+459
 00:19:14,480 --> 00:19:16,480
 first play visual. This is a gap first
 
-461
+460
 00:19:16,480 --> 00:19:18,559
 play attack. Basically what happens
 
-462
+461
 00:19:18,559 --> 00:19:21,120
 here is you have a message sent. A bad
 
-463
+462
 00:19:21,120 --> 00:19:22,480
 actor is going to intercept that
 
-464
+463
 00:19:22,480 --> 00:19:24,880
 message, but it's going to come through
 
-465
+464
 00:19:24,880 --> 00:19:26,960
 with the receiver of the message
 
-466
+465
 00:19:26,960 --> 00:19:29,200
 never having touched it or looked at it
 
-467
+466
 00:19:29,200 --> 00:19:31,919
 because it comes through after your
 
-468
+467
 00:19:31,919 --> 00:19:34,080
 timeliness window.
 
-469
+468
 00:19:34,080 --> 00:19:35,919
 Post that. This is a little bit
 
-470
+469
 00:19:35,919 --> 00:19:38,400
 of a confusing time scale, but post that
 
-471
+470
 00:19:38,400 --> 00:19:40,400
 you're going to increase your timeliness
 
-472
+471
 00:19:40,400 --> 00:19:43,200
 window. And then that bad actor who's
 
-473
+472
 00:19:43,200 --> 00:19:46,799
 saved that message can first play it
 
-474
+473
 00:19:46,799 --> 00:19:49,200
 into your new increased timeliness
 
-475
+474
 00:19:49,200 --> 00:19:51,679
 window. – What's the intuition for why
 
-476
+475
 00:19:51,679 --> 00:19:54,240
 they increase third time in this window?
 
-477
+476
 00:19:54,240 --> 00:19:56,240
 – Could be any number of reasons like
 
-478
+477
 00:19:56,240 --> 00:19:59,600
 let's say you're doing a multisig
 
-479
+478
 00:19:59,600 --> 00:20:02,720
 exchange or a multisig and the
 
-480
+479
 00:20:02,720 --> 00:20:04,221
 group participants are
 
-481
+480
 00:20:04,246 --> 00:20:08,000
 not getting their signatures in
 
-482
+481
 00:20:08,000 --> 00:20:10,000
 on time for given messages and you say I
 
-483
+482
 00:20:10,000 --> 00:20:11,039
 want to give these people a little bit
 
-484
+483
 00:20:11,039 --> 00:20:13,280
 more time. You increase the window but
 
-485
+484
 00:20:13,280 --> 00:20:14,799
 you also open yourself up to this…
 
-486
+485
 00:20:14,799 --> 00:20:16,480
 – Just on a network with lots of packet
 
-487
+486
 00:20:16,480 --> 00:20:17,120
 loss.
 
-488
+487
 00:20:17,120 --> 00:20:18,799
 – Exactly. – The network starts to have
 
-489
+488
 00:20:18,799 --> 00:20:22,799
 congestion and now your latency [inaudible]
 
-490
+489
 00:20:22,799 --> 00:20:26,080
 – So [inaudible] could simulate that using the
 
-491
+490
 00:20:26,080 --> 00:20:28,480
 Denial of Service attack somewhere in the network
 
-492
+491
 00:20:28,480 --> 00:20:31,039
 – and then [inaudible] it into the
 
-493
+492
 00:20:31,039 --> 00:20:32,240
 window.
 
-494
+493
 00:20:32,240 --> 00:20:34,960
 – Yes, so to reiterate
 
-495
+494
 00:20:34,960 --> 00:20:36,960
 another reason that you could
 
-496
+495
 00:20:36,960 --> 00:20:38,159
 encounter this or that you could
 
-497
+496
 00:20:38,159 --> 00:20:39,280
 encounter needing to change your
 
-498
+497
 00:20:39,280 --> 00:20:41,120
 timeliness window is if you have a lot
 
-499
+498
 00:20:41,120 --> 00:20:43,280
 of network latency. Perhaps an
 
-500
+499
 00:20:43,280 --> 00:20:45,120
-attacker is DDossing you or maybe you're
+attacker is DDoSsing you or maybe you're
 
-501
+500
 00:20:45,120 --> 00:20:47,679
 just scaling up and you realize that you
 
-502
+501
 00:20:47,679 --> 00:20:49,919
 need more time to process. So
 
-503
+502
 00:20:49,919 --> 00:20:51,360
 anyways, now we're going to talk about
 
-504
+503
 00:20:51,360 --> 00:20:54,641
 how we address these. So
 
-505
+504
 00:20:56,400 --> 00:21:00,799
 … oh… now this is the right slide. We
 
-506
+505
 00:21:00,799 --> 00:21:02,799
 have three cases.
 
-507
+506
 00:21:02,799 --> 00:21:04,720
-If you're decreasing a window size,
+If you're decreasing a [time] window size,
 
-508
+507
 00:21:04,720 --> 00:21:06,240
 that's safe and you can apply that
 
-509
+508
 00:21:06,240 --> 00:21:08,159
 immediately. If you're increasing a
 
-510
+509
 00:21:08,159 --> 00:21:10,240
 window size, you need a two-step
 
-511
+510
 00:21:10,240 --> 00:21:14,240
 process. And if you're changing
 
-512
+511
 00:21:14,240 --> 00:21:16,240
 cache type granularity, I'll talk a
 
-513
+512
 00:21:16,240 --> 00:21:18,080
 little bit about configuring cache types
 
-514
+513
 00:21:18,080 --> 00:21:20,080
 in the later slides. That's more complex
 
-515
+514
 00:21:20,080 --> 00:21:22,400
 and would require a worst case analysis,
 
-516
+515
 00:21:22,400 --> 00:21:24,080
 but that's a little bit out of scope for
 
-517
+516
 00:21:24,080 --> 00:21:27,200
 this. Anyways, the two-step
 
-518
+517
 00:21:27,200 --> 00:21:29,919
 processes for increasing it is you're
 
-519
+518
 00:21:29,919 --> 00:21:32,320
 essentially going to want to have a
 
-520
+519
 00:21:32,320 --> 00:21:35,360
 prune lag wherein
 
-521
+520
 00:21:35,360 --> 00:21:38,000
 when you do an increase, you have an
 
-522
+521
 00:21:38,000 --> 00:21:40,720
 extra lag where you're not pruning
 
-523
+522
 00:21:40,720 --> 00:21:43,039
 windows until you've exceeded the time
 
-524
+523
 00:21:43,039 --> 00:21:45,200
 delta between your old timeliness window
 
-525
+524
 00:21:45,200 --> 00:21:47,360
 and the new increased timeliness window.
 
-526
+525
 00:21:47,360 --> 00:21:49,840
 And that actually covers both gap replay
 
-527
+526
 00:21:49,840 --> 00:21:52,464
 attacks and gap first play attacks.
 
-528
+527
 00:21:58,230 --> 00:22:00,480
 Then we have a little bit about the
 
-529
+528
 00:22:00,480 --> 00:22:02,159
 configuration
 
-530
+529
 00:22:02,159 --> 00:22:05,200
 wherein this is designed for
 
-531
+530
 00:22:05,200 --> 00:22:08,240
 incremental adoption. So not every
 
-532
+531
 00:22:08,240 --> 00:22:09,600
 deployment is going to be able to run
 
-533
+532
 00:22:09,600 --> 00:22:12,000
 KRAM for all messages types overnight
 
-534
+533
 00:22:12,000 --> 00:22:14,320
-and the configuration system sort of
+and the configuration system
+
+534
+00:22:14,320 --> 00:22:16,720
+reflects this. So, we have up here the
 
 535
-00:22:14,320 --> 00:22:16,720
-reflects this. So we have up here the
+00:22:16,720 --> 00:22:19,120
+'enabled true' which just means your KRAM
 
 536
-00:22:16,720 --> 00:22:19,120
-enabled true which just means your KRAM
-
-537
 00:22:19,120 --> 00:22:22,480
 is on. Then you have denials and
 
-538
+537
 00:22:22,480 --> 00:22:26,880
 these are each keyed to KERI
 
-539
+538
 00:22:26,880 --> 00:22:30,240
 version. So we have version one and
 
-540
+539
 00:22:30,240 --> 00:22:33,760
 version two right here. And these are
 
-541
+540
 00:22:33,760 --> 00:22:36,720
 going to be message types. And these are
 
-542
+541
 00:22:36,720 --> 00:22:40,159
 going to be…
 
-543
+542
 00:22:40,159 --> 00:22:44,720
 These are going to be…
 
-544
+543
 00:22:49,990 --> 00:22:52,668
 route. Yeah, sorry.
 
-545
+544
 00:22:53,945 --> 00:22:56,400
 And the denial systems supports wild
 
-546
+545
 00:22:56,425 --> 00:22:59,120
 carding through empty fields. So these
 
-547
+546
 00:22:59,120 --> 00:23:01,840
 one comma zero KERI version one wild
 
-548
+547
 00:23:01,840 --> 00:23:03,440
 card wild card just means we're going to
 
-549
+548
 00:23:03,440 --> 00:23:07,919
 deny all KERI v1 messages for KRAM
 
-550
+549
 00:23:07,919 --> 00:23:12,720
 or we're not going to use KRAM on
 
-551
+550
 00:23:12,720 --> 00:23:15,520
 KERI v1 messages, right, and for these
 
-552
+551
 00:23:15,520 --> 00:23:17,200
 we're not going to use KRAM on
 
-553
+552
 00:23:17,200 --> 00:23:20,559
 KERI v2 messages with a pro message
 
-554
+553
 00:23:20,559 --> 00:23:23,440
 type and then any route and for the
 
-555
+554
 00:23:23,440 --> 00:23:27,013
 third one we're not going to
 
-556
+555
 00:23:27,039 --> 00:23:30,799
 feed messages through KRAM for KERI
 
-557
+556
 00:23:30,799 --> 00:23:33,280
 version two reply messages with a
 
-558
+557
 00:23:33,280 --> 00:23:36,880
 “/end” route.
 
-559
+558
 00:23:36,880 --> 00:23:39,679
 And the denial logic is applied at the
 
-560
+559
 00:23:39,679 --> 00:23:42,720
-top before we even get into any of the
+top, before we even get into any of the
 
-561
+560
 00:23:42,720 --> 00:23:45,280
 message processing stuff that we
 
-562
+561
 00:23:45,280 --> 00:23:48,400
 discussed earlier.
 
-563
+562
 00:23:48,400 --> 00:23:51,600
 That is pretty much all I have. Well, I
 
-564
+563
 00:23:51,600 --> 00:23:54,159
 was also gonna say
 
-565
+564
 00:23:54,159 --> 00:23:57,990
 that
 
-566
+565
 00:23:58,014 --> 00:23:59,755
 a lot of people worked on this. Sam
 
-567
+566
 00:23:59,779 --> 00:24:01,520
 wrote the white paper. Several other
 
-568
+567
 00:24:01,520 --> 00:24:02,720
 people from the KERI Foundation have
 
-569
+568
 00:24:02,720 --> 00:24:04,000
 put a lot of effort into getting the
 
-570
+569
 00:24:04,000 --> 00:24:06,000
 implementation to where it's at now. And
 
-571
+570
 00:24:06,000 --> 00:24:07,760
 I know that many other people are going
 
-572
+571
 00:24:07,760 --> 00:24:10,159
 to work on it before it's complete. So,
 
-573
+572
 00:24:10,159 --> 00:24:13,139
 I give them a round of applause.
 
-574
+573
 00:24:15,837 --> 00:24:18,930
 Does anyone have any other questions?
 
-575
+574
 00:24:18,955 --> 00:24:20,774
 I run a little short.
 
-576
+575
 00:24:23,161 --> 00:24:23,939
 – Yes.
 
-577
+576
 00:24:23,963 --> 00:24:26,320
 – Where do you see this being put into
 
-578
+577
 00:24:26,320 --> 00:24:29,279
 application within, I mean, let's just say
 
-579
+578
 00:24:29,279 --> 00:24:31,600
 the healthKERI
 
-580
+579
 00:24:31,600 --> 00:24:32,880
 platform.
 
-581
+580
 00:24:32,880 --> 00:24:37,679
 – So this is going to be like for say
 
-582
+581
 00:24:37,679 --> 00:24:39,039
 for example for our account
 
-583
+582
 00:24:39,039 --> 00:24:41,360
 communications with ESSR they could use
 
-584
+583
 00:24:41,360 --> 00:24:45,600
 this. For any credential
 
-585
+584
 00:24:45,600 --> 00:24:47,919
 presentations they could use this, right.
 
-586
+585
 00:24:47,919 --> 00:24:50,240
 So, we were talking a little or we
 
-587
+586
 00:24:50,240 --> 00:24:53,039
 haven't talked about this yet, but
 
-588
+587
 00:24:53,039 --> 00:24:54,400
 actually… I'm going to abstain because
 
-589
+588
 00:24:54,400 --> 00:24:55,520
 I'm not sure if I'm supposed to say that
 
-590
+589
 00:24:55,520 --> 00:24:58,320
 yet, but those two use cases are
 
-591
+590
 00:24:58,320 --> 00:25:00,559
 pretty relevant to us as healthKERI.
 
-592
+591
 00:25:00,559 --> 00:25:01,343
 – Absolutely.
 
-593
+592
 00:25:09,097 --> 00:25:12,960
 – Yeah. [inaudible]
 
-594
+593
 00:25:12,985 --> 00:25:13,880
 – Yes.
 
-595
+594
 00:25:13,905 --> 00:25:16,640
 [inaudible]
 
-596
+595
 00:25:17,279 --> 00:25:20,720
 – Yes. So, IPEX EXN messages, all covered
 
-597
+596
 00:25:20,720 --> 00:25:21,717
 by KRAM.
 
-598
+597
 00:25:23,200 --> 00:25:23,520
 – Yes.
 
-599
+598
 00:25:23,520 --> 00:25:25,200
 – I just want to understand the problem a
 
-600
+599
 00:25:25,200 --> 00:25:26,720
 little bit better of why we need to keep
 
-601
+600
 00:25:26,720 --> 00:25:29,120
 this just I think that's what he had
 
-602
+601
 00:25:29,120 --> 00:25:29,520
 asked.
 
-603
+602
 00:25:29,520 --> 00:25:30,000
 – Oh, sure.
 
-604
+603
 00:25:30,000 --> 00:25:32,640
 – I understand it replaces the nonce, but
 
-605
+604
 00:25:32,640 --> 00:25:36,640
 why is that beneficial? Like what?
 
-606
+605
 00:25:36,640 --> 00:25:37,200
 – What?
 
-607
+606
 00:25:37,200 --> 00:25:40,000
 – Yeah. Just so if you have a nonce I
 
-608
+607
 00:25:40,000 --> 00:25:41,520
 assume it's kind of like a temporary
 
-609
+608
 00:25:41,520 --> 00:25:42,400
 token.
 
-610
+609
 00:25:42,400 --> 00:25:42,799
 – Yes.
 
-611
+610
 00:25:42,799 --> 00:25:44,400
 – That's what I've used in the past. That
 
-612
+611
 00:25:44,400 --> 00:25:47,360
 then it would increase the database size
 
-613
+612
 00:25:47,360 --> 00:25:50,159
 or maybe you have to have
 
-614
+613
 00:25:50,159 --> 00:25:51,679
 connectivity back to… I'm trying to
 
-615
+614
 00:25:51,679 --> 00:25:54,640
 figure out why.
 
-616
+615
 00:25:54,640 --> 00:25:57,715
 – It's like an elegant way of solving
 
-617
+616
 00:25:57,740 --> 00:26:01,120
 replay attacks without attaching nonces
 
-618
+617
 00:26:01,120 --> 00:26:03,600
 to every message because the time itself
 
-619
+618
 00:26:03,600 --> 00:26:06,720
 functions as the nonce,
 
-620
+619
 00:26:06,720 --> 00:26:08,320
 like the time attached to the message.
 
-621
+620
 00:26:08,320 --> 00:26:10,080
 It's not that we don't
 
-622
+621
 00:26:10,080 --> 00:26:12,000
 have a nonce the time is the nonce right?
 
-623
+622
 00:26:12,000 --> 00:26:13,120
 – [inaudible]
 
-624
+623
 00:26:13,120 --> 00:26:15,142
 interactive authentification right
 
-625
+624
 00:26:15,167 --> 00:26:18,000
 [inaudible]
 
-626
+625
 00:26:18,000 --> 00:26:20,480
-so if you think about think about
+so if you think about
 
-627
+626
 00:26:20,480 --> 00:26:25,760
 network latency we're doing at scale
 
-628
+627
 00:26:25,760 --> 00:26:27,600
 requests
 
-629
+628
 00:26:27,600 --> 00:26:30,000
 every request
 
-630
+629
 00:26:30,000 --> 00:26:32,240
 has to create a TCP connection because
 
-631
+630
 00:26:32,240 --> 00:26:35,120
 it has to be a secure channel
 
-632
+631
 00:26:35,120 --> 00:26:37,760
-otherwise you can't can't control it so
+otherwise you can't control it, so
 
-633
+632
 00:26:37,760 --> 00:26:39,919
 all asynchronous messaging is off
 
-634
+633
 00:26:39,919 --> 00:26:41,679
 the table. This will work
 
-635
+634
 00:26:41,679 --> 00:26:43,279
 just as well with asynchronous
 
-636
+635
 00:26:43,279 --> 00:26:45,200
 messaging as synchronous messaging.
 
-637
+636
 00:26:45,200 --> 00:26:47,440
 It'll work just fine where the
 
-638
+637
 00:26:47,440 --> 00:26:49,039
 sender and receiver use a completely
 
-639
+638
 00:26:49,039 --> 00:26:50,960
 different channel. Doesn't matter.
 
-640
+639
 00:26:51,129 --> 00:26:53,279
 Because there's no interaction, right?
 
-641
+640
 00:26:53,279 --> 00:26:54,960
 So now you can get rid of all of those
 
-642
+641
 00:26:54,960 --> 00:26:58,000
 constraints and then the latency for a
 
-643
+642
 00:26:58,000 --> 00:27:01,840
 request is zero because the request
 
-644
+643
 00:27:01,840 --> 00:27:04,320
 either goes through or it doesn't.
 
-645
+644
 00:27:04,320 --> 00:27:06,480
 Whereas if it's interactive, you send a
 
-646
+645
 00:27:06,480 --> 00:27:08,400
 request, you get a reply, you send a
 
-647
+646
 00:27:08,400 --> 00:27:11,200
 response, and now you've
 
-648
+647
 00:27:11,200 --> 00:27:13,440
 got three passes across your network,
 
-649
+648
 00:27:13,440 --> 00:27:15,120
 which if your network's loaded or
 
-650
+649
 00:27:15,120 --> 00:27:18,400
 congested, you triple your latency
 
-651
+650
 00:27:18,400 --> 00:27:20,880
 always. And when you go to scale, that
 
-652
+651
 00:27:20,880 --> 00:27:24,240
 doesn't scale well. And you know,
 
-653
+652
 00:27:24,240 --> 00:27:27,520
-so that's a that's a reason not to use
+so that's a reason not to use
 
-654
+653
 00:27:27,520 --> 00:27:28,960
 interactive.
 
-655
+654
 00:27:29,919 --> 00:27:32,400
 Two reasons, one asynchronous messaging
 
-656
+655
 00:27:32,400 --> 00:27:35,679
 …and remove
 
-657
+656
 00:27:35,679 --> 00:27:37,440
 the latency at scale.
 
-658
+657
 00:27:37,440 --> 00:27:40,880
 – So to reiterate for the microphone:
 
-659
+658
 00:27:40,880 --> 00:27:44,559
 this is asynchronous which traditional
 
-660
+659
 00:27:44,559 --> 00:27:48,240
 nonce-based authentication is not and
 
-661
+660
 00:27:48,240 --> 00:27:52,240
 this also works at scale without having
 
-662
+661
 00:27:52,240 --> 00:27:54,799
 to rely on the traditional mode of
 
-663
+662
 00:27:54,799 --> 00:27:57,200
 exchanging several messages in order to
 
-664
+663
 00:27:57,200 --> 00:28:00,799
 meet the same
 
-665
+664
 00:28:00,799 --> 00:28:02,320
 functionality.
 
-666
+665
 00:28:02,320 --> 00:28:04,880
 – So [inaudible]
 
-667
+666
 00:28:04,880 --> 00:28:06,240
 statement, right? You know what's what
 
-668
+667
 00:28:06,240 --> 00:28:08,799
 was the difference between KERI not
 
-669
+668
 00:28:08,799 --> 00:28:12,159
 having KRAM and now KRAM existing and I'm
 
-670
+669
 00:28:12,159 --> 00:28:15,360
 just maybe restating but
 
-671
+670
 00:28:15,360 --> 00:28:18,320
 […] restated for the replay attack but so
 
-672
+671
 00:28:18,320 --> 00:28:20,720
 was that a vulnerability and existing
 
-673
+672
 00:28:20,720 --> 00:28:22,399
 vulnerability right now?
 
-674
+673
 00:28:22,399 --> 00:28:22,960
 – Yes.
 
-675
+674
 00:28:22,960 --> 00:28:25,840
 – KRAM has been proposed for quite
 
-676
+675
 00:28:25,840 --> 00:28:28,480
 quite some time but nobody thought it
 
-677
+676
 00:28:28,480 --> 00:28:32,389
 was important to…
 
-678
+677
 00:28:32,420 --> 00:28:35,694
 – So, in our authentication server, we
 
-679
+678
 00:28:35,718 --> 00:28:38,080
 have a custom build replay [inaudible]
 
-680
+679
 00:28:38,080 --> 00:28:40,000
 and so we can now get rid of that once
 
-681
+680
 00:28:40,000 --> 00:28:42,559
 we upgrade KERI 2.0.
 
-682
+681
 00:28:42,559 --> 00:28:44,399
 – Yeah. So, that was traditionally not
 
-683
+682
 00:28:44,399 --> 00:28:46,799
-covered by the KERI suite or KERIpy…
+covered by the KERISuite or KERIPy…
 
-684
+683
 00:28:46,799 --> 00:28:56,470
 [inaudible]
 
-685
+684
 00:28:56,495 --> 00:28:58,288
 We want it to be something
 
-686
+685
 00:28:58,313 --> 00:29:03,669
 that everybody gets for free. – Awesome.
 
-687
+686
 00:29:09,170 --> 00:29:13,368
 [applause]
 
