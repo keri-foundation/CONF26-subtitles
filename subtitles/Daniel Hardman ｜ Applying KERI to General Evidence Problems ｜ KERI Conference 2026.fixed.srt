@@ -1285,7 +1285,6 @@ Now you actually might have more than
 
 321
 00:13:45,760 --> 00:13:47,839
-now you actually might have more than
 one of those points. You might evaluate
 
 322
@@ -2773,11 +2772,10 @@ I have not thought about that.
 
 690
 00:29:49,360 --> 00:29:50,960
-but as soon as you said it, I was
+But as soon as you said it, I was
 
 691
 00:29:50,960 --> 00:29:52,559
-But as soon as you said it, I was
 like, wow, why didn't I think of that?
 
 692
@@ -2875,12 +2873,11 @@ It wasn't that I said verifiable data
 
 715
 00:30:49,919 --> 00:30:51,120
-it wasn't that I said verifiable data
 graph
 
 716
 00:30:51,120 --> 00:30:54,320
-20 years ago or 20 2020 or whatever it
+20 years ago or 2020 or whatever it
 
 717
 00:30:54,320 --> 00:30:58,399
