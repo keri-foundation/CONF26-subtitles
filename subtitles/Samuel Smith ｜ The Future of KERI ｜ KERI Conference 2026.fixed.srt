@@ -653,19 +653,18 @@ Bridge them with KERI and ACDCs.
 
 164
 00:06:53,440 --> 00:06:57,600
-So in KERI an end to end and an edge to
+So in KERI an end to end, and an edge to
 
 165
 00:06:57,600 --> 00:07:01,120
-edge they mean the same thing right?
+edge, they mean the same thing, right?
 
 166
 00:07:01,120 --> 00:07:03,440
-We the middle doesn't matter the middle
+The middle doesn't matter, the middle
 
 167
 00:07:03,440 --> 00:07:07,520
-we the middle doesn't matter the middle
 is just a store and forward network.
 
 168
@@ -1652,4118 +1651,4095 @@ do that?
 Well, here's a way that we can do that.
 
 412
-00:18:48,070 --> 00:18:48,080
-
+00:18:51,919 --> 00:18:54,080
+This is how we do it. We do it with
 
 413
-00:18:48,080 --> 00:18:51,919
-okay. Okay, I just I said that. Okay.
-When the chain is broken. All right. So,
-
-414
-00:18:51,919 --> 00:18:54,080
-this is how we do it. We do it with
-
-415
 00:18:54,080 --> 00:18:57,679
 something called a bound blinded
 
-416
+414
 00:18:57,679 --> 00:19:01,520
 ACDC register.
 
-417
-00:19:01,520 --> 00:19:05,760
-what did I put that? Reco.
+415
+00:19:15,467 --> 00:19:16,320
+So, we have this
 
-418
-00:19:05,760 --> 00:19:07,840
-What did I put that? Reco.
-Oh, yeah. That should have been that
-
-419
-00:19:07,840 --> 00:19:11,520
-should have been re reversion.
-
-420
-00:19:11,520 --> 00:19:13,840
-I misspelled that. All right. Anyway, so
-
-421
-00:19:13,840 --> 00:19:16,320
-this is how it works. So, we have this
-
-422
+416
 00:19:16,320 --> 00:19:17,840
 situation.
 
-423
+417
 00:19:17,840 --> 00:19:20,400
 We have this situation here. We have an
 
-424
+418
 00:19:20,400 --> 00:19:22,799
-issue AID.
+issuee AID.
 
-425
+419
 00:19:22,799 --> 00:19:26,960
-The there's there the issue issues is
+There the issue issues is
 
-426
+420
 00:19:26,960 --> 00:19:30,400
 the issuer of another ACDC. So we have
 
-427
+421
 00:19:30,400 --> 00:19:32,720
 a chained set of ACDCs. There's an
 
-428
+422
 00:19:32,720 --> 00:19:36,080
 edge pointing back from the delegated
 
-429
+423
 00:19:36,080 --> 00:19:38,799
 one back to the delegating one. Okay. So
 
-430
+424
 00:19:38,799 --> 00:19:43,520
 that's the setup. So now we have
 
-431
+425
 00:19:43,520 --> 00:19:46,960
 the issuer uses this bound blinded state
 
-432
+426
 00:19:46,960 --> 00:19:48,480
 registry
 
-433
+427
 00:19:48,480 --> 00:19:50,559
 and the thing that it adds is the
 
-434
+428
 00:19:50,559 --> 00:19:53,919
 sequence number and the SAID
 
-435
+429
 00:19:53,919 --> 00:19:57,679
 of the key state of the issue who is
 
-436
+430
 00:19:57,679 --> 00:20:00,559
 also the issuer. Right? Right. The guy
 
-437
+431
 00:20:00,559 --> 00:20:02,480
 in the middle is both an issuer and an
 
-438
+432
 00:20:02,480 --> 00:20:05,679
 issue. He's an issue of his delegator
 
-439
+433
 00:20:05,679 --> 00:20:07,760
 and he gets to issue stuff himself.
 
-440
+434
 00:20:07,760 --> 00:20:10,080
 Right. So it's a delegated chain but
 
-441
+435
 00:20:10,080 --> 00:20:12,960
 what we're doing is we're binding
 
-442
+436
 00:20:12,960 --> 00:20:16,400
-whoops we're binding the key state of
+the key state of
 
-443
+437
 00:20:16,400 --> 00:20:20,160
-the issue at the time
+the issuee at the time
 
-444
+438
 00:20:20,160 --> 00:20:23,440
 we give him authority
 
-445
+439
 00:20:23,440 --> 00:20:26,240
 right so right here we issue to him
 
-446
+440
 00:20:26,240 --> 00:20:29,919
-authority and we bind his key state and
+authority and we bind his key state. And
 
-447
+441
 00:20:29,919 --> 00:20:32,400
 then when we revoke his authority we
 
-448
+442
 00:20:32,400 --> 00:20:35,360
-also bind his key state what that says is
+also bind his key state. What that says is
 
-449
+443
 00:20:35,360 --> 00:20:38,720
-is between two and five
+is between two and five.
 
-450
+444
 00:20:38,720 --> 00:20:42,559
 He has the authority to issue things
 
-451
+445
 00:20:42,559 --> 00:20:44,640
 and here's his registry. He can issue
 
-452
+446
 00:20:44,640 --> 00:20:47,120
 things in his registry. So in this list
 
-453
+447
 00:20:47,120 --> 00:20:51,520
-right here, right? He can do things
+right here, he can do things
 
-454
+448
 00:20:51,520 --> 00:20:53,360
 to this other thing and they all
 
-455
+449
 00:20:53,360 --> 00:20:58,960
 work. But once but number six
 
-456
+450
 00:20:58,960 --> 00:21:02,080
 here, he doesn't have authority anymore.
 
-457
+451
 00:21:02,080 --> 00:21:04,799
 So even though he's got an update event,
 
-458
+452
 00:21:04,799 --> 00:21:07,120
 that update event, the bottom one's not
 
-459
+453
 00:21:07,120 --> 00:21:09,120
 not verifiable because he doesn't have
 
-460
+454
 00:21:09,120 --> 00:21:11,919
 authority to change that. So we have
 
-461
+455
 00:21:11,919 --> 00:21:13,919
 a problem.
 
-462
+456
 00:21:13,919 --> 00:21:16,960
 So with this,
 
-463
+457
 00:21:16,960 --> 00:21:20,320
 the only way that this works is if the
 
-464
+458
 00:21:20,320 --> 00:21:23,120
 issuances over here
 
-465
+459
 00:21:23,120 --> 00:21:26,960
 are all time expired. Well, it's kind of
 
-466
+460
 00:21:26,960 --> 00:21:29,200
 I'll just point at it. Maybe it's better
 
-467
+461
 00:21:29,200 --> 00:21:31,679
 to just do it over here. Can you see my
 
-468
+462
 00:21:31,679 --> 00:21:35,669
 cursor?
 
-469
+463
 00:21:37,669 --> 00:21:41,200
 No.
 Oh, it's Yeah, revocation recovation.
 
-470
+464
 00:21:41,200 --> 00:21:42,880
 Oh, it's not showing up. All right. It's
 
-471
+465
 00:21:42,880 --> 00:21:45,600
 probably because this thing's on. So
 
-472
+466
 00:21:45,600 --> 00:21:48,799
 so what happens is that the type
 
-473
+467
 00:21:48,799 --> 00:21:52,880
 of ACDC that he can issue here have to
 
-474
+468
 00:21:52,880 --> 00:21:55,520
 have some sort of timeout because they
 
-475
+469
 00:21:55,520 --> 00:21:57,679
 themselves can't be revocable because we
 
-476
+470
 00:21:57,679 --> 00:21:59,520
 have an ambiguity about what we do about
 
-477
+471
 00:21:59,520 --> 00:22:01,840
 it when we revoke his authority. But as
 
-478
+472
 00:22:01,840 --> 00:22:03,760
 long as it times out or something then
 
-479
+473
 00:22:03,760 --> 00:22:05,760
 it'll just selfrevoke.
 
-480
+474
 00:22:05,760 --> 00:22:07,760
 So how do we solve that problem? That's
 
-481
+475
 00:22:07,760 --> 00:22:10,400
 the that's the harder problem. So this
 
-482
+476
 00:22:10,400 --> 00:22:12,320
 is not in the spec. This is actually a
 
-483
+477
 00:22:12,320 --> 00:22:16,080
 proposal for the spec. We add
 
-484
+478
 00:22:16,080 --> 00:22:20,960
 another we add another event. Oh
 
-485
+479
 00:22:20,960 --> 00:22:23,919
 No that's the next one. So the way
 
-486
+480
 00:22:23,919 --> 00:22:27,280
 we can solve it's not written up
 
-487
+481
 00:22:27,280 --> 00:22:28,720
 in the spec but this is an easy
 
-488
+482
 00:22:28,720 --> 00:22:31,440
 modification of the spec is that because
 
-489
+483
 00:22:31,440 --> 00:22:34,320
 there's an edge right here
 
-490
+484
 00:22:34,320 --> 00:22:36,480
 that points back to the issuing
 
-491
+485
 00:22:36,480 --> 00:22:38,080
 authority
 
-492
+486
 00:22:38,080 --> 00:22:41,120
 we can do a reversion of authority. So
 
-493
+487
 00:22:41,120 --> 00:22:44,559
 let me give the example. Let's say
 
-494
+488
 00:22:44,559 --> 00:22:47,440
 that I'm a I'm a lieutenant of a of a
 
-495
+489
 00:22:47,440 --> 00:22:50,240
 company and I take one of one of the
 
-496
+490
 00:22:50,240 --> 00:22:52,559
 members of the company and I give him an
 
-497
+491
 00:22:52,559 --> 00:22:54,640
 order and I say you're going to go over
 
-498
+492
 00:22:54,640 --> 00:22:59,919
 there, right? And he goes over there,
 
-499
+493
 00:22:59,919 --> 00:23:01,679
 right? He has authority to do it. I told
 
-500
+494
 00:23:01,679 --> 00:23:06,880
 him to do something. Let's say that I
 
-501
+495
 00:23:06,880 --> 00:23:09,679
 I resend that order. He can't he
 
-502
+496
 00:23:09,679 --> 00:23:13,350
 can't do that anymore.
 
-503
+497
 00:23:15,590 --> 00:23:17,919
 What do I do at that point? Well, the
 authority to do that still rests in me,
 
-504
+498
 00:23:17,919 --> 00:23:22,159
 the lieutenant. I can I can go
 
-505
+499
 00:23:22,159 --> 00:23:25,120
 over there and do it or I can I can, you
 
-506
+500
 00:23:25,120 --> 00:23:28,400
 know, authorize whatever it is myself.
 
-507
+501
 00:23:28,400 --> 00:23:31,919
 So, the authority always reverts to me
 
-508
+502
 00:23:31,919 --> 00:23:34,320
 as the higher authority. So what we do
 
-509
+503
 00:23:34,320 --> 00:23:37,360
 is that when a subordinate or a
 
-510
+504
 00:23:37,360 --> 00:23:40,559
 delegate loses authority because we've
 
-511
+505
 00:23:40,559 --> 00:23:44,000
 revoked it, any outstanding issuances
 
-512
+506
 00:23:44,000 --> 00:23:47,200
 that were validly issued that we want to
 
-513
+507
 00:23:47,200 --> 00:23:50,000
 dynamically revoke the revocation now
 
-514
+508
 00:23:50,000 --> 00:23:52,159
 becomes the responsibility of the
 
-515
+509
 00:23:52,159 --> 00:23:54,159
 delegator. It just reverts back to the
 
-516
+510
 00:23:54,159 --> 00:23:56,480
 delegator. And because we have an edge,
 
-517
+511
 00:23:56,480 --> 00:23:58,960
 we know who the delegator is. And so all
 
-518
+512
 00:23:58,960 --> 00:24:00,559
 we have to do is make a policy change
 
-519
+513
 00:24:00,559 --> 00:24:04,799
 that says in this case
 
-520
+514
 00:24:04,799 --> 00:24:09,039
 where I revoked there you go where I
 
-521
+515
 00:24:09,039 --> 00:24:11,360
 revoked his authority
 
-522
+516
 00:24:11,360 --> 00:24:13,120
 right here.
 
-523
+517
 00:24:13,120 --> 00:24:17,039
 So that I need so you see this one
 
-524
+518
 00:24:17,039 --> 00:24:19,440
 over here is issue I can't revoke
 
-525
+519
 00:24:19,440 --> 00:24:22,159
 because he's been revoked over here in
 
-526
+520
 00:24:22,159 --> 00:24:24,960
 number five. But guess who can revoke
 
-527
+521
 00:24:24,960 --> 00:24:28,960
 it? See the line that comes back here?
 
-528
+522
 00:24:28,960 --> 00:24:31,760
 He can revoke it. And a ver verifier
 
-529
+523
 00:24:31,760 --> 00:24:34,159
 just needs to know that's
 
-530
+524
 00:24:34,159 --> 00:24:36,799
 the policy.
 
-531
+525
 00:24:36,799 --> 00:24:39,520
 It just looks it up and says, "Oh, okay.
 
-532
+526
 00:24:39,520 --> 00:24:41,919
 The approximate delegate doesn't
 
-533
+527
 00:24:41,919 --> 00:24:43,600
 have authority because it's his
 
-534
+528
 00:24:43,600 --> 00:24:45,039
 authority has been revoked. The chain's
 
-535
+529
 00:24:45,039 --> 00:24:48,559
 broken." But any subsequent actions on
 
-536
+530
 00:24:48,559 --> 00:24:51,200
 that ACDC are still the responsibility
 
-537
+531
 00:24:51,200 --> 00:24:53,600
 of the delegator. And so the delegator
 
-538
+532
 00:24:53,600 --> 00:24:55,360
 can revoke it. So now we can have
 
-539
+533
 00:24:55,360 --> 00:24:58,080
 dynamically revocable credentials and
 
-540
+534
 00:24:58,080 --> 00:25:00,400
 break the chain and still dynamically
 
-541
+535
 00:25:00,400 --> 00:25:07,750
 revoke them. Yeah.
 
-542
+536
 00:25:10,630 --> 00:25:13,520
 Well, well, since there's always edges,
 you can the reversion of authority
 
-543
+537
 00:25:13,520 --> 00:25:14,960
 can go all the way up to the top of the
 
-544
+538
 00:25:14,960 --> 00:25:17,279
 chain. You can break you can break the
 
-545
+539
 00:25:17,279 --> 00:25:19,279
 leak as many times you want and you just
 
-546
+540
 00:25:19,279 --> 00:25:22,000
 keep you just rinse and repeat all you
 
-547
+541
 00:25:22,000 --> 00:25:24,400
 just ascend the chain. So now you have
 
-548
+542
 00:25:24,400 --> 00:25:26,559
 an elegant solution
 
-549
+543
 00:25:26,559 --> 00:25:30,640
 for dynamically revocable delegated
 
-550
+544
 00:25:30,640 --> 00:25:33,120
 credentials all the way down. You can
 
-551
+545
 00:25:33,120 --> 00:25:35,520
 break the chain any number of times and
 
-552
+546
 00:25:35,520 --> 00:25:37,919
 still control those credentials
 
-553
+547
 00:25:37,919 --> 00:25:39,520
 dynamically.
 
-554
+548
 00:25:39,520 --> 00:25:43,840
 So we have solved a really hard problem
 
-555
+549
 00:25:43,840 --> 00:25:47,200
 that in ephemeral authorizations isn't a
 
-556
+550
 00:25:47,200 --> 00:25:49,760
 problem because no authorizations last
 
-557
+551
 00:25:49,760 --> 00:25:52,000
 long enough that you care. But if I'm
 
-558
+552
 00:25:52,000 --> 00:25:55,360
 doing perpetually issued authorizations
 
-559
+553
 00:25:55,360 --> 00:25:58,000
 that last indefinitely unless they're
 
-560
+554
 00:25:58,000 --> 00:26:00,559
 revoked and I'm doing a chain, I need to
 
-561
-00:26:00,559 --> 00:26:06,230
+555
+00:26:00,559 --> 00:26:03,218
 solve that problem.
 
-562
-00:26:09,350 --> 00:26:11,600
+556
+00:26:07,006 --> 00:26:09,232
 So that's the solution. You revert
+
+557
+00:26:09,256 --> 00:26:11,600
 the authority to the delegator when the
 
-563
+558
 00:26:11,600 --> 00:26:14,159
 delegates authority is revoked and that
 
-564
+559
 00:26:14,159 --> 00:26:16,159
 allows you to continue to control those
 
-565
+560
 00:26:16,159 --> 00:26:18,960
 those issuances.
 
-566
+561
 00:26:18,960 --> 00:26:21,360
 Now we can do it even better. This
 
-567
+562
 00:26:21,360 --> 00:26:24,880
 requires something not in the spec.
 
-568
+563
 00:26:24,880 --> 00:26:26,960
 So this is a proposal to add in the spec
 
-569
+564
 00:26:26,960 --> 00:26:29,360
 and that's just adding one additional
 
-570
+565
 00:26:29,360 --> 00:26:32,240
 one additional update. It's called a
 
-571
+566
 00:26:32,240 --> 00:26:35,760
 transfer event. So if we look over here,
 
-572
+567
 00:26:35,760 --> 00:26:40,240
 where did I put it? Yeah, here we go.
 
-573
+568
 00:26:40,240 --> 00:26:44,640
 There we go. Where is it? Incept
 
-574
+569
 00:26:44,640 --> 00:26:46,400
 there we go. Where is it? Incept
 Oh, I forgot where I saw it. There it
 
-575
+570
 00:26:46,400 --> 00:26:48,640
 is. Oh, number three. I can't see it.
 
-576
+571
 00:26:48,640 --> 00:26:50,720
 Yeah, number three is transfer event. So
 
-577
+572
 00:26:50,720 --> 00:26:52,400
 we have an inception event and a
 
-578
+573
 00:26:52,400 --> 00:26:55,440
 transfer event. Those are analogous to
 
-579
+574
 00:26:55,440 --> 00:26:58,240
 an inception event and a rotation event
 
-580
+575
 00:26:58,240 --> 00:27:00,960
 in a Key Event Log. So in a transaction
 
-581
+576
 00:27:00,960 --> 00:27:04,159
 event log, we now have meta control
 
-582
+577
 00:27:04,159 --> 00:27:06,480
 events. We always had we had the
 
-583
+578
 00:27:06,480 --> 00:27:09,039
 inception event which establishes the
 
-584
+579
 00:27:09,039 --> 00:27:11,200
 who's the who's the authority over the
 
-585
+580
 00:27:11,200 --> 00:27:14,000
 registry. Now we have a transfer event
 
-586
+581
 00:27:14,000 --> 00:27:16,960
 that says we can transfer we can
 
-587
+582
 00:27:16,960 --> 00:27:20,880
 transfer authority to a different
 
-588
+583
 00:27:20,880 --> 00:27:24,080
 AID. So that allows us to do a an
 
-589
+584
 00:27:24,080 --> 00:27:26,480
 authority transfer. So it's not just
 
-590
+585
 00:27:26,480 --> 00:27:28,960
 reversion. We have a reversion of
 
-591
+586
 00:27:28,960 --> 00:27:31,679
 control. The reversion allows us to
 
-592
+587
 00:27:31,679 --> 00:27:33,840
 issue a transfer event. Now we have a
 
-593
+588
 00:27:33,840 --> 00:27:36,880
 new dele delegate that now is a control
 
-594
+589
 00:27:36,880 --> 00:27:38,480
 of all those credentials that are
 
-595
+590
 00:27:38,480 --> 00:27:40,799
 controlled by that registry. So we could
 
-596
+591
 00:27:40,799 --> 00:27:42,880
 do a seamless transfer all the way down
 
-597
+592
 00:27:42,880 --> 00:27:44,799
 at every level. And all we have to do is
 
-598
+593
 00:27:44,799 --> 00:27:46,799
 add one event. And the main thing in
 
-599
+594
 00:27:46,799 --> 00:27:49,679
 this event is just that it's it's got
 
-600
+595
 00:27:49,679 --> 00:27:52,559
 Whoops. It's got the issuer. It's got
 
-601
+596
 00:27:52,559 --> 00:27:55,760
 the new the new issuer AID, not the
 
-602
+597
 00:27:55,760 --> 00:27:57,840
 issuer back here. The issuer at the at
 
-603
+598
 00:27:57,840 --> 00:28:01,039
 the end.
 
-604
+599
 00:28:01,039 --> 00:28:08,310
 Yeah.
 
-605
+600
 00:28:11,269 --> 00:28:14,799
 Well the cryptographic context
 is that every event
 
-606
+601
 00:28:14,799 --> 00:28:17,360
 in all of these registries is anchored
 
-607
+602
 00:28:17,360 --> 00:28:20,480
 to somebody's Key Event Log.
 
-608
+603
 00:28:20,480 --> 00:28:23,279
 So that's perpetually verifiable
 
-609
+604
 00:28:23,279 --> 00:28:26,159
 because all of the all of the security
 
-610
+605
 00:28:26,159 --> 00:28:27,760
 mechanisms that protect the key event
 
-611
+606
 00:28:27,760 --> 00:28:29,440
 log protect everything anchored to the
 
-612
+607
 00:28:29,440 --> 00:28:31,440
 Key Event Log.
 
-613
+608
 00:28:31,440 --> 00:28:34,559
 Right? So post transfer you want to
 
-614
+609
 00:28:34,559 --> 00:28:38,000
 minimize the number of nodes you have to
 
-615
+610
 00:28:38,000 --> 00:28:39,520
 recurse through in order to get your
 
-616
+611
 00:28:39,520 --> 00:28:41,360
 verifications to work.
 
-617
+612
 00:28:41,360 --> 00:28:43,600
 Well, you're not minimizing them be
 
-618
+613
 00:28:43,600 --> 00:28:45,760
 you're not changing the number because
 
-619
+614
 00:28:45,760 --> 00:28:48,159
 you have a train a chain. So you always
 
-620
+615
 00:28:48,159 --> 00:28:50,159
 have to verify the whole chain. Yeah.
 
-621
+616
 00:28:50,159 --> 00:28:50,399
 So,
 
-622
+617
 00:28:50,399 --> 00:28:51,840
 so you didn't increase the length of the
 
-623
+618
 00:28:51,840 --> 00:28:54,320
 chain, you just switched a branch in the
 
-624
+619
 00:28:54,320 --> 00:28:55,840
 chain,
 
-625
+620
 00:28:55,840 --> 00:28:57,360
 right? So, there's a dead branch in the
 
-626
+621
 00:28:57,360 --> 00:28:58,720
 chain because the employee got fired.
 
-627
+622
 00:28:58,720 --> 00:29:00,320
 They're gone, right? And I don't want to
 
-628
+623
 00:29:00,320 --> 00:29:02,399
 maintain his logs forever.
 
-629
+624
 00:29:02,399 --> 00:29:02,799
 Well,
 
-630
+625
 00:29:02,799 --> 00:29:04,799
 his K logs, right?
 
-631
+626
 00:29:04,799 --> 00:29:06,640
 No, you don't have to maintain his key
 
-632
+627
 00:29:06,640 --> 00:29:09,520
 event logs, you know. Well, yeah, you do
 
-633
+628
 00:29:09,520 --> 00:29:12,080
 have to maintain his Key Event Logs for
 
-634
+629
 00:29:12,080 --> 00:29:14,000
 as long as those issuances are valid
 
-635
+630
 00:29:14,000 --> 00:29:15,120
 because that's the only way you can
 
-636
+631
 00:29:15,120 --> 00:29:17,200
 verify the original issuance.
 
-637
+632
 00:29:17,200 --> 00:29:18,240
 That was my question.
 
-638
+633
 00:29:18,240 --> 00:29:21,440
 Yeah. So, so, so, so you wouldn't do it
 
-639
+634
 00:29:21,440 --> 00:29:23,600
 for you, you wouldn't do it for
 
-640
+635
 00:29:23,600 --> 00:29:27,520
 something that was more that
 
-641
+636
 00:29:27,520 --> 00:29:29,440
 was,
 
-642
+637
 00:29:29,440 --> 00:29:31,039
 you know, this would allow something
 
-643
+638
 00:29:31,039 --> 00:29:33,520
 that's longer lived
 
-644
+639
 00:29:33,520 --> 00:29:35,600
 like let's say an employee issues a
 
-645
+640
 00:29:35,600 --> 00:29:37,919
 purchase order that you want to be
 
-646
+641
 00:29:37,919 --> 00:29:40,960
 dynamic revocable, but you're you're
 
-647
+642
 00:29:40,960 --> 00:29:42,320
 not going to have it sit out there for
 
-648
+643
 00:29:42,320 --> 00:29:44,480
 more than a year, right? So, you could
 
-649
+644
 00:29:44,480 --> 00:29:46,159
 transfer to a new employee. It still
 
-650
+645
 00:29:46,159 --> 00:29:48,080
 lasts a year, but you could still revoke
 
-651
+646
 00:29:48,080 --> 00:29:49,440
 it if you found out there was something
 
-652
+647
 00:29:49,440 --> 00:29:53,120
 wrong with it. If you're the
 
-653
+648
 00:29:53,120 --> 00:29:55,279
 state of Are we out of time? Oh, you're
 
-654
+649
 00:29:55,279 --> 00:29:58,080
 just asking questions. Okay. Let me
 
-655
+650
 00:29:58,080 --> 00:30:01,440
 let me Yeah, go ahead. I guess
 
-656
+651
 00:30:01,440 --> 00:30:02,960
 I was just curious because you
 
-657
+652
 00:30:02,960 --> 00:30:04,720
 nailed it with key rotation can already
 
-658
+653
 00:30:04,720 --> 00:30:07,760
 transfer control. You're just So, is
 
-659
+654
 00:30:07,760 --> 00:30:10,559
 this analogous to a sort of
 
-660
+655
 00:30:10,559 --> 00:30:13,039
 Well, the difference here is that
 
-661
+656
 00:30:13,039 --> 00:30:17,200
 is that key rotation is
 
-662
+657
 00:30:17,200 --> 00:30:20,799
 Heavy weight transfer because you're
 
-663
+658
 00:30:20,799 --> 00:30:23,039
 talking about control of the AIDs.
 
-664
+659
 00:30:23,039 --> 00:30:23,840
 Yep.
 
-665
+660
 00:30:23,840 --> 00:30:26,159
 Right. And so in the case of an employee
 
-666
+661
 00:30:26,159 --> 00:30:28,559
 leaving, you would at very least have to
 
-667
+662
 00:30:28,559 --> 00:30:30,159
 have a multi-IG
 
-668
+663
 00:30:30,159 --> 00:30:32,480
 so that multiple employees controlled
 
-669
+664
 00:30:32,480 --> 00:30:35,039
 the AID and one of them rotated out.
 
-670
+665
 00:30:35,039 --> 00:30:37,360
 This allows you to avoid any of those
 
-671
+666
 00:30:37,360 --> 00:30:38,000
 issues
 
-672
+667
 00:30:38,000 --> 00:30:39,120
 because you're doing it on the registry
 
-673
+668
 00:30:39,120 --> 00:30:39,520
 level.
 
-674
+669
 00:30:39,520 --> 00:30:40,720
 You're doing on the registry level
 
-675
+670
 00:30:40,720 --> 00:30:42,720
 instead of the KEL level. So, it's a
 
-676
+671
 00:30:42,720 --> 00:30:45,200
 much lighter weight, easier to manage
 
-677
+672
 00:30:45,200 --> 00:30:49,120
 situation for doing things at scale.
 
-678
+673
 00:30:49,120 --> 00:30:50,480
 What I'm wondering though is that it
 
-679
+674
 00:30:50,480 --> 00:30:52,399
 could this be a point of failure if
 
-680
+675
 00:30:52,399 --> 00:30:55,120
 someone were to key compromise and then
 
-681
+676
 00:30:55,120 --> 00:30:57,440
 Transfer a registry toward a
 
-682
+677
 00:30:57,440 --> 00:30:58,640
 malicious controller out.
 
-683
+678
 00:30:58,640 --> 00:31:01,200
 Well, well, anytime you compromise keys,
 
-684
+679
 00:31:01,200 --> 00:31:03,120
 you can do something malicious, right?
 
-685
+680
 00:31:03,120 --> 00:31:04,480
 But you can't do it without being
 
-686
+681
 00:31:04,480 --> 00:31:05,520
 detected, right?
 
-687
+682
 00:31:05,520 --> 00:31:08,000
 Which means you recover from it,
 
-688
+683
 00:31:08,000 --> 00:31:08,720
 right?
 
-689
+684
 00:31:08,720 --> 00:31:11,279
 So that's the point.
 
-690
+685
 00:31:11,279 --> 00:31:12,960
 Okay. I'm just trying to understand if
 
-691
+686
 00:31:12,960 --> 00:31:14,880
 it opens up potentially any like
 
-692
+687
 00:31:14,880 --> 00:31:16,880
 vulnerabilities, but I'm not
 
-693
+688
 00:31:16,880 --> 00:31:18,799
 not any not any new ones.
 
-694
+689
 00:31:18,799 --> 00:31:21,520
 Okay, good.
 
-695
+690
 00:31:21,520 --> 00:31:26,640
 All right. does. So this now
 
-696
+691
 00:31:26,640 --> 00:31:30,799
 means that we can maintain control over
 
-697
+692
 00:31:30,799 --> 00:31:34,159
 issuances out at the edge of our graph
 
-698
+693
 00:31:34,159 --> 00:31:35,840
 authorizations
 
-699
+694
 00:31:35,840 --> 00:31:38,080
 and they can survive for long periods of
 
-700
+695
 00:31:38,080 --> 00:31:40,240
 time and we have dynamic control over
 
-701
+696
 00:31:40,240 --> 00:31:42,559
 them and we can change control over them
 
-702
+697
 00:31:42,559 --> 00:31:44,399
 dynamically.
 
-703
+698
 00:31:44,399 --> 00:31:47,440
 Not all issuances benefit from that.
 
-704
+699
 00:31:47,440 --> 00:31:48,960
 There's some you don't want to do that
 
-705
+700
 00:31:48,960 --> 00:31:51,679
 for. But in the cases where you have
 
-706
+701
 00:31:51,679 --> 00:31:54,320
 really long lived things like
 
-707
+702
 00:31:54,320 --> 00:31:56,880
 guardianship, right? So this is an
 
-708
+703
 00:31:56,880 --> 00:31:59,120
 example of guardianship. You have a
 
-709
+704
 00:31:59,120 --> 00:32:02,000
 child who has parents that are that are
 
-710
+705
 00:32:02,000 --> 00:32:03,919
 guardians over the parents and they get
 
-711
+706
 00:32:03,919 --> 00:32:07,679
 divorced. Who's the new guardian?
 
-712
+707
 00:32:07,679 --> 00:32:09,679
 Do you want to reissue the birth
 
-713
+708
 00:32:09,679 --> 00:32:12,240
 certificate to the child or do you want
 
-714
+709
 00:32:12,240 --> 00:32:13,760
 to transfer control of the birth
 
-715
+710
 00:32:13,760 --> 00:32:16,080
 certificate to the new guardian? You
 
-716
+711
 00:32:16,080 --> 00:32:18,080
 want to transfer control. You don't want
 
-717
+712
 00:32:18,080 --> 00:32:22,000
 to reissue the birth certificate
 
-718
+713
 00:32:22,000 --> 00:32:24,240
 and lots of authority structures in
 
-719
+714
 00:32:24,240 --> 00:32:25,840
 corporations
 
-720
+715
 00:32:25,840 --> 00:32:28,399
 that have to do with things like who has
 
-721
+716
 00:32:28,399 --> 00:32:31,919
 control over the domain name registrar
 
-722
+717
 00:32:31,919 --> 00:32:34,640
 for the company.
 
-723
+718
 00:32:34,640 --> 00:32:36,880
 Do you want to reissue all your domain
 
-724
+719
 00:32:36,880 --> 00:32:41,200
 names every time that person moves? Or
 
-725
+720
 00:32:41,200 --> 00:32:42,880
 do you want to have some mechanism that
 
-726
+721
 00:32:42,880 --> 00:32:46,720
 you can transfer control?
 
-727
+722
 00:32:46,720 --> 00:32:49,279
 And do you want that mechanism to be a
 
-728
+723
 00:32:49,279 --> 00:32:51,360
 multi-IG group where you have a group of
 
-729
+724
 00:32:51,360 --> 00:32:54,799
 IT people that all have, you know,
 
-730
+725
 00:32:54,799 --> 00:32:56,720
 a threshold control? You could do it
 
-731
+726
 00:32:56,720 --> 00:33:00,240
 that way or you could do it this way. In
 
-732
+727
 00:33:00,240 --> 00:33:01,679
 some cases, this is going to be more
 
-733
+728
 00:33:01,679 --> 00:33:04,640
 scalable because it's not it's not
 
-734
+729
 00:33:04,640 --> 00:33:07,440
 requiring tight coordination for key
 
-735
+730
 00:33:07,440 --> 00:33:09,519
 management.
 
-736
+731
 00:33:09,519 --> 00:33:13,679
 All right. And any so this so
 
-737
+732
 00:33:13,679 --> 00:33:16,159
 this would be in version 1.1 of the
 
-738
+733
 00:33:16,159 --> 00:33:20,159
 ACD spec. My proposal would be to add
 
-739
+734
 00:33:20,159 --> 00:33:23,440
 add another event. So basically we're
 
-740
+735
 00:33:23,440 --> 00:33:25,600
 just adding one event so we can do
 
-741
+736
 00:33:25,600 --> 00:33:28,399
 control transfer on a registry. And I
 
-742
+737
 00:33:28,399 --> 00:33:30,159
 didn't think of it a year ago when I
 
-743
+738
 00:33:30,159 --> 00:33:32,080
 wrote up the registry, but as I was
 
-744
+739
 00:33:32,080 --> 00:33:34,000
 thinking about this problem some more, I
 
-745
+740
 00:33:34,000 --> 00:33:35,679
 said, "No, no, we probably should
 
-746
+741
 00:33:35,679 --> 00:33:37,279
 add that one." And I actually changed it
 
-747
+742
 00:33:37,279 --> 00:33:38,640
 three or four times because I kept
 
-748
+743
 00:33:38,640 --> 00:33:40,480
 trying to decide what I needed. And I
 
-749
+744
 00:33:40,480 --> 00:33:43,200
 realized that it just needs to just the
 
-750
+745
 00:33:43,200 --> 00:33:44,640
 only thing it needs to have is the
 
-751
+746
 00:33:44,640 --> 00:33:46,399
 issuers's AID. Everything else is the
 
-752
+747
 00:33:46,399 --> 00:33:49,279
 same as the inception event.
 
-753
+748
 00:33:49,279 --> 00:33:54,159
 It just declares a new issuer.
 
-754
+749
 00:33:54,159 --> 00:33:55,919
 So it's the event type is the only thing
 
-755
+750
 00:33:55,919 --> 00:33:58,720
 so it's the event type is the only thing
 that changes. Any
 
-756
+751
 00:33:58,720 --> 00:34:02,159
 other questions before I move on?
 
-757
+752
 00:34:02,159 --> 00:34:04,880
 Yeah.
 
-758
+753
 00:34:04,880 --> 00:34:07,679
 Does VI authority fit into this somehow?
 
-759
+754
 00:34:07,679 --> 00:34:10,960
 Yeah, we right now vLEI don't solve
 
-760
+755
 00:34:10,960 --> 00:34:13,599
 these problems. So with the vLEI, what
 
-761
+756
 00:34:13,599 --> 00:34:16,560
 you have right now is you have a
 
-762
+757
 00:34:16,560 --> 00:34:21,599
 grace period. when you're issuing QVI
 
-763
+758
 00:34:21,599 --> 00:34:24,800
 loses its authority, all of the VI they
 
-764
+759
 00:34:24,800 --> 00:34:27,040
 issue are still valid for a grace
 
-765
+760
 00:34:27,040 --> 00:34:31,510
 period. Carla wants to answer.
 
-766
+761
 00:34:34,790 --> 00:34:37,599
 Go ahead, Carla. Oh, get it, Mike.
 Yes. And I knew that this was coming
 
-767
+762
 00:34:37,599 --> 00:34:39,200
 Because Kevin told me that you were
 
-768
+763
 00:34:39,200 --> 00:34:42,399
 working on it. And so we have been
 
-769
+764
 00:34:42,399 --> 00:34:45,760
 looking at a way in order to be able
 
-770
+765
 00:34:45,760 --> 00:34:47,839
 not to have to go back to the legal
 
-771
+766
 00:34:47,839 --> 00:34:51,829
 entities
 
-772
+767
 00:34:54,710 --> 00:34:56,720
 your QVI is leaving the system
 you're going to have to hire a new QVI
 
-773
+768
 00:34:56,720 --> 00:34:59,119
 and recreate everything that you
 
-774
+769
 00:34:59,119 --> 00:35:02,640
 have. And so this way we can transfer
 
-775
+770
 00:35:02,640 --> 00:35:05,359
 control to GLEIF and then as the legal
 
-776
+771
 00:35:05,359 --> 00:35:08,160
 entities hire their new QVIS we can
 
-777
+772
 00:35:08,160 --> 00:35:10,240
 transfer control again to the new
 
-778
+773
 00:35:10,240 --> 00:35:12,960
 that's what happens is GLEIF now becomes
 
-779
+774
 00:35:12,960 --> 00:35:15,680
 the authority not the QVI
 
-780
+775
 00:35:15,680 --> 00:35:17,520
 and then you don't have to make the
 
-781
+776
 00:35:17,520 --> 00:35:21,119
 transfer control be forever. It can just
 
-782
+777
 00:35:21,119 --> 00:35:24,480
 now be a dynamic time period to give you
 
-783
+778
 00:35:24,480 --> 00:35:26,880
 a grace period to find a new QVI and
 
-784
+779
 00:35:26,880 --> 00:35:29,599
 reissue. But now the grace
 
-785
+780
 00:35:29,599 --> 00:35:32,640
 period now is dynamic instead of fixed,
 
-786
+781
 00:35:32,640 --> 00:35:34,400
 right? Right now it's fixed to what? 90
 
-787
+782
 00:35:34,400 --> 00:35:35,280
 days. Yeah.
 
-788
+783
 00:35:35,280 --> 00:35:36,960
 Okay. Sam, I'm gonna give you a
 
-789
+784
 00:35:36,960 --> 00:35:39,920
 practical example of I work for a civil
 
-790
+785
 00:35:39,920 --> 00:35:41,680
 engineering firm. I have my engineer
 
-791
+786
 00:35:41,680 --> 00:35:44,320
 stamp. I've stamped the bridge as being
 
-792
+787
 00:35:44,320 --> 00:35:47,200
 ready to build or meeting spec. I leave
 
-793
+788
 00:35:47,200 --> 00:35:49,359
 the company. What is the company going
 
-794
+789
 00:35:49,359 --> 00:35:52,000
 to do? H I'm trying to see that how that
 
-795
+790
 00:35:52,000 --> 00:35:53,599
 hierarchy would work, especially
 
-796
+791
 00:35:53,599 --> 00:35:55,200
 considering that in the traditional
 
-797
+792
 00:35:55,200 --> 00:35:56,880
 world, we just file those blueprints and
 
-798
+793
 00:35:56,880 --> 00:35:58,800
 that engineer stamp is always on there
 
-799
+794
 00:35:58,800 --> 00:36:00,079
 and we consider it valid.
 
-800
+795
 00:36:00,079 --> 00:36:03,040
 Well, right now the engineering stamp
 
-801
+796
 00:36:03,040 --> 00:36:05,440
 doesn't isn't dynamically revocable.
 
-802
+797
 00:36:05,440 --> 00:36:07,280
 There's no mechanism to do that. So,
 
-803
+798
 00:36:07,280 --> 00:36:10,560
 this only applies to engineering stamps
 
-804
+799
 00:36:10,560 --> 00:36:12,720
 that you already need to dynamically
 
-805
+800
 00:36:12,720 --> 00:36:14,320
 revoke.
 
-806
+801
 00:36:14,320 --> 00:36:17,200
 So if you and because it's very
 
-807
+802
 00:36:17,200 --> 00:36:19,599
 difficult to do dynamic revocation
 
-808
+803
 00:36:19,599 --> 00:36:22,400
 almost no real world issuances have
 
-809
+804
 00:36:22,400 --> 00:36:25,119
 dynamic re revocation but because now
 
-810
+805
 00:36:25,119 --> 00:36:27,280
 we're doing this stuff crypto actively
 
-811
+806
 00:36:27,280 --> 00:36:28,960
 all of a sudden all sorts of use cases
 
-812
+807
 00:36:28,960 --> 00:36:30,640
 where we want them to be dynamic
 
-813
+808
 00:36:30,640 --> 00:36:32,560
 revocable but we never thought it
 
-814
+809
 00:36:32,560 --> 00:36:34,240
 possible so we didn't and we just lived
 
-815
+810
 00:36:34,240 --> 00:36:37,280
 with it now become good applications. So
 
-816
+811
 00:36:37,280 --> 00:36:39,440
 we're talking about using ACDCs in new
 
-817
+812
 00:36:39,440 --> 00:36:43,520
 ways. You can re refactor
 
-818
+813
 00:36:43,520 --> 00:36:48,160
 multiple licensing regimes to have
 
-819
+814
 00:36:48,160 --> 00:36:51,440
 dynamically revokable licenses and it's
 
-820
+815
 00:36:51,440 --> 00:36:56,550
 practically workable.
 
-821
+816
 00:36:58,790 --> 00:37:02,630
 So there should be some b some business
 opportunities there.
 
-822
+817
 00:37:06,550 --> 00:37:08,720
 Yeah. So the basic idea of this transfer
 is the basic idea of this transfer
 
-823
+818
 00:37:08,720 --> 00:37:10,240
 registry
 
-824
+819
 00:37:10,240 --> 00:37:12,400
 that you create with that you're
 
-825
+820
 00:37:12,400 --> 00:37:15,119
 delegating or changing transferring
 
-826
+821
 00:37:15,119 --> 00:37:17,119
 control over a set of identifiers to a
 
-827
+822
 00:37:17,119 --> 00:37:19,119
 new identifier. So it creates a
 
-828
+823
 00:37:19,119 --> 00:37:19,760
 registry.
 
-829
+824
 00:37:19,760 --> 00:37:21,760
 No, you're changing control of the
 
-830
+825
 00:37:21,760 --> 00:37:22,880
 registry.
 
-831
+826
 00:37:22,880 --> 00:37:25,599
 One identifier, the reg registry's
 
-832
+827
 00:37:25,599 --> 00:37:27,280
 identifier. That's what you're changing
 
-833
+828
 00:37:27,280 --> 00:37:27,920
 control of.
 
-834
+829
 00:37:27,920 --> 00:37:29,200
 Yeah, I misspoke there. That's right.
 
-835
+830
 00:37:29,200 --> 00:37:31,280
 Okay. So just the registry that you
 
-836
+831
 00:37:31,280 --> 00:37:32,320
 might have already issued many
 
-837
+832
 00:37:32,320 --> 00:37:34,560
 credentials from and so is essentially
 
-838
+833
 00:37:34,560 --> 00:37:38,320
 or one credential that has state changes
 
-839
+834
 00:37:38,320 --> 00:37:40,160
 and you don't you don't want to reissue
 
-840
+835
 00:37:40,160 --> 00:37:42,320
 that credential. You want the credential
 
-841
+836
 00:37:42,320 --> 00:37:44,640
 to continue to have viability. You just
 
-842
+837
 00:37:44,640 --> 00:37:46,720
 want to change who has the authority to
 
-843
+838
 00:37:46,720 --> 00:37:48,079
 change the state of the credential.
 
-844
+839
 00:37:48,079 --> 00:37:49,119
 That's all you're doing.
 
-845
+840
 00:37:49,119 --> 00:37:49,760
 Got it?
 
-846
+841
 00:37:49,760 --> 00:37:51,599
 And you're doing that. And so I want
 
-847
+842
 00:37:51,599 --> 00:37:53,760
 to point out something out here. See
 
-848
+843
 00:37:53,760 --> 00:37:55,280
 this event right here, the transfer
 
-849
+844
 00:37:55,280 --> 00:37:57,520
 event. See it has two arrows going to
 
-850
+845
 00:37:57,520 --> 00:38:00,160
 it. That because a validator first has
 
-851
+846
 00:38:00,160 --> 00:38:02,880
 to verify that the that the reverting
 
-852
+847
 00:38:02,880 --> 00:38:06,480
 authority approved it and has to verify
 
-853
+848
 00:38:06,480 --> 00:38:11,190
 that the new authority approved it.
 
-854
+849
 00:38:13,030 --> 00:38:14,480
 And then once that happens then they
 they don't care because it's just the
 
-855
+850
 00:38:14,480 --> 00:38:17,670
 new authority.
 
-856
+851
 00:38:19,990 --> 00:38:28,390
 All right. Any other questions? All
 right we'll go to the next one.
 
-857
+852
 00:38:31,430 --> 00:38:33,680
 So, so is this then do you need
 reversion in place in order to have a
 
-858
+853
 00:38:33,680 --> 00:38:35,520
 properly functional transfer registry
 
-859
+854
 00:38:35,520 --> 00:38:37,520
 of this type? Yes, there's another type
 
-860
+855
 00:38:37,520 --> 00:38:39,440
 of transfer registry that we haven't
 
-861
+856
 00:38:39,440 --> 00:38:42,480
 defined yet that I have and I have a
 
-862
+857
 00:38:42,480 --> 00:38:45,119
 outstanding issue on KERIpy that's
 
-863
+858
 00:38:45,119 --> 00:38:46,480
 different from this. Okay,
 
-864
+859
 00:38:46,480 --> 00:38:49,440
 this is reversion for a hierarchy of
 
-865
+860
 00:38:49,440 --> 00:38:52,880
 authorizations and delegation, not a not
 
-866
+861
 00:38:52,880 --> 00:38:55,760
 not a replacement for asset transfer.
 
-867
+862
 00:38:55,760 --> 00:38:57,599
 Ned's going to give a talk on secure
 
-868
+863
 00:38:57,599 --> 00:39:00,800
 asset transfer later today. So you can
 
-869
+864
 00:39:00,800 --> 00:39:03,599
 ask one clarifying question. Yes.
 
-870
+865
 00:39:03,599 --> 00:39:07,119
 So previously earlier in this talk you I
 
-871
+866
 00:39:07,119 --> 00:39:08,480
 thought there was another methodology
 
-872
+867
 00:39:08,480 --> 00:39:10,720
 where it was like two through four was
 
-873
+868
 00:39:10,720 --> 00:39:13,680
 valid. So that's a different style where
 
-874
+869
 00:39:13,680 --> 00:39:15,200
 it's a different style of dealing with
 
-875
+870
 00:39:15,200 --> 00:39:17,599
 the same problem. Just one is the same
 
-876
+871
 00:39:17,599 --> 00:39:18,079
 in order.
 
-877
+872
 00:39:18,079 --> 00:39:20,240
 It's the same thing. It's just this says
 
-878
+873
 00:39:20,240 --> 00:39:23,119
 once you're invalid, what do you do with
 
-879
+874
 00:39:23,119 --> 00:39:27,440
 the ACDC of the controlling authority?
 
-880
+875
 00:39:27,440 --> 00:39:30,160
 It nobody's in charge of it. So you can
 
-881
+876
 00:39:30,160 --> 00:39:33,680
 revert back to the this delegator and
 
-882
+877
 00:39:33,680 --> 00:39:36,400
 now the deleg delegator is in control.
 
-883
+878
 00:39:36,400 --> 00:39:38,480
 But that now imposes a burden on the
 
-884
+879
 00:39:38,480 --> 00:39:40,320
 delegator to have to make control it
 
-885
+880
 00:39:40,320 --> 00:39:41,359
 from that point on.
 
-886
+881
 00:39:41,359 --> 00:39:42,880
 Right. I just thought I understood
 
-887
+882
 00:39:42,880 --> 00:39:45,440
 previously like to answer his question
 
-888
+883
 00:39:45,440 --> 00:39:50,880
 about you know the
 
-889
+884
 00:39:50,880 --> 00:39:53,280
 use case where you could potentially
 
-890
+885
 00:39:53,280 --> 00:39:55,280
 just keep
 
-891
+886
 00:39:55,280 --> 00:39:58,079
 Just a certain set subset of the
 
-892
+887
 00:39:58,079 --> 00:39:59,920
 issue issuances of the credentials
 
-893
+888
 00:39:59,920 --> 00:40:00,640
 previously.
 
-894
+889
 00:40:00,640 --> 00:40:02,240
 Yeah, that works as long as the
 
-895
+890
 00:40:02,240 --> 00:40:04,480
 delegated credentials expire on their
 
-896
+891
 00:40:04,480 --> 00:40:08,079
 own. if they're dynamically revocable
 
-897
+892
 00:40:08,079 --> 00:40:10,400
 and you break the chain, you can't
 
-898
+893
 00:40:10,400 --> 00:40:12,880
 revoke them after you broken the chain.
 
-899
+894
 00:40:12,880 --> 00:40:15,680
 So, it works for conventional
 
-900
+895
 00:40:15,680 --> 00:40:18,400
 issuances that time out. If I have a
 
-901
+896
 00:40:18,400 --> 00:40:20,480
 food handlers permit that times out in a
 
-902
+897
 00:40:20,480 --> 00:40:23,119
 year, I can fire the employee that
 
-903
+898
 00:40:23,119 --> 00:40:24,640
 issued it and it's still valid, but
 
-904
+899
 00:40:24,640 --> 00:40:26,720
 it'll expire in a year. But if I have
 
-905
+900
 00:40:26,720 --> 00:40:28,320
 something that I want to be able to
 
-906
+901
 00:40:28,320 --> 00:40:31,359
 revoke any point in time, then I can't I
 
-907
+902
 00:40:31,359 --> 00:40:33,599
 can't break the chain and still I have
 
-908
+903
 00:40:33,599 --> 00:40:35,440
 to define what that means. So, I can
 
-909
+904
 00:40:35,440 --> 00:40:38,960
 define I could say, well, it means X,
 
-910
+905
 00:40:38,960 --> 00:40:40,640
 right? But we want to make it so that we
 
-911
+906
 00:40:40,640 --> 00:40:43,119
 can actually verify and enforce it
 
-912
+907
 00:40:43,119 --> 00:40:45,520
 cryptographically.
 
-913
+908
 00:40:45,520 --> 00:40:47,920
 I sound like somebody that doesn't
 
-914
+909
 00:40:47,920 --> 00:40:51,680
 have a voice. All right. So,
 
-915
+910
 00:40:51,680 --> 00:40:52,880
 So I'm going to move on because
 
-916
+911
 00:40:52,880 --> 00:40:54,400
 we're going to run out of time. I have a
 
-917
+912
 00:40:54,400 --> 00:40:56,480
 couple more slides. So, the other thing
 
-918
+913
 00:40:56,480 --> 00:41:00,240
 we can do is that edge verifi evac can
 
-919
+914
 00:41:00,240 --> 00:41:03,280
 also mean edge verifiable agent control.
 
-920
+915
 00:41:03,280 --> 00:41:05,040
 Now, here's the thing.
 
-921
+916
 00:41:05,040 --> 00:41:06,880
 An agent
 
-922
+917
 00:41:06,880 --> 00:41:09,520
 is an authorized
 
-923
+918
 00:41:09,520 --> 00:41:11,200
 delegate
 
-924
+919
 00:41:11,200 --> 00:41:14,319
 of a natural person, a legal
 
-925
+920
 00:41:14,319 --> 00:41:17,280
 entity, right? An agent can be another
 
-926
+921
 00:41:17,280 --> 00:41:19,599
 natural personal legal entity. It can be
 
-927
+922
 00:41:19,599 --> 00:41:22,000
 a piece of software. It can be an AI.
 
-928
+923
 00:41:22,000 --> 00:41:25,760
 The term agent means so nothing in
 
-929
+924
 00:41:25,760 --> 00:41:28,079
 anything that I showed you before is any
 
-930
+925
 00:41:28,079 --> 00:41:31,280
 different if it's a person or an AI
 
-931
+926
 00:41:31,280 --> 00:41:33,119
 that's in the delegation chain. It all
 
-932
+927
 00:41:33,119 --> 00:41:35,680
 works the same. So now if you're worried
 
-933
+928
 00:41:35,680 --> 00:41:38,480
 about whether your agentic AI has
 
-934
+929
 00:41:38,480 --> 00:41:41,200
 permission to do X, you can
 
-935
+930
 00:41:41,200 --> 00:41:42,960
 cryptographically verify that it had
 
-936
+931
 00:41:42,960 --> 00:41:44,720
 permission to do X and you can revoke
 
-937
+932
 00:41:44,720 --> 00:41:46,560
 its permission to do X and any verifier
 
-938
+933
 00:41:46,560 --> 00:41:50,000
 can verify that. It doesn't matter.
 
-939
+934
 00:41:50,000 --> 00:41:52,160
 You just give the agent an AID, a
 
-940
+935
 00:41:52,160 --> 00:41:54,560
 delegated AID,
 
-941
+936
 00:41:54,560 --> 00:41:56,880
 right? So that's the original meaning of
 
-942
+937
 00:41:56,880 --> 00:41:58,400
 the word agent. So when see people say
 
-943
+938
 00:41:58,400 --> 00:42:01,839
 agentic AI, they're just software agents
 
-944
+939
 00:42:01,839 --> 00:42:03,280
 that are a little bit smarter than
 
-945
+940
 00:42:03,280 --> 00:42:06,160
 software agents used to be, right? The
 
-946
+941
 00:42:06,160 --> 00:42:08,720
 ACDC mechanisms are exactly the same.
 
-947
+942
 00:42:08,720 --> 00:42:10,800
 They don't change. So if I want to do
 
-948
+943
 00:42:10,800 --> 00:42:14,960
 EVAC, I do evac.
 
-949
+944
 00:42:14,960 --> 00:42:16,880
 So you may want to have regul
 
-950
+945
 00:42:16,880 --> 00:42:19,839
 regulations require attributes in your
 
-951
+946
 00:42:19,839 --> 00:42:23,280
 chain that says this agent is a person
 
-952
+947
 00:42:23,280 --> 00:42:26,400
 versus an AI. you might want to disclose
 
-953
+948
 00:42:26,400 --> 00:42:28,640
 that. But as far as verifying their
 
-954
+949
 00:42:28,640 --> 00:42:31,200
 authority and what they do with it, it
 
-955
+950
 00:42:31,200 --> 00:42:33,359
 ACDCs accommodated without any
 
-956
+951
 00:42:33,359 --> 00:42:35,359
 changes. Yeah. So, one of the other
 
-957
+952
 00:42:35,359 --> 00:42:37,440
 problems with delegation is controlling
 
-958
+953
 00:42:37,440 --> 00:42:41,680
 the recursion of delegation. And so
 
-959
+954
 00:42:41,680 --> 00:42:43,520
 there's a bunch of, you know, weird
 
-960
+955
 00:42:43,520 --> 00:42:45,760
 stuff in X509 for how to do that. I'm
 
-961
+956
 00:42:45,760 --> 00:42:47,760
 just wondering what mechanisms exist
 
-962
+957
 00:42:47,760 --> 00:42:50,640
 here to manage the
 
-963
+958
 00:42:50,640 --> 00:42:52,800
 the degree of delegation that a
 
-964
+959
 00:42:52,800 --> 00:42:53,280
 delegate.
 
-965
+960
 00:42:53,280 --> 00:42:54,480
 What do you mean? What do you mean by
 
-966
+961
 00:42:54,480 --> 00:42:55,839
 recursion? Like how many levels
 
-967
+962
 00:42:55,839 --> 00:42:57,599
 a delegate can delegate to another
 
-968
+963
 00:42:57,599 --> 00:42:58,400
 delegate?
 
-969
+964
 00:42:58,400 --> 00:43:01,599
 Oh yeah. So in KERI
 
-970
+965
 00:43:01,599 --> 00:43:04,880
 When you have ACDCs
 
-971
+966
 00:43:04,880 --> 00:43:07,680
 they're edge operators and so you can
 
-972
+967
 00:43:07,680 --> 00:43:09,680
 have an edge operators that says do not
 
-973
+968
 00:43:09,680 --> 00:43:12,319
 delegator you can have a configuration
 
-974
+969
 00:43:12,319 --> 00:43:14,640
 for a delegated AID that says do not
 
-975
+970
 00:43:14,640 --> 00:43:17,280
 delegate. So you can say how many layers
 
-976
+971
 00:43:17,280 --> 00:43:19,440
 down you can have delegation. Right? But
 
-977
+972
 00:43:19,440 --> 00:43:21,760
 I'm familiar with that. It's like is it
 
-978
+973
 00:43:21,760 --> 00:43:23,839
 is it do you have a whole policy engine
 
-979
+974
 00:43:23,839 --> 00:43:25,920
 for how far you delegate? Well, actually
 
-980
+975
 00:43:25,920 --> 00:43:27,440
 you can have a whole policy engine with
 
-981
+976
 00:43:27,440 --> 00:43:30,000
 ACDCs because we have edge operators. So
 
-982
+977
 00:43:30,000 --> 00:43:32,079
 you can you can make it as complicated
 
-983
+978
 00:43:32,079 --> 00:43:36,480
 as you want or as simple as you want,
 
-984
+979
 00:43:36,480 --> 00:43:39,280
 right? But ACDCs don't care,
 
-985
+980
 00:43:39,280 --> 00:43:41,599
 right? It's up to the user application.
 
-986
+981
 00:43:41,599 --> 00:43:44,240
 The cryptographic verifiability is I
 
-987
+982
 00:43:44,240 --> 00:43:46,720
 have an edge. The edge has properties.
 
-988
+983
 00:43:46,720 --> 00:43:48,480
 The properties can define whether that
 
-989
+984
 00:43:48,480 --> 00:43:52,880
 edge allows further delegation or not.
 
-990
+985
 00:43:52,880 --> 00:43:54,400
 Does that make sense? Did you guys
 
-991
+986
 00:43:54,400 --> 00:43:56,160
 understand?
 
-992
+987
 00:43:56,160 --> 00:43:58,480
 Yeah. Okay.
 
-993
+988
 00:43:58,480 --> 00:44:00,240
 All right.
 
-994
+989
 00:44:00,240 --> 00:44:01,920
 Safety. So, I'm going to change topics.
 
-995
+990
 00:44:01,920 --> 00:44:03,440
 I have a couple of questions. All right.
 
-996
+991
 00:44:03,440 --> 00:44:06,480
 Back here. Well, I guess it's the same
 
-997
+992
 00:44:06,480 --> 00:44:09,119
 with natural people and
 
-998
+993
 00:44:09,119 --> 00:44:11,359
 organizations to natural people.
 
-999
+994
 00:44:11,359 --> 00:44:14,480
 How would you enforce if possible
 
-1000
+995
 00:44:14,480 --> 00:44:17,440
 attenuation such that you know
 
-1001
+996
 00:44:17,440 --> 00:44:20,800
 subsequent delegates or delegates do not
 
-1002
+997
 00:44:20,800 --> 00:44:23,520
 acquire more powers than the
 
-1003
+998
 00:44:23,520 --> 00:44:25,680
 so there's two governance mechanisms
 
-1004
+999
 00:44:25,680 --> 00:44:28,960
 that we use in ACDCs for that one is
 
-1005
+1000
 00:44:28,960 --> 00:44:32,240
 called an ecosystem governance framework
 
-1006
+1001
 00:44:32,240 --> 00:44:36,000
 okay so for the LEI the vLEI there are
 
-1007
+1002
 00:44:36,000 --> 00:44:39,200
 200 pages of documents that say this is
 
-1008
+1003
 00:44:39,200 --> 00:44:41,920
 what you can do with these ACDCs they
 
-1009
+1004
 00:44:41,920 --> 00:44:44,079
 define the delegation what you can
 
-1010
+1005
 00:44:44,079 --> 00:44:46,079
 delegate how much you can delegate how
 
-1011
+1006
 00:44:46,079 --> 00:44:47,920
 many layers of delegation what the
 
-1012
+1007
 00:44:47,920 --> 00:44:50,720
 ACDCs are who does that right that
 
-1013
+1008
 00:44:50,720 --> 00:44:54,400
 doesn't have to be encoded into the
 
-1014
+1009
 00:44:54,400 --> 00:44:57,280
 ACDCs themselves because the schema
 
-1015
+1010
 00:44:57,280 --> 00:45:00,319
 for the ACDC which is an immutable
 
-1016
+1011
 00:45:00,319 --> 00:45:04,000
 schema is defined to be the schema and
 
-1017
+1012
 00:45:04,000 --> 00:45:05,839
 then you look up the ecosystem
 
-1018
+1013
 00:45:05,839 --> 00:45:07,280
 governance framework for that schema and
 
-1019
+1014
 00:45:07,280 --> 00:45:10,000
 you go oh this is how I use these guys
 
-1020
+1015
 00:45:10,000 --> 00:45:13,040
 So, so in a real world you're
 
-1021
+1016
 00:45:13,040 --> 00:45:15,839
 probably going to have quite fixed
 
-1022
+1017
 00:45:15,839 --> 00:45:18,480
 well-rigidly defined ecosystem
 
-1023
+1018
 00:45:18,480 --> 00:45:20,000
 governance frameworks because that's how
 
-1024
+1019
 00:45:20,000 --> 00:45:22,560
 the real world works. We don't go
 
-1025
+1020
 00:45:22,560 --> 00:45:26,800
 around and say, "Hey I want to be
 
-1026
+1021
 00:45:26,800 --> 00:45:30,079
 a real estate agent." Agent, right? Hear
 
-1027
+1022
 00:45:30,079 --> 00:45:32,960
 the word agent. What are the rules for
 
-1028
+1023
 00:45:32,960 --> 00:45:34,640
 real estate agents? How can they
 
-1029
+1024
 00:45:34,640 --> 00:45:37,839
 operate? What things can they can
 
-1030
+1025
 00:45:37,839 --> 00:45:39,359
 and do? Well, there's a whole body of
 
-1031
+1026
 00:45:39,359 --> 00:45:42,560
 regulation about it. We don't have to we
 
-1032
+1027
 00:45:42,560 --> 00:45:46,240
 don't have to we just have to say, well,
 
-1033
+1028
 00:45:46,240 --> 00:45:47,760
 we're going to make it so they can
 
-1034
+1029
 00:45:47,760 --> 00:45:49,680
 verify that they're an agent. We can
 
-1035
+1030
 00:45:49,680 --> 00:45:51,599
 reference all the regulations that apply
 
-1036
+1031
 00:45:51,599 --> 00:45:54,480
 to them as an agent. Now, we've modeled
 
-1037
+1032
 00:45:54,480 --> 00:45:56,960
 the real world authority that already
 
-1038
+1033
 00:45:56,960 --> 00:45:59,520
 exists, but we just made it so that they
 
-1039
+1034
 00:45:59,520 --> 00:46:01,599
 can do the verification
 
-1040
+1035
 00:46:01,599 --> 00:46:04,240
 quickly and securely without
 
-1041
+1036
 00:46:04,240 --> 00:46:06,960
 impersonation or fraud. We don't have
 
-1042
+1037
 00:46:06,960 --> 00:46:10,240
 to build all of that the rulemaking
 
-1043
+1038
 00:46:10,240 --> 00:46:13,599
 stuff if we don't if we don't have to.
 
-1044
+1039
 00:46:13,599 --> 00:46:16,079
 There's no reason to do that. But if we
 
-1045
+1040
 00:46:16,079 --> 00:46:18,160
 want to add
 
-1046
+1041
 00:46:18,160 --> 00:46:21,680
 some of that because it's practical,
 
-1047
+1042
 00:46:21,680 --> 00:46:24,079
 then we can encode it in the edge logic
 
-1048
+1043
 00:46:24,079 --> 00:46:26,400
 with edge operators. But we want to we
 
-1049
+1044
 00:46:26,400 --> 00:46:28,400
 want to make that as we want to minimize
 
-1050
+1045
 00:46:28,400 --> 00:46:30,800
 that. What tends to happen is people try
 
-1051
+1046
 00:46:30,800 --> 00:46:33,520
 to model all of the stuff in the world,
 
-1052
+1047
 00:46:33,520 --> 00:46:36,880
 real world, in data and then they get
 
-1053
+1048
 00:46:36,880 --> 00:46:40,079
 data that can't that is ambiguous. They
 
-1054
+1049
 00:46:40,079 --> 00:46:42,480
 get ontologies that don't that aren't
 
-1055
+1050
 00:46:42,480 --> 00:46:45,599
 that are broken.
 
-1056
+1051
 00:46:45,599 --> 00:46:48,720
 Yes. Yeah. We've been toying with
 
-1057
+1052
 00:46:48,720 --> 00:46:51,040
 with this delegation structure a bit
 
-1058
+1053
 00:46:51,040 --> 00:46:52,720
 more from an application perspective,
 
-1059
+1054
 00:46:52,720 --> 00:46:55,040
 right? An agentic AI is not one thing.
 
-1060
+1055
 00:46:55,040 --> 00:46:56,560
 It's a spectrum, right? So in other
 
-1061
+1056
 00:46:56,560 --> 00:46:58,800
 words, there are rule based on the lower
 
-1062
+1057
 00:46:58,800 --> 00:47:01,520
 end and you have loose guidelines and we
 
-1063
+1058
 00:47:01,520 --> 00:47:05,200
 want to see if the agent that
 
-1064
+1059
 00:47:05,200 --> 00:47:07,040
 is taking control and delegating to
 
-1065
+1060
 00:47:07,040 --> 00:47:09,599
 further agents did it right in the
 
-1066
+1061
 00:47:09,599 --> 00:47:12,000
 context of those guidelines. Right. So
 
-1067
+1062
 00:47:12,000 --> 00:47:14,319
 it is a loosely defined structure. Well,
 
-1068
+1063
 00:47:14,319 --> 00:47:46,150
 it Well, I Yeah.
 
-1069
+1064
 00:48:21,430 --> 00:48:24,720
 All right. Something was wrong with that
 one. So, so trying to build other
 
-1070
+1065
 00:48:24,720 --> 00:48:26,960
 systems, you're welcome to do that. I'm
 
-1071
+1066
 00:48:26,960 --> 00:48:28,720
 just saying that we can't solve the
 
-1072
+1067
 00:48:28,720 --> 00:48:31,200
 problem that ACDC solves right now.
 
-1073
+1068
 00:48:31,200 --> 00:48:32,880
 Whatever you're doing isn't solving that
 
-1074
+1069
 00:48:32,880 --> 00:48:34,720
 problem because you don't have you're
 
-1075
+1070
 00:48:34,720 --> 00:48:36,720
 not you if you're not using ACDCs to
 
-1076
+1071
 00:48:36,720 --> 00:48:38,480
 solve it and you're not doing this then
 
-1077
+1072
 00:48:38,480 --> 00:48:40,720
 I know what you're not able to do. But
 
-1078
+1073
 00:48:40,720 --> 00:48:42,160
 you can certainly do other things. Does
 
-1079
+1074
 00:48:42,160 --> 00:48:44,640
 that make sense? I'm not prescribing for
 
-1080
+1075
 00:48:44,640 --> 00:48:46,559
 you how you want to solve identic AI.
 
-1081
+1076
 00:48:46,559 --> 00:48:48,319
 I'm just saying that if you want to
 
-1082
+1077
 00:48:48,319 --> 00:48:51,839
 solve the act of modeling the authority
 
-1083
+1078
 00:48:51,839 --> 00:48:54,400
 chain in a cryptographically verifiable
 
-1084
+1079
 00:48:54,400 --> 00:48:57,280
 way and the elements of that chain
 
-1085
+1080
 00:48:57,280 --> 00:49:00,079
 happen to be agents, it doesn't change
 
-1086
+1081
 00:49:00,079 --> 00:49:02,000
 it doesn't change the mechanism. The
 
-1087
+1082
 00:49:02,000 --> 00:49:04,319
 mechanism works just as well either way,
 
-1088
+1083
 00:49:04,319 --> 00:49:15,589
 right? Yeah.
 
-1089
+1084
 00:49:17,270 --> 00:49:20,160
 The guardrail is that you want least
 privilege built into the system so that
 
-1090
+1085
 00:49:20,160 --> 00:49:22,480
 there isn't an opportunity for a
 
-1091
+1086
 00:49:22,480 --> 00:49:24,720
 delegate to introduce more privilege
 
-1092
+1087
 00:49:24,720 --> 00:49:26,240
 than what was delegated to him
 
-1093
+1088
 00:49:26,240 --> 00:49:27,280
 originally.
 
-1094
+1089
 00:49:27,280 --> 00:49:29,280
 And is the mechan is the enforcement
 
-1095
+1090
 00:49:29,280 --> 00:49:31,359
 mechanism on the shoulders of the
 
-1096
+1091
 00:49:31,359 --> 00:49:33,839
 verifier or there's something intrinsic
 
-1097
+1092
 00:49:33,839 --> 00:49:36,559
 in the structure that prevents that? No,
 
-1098
+1093
 00:49:36,559 --> 00:49:38,160
 because the only people the only person
 
-1099
+1094
 00:49:38,160 --> 00:49:40,480
 that enforces it is the verifier.
 
-1100
+1095
 00:49:40,480 --> 00:49:41,920
 Otherwise, what you're going to have to
 
-1101
+1096
 00:49:41,920 --> 00:49:44,480
 have is a policy engine that the
 
-1102
+1097
 00:49:44,480 --> 00:49:47,760
 verifier asks to enforce it for them.
 
-1103
+1098
 00:49:47,760 --> 00:49:49,520
 Right. So, you've just moved the
 
-1104
+1099
 00:49:49,520 --> 00:49:51,680
 enforcement someplace else, but it's but
 
-1105
+1100
 00:49:51,680 --> 00:49:53,680
 it's still it's Yeah,
 
-1106
+1101
 00:49:53,680 --> 00:49:55,440
 that's the part that I think a lot
 
-1107
+1102
 00:49:55,440 --> 00:49:57,520
 of the industry will have difficult
 
-1108
+1103
 00:49:57,520 --> 00:49:58,480
 accepting.
 
-1109
+1104
 00:49:58,480 --> 00:50:00,240
 Yeah, I'm I'm sure they will. And
 
-1110
+1105
 00:50:00,240 --> 00:50:01,440
 Phil, I think you're going to talk about
 
-1111
+1106
 00:50:01,440 --> 00:50:03,200
 some of that, right? Or he's writing a
 
-1112
+1107
 00:50:03,200 --> 00:50:06,160
 book on it. So, I don't I'm talking to
 
-1113
+1108
 00:50:06,160 --> 00:50:09,750
 you, Phil Wley.
 
-1114
+1109
 00:50:12,549 --> 00:50:13,839
 I don't think he heard me. Hey, Phil.
 Phil.
 
-1115
+1110
 00:50:13,839 --> 00:50:16,240
 Oh, he asked a question and I said,
 
-1116
+1111
 00:50:16,240 --> 00:50:18,160
 "You're writing a book on authorization
 
-1117
+1112
 00:50:18,160 --> 00:50:22,069
 policy for ag."
 
-1118
+1113
 00:50:23,670 --> 00:50:24,400
 Okay. All right.
 Later.
 
-1119
+1114
 00:50:24,400 --> 00:50:25,119
 It's all right. I
 
-1120
+1115
 00:50:25,119 --> 00:50:26,319
 Sorry. What was the question? I
 
-1121
+1116
 00:50:26,319 --> 00:50:27,520
 apologize.
 
-1122
+1117
 00:50:27,520 --> 00:50:29,920
 Well, well, I just I just explained how
 
-1123
+1118
 00:50:29,920 --> 00:50:32,000
 we could use ACDCs to do delegate
 
-1124
+1119
 00:50:32,000 --> 00:50:35,440
 authority, and Ed asked, "Well, lease
 
-1125
+1120
 00:50:35,440 --> 00:50:38,079
 privilege for the delegate to
 
-1126
+1121
 00:50:38,079 --> 00:50:39,760
 be able to do stuff. How do you enforce
 
-1127
+1122
 00:50:39,760 --> 00:50:42,319
 that? And I said, right, well, right now
 
-1128
+1123
 00:50:42,319 --> 00:50:44,720
 the in a decentralized system, the
 
-1129
+1124
 00:50:44,720 --> 00:50:47,119
 verifier can enforce it or you could
 
-1130
+1125
 00:50:47,119 --> 00:50:49,520
 have a policy engine that the verifier
 
-1131
+1126
 00:50:49,520 --> 00:50:51,839
 refers to that enforces it. But
 
-1132
+1127
 00:50:51,839 --> 00:50:54,000
 but that's you know that
 
-1133
+1128
 00:50:54,000 --> 00:50:57,599
 yeah so basically I think there are
 
-1134
+1129
 00:50:57,599 --> 00:51:00,720
 two big avenues of how you would do this
 
-1135
+1130
 00:51:00,720 --> 00:51:03,839
 with delegation. One is delegation as
 
-1136
+1131
 00:51:03,839 --> 00:51:06,480
 data. The other one is delegation as
 
-1137
+1132
 00:51:06,480 --> 00:51:08,480
 policy where you essentially write new
 
-1138
+1133
 00:51:08,480 --> 00:51:11,839
 policies for the delegation
 
-1139
+1134
 00:51:11,839 --> 00:51:13,920
 instead of relying on a broad set of
 
-1140
+1135
 00:51:13,920 --> 00:51:17,520
 policies. in delegation as data ACDCs
 
-1141
+1136
 00:51:17,520 --> 00:51:19,040
 especially with what you've described
 
-1142
+1137
 00:51:19,040 --> 00:51:23,200
 today are really nice because you
 
-1143
+1138
 00:51:23,200 --> 00:51:26,800
 can put all of the delegation in the
 
-1144
+1139
 00:51:26,800 --> 00:51:30,240
 ACDC the credential and then you know as
 
-1145
+1140
 00:51:30,240 --> 00:51:32,160
 you've pointed out you can keep that
 
-1146
+1141
 00:51:32,160 --> 00:51:35,359
 from expanding you can revoke it you can
 
-1147
+1142
 00:51:35,359 --> 00:51:38,160
 revoke the whole chain when necessary so
 
-1148
+1143
 00:51:38,160 --> 00:51:40,319
 yeah I think that's I mean that's a
 
-1149
+1144
 00:51:40,319 --> 00:51:42,000
 broad approach right as you write it
 
-1150
+1145
 00:51:42,000 --> 00:51:44,960
 policies that interpret the data in the
 
-1151
+1146
 00:51:44,960 --> 00:51:46,319
 delegation credential.
 
-1152
+1147
 00:51:46,319 --> 00:51:48,480
 Yeah. And to Ned's point, that's not how
 
-1153
+1148
 00:51:48,480 --> 00:51:50,079
 most people do it now. So they may not
 
-1154
+1149
 00:51:50,079 --> 00:51:52,480
 like it,
 
-1155
+1150
 00:51:52,480 --> 00:51:55,680
 which is a valid point.
 
-1156
+1151
 00:51:55,680 --> 00:51:58,079
 So I'm going to change topics for the
 
-1157
+1152
 00:51:58,079 --> 00:52:00,079
 last five minutes.
 
-1158
+1153
 00:52:00,079 --> 00:52:04,160
 The internet is a dangerous place.
 
-1159
+1154
 00:52:04,160 --> 00:52:07,040
 What we want, what I would like, I hope
 
-1160
+1155
 00:52:07,040 --> 00:52:11,760
 some of you want this is a digital re
 
-1161
+1156
 00:52:11,760 --> 00:52:14,960
 Refu god with my voice I can't say it
 
-1162
+1157
 00:52:14,960 --> 00:52:16,559
 refuge
 
-1163
+1158
 00:52:16,559 --> 00:52:19,760
 An online shelter,
 
-1164
+1159
 00:52:19,760 --> 00:52:22,640
 an internet sanctuary,
 
-1165
+1160
 00:52:22,640 --> 00:52:25,359
 a surveillance asylum.
 
-1166
+1161
 00:52:25,359 --> 00:52:27,359
 Well, we're protected from all of these
 
-1167
+1162
 00:52:27,359 --> 00:52:29,280
 things when we go online, when we use
 
-1168
+1163
 00:52:29,280 --> 00:52:31,200
 the internet. We want to be able to use
 
-1169
+1164
 00:52:31,200 --> 00:52:34,880
 the internet and be safe
 
-1170
+1165
 00:52:34,880 --> 00:52:38,240
 and I messed that up. It hit two
 
-1171
+1166
 00:52:38,240 --> 00:52:40,640
 things. So,
 
-1172
+1167
 00:52:40,640 --> 00:52:49,750
 so if we think about those
 
-1173
+1168
 00:52:52,470 --> 00:52:54,000
 safe is to require accountability of the
 participants.
 
-1174
+1169
 00:52:54,000 --> 00:52:55,680
 If they're not accountable, it won't be
 
-1175
+1170
 00:52:55,680 --> 00:52:57,680
 safe.
 
-1176
+1171
 00:52:57,680 --> 00:53:00,000
 If you if you can act in any way you
 
-1177
+1172
 00:53:00,000 --> 00:53:01,839
 want and there's no there's no
 
-1178
+1173
 00:53:01,839 --> 00:53:04,640
 repercussions, there's no consequences,
 
-1179
+1174
 00:53:04,640 --> 00:53:06,640
 it's going to incentivize bad behavior.
 
-1180
+1175
 00:53:06,640 --> 00:53:08,000
 And that's what the internet is. That's
 
-1181
+1176
 00:53:08,000 --> 00:53:10,079
 what the internet is in a safe place cuz
 
-1182
+1177
 00:53:10,079 --> 00:53:12,079
 we there's no accountability on the
 
-1183
+1178
 00:53:12,079 --> 00:53:14,559
 internet. It never it never came with it
 
-1184
+1179
 00:53:14,559 --> 00:53:16,319
 in the first place. And everybody
 
-1185
+1180
 00:53:16,319 --> 00:53:18,000
 assumed that well people will just act
 
-1186
+1181
 00:53:18,000 --> 00:53:19,760
 the way they normally do. I have a
 
-1187
+1182
 00:53:19,760 --> 00:53:22,240
 really good example of this. My
 
-1188
+1183
 00:53:22,240 --> 00:53:24,240
 daughter who you all saw sing, right?
 
-1189
+1184
 00:53:24,240 --> 00:53:26,559
 Yeah. She has a pretty substantial
 
-1190
+1185
 00:53:26,559 --> 00:53:29,359
 internet presence, lots of followers,
 
-1191
+1186
 00:53:29,359 --> 00:53:31,599
 and there's a lot of trolls that will go
 
-1192
+1187
 00:53:31,599 --> 00:53:33,760
 onto her
 
-1193
+1188
 00:53:33,760 --> 00:53:37,760
 Instagram or Tik Tok or
 
-1194
+1189
 00:53:37,760 --> 00:53:40,319
 all kinds of really horrible things.
 
-1195
+1190
 00:53:40,319 --> 00:53:41,920
 Well, you know what my wife likes to do,
 
-1196
+1191
 00:53:41,920 --> 00:53:44,319
 who you all met, is when they're do
 
-1197
+1192
 00:53:44,319 --> 00:53:45,920
 really horrible things and they say
 
-1198
+1193
 00:53:45,920 --> 00:53:48,559
 stuff like that occasionally, she will
 
-1199
+1194
 00:53:48,559 --> 00:53:50,800
 go research them and they're always
 
-1200
+1195
 00:53:50,800 --> 00:53:53,520
 using some, you know, alias. They think
 
-1201
+1196
 00:53:53,520 --> 00:53:55,599
 they have anonymity. She'll go figure
 
-1202
+1197
 00:53:55,599 --> 00:53:58,240
 out who they are and then she'll go ask
 
-1203
+1198
 00:53:58,240 --> 00:54:00,000
 them, "Why did you say this about my
 
-1204
+1199
 00:54:00,000 --> 00:54:01,520
 daughter?"
 
-1205
+1200
 00:54:01,520 --> 00:54:05,359
 And they will sKRAMble for the hills.
 
-1206
+1201
 00:54:05,359 --> 00:54:06,960
 It's just like, "Wait a minute. You know
 
-1207
+1202
 00:54:06,960 --> 00:54:08,880
 who I am? you know that I said this
 
-1208
+1203
 00:54:08,880 --> 00:54:11,680
 vulgar thing and sometimes they're just
 
-1209
+1204
 00:54:11,680 --> 00:54:14,000
 average people in your neighborhood who
 
-1210
+1205
 00:54:14,000 --> 00:54:15,920
 act like they don't do this. Well, why
 
-1211
+1206
 00:54:15,920 --> 00:54:17,280
 do they do it on the internet? Because
 
-1212
+1207
 00:54:17,280 --> 00:54:20,319
 they can get away with it. But and
 
-1213
+1208
 00:54:20,319 --> 00:54:22,079
 what she always likes to say to them is,
 
-1214
+1209
 00:54:22,079 --> 00:54:24,000
 "So, if you met my daughter in person,
 
-1215
+1210
 00:54:24,000 --> 00:54:26,079
 would you say that to her in person?"
 
-1216
+1211
 00:54:26,079 --> 00:54:27,359
 When they go, "Of course not." Well,
 
-1217
+1212
 00:54:27,359 --> 00:54:29,520
 then why do you say it online? And the
 
-1218
+1213
 00:54:29,520 --> 00:54:31,599
 difference is there's no accountability
 
-1219
+1214
 00:54:31,599 --> 00:54:33,599
 online. So, if you want safety, you have
 
-1220
+1215
 00:54:33,599 --> 00:54:35,680
 to have accountability. Here's the other
 
-1221
+1216
 00:54:35,680 --> 00:54:37,599
 thing that people don't don't believe me
 
-1222
+1217
 00:54:37,599 --> 00:54:39,920
 when I say this. Privacy requires
 
-1223
+1218
 00:54:39,920 --> 00:54:41,760
 accountability. People think privacy
 
-1224
+1219
 00:54:41,760 --> 00:54:44,400
 requires being able to hide. You can't
 
-1225
+1220
 00:54:44,400 --> 00:54:46,079
 have privacy if without accountability.
 
-1226
+1221
 00:54:46,079 --> 00:54:49,200
 Here's why. Second parties to repeated
 
-1227
+1222
 00:54:49,200 --> 00:54:50,800
 interactions can correlate the first
 
-1228
+1223
 00:54:50,800 --> 00:54:54,000
 parties. If I interact with you, even
 
-1229
+1224
 00:54:54,000 --> 00:54:55,839
 though we're both anonymous, the
 
-1230
+1225
 00:54:55,839 --> 00:54:57,680
 interaction themselves is enough to
 
-1231
+1226
 00:54:57,680 --> 00:55:01,109
 correlate.
 
-1232
+1227
 00:55:04,309 --> 00:55:07,200
 So guess what? I can't interact
 and have privacy.
 
-1233
+1228
 00:55:07,200 --> 00:55:09,440
 I can't.
 
-1234
+1229
 00:55:09,440 --> 00:55:12,319
 So any interaction system that does not
 
-1235
+1230
 00:55:12,319 --> 00:55:14,160
 enable first parties to hold second
 
-1236
+1231
 00:55:14,160 --> 00:55:16,240
 parties accountable is fundamentally
 
-1237
+1232
 00:55:16,240 --> 00:55:18,640
 incompatible with privacy.
 
-1238
+1233
 00:55:18,640 --> 00:55:20,960
 You can't get there unless you start
 
-1239
+1234
 00:55:20,960 --> 00:55:22,960
 with accountability.
 
-1240
+1235
 00:55:22,960 --> 00:55:24,720
 And you and you don't get privacy by
 
-1241
+1236
 00:55:24,720 --> 00:55:27,119
 hiding. You get privacy by interacting
 
-1242
+1237
 00:55:27,119 --> 00:55:30,630
 with
 
-1243
+1238
 00:55:33,270 --> 00:55:33,280
 
 
-1244
+1239
 00:55:33,280 --> 00:55:37,760
 digital refuges
 Surveillance asylums where the
 
-1245
+1240
 00:55:37,760 --> 00:55:39,280
 participants
 
-1246
+1241
 00:55:39,280 --> 00:55:41,280
 hold each other accountable and you can
 
-1247
+1242
 00:55:41,280 --> 00:55:42,800
 trust that they'll act in the way you
 
-1248
+1243
 00:55:42,800 --> 00:55:45,520
 want and everybody else is excluded.
 
-1249
+1244
 00:55:45,520 --> 00:55:47,440
 That's the whole point. If I want to
 
-1250
+1245
 00:55:47,440 --> 00:55:51,440
 interact with him or her, right, and I
 
-1251
+1246
 00:55:51,440 --> 00:55:53,040
 can hold him accountable, then I have a
 
-1252
+1247
 00:55:53,040 --> 00:55:55,280
 trusted interaction. If I can't hold
 
-1253
+1248
 00:55:55,280 --> 00:55:58,079
 them accountable, I can't trust it. But
 
-1254
+1249
 00:55:58,079 --> 00:55:59,760
 what I want to do is I want to have that
 
-1255
+1250
 00:55:59,760 --> 00:56:02,079
 interaction and not have anybody else
 
-1256
+1251
 00:56:02,079 --> 00:56:04,240
 surveil it.
 
-1257
+1252
 00:56:04,240 --> 00:56:06,000
 And that's and that's what we really
 
-1258
+1253
 00:56:06,000 --> 00:56:09,119
 want. We want contextualized
 
-1259
+1254
 00:56:09,119 --> 00:56:11,599
 confidentiality with accountability. And
 
-1260
+1255
 00:56:11,599 --> 00:56:14,400
 how do we do that? Well, there's a
 
-1261
+1256
 00:56:14,400 --> 00:56:15,920
 protocol called the trustbanning
 
-1262
+1257
 00:56:15,920 --> 00:56:17,839
 protocol that combined with the KERI
 
-1263
+1258
 00:56:17,839 --> 00:56:20,400
 suite allows us to create and control
 
-1264
+1259
 00:56:20,400 --> 00:56:22,640
 safe relationships where interactions
 
-1265
+1260
 00:56:22,640 --> 00:56:24,079
 protected from surveillance by third
 
-1266
+1261
 00:56:24,079 --> 00:56:26,000
 parties and second parties are held
 
-1267
+1262
 00:56:26,000 --> 00:56:28,000
 accountable for any information shared
 
-1268
+1263
 00:56:28,000 --> 00:56:31,359
 with or by them. And so my
 
-1269
+1264
 00:56:31,359 --> 00:56:36,720
 breakout talk this today will be
 
-1270
+1265
 00:56:36,720 --> 00:56:39,760
 talking about the TSP protocol
 
-1271
+1266
 00:56:39,760 --> 00:56:43,040
 and how we can do that. So that's I got
 
-1272
+1267
 00:56:43,040 --> 00:56:43,839
 Keep going.
 
-1273
+1268
 00:56:43,839 --> 00:56:45,359
 We only got a minute.
 
-1274
+1269
 00:56:45,359 --> 00:56:45,839
 Keep going.
 
-1275
+1270
 00:56:45,839 --> 00:56:49,119
 Oh, go ahead. Five minutes. 10 minutes.
 
-1276
+1271
 00:56:49,119 --> 00:56:49,520
 Okay.
 
-1277
+1272
 00:56:49,520 --> 00:56:51,920
 You can have some of my time.
 
-1278
+1273
 00:56:51,920 --> 00:56:54,559
 All right.
 
-1279
+1274
 00:56:54,559 --> 00:56:58,079
 Okay. So when I do this analysis, I
 
-1280
+1275
 00:56:58,079 --> 00:56:59,760
 always use this model. I find, you know
 
-1281
+1276
 00:56:59,760 --> 00:57:01,680
 what they say all models are wrong,
 
-1282
+1277
 00:57:01,680 --> 00:57:03,599
 but some models are useful. I find this
 
-1283
+1278
 00:57:03,599 --> 00:57:06,960
 a very useful model. Any
 
-1284
+1279
 00:57:06,960 --> 00:57:08,880
 interaction on the internet involves the
 
-1285
+1280
 00:57:08,880 --> 00:57:11,920
 first party and second party.
 
-1286
+1281
 00:57:11,920 --> 00:57:14,880
 I can encrypt the communications between
 
-1287
+1282
 00:57:14,880 --> 00:57:17,040
 the first party and the second party
 
-1288
+1283
 00:57:17,040 --> 00:57:19,520
 so that the content isn't observable by
 
-1289
+1284
 00:57:19,520 --> 00:57:21,280
 any other party.
 
-1290
+1285
 00:57:21,280 --> 00:57:24,000
 But if I'm using the internet, what I
 
-1291
+1286
 00:57:24,000 --> 00:57:27,520
 can't protect is the metadata of the
 
-1292
+1287
 00:57:27,520 --> 00:57:29,760
 fact that I sent data over the internet.
 
-1293
+1288
 00:57:29,760 --> 00:57:32,319
 It has to be routable.
 
-1294
+1289
 00:57:32,319 --> 00:57:35,280
 Routing tables are public. Routing
 
-1295
+1290
 00:57:35,280 --> 00:57:37,760
 information is subpoenaable.
 
-1296
+1291
 00:57:37,760 --> 00:57:40,480
 All of that metadata is not protected.
 
-1297
+1292
 00:57:40,480 --> 00:57:43,119
 The Supreme Court even said so. Right?
 
-1298
+1293
 00:57:43,119 --> 00:57:45,440
 Reasonable expectation of privacy is
 
-1299
+1294
 00:57:45,440 --> 00:57:49,760
 limited to content,
 
-1300
+1295
 00:57:49,760 --> 00:57:53,440
 not non-content metadata. Non-content
 
-1301
+1296
 00:57:53,440 --> 00:57:55,760
 metadata is how you get from first party
 
-1302
+1297
 00:57:55,760 --> 00:58:00,480
 to second party. So, so if I can if I
 
-1303
+1298
 00:58:00,480 --> 00:58:04,240
 can correlate out from the metadata who
 
-1304
+1299
 00:58:04,240 --> 00:58:06,240
 the first party and second party are,
 
-1305
+1300
 00:58:06,240 --> 00:58:08,559
 I've already defeated privacy in
 
-1306
+1301
 00:58:08,559 --> 00:58:10,799
 general. There's no privacy on the
 
-1307
+1302
 00:58:10,799 --> 00:58:13,359
 internet ever. Never has been, never
 
-1308
+1303
 00:58:13,359 --> 00:58:16,160
 will be. If you use that definition,
 
-1309
+1304
 00:58:16,160 --> 00:58:19,119
 right? But what I can do is I have
 
-1310
+1305
 00:58:19,119 --> 00:58:22,960
 privacy where I can make it so that
 
-1311
+1306
 00:58:22,960 --> 00:58:24,720
 I that they don't know who the first
 
-1312
+1307
 00:58:24,720 --> 00:58:26,720
 party and the second party are because
 
-1313
+1308
 00:58:26,720 --> 00:58:28,240
 the first party and second party they
 
-1314
+1309
 00:58:28,240 --> 00:58:29,520
 see aren't the first party and second
 
-1315
+1310
 00:58:29,520 --> 00:58:31,599
 party that matter.
 
-1316
+1311
 00:58:31,599 --> 00:58:35,839
 And so the basic idea is I don't use
 
-1317
+1312
 00:58:35,839 --> 00:58:38,880
 clandestine means to get privacy. I use
 
-1318
+1313
 00:58:38,880 --> 00:58:40,880
 covert means
 
-1319
+1314
 00:58:40,880 --> 00:58:43,119
 and covert means you have a cover
 
-1320
+1315
 00:58:43,119 --> 00:58:46,240
 identity that basically
 
-1321
+1316
 00:58:46,240 --> 00:58:49,359
 provides a layer of protection to some
 
-1322
+1317
 00:58:49,359 --> 00:58:51,359
 activity that you're doing that isn't
 
-1323
+1318
 00:58:51,359 --> 00:58:53,839
 observable. Clandestine just means
 
-1324
+1319
 00:58:53,839 --> 00:58:57,359
 you're not observable. But any
 
-1325
+1320
 00:58:57,359 --> 00:58:59,760
 information that's broadcast is
 
-1326
+1321
 00:58:59,760 --> 00:59:02,000
 eventually observable. So clandestine
 
-1327
+1322
 00:59:02,000 --> 00:59:03,520
 can only be used for epherrmal
 
-1328
+1323
 00:59:03,520 --> 00:59:06,000
 applications. And I spent 20 years and
 
-1329
+1324
 00:59:06,000 --> 00:59:10,240
 20, you know, millions of dollars of
 
-1330
+1325
 00:59:10,240 --> 00:59:15,910
 federal money building clandestine
 
-1331
+1326
 00:59:15,910 --> 00:59:17,920
 
 
-1332
+1327
 00:59:17,920 --> 00:59:23,040
 surveillance mechanisms
 and at some point we said, "Oh, we
 
-1333
+1328
 00:59:23,040 --> 00:59:25,520
 got to make them covert because we
 
-1334
+1329
 00:59:25,520 --> 00:59:30,000
 need persistent literal
 
-1335
+1330
 00:59:30,000 --> 00:59:31,599
 surveillance." That was the name of the
 
-1336
+1331
 00:59:31,599 --> 00:59:34,880
 program. And when we went from ephemeral
 
-1337
+1332
 00:59:34,880 --> 00:59:37,040
 to persistent surveillance, we had to
 
-1338
+1333
 00:59:37,040 --> 00:59:40,079
 change our concept of operations.
 
-1339
+1334
 00:59:40,079 --> 00:59:41,680
 And that's what I'm saying is we have to
 
-1340
+1335
 00:59:41,680 --> 00:59:44,000
 change that. So this is the model. And
 
-1341
+1336
 00:59:44,000 --> 00:59:45,599
 then and to get from first party, second
 
-1342
+1337
 00:59:45,599 --> 00:59:47,599
 party, I have to have an intermediaries.
 
-1343
+1338
 00:59:47,599 --> 00:59:49,520
 The intermediaries
 
-1344
+1339
 00:59:49,520 --> 00:59:51,440
 can surveil stuff that a third party
 
-1345
+1340
 00:59:51,440 --> 00:59:55,200
 can't. Your ISP is an intermediary.
 
-1346
+1341
 00:59:55,200 --> 00:59:58,480
 So given that model, these are the
 
-1347
+1342
 00:59:58,480 --> 01:00:01,200
 two principles that we use. One is end
 
-1348
+1343
 01:00:01,200 --> 01:00:03,359
 toend verifiability which tells me that
 
-1349
+1344
 01:00:03,359 --> 01:00:06,559
 I know who the parties are. The parties
 
-1350
+1345
 01:00:06,559 --> 01:00:09,760
 know each other and the other so and if
 
-1351
+1346
 01:00:09,760 --> 01:00:11,599
 I have KERI then I get ambient
 
-1352
+1347
 01:00:11,599 --> 01:00:14,079
 verifiability any day anywhere anytime
 
-1353
+1348
 01:00:14,079 --> 01:00:16,480
 by anybody of who it came from. So I
 
-1354
+1349
 01:00:16,480 --> 01:00:19,440
 can hold the source accountable
 
-1355
+1350
 01:00:19,440 --> 01:00:23,040
 right non-repudiation.
 
-1356
+1351
 01:00:23,040 --> 01:00:25,599
 Now the duel of that is what I
 
-1357
+1352
 01:00:25,599 --> 01:00:28,640
 call only at end viewability. I need to
 
-1358
+1353
 01:00:28,640 --> 01:00:31,359
 be able to send information to somebody
 
-1359
+1354
 01:00:31,359 --> 01:00:33,599
 and have reasonable confidence that
 
-1360
+1355
 01:00:33,599 --> 01:00:36,000
 they're the only ones that got it.
 
-1361
+1356
 01:00:36,000 --> 01:00:37,839
 Because the only way I can hold the
 
-1362
+1357
 01:00:37,839 --> 01:00:40,160
 second party accountable is if I know
 
-1363
+1358
 01:00:40,160 --> 01:00:42,799
 they're the leaker of data.
 
-1364
+1359
 01:00:42,799 --> 01:00:45,200
 Because if I send encrypted data to a
 
-1365
+1360
 01:00:45,200 --> 01:00:47,520
 second party that they can decrypt, they
 
-1366
+1361
 01:00:47,520 --> 01:00:50,319
 have the data. I no longer have any
 
-1367
+1362
 01:00:50,319 --> 01:00:52,079
 ability to restrict where that data
 
-1368
+1363
 01:00:52,079 --> 01:00:54,480
 goes. There's no technological mean
 
-1369
+1364
 01:00:54,480 --> 01:00:56,160
 means that allows me to protect that
 
-1370
+1365
 01:00:56,160 --> 01:00:58,240
 data once the second party has it. I
 
-1371
+1366
 01:00:58,240 --> 01:01:00,559
 have to trust the second party. So I
 
-1372
+1367
 01:01:00,559 --> 01:01:02,400
 have no privacy of any information I
 
-1373
+1368
 01:01:02,400 --> 01:01:04,240
 share with the second party if the
 
-1374
+1369
 01:01:04,240 --> 01:01:05,760
 second party can share it with somebody
 
-1375
+1370
 01:01:05,760 --> 01:01:08,799
 else. So there's no longer technology
 
-1376
+1371
 01:01:08,799 --> 01:01:11,920
 here. It's all legal, regulatory, and
 
-1377
+1372
 01:01:11,920 --> 01:01:13,839
 economic.
 
-1378
+1373
 01:01:13,839 --> 01:01:16,240
 So if any information that I interact
 
-1379
+1374
 01:01:16,240 --> 01:01:18,480
 with or share in the internet once it
 
-1380
+1375
 01:01:18,480 --> 01:01:19,839
 gets to the second party the second
 
-1381
+1376
 01:01:19,839 --> 01:01:21,359
 party wants to collude with anybody they
 
-1382
+1377
 01:01:21,359 --> 01:01:24,319
 want to then I have no privacy.
 
-1383
+1378
 01:01:24,319 --> 01:01:26,720
 The only privacy only comes if I can
 
-1384
+1379
 01:01:26,720 --> 01:01:29,599
 trust the second party to respect
 
-1385
+1380
 01:01:29,599 --> 01:01:31,760
 the terms and conditions that which is
 
-1386
+1381
 01:01:31,760 --> 01:01:33,680
 called confidentiality of the
 
-1387
+1382
 01:01:33,680 --> 01:01:36,799
 information I give them. So what I need
 
-1388
+1383
 01:01:36,799 --> 01:01:39,040
 is a mechanism for sending information
 
-1389
+1384
 01:01:39,040 --> 01:01:41,200
 from here to there
 
-1390
+1385
 01:01:41,200 --> 01:01:43,359
 that is asymmetric. So I need to use
 
-1391
+1386
 01:01:43,359 --> 01:01:45,280
 hybrid public key encryption so that I
 
-1392
+1387
 01:01:45,280 --> 01:01:48,319
 have asymmetric encryption and I send it
 
-1393
+1388
 01:01:48,319 --> 01:01:50,960
 to one end. I don't use group
 
-1394
+1389
 01:01:50,960 --> 01:01:53,280
 encryption. I don't do I don't do shared
 
-1395
+1390
 01:01:53,280 --> 01:01:57,200
 secret encryption. I use hyper
 
-1396
+1391
 01:01:57,200 --> 01:01:59,040
 public key which is technically shared
 
-1397
+1392
 01:01:59,040 --> 01:02:01,520
 secret encryption but I don't but the
 
-1398
+1393
 01:02:01,520 --> 01:02:04,000
 key on my end is ephemeral. So I have a
 
-1399
+1394
 01:02:04,000 --> 01:02:06,319
 reasonable confidence that only the
 
-1400
+1395
 01:02:06,319 --> 01:02:08,799
 targeted one got it and I can I can in
 
-1401
+1396
 01:02:08,799 --> 01:02:10,720
 include information in it that makes it
 
-1402
+1397
 01:02:10,720 --> 01:02:12,640
 unique to that end which they can get
 
-1403
+1398
 01:02:12,640 --> 01:02:14,559
 rid of if they if they're smart but it
 
-1404
+1399
 01:02:14,559 --> 01:02:16,079
 makes it really hard for them. So I said
 
-1405
+1400
 01:02:16,079 --> 01:02:18,480
 reasonable confidence. What that means
 
-1406
+1401
 01:02:18,480 --> 01:02:20,960
 is that I have this property of end only
 
-1407
+1402
 01:02:20,960 --> 01:02:23,520
 viewability. The end that I intend to is
 
-1408
+1403
 01:02:23,520 --> 01:02:25,280
 the only one that can view it. So
 
-1409
+1404
 01:02:25,280 --> 01:02:27,119
 there's one data one where one time by
 
-1410
+1405
 01:02:27,119 --> 01:02:30,319
 one body and that means that it's
 
-1411
+1406
 01:02:30,319 --> 01:02:33,599
 undeniable. Now they can deny it.
 
-1412
+1407
 01:02:33,599 --> 01:02:35,599
 Plausible deniability.
 
-1413
+1408
 01:02:35,599 --> 01:02:38,079
 I can't prove, may not be able to prove
 
-1414
+1409
 01:02:38,079 --> 01:02:41,119
 it, but I know. And guess what I do when
 
-1415
+1410
 01:02:41,119 --> 01:02:44,640
 I know? I break the interaction. I
 
-1416
+1411
 01:02:44,640 --> 01:02:46,160
 exclude them from my interaction
 
-1417
+1412
 01:02:46,160 --> 01:02:48,480
 profile. I stop talking to them. I stop
 
-1418
+1413
 01:02:48,480 --> 01:02:49,839
 sharing data with them because I can't
 
-1419
+1414
 01:02:49,839 --> 01:02:52,640
 trust them. So the whole point is I need
 
-1420
+1415
 01:02:52,640 --> 01:02:55,359
 to be able to control who I talk to and
 
-1421
+1416
 01:02:55,359 --> 01:02:57,440
 who talks to me. And I need to do it in
 
-1422
+1417
 01:02:57,440 --> 01:02:59,920
 a mechanism that allows me to decide
 
-1423
+1418
 01:02:59,920 --> 01:03:02,079
 that and to and to control the
 
-1424
+1419
 01:03:02,079 --> 01:03:03,760
 boundaries of that. And that's the way I
 
-1425
+1420
 01:03:03,760 --> 01:03:06,880
 do it. And so the TSB protocol
 
-1426
+1421
 01:03:06,880 --> 01:03:10,559
 lets you decide with whom they interact,
 
-1427
+1422
 01:03:10,559 --> 01:03:13,839
 what they share and why. And so you have
 
-1428
+1423
 01:03:13,839 --> 01:03:15,839
 control over your internet presence and
 
-1429
+1424
 01:03:15,839 --> 01:03:18,799
 your context when you do this. And we
 
-1430
+1425
 01:03:18,799 --> 01:03:20,720
 use relationships graphs. And this will
 
-1431
+1426
 01:03:20,720 --> 01:03:23,039
 I've got, you know, this is actually
 
-1432
+1427
 01:03:23,039 --> 01:03:25,200
 into my talk for this afternoon. So,
 
-1433
+1428
 01:03:25,200 --> 01:03:27,520
 I'll stop there.
 
-1434
+1429
 01:03:27,520 --> 01:03:31,799
 Great. Thank you.
 
