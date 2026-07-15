@@ -4087,25 +4087,24 @@ of a combination between a scheduler
 and a task, but the Doer is just a task.
 
 1023
-00:34:40,440 --> 00:34:44,510
-Okay, so
+00:34:44,559 --> 00:34:45,906
+There's an example. So,
 
 1024
-00:34:45,869 --> 00:34:47,679
-There's There's There's an example. So,
-back to the K Alliance Sept.
+00:34:45,931 --> 00:34:47,604
+back to the [inaudible] incept.
 
 1025
-00:34:47,679 --> 00:34:49,120
+00:34:47,604 --> 00:34:49,120
 Inside of the init function for the
 
 1026
 00:34:49,120 --> 00:34:50,879
-Incept Doer, what you'll notice is a do
+Incept Doer, what you'll notice is a
 
 1027
 00:34:50,879 --> 00:34:53,919
-doer. We call doing.dot doify on the
+DoDoer. We call doing.doify on the
 
 1028
 00:34:53,919 --> 00:34:56,120
@@ -4117,7 +4116,7 @@ What that does
 
 1030
 00:34:58,080 --> 00:34:59,960
-Here's the Incept do. You see we have a
+Here's the incept do. You see we have a
 
 1031
 00:34:59,960 --> 00:35:03,360
@@ -4149,7 +4148,7 @@ right time, we just locate them in the
 
 1038
 00:35:12,760 --> 00:35:15,920
-same lex- lexical cons- scope.
+same lexical scope.
 
 1039
 00:35:15,920 --> 00:35:17,400
@@ -4157,510 +4156,497 @@ That's pretty easy for humans to
 
 1040
 00:35:17,400 --> 00:35:19,440
-understand that program flow,
+understand that program flow.
 
 1041
-00:35:19,440 --> 00:35:20,520
-right?
-
-1042
 00:35:20,520 --> 00:35:21,800
 That's why it's so handy. That's why in
 
-1043
+1042
 00:35:21,800 --> 00:35:23,200
 my opinion
 
-1044
+1043
 00:35:23,200 --> 00:35:25,120
-we this really should be a recur
+this really should be a recur
 
-1045
+1044
 00:35:25,120 --> 00:35:27,240
 function, and the recur should allow you
 
-1046
+1045
 00:35:27,240 --> 00:35:29,360
 to use these yields and yields from
 
-1047
+1046
 00:35:29,360 --> 00:35:30,880
 in the body
 
-1048
+1047
 00:35:30,880 --> 00:35:32,960
 of the DoDoer's recur.
 
-1049
+1048
 00:35:32,960 --> 00:35:35,080
 That's not how it works. I actually did
 
-1050
+1049
 00:35:35,080 --> 00:35:36,480
 go through the trouble
 
-1051
+1050
 00:35:36,480 --> 00:35:39,040
 in the DID:webs repository in our tests
 
-1052
+1051
 00:35:39,040 --> 00:35:40,840
 to do it the way that Sam recommended,
 
-1053
+1052
 00:35:40,840 --> 00:35:41,920
 and it's kind of interesting. It does
 
-1054
+1053
 00:35:41,920 --> 00:35:43,360
-make you clean up your code a little bit
+make you clean up your code a little bit…
 
-1055
-00:35:43,360 --> 00:35:45,240
-cuz if you And so, I can see There
-
-1056
+1054
 00:35:45,240 --> 00:35:46,720
 There's an argument there. And what it
 
-1057
+1055
 00:35:46,720 --> 00:35:48,240
 does is essentially the mental model is
 
-1058
+1056
 00:35:48,240 --> 00:35:49,960
 if you're going to do things the right
 
-1059
+1057
 00:35:49,960 --> 00:35:52,240
 idiomatic way according to Sam's
 
-1060
+1058
 00:35:52,240 --> 00:35:54,320
 idea, every place where you have a yield
 
-1061
+1059
 00:35:54,320 --> 00:35:56,040
-from should essentially be a separate do
+from should essentially be a
+
+1060
+00:35:56,040 --> 00:35:58,400
+separate Doer.
+
+1061
+00:35:58,400 --> 00:36:00,320
+You have at least one, two,
 
 1062
-00:35:56,040 --> 00:35:58,400
-doer, or sorry, a separate Doer.
-
-1063
-00:35:58,400 --> 00:36:00,320
-You would You have at least one, two,
-
-1064
 00:36:00,320 --> 00:36:02,280
 possibly three more here. And what you
 
-1065
+1063
 00:36:02,280 --> 00:36:05,800
-do is you would add all of those
+do is you would add all of those…
 
-1066
+1064
 00:36:05,800 --> 00:36:07,080
-You would See how we have a list of
+See how we have a list of
 
-1067
+1065
 00:36:07,080 --> 00:36:08,560
 Doers here, and then we send it when we
 
-1068
+1066
 00:36:08,560 --> 00:36:09,640
 say
 
-1069
+1067
 00:36:09,640 --> 00:36:11,000
 call the constructor we init Doers
 
-1070
+1068
 00:36:11,000 --> 00:36:12,160
 equals Doers.
 
-1071
+1069
 00:36:12,160 --> 00:36:13,320
 What you would do instead of having all
 
-1072
+1070
 00:36:13,320 --> 00:36:15,480
 those yield froms in one function, you
 
-1073
+1071
 00:36:15,480 --> 00:36:17,400
 would make separate Doers for that sub
 
-1074
+1072
 00:36:17,400 --> 00:36:20,040
 part of the task, and you'd have that be
 
-1075
+1073
 00:36:20,040 --> 00:36:21,880
 part of the task array that you send to
 
-1076
+1074
 00:36:21,880 --> 00:36:23,000
 yourself when you're scheduling
 
-1077
+1075
 00:36:23,000 --> 00:36:24,560
 yourself.
 
-1078
+1076
 00:36:24,560 --> 00:36:26,240
-So, you can You can see it sort of force
+You can see it sort of force
 
-1079
+1077
 00:36:26,240 --> 00:36:27,240
 you to lift things out, and make
 
-1080
+1078
 00:36:27,240 --> 00:36:28,680
 dependencies more explicit. It's kind of
 
-1081
+1079
 00:36:28,680 --> 00:36:30,120
 like smaller functions versus larger
 
-1082
+1080
 00:36:30,120 --> 00:36:31,600
 functions. So it is more hygienic in
 
-1083
+1081
 00:36:31,600 --> 00:36:32,960
 some senses, a little bit more
 
-1084
+1082
 00:36:32,960 --> 00:36:34,240
 convoluted. So it's a bit of a
 
-1085
+1083
 00:36:34,240 --> 00:36:36,520
 trade-off.
 
-1086
-00:36:36,520 --> 00:36:37,800
-So
-
-1087
+1084
 00:36:37,800 --> 00:36:39,760
-Now I'm I'm just mixing affection. So
+Now I'm just mention Effection. So
 
-1088
+1085
 00:36:39,760 --> 00:36:41,720
-affection is a JavaScript structured
+Effection is a JavaScript structured
 
-1089
+1086
 00:36:41,720 --> 00:36:43,480
 concurrency library. Now that you
 
-1090
+1087
 00:36:43,480 --> 00:36:45,000
 understand
 
-1091
+1088
 00:36:45,000 --> 00:36:47,360
 the yield from syntax and the yield and
 
-1092
+1089
 00:36:47,360 --> 00:36:48,640
 whatever, now you can see what it looks
 
-1093
+1090
 00:36:48,640 --> 00:36:50,680
 like in JavaScript cuz JavaScript has a
 
-1094
+1091
 00:36:50,680 --> 00:36:53,280
 construct that's like yield from.
 
-1095
+1092
 00:36:53,280 --> 00:36:55,600
 If you see yield star in JavaScript,
 
-1096
+1093
 00:36:55,600 --> 00:36:57,440
 it's the same thing. It runs a
 
-1097
+1094
 00:36:57,440 --> 00:36:59,000
 co-routine
 
-1098
+1095
 00:36:59,000 --> 00:37:01,040
 from that spot. So this is using the
 
-1099
+1096
 00:37:01,040 --> 00:37:03,390
-affection
+Effection
+
+1097
+00:37:03,400 --> 00:37:05,088
+structured concurrency library
+
+1098
+00:37:05,112 --> 00:37:06,800
+just like how we did
+
+1099
+00:37:06,800 --> 00:37:08,760
+doing.doify.
 
 1100
-00:37:03,390 --> 00:37:03,400
-
-
-1101
-00:37:03,400 --> 00:37:06,800
-structured concurrency library
-just like we you know how we did
-
-1102
-00:37:06,800 --> 00:37:08,760
-doing.do.doify.
-
-1103
 00:37:08,760 --> 00:37:10,480
 This is part of why I lean in favor of
 
-1104
+1101
 00:37:10,480 --> 00:37:13,240
 making DoDoer.recur do allow yield from
 
-1105
+1102
 00:37:13,240 --> 00:37:15,680
-because in affection in the structured
+because in Effection in the structured
 
-1106
+1103
 00:37:15,680 --> 00:37:17,200
-concurrency library in TypeScript
+concurrency library in TypeScript /
 
-1107
+1104
 00:37:17,200 --> 00:37:18,600
 JavaScript
 
-1108
+1105
 00:37:18,600 --> 00:37:20,200
 this whole function is like a doified
 
-1109
+1106
 00:37:20,200 --> 00:37:21,720
 function.
 
-1110
+1107
 00:37:21,720 --> 00:37:24,080
 You can have as many yields yield stars,
 
-1111
+1108
 00:37:24,080 --> 00:37:26,000
 which are yield froms, as you want and
 
-1112
+1109
 00:37:26,000 --> 00:37:27,920
 just sort of naturally proceed forth in
 
-1113
+1110
 00:37:27,920 --> 00:37:30,160
 an execution chain in one function.
 
-1114
+1111
 00:37:30,160 --> 00:37:31,560
 And so you'll see I'm saying yield from
 
-1115
+1112
 00:37:31,560 --> 00:37:33,000
 list identifier service and we'll look
 
-1116
+1113
 00:37:33,000 --> 00:37:35,280
 at that one layer deeper.
 
-1117
+1114
 00:37:35,280 --> 00:37:37,000
 This actually it wraps the Signify
 
-1118
+1115
 00:37:37,000 --> 00:37:38,240
 client. You'll see it has a Signify
 
-1119
+1116
 00:37:38,240 --> 00:37:39,600
 client right here.
 
-1120
+1117
 00:37:39,600 --> 00:37:42,520
-This is the wrapper. The This is another
+This is the wrapper. This is another
 
-1121
+1118
 00:37:42,520 --> 00:37:43,800
 thing that I think is sort of missing
 
-1122
+1119
 00:37:43,800 --> 00:37:45,520
-from HIO that we could add to it.
+from hio that we could add to it.
 
-1123
+1120
 00:37:45,520 --> 00:37:46,760
 Wouldn't be that hard to add it. Sam has
 
-1124
+1121
 00:37:46,760 --> 00:37:48,440
 actually been experimenting with the
 
-1125
+1122
 00:37:48,440 --> 00:37:49,800
-wrappers
+wrappers.
 
-1126
+1123
 00:37:49,800 --> 00:37:51,600
 More recently with trying to
 
-1127
+1124
 00:37:51,600 --> 00:37:54,120
-integrate async/await into HIO. It's
+integrate async/await into hio. It's
 
-1128
+1125
 00:37:54,120 --> 00:37:56,280
-already done in the affection. We have a
+already done in the Effection.
 
-1129
+1126
 00:37:56,280 --> 00:37:58,120
-we say call promise and turn it into a
+We say call promise and turn it into a
 
-1130
+1127
 00:37:58,120 --> 00:37:59,400
 generator.
 
-1131
+1128
 00:37:59,400 --> 00:38:00,720
 This allows you to preserve the
 
-1132
+1129
 00:38:00,720 --> 00:38:03,000
 structured concurrency guarantees
 
-1133
+1130
 00:38:03,000 --> 00:38:04,680
 even when you use promises in
 
-1134
+1131
 00:38:04,680 --> 00:38:06,680
 JavaScript. You'll have promises at sort
 
-1135
+1132
 00:38:06,680 --> 00:38:08,000
 of the edge of your architecture and all
 
-1136
+1133
 00:38:08,000 --> 00:38:09,320
 the nice stuff in between you'll have
 
-1137
+1134
 00:38:09,320 --> 00:38:11,400
 your structured concurrency guarantees.
 
-1138
+1135
 00:38:11,400 --> 00:38:12,720
-Just call a library you're importing
+– Just call a library you're importing
 
-1139
+1136
 00:38:12,720 --> 00:38:13,840
 that you can't control.
 
-1140
+1137
 00:38:13,840 --> 00:38:17,000
-Exactly. Precisely. Promise. Yeah. And
+– Exactly. Precisely. And
 
-1141
+1138
 00:38:17,000 --> 00:38:18,320
 if you look at the wallet that I demoed
 
-1142
+1139
 00:38:18,320 --> 00:38:20,760
-yesterday for my I a I need a really
+yesterday for my… I need a really
 
-1143
+1140
 00:38:20,760 --> 00:38:22,080
 need to wrap up. Oh.
 
-1144
+1141
 00:38:22,080 --> 00:38:23,320
-okay, let me just run through the end.
+Okay, let me just run through the end.
 
-1145
+1142
 00:38:23,320 --> 00:38:25,160
-Okay, the last thing is
+Okay, the last thing is…
 
-1146
+1143
 00:38:25,160 --> 00:38:26,480
 Look just look at these in the slides
 
-1147
+1144
 00:38:26,480 --> 00:38:28,520
 later. You'll see this weird
 
-1148
+1145
 00:38:28,520 --> 00:38:30,840
-convention used everywhere in curio pi
+convention used everywhere in KERIpy
 
-1149
+1146
 00:38:30,840 --> 00:38:33,160
-the self.wine talk and yield. And what
+the self.wind, self.talk and yield. And what
 
-1150
+1147
 00:38:33,160 --> 00:38:34,360
 it is there's something with all
 
-1151
+1148
 00:38:34,360 --> 00:38:35,960
 generators in JavaScript and in Python
 
-1152
+1149
 00:38:35,960 --> 00:38:37,840
 where you need to prime it. Prime it
 
-1153
+1150
 00:38:37,840 --> 00:38:39,840
 means advance to the first yield. You
 
-1154
+1151
 00:38:39,840 --> 00:38:41,840
 don't want the priming of your generator
 
-1155
+1152
 00:38:41,840 --> 00:38:44,000
 to run business logic.
 
-1156
+1153
 00:38:44,000 --> 00:38:45,040
 You don't want it to come down here, so
 
-1157
+1154
 00:38:45,040 --> 00:38:47,400
 you put this yield at the front. I think
 
-1158
+1155
 00:38:47,400 --> 00:38:48,880
 that should be handled by a framework in
 
-1159
+1156
 00:38:48,880 --> 00:38:50,080
 my opinion.
 
-1160
+1157
 00:38:50,080 --> 00:38:51,040
 It's kind of weird to force people to
 
-1161
+1158
 00:38:51,040 --> 00:38:53,600
 manage that, but that's why this exists.
 
-1162
+1159
 00:38:53,600 --> 00:38:55,840
 And
 
-1163
+1160
 00:38:55,840 --> 00:38:59,240
 Okay, and I would say there's
 
-1164
+1161
 00:38:59,240 --> 00:39:02,800
-Oh, get we'll we'll cut it there.
+Oh, we'll cut it there.
 
-1165
+1162
 00:39:02,800 --> 00:39:04,927
-That's that's that's heel.
+That's hio.
 
-1166
+1163
 00:39:04,927 --> 00:39:06,947
 [applause]
 
