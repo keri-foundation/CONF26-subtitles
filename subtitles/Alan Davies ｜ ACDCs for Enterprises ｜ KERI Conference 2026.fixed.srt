@@ -161,7 +161,6 @@ Fraud did exist. Of course there would
 
 41
 00:02:05,280 --> 00:02:06,799
-fraud did exist. Of course there would
 be people who would promise to do
 
 42
@@ -181,2125 +180,2135 @@ person that they were they were doing
 the deal with.
 
 46
-00:02:20,470 --> 00:02:22,720
+00:02:20,470 --> 00:02:21,583
 So that was in the distant past. Now
-things have changed and in fact they
 
 47
+00:02:21,607 --> 00:02:22,720
+things have changed and in fact they
+
+48
 00:02:22,720 --> 00:02:26,319
 changed at least a couple of hundred
 
-48
+49
 00:02:26,319 --> 00:02:29,760
 years ago when the ability to
 
-49
+50
 00:02:29,760 --> 00:02:31,280
 communicate in different ways came
 
-50
+51
 00:02:31,280 --> 00:02:34,319
 along.
 
-51
+52
 00:02:34,319 --> 00:02:37,440
 But it they changed in a very big way
 
-52
+53
 00:02:37,440 --> 00:02:41,599
-but it they changed in a very big way
 when global communications arrived
 
-53
+54
 00:02:41,599 --> 00:02:44,640
 firstly with the telephone and then
 
-54
+55
 00:02:44,640 --> 00:02:49,120
 Fax machines and of course now
 
-55
+56
 00:02:49,120 --> 00:02:52,470
 the internet.
 
-56
-00:02:55,190 --> 00:02:59,360
+57
+00:02:55,190 --> 00:02:57,263
 What the internet enabled us to be able
+
+58
+00:02:57,287 --> 00:02:59,360
 to do is execute transactions remotely
 
-57
+59
 00:02:59,360 --> 00:03:03,280
 which is a great thing in many ways.
 
-58
+60
 00:03:03,280 --> 00:03:06,640
 It enabled international commerce to
 
-59
+61
 00:03:06,640 --> 00:03:08,400
 be able to scale up in so many
 
-60
+62
 00:03:08,400 --> 00:03:11,040
 different ways and also allow regular
 
-61
+63
 00:03:11,040 --> 00:03:14,480
 humans to participate in that
 
-62
+64
 00:03:14,480 --> 00:03:16,239
 kind of commerce. You know, we can go
 
-63
+65
 00:03:16,239 --> 00:03:17,920
 online to Amazon, we can buy what we
 
-64
+66
 00:03:17,920 --> 00:03:19,840
 want when we want and it turns up the
 
-65
+67
 00:03:19,840 --> 00:03:23,440
 next day. it's very convenient.
 
-66
+68
 00:03:23,440 --> 00:03:26,879
 In order to support that, when the
 
-67
+69
 00:03:26,879 --> 00:03:29,040
 internet came along, it was a almost a
 
-68
+70
 00:03:29,040 --> 00:03:31,519
 natural knee-jerk reaction to say, well,
 
-69
+71
 00:03:31,519 --> 00:03:33,760
 if people are going to use online
 
-70
+72
 00:03:33,760 --> 00:03:37,360
 systems, they need to authenticate to
 
-71
+73
 00:03:37,360 --> 00:03:39,200
 be able to access it. And usernames and
 
-72
+74
 00:03:39,200 --> 00:03:42,319
 passwords was the way that we did that.
 
-73
+75
 00:03:42,319 --> 00:03:45,040
 So you log in, you get a session
 
-74
+76
 00:03:45,040 --> 00:03:48,000
 token and the system that
 
-75
+77
 00:03:48,000 --> 00:03:49,840
 you're talking to uses that token to
 
-76
+78
 00:03:49,840 --> 00:03:54,799
 decide what you're allowed to do.
 
-77
+79
 00:03:54,799 --> 00:03:58,319
 The end result so far has been rampant
 
-78
+80
 00:03:58,319 --> 00:04:02,959
 online fraud and we've done what we can
 
-79
+81
 00:04:02,959 --> 00:04:08,400
 to limit that. Mostly by trying to
 
-80
+82
 00:04:08,400 --> 00:04:13,280
 detect fraud which is in my view a
 
-81
+83
 00:04:13,280 --> 00:04:18,239
 losing battle. The fraudsters have so
 
-82
+84
 00:04:18,239 --> 00:04:20,400
 many tools available to them to be able
 
-83
+85
 00:04:20,400 --> 00:04:23,600
 to fool the general public into
 
-84
+86
 00:04:23,600 --> 00:04:26,479
 thinking that they are someone
 
-85
+87
 00:04:26,479 --> 00:04:28,000
 legitimate.
 
-86
+88
 00:04:28,000 --> 00:04:31,759
 and detection is we're always going to
 
-87
+89
 00:04:31,759 --> 00:04:33,840
 be losing that battle to try and detect
 
-88
-00:04:33,840 --> 00:04:39,430
+90
+00:04:33,840 --> 00:04:35,461
 fraudulent activity.
 
-89
-00:04:42,469 --> 00:04:45,919
-So now let's let's this is my own
+91
+00:04:39,342 --> 00:04:42,382
+So now let's… this is my own
+
+92
+00:04:42,406 --> 00:04:45,919
 personal view of the distant future in
 
-90
+93
 00:04:45,919 --> 00:04:50,320
 which everything that we do will be
 
-91
+94
 00:04:50,320 --> 00:04:53,520
 signed. So, it's a signed intent
 
-92
+95
 00:04:53,520 --> 00:04:55,360
 world
 
-93
+96
 00:04:55,360 --> 00:04:57,199
 and I think the way we'll end up if you
 
-94
+97
 00:04:57,199 --> 00:04:59,199
 think maybe four or five years in the
 
-95
+98
 00:04:59,199 --> 00:05:00,880
 future
 
-96
+99
 00:05:00,880 --> 00:05:04,639
 We will all have an agent on our
 
-97
+100
 00:05:04,639 --> 00:05:08,160
 devices that does things for us.
 
-98
+101
 00:05:08,160 --> 00:05:10,639
 You'll ask your agent AI agent to do
 
-99
+102
 00:05:10,639 --> 00:05:13,680
-you'll ask your agent AI agent to do
 something. It'll be maybe move some
 
-100
+103
 00:05:13,680 --> 00:05:15,680
 money from your checking account to your
 
-101
+104
 00:05:15,680 --> 00:05:19,110
 savings account.
 
-102
-00:05:22,310 --> 00:05:24,800
+105
+00:05:22,310 --> 00:05:23,543
 the AI agent on your device because it
+
+106
+00:05:23,567 --> 00:05:24,800
 knows you've authenticated with that
 
-103
+107
 00:05:24,800 --> 00:05:28,400
 device biometrically. It'll wrap
 
-104
+108
 00:05:28,400 --> 00:05:31,680
 that request in an ACDC,
 
-105
+109
 00:05:31,680 --> 00:05:37,280
 sign it with your private key.
 
-106
+110
 00:05:37,280 --> 00:05:39,680
 It'll just use your face ID or whatever
 
-107
+111
 00:05:39,680 --> 00:05:41,440
-it'll just use your face ID or whatever
 other biometric it's using to make sure
 
-108
+112
 00:05:41,440 --> 00:05:43,759
 it really is you.
 
-109
+113
 00:05:43,759 --> 00:05:47,440
 It may add additional signatures if
 
-110
+114
 00:05:47,440 --> 00:05:50,880
 necessary. So if you're a child
 
-111
+115
 00:05:50,880 --> 00:05:52,479
 using your device, it may be that
 
-112
+116
 00:05:52,479 --> 00:05:55,039
 whatever you're asking your agent
 
-113
+117
 00:05:55,039 --> 00:05:57,440
 to do requires your parents permission.
 
-114
+118
 00:05:57,440 --> 00:05:59,759
 So, you may get an additional signature
 
-115
+119
 00:05:59,759 --> 00:06:03,199
 added to that request.
 
-116
+120
 00:06:03,199 --> 00:06:06,400
 That request may include relevant
 
-117
+121
 00:06:06,400 --> 00:06:08,479
 credentials, your SEDI credential for
 
-118
+122
 00:06:08,479 --> 00:06:10,720
 example, or who knows what other
 
-119
+123
 00:06:10,720 --> 00:06:12,720
 entitlement credentials that
 
-120
+124
 00:06:12,720 --> 00:06:15,120
 you may have.
 
-121
+125
 00:06:15,120 --> 00:06:17,199
 That request will then get sent to some
 
-122
+126
 00:06:17,199 --> 00:06:19,759
 kind of execution service. If it's your
 
-123
+127
 00:06:19,759 --> 00:06:20,960
 bank, because you're moving money from
 
-124
+128
 00:06:20,960 --> 00:06:22,720
 one account to another, then it'll be
 
-125
+129
 00:06:22,720 --> 00:06:25,840
 your bank's your bank's online system.
 
-126
+130
 00:06:25,840 --> 00:06:28,720
 It'll verify the trustability of that
 
-127
+131
 00:06:28,720 --> 00:06:31,520
 request. It'll see where it came
 
-128
+132
 00:06:31,520 --> 00:06:35,199
 from. It will see your signature. It
 
-129
+133
 00:06:35,199 --> 00:06:36,800
 will see your maybe your parents
 
-130
+134
 00:06:36,800 --> 00:06:40,160
 signature if you're a child. It will
 
-131
+135
 00:06:40,160 --> 00:06:43,680
 do the usual KERI ACDC stuff.
 
-132
+136
 00:06:43,680 --> 00:06:45,600
 Verify it hasn't been tampered with.
 
-133
+137
 00:06:45,600 --> 00:06:48,400
-verify it hasn't been tampered with.
 They it they know it's you and the bank
 
-134
+138
 00:06:48,400 --> 00:06:50,880
 will then execute that request and make
 
-135
+139
 00:06:50,880 --> 00:06:54,080
 a record of it. And
 
-136
+140
 00:06:54,080 --> 00:06:56,479
 I don't think there will be a need to
 
-137
+141
 00:06:56,479 --> 00:06:58,400
 have a username and password. You won't
 
-138
+142
 00:06:58,400 --> 00:07:00,639
 need to login for this because basically
 
-139
+143
 00:07:00,639 --> 00:07:03,599
 you've you've sent a signed sealed
 
-140
+144
 00:07:03,599 --> 00:07:05,199
 request to your bank that they know it
 
-141
+145
 00:07:05,199 --> 00:07:07,199
 came from you. They'll execute it.
 
-142
+146
 00:07:07,199 --> 00:07:09,199
 They'll record it and that's the end of
 
-143
+147
 00:07:09,199 --> 00:07:12,160
 it.
 
-144
+148
 00:07:12,160 --> 00:07:14,000
 I'm exaggerating here. I'm sure there
 
-145
+149
 00:07:14,000 --> 00:07:16,639
 will be passwords, sessions tokens, and
 
-146
+150
 00:07:16,639 --> 00:07:20,560
 2FA for all sorts of stuff, but in
 
-147
+151
 00:07:20,560 --> 00:07:23,759
 the long term, they will be at least
 
-148
+152
 00:07:23,759 --> 00:07:25,680
 less necessary. And in the example I
 
-149
+153
 00:07:25,680 --> 00:07:28,240
 gave you, you can imagine a world where
 
-150
+154
 00:07:28,240 --> 00:07:36,230
 everything you do is signed intent.
 
-151
+155
 00:07:40,070 --> 00:07:44,800
 I think that this is going to be how we
 reduce the rampant online fraud to
 
-152
+156
 00:07:44,800 --> 00:07:46,720
 there's always going to be fraud.
 
-153
+157
 00:07:46,720 --> 00:07:48,400
 Unfortunately, there always going
 
-154
+158
 00:07:48,400 --> 00:07:50,560
 to be someone who will find a way of
 
-155
+159
 00:07:50,560 --> 00:07:52,240
 fooling someone else into doing
 
-156
+160
 00:07:52,240 --> 00:07:55,039
 something they shouldn't be doing.
 
-157
+161
 00:07:55,039 --> 00:07:57,520
 But this is the long-term vision and
 
-158
+162
 00:07:57,520 --> 00:08:01,120
 this is all going to be delivered
 
-159
+163
 00:08:01,120 --> 00:08:04,160
 In my view with implementations of
 
-160
+164
 00:08:04,160 --> 00:08:06,240
 KERI and ACDCs
 
-161
+165
 00:08:06,240 --> 00:08:07,759
 and everything that we've been talking
 
-162
+166
 00:08:07,759 --> 00:08:10,960
 about today
 
-163
+167
 00:08:10,960 --> 00:08:14,469
 However,
 
-164
+168
 00:08:16,150 --> 00:08:18,080
 there's going to be a lot of disruption
 to be able to enable all of that. I mean
 
-165
+169
 00:08:18,080 --> 00:08:21,120
 the example I gave you about the bank
 
-166
+170
 00:08:21,120 --> 00:08:23,360
 they need to rearchitect their systems
 
-167
+171
 00:08:23,360 --> 00:08:25,919
 so that they are accepting
 
-168
+172
 00:08:25,919 --> 00:08:30,479
 signed requests from their customers
 
-169
+173
 00:08:30,479 --> 00:08:35,200
 that they identify through their
 
-170
+174
 00:08:35,200 --> 00:08:37,760
 their identity their online identity
 
-171
+175
 00:08:37,760 --> 00:08:40,000
 that the customers own and that's
 
-172
+176
 00:08:40,000 --> 00:08:42,719
 going to be a great world of course
 
-173
+177
 00:08:42,719 --> 00:08:44,880
 everybody will be their own identity
 
-174
+178
 00:08:44,880 --> 00:08:47,200
 provider which is how it should be if
 
-175
+179
 00:08:47,200 --> 00:08:50,000
 you think about it. I'm the only
 
-176
+180
 00:08:50,000 --> 00:08:54,480
 person who knows that I am me. And if I
 
-177
+181
 00:08:54,480 --> 00:08:58,480
 control a digital identity that
 
-178
+182
 00:08:58,480 --> 00:09:01,920
 asserts that, then I'm by far the best
 
-179
+183
 00:09:01,920 --> 00:09:04,800
 Person to be able to prove who I am.
 
-180
+184
 00:09:04,800 --> 00:09:07,680
 And I don't like the idea of delegating
 
-181
+185
 00:09:07,680 --> 00:09:11,120
 that to some
 
-182
+186
 00:09:11,120 --> 00:09:14,320
 other federated identity provider.
 
-183
+187
 00:09:14,320 --> 00:09:16,640
 However, they're not going to like it at
 
-184
+188
 00:09:16,640 --> 00:09:20,880
 all. The federated identity
 
-185
+189
 00:09:20,880 --> 00:09:22,959
 providers are having lots of information
 
-186
+190
 00:09:22,959 --> 00:09:25,200
 from people every time they log in. So,
 
-187
+191
 00:09:25,200 --> 00:09:28,320
 there's going to be a lot of resistance.
 
-188
+192
 00:09:28,320 --> 00:09:32,720
 Information harvesters are going to
 
-189
+193
 00:09:32,720 --> 00:09:36,080
 hate all of this because everything that
 
-190
+194
 00:09:36,080 --> 00:09:38,959
 Sam tells us that we should be in
 
-191
+195
 00:09:38,959 --> 00:09:41,680
 control of is not what they want us to
 
-192
+196
 00:09:41,680 --> 00:09:45,910
 be in control of. Sadly,
 
-193
+197
 00:09:48,310 --> 00:09:50,000
 and as I mentioned, all sorts of online
 services will need to do a lot of
 
-194
+198
 00:09:50,000 --> 00:09:52,880
 rearchitecting to implement that final
 
-195
+199
 00:09:52,880 --> 00:09:55,279
 vision.
 
-196
+200
 00:09:55,279 --> 00:09:57,760
 And this isn't going to happen in the
 
-197
+201
 00:09:57,760 --> 00:09:59,760
 next 12 months.
 
-198
+202
 00:09:59,760 --> 00:10:02,959
 There will be movement towards it but
 
-199
+203
 00:10:02,959 --> 00:10:06,080
 We need to do in my view we need to
 
-200
+204
 00:10:06,080 --> 00:10:10,240
 do something sooner to start
 
-201
+205
 00:10:10,240 --> 00:10:13,760
 getting KERI and ACDC adoption in a
 
-202
+206
 00:10:13,760 --> 00:10:17,760
 small way and then move on. So this is
 
-203
+207
 00:10:17,760 --> 00:10:21,200
 where we are now. We have rampant online
 
-204
+208
 00:10:21,200 --> 00:10:23,600
 fraud.
 
-205
+209
 00:10:23,600 --> 00:10:26,320
 Autonomous AI agents are doing more
 
-206
+210
 00:10:26,320 --> 00:10:29,040
 and more stuff and working out how to do
 
-207
+211
 00:10:29,040 --> 00:10:32,959
 things on their own.
 
-208
+212
 00:10:32,959 --> 00:10:35,120
 Mostly because they think that they are
 
-209
+213
 00:10:35,120 --> 00:10:38,079
-mostly because they think that they are
 doing what we want them to do but not
 
-210
+214
 00:10:38,079 --> 00:10:41,750
 necessarily.
 
-211
-00:10:45,430 --> 00:10:48,800
+215
+00:10:41,775 --> 00:10:44,858
 The current way of recording what
+
+216
+00:10:44,883 --> 00:10:48,800
 happens is really online logging. So the
 
-212
+217
 00:10:48,800 --> 00:10:51,839
 the bank will keep a record of what you
 
-213
+218
 00:10:51,839 --> 00:10:53,760
 asked it to do moving money from one
 
-214
+219
 00:10:53,760 --> 00:10:57,920
 account to another. But if someone
 
-215
+220
 00:10:57,920 --> 00:11:00,320
 gets my password and asks my bank to do
 
-216
+221
 00:11:00,320 --> 00:11:02,640
 something on behalf of me then as far as
 
-217
+222
 00:11:02,640 --> 00:11:04,480
 the bank logging is concerned it was me
 
-218
+223
 00:11:04,480 --> 00:11:08,000
 doing it which just is not real. So it
 
-219
+224
 00:11:08,000 --> 00:11:11,200
 is it's just weak.
 
-220
+225
 00:11:11,200 --> 00:11:14,320
 So what we really need is what I call
 
-221
+226
 00:11:14,320 --> 00:11:16,800
 trustability.
 
-222
+227
 00:11:16,800 --> 00:11:21,600
 And trustability is the ability to
 
-223
+228
 00:11:21,600 --> 00:11:26,160
 be able to make a good trust decision
 
-224
+229
 00:11:26,160 --> 00:11:30,800
 on any kind of action that you might be
 
-225
+230
 00:11:30,800 --> 00:11:32,880
 Intending to make based on some
 
-226
+231
 00:11:32,880 --> 00:11:35,440
 information that comes at you over the
 
-227
+232
 00:11:35,440 --> 00:11:38,000
 internet. And it can be something as
 
-228
+233
 00:11:38,000 --> 00:11:43,200
 simple as a news article.
 
-229
+234
 00:11:43,200 --> 00:11:46,320
 Did this journalist really write this?
 
-230
+235
 00:11:46,320 --> 00:11:48,959
-did this journalist really write this?
 Do I trust this journalist? The trust
 
-231
+236
 00:11:48,959 --> 00:11:50,640
 decision might be very weak. I'm just
 
-232
+237
 00:11:50,640 --> 00:11:53,600
 going to develop my own opinion
 
-233
+238
 00:11:53,600 --> 00:11:55,519
 about whatever is being written about
 
-234
+239
 00:11:55,519 --> 00:11:59,120
 based on based on that journalist's
 
-235
+240
 00:11:59,120 --> 00:12:02,079
 reputation. But
 
-236
+241
 00:12:02,079 --> 00:12:05,839
 other things are much more important.
 
-237
+242
 00:12:05,839 --> 00:12:11,519
 If I see a request from one of
 
-238
+243
 00:12:11,519 --> 00:12:14,240
 my kids to send some money to a bank
 
-239
+244
 00:12:14,240 --> 00:12:17,519
 account because he's in trouble, then I
 
-240
+245
 00:12:17,519 --> 00:12:19,680
 need to be able to trust that is
 
-241
+246
 00:12:19,680 --> 00:12:22,399
 really from my son. And I need to
 
-242
+247
 00:12:22,399 --> 00:12:23,839
 make a trust decision. I might need to
 
-243
+248
 00:12:23,839 --> 00:12:27,040
 make it quickly. So how do we how do we
 
-244
+249
 00:12:27,040 --> 00:12:31,200
 get trustability into the world of
 
-245
+250
 00:12:31,200 --> 00:12:33,680
 online transactions?
 
-246
+251
 00:12:33,680 --> 00:12:36,639
 And what we need of course is KERI and
 
-247
+252
 00:12:36,639 --> 00:12:40,240
 ACDCs and we need I hate to say a
 
-248
+253
 00:12:40,240 --> 00:12:42,160
 little bit of KERI and ACDC because we
 
-249
+254
 00:12:42,160 --> 00:12:45,120
 need we need the whole thing but we
 
-250
+255
 00:12:45,120 --> 00:12:49,200
 can't very quickly implement the
 
-251
+256
 00:12:49,200 --> 00:12:52,000
 entire or reimplement the entire online
 
-252
+257
 00:12:52,000 --> 00:12:55,040
 access infrastructure to support the
 
-253
+258
 00:12:55,040 --> 00:12:59,600
 the long-term vision of how the whole
 
-254
+259
 00:12:59,600 --> 00:13:02,000
 world of signed intent is going to
 
-255
+260
 00:13:02,000 --> 00:13:05,910
 work.
 
-256
+261
 00:13:07,829 --> 00:13:10,480
 And
 where digital trust foundry is
 
-257
+262
 00:13:10,480 --> 00:13:13,600
 starting is saying that what we
 
-258
+263
 00:13:13,600 --> 00:13:16,320
 need is something that we call execution
 
-259
+264
 00:13:16,320 --> 00:13:18,399
 trust.
 
-260
+265
 00:13:18,399 --> 00:13:21,040
 Immediately before making some kind of
 
-261
+266
 00:13:21,040 --> 00:13:24,399
 Decision to execute some kind of
 
-262
+267
 00:13:24,399 --> 00:13:26,560
 action based on information that's
 
-263
+268
 00:13:26,560 --> 00:13:30,480
 coming to us remotely. And that might
 
-264
+269
 00:13:30,480 --> 00:13:33,519
 be we're a supplier receiving a
 
-265
+270
 00:13:33,519 --> 00:13:38,870
 purchase order. We might be an employer
 
-266
+271
 00:13:38,870 --> 00:13:38,880
 
 
-267
+272
 00:13:38,880 --> 00:13:42,880
 being presented with someone's
 academic credentials before we hire them
 
-268
+273
 00:13:42,880 --> 00:13:46,160
 for a for a job. Before we make that
 
-269
+274
 00:13:46,160 --> 00:13:49,040
 decision, then
 
-270
+275
 00:13:49,040 --> 00:13:53,600
 we need a way to be able to make
 
-271
+276
 00:13:53,600 --> 00:13:55,760
 a trust assessment of what's being
 
-272
+277
 00:13:55,760 --> 00:13:59,120
 presented to us.
 
-273
+278
 00:13:59,120 --> 00:14:00,800
 And
 
-274
+279
 00:14:00,800 --> 00:14:02,880
 this is where I think that what the
 
-275
+280
 00:14:02,880 --> 00:14:05,360
 world needs is to be able to start
 
-276
+281
 00:14:05,360 --> 00:14:09,120
 slowly and to be able to implement
 
-277
+282
 00:14:09,120 --> 00:14:11,760
 what we call execution trust into
 
-278
+283
 00:14:11,760 --> 00:14:14,480
 existing systems and of course start
 
-279
+284
 00:14:14,480 --> 00:14:17,760
 with high value high-risk transactions.
 
-280
+285
 00:14:17,760 --> 00:14:22,720
 For example wire transfer fraud. It
 
-281
+286
 00:14:22,720 --> 00:14:26,320
 is way too easy for bad actors to be
 
-282
+287
 00:14:26,320 --> 00:14:29,360
 able to make changes to wire transfer
 
-283
+288
 00:14:29,360 --> 00:14:31,680
 requests as they move from place to face
 
-284
+289
 00:14:31,680 --> 00:14:34,399
 before they get to the bank
 
-285
+290
 00:14:34,399 --> 00:14:35,839
 that's going to execute that wire
 
-286
+291
 00:14:35,839 --> 00:14:38,880
 transfer.
 
-287
+292
 00:14:38,880 --> 00:14:41,990
 So
 
-288
+293
 00:14:44,389 --> 00:14:48,000
 taking a wire transfer request, wrapping
 it in an ACDC, getting it signed by
 
-289
+294
 00:14:48,000 --> 00:14:52,079
 the owner of the originating
 
-290
+295
 00:14:52,079 --> 00:14:53,600
 account
 
-291
+296
 00:14:53,600 --> 00:14:55,360
 means that when the bank gets it, they
 
-292
+297
 00:14:55,360 --> 00:14:58,079
 can verify it, make a trust decision and
 
-293
+298
 00:14:58,079 --> 00:15:01,600
 execute it and then keep a
 
-294
+299
 00:15:01,600 --> 00:15:05,120
 cryptographically verifiable record of
 
-295
+300
 00:15:05,120 --> 00:15:07,680
 what they were asked to execute for
 
-296
+301
 00:15:07,680 --> 00:15:11,279
 any time in the future.
 
-297
+302
 00:15:11,279 --> 00:15:13,920
 So what we're talking about is inserting
 
-298
+303
 00:15:13,920 --> 00:15:16,000
 a level of trustability into existing
 
-299
+304
 00:15:16,000 --> 00:15:19,279
 applications at execution time, hence
 
-300
+305
 00:15:19,279 --> 00:15:22,480
 the term execution trust.
 
-301
+306
 00:15:22,480 --> 00:15:24,560
 And this can apply to any digital
 
-302
+307
 00:15:24,560 --> 00:15:27,839
 artifact. Verifiable
 
-303
+308
 00:15:27,839 --> 00:15:30,560
 credentials was really all about
 
-304
+309
 00:15:30,560 --> 00:15:33,040
 academic and professional credentials
 
-305
+310
 00:15:33,040 --> 00:15:37,030
 but ACDCs are really rearchucapable of
 
-306
+311
 00:15:37,030 --> 00:15:39,600
 but ACDCs are really capable of
 handling any kind of data content that
 
-307
+312
 00:15:39,600 --> 00:15:42,240
 might be delivered from one trust domain
 
-308
+313
 00:15:42,240 --> 00:15:44,000
 to another.
 
-309
+314
 00:15:44,000 --> 00:15:47,360
 And
 
-310
+315
 00:15:47,360 --> 00:15:50,560
 even better in the short term, it makes
 
-311
+316
 00:15:50,560 --> 00:15:54,480
 sense even with a single trust domain to
 
-312
+317
 00:15:54,480 --> 00:15:58,959
 be able to take some kind of
 
-313
+318
 00:15:58,959 --> 00:16:03,839
 action. Let's say it's updating a
 
-314
+319
 00:16:03,839 --> 00:16:07,600
 production system. So we have an
 
-315
+320
 00:16:07,600 --> 00:16:08,800
 update that we want to make to a
 
-316
+321
 00:16:08,800 --> 00:16:11,120
 production system and we want to make
 
-317
+322
 00:16:11,120 --> 00:16:14,720
 sure that it's fully authorized before
 
-318
+323
 00:16:14,720 --> 00:16:16,880
 we execute it. And of course it may have
 
-319
+324
 00:16:16,880 --> 00:16:18,720
 been that update may have been
 
-320
+325
 00:16:18,720 --> 00:16:20,639
 generated by AI. So it's kind of
 
-321
+326
 00:16:20,639 --> 00:16:23,199
 important that a human gets involved in
 
-322
+327
 00:16:23,199 --> 00:16:27,199
 that process. So, a workflow
 
-323
+328
 00:16:27,199 --> 00:16:29,199
 application that's going to apply that
 
-324
+329
 00:16:29,199 --> 00:16:31,519
 update to the production system could
 
-325
+330
 00:16:31,519 --> 00:16:35,199
 take that description of that update
 
-326
+331
 00:16:35,199 --> 00:16:38,959
 request, wrap it in an ACDC, send it to
 
-327
+332
 00:16:38,959 --> 00:16:41,680
 the CIO to say, "We're about to
 
-328
+333
 00:16:41,680 --> 00:16:43,360
 update your production systems with
 
-329
+334
 00:16:43,360 --> 00:16:46,320
 this. Do you approve it?" He would sign
 
-330
+335
 00:16:46,320 --> 00:16:50,480
 it, return it back. Then that
 
-331
+336
 00:16:50,480 --> 00:16:52,320
 update application would say okay I have
 
-332
+337
 00:16:52,320 --> 00:16:54,720
 a I have approval to go ahead with
 
-333
+338
 00:16:54,720 --> 00:16:57,360
 with this update apply the update keep a
 
-334
+339
 00:16:57,360 --> 00:16:59,199
 record and that all happens within a
 
-335
+340
 00:16:59,199 --> 00:17:01,600
 single trust domain. So, but what you've
 
-336
+341
 00:17:01,600 --> 00:17:04,079
 done there is applied a little bit of
 
-337
+342
 00:17:04,079 --> 00:17:07,439
 KERI and ACDCs to a particular high
 
-338
+343
 00:17:07,439 --> 00:17:12,480
 value use case to make sure that
 
-339
+344
 00:17:12,480 --> 00:17:15,600
 in that particular example the update
 
-340
+345
 00:17:15,600 --> 00:17:18,640
 was being made was fully authorized
 
-341
+346
 00:17:18,640 --> 00:17:23,439
 by someone who is the appropriate
 
-342
+347
 00:17:23,439 --> 00:17:26,559
 authorizer of that update.
 
-343
+348
 00:17:26,559 --> 00:17:29,840
 The same thing applies
 
-344
+349
 00:17:29,840 --> 00:17:32,320
 across trust domains where maybe a
 
-345
+350
 00:17:32,320 --> 00:17:35,039
 business generates a legal document that
 
-346
+351
 00:17:35,039 --> 00:17:36,960
 needs to be signed by the CEO before it
 
-347
+352
 00:17:36,960 --> 00:17:40,160
 gets delivered to a partner for them to
 
-348
+353
 00:17:40,160 --> 00:17:43,840
 execute. You can build that kind of
 
-349
+354
 00:17:43,840 --> 00:17:46,000
 functionality into an existing
 
-350
+355
 00:17:46,000 --> 00:17:47,760
 application that's already generating
 
-351
+356
 00:17:47,760 --> 00:17:49,840
 these documents. You just say, "Well, we
 
-352
+357
 00:17:49,840 --> 00:17:51,760
 already have the document. It's a PDF.
 
-353
+358
 00:17:51,760 --> 00:17:53,919
 We're just going to wrap it in ACDC,
 
-354
+359
 00:17:53,919 --> 00:17:55,840
 get it signed, and send it off. And then
 
-355
+360
 00:17:55,840 --> 00:17:57,600
 whoever gets it, because they know how
 
-356
+361
 00:17:57,600 --> 00:18:00,400
 to verify an ACDC, we'll run a
 
-357
+362
 00:18:00,400 --> 00:18:01,919
 verification. They know that it was
 
-358
+363
 00:18:01,919 --> 00:18:07,270
 signed by the CEO, they can act on it.
 
-359
+364
 00:18:09,110 --> 00:18:12,000
 I think that's basically what I'm
 talking about here. And of course,
 
-360
+365
 00:18:12,000 --> 00:18:14,480
 multisig comes in very useful in
 
-361
+366
 00:18:14,480 --> 00:18:18,310
 situations like this.
 
-362
+367
 00:18:21,909 --> 00:18:25,280
 The application at execution time can
 verify and either decide to reject it if
 
-363
+368
 00:18:25,280 --> 00:18:27,919
 it's not happy with what it sees or
 
-364
+369
 00:18:27,919 --> 00:18:33,350
 executed and keep a permanent record of
 
-365
+370
 00:18:33,350 --> 00:18:33,360
 
 
-366
+371
 00:18:33,360 --> 00:18:40,630
 its trust decision and what it made that
 trust decision based on.
 
-367
+372
 00:18:44,310 --> 00:18:46,160
 So the benefits of this approach
 which is a little bit of KERI and
 
-368
+373
 00:18:46,160 --> 00:18:49,280
 ACDCs injected into existing business
 
-369
+374
 00:18:49,280 --> 00:18:50,799
 applications for high value
 
-370
+375
 00:18:50,799 --> 00:18:52,960
 transactions.
 
-371
+376
 00:18:52,960 --> 00:18:55,440
 There are so many business use cases
 
-372
+377
 00:18:55,440 --> 00:18:57,520
 that this can apply to across all
 
-373
+378
 00:18:57,520 --> 00:19:01,350
 industries.
 
-374
+379
 00:19:03,430 --> 00:19:06,799
 I know from personal experience that if
 I use my bank's online system to do a
 
-375
+380
 00:19:06,799 --> 00:19:09,440
 wire transfer even though I'm logged
 
-376
+381
 00:19:09,440 --> 00:19:11,280
 in, it'll get to a certain point where
 
-377
+382
 00:19:11,280 --> 00:19:14,799
 it says we're going to send you a
 
-378
+383
 00:19:14,799 --> 00:19:16,640
 code to your mobile phone and want
 
-379
+384
 00:19:16,640 --> 00:19:18,960
 you to type it in. So, two-factor
 
-380
+385
 00:19:18,960 --> 00:19:21,919
 authentication to make sure that even
 
-381
+386
 00:19:21,919 --> 00:19:23,600
 though I'm already logged in that it
 
-382
+387
 00:19:23,600 --> 00:19:27,280
 really is me again, sort of really me.
 
-383
+388
 00:19:27,280 --> 00:19:30,320
 This would replace those kinds
 
-384
+389
 00:19:30,320 --> 00:19:33,120
 of weak two-factor authentication with
 
-385
+390
 00:19:33,120 --> 00:19:38,630
 what we call a hard gate.
 
-386
+391
 00:19:40,549 --> 00:19:43,360
 There will be no need to rearchitect
 existing systems. If you take for
 
-387
+392
 00:19:43,360 --> 00:19:46,960
 example the bank's wire transfer
 
-388
+393
 00:19:46,960 --> 00:19:50,640
 request system, they already have that
 
-389
+394
 00:19:50,640 --> 00:19:53,120
 ability in their system. It's part is
 
-390
+395
 00:19:53,120 --> 00:19:55,280
 the functionality of their banking
 
-391
+396
 00:19:55,280 --> 00:19:58,080
 system anyway. The additional step
 
-392
+397
 00:19:58,080 --> 00:20:03,039
 would be just to make an API call to
 
-393
+398
 00:20:03,039 --> 00:20:06,720
 a platform that knows how to wrap that
 
-394
+399
 00:20:06,720 --> 00:20:10,559
 content into an ACDC, send it to an
 
-395
+400
 00:20:10,559 --> 00:20:13,280
 authorized signer, and return the signed
 
-396
+401
 00:20:13,280 --> 00:20:16,880
 ACDC back. Then that application just
 
-397
+402
 00:20:16,880 --> 00:20:19,760
 makes another API call to verify it,
 
-398
+403
 00:20:19,760 --> 00:20:21,600
 looks at the results, makes a trust
 
-399
+404
 00:20:21,600 --> 00:20:23,520
 decision, either rejects or
 
-400
+405
 00:20:23,520 --> 00:20:25,919
 continues. No need to completely
 
-401
+406
 00:20:25,919 --> 00:20:30,470
 rearchitect existing systems.
 
-402
+407
 00:20:33,669 --> 00:20:35,600
 This will drastically reduce online
 fraud for high value business
 
-403
+408
 00:20:35,600 --> 00:20:38,960
 transactions and it can be done really
 
-404
+409
 00:20:38,960 --> 00:20:41,840
 very soon.
 
-405
+410
 00:20:41,840 --> 00:20:44,480
 So I like to talk about this as
 
-406
+411
 00:20:44,480 --> 00:20:47,760
 getting used to KERI and ACDCs one
 
-407
+412
 00:20:47,760 --> 00:20:50,720
 bite at a time. So you introduce
 
-408
+413
 00:20:50,720 --> 00:20:53,679
 something like this to a high value
 
-409
+414
 00:20:53,679 --> 00:20:55,600
 transaction that's already being
 
-410
+415
 00:20:55,600 --> 00:20:58,880
 executed by business applications
 
-411
+416
 00:20:58,880 --> 00:21:01,760
 Today and they see the immediate
 
-412
+417
 00:21:01,760 --> 00:21:05,919
 benefits and then once businesses start
 
-413
+418
 00:21:05,919 --> 00:21:09,200
 using this technology in this limited
 
-414
+419
 00:21:09,200 --> 00:21:11,600
 constrained way then they will be able
 
-415
+420
 00:21:11,600 --> 00:21:14,480
 to see how that the basic technology can
 
-416
+421
 00:21:14,480 --> 00:21:16,240
 be applied in all sorts of other
 
-417
+422
 00:21:16,240 --> 00:21:18,799
 situations. And this is how we get the
 
-418
+423
 00:21:18,799 --> 00:21:21,919
 world starting to use KERI and ACDCs
 
-419
+424
 00:21:21,919 --> 00:21:27,440
 without having to make huge changes.
 
-420
+425
 00:21:27,440 --> 00:21:30,640
 And also this is another good reason
 
-421
+426
 00:21:30,640 --> 00:21:35,760
 for businesses to get a vLEI of course.
 
-422
+427
 00:21:35,760 --> 00:21:39,029
 So
 
-423
+428
 00:21:41,350 --> 00:21:43,600
 Digital Trust Foundry is a platform that
 enables businesses to do exactly what
 
-424
+429
 00:21:43,600 --> 00:21:46,720
 I've described. It's multi-instance
 
-425
+430
 00:21:46,720 --> 00:21:49,760
 multi-tenant platform that fully
 
-426
+431
 00:21:49,760 --> 00:21:53,760
 implements KERI and ACDCs with our
 
-427
+432
 00:21:53,760 --> 00:21:58,480
 witnesses and watchers network. And
 
-428
+433
 00:21:58,480 --> 00:22:00,799
 let me see if I'm getting ahead of
 
-429
+434
 00:22:00,799 --> 00:22:02,720
 myself here.
 
-430
+435
 00:22:02,720 --> 00:22:04,480
 And we've implemented what we call a
 
-431
+436
 00:22:04,480 --> 00:22:08,720
 trustables API. So the business
 
-432
+437
 00:22:08,720 --> 00:22:11,200
 application can say I have some digital
 
-433
+438
 00:22:11,200 --> 00:22:14,320
 content that I want to make trustable.
 
-434
+439
 00:22:14,320 --> 00:22:17,280
 It makes a call to the API
 
-435
+440
 00:22:17,280 --> 00:22:21,360
 specifying the AIDs of the signers or
 
-436
+441
 00:22:21,360 --> 00:22:25,600
 the roles that need to approve whatever
 
-437
+442
 00:22:25,600 --> 00:22:28,480
 The digital artifact is that's being
 
-438
+443
 00:22:28,480 --> 00:22:31,360
 Processed
 
-439
+444
 00:22:31,360 --> 00:22:33,760
 and the end result is it gets back an
 
-440
+445
 00:22:33,760 --> 00:22:37,679
 ACDC that it can verify
 
-441
+446
 00:22:37,679 --> 00:22:39,360
 and that's that's where we're
 
-442
+447
 00:22:39,360 --> 00:22:42,640
 starting. We're we're saying that we
 
-443
+448
 00:22:42,640 --> 00:22:46,000
 need to provide what we call
 
-444
+449
 00:22:46,000 --> 00:22:49,360
 execution trust to existing applications
 
-445
+450
 00:22:49,360 --> 00:22:52,720
 so that they can start using the
 
-446
+451
 00:22:52,720 --> 00:22:55,520
 power of KERI and ACDCs now in a
 
-447
+452
 00:22:55,520 --> 00:22:59,679
 small way but then to see understand
 
-448
+453
 00:22:59,679 --> 00:23:04,950
 the value of it by practical experience.
 
-449
+454
 00:23:07,029 --> 00:23:07,039
 
 
-450
+455
 00:23:07,039 --> 00:23:13,840
 we're looking for partners. Our
 business model is yes we will deliver
 
-451
+456
 00:23:13,840 --> 00:23:17,360
 our a platform for you for use by
 
-452
+457
 00:23:17,360 --> 00:23:19,919
 businesses generally but also by
 
-453
+458
 00:23:19,919 --> 00:23:23,039
 partners who have existing applications.
 
-454
+459
 00:23:23,039 --> 00:23:24,960
 It might be workflow applications
 
-455
+460
 00:23:24,960 --> 00:23:28,320
 that need stronger approval processes
 
-456
+461
 00:23:28,320 --> 00:23:33,280
 for example. And they can work
 
-457
+462
 00:23:33,280 --> 00:23:36,640
 with us to build execution trust
 
-458
+463
 00:23:36,640 --> 00:23:38,799
 functionality into their applications
 
-459
+464
 00:23:38,799 --> 00:23:41,440
 and deliver it to their customers. So in
 
-460
+465
 00:23:41,440 --> 00:23:45,360
 this way we build a network of
 
-461
+466
 00:23:45,360 --> 00:23:49,039
 businesses who are implementing the
 
-462
+467
 00:23:49,039 --> 00:23:52,720
 power of ACDCs and KERI without
 
-463
+468
 00:23:52,720 --> 00:23:53,919
 having to build the whole thing
 
-464
+469
 00:23:53,919 --> 00:23:56,640
 themselves. They just make use of our
 
-465
+470
 00:23:56,640 --> 00:23:58,960
 platform. So in some ways it's similar
 
-466
+471
 00:23:58,960 --> 00:24:03,360
 to if you're a business wanting to
 
-467
+472
 00:24:03,360 --> 00:24:07,039
 Manage your sales process, you can
 
-468
+473
 00:24:07,039 --> 00:24:11,039
 either use spreadsheets and build
 
-469
+474
 00:24:11,039 --> 00:24:14,559
 your own application to manage all of
 
-470
+475
 00:24:14,559 --> 00:24:16,640
 your sales processes or you can go to
 
-471
+476
 00:24:16,640 --> 00:24:20,559
 Salesforce and sign up for a CRM with
 
-472
+477
 00:24:20,559 --> 00:24:23,200
 them. they provide the functionality all
 
-473
+478
 00:24:23,200 --> 00:24:25,840
 of the low-level detail and you just
 
-474
+479
 00:24:25,840 --> 00:24:30,789
 get the benefits.
 
-475
+480
 00:24:30,789 --> 00:24:30,799
 
 
-476
+481
 00:24:30,799 --> 00:24:38,720
 we have a list of interactive
 examples of our functionality that
 
-477
+482
 00:24:38,720 --> 00:24:43,440
 you can go and play with and just
 
-478
+483
 00:24:43,440 --> 00:24:45,120
 to give you some ideas of the sorts of
 
-479
+484
 00:24:45,120 --> 00:24:46,240
 things that can be done with that.
 
-480
+485
 00:24:46,240 --> 00:24:49,360
 There's about 30 different use cases in
 
-481
+486
 00:24:49,360 --> 00:24:51,760
 different businesses. One of my
 
-482
+487
 00:24:51,760 --> 00:24:56,000
 favorites is verifiable résumés in
 
-483
+488
 00:24:56,000 --> 00:24:59,039
 which an individual who's collected
 
-484
+489
 00:24:59,039 --> 00:25:01,600
 digital credentials or professional
 
-485
+490
 00:25:01,600 --> 00:25:04,559
 credentials can actually take them
 
-486
+491
 00:25:04,559 --> 00:25:08,080
 all and generate a verifiable resume
 
-487
+492
 00:25:08,080 --> 00:25:10,320
 that has references to all of each of
 
-488
+493
 00:25:10,320 --> 00:25:13,279
 those credentials. and they can provide
 
-489
+494
 00:25:13,279 --> 00:25:16,640
 their digital verifiable resume to a
 
-490
+495
 00:25:16,640 --> 00:25:19,279
 potential employer who can actually
 
-491
+496
 00:25:19,279 --> 00:25:22,000
 click verify on that resume. It will go
 
-492
+497
 00:25:22,000 --> 00:25:25,360
 to the issuers of each of those
 
-493
+498
 00:25:25,360 --> 00:25:27,919
 credentials, verify them and then return
 
-494
-00:25:27,919 --> 00:25:32,789
+499
+00:25:27,919 --> 00:25:30,356
 a trust report to the employer.
 
-495
-00:25:34,870 --> 00:25:36,640
+500
+00:25:32,782 --> 00:25:34,385
 That's all I have to say for now.
+
+501
+00:25:34,409 --> 00:25:36,640
 Thank you very much for your time and if
 
-496
+502
 00:25:36,640 --> 00:25:38,960
-thank you very much for your time and if
 you have any questions now is the
 
-497
-00:25:38,960 --> 00:25:47,350
+503
+00:25:38,960 --> 00:25:40,021
 time.
 
-498
-00:25:49,909 --> 00:25:52,640
-I got one question u because of the term
+504
+00:25:47,461 --> 00:25:49,948
+– I got one question because of the term
+
+505
+00:25:49,972 --> 00:25:52,640
 that you coined trustability.
 
-499
+506
 00:25:52,640 --> 00:25:56,080
 I use that in a promotion on
 
-500
+507
 00:25:56,080 --> 00:26:00,559
-LinkedIn and it got it got a red
+LinkedIn and it got a red
 
-501
+508
 00:26:00,559 --> 00:26:02,559
 dotted line under it. It doesn't exist
 
-502
+509
 00:26:02,559 --> 00:26:04,960
 in my translation. So it got
 
-503
+510
 00:26:04,960 --> 00:26:06,960
 trustworthiness.
 
-504
+511
 00:26:06,960 --> 00:26:10,000
 That's could you I heard your
 
-505
+512
 00:26:10,000 --> 00:26:13,840
-explanation of trustability but how
+explanation of trustability but how…
 
-506
+513
 00:26:13,840 --> 00:26:15,919
 could we use that word trustworthiness
 
-507
-00:26:15,919 --> 00:26:16,960
-as well in your
+514
+00:26:15,919 --> 00:26:16,594
+as well in your…
 
-508
-00:26:16,960 --> 00:26:19,840
-course. Yes.
+515
+00:26:16,594 --> 00:26:19,840
+– Of course. Yes.
 
-509
+516
 00:26:19,840 --> 00:26:22,640
 The ability to be able to make a trust
 
-510
-00:26:22,640 --> 00:26:26,240
-the ability to be able to make a trust
+517
+00:26:22,665 --> 00:26:26,240
 decision on something is my definition
 
-511
+518
 00:26:26,240 --> 00:26:28,480
 of trustability which may not be a real
 
-512
+519
 00:26:28,480 --> 00:26:32,880
 word. But I think it should be.
 
-513
+520
 00:26:32,880 --> 00:26:34,640
 We're we're making trust decisions all
 
-514
-00:26:34,640 --> 00:26:39,520
-we're we're making trust decisions all
+521
+00:26:34,665 --> 00:26:39,520
 of the while. But when I receive some
 
-515
+522
 00:26:39,520 --> 00:26:41,520
 kind of digital information over the
 
-516
+523
 00:26:41,520 --> 00:26:44,720
 internet that I want to make a trust
 
-517
+524
 00:26:44,720 --> 00:26:49,440
 decision on then I have at the moment
 
-518
+525
 00:26:49,440 --> 00:26:51,840
 only two choices. One's called blind and
 
-519
+526
 00:26:51,840 --> 00:26:54,960
 faith. Well, there's three actually.
 
-520
+527
 00:26:54,960 --> 00:26:57,600
 Blind faith. The one is ignore it
 
-521
+528
 00:26:57,600 --> 00:27:00,559
 completely. And the third is spend quite
 
-522
+529
 00:27:00,559 --> 00:27:02,480
 a lot of time doing some kind of
 
-523
+530
 00:27:02,480 --> 00:27:05,279
 verification manually to decide whether
 
-524
+531
 00:27:05,279 --> 00:27:08,640
 this is genuine or not. If it's an
 
-525
+532
 00:27:08,640 --> 00:27:10,159
 email coming over from me, I look to see
 
-526
+533
 00:27:10,159 --> 00:27:11,440
 where it actually came from, for
 
-527
+534
 00:27:11,440 --> 00:27:16,000
 example. If you can trust that.
 
-528
-00:27:16,000 --> 00:27:19,600
-about a week ago, my wife had a phone
-
-529
-00:27:19,600 --> 00:27:22,960
+535
+00:27:16,995 --> 00:27:19,553
 About a week ago, my wife had a phone
+
+536
+00:27:19,578 --> 00:27:22,960
 call from the Bank of America saying
 
-530
+537
 00:27:22,960 --> 00:27:25,120
 that they noticed that someone is trying
 
-531
+538
 00:27:25,120 --> 00:27:28,799
 to
 
-532
+539
 00:27:28,799 --> 00:27:31,279
-Initiate a wire transfer from our
+initiate a wire transfer from our
 
-533
+540
 00:27:31,279 --> 00:27:36,240
 checking account. They said we
 
-534
+541
 00:27:36,240 --> 00:27:39,679
 need we can help you fix this.
 
-535
+542
 00:27:39,679 --> 00:27:42,480
-They were they sounded very genuine and
+They sounded very genuine and
 
-536
-00:27:42,480 --> 00:27:45,520
-they were they sounded very genuine and
-They said this is my name and if
+543
+00:27:42,504 --> 00:27:45,520
+they said this is my name and if
 
-537
+544
 00:27:45,520 --> 00:27:48,320
 you go to the Bank of America's website
 
-538
+545
 00:27:48,320 --> 00:27:50,480
 go to a particular branch and you scroll
 
-539
+546
 00:27:50,480 --> 00:27:53,520
 down you'll see a picture of me and
 
-540
+547
 00:27:53,520 --> 00:27:55,360
 you'll see my phone number and if you
 
-541
+548
 00:27:55,360 --> 00:27:57,600
 look that the phone that I'm calling
 
-542
+549
 00:27:57,600 --> 00:27:59,600
 from is in fact that phone number. So
 
-543
+550
 00:27:59,600 --> 00:28:03,760
 this is me. my wife said, "H,
 
-544
+551
 00:28:03,760 --> 00:28:04,880
 well, I'm going to call you back
 
-545
+552
 00:28:04,880 --> 00:28:07,279
 anyway." And that was that was the
 
-546
+553
 00:28:07,279 --> 00:28:08,720
 last we heard of them, except we called
 
-547
+554
 00:28:08,720 --> 00:28:10,240
 back and spoke to somebody completely
 
-548
+555
 00:28:10,240 --> 00:28:13,520
 different. So
 
-549
+556
 00:28:13,520 --> 00:28:16,880
 that was we could, we could have
 
-550
+557
 00:28:16,880 --> 00:28:20,880
 got caught out very easily. Because
 
-551
+558
 00:28:20,880 --> 00:28:23,120
 lots of people assume that if it says
 
-552
+559
 00:28:23,120 --> 00:28:25,360
 that phone number and they prove that
 
-553
+560
 00:28:25,360 --> 00:28:28,159
 they control that the real person
 
-554
+561
 00:28:28,159 --> 00:28:29,600
 controls that phone number that's where
 
-555
+562
 00:28:29,600 --> 00:28:32,640
 it came from. Thankfully we have
 
-556
+563
 00:28:32,640 --> 00:28:34,559
 Provenant who is solving that problem for
 
-557
+564
 00:28:34,559 --> 00:28:37,520
 us using KERI and ACDCs but for now
 
-558
+565
 00:28:37,520 --> 00:28:40,159
 we're in the world where we have to make
 
-559
+566
 00:28:40,159 --> 00:28:43,760
 either blind faith, ignore it or
 
-560
+567
 00:28:43,760 --> 00:28:46,320
 spend some time doing verification and
 
-561
+568
 00:28:46,320 --> 00:28:49,919
 and that's how we get caught. So
 
-562
+569
 00:28:49,919 --> 00:28:52,640
 implementing
 
-563
+570
 00:28:52,640 --> 00:28:57,279
 Execution time trustability is
 
-564
+571
 00:28:57,279 --> 00:29:01,279
 where we think things should start.
 
-565
+572
 00:29:01,279 --> 00:29:05,760
 Thank you. Any other question?
 
-566
+573
 00:29:05,760 --> 00:29:08,159
 If not then thank you very much Alan for
 
-567
+574
 00:29:08,159 --> 00:29:11,480
 your presentation.
 

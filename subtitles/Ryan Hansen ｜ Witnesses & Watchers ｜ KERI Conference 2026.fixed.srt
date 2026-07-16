@@ -412,15 +412,15 @@ Signing and private.
 
 104
 00:03:48,080 --> 00:03:50,000
-Signing and
+Signing and…
 
 105
 00:03:50,000 --> 00:03:50,640
-rotation.
+– Rotation.
 
 106
 00:03:50,640 --> 00:03:53,280
-Rotation. That's it. Signing and
+– Rotation. That's it. Signing and
 
 107
 00:03:53,280 --> 00:03:55,920
@@ -1397,7 +1397,7 @@ that.
 
 350
 00:13:43,760 --> 00:13:45,279
-– Five minutes. In five minutes. All
+– In five minutes. All
 
 351
 00:13:45,279 --> 00:13:49,519

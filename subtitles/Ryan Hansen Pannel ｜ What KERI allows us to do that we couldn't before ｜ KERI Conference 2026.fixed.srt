@@ -486,20 +486,19 @@ you're particularly interested in?
 
 122
 00:04:56,880 --> 00:04:58,639
-And how have they what solutions
+What solutions
 
 123
 00:04:58,639 --> 00:05:00,320
-and how have they what solutions
 have you seen attempted and how
 
 124
 00:05:00,320 --> 00:05:01,600
-have they failed
+have they failed?
 
 125
 00:05:01,600 --> 00:05:03,440
-without now let's not get into vendor
+Now let's not get into vendor
 
 126
 00:05:03,440 --> 00:05:05,919
@@ -671,7 +670,6 @@ For me the failures that I have
 
 168
 00:06:46,960 --> 00:06:49,039
-for me the failures that I have
 seen in the decentralized identity space
 
 169
@@ -820,7 +818,6 @@ That's strong words, but I think the
 
 205
 00:08:20,560 --> 00:08:23,039
-that's strong words, but I think the
 whole EU business wallet initiative is
 
 206
@@ -2064,7 +2061,6 @@ Is that's when the value proposition of
 
 515
 00:21:26,400 --> 00:21:28,559
-is that's when the value proposition of
 KERI really comes alive for me at least
 
 516
@@ -2634,7 +2630,6 @@ So that's just a little bug in
 
 656
 00:27:32,240 --> 00:27:34,720
-so that's just a little bug in
 everybody's ear. Let's let's get that in
 
 657
@@ -2945,7 +2940,6 @@ And
 
 733
 00:30:56,640 --> 00:30:59,360
-and
 it's a joy. It's a joy to be in this
 
 734

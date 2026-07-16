@@ -1131,7 +1131,7 @@ want on top of
 
 283
 00:11:32,640 --> 00:11:44,079
-sort of a hole in the wall to service 
+sort of a hole in the wall to service
 
 284
 00:11:44,079 --> 00:11:47,760
@@ -1155,7 +1155,7 @@ KERIA
 
 289
 00:11:56,880 --> 00:11:59,040
-and then you have this (service window, red) 
+and then you have this (service window, red)
 and then you can
 
 290
@@ -1461,7 +1461,6 @@ you know, also in Signify-ts, sorry,
 
 365
 00:14:44,320 --> 00:14:48,160
-
 that either give the structure or raw C.
 
 366
@@ -1980,7 +1979,6 @@ What happens if it crashes?
 
 494
 00:19:25,840 --> 00:19:27,360
-what happens if it crashes?
 Well, if it's in the Docker setup, it
 
 495
@@ -2077,7 +2075,7 @@ They don't have access to our
 
 518
 00:20:10,480 --> 00:20:14,480
-production. 
+production.
 
 519
 00:20:14,504 --> 00:20:19,949
@@ -2162,1840 +2160,1843 @@ Another one is application layer
 reliability.
 
 539
-00:21:12,480 --> 00:21:21,200
+00:21:12,480 --> 00:21:17,396
 I think there's kind of a misconception
-that the escrows in KERIPy are
 
 540
+00:21:17,420 --> 00:21:21,200
+that the escrows in KERIPy are
+
+541
 00:21:21,200 --> 00:21:22,880
 meant to provide application layer
 
-541
+542
 00:21:22,880 --> 00:21:24,720
 reliability, but they're not. They're
 
-542
+543
 00:21:24,720 --> 00:21:27,120
 more they're more so to
 
-543
+544
 00:21:27,120 --> 00:21:31,600
 handle out-of-order processing; okay?
 
-544
+545
 00:21:31,600 --> 00:21:33,919
 In reality, if you want full reliability
 
-545
+546
 00:21:33,919 --> 00:21:36,880
 at the application layer between
 
-546
+547
 00:21:36,880 --> 00:21:39,679
 two wallets, their agents will need to
 
-547
+548
 00:21:39,679 --> 00:21:43,039
 continuously resend information
 
-548
+549
 00:21:43,039 --> 00:21:44,880
 Until they get a acknowledgements
 
-549
+550
 00:21:44,880 --> 00:21:48,480
 back. For example
 
-550
+551
 00:21:48,480 --> 00:21:52,080
 currently if I send an IPEX grant and my
 
-551
+552
 00:21:52,080 --> 00:21:55,280
 KERI sends it to the port of another
 
-552
+553
 00:21:55,280 --> 00:21:59,440
 KERI instance and it's accepted 202
 
-553
-00:21:59,440 --> 00:22:02,720
+554
+00:21:59,440 --> 00:22:00,911
 all that's done is:
+
+555
+00:22:00,935 --> 00:22:02,720
 put it onto the parser.
 
-554
+556
 00:22:02,720 --> 00:22:04,799
 It's not going to give you any
 
-555
+557
 00:22:04,799 --> 00:22:07,760
 feedback if it crashes. The parser is in
 
-556
+558
 00:22:07,760 --> 00:22:10,400
 memory right? So if their KERI instance
 
-557
+559
 00:22:10,400 --> 00:22:12,960
 goes down at that point in time when you
 
-558
+560
 00:22:12,960 --> 00:22:15,440
 just got the 202 back, you have no idea
 
-559
+561
 00:22:15,440 --> 00:22:16,960
 that they didn't parse it at all.
 
-560
+562
 00:22:16,960 --> 00:22:19,440
 They've never seen it essentially. So
 
-561
+563
 00:22:19,440 --> 00:22:21,200
 for application reliability, we need
 
-562
+564
 00:22:21,200 --> 00:22:23,679
 retries on that.
 
-563
-00:22:23,679 --> 00:22:25,520
-So when you're talking about they you
+565
+00:22:23,679 --> 00:22:25,231
+So when you're talking about “they”, you
 
-564
-00:22:25,520 --> 00:22:28,640
-so when you're talking about they you
+566
+00:22:25,256 --> 00:22:28,640
 mean the other controllers agent
 
-565
+567
 00:22:28,640 --> 00:22:30,480
 maybe not even related to your agent
 
-566
+568
 00:22:30,480 --> 00:22:33,679
 other than it's on the same KERIA. So,
 
-567
+569
 00:22:33,679 --> 00:22:36,000
 I was experiencing the need for
 
-568
+570
 00:22:36,000 --> 00:22:37,919
 retries that I didn't understand because
 
-569
+571
 00:22:37,919 --> 00:22:41,760
 I have a good network. But it
 
-570
+572
 00:22:41,760 --> 00:22:45,520
 could just so as a defensive programming
 
-571
+573
 00:22:45,520 --> 00:22:47,600
 when you get the 202 or other certain
 
-572
+574
 00:22:47,600 --> 00:22:49,840
 other areas, you need to retry. It's not
 
-573
+575
 00:22:49,840 --> 00:22:52,000
 necessarily a network error.
 
-574
+576
 00:22:52,000 --> 00:22:52,320
 Yeah.
 
-575
+577
 00:22:52,320 --> 00:22:53,600
 Is that what you're saying? It's the
 
-576
+578
 00:22:53,600 --> 00:22:56,000
 KERIA is busy or dropped it.
 
-577
+579
 00:22:56,000 --> 00:23:00,159
 Yeah. I mean, so on the 3902 port, the
 
-578
+580
 00:23:00,159 --> 00:23:03,600
 CESR endpoint of KERIA, it will just
 
-579
+581
 00:23:03,600 --> 00:23:05,840
 take in the CESR stream and put it
 
-580
+582
 00:23:05,840 --> 00:23:08,880
 onto the queue of the parser and give
 
-581
+583
 00:23:08,880 --> 00:23:12,559
 you a 202 back and then parse it. But if
 
-582
+584
 00:23:12,559 --> 00:23:14,400
 it gives you the 202 back and
 
-583
+585
 00:23:14,400 --> 00:23:16,640
 immediately crashes, you've now lost
 
-584
+586
 00:23:16,640 --> 00:23:18,480
 that data.
 
-585
+587
 00:23:18,480 --> 00:23:19,760
 They have no idea that they need to
 
-586
+588
 00:23:19,760 --> 00:23:21,039
 parse something. They can't parse it.
 
-587
+589
 00:23:21,039 --> 00:23:23,840
 It's lost in memory. But the 3902 port
 
-588
+590
 00:23:23,840 --> 00:23:26,320
 isn't used by Signify-ts, right? It's
 
-589
+591
 00:23:26,320 --> 00:23:28,080
 I'm not talking about Signify-ts here.
 
-590
+592
 00:23:28,080 --> 00:23:30,159
 I'm talking about entire KERI here,
 
-591
+593
 00:23:30,159 --> 00:23:35,120
 but agent-to-agent communication. Yeah.
 
-592
+594
 00:23:35,120 --> 00:23:38,559
 but also from Signify clients.
 
-593
+595
 00:23:38,559 --> 00:23:43,600
 can use it if they want to?
 3902 is open.
 
-594
+596
 00:23:43,600 --> 00:23:45,520
 Yeah. But Signify-ts doesn't do anything
 
-595
+597
 00:23:45,520 --> 00:23:47,360
 with it, out-of-the box, right?
 
-596
+598
 00:23:47,360 --> 00:23:50,320
 No, it doesn't out-of-the box. No.
 
-597
+599
 00:23:50,320 --> 00:23:53,840
 But also, if your agent accepts,
 
-598
+600
 00:23:53,840 --> 00:23:56,640
 an IPEX message, it should
 
-599
+601
 00:23:56,640 --> 00:24:00,640
 send it, right?
 
-600
+602
 00:24:00,640 --> 00:24:03,520
 Especially for groups. So, for example,
 
-601
+603
 00:24:03,520 --> 00:24:07,760
-especially for groups. So, for example,
-If you have a group set up
+if you have a group set up
 
-602
+604
 00:24:07,760 --> 00:24:10,640
 based on KERIA and Signify
 
-603
+605
 00:24:10,640 --> 00:24:14,000
 Let's say, the one person proposes an
 
-604
+606
 00:24:14,000 --> 00:24:16,480
 IPX message, sends it to the others, it
 
-605
+607
 00:24:16,480 --> 00:24:19,039
 starts collecting signatures. before it
 
-606
+608
 00:24:19,039 --> 00:24:21,120
 collects enough signatures, it goes
 
-607
+609
 00:24:21,120 --> 00:24:25,039
 down, comes back up, receives the other
 
-608
+610
 00:24:25,039 --> 00:24:27,279
 signatures, nothing happens. It doesn't
 
-609
+611
 00:24:27,279 --> 00:24:29,600
 send it to the other person. Because the
 
-610
+612
 00:24:29,600 --> 00:24:32,159
 granter deck is in memory, the queue.
 
-611
+613
 00:24:32,159 --> 00:24:35,360
 So, it's lost it. And the lead of the
 
-612
+614
 00:24:35,360 --> 00:24:37,279
 group currently is the one that sends.
 
-613
+615
 00:24:37,279 --> 00:24:39,600
 So, a lot of the in-memory decks that we
 
-614
+616
 00:24:39,600 --> 00:24:42,159
 use for cues in KERI need to be made
 
-615
+617
 00:24:42,159 --> 00:24:45,039
 durable. So
 
-616
+618
 00:24:45,039 --> 00:24:47,039
 Is there an issue? If there's not an
 
-617
+619
 00:24:47,039 --> 00:24:48,159
 issue with that, I'm going to make that
 
-618
+620
 00:24:48,159 --> 00:24:49,039
 one right now. That's
 
-619
+621
 00:24:49,039 --> 00:24:51,120
 Yeah, that's bad. That one
 
-620
+622
 00:24:51,120 --> 00:24:52,799
 that one's bad, actually. That needs to
 
-621
+623
 00:24:52,799 --> 00:24:55,919
 be fixed soon. But you don't see
 
-622
+624
 00:24:55,919 --> 00:24:57,840
 these in your normal setups like
 
-623
+625
 00:24:57,840 --> 00:25:00,159
 because it's just "happy paths,"
 
-624
+626
 00:25:00,159 --> 00:25:01,200
 everything just works. Everyone clicks
 
-625
+627
 00:25:01,200 --> 00:25:02,960
 at the same time.
 
-626
+628
 00:25:02,960 --> 00:25:03,760
 It's all good.
 
-627
+629
 00:25:03,760 --> 00:25:05,440
 Yeah.
 
-628
+630
 00:25:05,440 --> 00:25:07,360
 And it'd be nice to have some more
 
-629
+631
 00:25:07,360 --> 00:25:08,799
 feedback on the async stuff because
 
-630
+632
 00:25:08,799 --> 00:25:11,760
 everything in KERI is async. So,
 
-631
+633
 00:25:11,760 --> 00:25:14,240
 if we have better ways of receiving
 
-632
+634
 00:25:14,240 --> 00:25:17,760
 results that are more rich on what's
 
-633
+635
 00:25:17,760 --> 00:25:20,159
 happening, that would be useful. But
 
-634
+636
 00:25:20,159 --> 00:25:22,159
 that's a bit open-ended.
 
-635
+637
 00:25:22,159 --> 00:25:23,440
 I mean, if you already have a plan to
 
-636
+638
 00:25:23,440 --> 00:25:24,799
 put these into issues, I don't want to
 
-637
+639
 00:25:24,799 --> 00:25:27,760
 duplicate it. But is there
 
-638
+640
 00:25:27,760 --> 00:25:29,039
 a plan to currently make an
 
-639
+641
 00:25:29,039 --> 00:25:30,080
 (GitHub, red) Issue on that because if there's not,
 
-640
+642
 00:25:30,080 --> 00:25:31,600
 I'll capture it immediately.
 
-641
+643
 00:25:31,600 --> 00:25:34,320
 I have a joint (GitHub, red) Discussion but I don't
 
-642
+644
 00:25:34,320 --> 00:25:35,760
 know if it has everything from this. It
 
-643
+645
 00:25:35,760 --> 00:25:37,919
 was written a while ago. It's either
 
-644
+646
 00:25:37,919 --> 00:25:42,960
 in Signify-ts or KERIA (GitHub repos, red).
 
-645
+647
 00:25:42,960 --> 00:25:48,080
 that's some information from Sam on
 application layer reliability.
 
-646
+648
 00:25:48,080 --> 00:25:49,919
 If you want to read it, it's him saying
 
-647
+649
 00:25:49,919 --> 00:25:52,320
 that KERIPy is not going to provide
 
-648
+650
 00:25:52,320 --> 00:25:59,350
 this essentially.
 
-649
+651
 00:26:01,830 --> 00:26:04,159
 What is him saying again?
 About achieving application layer
 
-650
+652
 00:26:04,159 --> 00:26:06,000
 reliability end to end.
 
-651
+653
 00:26:06,000 --> 00:26:08,640
 Okay, cool. And the need for retries and
 
-652
+654
 00:26:08,640 --> 00:26:13,750
 idempotency, so forth.
 
-653
+655
 00:26:15,510 --> 00:26:23,190
 Cool.
 Finally, well, not finally.
 
-654
+656
 00:26:25,830 --> 00:26:27,120
 so
 especially when you're using group
 
-655
+657
 00:26:27,120 --> 00:26:29,760
 multisig, and if you're doing something
 
-656
+658
 00:26:29,760 --> 00:26:31,600
 wrong, it can be quite hard to
 
-657
+659
 00:26:31,600 --> 00:26:33,760
 understand what you're doing wrong
 
-658
+660
 00:26:33,760 --> 00:26:36,080
 because it's a multi-agent setup. All
 
-659
+661
 00:26:36,080 --> 00:26:38,480
 your logs are intertwined. There's no
 
-660
+662
 00:26:38,480 --> 00:26:40,320
 way to filter on the logs. And even if
 
-661
+663
 00:26:40,320 --> 00:26:41,760
 there was a way to filter on the logs
 
-662
+664
 00:26:41,760 --> 00:26:44,400
 per agent there's still too many
 
-663
+665
 00:26:44,400 --> 00:26:45,919
 logs. There's no way to filter on the
 
-664
+666
 00:26:45,919 --> 00:26:49,039
 action you were trying to do. And
 
-665
+667
 00:26:49,039 --> 00:26:52,240
 data again, everything's based on HIO.
 
-666
+668
 00:26:52,240 --> 00:26:54,480
 Everything's async, everything's moving
 
-667
+669
 00:26:54,480 --> 00:26:57,039
 various ways with little
 
-668
+670
 00:26:57,039 --> 00:27:00,320
 observability. It's again fine,
 
-669
+671
 00:27:00,320 --> 00:27:01,760
 once you've developed it's fine,
 
-670
+672
 00:27:01,760 --> 00:27:04,159
 but sometimes it can be very
 
-671
+673
 00:27:04,159 --> 00:27:05,600
 difficult to add new features to KERI
 
-672
+674
 00:27:05,600 --> 00:27:07,919
 and try and figure out where the data is
 
-673
+675
 00:27:07,919 --> 00:27:09,279
 actually moving and what's actually
 
-674
+676
 00:27:09,279 --> 00:27:11,600
 wrong and why it isn't completing and
 
-675
+677
 00:27:11,600 --> 00:27:12,480
 so forth.
 
-676
+678
 00:27:12,480 --> 00:27:14,159
 Should the KERI requests have a
 
-677
+679
 00:27:14,159 --> 00:27:15,919
 request ID added to them?
 
-678
+680
 00:27:15,919 --> 00:27:18,080
 Probably. Yeah. But it'll need
 
-679
+681
 00:27:18,080 --> 00:27:21,200
 some work with KERIPy as well
 
-680
+682
 00:27:21,200 --> 00:27:24,480
 because most of the complex logic of
 
-681
+683
 00:27:24,480 --> 00:27:26,720
 KERIA is KERIpy. It's a direct
 
-682
+684
 00:27:26,720 --> 00:27:28,799
 dependency. It gets pushed onto KERIPy.
 
-683
+685
 00:27:28,799 --> 00:27:30,960
 So I need to do some work
 
-684
+686
 00:27:30,960 --> 00:27:34,480
 there. So yeah, some instrumentation
 
-685
+687
 00:27:34,480 --> 00:27:37,279
-would be useful at that. 
+would be useful at that.
 
-686
+688
 00:27:37,279 --> 00:27:39,120
 You see you go through the
 
-687
+689
 00:27:39,120 --> 00:27:40,320
 logs and you're just trying to figure
 
-688
+690
 00:27:40,320 --> 00:27:41,679
 out what's going on, because you've put
 
-689
+691
 00:27:41,679 --> 00:27:44,400
 the wrong ID somewhere and it's ...,
 
-690
+692
 00:27:44,400 --> 00:27:46,799
-You can see Kent added some 
+You can see Kent added some
 
-691
+693
 00:27:46,799 --> 00:27:48,880
 stuff here. But we probably need
 
-692
+694
 00:27:48,880 --> 00:27:50,400
 to go a bit further so we can actually
 
-693
+695
 00:27:50,400 --> 00:27:53,039
 filter on IDs of agents and so forth.
 
-694
+696
 00:27:53,039 --> 00:27:54,559
 A structured log.
 
-695
+697
 00:27:54,559 --> 00:27:55,120
 Yeah.
 
-696
+698
 00:27:55,120 --> 00:27:56,720
 Request ID or client ID.
 
-697
+699
 00:27:56,720 --> 00:28:00,149
 Yeah.
 
-698
+700
 00:28:05,110 --> 00:28:06,720
 I'll do this one quite quickly.
 Yeah, probably KERI and Signify should
 
-699
+701
 00:28:06,720 --> 00:28:07,840
 have some semantic versioning because
 
-700
+702
 00:28:07,840 --> 00:28:10,799
 it's an API. And I think you raised
 
-701
+703
 00:28:10,799 --> 00:28:13,120
-issues on this. There should be 
+issues on this. There should be
 
-702
+704
 00:28:13,120 --> 00:28:15,120
 compatibility enforcements between them.
 
-703
+705
 00:28:15,120 --> 00:28:17,840
 I don't think this is big issue now,
 
-704
+706
 00:28:17,840 --> 00:28:20,000
 but in as you move towards
 
-705
+707
 00:28:20,000 --> 00:28:21,760
 being a more mature ecosystem and
 
-706
+708
 00:28:21,760 --> 00:28:23,760
 getting more developers in, it'll become
 
-707
+709
 00:28:23,760 --> 00:28:28,159
 more relevant. Also versioning.
 
-708
+710
 00:28:28,159 --> 00:28:30,000
 Right now you have to version on the
 
-709
+711
 00:28:30,000 --> 00:28:34,080
 KLI per agent and iterate over them. So
 
-710
+712
 00:28:34,080 --> 00:28:36,080
 there needs to be a migration framework
 
-711
+713
 00:28:36,080 --> 00:28:38,559
 in place. We've been avoiding this
 
-712
+714
 00:28:38,559 --> 00:28:39,679
 for ages because there hasn't been
 
-713
+715
 00:28:39,679 --> 00:28:42,640
 migrations, essentially, but when there is
 
-714
+716
 00:28:42,640 --> 00:28:43,679
 in production it would be
 
-715
+717
 00:28:43,679 --> 00:28:49,840
 problematic. So that's resilience.
 
-716
+718
 00:28:49,840 --> 00:28:54,950
 And again these are
 
-717
+719
 00:28:56,950 --> 00:28:57,662
 traditional software problems
 
-718
+720
 00:28:57,686 --> 00:28:58,399
 Just put some resources in
 
-719
+721
 00:28:58,399 --> 00:29:00,640
 and it'll make it a more mature app
 
-720
+722
 00:29:00,640 --> 00:29:02,159
 It's not a protocol thing. These are
 
-721
+723
 00:29:02,159 --> 00:29:05,760
 all very achievable.
 
-722
+724
 00:29:05,760 --> 00:29:08,320
 Finally on Scalability
 
-723
+725
 00:29:08,320 --> 00:29:11,120
 And this one is also a kind of
 
-724
+726
 00:29:11,120 --> 00:29:14,720
 developer experience
 
-725
+727
 00:29:14,720 --> 00:29:16,960
 I mentioned earlier that because a lot
 
-726
+728
 00:29:16,960 --> 00:29:19,919
 of the things are async, you need to
 
-727
+729
 00:29:19,919 --> 00:29:22,240
 submit like create an identifier, create
 
-728
+730
 00:29:22,240 --> 00:29:23,919
 a registry, issue a credential and you
 
-729
+731
 00:29:23,919 --> 00:29:26,159
 get an operation back.
 
-730
+732
 00:29:26,159 --> 00:29:28,320
 And then you need to pull on that
 
-731
+733
 00:29:28,320 --> 00:29:30,080
 status of the operation until it's done
 
-732
+734
 00:29:30,080 --> 00:29:31,440
 while it's waiting to collect signatures
 
-733
+735
 00:29:31,440 --> 00:29:35,600
 and so forth. That's kind of a pain.
 
-734
+736
 00:29:35,600 --> 00:29:38,240
 Typ modern systems are usually
 
-735
+737
 00:29:38,240 --> 00:29:40,720
 event driven. Where you would get
 
-736
+738
 00:29:40,720 --> 00:29:42,880
 some notification that it has completed
 
-737
+739
 00:29:42,880 --> 00:29:46,559
 rather than constantly checking.
 
-738
+740
 00:29:46,559 --> 00:29:47,919
 The same goes for notifications. You
 
-739
+741
 00:29:47,919 --> 00:29:49,279
 have to constantly check if there's new
 
-740
+742
 00:29:49,279 --> 00:29:52,720
 new notifications.
 
-741
+743
 00:29:52,720 --> 00:29:54,320
 You know in any general application like
 
-742
+744
 00:29:54,320 --> 00:29:55,360
 a wallet, it's going to have to
 
-743
+745
 00:29:55,360 --> 00:29:57,520
 constantly check because it doesn't know
 
-744
+746
 00:29:57,520 --> 00:29:59,760
 when to expect that you're receiving a
 
-745
+747
 00:29:59,760 --> 00:30:00,240
 credential.
 
-746
+748
 00:30:00,240 --> 00:30:01,840
 Single-threaded environment, it could
 
-747
+749
 00:30:01,840 --> 00:30:04,080
 completely
 
-748
+750
 00:30:04,080 --> 00:30:05,760
 block the rest of the application.
 
-749
+751
 00:30:05,760 --> 00:30:08,320
-Yeah. 
+Yeah.
 
-750
+752
 00:30:08,320 --> 00:30:10,399
 We've made event driven in our
 
-751
+753
 00:30:10,399 --> 00:30:11,760
 wallet in every application we've built
 
-752
+754
 00:30:11,760 --> 00:30:13,200
 because we've just put it in a corner in
 
-753
+755
 00:30:13,200 --> 00:30:16,240
 the box and made it event driven from
 
-754
+756
 00:30:16,240 --> 00:30:17,679
 the perspective of the rest of our
 
-755
+757
 00:30:17,679 --> 00:30:19,440
 application. But it's kind of annoying
 
-756
+758
 00:30:19,440 --> 00:30:20,720
 to have to build that every single time.
 
-757
+759
 00:30:20,720 --> 00:30:21,200
 But
 
-758
+760
 00:30:21,200 --> 00:30:24,320
 this is very doable, if we were to
 
-759
+761
 00:30:24,320 --> 00:30:26,880
 take the query reply
 
-760
+762
 00:30:26,880 --> 00:30:29,120
 approach of just using the
 
-761
+763
 00:30:29,120 --> 00:30:32,559
 the WSGI response stream, we could open
 
-762
+764
 00:30:32,559 --> 00:30:34,880
 up the server ... connection per
 
-763
+765
 00:30:34,880 --> 00:30:36,080
 agent. Yep.
 
-764
+766
 00:30:36,080 --> 00:30:39,919
 To Signify and do this today.
 
-765
+767
 00:30:39,919 --> 00:30:43,600
 I might try that over the weekend.
 
-766
+768
 00:30:43,600 --> 00:30:45,679
 Huh?
 
-767
+769
 00:30:45,679 --> 00:30:46,480
 No.
 
-768
+770
 00:30:46,480 --> 00:30:50,149
 Tell me about it.
 
-769
+771
 00:30:52,310 --> 00:30:54,799
-Before I get to that. 
+Before I get to that.
 The reason I put this in scalability is
 
-770
+772
 00:30:54,799 --> 00:30:56,799
 because right now you have 10,000
 
-771
+773
 00:30:56,799 --> 00:30:59,200
 wallets using one KERI instance and
 
-772
+774
 00:30:59,200 --> 00:31:01,279
 they have 25 pending operations that
 
-773
+775
 00:31:01,279 --> 00:31:03,679
 they're pulling, pulling, pulling. These
 
-774
+776
 00:31:03,679 --> 00:31:06,799
 are all full HTTP requests. It's way too
 
-775
+777
 00:31:06,799 --> 00:31:11,440
 much traffic hitting KERIA.
 
-776
+778
 00:31:11,440 --> 00:31:15,360
 It won't work. So moving to something
 
-777
+779
 00:31:15,360 --> 00:31:17,440
 like Server Sent Events
 
-778
+780
 00:31:17,440 --> 00:31:18,799
 is much better from a developer
 
-779
+781
 00:31:18,799 --> 00:31:20,880
 experience, but it's also much better
 
-780
+782
 00:31:20,880 --> 00:31:24,880
 from a load experience. And
 
-781
+783
 00:31:24,880 --> 00:31:26,720
 it isn't, ..., I've never
 
-782
+784
 00:31:26,720 --> 00:31:27,840
 implemented them, so I don't know what
 
-783
+785
 00:31:27,840 --> 00:31:30,000
 it's like, but for notifications, it
 
-784
+786
 00:31:30,000 --> 00:31:32,080
 wouldn't be too difficult because it's
 
-785
+787
 00:31:32,080 --> 00:31:34,000
 just the next notification coming out on
 
-786
+788
 00:31:34,000 --> 00:31:36,880
 the event. It's more problematic for
 
-787
+789
 00:31:36,880 --> 00:31:39,519
 operations. I explain that in a moment.
 
-788
+790
 00:31:39,519 --> 00:31:42,080
 I also Server Sent Events are true
 
-789
+791
 00:31:42,080 --> 00:31:44,320
 HTTP, so they're compatible with load
 
-790
+792
 00:31:44,320 --> 00:31:46,080
 balancers. So if you start to do
 
-791
+793
 00:31:46,080 --> 00:31:47,600
 horizontal scaling and so forth, they're
 
-792
+794
 00:31:47,600 --> 00:31:50,159
 compatible, which is why Sam likes them
 
-793
+795
 00:31:50,159 --> 00:31:51,760
 over or would prefer that over
 
-794
+796
 00:31:51,760 --> 00:31:58,070
 websockets because that isn't pure HTTP.
 
-795
+797
 00:31:59,830 --> 00:32:02,300
 Now the problem for integrating
 with operations is currently
 
-796
+798
 00:32:02,324 --> 00:32:07,657
 when you perform an action that requires
 
-797
+799
 00:32:07,681 --> 00:32:09,889
 a long run operation to track that
 
-798
+800
 00:32:09,919 --> 00:32:13,120
 state of the operation.
 
-799
+801
 00:32:13,120 --> 00:32:16,000
 It just stores the related sets and
 
-800
+802
 00:32:16,000 --> 00:32:18,080
 metadata that refer to that operation.
 
-801
+803
 00:32:18,080 --> 00:32:20,159
 It doesn't have a status of pending or
 
-802
+804
 00:32:20,159 --> 00:32:22,799
 failed or anything like that.
 
-803
+805
 00:32:22,799 --> 00:32:24,559
 And when you use Signify to check that
 
-804
+806
 00:32:24,559 --> 00:32:26,080
 status of pending or failed, it's not
 
-805
+807
 00:32:26,080 --> 00:32:27,200
 stored in the database. That's what I
 
-806
+808
 00:32:27,200 --> 00:32:29,279
 mean. It doesn't flip in the database
 
-807
+809
 00:32:29,279 --> 00:32:31,760
 from pending to complete
 
-808
+810
 00:32:31,760 --> 00:32:35,039
 actually if you look at longridden.py
 
-809
+811
 00:32:35,039 --> 00:32:38,080
 in KERI, it takes all of those sets
 
-810
+812
 00:32:38,080 --> 00:32:40,720
 and compares it against the database of
 
-811
+813
 00:32:40,720 --> 00:32:42,720
 the agent to see if it's effectively
 
-812
+814
 00:32:42,720 --> 00:32:46,399
 complete. Okay, so it's not checking is
 
-813
+815
 00:32:46,399 --> 00:32:48,000
 this operation complete in the database.
 
-814
+816
 00:32:48,000 --> 00:32:50,240
 check in based on this operations
 
-815
+817
 00:32:50,240 --> 00:32:53,279
 metadata are all the signatures in place
 
-816
+818
 00:32:53,279 --> 00:32:55,440
 for this to be considered complete for
 
-817
+819
 00:32:55,440 --> 00:32:57,679
 example you can see here for the
 
-818
+820
 00:32:57,679 --> 00:33:00,559
 delegations using the swancomplete
 
-819
+821
 00:33:00,559 --> 00:33:03,279
 every time you check
 
-820
+822
 00:33:03,279 --> 00:33:05,039
 yeah basically like a diff on the
 
-821
+823
 00:33:05,039 --> 00:33:06,480
 database
 
-822
+824
 00:33:06,480 --> 00:33:08,480
 yeah so this has been quite a mental
 
-823
+825
 00:33:08,480 --> 00:33:10,720
 challenge for me for like two years with
 
-824
+826
 00:33:10,720 --> 00:33:13,760
 KERI is the notion that the concept of
 
-825
+827
 00:33:13,760 --> 00:33:16,559
 state and state modeling is missing
 
-826
+828
 00:33:16,559 --> 00:33:18,000
 and that's intentional
 
-827
+829
 00:33:18,000 --> 00:33:22,559
 I think from Sam
 
-828
+830
 00:33:22,559 --> 00:33:25,600
 IPEX for example, right, is ..
 
-829
+831
 00:33:25,600 --> 00:33:28,240
 I tried to get a state
 
-830
+832
 00:33:28,240 --> 00:33:31,200
 machine diagram of all the possible
 
-831
+833
 00:33:31,200 --> 00:33:33,919
 state transitions and IPEX of Spurn,
 
-832
+834
 00:33:33,919 --> 00:33:36,480
 Grant, Accept, and all that and
 
-833
+835
 00:33:36,480 --> 00:33:38,960
 I had a challenge getting to the
 
-834
+836
 00:33:38,960 --> 00:33:41,279
 precision but this is similar: You're
 
-835
+837
 00:33:41,279 --> 00:33:44,399
 wanting to question the state of an
 
-836
+838
 00:33:44,399 --> 00:33:46,320
 operation and it has to be derived and
 
-837
+839
 00:33:46,320 --> 00:33:48,480
 has to be requeried to compute the state.
 
-838
+840
 00:33:48,480 --> 00:33:51,440
 That is what I think I heard you say.
 
-839
+841
 00:33:51,440 --> 00:33:51,840
 Yeah.
 
-840
+842
 00:33:51,840 --> 00:33:54,240
 ...of an operation, right? So it'd be
 
-841
+843
 00:33:54,240 --> 00:33:56,000
 nice just to get the state back
 
-842
+844
 00:33:56,000 --> 00:33:58,880
 from KERIA like 'Oh, it's in Pending'.
 
-843
+845
 00:33:58,880 --> 00:34:00,240
 Yeah. So basically while currently
 
-844
+846
 00:34:00,240 --> 00:34:01,760
 we can't do event driven with
 
-845
+847
 00:34:01,760 --> 00:34:03,360
 Server Sent Events.
 
-846
+848
 00:34:03,360 --> 00:34:04,960
 To date?
 
-847
+849
 00:34:04,960 --> 00:34:06,640
 Because it's you're checking against the
 
-848
+850
 00:34:06,640 --> 00:34:09,520
 database state. Okay. So instead of
 
-849
+851
 00:34:09,520 --> 00:34:13,440
 checking the database state or the diff
 
-850
+852
 00:34:13,440 --> 00:34:15,040
 when this completes for the first time
 
-851
+853
 00:34:15,040 --> 00:34:17,200
 inside KERIPy, it needs to emit an
 
-852
+854
 00:34:17,200 --> 00:34:19,359
 event that gets sent on server the
 
-853
+855
 00:34:19,359 --> 00:34:21,440
 Server Sent Event
 
-854
+856
 00:34:21,440 --> 00:34:22,000
 thread.
 
-855
+857
 00:34:22,000 --> 00:34:23,760
 Okay. Because I'm thinking what we could
 
-856
+858
 00:34:23,760 --> 00:34:27,200
 do for each operation type is that there
 
-857
+859
 00:34:27,200 --> 00:34:28,800
 could be there's already a
 
-858
+860
 00:34:28,800 --> 00:34:30,879
 server event connection from the agent
 
-859
+861
 00:34:30,879 --> 00:34:32,720
 to the Signify client. It would
 
-860
+862
 00:34:32,720 --> 00:34:33,919
 essentially just be a channel to
 
-861
+863
 00:34:33,919 --> 00:34:35,599
 communicate. I'm thinking on completion
 
-862
+864
 00:34:35,599 --> 00:34:36,879
 it would just send a completion.
 
-863
+865
 00:34:36,879 --> 00:34:39,440
 Yeah. But there is no completion of an
 
-864
+866
 00:34:39,440 --> 00:34:42,960
 operation in KERIA. It's a state check.
 
-865
+867
 00:34:42,960 --> 00:34:46,000
 It tells you it's effectively complete.
 
-866
+868
 00:34:46,000 --> 00:34:47,679
 There's no point where it's in the
 
-867
+869
 00:34:47,679 --> 00:34:48,639
 database. So
 
-868
+870
 00:34:48,639 --> 00:34:49,359
 it's inferred
 
-869
+871
 00:34:49,359 --> 00:34:51,040
 Yeah, it's inferred. So if you
 
-870
+872
 00:34:51,040 --> 00:34:53,679
 never ever connect it again,
 
-871
+873
 00:34:53,679 --> 00:34:55,919
 nothing changes on the database to say
 
-872
+874
 00:34:55,919 --> 00:34:57,440
 it's complete. It's just you coming back
 
-873
+875
 00:34:57,440 --> 00:35:00,400
 later and saying this is the status.
 
-874
+876
 00:35:00,400 --> 00:35:02,320
 Okay. So because there's no point at
 
-875
+877
 00:35:02,320 --> 00:35:04,800
 which that happens
 
-876
+878
 00:35:04,800 --> 00:35:06,320
 This is a problem all the
 
-877
+879
 00:35:06,320 --> 00:35:06,800
 time, right?
 
-878
+880
 00:35:06,800 --> 00:35:08,400
 So essentially
 
-879
+881
 00:35:08,400 --> 00:35:10,800
 we need to store the completed state, not
 
-880
+882
 00:35:10,800 --> 00:35:11,680
 just derive it.
 
-881
+883
 00:35:11,680 --> 00:35:13,760
 Yeah, All of this happens
 
-882
+884
 00:35:13,760 --> 00:35:16,320
 in KERIPy so KERIPy needs to tell us
 
-883
+885
 00:35:16,320 --> 00:35:18,640
 because this is a KERIA thing
 
-884
+886
 00:35:18,640 --> 00:35:20,079
 operations aren't in KERIPy
 
-885
+887
 00:35:20,079 --> 00:35:22,480
 locally in KERI per agent so because
 
-886
+888
 00:35:22,480 --> 00:35:24,320
 once we derive it once even though we're
 
-887
+889
 00:35:24,320 --> 00:35:24,960
 reading it
 
-888
+890
 00:35:24,960 --> 00:35:26,480
 yeah but what triggers to derive it
 
-889
+891
 00:35:26,480 --> 00:35:28,160
 otherw then you're going to move the
 
-890
+892
 00:35:28,160 --> 00:35:29,680
 polling inside internally
 
-891
+893
 00:35:29,680 --> 00:35:31,119
 what triggers What
 
-892
+894
 00:35:31,119 --> 00:35:34,880
 what triggers 'Check and it's complete.'
 
-893
+895
 00:35:34,880 --> 00:35:35,760
 in KERIA.
 
-894
+896
 00:35:35,760 --> 00:35:37,040
 So this is where I think what we should
 
-895
+897
 00:35:37,040 --> 00:35:39,599
 do when we have an operation
 
-896
+898
 00:35:39,599 --> 00:35:42,000
 There should be a Doer for each
 
-897
+899
 00:35:42,000 --> 00:35:43,280
 operation
 
-898
+900
 00:35:43,280 --> 00:35:46,240
 once it completes at the end before that
 
-899
+901
 00:35:46,240 --> 00:35:47,680
 Doer finishes it should write the
 
-900
+902
 00:35:47,680 --> 00:35:48,480
 complete state.
 
-901
+903
 00:35:48,480 --> 00:35:50,079
 Yeah. But now you've just
 
-902
+904
 00:35:50,079 --> 00:35:53,280
 moved all of the polling internal to KERIA
 
-903
+905
 00:35:53,280 --> 00:35:57,680
 and you'd have so many doers for 10,000
 
-904
+906
 00:35:57,680 --> 00:36:00,480
 Signified clients. So it would
 
-905
+907
 00:36:00,480 --> 00:36:03,760
 be a lot better if internally in KERIPy
 
-906
+908
 00:36:03,760 --> 00:36:05,520
 It could just let us know when it's
 
-907
+909
 00:36:05,520 --> 00:36:08,320
 effectively completed
 
-908
+910
 00:36:08,320 --> 00:36:09,839
 because there's already something inside
 
-909
+911
 00:36:09,839 --> 00:36:11,760
 KERIPy tracking this I would say. So
 
-910
+912
 00:36:11,760 --> 00:36:14,800
 then it can admit that event or whatever
 
-911
+913
 00:36:14,800 --> 00:36:17,520
 and we can capture it and update our
 
-912
+914
 00:36:17,520 --> 00:36:19,920
 operation in the database and send the
 
-913
+915
 00:36:19,920 --> 00:36:21,200
 event back and Server Sent Events.
 
-914
+916
 00:36:21,200 --> 00:36:22,560
 Yeah, I think we're slightly talking
 
-915
+917
 00:36:22,560 --> 00:36:23,920
 past each other but I think I get what
 
-916
+918
 00:36:23,920 --> 00:36:25,520
 you're saying. I think fundamentally
 
-917
+919
 00:36:25,520 --> 00:36:27,520
 when an important event happens in KERIPy,
 
-918
+920
 00:36:27,520 --> 00:36:29,359
 it should be admitted saying "this and this
 
-919
+921
 00:36:29,359 --> 00:36:30,800
 happened."
 
-920
+922
 00:36:30,800 --> 00:36:32,480
 Yeah.
 
-921
+923
 00:36:32,480 --> 00:36:33,920
 Rather than having new Doers that are
 
-922
+924
 00:36:33,920 --> 00:36:37,040
 also tracking it again.
 
-923
+925
 00:36:37,040 --> 00:36:38,640
 Cool, just one more slide. So it's
 
-924
+926
 00:36:38,640 --> 00:36:39,520
 actually good.
 
-925
+927
 00:36:39,520 --> 00:36:44,079
 No, actually one; so not too bad.
 
-926
+928
 00:36:44,079 --> 00:36:46,640
 Yeah, and horizontal scaling.
 
-927
+929
 00:36:46,640 --> 00:36:49,200
 People have asked about this before
 
-928
+930
 00:36:49,200 --> 00:36:50,560
 I would put this on the lowest priority.
 
-929
+931
 00:36:50,560 --> 00:36:52,079
 because other things just need to be
 
-930
+932
 00:36:52,079 --> 00:36:54,720
 fixed first to get adoption. But for
 
-931
+933
 00:36:54,720 --> 00:36:57,359
 SEDI it would be important.
 
-932
+934
 00:36:57,359 --> 00:36:59,599
 Okay, right now you could do something
 
-933
+935
 00:36:59,599 --> 00:37:00,960
 like sticky sessions. It would be a very
 
-934
+936
 00:37:00,960 --> 00:37:04,720
 naive approach. Where you
 
-935
+937
 00:37:04,720 --> 00:37:06,880
 deploy 10 different KERIAs and you
 
-936
+938
 00:37:06,880 --> 00:37:10,320
 have a load balancer and once a
 
-937
+939
 00:37:10,320 --> 00:37:12,480
 client connects and gets routed to a
 
-938
+940
 00:37:12,480 --> 00:37:13,839
 KERIA instance they always have to go
 
-939
+941
 00:37:13,839 --> 00:37:15,359
 there, forever. That's like a sticky
 
-940
+942
 00:37:15,359 --> 00:37:17,599
 session. It would work now, but it
 
-941
+943
 00:37:17,599 --> 00:37:20,880
 wouldn't be great.
 
-942
+944
 00:37:20,880 --> 00:37:23,520
 To do true horizontal scale, I think KERI is
 
-943
+945
 00:37:23,520 --> 00:37:26,160
 actually already quite suited to it.
 
-944
+946
 00:37:26,160 --> 00:37:27,920
 Because all the databases of agents are
 
-945
+947
 00:37:27,920 --> 00:37:31,200
 fully isolated and no agents are shared.
 
-946
+948
 00:37:31,200 --> 00:37:34,400
 They're just a bunch of LMDB files.
 
-947
+949
 00:37:34,400 --> 00:37:39,270
 So if you had to ... (reformulates, red)
 
-948
+950
 00:37:40,950 --> 00:37:42,262
 The easiest thing you could do is have a
 
-949
+951
 00:37:42,286 --> 00:37:43,599
 shared volume in your cloud deployment
 
-950
+952
 00:37:43,599 --> 00:37:45,760
 that all of the instances can access and
 
-951
+953
 00:37:45,760 --> 00:37:47,599
 they would just go to the specific LMDB
 
-952
+954
 00:37:47,599 --> 00:37:49,520
 files that they're currently
 
-953
+955
 00:37:49,520 --> 00:37:52,000
 serving. And if it's done correctly
 
-954
+956
 00:37:52,000 --> 00:37:53,760
 they won't try to access the same LMDB
 
-955
+957
 00:37:53,760 --> 00:37:55,119
 file of someone else and you could have
 
-956
+958
 00:37:55,119 --> 00:37:58,880
 the agency coordinate that. If you
 
-957
+959
 00:37:58,880 --> 00:38:01,280
 wanted more isolation, I guess you could
 
-958
+960
 00:38:01,280 --> 00:38:02,720
 separate the volumes, but I think that
 
-959
+961
 00:38:02,720 --> 00:38:05,040
 would be
 
-960
+962
 00:38:05,040 --> 00:38:11,190
 a little bit complex, not necessary.
 
-961
+963
 00:38:12,550 --> 00:38:14,160
 You'd be moving data across
 volumes. I don't like that for now.
 
-962
+964
 00:38:14,160 --> 00:38:16,560
 At least I don't think it's necessary.
 
-963
+965
 00:38:16,560 --> 00:38:20,320
 Unless there's a
 
-964
+966
 00:38:20,320 --> 00:38:24,000
 legal constraint on data or something.
 
-965
+967
 00:38:24,000 --> 00:38:26,000
 And yeah, the agency can become the
 
-966
+968
 00:38:26,000 --> 00:38:28,320
 load balancer, like it currently is
 
-967
+969
 00:38:28,320 --> 00:38:29,920
 basically for the message router in
 
-968
+970
 00:38:29,920 --> 00:38:31,760
 KERIA. But instead it would
 
-969
+971
 00:38:31,760 --> 00:38:33,760
 actually be outside
 
-970
+972
 00:38:33,760 --> 00:38:38,400
 KERIA and route into a more
 
-971
+973
 00:38:38,400 --> 00:38:40,160
 light-weight KERIA. So you kind of
 
-972
+974
 00:38:40,160 --> 00:38:45,119
 decouple it a bit; be different services
 
-973
+975
 00:38:45,119 --> 00:38:46,707
 I think that's more down the line.
 
-974
+976
 00:38:46,731 --> 00:38:48,320
 So that's why developer experience
 
-975
+977
 00:38:48,320 --> 00:38:50,240
 and operational resilience are highest
 
-976
+978
 00:38:50,240 --> 00:38:58,710
 priority, I think. Yeah, Done!
 
-977
+979
 00:38:59,589 --> 00:39:00,409
 What's this up there?
 
-978
+980
 00:39:00,433 --> 00:39:03,760
 That's the file system. So,
 
-979
+981
 00:39:03,760 --> 00:39:05,920
 The agency database is an LMDB
 
-980
+982
 00:39:05,920 --> 00:39:08,960
 database. You can see that there was two
 
-981
+983
 00:39:08,960 --> 00:39:12,880
-
 new agents booted. There are the config
 
-982
+984
 00:39:12,880 --> 00:39:15,760
 files that get copied in the JSON config
 
-983
+985
 00:39:15,760 --> 00:39:17,920
 files with the OOBIs.
 
-984
+986
 00:39:17,920 --> 00:39:20,720
 And for each
 
-985
+987
 00:39:20,720 --> 00:39:23,680
 agent they have a subdirectory in all
 
-986
+988
 00:39:23,680 --> 00:39:25,280
 of these directories. Like there's the
 
-987
+989
 00:39:25,280 --> 00:39:29,520
 key store, for example.
 
-988
+990
 00:39:29,520 --> 00:39:31,736
 Probably it would be better if you
 
-989
+991
 00:39:31,760 --> 00:39:34,240
 restructure it, so that the agent is at
 
-990
+992
 00:39:34,240 --> 00:39:36,800
 the top level and it has its databases
 
-991
+993
 00:39:36,800 --> 00:39:38,240
 internally so you can more easily take
 
-992
+994
 00:39:38,240 --> 00:39:40,880
 it. But if it was a shared volume
 
-993
+995
 00:39:40,880 --> 00:39:43,680
 across many instances it wouldn't
 
-994
+996
 00:39:43,680 --> 00:39:46,680
 matter.
 

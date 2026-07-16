@@ -656,7 +656,7 @@ So, in KERI an end-to-end and an edge to
 
 165
 00:06:57,600 --> 00:07:01,120
-edge they mean the same thing right?
+edge, they mean the same thing, right?
 
 166
 00:07:01,120 --> 00:07:03,440
@@ -2007,236 +2007,236 @@ do that anymore.
 00:23:11,339 --> 00:23:13,350
 What do I do at that point?
 
-503
+497
 00:23:15,590 --> 00:23:17,919
 The authority to do that still rests in me,
 
-504
+498
 00:23:17,919 --> 00:23:22,159
 the lieutenant. I can go
 
-505
+499
 00:23:22,159 --> 00:23:25,120
 over there and do it or I can
 
-506
+500
 00:23:25,120 --> 00:23:28,400
 authorize whatever it is myself.
 
-507
+501
 00:23:28,400 --> 00:23:31,919
 So, the authority always reverts to me
 
-508
+502
 00:23:31,919 --> 00:23:34,320
 as the higher authority. So what we do
 
-509
+503
 00:23:34,320 --> 00:23:37,360
 is that when a subordinate or a
 
-510
+504
 00:23:37,360 --> 00:23:40,559
 delegate loses authority because we've
 
-511
+505
 00:23:40,559 --> 00:23:44,000
 revoked it, any outstanding issuances
 
-512
+506
 00:23:44,000 --> 00:23:47,200
 that were validly issued that we want to
 
-513
+507
 00:23:47,200 --> 00:23:50,000
 dynamically revoke the revocation now
 
-514
+508
 00:23:50,000 --> 00:23:52,159
 becomes the responsibility of the
 
-515
+509
 00:23:52,159 --> 00:23:54,159
 delegator. It just reverts back to the
 
-516
+510
 00:23:54,159 --> 00:23:56,480
 delegator. And because we have an edge,
 
-517
+511
 00:23:56,480 --> 00:23:58,960
 we know who the delegator is. And so all
 
-518
+512
 00:23:58,960 --> 00:24:00,559
 we have to do is make a policy change
 
-519
+513
 00:24:00,559 --> 00:24:04,799
 that says in this case
 
-520
+514
 00:24:04,799 --> 00:24:09,039
 where I revoked ..,
 
-521
+515
 00:24:09,039 --> 00:24:11,360
 his authority
 
-522
+516
 00:24:11,360 --> 00:24:13,120
 right here.
 
-523
+517
 00:24:13,120 --> 00:24:17,039
 So you see this one
 
-524
+518
 00:24:17,039 --> 00:24:19,440
 over here is issued, I can't revoke
 
-525
+519
 00:24:19,440 --> 00:24:22,159
 because he's been revoked over here in
 
-526
+520
 00:24:22,159 --> 00:24:24,960
 number five. But guess who can revoke
 
-527
+521
 00:24:24,960 --> 00:24:28,960
 it? See the line that comes back here?
 
-528
+522
 00:24:28,960 --> 00:24:31,760
 He can revoke it. And a verifier
 
-529
+523
 00:24:31,760 --> 00:24:34,159
 just needs to know that's
 
-530
+524
 00:24:34,159 --> 00:24:36,799
 the policy.
 
-531
+525
 00:24:36,799 --> 00:24:39,520
 It just looks it up and says, "Oh, okay.
 
-532
+526
 00:24:39,520 --> 00:24:41,919
 The approximate delegate doesn't
 
-533
+527
 00:24:41,919 --> 00:24:43,600
 have authority because it's his
 
-534
+528
 00:24:43,600 --> 00:24:45,039
 authority has been revoked. The chain's
 
-535
+529
 00:24:45,039 --> 00:24:48,559
 broken." But any subsequent actions on
 
-536
+530
 00:24:48,559 --> 00:24:51,200
 that ACDC are still the responsibility
 
-537
+531
 00:24:51,200 --> 00:24:53,600
 of the delegator. And so the delegator
 
-538
+532
 00:24:53,600 --> 00:24:55,360
 can revoke it. So now we can have
 
-539
+533
 00:24:55,360 --> 00:24:58,080
 dynamically revocable credentials and
 
-540
+534
 00:24:58,080 --> 00:25:00,400
 break the chain and still dynamically
 
-541
+535
 00:25:00,400 --> 00:25:07,750
 revoke them. Yeah.
 
-542
+536
 00:25:10,630 --> 00:25:13,520
 Well, well, since there's always edges,
 you can the reversion of authority
 
-543
+537
 00:25:13,520 --> 00:25:14,960
 can go all the way up to the top of the
 
-544
+538
 00:25:14,960 --> 00:25:17,279
 chain. You can break the
 
-545
+539
 00:25:17,279 --> 00:25:19,279
 leak as many times you want and you just
 
-546
+540
 00:25:19,279 --> 00:25:22,000
 keep you just rinse and repeat all you
 
-547
+541
 00:25:22,000 --> 00:25:24,400
 just ascend the chain. So now you have
 
-548
+542
 00:25:24,400 --> 00:25:26,559
 an elegant solution
 
-549
+543
 00:25:26,559 --> 00:25:30,640
 for dynamically revocable delegated
 
-550
+544
 00:25:30,640 --> 00:25:33,120
 credentials all the way down. You can
 
-551
+545
 00:25:33,120 --> 00:25:35,520
 break the chain any number of times and
 
-552
+546
 00:25:35,520 --> 00:25:37,919
 still control those credentials
 
-553
+547
 00:25:37,919 --> 00:25:39,520
 dynamically.
 
-554
+548
 00:25:39,520 --> 00:25:43,840
 So we have solved a really hard problem
 
-555
+549
 00:25:43,840 --> 00:25:47,200
 that in ephemeral authorizations isn't a
 
-556
+550
 00:25:47,200 --> 00:25:49,760
 problem because no authorizations last
 
-557
+551
 00:25:49,760 --> 00:25:52,000
 long enough that you care. But if I'm
 
-558
+552
 00:25:52,000 --> 00:25:55,360
 doing perpetually issued authorizations
 
-559
+553
 00:25:55,360 --> 00:25:58,000
 that last indefinitely unless they're
 
-560
+554
 00:25:58,000 --> 00:26:00,559
 revoked and I'm doing a chain, I need to
 
@@ -3025,7 +3025,6 @@ So it's the event type is the only thing
 
 756
 00:33:55,919 --> 00:33:58,720
-so it's the event type is the only thing
 that changes. Any
 
 757
