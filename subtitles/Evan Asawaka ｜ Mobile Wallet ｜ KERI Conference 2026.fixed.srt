@@ -4,7 +4,7 @@ Evan Asawaka ｜ Mobile Wallet ｜ KERI Conference 2026
 
 2
 00:00:04,150 --> 00:00:07,733
-So we have been developing a web
+We have been developing a web
 
 3
 00:00:07,757 --> 00:00:11,679
@@ -20,7 +20,7 @@ better.
 
 6
 00:00:15,759 --> 00:00:18,800
-All right. So initially Sam set out
+Initially Sam [Smith] set out
 
 7
 00:00:18,800 --> 00:00:22,400
@@ -40,7 +40,7 @@ desktop application.
 
 11
 00:00:31,439 --> 00:00:34,539
-and so let's see. Core wallet, we wanted
+Core wallet, we wanted
 
 12
 00:00:34,563 --> 00:00:37,120
@@ -60,11 +60,11 @@ proved to be a challenge in fact.
 
 16
 00:00:46,879 --> 00:00:48,879
-So again, we wanted everything to
+Again, we wanted everything to
 
 17
 00:00:48,879 --> 00:00:50,160
-happen in the browser so you can have
+happen in the browser, so you can have
 
 18
 00:00:50,160 --> 00:00:52,640
@@ -104,7 +104,7 @@ little bit useless if it wasn't.
 
 27
 00:01:10,880 --> 00:01:13,280
-So some challenges running Python in a
+Some challenges: Running Python in a
 
 28
 00:01:13,280 --> 00:01:18,149
@@ -120,7 +120,7 @@ Python is run on CPython which is a
 
 31
 00:01:23,520 --> 00:01:26,960
-you know C written interpreter.
+C-written interpreter.
 
 32
 00:01:26,960 --> 00:01:28,799
@@ -260,7 +260,7 @@ slides.
 
 66
 00:02:41,920 --> 00:02:44,720
-So to do this we had to again go through
+To do this we had to again go through
 
 67
 00:02:44,720 --> 00:02:46,560
@@ -352,7 +352,7 @@ So in KERIpy itself we had to make it
 
 89
 00:03:47,599 --> 00:03:50,720
-WebAssembly safe which meant creating a
+WebAssembly safe, which meant creating a
 
 90
 00:03:50,720 --> 00:03:53,680
@@ -364,7 +364,7 @@ indexedDB which runs in the browser. We
 
 92
 00:03:55,599 --> 00:03:58,879
-created webdber instead of lmdber
+created 'webdber' instead of 'lmdber'
 
 93
 00:03:58,879 --> 00:04:00,400
@@ -404,11 +404,11 @@ accident and then you lose all your keys
 
 102
 00:04:19,040 --> 00:04:19,840
-because that would suck. – Can
+because that would suck. 
 
 103
 00:04:19,840 --> 00:04:21,440
-I ask you can I ask you a question?
+– Can I ask you can I ask you a question?
 
 104
 00:04:23,040 --> 00:04:26,479
@@ -472,7 +472,7 @@ but do you mind if I ask a question?
 
 119
 00:04:56,960 --> 00:04:57,520
-– Go ahead.
+Go ahead.
 
 120
 00:04:57,520 --> 00:04:59,919
@@ -484,7 +484,7 @@ understand none of the words on
 
 122
 00:05:01,199 --> 00:05:02,080
-– Oh, okay.
+Oh, okay.
 
 123
 00:05:02,080 --> 00:05:05,440
@@ -492,7 +492,7 @@ understand none of the words on
 
 124
 00:05:05,440 --> 00:05:07,840
-more of a web centric mentality like
+more of a web-centric mentality like
 
 125
 00:05:07,840 --> 00:05:11,360
@@ -512,7 +512,7 @@ we chose to use it. They have a storage
 
 129
 00:05:17,120 --> 00:05:20,960
-API that exposes basically a couple
+API that exposes a couple
 
 130
 00:05:20,960 --> 00:05:24,560
@@ -528,7 +528,7 @@ store our data persistently.
 
 133
 00:05:28,240 --> 00:05:30,880
-– WebDBer is the ducktyped
+WebDBer is the ducktyped
 
 134
 00:05:30,880 --> 00:05:32,479
@@ -536,7 +536,7 @@ class
 
 135
 00:05:32,479 --> 00:05:35,120
-for LMDB and KERIpy. KERIpy is the
+for LMDer and KERIpy. KERIpy is the
 
 136
 00:05:35,120 --> 00:05:37,039
@@ -556,7 +556,7 @@ the protocol.
 
 140
 00:05:44,000 --> 00:05:45,840
-– This is like basically the
+This is like basically the
 
 141
 00:05:45,840 --> 00:05:46,479
@@ -592,7 +592,7 @@ asynchronous library that [inaudible]
 
 149
 00:06:02,080 --> 00:06:04,560
-– And Sam had to extend HIO actually
+Yeah, Sam had to extend HIO actually
 
 150
 00:06:04,560 --> 00:06:07,120
@@ -684,11 +684,11 @@ worry guys, here comes the demo.
 
 172
 00:06:59,840 --> 00:07:01,520
-– Shoot.
+Shoot.
 
 173
 00:07:01,520 --> 00:07:03,919
-– So, what you guys do about Keeper? How
+– What you guys do about Keeper? How
 
 174
 00:07:03,919 --> 00:07:06,080
@@ -696,7 +696,7 @@ are you encrypting keys?
 
 175
 00:07:06,080 --> 00:07:07,950
-– Made a web keeper
+Made a web keeper
 
 176
 00:07:07,974 --> 00:07:10,693
@@ -712,7 +712,7 @@ in indexedDB.
 
 179
 00:07:15,520 --> 00:07:18,479
-– Yeah, I think so.
+Yeah, I think so.
 
 180
 00:07:18,479 --> 00:07:19,840
@@ -756,7 +756,7 @@ keeper for that class.
 
 190
 00:07:43,919 --> 00:07:47,199
-– Probably. Yeah.
+Probably. Yeah.
 
 191
 00:07:47,199 --> 00:07:49,360
@@ -792,7 +792,7 @@ Foundation will want to deploy like a,
 
 199
 00:08:05,599 --> 00:08:07,680
-you know, basic rate limited version for
+you know, basic rate-limited version for
 
 200
 00:08:07,680 --> 00:08:09,680
@@ -968,7 +968,7 @@ plugins as well that they can provide.
 
 243
 00:10:15,360 --> 00:10:16,480
-– So we're going to host all of
+So we're going to host all of
 
 244
 00:10:16,480 --> 00:10:19,040
@@ -984,1541 +984,1527 @@ I'm doing this all running locally
 
 247
 00:10:22,480 --> 00:10:24,640
-because it was faster for testing
+because it was faster for testing.
 
 248
-00:10:24,640 --> 00:10:29,839
-essentially. Yeah, and so
+00:10:24,640 --> 00:10:31,200
+It's working in the browser. The next
 
 249
-00:10:29,839 --> 00:10:31,200
-it's working in the browser. The next
+00:10:31,200 --> 00:10:32,959
+thing (I have a lot to show guys),
 
 250
-00:10:31,200 --> 00:10:32,959
-thing I have a lot to show guys.
-
-251
 00:10:32,959 --> 00:10:37,360
 I've also been working on trying to
 
-252
+251
 00:10:37,360 --> 00:10:40,880
 get Locksmith
 
-253
+252
 00:10:40,880 --> 00:10:43,760
 able to
 
-254
+253
 00:10:43,760 --> 00:10:45,279
 have multiple plugins so that we can
 
-255
+254
 00:10:45,279 --> 00:10:47,279
 show that, you know, in this open source
 
-256
+255
 00:10:47,279 --> 00:10:49,040
 ecosystem, anyone can come in and
 
-257
+256
 00:10:49,040 --> 00:10:52,079
 provide their own
 
-258
+257
 00:10:52,079 --> 00:11:00,069
-witnesses and watchers as a service. So,
+witnesses and watchers as a service. 
 
-259
+258
 00:11:07,200 --> 00:11:08,800
 Here's the KERI
 
-260
+259
 00:11:08,800 --> 00:11:09,760
 Foundation.
 
-261
+260
 00:11:09,760 --> 00:11:10,959
 – This one's desktop?
 
-262
+261
 00:11:10,959 --> 00:11:13,430
-– This is desktop app.
+This is desktop app.
 
-263
+262
 00:11:23,534 --> 00:11:29,120
 I'll add my Evan identifier. That's not my name.
 
-264
+263
 00:11:29,120 --> 00:11:31,920
 With an emoji. No. What? No emojis here,
 
-265
+264
 00:11:31,920 --> 00:11:36,310
 guys. I'm sorry.
 
-266
+265
 00:11:38,880 --> 00:11:41,360
 So, this is Locksmith, the open sourced
 
-267
+266
 00:11:41,360 --> 00:11:42,079
 version.
 
-268
+267
 00:11:42,079 --> 00:11:43,335
 Okay. On the desktop.
 
-269
+268
 00:11:43,360 --> 00:11:45,360
 On desktop. This is the desktop app.
 
-270
+269
 00:11:45,360 --> 00:11:46,800
 – So, we just doing this for comparison
 
-271
+270
 00:11:46,800 --> 00:11:47,839
 with the web one.
 
-272
+271
 00:11:47,839 --> 00:11:50,079
-– Yeah, the web one is not as far along. I
+Yeah, the web one is not as far along. I
 
-273
+272
 00:11:50,079 --> 00:11:52,560
 have plugins working on the desktop
 
-274
+273
 00:11:52,560 --> 00:11:54,880
-one to demonstrate that you can have
+one, to demonstrate that you can have
 
-275
+274
 00:11:54,880 --> 00:11:56,560
 multiple providers giving you witnesses
 
-276
+275
 00:11:56,560 --> 00:11:58,560
 and watchers. So, we have our KERI
 
-277
+276
 00:11:58,560 --> 00:12:03,509
 Foundation plugin.
 
-278
+277
 00:12:03,534 --> 00:12:05,336
 So we create like our account
 
-279
+278
 00:12:05,360 --> 00:12:07,600
-identifier. I think Ryan showed this
+identifier. I think Ryan [Hansen] showed this
+
+279
+00:12:07,600 --> 00:12:10,000
+yesterday,
 
 280
-00:12:07,600 --> 00:12:10,000
-yesterday, but
+00:12:10,000 --> 00:12:13,120
+it's basically just talking to ..,
 
 281
-00:12:10,000 --> 00:12:13,120
-it's basically just talking to…
-
-282
 00:12:15,253 --> 00:12:18,160
 – It works a lot faster when it's local.
 
-283
+282
 00:12:18,160 --> 00:12:20,480
-– Does work a lot faster when it's local.
+[Yes, it] Does work a lot faster when it's local.
 
-284
+283
 00:12:20,480 --> 00:12:23,040
 And then I have a second plugin here.
 
-285
+284
 00:12:23,040 --> 00:12:24,000
 Well, actually, that wasn't anything
 
-286
+285
 00:12:24,000 --> 00:12:25,360
 impressive. So, I can add one of my
 
-287
+286
 00:12:25,360 --> 00:12:27,440
 local identifiers in the KERI
 
-288
+287
 00:12:27,440 --> 00:12:30,480
 Foundation plugin.
 
-289
+288
 00:12:30,480 --> 00:12:33,680
-And then I can grab witnesses from the
+Then I can grab witnesses from the
 
-290
+289
 00:12:33,680 --> 00:12:35,600
 KERI Foundation infrastructure which is
 
-291
+290
 00:12:35,600 --> 00:12:38,560
 running locally.
 
-292
+291
 00:12:38,560 --> 00:12:40,560
 And I have to provision and register
 
-293
+292
 00:12:40,560 --> 00:12:43,040
 them.
 
-294
+293
 00:12:43,040 --> 00:12:45,040
 It's like kind of similar to
 
-295
+294
 00:12:45,040 --> 00:12:46,399
 healthKERI because they left some shared
 
-296
+295
 00:12:46,399 --> 00:12:49,600
 components. So I used a lot of them.
 
-297
+296
 00:12:49,600 --> 00:12:55,063
 And then I can grab this. Rotate them in.
 
-298
+297
 00:13:00,427 --> 00:13:05,219
 All right. Selected to rotate in the witnesses.
 
-299
+298
 00:13:08,334 --> 00:13:11,454
 Okay. So now my local identifier has one
 
-300
+299
 00:13:11,478 --> 00:13:14,639
 witness from KERI Foundation
 
-301
+300
 00:13:14,639 --> 00:13:16,480
 infrastructure, ideally once it's
 
-302
+301
 00:13:16,480 --> 00:13:19,040
 deployed. And then say you as an
 
-303
+302
 00:13:19,040 --> 00:13:21,200
 individual or corporation want to also
 
-304
+303
 00:13:21,200 --> 00:13:23,519
 provide witness infrastructure. You
 
-305
+304
 00:13:23,519 --> 00:13:26,800
 would create a plugin for Locksmith.
 
-306
+305
 00:13:26,800 --> 00:13:28,720
 I copied and pasted the folders so they
 
-307
+306
 00:13:28,720 --> 00:13:30,399
 look very suspiciously similar.
 
-308
+307
 00:13:30,399 --> 00:13:31,839
 – Can I ask a question here?
 
-309
+308
 00:13:31,839 --> 00:13:32,480
-– Yep.
+Yep.
+
+309
+00:13:32,480 --> 00:13:35,519
+– Creating a plugin,
 
 310
-00:13:32,480 --> 00:13:34,480
-– So this
+00:13:36,160 --> 00:13:38,880
+do I have control over the UI?
 
 311
-00:13:34,480 --> 00:13:35,519
-creating a plugin.
+00:13:38,880 --> 00:13:40,157
+Yeah.
 
 312
-00:13:36,160 --> 00:13:38,880
-Do I have control over the UI?
+00:13:40,182 --> 00:13:41,839
+– If I want to have
 
 313
-00:13:38,880 --> 00:13:40,157
-– Yeah.
-
-314
-00:13:40,182 --> 00:13:41,839
-– And so if I want to have
-
-315
 00:13:41,839 --> 00:13:44,000
 some enterprise
 
-316
+314
 00:13:44,000 --> 00:13:47,040
-whatever specific thing or any
+-whatever- specific thing or any
+
+315
+00:13:47,040 --> 00:13:49,279
+service I want, I can integrate
+
+316
+00:13:49,279 --> 00:13:50,320
+that as a plugin?
 
 317
-00:13:47,040 --> 00:13:49,279
-service I want I can integrate
+00:13:50,320 --> 00:13:52,720
+Totally. And you probably want to
 
 318
-00:13:49,279 --> 00:13:50,320
-that as a plugin.
-
-319
-00:13:50,320 --> 00:13:52,720
-– Totally. And you probably want to
-
-320
 00:13:52,720 --> 00:13:54,480
 again because this is fully open source
 
-321
+319
 00:13:54,480 --> 00:13:56,959
 to get it like contributed to the… you
 
-322
+320
 00:13:56,959 --> 00:13:58,399
 could either contribute it like upstream
 
-323
+321
 00:13:58,399 --> 00:14:00,079
 to like the one in the KERI
 
-324
+322
 00:14:00,079 --> 00:14:01,680
 Foundation repo or you could just clone
 
-325
+323
 00:14:01,680 --> 00:14:02,800
 it and deploy it as your own
 
-326
+324
 00:14:02,800 --> 00:14:05,990
 application.
 
-327
+325
 00:14:06,955 --> 00:14:10,240
-– Okay. And so just as an
+– Okay. As an
 
-328
+326
 00:14:10,240 --> 00:14:12,480
 example, when we first did the plug-in
 
-329
+327
 00:14:12,480 --> 00:14:14,399
 concept, we were thinking just SaaS
 
-330
+328
 00:14:14,399 --> 00:14:16,079
-providers would put a plug in here so
+providers would put a plug-in here so
 
-331
+329
 00:14:16,079 --> 00:14:18,240
 that you'd get watchers and witnesses
 
-332
+330
 00:14:18,240 --> 00:14:20,320
-from anyone. But then we found use case
+from anyone. But then we found usecases
 
-333
+331
 00:14:20,320 --> 00:14:23,519
 for the enterprise credential
 
-334
+332
 00:14:23,519 --> 00:14:25,199
 issuance platform that we're building.
 
-335
+333
 00:14:25,199 --> 00:14:26,959
 The user interface is a plug into
 
-336
+334
 00:14:26,959 --> 00:14:28,959
 Locksmith and it just made sense because
 
-337
+335
 00:14:28,959 --> 00:14:30,480
 if you're building any kind of user
 
-338
+336
 00:14:30,480 --> 00:14:33,199
 interface that could use KERI, it's a
 
-339
+337
 00:14:33,199 --> 00:14:35,279
 great place to put it.
 
-340
+338
 00:14:35,304 --> 00:14:36,720
 As long as you're like writing Python and
 
-341
+339
 00:14:36,720 --> 00:14:40,880
 PythonScript.
 
-342
+340
 00:14:40,880 --> 00:14:45,509
 Or writing Claude [laughter]
 
-343
+341
 00:14:45,534 --> 00:14:49,680
 – As long as you can. I don't like it.
 
-344
+342
 00:14:49,680 --> 00:14:52,000
 – All right. So, I'm creating my test
 
-345
+343
 00:14:52,000 --> 00:14:53,680
 infrastructure account. I'm not going to
 
-346
+344
 00:14:53,680 --> 00:14:56,079
 scan this one. And then I can go to my
 
-347
+345
 00:14:56,079 --> 00:14:59,120
 identifiers. I can grab the same local
 
-348
+346
 00:14:59,120 --> 00:15:01,760
 Evan identifier. You can see and it has
 
-349
+347
 00:15:01,760 --> 00:15:03,199
 the witnesses. It doesn't have all the
 
-350
+348
 00:15:03,199 --> 00:15:04,720
-the fancy schmancy tooling that
+the fancy schmancy tooling, that
+
+349
+00:15:04,720 --> 00:15:07,120
+healthKERI showed, quite yet.
+
+350
+00:15:07,120 --> 00:15:11,120
+Now I have four witness servers
 
 351
-00:15:04,720 --> 00:15:07,120
-healthKERI showed quite yet.
+00:15:11,120 --> 00:15:14,639
+running for this one. I can add four
 
 352
-00:15:07,120 --> 00:15:11,120
-So now I have four witness servers
-
-353
-00:15:11,120 --> 00:15:14,639
-running for this one. So I can add four
-
-354
 00:15:14,639 --> 00:15:22,949
 witnesses here.
 
-355
+353
 00:15:31,479 --> 00:15:32,923
 Okay. And then I can rotate in these
 
-356
+354
 00:15:32,947 --> 00:15:35,440
 witnesses. I can also rotate
 
-357
+355
 00:15:35,440 --> 00:15:36,560
 the other witness, but I'm not going to
 
-358
+356
 00:15:36,560 --> 00:15:39,990
 do that.
 
-359
+357
 00:15:42,399 --> 00:15:44,467
 My authenticator has two seconds left.
 
-360
+358
 00:15:44,491 --> 00:15:46,560
 I'm using Google authenticator on my
 
-361
+359
 00:15:46,560 --> 00:15:48,959
 phone, so no onePassword copying like
 
-362
+360
 00:15:48,959 --> 00:15:56,710
 Phil was showing yesterday for me.
 
-363
+361
 00:15:57,301 --> 00:16:01,440
 I missed a digit.
 
-364
+362
 00:16:02,480 --> 00:16:04,000
 All right, there you go. They're in. So
 
-365
+363
 00:16:04,000 --> 00:16:06,320
 now I have again it took it sequence
 
-366
+364
 00:16:06,320 --> 00:16:07,920
 number is two because I rotated in two
 
-367
+365
 00:16:07,920 --> 00:16:09,279
 sets of witnesses from two different
 
-368
+366
 00:16:09,279 --> 00:16:11,120
 providers and there are five total
 
-369
+367
 00:16:11,120 --> 00:16:13,120
 witnesses witnessing my local
 
-370
+368
 00:16:13,120 --> 00:16:15,288
 identifier. So, it works. [applause]
 
-371
+369
 00:16:20,633 --> 00:16:22,570
 Sweet. And then,
 
-372
+370
 00:16:22,594 --> 00:16:26,480
 I've been trying to make it easy
 
-373
+371
 00:16:26,480 --> 00:16:28,079
 for anybody who wants to create a plugin,
 
-374
+372
 00:16:28,079 --> 00:16:30,079
 to create their own plugin. I was
 
-375
+373
 00:16:30,079 --> 00:16:32,000
 thinking, I've had many different
 
-376
+374
 00:16:32,000 --> 00:16:34,079
 approaches as to how I best thought
 
-377
+375
 00:16:34,079 --> 00:16:36,880
 this possible. So, my newest approach
 
-378
+376
 00:16:36,880 --> 00:16:38,320
 was to create just like a templating
 
-379
+377
 00:16:38,320 --> 00:16:42,320
 folder basically that would kind of
 
-380
+378
 00:16:42,320 --> 00:16:44,720
 just give you like a one UI page that
 
-381
+379
 00:16:44,720 --> 00:16:47,279
 you could use as a template so that it
 
-382
+380
 00:16:47,279 --> 00:16:48,720
 would Claude could actually be smart
 
-383
+381
 00:16:48,720 --> 00:16:50,480
 when he does it. Yeah.
 
-384
+382
 00:16:50,480 --> 00:16:55,120
-– So Sam introduced the concept of
+– Sam introduced the concept of
 
-385
+383
 00:16:55,120 --> 00:16:58,480
 what was it called? Observer registrar. I
 
-386
+384
 00:16:58,480 --> 00:17:00,160
 still need to figure out what all
 
-387
+385
 00:17:00,160 --> 00:17:05,039
 that is. But so similarly here the
 
-388
+386
 00:17:05,039 --> 00:17:07,520
 plugin you could I suppose manage
 
-389
+387
 00:17:07,520 --> 00:17:10,160
 those kinds of things as well?
 
-390
+388
 00:17:10,160 --> 00:17:12,240
 – Eventually, yes. I think the observer
 
-391
+389
 00:17:12,240 --> 00:17:14,319
 and the registrar stuff.
 
-392
+390
 00:17:14,319 --> 00:17:15,919
 – Are they just extensions of witnesses
 
-393
+391
 00:17:15,919 --> 00:17:18,480
 and watchers? I guess I don't know…
 
-394
+392
 00:17:18,480 --> 00:17:20,959
 – They monitor a different thing.
 
-395
+393
 00:17:20,959 --> 00:17:22,240
 – Those monitor your
 
-396
+394
 00:17:22,240 --> 00:17:25,039
 credentials. – So, but if I wanted to make
 
-397
+395
 00:17:25,039 --> 00:17:30,310
 a plugin for that, I could mention…
 
-398
+396
 00:17:30,334 --> 00:17:31,369
 – Probably.
 
-399
+397
 00:17:31,393 --> 00:17:32,880
 – Yeah, I don't we haven't gone down that
 
-400
+398
 00:17:32,880 --> 00:17:35,360
 road yet. So…
 
-401
+399
 00:17:35,360 --> 00:17:37,520
 – Wait, sorry, what was the question?
 
-402
+400
 00:17:37,520 --> 00:17:40,640
 If the plugin could be used for
 
-403
+401
 00:17:40,640 --> 00:17:43,039
 helping implement the registrars and
 
-404
+402
 00:17:43,039 --> 00:17:43,919
 observers.
 
-405
+403
 00:17:43,919 --> 00:17:45,840
 – Yeah, absolutely. I mean, it would
 
-406
+404
 00:17:45,840 --> 00:17:47,360
 just be the user interface into
 
-407
+405
 00:17:47,360 --> 00:17:49,440
 those. So if you stand up a SaaS platform
 
-408
+406
 00:17:49,440 --> 00:17:51,600
 that has APIs to allow you to stand up
 
-409
+407
 00:17:51,600 --> 00:17:53,360
 registrars and observers that absolutely
 
-410
+408
 00:17:53,360 --> 00:17:55,120
 you could add it to your interface here
 
-411
+409
 00:17:55,120 --> 00:17:57,360
 in your plugin to reserve those for you.
 
-412
+410
 00:18:00,240 --> 00:18:01,600
 – Which is similar to the witness and watchers
 
-413
+411
 00:18:01,600 --> 00:18:04,000
 you have to services out there. – Exactly.
 
-414
+412
 00:18:04,000 --> 00:18:07,039
 – It's just UI to connect manage
 
-415
+413
 00:18:07,039 --> 00:18:08,320
 the relationship.
 
-416
+414
 00:18:08,320 --> 00:18:10,559
 – That's exactly right.
 
-417
+415
 00:18:10,559 --> 00:18:15,600
 – Yep. Sweet.
 
-418
+416
 00:18:15,600 --> 00:18:16,799
 – Okay that was most of the things I
 
-419
+417
 00:18:16,799 --> 00:18:18,320
 wanted to show. I mean this is cool
 
-420
+418
 00:18:18,320 --> 00:18:21,520
 because it shows the how we are, KERI
 
-421
+419
 00:18:21,520 --> 00:18:22,960
 Foundation. We're open source accepting
 
-422
+420
 00:18:22,960 --> 00:18:24,880
 multiple providers if possible.
 
-423
+421
 00:18:25,120 --> 00:18:27,520
-– So then what's the status of the
+– What's the status of the
 
-424
+422
 00:18:27,520 --> 00:18:31,120
 mobile because we did web and desktop…
 
-425
+423
 00:18:31,120 --> 00:18:33,360
 – The mobile is, Jay do you want to take
 
-426
+424
 00:18:33,360 --> 00:18:34,160
 this one?
 
-427
+425
 00:18:34,160 --> 00:18:34,799
 – I'm sorry?
 
-428
+426
 00:18:34,799 --> 00:18:36,080
 – How's the status of
 
-429
+427
 00:18:36,080 --> 00:18:37,840
 the mobile? Jay has been working on
 
-430
+428
 00:18:37,840 --> 00:18:38,160
 mobile
 
-431
+429
 00:18:38,160 --> 00:18:40,400
 – It will be deployed sometime in the near future
 
-432
+430
 00:18:40,400 --> 00:18:44,000
 as soon as it gets the account info
 
-433
+431
 00:18:44,000 --> 00:18:47,039
 from Sam for the iOS and Android stores.
 
-434
+432
 00:18:47,039 --> 00:18:48,640
 – It's the same code though that runs the
 
-435
+433
 00:18:48,640 --> 00:18:50,000
 web wallet.
 
-436
+434
 00:18:50,000 --> 00:18:51,039
 – It's the same code.
 
-437
+435
 00:18:51,039 --> 00:18:52,799
 – So it's just being deployed.
 
-438
+436
 00:18:52,799 --> 00:18:55,760
 – It the iOS and Android code are just in
 
-439
+437
 00:18:55,760 --> 00:18:57,919
 wrappers that run almost like a pseudo
 
-440
+438
 00:18:57,919 --> 00:19:00,480
 browser and we just deploy pretty much
 
-441
+439
 00:19:00,480 --> 00:19:02,880
 the same code onto it.
 
-442
+440
 00:19:02,880 --> 00:19:05,440
 – So it's the web essentially version.
 
-443
+441
 00:19:05,440 --> 00:19:07,440
 – And, it's pretty much
 
-444
+442
 00:19:07,440 --> 00:19:09,760
 it's just the web app.
 
-445
+443
 00:19:09,760 --> 00:19:11,200
 – So it's doing all the same stuff you said,
 
-446
+444
 00:19:11,200 --> 00:19:16,000
 the Wasm and all the WebDBers
 
-447
+445
 00:19:16,000 --> 00:19:17,440
 mobile.
 
-448
+446
 00:19:17,440 --> 00:19:19,280
 – Yes.
 
-449
+447
 00:19:19,280 --> 00:19:22,400
 – Is there a mailbox as part of this?
 
-450
+448
 00:19:22,400 --> 00:19:25,520
 – No, not yet.
 
-451
+449
 00:19:25,520 --> 00:19:26,000
 Probably.
 
-452
+450
 00:19:27,440 --> 00:19:29,679
 – So on either the phone, you know, or
 
-453
+451
 00:19:29,679 --> 00:19:32,880
 or a browser page, right? Let's
 
-454
+452
 00:19:32,880 --> 00:19:35,120
 say I'm an issuer,
 
-455
+453
 00:19:35,120 --> 00:19:38,559
 issue you a credential offer or
 
-456
+454
 00:19:38,559 --> 00:19:39,760
 friend.
 
-457
+455
 00:19:39,760 --> 00:19:42,559
 And your phone is off or your browser
 
-458
+456
 00:19:42,559 --> 00:19:45,760
 is not on at the moment.
 
-459
+457
 00:19:45,760 --> 00:19:47,919
 Will there be a mailbox in
 
-460
+458
 00:19:47,919 --> 00:19:50,000
 between to pick it up?
 
-461
+459
 00:19:50,000 --> 00:19:52,080
 – I would assume it would go
 
-462
+460
 00:19:52,080 --> 00:19:53,840
 to your witnesses or something.
 
-463
+461
 00:19:53,840 --> 00:19:55,440
-– So that's a common misconception.
+– [Phil Feairheller: ] So that's a common misconception.
 
-464
+462
 00:19:55,440 --> 00:19:57,120
 So when we originally deployed
 
-465
+463
 00:19:57,120 --> 00:19:59,360
 witnesses, we did make mailboxes a part
 
-466
+464
 00:19:59,360 --> 00:20:01,200
 of the witness deployment simply because
 
-467
+465
 00:20:01,200 --> 00:20:02,799
 we were moving very fast and had nowhere
 
-468
+466
 00:20:02,799 --> 00:20:03,919
 else to hang them. Okay,
 
-469
+467
 00:20:03,919 --> 00:20:05,120
 we didn't want to create a whole new
 
-470
+468
 00:20:05,120 --> 00:20:07,440
 service at the time. So, we have since
 
-471
+469
 00:20:07,440 --> 00:20:09,200
-moved away from that. healthKERI does
+moved away from that. HealthKERI does
 
-472
+470
 00:20:09,200 --> 00:20:11,760
 provide mailboxes as a bespoke thing you
 
-473
+471
 00:20:11,760 --> 00:20:14,080
 can reserve and I was going to demo that
 
-474
+472
 00:20:14,080 --> 00:20:15,919
 yesterday but ran out of time and then
 
-475
+473
 00:20:15,919 --> 00:20:18,080
 and then you just launch a Locksmith
 
-476
+474
 00:20:18,080 --> 00:20:20,320
 turn it on say activate this mailbox and
 
-477
+475
 00:20:20,320 --> 00:20:22,000
 now you can get messages on it and if
 
-478
+476
 00:20:22,000 --> 00:20:23,440
 you miss any messages they're stored
 
-479
+477
 00:20:23,440 --> 00:20:24,799
 forward so they sit here.
 
-480
+478
 00:20:24,799 --> 00:20:26,000
 – Are those on your platform like you're
 
-481
+479
 00:20:26,000 --> 00:20:26,400
 storing?
 
-482
+480
 00:20:26,400 --> 00:20:27,600
 – Those are platform. So then …
 
-483
+481
 00:20:27,600 --> 00:20:29,039
 – It's a very simple small service. It's
 
-484
+482
 00:20:29,039 --> 00:20:30,320
 it's basically if you were to look at
 
-485
+483
 00:20:30,320 --> 00:20:31,840
 the code inside of KERIpy you just pull out
 
-486
+484
 00:20:31,840 --> 00:20:33,039
-the mailbox stuff. – Yeah, because there
+the mailbox stuff.
+Yeah, because there
 
-487
+485
 00:20:33,039 --> 00:20:34,159
 is mailbox up in the right
 
-488
+486
 00:20:34,159 --> 00:20:35,600
 – That could be hosted anywhere.
 
-489
-00:20:35,600 --> 00:20:36,720
-– Absolutely. It's just like any other
+487
+00:20:35,600 --> 00:20:37,840
+– Absolutely. It's just like any other resource.
 
-490
-00:20:36,720 --> 00:20:37,840
-resource.
-
-491
+488
 00:20:37,840 --> 00:20:38,559
 – Yep.
 
-492
+489
 00:20:38,559 --> 00:20:41,120
-– Again, we got this code
+Again, we got this code
 
-493
+490
 00:20:41,120 --> 00:20:43,440
-recently from healthKERI. So,
+recently from HealthKERI. So,
 
-494
+491
 00:20:43,440 --> 00:20:44,480
 – Awesome work.
 
-495
+492
 00:20:44,480 --> 00:20:46,240
-– There's a long
+There's a long
 
-496
+493
 00:20:46,240 --> 00:20:48,159
-list of features we're we're aiming to
+list of features we're aiming to
 
-497
+494
 00:20:48,159 --> 00:20:49,120
 add. So,
 
-498
+495
 00:20:49,120 --> 00:20:51,440
 just hit the ones that were priorities
 
-499
+496
 00:20:51,440 --> 00:20:53,679
 for the conference first.
 
-500
+497
 00:20:53,679 --> 00:20:55,280
-I mean, again, you can you can always go
+I mean, again, you can always go
 
-501
+498
 00:20:55,280 --> 00:20:56,880
 into the open source repos, create
 
-502
+499
 00:20:56,880 --> 00:20:58,799
 issues for features you want to see, and
 
-503
+500
 00:20:58,799 --> 00:21:00,320
 we can address those as they come in
 
-504
+501
 00:21:00,320 --> 00:21:03,350
 as well.
 
-505
+502
 00:21:03,990 --> 00:21:05,520
 – Or fork and build.
 
-506
+503
 00:21:05,520 --> 00:21:05,840
-– Yeah,
+Yeah
+
+504
+00:21:05,840 --> 00:21:08,559
+- Absolutely.
+
+505
+00:21:08,559 --> 00:21:10,799
+– [Karla Mckenna: ] did I understand you correctly
+
+506
+00:21:10,799 --> 00:21:13,200
+that you said five witnesses
 
 507
-00:21:05,840 --> 00:21:08,559
-absolutely.
-
-508
-00:21:08,559 --> 00:21:10,799
-– So did I understand you correctly
-
-509
-00:21:10,799 --> 00:21:13,200
-that you had you said five witnesses
-
-510
 00:21:13,200 --> 00:21:15,280
 were monitoring? Well, five witnesses
 
-511
+508
 00:21:15,280 --> 00:21:17,840
-were associated with your identifier.
+were associated with your identifier?
+[Yes]
 
-512
+509
 00:21:17,840 --> 00:21:19,679
 Okay. That's the same amount of
 
-513
+510
 00:21:19,679 --> 00:21:22,320
 witnesses that GLEIF maintains in the
 
-514
+511
 00:21:22,320 --> 00:21:25,039
 infrastructure and the same that we
 
-515
+512
 00:21:25,039 --> 00:21:28,960
 require from QVIs to contribute to with
 
-516
+513
 00:21:28,960 --> 00:21:31,919
 only a small overlap for shared
 
-517
+514
 00:21:31,919 --> 00:21:36,000
 resources in effect. Should we be
 
-518
+515
 00:21:36,000 --> 00:21:39,360
 also perhaps providing guidance to
 
-519
+516
 00:21:39,360 --> 00:21:44,870
 wallet holders? Credential holders?
 
-520
+517
 00:21:44,880 --> 00:21:47,280
 Guidance as to how many witnesses
 
-521
+518
 00:21:47,280 --> 00:21:48,159
 they should be addressing?
 
-522
+519
 00:21:48,159 --> 00:21:50,000
 – True. Well. If there's
 
-523
+520
 00:21:50,000 --> 00:21:51,280
 particular requirements for it, then
 
-524
+521
 00:21:51,280 --> 00:21:52,480
 yeah, absolutely.
 
-525
+522
 00:21:52,480 --> 00:21:54,400
 – Sam's recommendation was
 
-526
+523
 00:21:54,400 --> 00:21:55,280
 – Was five?
 
-527
+524
 00:21:55,280 --> 00:21:58,400
 – It was either one or four
 
-528
+525
 00:21:58,400 --> 00:22:00,640
 cuz he says when you
 
-529
+526
 00:22:00,640 --> 00:22:02,480
 have three or four as your signing
 
-530
+527
 00:22:02,480 --> 00:22:04,799
 threshold for witnesses you can't be
 
-531
+528
 00:22:04,799 --> 00:22:06,799
 eclipsed and then if you have one well
 
-532
+529
 00:22:06,799 --> 00:22:08,080
 it's less secure because one could
 
-533
+530
 00:22:08,080 --> 00:22:09,846
 be compromised.
 
-534
+531
 00:22:11,120 --> 00:22:13,520
-– I think a mission of the KERI
+– [Phil Feairheller:] I think a mission of the KERI
 
-535
+532
 00:22:13,520 --> 00:22:15,679
 Foundation is going to also be to
 
-536
+533
 00:22:15,679 --> 00:22:17,919
 provide
 
-537
+534
 00:22:17,919 --> 00:22:20,960
 documentation with recommendations and I
 
-538
+535
 00:22:20,960 --> 00:22:22,720
 would guess it will grow to span
 
-539
+536
 00:22:22,720 --> 00:22:25,440
 ecosystems so like if you
 
-540
+537
 00:22:25,440 --> 00:22:26,960
 going to become a QVI
 
-541
+538
 00:22:26,960 --> 00:22:28,559
 here's what you will need to consider
 
-542
+539
 00:22:28,559 --> 00:22:29,679
-here are the recommend recommendations
+here are the recommendations
 
-543
+540
 00:22:29,679 --> 00:22:31,120
 you're going to have to follow if you're
 
-544
+541
 00:22:31,120 --> 00:22:32,799
 going to be doing this in healthcare,
 
-545
+542
 00:22:32,799 --> 00:22:34,720
 or use other things. I suspect that
 
-546
+543
 00:22:34,720 --> 00:22:36,640
 KERI Foundation will be a central
 
-547
+544
 00:22:36,640 --> 00:22:37,760
 location for that stuff.
 
-548
+545
 00:22:37,760 --> 00:22:40,720
-– Well, I've already got those kinds of
+– [Karla Mckenna: ] Well, I've already got those kinds of
 
-549
+546
 00:22:40,720 --> 00:22:42,720
 requirements in the ecosystem governance
 
-550
+547
 00:22:42,720 --> 00:22:44,400
 framework for QVIs.
 
-551
+548
 00:22:44,400 --> 00:22:46,559
 Because obviously we issue credentials
 
-552
+549
 00:22:46,559 --> 00:22:47,919
 to the QVIs.
 
-553
+550
 00:22:47,919 --> 00:22:49,919
 But I could put in the credential
 
-554
+551
 00:22:49,919 --> 00:22:53,200
 frameworks for the legal entity one, the
 
-555
+552
 00:22:53,200 --> 00:22:57,440
-[inaudible] A recommendation of
+QVRs and OORs, a recommendation of
 
-556
+553
 00:22:57,440 --> 00:23:00,559
 how many witnesses should be
 
-557
+554
 00:23:00,559 --> 00:23:01,679
 associated with.
 
-558
+555
 00:23:02,640 --> 00:23:05,039
 That would be the right place to put.
 
-559
-00:23:05,039 --> 00:23:05,840
-Okay.
+556
+00:23:05,039 --> 00:23:08,065
+- All right. Thank you.
 
-560
-00:23:05,840 --> 00:23:08,065
-All right. Thank you.
-
-561
+557
 00:23:10,774 --> 00:23:11,410
 – Anybody have other questions, things you
 
-562
+558
 00:23:11,434 --> 00:23:15,280
 want to say, comments, concerns? Yeah.
 
-563
+559
 00:23:15,280 --> 00:23:17,039
 – I just have a general question. I'm
 
-564
+560
 00:23:17,039 --> 00:23:20,080
 not very familiar with KERIpy and I'm
 
-565
+561
 00:23:20,080 --> 00:23:22,000
 I'm doing my own like very lightweight
 
-566
+562
 00:23:22,000 --> 00:23:24,320
 kind of educational JavaScript
 
-567
+563
 00:23:24,320 --> 00:23:26,400
 implementation and as soon as
 
-568
+564
 00:23:26,400 --> 00:23:27,600
 you try something like that you
 
-569
+565
 00:23:27,600 --> 00:23:30,159
 notice how extensive the spec is. So
 
-570
+566
 00:23:30,159 --> 00:23:35,909
 it's like one step five.
 
-571
+567
 00:23:35,934 --> 00:23:37,784
 So you're doing this in the web
 
-572
+568
 00:23:37,808 --> 00:23:39,840
 but you're not reimplementing with
 
-573
+569
 00:23:39,840 --> 00:23:42,159
 JavaScript you're wrapping KERIpy. So
 
-574
+570
 00:23:42,159 --> 00:23:45,840
 you basically get all the… like how
 
-575
+571
 00:23:45,840 --> 00:23:47,280
 much of the spec does KERIpy
 
-576
+572
 00:23:47,280 --> 00:23:48,480
 implement
 
-577
+573
 00:23:48,480 --> 00:23:51,200
 like pretty much all of it or?
 
-578
+574
 00:23:51,200 --> 00:23:56,159
-– So KERIpy as it stands right now in…
+– [Phil Feairheller: ] So KERIpy as it stands right now in…
 
-579
+575
 00:23:56,159 --> 00:24:00,400
 there's three branches 1.2x and 1.3x
 
-580
+576
 00:24:00,400 --> 00:24:03,360
 those implement full KERI of KERI and
 
-581
+577
 00:24:03,360 --> 00:24:05,840
 ACDC of 1.0
 
-582
+578
 00:24:05,840 --> 00:24:08,159
 and KERI has since evolved
 
-583
+579
 00:24:08,159 --> 00:24:11,600
 significantly into 2.0. What these guys
 
-584
+580
 00:24:11,600 --> 00:24:14,880
 are… well so one of their missions
 
-585
+581
 00:24:14,880 --> 00:24:17,600
 besides just put out these tools is to
 
-586
+582
 00:24:17,600 --> 00:24:19,760
 take KERIpy and completely upgrade it
 
-587
+583
 00:24:19,760 --> 00:24:22,720
 to 2.0. That is still work in progress
 
-588
+584
 00:24:22,720 --> 00:24:26,320
 and it is the current main branch on
 
-589
+585
 00:24:26,320 --> 00:24:28,799
 KERIpy represents that work.
 
-590
+586
 00:24:28,799 --> 00:24:32,799
 So it will of course eventually
 
-591
+587
 00:24:32,799 --> 00:24:34,880
 implement certainly the entire KERI
 
-592
+588
 00:24:34,880 --> 00:24:38,240
 spec and I would guess the first
 
-593
+589
 00:24:38,240 --> 00:24:40,960
-milestone is as much of the ACD specs…
+milestone is as much of the ACDC spec
 
-594
+590
 00:24:40,960 --> 00:24:45,360
-ACDC spec as is needed to satisfy SEDI.
+as is needed to satisfy SEDI.
 
-595
+591
 00:24:45,360 --> 00:24:47,520
 So I'm suspecting that's probably Sam's
 
-596
+592
 00:24:47,520 --> 00:24:50,000
 big goal for getting KERIpy to where
 
-597
+593
 00:24:50,000 --> 00:24:51,440
 it needs to be.
 
-598
+594
 00:24:51,440 --> 00:24:53,440
 – But it seems like with this strategy
 
-599
+595
 00:24:53,440 --> 00:24:56,559
 whatever the feature completeness is of
 
-600
+596
 00:24:56,559 --> 00:24:58,400
 KERIpy you kind of get that for free.
 
-601
+597
 00:24:58,400 --> 00:24:59,919
 You get that from this
 
-602
+598
 00:24:59,919 --> 00:25:01,600
 except
 
-603
+599
 00:25:01,600 --> 00:25:03,919
 is there a distinct UI in the
 
-604
+600
 00:25:03,919 --> 00:25:06,400
 browser like do you have like could you
 
-605
+601
 00:25:06,400 --> 00:25:08,159
 have a situation where the desktop is
 
-606
+602
 00:25:08,159 --> 00:25:10,400
 ahead of the browser because the browser
 
-607
+603
 00:25:10,400 --> 00:25:12,880
 hasn't written the HTML templates to…
 
-608
+604
 00:25:12,880 --> 00:25:13,679
 – Yes. – Okay.
 
-609
+605
 00:25:13,679 --> 00:25:16,240
-– Yep. Those are
+– [Feairheller: ] Yep. Those are
 
-610
+606
 00:25:16,240 --> 00:25:18,640
 separate UI implementations.
 
-611
+607
 00:25:18,640 --> 00:25:21,039
 That could come slightly opposite,
 
-612
+608
 00:25:21,039 --> 00:25:22,799
 and I would suspect they'll eventually
 
-613
+609
 00:25:22,799 --> 00:25:25,200
 grow to be somewhat separate simply
 
-614
+610
 00:25:25,200 --> 00:25:26,400
 because of the paradigm of running
 
-615
+611
 00:25:26,400 --> 00:25:28,799
 something in the web and mobile versus a
 
-616
+612
 00:25:28,799 --> 00:25:29,600
 desktop app.
 
-617
+613
 00:25:30,080 --> 00:25:32,159
 Just like if you look at one password
 
-618
+614
 00:25:32,159 --> 00:25:33,840
 looks similar but there's quite a bit of
 
-619
+615
 00:25:33,840 --> 00:25:35,360
 difference functionality between their
 
-620
+616
 00:25:35,360 --> 00:25:37,120
 plugin and the desktop app.
 
-621
+617
 00:25:39,039 --> 00:25:43,360
 – So the Locksmith desktop app is that
 
-622
+618
 00:25:43,360 --> 00:25:46,000
 also Python everything?
 
-623
+619
 00:25:46,000 --> 00:25:48,320
 – Yes. – And what's the
 
-624
+620
 00:25:48,320 --> 00:25:49,120
 PySide6?
 
-625
+621
 00:25:49,120 --> 00:25:49,919
 – PySide6.
 
-626
+622
 00:25:50,880 --> 00:25:54,161
 Yeah, it's pretty good to work with.
 
-627
+623
 00:25:58,354 --> 00:26:01,719
 – And that works cross platform.
 
-628
+624
 00:26:01,743 --> 00:26:04,159
 So, Mac and everything.
 
-629
+625
 00:26:04,159 --> 00:26:05,109
 – Yeah.
 
-630
+626
 00:26:05,237 --> 00:26:09,212
 – Mac, Windows and Linux [inaudible].
 
-631
+627
 00:26:14,159 --> 00:26:16,159
 [applause]
 
