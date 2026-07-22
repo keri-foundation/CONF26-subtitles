@@ -4,11 +4,11 @@ Ned Smith ｜ Secure Asset Transfer Protocol ｜ KERI Conference 2026
 
 2
 00:00:04,340 --> 00:00:07,516
-Okay. So, welcome to the session on
+Welcome to the session on
 
 3
 00:00:07,541 --> 00:00:10,559
-secure asset transfer protocol. I'm Ned
+Secure Asset Transfer Protocol. I'm Ned
 
 4
 00:00:10,559 --> 00:00:14,799
@@ -88,7 +88,7 @@ how the SATP group fits in there. So
 
 23
 00:01:09,040 --> 00:01:13,840
-IETF is the acronym engineering task
+IETF is the acronym for internet engineering task
 
 24
 00:01:13,840 --> 00:01:15,680
@@ -104,7 +104,7 @@ It is the body that defined the internet
 
 27
 00:01:20,159 --> 00:01:23,600
-protocol. So it is all of all
+protocol. So it is all
 
 28
 00:01:23,600 --> 00:01:27,439
@@ -168,7 +168,7 @@ rest of this talk.
 
 43
 00:02:02,000 --> 00:02:04,479
-So to dive in here, there's a what
+To dive in here, there's a what
 
 44
 00:02:04,479 --> 00:02:06,159
@@ -180,7 +180,7 @@ case in SATP to drive the technical
 
 46
 00:02:10,479 --> 00:02:12,560
-You know portions of it. So I'm going
+portions of it. So I'm going
 
 47
 00:02:12,560 --> 00:02:14,480
@@ -192,11 +192,11 @@ essentially a token issuance use case.
 
 49
 00:02:17,200 --> 00:02:21,440
-And this token the tok in this
+And this token
 
 50
 00:02:21,440 --> 00:02:23,680
-use case it's it's built around this
+use case, it's built around this
 
 51
 00:02:23,680 --> 00:02:25,920
@@ -208,19 +208,19 @@ token or art not to be confused with the
 
 53
 00:02:28,959 --> 00:02:32,720
-working group. But it's it's a sort
+working group. But it's a sort
 
 54
-00:02:32,720 --> 00:02:36,160
-of think of it as a reference token for
+01:02:32,720 --> 01:02:36,160
+of a reference token for
 
 55
 00:02:36,160 --> 00:02:40,959
-you know for working through the
+for working through the
 
 56
 00:02:40,959 --> 00:02:43,200
-you know challenges associated with
+challenges associated with
 
 57
 00:02:43,200 --> 00:02:46,480
@@ -228,7 +228,7 @@ building
 
 58
 00:02:46,480 --> 00:02:49,120
-Systems around tokenized
+systems around tokenized
 
 59
 00:02:49,120 --> 00:02:50,800
@@ -236,11 +236,11 @@ assets
 
 60
 00:02:50,800 --> 00:02:53,760
-and stable coins. So in this ca in
+and stable coins.  In this
 
 61
 00:02:53,760 --> 00:02:56,000
-this use case the token issuer in step
+use case the token issuer in step
 
 62
 00:02:56,000 --> 00:02:59,200
@@ -256,7 +256,7 @@ registry to make it persist there so
 
 65
 00:03:06,800 --> 00:03:09,360
-so the so that the artif the u you know
+so that
 
 66
 00:03:09,360 --> 00:03:11,760
@@ -272,7 +272,7 @@ we're using the acronym network
 
 69
 00:03:16,959 --> 00:03:22,239
-one or NW1 to re refer to the
+one or NW1 to refer to the
 
 70
 00:03:22,239 --> 00:03:25,120
@@ -296,148 +296,147 @@ is on the chain. And then there's
 
 75
 00:03:34,640 --> 00:03:36,560
-something called context data or part
+something called context data, or part
 
 76
 00:03:36,560 --> 00:03:38,720
-two which refers to any artifacts that
+two, which refers to any artifacts that
 
 77
 00:03:38,720 --> 00:03:40,959
-are not onchain or maybe partially
+are not on-chain or maybe partially
 
 78
 00:03:40,959 --> 00:03:44,080
-onchain but in some way represent some
+on-chain but in some way represent some
 
 79
 00:03:44,080 --> 00:03:50,000
-stability to the stable coin asset
+stability to the stable coin asset.
 
 80
-00:03:50,000 --> 00:03:53,519
-and that linking will be
+00:03:50,000 --> 00:03:55,280
+The importance of that linking
 
 81
-00:03:53,519 --> 00:03:55,280
-the importance of that linking
-
-82
 00:03:55,280 --> 00:03:58,239
 will come in a little bit later
 
-83
+82
 00:03:58,239 --> 00:04:02,239
 in the context of the asset network.
 
-84
+83
 00:04:02,239 --> 00:04:03,920
 So in this case, they've minted the
 
-85
+84
 00:04:03,920 --> 00:04:05,840
 minted the coin and then there's an
 
-86
+85
 00:04:05,840 --> 00:04:08,000
 entity that is the interface to the
 
-87
+86
 00:04:08,000 --> 00:04:09,519
 asset management network. So we're
 
-88
+87
 00:04:09,519 --> 00:04:11,360
-calling this, you know, network one,
+calling this, network one,
 
-89
+88
 00:04:11,360 --> 00:04:13,680
 asset network one. And that's
 
-90
+89
 00:04:13,680 --> 00:04:16,079
 where you interface to whatever is your
 
-91
+90
 00:04:16,079 --> 00:04:17,600
 distributed ledger technology, whether
 
-92
+91
 00:04:17,600 --> 00:04:19,040
 it's a public, private, or even a
 
-93
+92
 00:04:19,040 --> 00:04:20,560
 monolithic
 
-94
+93
 00:04:20,560 --> 00:04:23,120
 Network.
 
-95
+94
 00:04:23,120 --> 00:04:25,520
 And then in step four, the gateway reads
 
-96
+95
 00:04:25,520 --> 00:04:28,560
-a token from network one which we're
+a token from network one, which we're
+
+96
+00:04:28,560 --> 00:04:32,240
+calling the SATP gateway one, and that
 
 97
-00:04:28,560 --> 00:04:32,240
-calling the SATP gateway one. And that
-
-98
 00:04:32,240 --> 00:04:34,000
 then in step five interfaces with the
 
-99
+98
 00:04:34,000 --> 00:04:36,160
 artifacts registry to collect the
 
-100
+99
 00:04:36,160 --> 00:04:39,120
-additional data that's there and is
+additional data that's there
+
+100
+00:04:39,120 --> 00:04:41,520
+and it validates that prior to the
 
 101
-00:04:39,120 --> 00:04:41,520
-and it's validates that prior to the
-
-102
 00:04:41,520 --> 00:04:45,040
 asset transfer. And then in step six,
 
-103
+102
 00:04:45,040 --> 00:04:46,560
 this is sort of the jumping off point
 
-104
+103
 00:04:46,560 --> 00:04:49,520
 for actually doing the transfer over the
 
-105
+104
 00:04:49,520 --> 00:04:51,360
 SATP protocol. And the idea is you're
 
-106
+105
 00:04:51,360 --> 00:04:54,080
 transferring an asset from gateway
 
-107
+106
 00:04:54,080 --> 00:04:56,960
-one or the g the token
+one or the token
+
+107
+00:04:56,960 --> 00:04:59,440
+issuance domain into another network
 
 108
-00:04:56,960 --> 00:04:59,440
-issuers domain into another network
-
-109
 00:04:59,440 --> 00:05:05,189
 which is receiving that asset.
 
+109
+00:05:05,213 --> 00:05:09,343
+What are the SATP entities? There's
+
 110
-00:05:09,590 --> 00:05:11,120
-So what are the sat entities? There's
-there's something called the originator
+00:05:09,367 --> 00:05:11,120
+something called the originator
 
 111
 00:05:11,120 --> 00:05:12,880
@@ -485,11 +484,11 @@ in which that gateway operates is
 
 122
 00:05:37,280 --> 00:05:40,479
-represented in by this notion of
+represented by this notion of
 
 123
 00:05:40,479 --> 00:05:43,280
-an asset network could be one or many
+an asset network; could be one or many
 
 124
 00:05:43,280 --> 00:05:44,880
@@ -521,7 +520,7 @@ and giving the instructions to the
 
 131
 00:05:58,960 --> 00:06:02,240
-gateways to do to you know present their
+gateways to present their
 
 132
 00:06:02,240 --> 00:06:06,960
@@ -557,7 +556,7 @@ stage one of the protocol. So I'm
 
 140
 00:06:25,680 --> 00:06:28,160
-calling it out as it's a leg it's a real
+calling it out as it's a real
 
 141
 00:06:28,160 --> 00:06:30,639
@@ -569,7 +568,7 @@ owner for now just to make the slides
 
 143
 00:06:32,240 --> 00:06:34,479
-more clear but it's the it's these
+more clear, but it's these
 
 144
 00:06:34,479 --> 00:06:36,400
@@ -577,11 +576,11 @@ entities that are responsible for
 
 145
 00:06:36,400 --> 00:06:39,199
-administering the infrastructure and are
+administering the infrastructure and
 
 146
 00:06:39,199 --> 00:06:41,520
-the ones that it represents the entities
+it represents the entities
 
 147
 00:06:41,520 --> 00:06:44,000
@@ -589,11 +588,11 @@ that are responsible for
 
 148
 00:06:44,000 --> 00:06:48,319
-You the that are legally
+that are legally
 
 149
 00:06:48,319 --> 00:06:51,520
-responsible for the for the asset.
+responsible for the asset.
 
 150
 00:06:51,520 --> 00:06:52,639
@@ -617,2849 +616,2806 @@ for whatever additional
 
 155
 00:07:08,080 --> 00:07:10,000
-You investigation that's needed on
+Your investigation that's needed on
 
 156
 00:07:10,000 --> 00:07:11,840
-the asset. So think of it as it
+the asset.
 
 157
-00:07:11,840 --> 00:07:13,440
-there's some way to make it's it's
+00:07:11,840 --> 00:07:15,039
+It's something that provides the audit trail
 
 158
-00:07:13,440 --> 00:07:15,039
-something that provides the audit trail
-
-159
 00:07:15,039 --> 00:07:21,029
 for the protocol.
 
-160
+159
 00:07:23,350 --> 00:07:25,085
 So here is a view of the architecture
 
-161
+160
 00:07:25,109 --> 00:07:25,680
 for SATP.
 
-162
+161
 00:07:25,680 --> 00:07:29,199
 One of the main goals of this
 
-163
+162
 00:07:29,199 --> 00:07:31,919
 architecture is to essentially implement
 
-164
+163
 00:07:31,919 --> 00:07:34,080
 a an atomic two-phase commit protocol
 
-165
+164
 00:07:34,080 --> 00:07:37,039
 for the asset exchange. It's
 
-166
+165
 00:07:37,039 --> 00:07:38,960
 fundamentally decentralized. In other
 
-167
+166
 00:07:38,960 --> 00:07:41,039
 words, there's no assumption that the
 
-168
+167
 00:07:41,039 --> 00:07:45,039
-originator and the beneficiary are share
+originator and the beneficiary share
 
-169
+168
 00:07:45,039 --> 00:07:48,400
 a trusted third party relationship.
 
-170
+169
 00:07:48,400 --> 00:07:50,319
-the there's a tokenized and
+There's a tokenized and
+
+170
+00:07:50,319 --> 00:07:52,639
+non-tokenized asset. So, not everything
 
 171
-00:07:50,319 --> 00:07:52,639
-non-tokenized assets. So, not everything
+00:07:52,639 --> 00:07:55,599
+is on-chain per se. But it can exist
 
 172
-00:07:52,639 --> 00:07:55,599
-is on chain per se. But it can exist
-
-173
 00:07:55,599 --> 00:07:58,160
 and it is relevant to the to the
 
-174
+173
 00:07:58,160 --> 00:08:00,479
 exchange of assets.
 
-175
+174
 00:08:00,479 --> 00:08:04,319
-It needs to be audit auditable and
+It needs to be auditable and
 
-176
+175
 00:08:04,319 --> 00:08:07,680
 and the assets need to be durable.
 
-177
+176
 00:08:07,680 --> 00:08:09,680
 There's also the notion of a canonical
 
-178
+177
 00:08:09,680 --> 00:08:12,160
 identifier, which is to say that the
 
-179
+178
 00:08:12,160 --> 00:08:14,160
 representation of the identifiers and
 
-180
+179
 00:08:14,160 --> 00:08:16,560
 the information that are known to the
 
-181
+180
 00:08:16,560 --> 00:08:18,960
 originator don't have to be the same as
 
-182
+181
 00:08:18,960 --> 00:08:21,440
 the representation of identifiers that
 
-183
+182
 00:08:21,440 --> 00:08:24,000
 are known to beneficiary B. In other
 
-184
+183
 00:08:24,000 --> 00:08:26,160
-words, the
+words,
 
-185
+184
 00:08:26,160 --> 00:08:28,639
 the attributes that are in
 
-186
+185
 00:08:28,639 --> 00:08:31,039
 common have to be negotiated or created
 
-187
+186
 00:08:31,039 --> 00:08:33,760
 as part of the protocol.
 
-188
+187
 00:08:33,760 --> 00:08:37,919
-But it's not requiring that the that
+But it's not requiring that
+
+188
+00:08:37,919 --> 00:08:41,039
+the asset identifier has
 
 189
-00:08:37,919 --> 00:08:41,039
-the asset ident the asset identifier has
-
-190
 00:08:41,039 --> 00:08:42,880
 to be
 
-191
+190
 00:08:42,880 --> 00:08:46,000
-Morphed into a namespace that's
+morphed into a namespace that's
 
-192
+191
 00:08:46,000 --> 00:08:48,320
 defined by the protocol or the
 
-193
+192
 00:08:48,320 --> 00:08:51,990
 artifacts registry.
 
-194
-00:08:53,750 --> 00:08:54,622
-There's a need for asset versioning
+193
+00:08:52,014 --> 00:08:54,622
+There's a need for asset versioning,
 
-195
-00:08:54,646 --> 00:08:55,519
+194
+00:08:54,646 --> 00:08:55,495
 pinning and roll back. That's part of
 
-196
+195
 00:08:55,519 --> 00:08:59,279
 the two-phase commit requirement. And
 
-197
+196
 00:08:59,279 --> 00:09:00,959
-It's al there's also requirements for
+There's also requirements for
 
-198
+197
 00:09:00,959 --> 00:09:02,800
 provenenced asset transfers. In other
 
-199
+198
 00:09:02,800 --> 00:09:06,080
 words, you should be able to unwind this
 
-200
+199
 00:09:06,080 --> 00:09:08,720
-This asset transfer and be able
+asset transfer and be able
 
-201
+200
 00:09:08,720 --> 00:09:11,200
 to identify all the stages in the
 
-202
+201
 00:09:11,200 --> 00:09:13,839
 transfer after the transfer has
 
-203
+202
 00:09:13,839 --> 00:09:16,720
 happened.
 
-204
+203
 00:09:16,720 --> 00:09:19,200
 And so as you can see in the
 
-205
+204
 00:09:19,200 --> 00:09:22,480
 diagram, the protocol is divided into
 
-206
+205
 00:09:22,480 --> 00:09:25,040
 four stages. Stage zero, stage one, two
 
-207
+206
 00:09:25,040 --> 00:09:30,000
 and three. And
 
-208
+207
 00:09:30,000 --> 00:09:32,320
 and you see the artifacts registry kind
 
-209
+208
 00:09:32,320 --> 00:09:33,920
 of in the middle. It's not really a
 
-210
+209
 00:09:33,920 --> 00:09:36,880
 separate entity. and I'll talk
 
-211
+210
 00:09:36,880 --> 00:09:43,190
 more about why that is in a second.
 
+211
+00:09:43,214 --> 00:09:44,962
+One thing to note is that
+
 212
-00:09:45,350 --> 00:09:46,383
-One thing to note is that the author
+00:09:44,986 --> 00:09:47,440
+the authority model from
 
 213
-00:09:46,407 --> 00:09:47,440
-the authority model in this in from
-
-214
 00:09:47,440 --> 00:09:49,920
 the perspective of the architecture in
 
-215
+214
 00:09:49,920 --> 00:09:53,279
-the first series of drafts there is
+the first series of drafts, there is
+
+215
+00:09:53,279 --> 00:09:56,080
+an assumption, that's implicit, that it's
 
 216
-00:09:53,279 --> 00:09:56,080
-an assumption that's implicit that it's
+00:09:56,080 --> 00:10:00,240
+X.509 certificate based and so this is a
 
 217
-00:09:56,080 --> 00:10:00,240
-X509 certificate based and so this is a
-
-218
 00:10:00,240 --> 00:10:02,240
 bias that finds its way into the
 
-219
+218
 00:10:02,240 --> 00:10:05,279
-specifications and it just it there's
+specifications and there's
+
+219
+00:10:05,279 --> 00:10:06,880
+no normative text that
 
 220
-00:10:05,279 --> 00:10:06,880
-nothing there's no normative text that
+00:10:06,880 --> 00:10:10,080
+says it has to be X.509 but the way that
 
 221
-00:10:06,880 --> 00:10:10,080
-says it has to be X509 but the way that
+00:10:10,080 --> 00:10:11,760
+the people are thinking, their bias
 
 222
-00:10:10,080 --> 00:10:11,760
-the people are thinking their bias
+00:10:11,760 --> 00:10:15,600
+towards X.509 thinking, and so that tends
 
 223
-00:10:11,760 --> 00:10:15,600
-towards X509 thinking and so that tends
-
-224
 00:10:15,600 --> 00:10:17,760
 to be an uphill battle as you
 
-225
+224
 00:10:17,760 --> 00:10:20,160
-contemplate integrating you know KERI
+contemplate integrating your KERI
 
-226
+225
 00:10:20,160 --> 00:10:23,990
 concepts into this.
 
-227
-00:10:26,310 --> 00:10:27,543
+226
+00:10:24,014 --> 00:10:26,395
 And so part of the initial investigation
 
+227
+00:10:26,419 --> 00:10:28,800
+that I did into this environment, was to
+
 228
-00:10:27,567 --> 00:10:28,800
-that I did into this environment was to
+00:10:28,800 --> 00:10:31,120
+look at what would it take to
 
 229
-00:10:28,800 --> 00:10:31,120
-look at well what would it take to
-
-230
 00:10:31,120 --> 00:10:34,800
 integrate vLEI authorization into a SATP
 
-231
+230
 00:10:34,800 --> 00:10:36,800
 architecture.
 
-232
+231
 00:10:36,800 --> 00:10:40,000
-And so I sketched out kind of how you
+I sketched out how you
+
+232
+00:10:40,000 --> 00:10:42,959
+might do that. We have the
 
 233
-00:10:40,000 --> 00:10:42,959
-might do that. So we have we have the
+00:10:42,959 --> 00:10:46,000
+the standard GLEIF and QVI and
 
 234
-00:10:42,959 --> 00:10:46,000
-sort of the standard GLEIF and QVI and
+00:10:46,000 --> 00:10:48,959
+LOU entities represented and then we
 
 235
-00:10:46,000 --> 00:10:48,959
-LLU entities represented and then we
-
-236
 00:10:48,959 --> 00:10:52,160
 have the within the domain the SAT
 
-237
+236
 00:10:52,160 --> 00:10:54,079
-domain you have something I'm just
+domain you have something I'm
+
+237
+00:10:54,079 --> 00:10:57,279
+calling the SAT domain which is
 
 238
-00:10:54,079 --> 00:10:57,279
-calling the SAT domain which is which
+00:10:57,279 --> 00:10:59,839
+whatever is the appropriate way to
 
 239
-00:10:57,279 --> 00:10:59,839
-is whatever is the appropriate way to
+00:10:59,839 --> 00:11:02,640
+identify that organization. So here
 
 240
-00:10:59,839 --> 00:11:02,640
-identify that organization. So here I'
-
-241
 00:11:02,640 --> 00:11:04,640
 I've just coined the term
 
-242
+241
 00:11:04,640 --> 00:11:06,320
-originator.acample.org
+originator.example.org
+
+242
+00:11:06,320 --> 00:11:08,240
+or beneficiary.example.org
 
 243
-00:11:06,320 --> 00:11:08,240
-or beneficiary.acample.org
+00:11:08,240 --> 00:11:11,279
+to capture that idea.
 
 244
-00:11:08,240 --> 00:11:11,279
-to just capture that idea. and
+00:11:11,279 --> 00:11:13,360
+The point is it becomes an LEI
 
 245
-00:11:11,279 --> 00:11:13,360
-the point the point is it becomes an LEI
-
-246
 00:11:13,360 --> 00:11:14,959
 holder
 
-247
+246
 00:11:14,959 --> 00:11:17,120
-and then there's the you know the O the
+and then there's the OOR
+
+247
+00:11:17,120 --> 00:11:20,399
+and the ECR entities; those are also
 
 248
-00:11:17,120 --> 00:11:20,399
-O and ECR entities those are also
+00:11:20,399 --> 00:11:25,200
+represented.
 
 249
-00:11:20,399 --> 00:11:25,200
-represented now not you know these
+00:11:25,200 --> 00:11:28,079
+These entities aren't defined in
 
 250
-00:11:25,200 --> 00:11:28,079
-these entities aren't aren't defined in
-
-251
 00:11:28,079 --> 00:11:30,000
 the architecture or in any of the
 
-252
+251
 00:11:30,000 --> 00:11:33,040
-specifications but there is something
+specifications but there is
+
+252
+00:11:33,040 --> 00:11:34,959
+somebody,
 
 253
-00:11:33,040 --> 00:11:34,959
-you know there is somebody that is
+00:11:34,959 --> 00:11:37,839
+the CEO for example, that can that
 
 254
-00:11:34,959 --> 00:11:37,839
-the CEO for example that can that you
+00:11:37,839 --> 00:11:41,279
+has the legal responsibility for
 
 255
-00:11:37,839 --> 00:11:41,279
-know has the legal responsibility for
-
-256
 00:11:41,279 --> 00:11:44,240
 the asset and there is something that is
 
-257
+256
 00:11:44,240 --> 00:11:47,040
 responsible for you know provisioning or
 
-258
+257
 00:11:47,040 --> 00:11:53,200
 issuing credentials to the hosts.
 
-259
+258
 00:11:53,200 --> 00:11:57,440
-And then on the on the on the asset
+And then on the asset
 
-260
+259
 00:11:57,440 --> 00:11:59,920
 side we basically have some
 
-261
+260
 00:11:59,920 --> 00:12:01,279
-requirements. You think of these maybe
+requirements, maybe
 
-262
+261
 00:12:01,279 --> 00:12:03,040
 the legal requirements for the asset,
 
-263
+262
 00:12:03,040 --> 00:12:06,959
 but the asset authority is
 
-264
+263
 00:12:06,959 --> 00:12:08,959
 someone that you know has legal title or
 
-265
+264
 00:12:08,959 --> 00:12:10,720
 ownership of the asset. They have the
 
-266
+265
 00:12:10,720 --> 00:12:12,560
 right to disposition the asset or to
 
-267
+266
 00:12:12,560 --> 00:12:14,880
 transfer it. It needs to be a
 
-268
+267
 00:12:14,880 --> 00:12:18,399
-non-repud non-repudiable authorization.
+non-repudiable authorization.
 
-269
+268
 00:12:18,399 --> 00:12:20,800
 And there's this notion of express
 
-270
+269
 00:12:20,800 --> 00:12:24,000
 delegation and recorded disposition as
 
-271
+270
 00:12:24,000 --> 00:12:25,519
 well as effective date and some other
 
-272
+271
 00:12:25,519 --> 00:12:28,880
 legal requirements that have to be
 
-273
+272
 00:12:28,880 --> 00:12:31,519
-met in order for this protocol to work.
+met in order for this protocol to work
+
+273
+00:12:31,519 --> 00:12:35,200
+but it's not defined yet in the
 
 274
-00:12:31,519 --> 00:12:35,200
-But it's not defined yet in the in the
+00:12:35,200 --> 00:12:37,279
+set of specifications of how to do
 
 275
-00:12:35,200 --> 00:12:37,279
-Set of specifications of how to do
-
-276
 00:12:37,279 --> 00:12:42,870
 that.
 
+276
+00:12:42,894 --> 00:12:46,210
+One other note is, from the
+
 277
-00:12:45,269 --> 00:12:46,210
-One other note is that from the
+00:12:46,234 --> 00:12:47,360
+perspective of LEI, that actually the
 
 278
-00:12:46,234 --> 00:12:47,360
-perspective lei that the actually the
+00:12:47,360 --> 00:12:51,040
+hosts are not legal entities.
 
 279
-00:12:47,360 --> 00:12:51,040
-hosts are not are not legal entities.
+00:12:51,040 --> 00:12:54,240
+They're devices and there
 
 280
-00:12:51,040 --> 00:12:54,240
-They're devices and there isn't the
+00:12:54,240 --> 00:12:57,839
+and in LEI there
 
 281
-00:12:54,240 --> 00:12:57,839
-notion of a an in the in lei there
-
-282
 00:12:57,839 --> 00:13:00,079
 isn't the notion of a credential that's
 
-283
+282
 00:13:00,079 --> 00:13:04,000
-appropriate for a device. And so but
+appropriate for a device. But
+
+283
+00:13:04,000 --> 00:13:05,680
+it could be anything: It could be a
 
 284
-00:13:04,000 --> 00:13:05,680
-it could be anything. It could be a
+00:13:05,680 --> 00:13:08,240
+certificate, there could be a DID
 
 285
-00:13:05,680 --> 00:13:08,240
-certificate. There could be a DID
-
-286
 00:13:08,240 --> 00:13:10,639
 but you could also have a KERI KEL as
 
-287
+286
 00:13:10,639 --> 00:13:13,200
-the credential but it's not specified
+the credential, but it's not specified
+
+287
+00:13:13,200 --> 00:13:17,279
+in the specification that says that it
 
 288
-00:13:13,200 --> 00:13:15,040
-in this you know there isn't anything in
+00:13:17,279 --> 00:13:20,560
+can't be anything any of these,
 
 289
-00:13:15,040 --> 00:13:17,279
-the specification that says that it
+00:13:20,560 --> 00:13:22,079
+But like I said before, there is an
 
 290
-00:13:17,279 --> 00:13:20,560
-can't be anything any of these but
-
-291
-00:13:20,560 --> 00:13:22,079
-like I said before there is an
-
-292
 00:13:22,079 --> 00:13:24,000
 assumption that it's probably a
 
+291
+00:13:24,000 --> 00:13:27,739
+certificate.
+
+292
+00:13:27,763 --> 00:13:32,440
+[To next slide, red.]
+
 293
-00:13:24,000 --> 00:13:29,190
-certificate
+00:13:32,464 --> 00:13:35,519
+In 2023 this working group
 
 294
-00:13:31,430 --> 00:13:32,440
-all right so
-
-295
-00:13:32,464 --> 00:13:35,519
-how did so in 2023 this working group
-
-296
 00:13:35,519 --> 00:13:40,800
 was formed and the working
 
-297
+295
 00:13:40,800 --> 00:13:42,240
-group kind of sat down and said okay
+group sat down and said "okay,
+
+296
+00:13:42,240 --> 00:13:44,000
+what do we want to work on, what charter
+
+297
+00:13:44,000 --> 00:13:47,040
+should we bring to the working group" and
 
 298
-00:13:42,240 --> 00:13:44,000
-what do we want to work on what charter
+00:13:47,040 --> 00:13:49,360
+of course one suggestion was
 
 299
-00:13:44,000 --> 00:13:47,040
-should we bring to the working group and
+00:13:49,360 --> 00:13:51,760
+let's start with stage zero; that's the
 
 300
-00:13:47,040 --> 00:13:49,360
-Of course one suggestion was well
+00:13:51,760 --> 00:13:54,560
+first part of the protocol. But it
 
 301
-00:13:49,360 --> 00:13:51,760
-let's start with stage zero that's the
-
-302
-00:13:51,760 --> 00:13:54,560
-first part of the protocol u but it
-
-303
 00:13:54,560 --> 00:13:57,920
 became clear that people were not really
 
-304
+302
 00:13:57,920 --> 00:13:59,760
 clear about what should be in stage zero
 
-305
+303
 00:13:59,760 --> 00:14:02,000
 and so they said let's start where we're
 
-306
+304
 00:14:02,000 --> 00:14:05,839
 least confused which was stage one. So,
 
-307
+305
 00:14:05,839 --> 00:14:07,680
 the first set of protocols begin with
 
-308
+306
 00:14:07,680 --> 00:14:10,320
 stage one. And I'm going to just briefly
 
-309
+307
 00:14:10,320 --> 00:14:12,800
 walk through stage one, two, and three.
 
-310
+308
 00:14:12,800 --> 00:14:15,279
-If you have questions, chime in. But
+If you have questions, chime in.
+
+309
+00:14:15,279 --> 00:14:18,000
+But it's the
+
+310
+00:14:18,000 --> 00:14:22,000
+easy part basically. The important
 
 311
-00:14:15,279 --> 00:14:18,000
-it's basically just kind of the it's the
+00:14:22,000 --> 00:14:24,320
+aspect of stage one is there's
 
 312
-00:14:18,000 --> 00:14:22,000
-easy part basically. but the
-
-313
-00:14:22,000 --> 00:14:24,320
-important aspect of stage one is there's
-
-314
 00:14:24,320 --> 00:14:26,079
 a there's sort of a handshake that says,
 
-315
+313
 00:14:26,079 --> 00:14:28,079
 "Hey, I want to do a transfer." So you
 
-316
+314
 00:14:28,079 --> 00:14:30,560
 propose your transfer and then the
 
-317
+315
 00:14:30,560 --> 00:14:34,240
 the recipient then acknowledges the
 
-318
+316
 00:14:34,240 --> 00:14:37,519
 request and then you begin the
 
-319
+317
 00:14:37,519 --> 00:14:41,519
 transfer. Part of that proposal is to
 
-320
+318
 00:14:41,519 --> 00:14:43,040
 provide all of the contextual
 
-321
+319
 00:14:43,040 --> 00:14:45,440
 information necessary in order to
 
-322
+320
 00:14:45,440 --> 00:14:49,040
 perform the asset exchange. And so what
 
-323
+321
 00:14:49,040 --> 00:14:53,199
-you see here is a list of is a
+you see here is a
 
-324
+322
 00:14:53,199 --> 00:14:56,320
-snapshot of the transfer pro protocol
+snapshot of the transfer protocol
 
-325
+323
 00:14:56,320 --> 00:14:59,040
 message and then kind of the body of
 
-326
+324
 00:14:59,040 --> 00:15:01,199
-it which is the transfer claim which is
+it, which is the transfer claim which is
 
-327
+325
 00:15:01,199 --> 00:15:03,680
 where all the ugly data shows up that
 
-328
+326
 00:15:03,680 --> 00:15:06,399
 provides the context for the being able
 
-329
+327
 00:15:06,399 --> 00:15:09,360
 to transfer the asset.
 
-330
+328
 00:15:09,360 --> 00:15:12,000
 The interesting thing though is the
 
-331
+329
 00:15:12,000 --> 00:15:13,920
 transfer context identifier is supposed
 
-332
+330
 00:15:13,920 --> 00:15:16,399
 to be negotiated in stage zero but we
 
-333
+331
 00:15:16,399 --> 00:15:18,639
 haven't defined it yet. So it's just a
 
-334
+332
 00:15:18,639 --> 00:15:20,320
 placeholder,
 
-335
+333
 00:15:20,320 --> 00:15:24,790
-a string. Trip means string.
+a string. 'tstr' means string.
 
-336
-00:15:26,150 --> 00:15:27,565
+334
+00:15:24,814 --> 00:15:27,565
 Then there's these other things that are
 
-337
+335
 00:15:27,589 --> 00:15:28,720
 showing up which refer to domain
 
-338
+336
 00:15:28,720 --> 00:15:31,360
 bindings. So there's the verified
 
-339
+337
 00:15:31,360 --> 00:15:33,600
 originator entity ID and the verified
 
-340
+338
 00:15:33,600 --> 00:15:36,399
 beneficiary entity ID. These are strings
 
-341
+339
 00:15:36,399 --> 00:15:39,760
 again undefined as to what is in the
 
-342
-00:15:39,760 --> 00:15:43,430
+340
+00:15:39,760 --> 00:15:42,430
 string.
 
-343
-00:15:45,509 --> 00:15:47,049
+341
+00:15:42,454 --> 00:15:45,049
 Then there's a bunch of information
 
-344
-00:15:47,073 --> 00:15:48,480
+342
+00:15:45,073 --> 00:15:48,480
 about the context of the various
 
-345
+343
 00:15:48,480 --> 00:15:50,880
 devices. And so there's the originator's
 
-346
+344
 00:15:50,880 --> 00:15:53,839
 public key which presumably is there
 
-347
+345
 00:15:53,839 --> 00:15:56,480
 to be able to verify the identity of
 
-348
+346
 00:15:56,480 --> 00:15:58,639
 the originator. So you got the identity
 
-349
+347
 00:15:58,639 --> 00:16:00,320
 the originator's identity plus the
 
-350
+348
 00:16:00,320 --> 00:16:01,839
 originator's public key which can be
 
-351
+349
 00:16:01,839 --> 00:16:04,560
 used to authenticate the identity.
 
-352
+350
 00:16:04,560 --> 00:16:05,600
 And then there's some of the other
 
-353
+351
 00:16:05,600 --> 00:16:08,000
 entities here. So there's the gateway.
 
-354
+352
 00:16:08,000 --> 00:16:13,279
 There's the network.
 
-355
+353
 00:16:13,279 --> 00:16:16,480
-There's also you know identities and
+There's also identities and
 
-356
+354
 00:16:16,480 --> 00:16:18,639
 and credentials for both the gateway,
 
-357
+355
 00:16:18,639 --> 00:16:20,639
 the network and the identity. And then
 
-358
+356
 00:16:20,639 --> 00:16:22,079
 down at the bottom there's this notion
 
-359
+357
 00:16:22,079 --> 00:16:24,320
 of the owner
 
-360
+358
 00:16:24,320 --> 00:16:26,399
-Which again which is not which is not
+Which is not
 
-361
+359
 00:16:26,399 --> 00:16:28,399
 well defined but it asserts that
 
-362
+360
 00:16:28,399 --> 00:16:30,800
 there is some entity within the
 
-363
+361
 00:16:30,800 --> 00:16:32,959
 gateway that is the legal owner of the
 
-364
+362
 00:16:32,959 --> 00:16:39,670
 asset.
 
+363
+00:16:39,694 --> 00:16:41,911
+in one of the recent
+
+364
+00:16:41,935 --> 00:16:44,480
+meetings there was observed
+
 365
-00:16:42,150 --> 00:16:43,223
-So one of the in one of the recent
+00:16:44,480 --> 00:16:46,560
+"Hey, there's in this transfer init claim
 
 366
-00:16:43,247 --> 00:16:44,480
-meetings that was sort of observed that
+00:16:46,560 --> 00:16:48,320
+claim, there's all of this information
 
 367
-00:16:44,480 --> 00:16:46,560
-hey there's in this transfer nit
+00:16:48,320 --> 00:16:50,959
+but as we contemplate looking at stage 0
 
 368
-00:16:46,560 --> 00:16:48,320
-claim there's all of this information
+00:16:50,959 --> 00:16:52,560
+it seems like a lot of that
 
 369
-00:16:48,320 --> 00:16:50,959
-but as we contemplate looking at stage
-
-370
-00:16:50,959 --> 00:16:52,560
-zero it seems like a lot of that
-
-371
 00:16:52,560 --> 00:16:54,399
 information already exists somewhere in
 
-372
+370
 00:16:54,399 --> 00:16:58,000
-stage zero and do we need it all here
+stage 0; do we need it all here"
 
-373
+371
 00:16:58,000 --> 00:17:00,720
-and so that's kind of setting the stage
+and that's kind of setting the stage
 
-374
+372
 00:17:00,720 --> 00:17:05,199
 for the next slide but basically
 
-375
+373
 00:17:05,199 --> 00:17:07,760
-This my interest in this started with
+My interest in this started with
 
-376
+374
 00:17:07,760 --> 00:17:11,439
 a draft that I did called
 
-377
+375
 00:17:11,439 --> 00:17:17,120
-Satpi binding and it's it's you
+SATP vLEI binding and it's
 
-378
+376
 00:17:17,120 --> 00:17:18,559
 essentially populating some of these
 
-379
+377
 00:17:18,559 --> 00:17:20,799
-values for with the assumption that
+values with the assumption that
+
+378
+00:17:20,799 --> 00:17:23,120
+if I had an infrastructure that
+
+379
+00:17:23,120 --> 00:17:25,439
+looked like KERI underneath
 
 380
-00:17:20,799 --> 00:17:23,120
-if I had if I had an infrastructure that
+00:17:25,439 --> 00:17:30,320
+how would I integrate that and
 
 381
-00:17:23,120 --> 00:17:25,439
-looked like KERI underneath what
+00:17:30,320 --> 00:17:36,559
+that was the genesis of that draft.
 
 382
-00:17:25,439 --> 00:17:27,679
-would what would it you know how would I
+00:17:36,683 --> 00:17:39,895
+One of the other outcomes of doing the
 
 383
-00:17:27,679 --> 00:17:30,320
-integrate that and so that's
-
-384
-00:17:30,320 --> 00:17:35,039
-that was sort of the genesis of that
-
-385
-00:17:35,039 --> 00:17:38,559
-That draft
-
-386
-00:17:38,559 --> 00:17:39,919
-one of the other outcomes of doing the
-
-387
 00:17:39,919 --> 00:17:43,440
 draft was to define media types for the
 
-388
+384
 00:17:43,440 --> 00:17:45,200
 various payloads that are CESR
 
-389
+385
 00:17:45,200 --> 00:17:49,919
 specific. So it proposes
 
-390
+386
 00:17:49,919 --> 00:17:52,640
-Additions to the Ayanna registry for
+Additions to the IANA registry for
 
-391
+387
 00:17:52,640 --> 00:17:57,750
 CESR payloads.
 
-392
-00:18:01,190 --> 00:18:02,258
-So moving on we have the H2 protocol
+388
+00:17:57,774 --> 00:18:00,258
+So moving on we have the stage 2 protocol
 
-393
-00:18:02,282 --> 00:18:03,440
+389
+00:18:00,282 --> 00:18:03,416
 which is essentially locking. So before
 
-394
+390
 00:18:03,440 --> 00:18:04,960
-we can actually do the exchange, we need
+we can actually
 
-395
+391
 00:18:04,960 --> 00:18:07,280
-to before we can transfer the asset, we
+transfer the asset, we
 
-396
+392
 00:18:07,280 --> 00:18:09,760
 need to lock the asset. So very simple
 
-397
+393
 00:18:09,760 --> 00:18:12,320
-request response kind of locking. It's a
+kind of request-response locking. It's a
 
-398
+394
 00:18:12,320 --> 00:18:14,480
-it's a you know not fine grain locking.
+it's a not fine-grained locking,
 
-399
+395
 00:18:14,480 --> 00:18:17,360
-It's a global lock around everything.
+it's a global lock around everything.
 
-400
+396
 00:18:17,360 --> 00:18:19,440
 And then we have a two-phase commit
 
-401
+397
 00:18:19,440 --> 00:18:23,120
 protocol which includes in this the
 
-402
+398
 00:18:23,120 --> 00:18:26,880
-notion of minting a new re a new re
+notion of minting a new
 
-403
+399
 00:18:26,880 --> 00:18:30,480
-asset in the in the beneficiaries domain
+asset in the beneficiary domain
 
-404
+400
 00:18:30,480 --> 00:18:33,120
 and burning or destroying the asset in
 
-405
-00:18:33,120 --> 00:18:38,630
+401
+00:18:33,120 --> 00:18:37,244
 the sender domain.
 
-406
-00:18:41,669 --> 00:18:42,542
-All right. So there isn't this notion
+402
+00:18:37,268 --> 00:18:39,545
+There isn't this notion
 
-407
-00:18:42,566 --> 00:18:43,440
-of hey I transferred the asset. It's
+403
+00:18:39,569 --> 00:18:43,440
+of "Hey, I transferred the asset." It's
 
-408
+404
 00:18:43,440 --> 00:18:45,440
 just bookkeeping in some sense.
 
-409
+405
 00:18:45,440 --> 00:18:50,950
 Right?
 
-410
+406
 00:18:55,750 --> 00:18:57,769
 All right. So now the working group is
 
-411
+407
 00:18:57,793 --> 00:18:59,600
 almost done with the specification
 
-412
+408
 00:18:59,600 --> 00:19:02,160
 for the architecture and for the
 
-413
+409
 00:19:02,160 --> 00:19:04,960
 protocols from stage zero to stage
 
-414
+410
 00:19:04,960 --> 00:19:09,760
 three. They're in review by the working
 
-415
+411
 00:19:09,760 --> 00:19:13,600
 group and the area. And the way that
 
-416
+412
 00:19:13,600 --> 00:19:15,360
 the process works is when the working
 
-417
+413
 00:19:15,360 --> 00:19:16,559
 group believes they're done with
 
-418
+414
 00:19:16,559 --> 00:19:20,000
 something, they issue a last
 
-419
+415
 00:19:20,000 --> 00:19:23,520
 call on the specs which basically says,
 
-420
+416
 00:19:23,520 --> 00:19:26,000
-you know, that the period for
+that the period for
 
-421
+417
 00:19:26,000 --> 00:19:28,240
 providing feedback is ending. Please,
 
-422
+418
 00:19:28,240 --> 00:19:32,080
-you know give us give us your
+give us your
 
-423
+419
 00:19:32,080 --> 00:19:33,520
-feedback because we're going to then
+feedback because we're going to
 
-424
+420
 00:19:33,520 --> 00:19:36,640
 move it to the next phase which is to
 
-425
+421
 00:19:36,640 --> 00:19:39,280
 deliver it to the area directors and
 
-426
+422
 00:19:39,280 --> 00:19:43,840
-then on to the u the what's called
+then on to what's called
 
-427
+423
 00:19:43,840 --> 00:19:46,240
 the internet engineering
 
-428
+424
 00:19:46,240 --> 00:19:50,480
 group. So, IESG is their
 
-429
+425
 00:19:50,480 --> 00:19:53,280
 acronym. So what it means is
 
-430
+426
 00:19:53,280 --> 00:19:55,039
 If all of those reviews are
 
-431
+427
 00:19:55,039 --> 00:19:58,240
-successful then it will progress to RFC
+successful, then it will progress to RFC
 
-432
+428
 00:19:58,240 --> 00:19:59,840
 status.
 
-433
-00:19:59,840 --> 00:20:01,360
-Okay.
+429
+00:19:59,840 --> 00:20:02,880
+Okay?
 
-434
-00:20:01,360 --> 00:20:02,880
-So
-
-435
+430
 00:20:02,880 --> 00:20:06,400
 Since they're kind of done with
 
-436
+431
 00:20:06,400 --> 00:20:09,679
-The stages one through three they're
+The stages 1 through 3, they're
+
+432
+00:20:09,679 --> 00:20:14,480
+now rechartering to look at stage 0.
+
+433
+00:20:14,480 --> 00:20:16,400
+And then in the context of that,
+
+434
+00:20:16,400 --> 00:20:18,240
+what are the objectives or
+
+435
+00:20:18,240 --> 00:20:21,679
+requirements for a stage 0 portion
+
+436
+00:20:21,679 --> 00:20:23,840
+of the protocol. So one of
 
 437
-00:20:09,679 --> 00:20:14,480
-now rechartering to look at stage zero.
-
-438
-00:20:14,480 --> 00:20:16,400
-And then so in the context of that
-
-439
-00:20:16,400 --> 00:20:18,240
-what are the what are the objectives or
-
-440
-00:20:18,240 --> 00:20:21,679
-requirements for a stage zero portion
-
-441
-00:20:21,679 --> 00:20:23,840
-of the protocol. So one of the one of
-
-442
 00:20:23,840 --> 00:20:25,919
 the important aspects is that this
 
-443
+438
 00:20:25,919 --> 00:20:28,159
 notion of a transfer context identifier
 
-444
+439
 00:20:28,159 --> 00:20:30,320
 needs to be defined. What does it really
 
-445
+440
 00:20:30,320 --> 00:20:32,159
 mean? What are the properties of an
 
-446
+441
 00:20:32,159 --> 00:20:35,440
 identifier for the transfer context?
 
-447
+442
 00:20:35,440 --> 00:20:37,520
 How do we represent asset
 
-448
+443
 00:20:37,520 --> 00:20:39,520
 identification?
 
-449
+444
 00:20:39,520 --> 00:20:42,000
 How do we represent asset ownership
 
-450
+445
 00:20:42,000 --> 00:20:43,840
 and validation?
 
-451
+446
 00:20:43,840 --> 00:20:46,000
 How do we represent the authorization
 
-452
+447
 00:20:46,000 --> 00:20:47,919
 to transfer?
 
-453
+448
 00:20:47,919 --> 00:20:50,240
 There's also the exchange of travel rule
 
-454
+449
 00:20:50,240 --> 00:20:54,720
-requirements for in financial u
+requirements in financial
 
-455
+450
 00:20:54,720 --> 00:20:56,880
-context where
+contexts where it's
 
-456
+451
 00:20:56,880 --> 00:20:58,559
-It's basically saying how do we know
+basically saying "How do we know
 
-457
+452
 00:20:58,559 --> 00:21:01,360
 what information has to be included
 
-458
+453
 00:21:01,360 --> 00:21:04,159
 in the transfer in order for the
 
-459
+454
 00:21:04,159 --> 00:21:06,320
 appropriate context to be represented
 
-460
+455
 00:21:06,320 --> 00:21:09,679
-equally on both sides.
+equally on both sides."
 
-461
+456
 00:21:09,679 --> 00:21:11,360
 How do you represent gateway ownership
 
-462
+457
 00:21:11,360 --> 00:21:13,840
 and validate that? How do you
 
-463
+458
 00:21:13,840 --> 00:21:17,520
 negotiate the transfer? There's also
 
-464
+459
 00:21:17,520 --> 00:21:20,240
-information about the asset itself. You
+information about the asset itself.
 
-465
+460
 00:21:20,240 --> 00:21:22,559
-know, how do you classify it? And
+How do you classify it? And
 
-466
+461
 00:21:22,559 --> 00:21:24,240
 then there's something called mutual
 
-467
+462
 00:21:24,240 --> 00:21:29,679
-attestation which is which is a
+attestation which is a
 
-468
+463
 00:21:29,679 --> 00:21:31,600
 future requirement but it's essentially
 
-469
+464
 00:21:31,600 --> 00:21:34,720
-saying we want to be able to get
+saying "We want to be able to get
 
-470
+465
 00:21:34,720 --> 00:21:36,559
 information about the environments in
 
-471
+466
 00:21:36,559 --> 00:21:40,880
 which the hosts operate to better
 
-472
+467
 00:21:40,880 --> 00:21:43,120
 minimize or mitigate
 
-473
+468
 00:21:43,120 --> 00:21:45,919
-Risks associated with potential
+risks associated with potential
 
-474
+469
 00:21:45,919 --> 00:21:50,230
 attackers.
 
-475
-00:21:53,430 --> 00:21:54,423
+470
+00:21:50,254 --> 00:21:52,835
 So here's the stage zero protocol.
 
-476
-00:21:54,447 --> 00:21:55,440
+471
+00:21:52,859 --> 00:21:55,440
 I'm not going to go through this in
 
-477
+472
 00:21:55,440 --> 00:21:57,520
 huge detail but I want to draw your
 
-478
+473
 00:21:57,520 --> 00:22:01,600
 attention to step one which is a request
 
-479
+474
 00:22:01,600 --> 00:22:04,880
 to transfer a context and there's a
 
-480
+475
 00:22:04,880 --> 00:22:07,919
-tokenized artifact record which is which
+tokenized artifact record which
 
-481
+476
 00:22:07,919 --> 00:22:10,240
 correlates to the part one of the token
 
-482
+477
 00:22:10,240 --> 00:22:11,600
 that gets issued. So there's some
 
-483
+478
 00:22:11,600 --> 00:22:14,880
 information in the token that is used to
 
-484
+479
 00:22:14,880 --> 00:22:17,760
 to generate an identifier which we'll
 
-485
+480
 00:22:17,760 --> 00:22:20,960
 call the transfer context ID.
 
-486
+481
 00:22:20,960 --> 00:22:24,240
 And then there's a binding of the
 
-487
+482
 00:22:24,240 --> 00:22:27,200
-transfer context ID to other assets. So
+transfer context ID to other assets.
 
-488
+483
 00:22:27,200 --> 00:22:29,280
 within the context of the domain,
 
-489
+484
 00:22:29,280 --> 00:22:31,360
-there's could be a variety of digitized
+there could be a variety of digitized
 
-490
+485
 00:22:31,360 --> 00:22:34,240
 artifacts that are off-chain or domain
 
-491
+486
 00:22:34,240 --> 00:22:38,240
-specific that are tied to the
+specific, that are tied to the
 
-492
+487
 00:22:38,240 --> 00:22:42,880
-token in some way but not in the token.
+token in some way; but not in the token.
 
-493
+488
 00:22:42,880 --> 00:22:44,960
 So there's a binding step and then
 
-494
+489
 00:22:44,960 --> 00:22:47,280
 there's a propagation step in step
 
-495
+490
 00:22:47,280 --> 00:22:49,760
 four which is to say now that I have
 
-496
+491
 00:22:49,760 --> 00:22:52,559
 this context for transferring an asset I
 
-497
+492
 00:22:52,559 --> 00:22:57,200
 need to notify the beneficiary and
 
-498
+493
 00:22:57,200 --> 00:22:58,960
-say hey I'm going to we're going to
+say "Hey, we're going to
 
-499
+494
 00:22:58,960 --> 00:23:01,600
-we're going to progress with this
+progress with this
 
-500
+495
 00:23:01,600 --> 00:23:04,159
 asset transfer.
 
-501
+496
 00:23:04,159 --> 00:23:05,760
-So that happens in step four and
+That happens in step four and
 
-502
+497
 00:23:05,760 --> 00:23:09,600
 five. Step six is basically giving
 
-503
+498
 00:23:09,600 --> 00:23:12,240
 the beneficiary the opportunity to bind
 
-504
+499
 00:23:12,240 --> 00:23:14,880
 some of its assets to this exchange as
 
-505
+500
 00:23:14,880 --> 00:23:18,480
 well. So we have the DR2 from the
 
-506
+501
 00:23:18,480 --> 00:23:22,400
 beneficiaries side that's binding assets
 
-507
+502
 00:23:22,400 --> 00:23:24,080
 and then it returns with its
 
-508
+503
 00:23:24,080 --> 00:23:26,559
 propagate in the other direction to say
 
-509
+504
 00:23:26,559 --> 00:23:29,520
 in the context of the current transfer
 
-510
+505
 00:23:29,520 --> 00:23:32,480
 transfer context that we're exchanging
 
-511
+506
 00:23:32,480 --> 00:23:34,720
 here are my attributes that I'm adding
 
-512
+507
 00:23:34,720 --> 00:23:37,280
-and so what happens then in step
+and what happens then in step
 
-513
+508
 00:23:37,280 --> 00:23:40,960
 eight is we now have
 
-514
+509
 00:23:40,960 --> 00:23:46,000
-we have the senders set of
+the senders set of
 
-515
+510
 00:23:46,000 --> 00:23:50,400
 assets, the beneficiary set of assets
 
-516
+511
 00:23:50,400 --> 00:23:53,200
 and context and then we update the
 
-517
+512
 00:23:53,200 --> 00:23:57,120
-registry with a with a with the transfer
+registry with the transfer
 
-518
+513
 00:23:57,120 --> 00:23:59,120
 context. So this is saying now that
 
-519
+514
 00:23:59,120 --> 00:24:00,799
 we've established the context we're
 
-520
+515
 00:24:00,799 --> 00:24:06,070
-going to make it persist in a registry.
+going to make it persist in the registry.
 
-521
+516
 00:24:10,310 --> 00:24:12,289
-And that happens in step 8B.
+And that happens in step eight B.
 
-522
+517
 00:24:12,313 --> 00:24:14,080
 One thing to note is that
 
-523
+518
 00:24:14,080 --> 00:24:19,520
 the registry doesn't have to be a
 
-524
+519
 00:24:19,520 --> 00:24:21,840
 single registry. It doesn't have to be
 
-525
+520
 00:24:21,840 --> 00:24:24,080
 in essence a trusted third party. It
 
-526
+521
 00:24:24,080 --> 00:24:29,830
-could be separate registries. So
+could be separate registries. 
 
-527
+522
 00:24:29,840 --> 00:24:32,228
-network you know network one could have
+Network one could have
 
-528
+523
 00:24:32,252 --> 00:24:34,640
 its own choice of registries and network
 
-529
+524
 00:24:34,640 --> 00:24:36,000
 2 could have a different choice of
 
-530
+525
 00:24:36,000 --> 00:24:38,480
-registries. they would have the same
+registries. They would have the same
 
-531
+526
 00:24:38,480 --> 00:24:40,400
 information in them because of the
 
-532
+527
 00:24:40,400 --> 00:24:43,919
-protocol we've negotiated that but
+protocol, we've negotiated that, but
 
-533
+528
 00:24:43,919 --> 00:24:46,000
 they don't have to be the same registry.
 
-534
+529
 00:24:46,000 --> 00:24:49,990
-the point I want to make here.
+That's the point I want to make here.
 
-535
+530
 00:24:52,070 --> 00:24:54,677
 And then and then we go through the rest
 
-536
+531
 00:24:54,701 --> 00:24:56,720
 of the stages one through three
 
-537
+532
 00:24:56,720 --> 00:25:01,039
-transfer the asset. But then in
+transfer the asset. Then in
 
-538
+533
 00:25:01,039 --> 00:25:03,440
 stage zero there's a step nine which is
 
-539
+534
 00:25:03,440 --> 00:25:05,840
 sort of after the asset is exchanged
 
-540
+535
 00:25:05,840 --> 00:25:08,640
-there's a finaliz message to the
+there's a finalise message to the
 
-541
+536
 00:25:08,640 --> 00:25:10,640
 registry that basically says yes the
 
-542
+537
 00:25:10,640 --> 00:25:14,320
 whole thing happened correctly and
 
-543
-00:25:14,320 --> 00:25:16,720
-you know we're done with the with the
+538
+00:25:14,320 --> 00:25:19,600
+we're done with the transfer.
 
-544
-00:25:16,720 --> 00:25:19,600
-transfer.
-
-545
+539
 00:25:19,600 --> 00:25:22,480
-So my observation here is that the stage
+My observation here is that the stage 0
 
-546
+540
 00:25:22,480 --> 00:25:24,880
-zero is a lot like an inception event
+is a lot like an inception event
 
-547
+541
 00:25:24,880 --> 00:25:28,000
 for an asset transfer.
 
-548
+542
 00:25:28,000 --> 00:25:29,679
 And so I think some of the creative
 
-549
+543
 00:25:29,679 --> 00:25:31,279
 thinking around this is to take a look
 
-550
+544
 00:25:31,279 --> 00:25:35,600
 at the registry architecture in KERI
 
-551
+545
 00:25:35,600 --> 00:25:38,400
-and say what can we you know leverage
+and say what can we leverage
 
-552
+546
 00:25:38,400 --> 00:25:41,679
-from that architecture and in and to
+from that architecture to
 
-553
+547
 00:25:41,679 --> 00:25:45,200
 influence the direction of this
 
-554
+548
 00:25:45,200 --> 00:25:47,840
-SATP protocol in terms of the registry
+SATP protocol, in terms of the registry
 
-555
+549
 00:25:47,840 --> 00:25:52,470
 design.
 
-556
-00:25:55,350 --> 00:25:56,383
+550
+00:25:52,494 --> 00:25:56,383
 And then of course just by the way since
 
-557
+551
 00:25:56,407 --> 00:25:57,440
-all of this since the registry contains
+the registry contains
 
-558
+552
 00:25:57,440 --> 00:25:59,840
 all of this state and context can we
 
-559
+553
 00:25:59,840 --> 00:26:03,279
-simplify you know stage one protocol
+simplify you know stage 0 protocol:
 
-560
+554
 00:26:03,279 --> 00:26:04,799
-like you take some of the information
+you take some of the information
 
-561
+555
 00:26:04,799 --> 00:26:10,950
-out of there it seems bloated otherwise.
+out of there; it seems bloated otherwise.
 
-562
-00:26:13,269 --> 00:26:14,462
-All right. So what are the desirable
+556
+00:26:10,974 --> 00:26:12,746
+What are the desirable
 
-563
-00:26:14,486 --> 00:26:15,679
+557
+00:26:12,770 --> 00:26:15,679
 properties of an artifacts registry?
 
-564
+558
 00:26:15,679 --> 00:26:19,200
 This is not a complete list. This is
 
-565
+559
 00:26:19,200 --> 00:26:21,279
 sort of current thinking and so there's
 
-566
+560
 00:26:21,279 --> 00:26:23,279
 an opportunity now to influence where
 
-567
+561
 00:26:23,279 --> 00:26:26,720
-this goes. And so if there are other
+this goes. If there are other
 
-568
+562
 00:26:26,720 --> 00:26:30,320
-desirable properties we can we can
+desirable properties we can
 
-569
+563
 00:26:30,320 --> 00:26:32,240
 entertain adding them to the list or
 
-570
+564
 00:26:32,240 --> 00:26:34,720
 working to have them added to the list.
 
-571
+565
 00:26:34,720 --> 00:26:37,360
-U but the general sense it's append
+But the general sense it's append
 
-572
+566
 00:26:37,360 --> 00:26:41,039
 only. This seems to align with
 
-573
+567
 00:26:41,039 --> 00:26:46,159
 the assumptions that we make for
 
-574
+568
 00:26:46,159 --> 00:26:48,320
 You know KERI logs and
 
-575
+569
 00:26:48,320 --> 00:26:51,120
 transaction logs availability which is
 
-576
+570
 00:26:51,120 --> 00:26:53,840
-to say hey I can have replicated
+to say "Hey, I can have replicated
 
-577
+571
 00:26:53,840 --> 00:26:55,360
-registries
+registries."
 
-578
+572
 00:26:55,360 --> 00:26:58,080
-you know we're not the spec is not
+The spec is not
 
-579
+573
 00:26:58,080 --> 00:27:00,880
 trying to limit
 
-580
+574
 00:27:00,880 --> 00:27:03,679
-The structures in any way to prevent
+the structures in any way to
 
-581
+575
 00:27:03,679 --> 00:27:07,039
 prevent replication or redundancy
 
-582
+576
 00:27:07,039 --> 00:27:09,440
-audit editability, canonical
+auditability, canonical
 
-583
+577
 00:27:09,440 --> 00:27:11,360
-preservation, we talked about that
+preservation (we talked about that),
 
-584
+578
 00:27:11,360 --> 00:27:12,880
-durability
+durability,
 
-585
+579
 00:27:12,880 --> 00:27:15,120
-Which is database
+which is database
 
-586
+580
 00:27:15,120 --> 00:27:18,640
-Concept as well as
+concept. As well as
 
-587
+581
 00:27:18,640 --> 00:27:20,880
 discoverability, domain isolation,
 
-588
+582
 00:27:20,880 --> 00:27:23,919
-extensibility, privacy provenance
+extensibility, privacy, provenance
 
-589
+583
 00:27:23,919 --> 00:27:26,000
 and verifiability. So these are all
 
-590
+584
 00:27:26,000 --> 00:27:28,559
-you know the illities there may be
+the illities there may be
 
-591
+585
 00:27:28,559 --> 00:27:31,760
-some others. So and they're open
+some others. They're open
 
-592
+586
 00:27:31,760 --> 00:27:33,919
 to suggestions for what other
 
-593
+587
 00:27:33,919 --> 00:27:37,830
 properties you think you need.
 
-594
+588
 00:27:39,269 --> 00:27:41,334
-All right. So let's talk a little bit
+Let's talk a little bit
 
-595
+589
 00:27:41,358 --> 00:27:43,200
 about future of SATP. I mentioned
 
-596
+590
 00:27:43,200 --> 00:27:45,919
 earlier that they are anticipating
 
-597
+591
 00:27:45,919 --> 00:27:47,679
-in integrating of a tested hardware and
+integrating of a tested hardware and
 
-598
+592
 00:27:47,679 --> 00:27:51,840
-and context. So just a little bit to
+and context. A little bit to
 
-599
+593
 00:27:51,840 --> 00:27:54,799
 observe the motivation for how that for
 
-600
+594
 00:27:54,799 --> 00:27:57,279
-why that's important to them. So if you
+why that's important to them. If you
 
-601
+595
 00:27:57,279 --> 00:27:59,520
-think about it in an asset transfer, if
+think about it, in an asset transfer, if
 
-602
+596
 00:27:59,520 --> 00:28:02,159
 there's a failure
 
-603
+597
 00:28:02,159 --> 00:28:04,320
 Early in the transfer, the cost of
 
-604
+598
 00:28:04,320 --> 00:28:06,559
 recovery is much lower than if it
 
-605
+599
 00:28:06,559 --> 00:28:09,840
-happens late in the transfer. So you get
+happens late in the transfer. You get
 
-606
+600
 00:28:09,840 --> 00:28:12,640
-this sort of u exponentially in
+this sort of exponentially
 
-607
+601
 00:28:12,640 --> 00:28:15,120
 increasing cost curve as you progress
 
-608
+602
 00:28:15,120 --> 00:28:17,919
 through that protocol.
 
-609
+603
 00:28:17,919 --> 00:28:22,720
-And so one way to help to prevent
+One way to help to prevent
 
-610
+604
 00:28:22,720 --> 00:28:25,200
-Failure is at least from the
+failure is, at least from the
 
-611
+605
 00:28:25,200 --> 00:28:28,399
-perspective of you know attacks is to
+perspective of attacks, is to
 
-612
+606
 00:28:28,399 --> 00:28:31,120
 introduce trusted platform hardware.
 
-613
+607
 00:28:31,120 --> 00:28:33,360
-Well this idea of a trusted platform
+This idea of a trusted platform
+
+608
+00:28:33,360 --> 00:28:37,360
+blueprint which has at its core a
+
+609
+00:28:37,360 --> 00:28:39,360
+trusted platform hardware component.
+
+610
+00:28:39,360 --> 00:28:42,720
+Think of the blueprint as
+
+611
+00:28:42,720 --> 00:28:45,919
+identifying a set of
+
+612
+00:28:45,919 --> 00:28:47,760
+hardware, firmware, software,
+
+613
+00:28:47,760 --> 00:28:51,360
+system software components that all
 
 614
-00:28:33,360 --> 00:28:37,360
-blueprint which is has at its core a
-
-615
-00:28:37,360 --> 00:28:39,360
-trusted platform hardware component. So
-
-616
-00:28:39,360 --> 00:28:42,720
-the idea is think of the blueprint as
-
-617
-00:28:42,720 --> 00:28:45,919
-identifying a set of a set of you
-
-618
-00:28:45,919 --> 00:28:47,760
-know hardware, firmware, software,
-
-619
-00:28:47,760 --> 00:28:51,360
-system, software components that all
-
-620
 00:28:51,360 --> 00:28:57,600
 work together and can attest to their
 
-621
+615
 00:28:57,600 --> 00:29:00,399
 nature
 
-622
+616
 00:29:00,399 --> 00:29:02,320
-Using industry standard at
+Using industry-standard
 
-623
+617
 00:29:02,320 --> 00:29:04,720
-astation protocols.
+attestation protocols.
 
-624
+618
 00:29:04,720 --> 00:29:06,480
-So the blueprint says, hey, I've got
+The blueprint says "Hey, I've got
 
-625
+619
 00:29:06,480 --> 00:29:08,320
 this trusted environment and I can prove
 
-626
-00:29:08,320 --> 00:29:13,430
-to you that it's a trusted environment.
+620
+00:29:08,320 --> 00:29:12,466
+to you that it's a trusted environment."
 
-627
-00:29:15,269 --> 00:29:16,117
-So some of the properties of this are I
+621
+00:29:12,490 --> 00:29:14,673
+Some of the properties of this are:
 
-628
-00:29:16,141 --> 00:29:16,880
-have a hardware isolated execution
+622
+00:29:14,697 --> 00:29:16,880
+I have a hardware isolated execution
 
-629
+623
 00:29:16,880 --> 00:29:20,080
-environment. So my gateway runs within
+environment. My gateway runs within
 
-630
+624
 00:29:20,080 --> 00:29:23,440
-this you know environment that is
+this environment that is
 
-631
+625
 00:29:23,440 --> 00:29:25,600
 walled off or sealed off hardened
 
-632
+626
 00:29:25,600 --> 00:29:27,760
 against a variety of different attacks.
 
-633
+627
 00:29:27,760 --> 00:29:31,279
-So that's a preventative approach.
+That's a preventative approach.
 
-634
+628
 00:29:31,279 --> 00:29:35,200
-the hardware that's built on top of
+The hardware that's built on top of
 
-635
+629
 00:29:35,200 --> 00:29:36,799
 isolated containers or what's called
 
-636
+630
 00:29:36,799 --> 00:29:40,960
-confidential container technology
+confidential container technology,
 
-637
+631
 00:29:40,960 --> 00:29:43,679
-That a lot of the vendors are
+that a lot of the vendors are
 
-638
+632
 00:29:43,679 --> 00:29:45,760
 providing. So it turns out that all of
 
-639
+633
 00:29:45,760 --> 00:29:48,720
-the major silicon binder vendors are
+the major silicon vendors are
 
-640
+634
 00:29:48,720 --> 00:29:51,520
-are supplying to the market their you
+are supplying to the market their
 
-641
+635
 00:29:51,520 --> 00:29:53,279
-know acronym soup of confidential
+acronym soup of confidential
 
-642
+636
 00:29:53,279 --> 00:29:59,110
 container technology. Question
 
-643
+637
 00:30:01,830 --> 00:30:02,417
 how much do I got left? Well, but
 
-644
+638
 00:30:02,441 --> 00:30:03,120
-then you have there's a window of time
+t– Then you have there's a window of time
 
-645
+639
 00:30:03,120 --> 00:30:05,039
 for people to transition out.
 
-646
+640
 00:30:05,039 --> 00:30:05,760
 Okay.
 
-647
+641
 00:30:05,760 --> 00:30:06,320
-Sorry.
+– Sorry.
 
-648
+642
 00:30:06,320 --> 00:30:07,600
 All right.
 
-649
+643
 00:30:07,600 --> 00:30:09,600
 So I got I'm almost done. So we got
 
-650
+644
 00:30:09,600 --> 00:30:12,480
-about 10 minutes it looks like. So
+about 10 minutes it looks like. 
 
-651
+645
 00:30:12,480 --> 00:30:15,039
-important in point here is the industry
+The important point here is: the industry
 
-652
+646
 00:30:15,039 --> 00:30:18,240
-is building you know hardware supported
+is building hardware supported
 
-653
+647
 00:30:18,240 --> 00:30:21,840
-isolated execution and they ex the IETF
+isolated execution and the IETF
 
-654
+648
 00:30:21,840 --> 00:30:24,399
 expects for things like SATP gateways to
 
-655
+649
 00:30:24,399 --> 00:30:28,000
 run in those kinds of environments.
 
-656
+650
 00:30:28,000 --> 00:30:30,559
-And then and so further down there's
+So further down, there's
 
-657
+651
 00:30:30,559 --> 00:30:31,840
 something called attestable hardware
 
-658
+652
 00:30:31,840 --> 00:30:34,799
-Root of Trust and something called dice.
+Root of Trust and something called Dice.
 
-659
+653
 00:30:34,799 --> 00:30:36,480
 This dice is technology that I've worked
 
-660
+654
 00:30:36,480 --> 00:30:38,799
 on personally. I'm one of the primary
 
-661
+655
 00:30:38,799 --> 00:30:42,080
 authors of the dice specifications
 
-662
+656
 00:30:42,080 --> 00:30:45,279
 in the industry and all of the major
 
-663
+657
 00:30:45,279 --> 00:30:48,080
 industry players have adopted dice. So
 
-664
+658
 00:30:48,080 --> 00:30:50,960
 Nvidia, ARM, AMD, Intel and then
 
-665
+659
 00:30:50,960 --> 00:30:52,960
 standards organizations like the TCG and
 
-666
+660
 00:30:52,960 --> 00:30:56,480
 OCP have all built around the
 
-667
+661
 00:30:56,480 --> 00:30:58,000
-notion of a dice hardware route to
+notion of a dice hardware root of
 
-668
+662
 00:30:58,000 --> 00:31:01,200
-trust. So it isn't it isn't you know
+trust. It isn't
 
-669
+663
 00:31:01,200 --> 00:31:04,240
-vendor it isn't that you have a
+that you have a
 
-670
+664
 00:31:04,240 --> 00:31:05,919
 variety of different technologies based
 
-671
+665
 00:31:05,919 --> 00:31:07,360
 on different vendors. They're all
 
-672
+666
 00:31:07,360 --> 00:31:11,279
 working to have a common open hardware
 
-673
-00:31:11,279 --> 00:31:14,080
-representation for hardware rooted
+667
+00:31:11,279 --> 00:31:17,350
+representation for a hardware root of trust.
 
-674
-00:31:14,080 --> 00:31:17,350
-trust.
+668
+00:31:17,374 --> 00:31:21,449
+So what is attestation? This is maybe the
 
-675
-00:31:19,510 --> 00:31:21,449
-So what is atestation? This is maybe the
-
-676
+669
 00:31:21,473 --> 00:31:23,120
-most you know abbreviated you know
+most abbreviated
 
-677
+670
 00:31:23,120 --> 00:31:26,559
-part explanation of addestation that
+explanation of attestation that
 
-678
+671
 00:31:26,559 --> 00:31:29,600
-I've done. But basically in a nutshell
+I've done. But in a nutshell,
 
-679
+672
 00:31:29,600 --> 00:31:31,440
-The way addestation works is to
+the way attestation works is to
 
-680
+673
 00:31:31,440 --> 00:31:35,039
 improve risk management. You think of
 
-681
+674
 00:31:35,039 --> 00:31:37,039
-it from this perspective of this sort of
+it from this perspective of
 
-682
+675
 00:31:37,039 --> 00:31:39,120
 flow of information. You have like the
 
-683
+676
 00:31:39,120 --> 00:31:41,039
-SATP gateway which is the atttor.
+SATP gateway which is the attestor.
 
-684
+677
 00:31:41,039 --> 00:31:42,559
 It's providing evidence to an
 
-685
+678
 00:31:42,559 --> 00:31:45,200
-addistation verifier who produces a
+attestation verifier who produces a 
 
-686
+679
 00:31:45,200 --> 00:31:47,360
 result which is an assessment of how
 
-687
+680
 00:31:47,360 --> 00:31:51,200
 trustworthy the platform is and then the
 
-688
+681
 00:31:51,200 --> 00:31:54,320
-SAT bait SATP gateway which is the
+SATP gateway, which is the
 
-689
+682
 00:31:54,320 --> 00:31:56,720
-the you know the beneficiary or the
+the beneficiary
 
-690
+683
 00:31:56,720 --> 00:31:58,640
-which is another which is referred
+which is referred
 
-691
+684
 00:31:58,640 --> 00:32:01,279
 to as the relying party in this
 
-692
+685
 00:32:01,279 --> 00:32:04,000
-architecture writes their information to
+architecture, writes their information to
 
-693
+686
 00:32:04,000 --> 00:32:07,120
-the attribute registry. So in addition
+the attribute registry. In addition
 
-694
+687
 00:32:07,120 --> 00:32:08,399
 to all the other stuff that we went
 
-695
+688
 00:32:08,399 --> 00:32:10,159
-through in the protocol in the registry,
+through in the protocol, in the registry
 
-696
+689
 00:32:10,159 --> 00:32:12,799
-there's also device addestation
+there's also device attestation
 
-697
+690
 00:32:12,799 --> 00:32:16,640
-information that then could be used by
+information that then could be used,
 
-698
+691
 00:32:16,640 --> 00:32:18,559
-Along with the other information in
+a long with the other information in
 
-699
+692
 00:32:18,559 --> 00:32:21,039
-the transfer context used by an actuary
+the transfer context used by an actuary,
 
-700
+693
 00:32:21,039 --> 00:32:23,279
 to make an assessment of what the risk
 
-701
+694
 00:32:23,279 --> 00:32:25,760
 is that's associated with this asset
 
-702
+695
 00:32:25,760 --> 00:32:28,720
-transfer. And if you think about, you
+transfer. And if you think about
 
-703
+696
 00:32:28,720 --> 00:32:30,799
-know, how value that could be is
+how value that could be is
 
-704
+697
 00:32:30,799 --> 00:32:32,880
-whenever there's an asset, whenever
+whenever there's an asset,
 
-705
+698
 00:32:32,880 --> 00:32:34,399
-whenever you're transferring asset,
+whenever you're transferring assets,
 
-706
+699
 00:32:34,399 --> 00:32:36,640
 there's risk of something going wrong
 
-707
+700
 00:32:36,640 --> 00:32:39,760
-and you know, who's responsible for
+and who's responsible for 
 
-708
+701
 00:32:39,760 --> 00:32:42,240
 for compensating
 
-709
+702
 00:32:42,240 --> 00:32:45,360
-something goes wrong. So, chances are in
+something that goes wrong. So, chances are in
 
-710
+703
 00:32:45,360 --> 00:32:48,320
-large amounts, you know, high value
+large amounts, high value
 
-711
+704
 00:32:48,320 --> 00:32:49,919
 asset transfers, there's going to be an
 
-712
+705
 00:32:49,919 --> 00:32:52,159
 actuary there that's providing some sort
 
-713
+706
 00:32:52,159 --> 00:32:54,159
 of compensating transaction to offset
 
-714
+707
 00:32:54,159 --> 00:33:00,389
 the risk.
 
-715
+708
 00:33:02,710 --> 00:33:05,120
-Last slide. What are the opportunities
+Last slide: What are the opportunities
 
-716
+709
 00:33:05,120 --> 00:33:07,760
 for SATP that are sort of essentially
 
-717
+710
 00:33:07,760 --> 00:33:09,279
 KERI aware? I think there's three of
 
-718
+711
 00:33:09,279 --> 00:33:12,320
 them. One is what does it mean to have a
 
-719
+712
 00:33:12,320 --> 00:33:14,960
-KERI enabled trusted platform? So you
+KERI-enabled trusted platform? So you
 
-720
+713
 00:33:14,960 --> 00:33:16,480
-might say, hey, one of those layers
+might say "Hey, one of those layers
 
-721
+714
 00:33:16,480 --> 00:33:19,600
-should be like the KERIpy library.
+should be like the KERIpy library."
 
-722
+715
 00:33:19,600 --> 00:33:21,440
 And we might take a look at the KERI
 
-723
+716
 00:33:21,440 --> 00:33:23,840
-controller and say shouldn't shouldn't
+controller and say "Shouldn't
 
-724
+717
 00:33:23,840 --> 00:33:26,159
-the you know the hardware Root of Trust
+the hardware Root of Trust
 
-725
+718
 00:33:26,159 --> 00:33:28,080
-and the low in the very and the layers
+and the layers
 
-726
+719
 00:33:28,080 --> 00:33:29,919
-that are sort of at the fundamental end
+that are at the fundamental
 
-727
+720
 00:33:29,919 --> 00:33:33,360
 bottom end of this stack be KERI
 
-728
+721
 00:33:33,360 --> 00:33:36,320
-capable such that when a verifier is
+capable, such that when a verifier is
 
-729
+722
 00:33:36,320 --> 00:33:39,840
-verifying not only not only the you know
+verifying not only
 
-730
+723
 00:33:39,840 --> 00:33:43,440
-the car the KERI related
+the KERI-related
 
-731
+724
 00:33:43,440 --> 00:33:47,120
 information but also the device
 
-732
+725
 00:33:47,120 --> 00:33:49,360
-certificates and so forth that are that
+certificates, and so forth, that
 
-733
+726
 00:33:49,360 --> 00:33:52,799
-are behind the add a station that
+are behind the attestion and
 
-734
-00:33:52,799 --> 00:33:55,519
-that you know verify that
+727
+00:33:52,799 --> 00:33:57,919
+verify the infrastructure associated
 
-735
-00:33:55,519 --> 00:33:57,919
-that the infrastructure associated
-
-736
+728
 00:33:57,919 --> 00:34:01,279
 with those credentials are also
 
-737
+729
 00:34:01,279 --> 00:34:05,430
-you know KERI enabled
+KERI enabled
 
-738
+730
 00:34:05,440 --> 00:34:07,588
-so that's one thing another is the is
+That's one thing. Another is
 
-739
+731
 00:34:07,612 --> 00:34:09,760
 enabling the artifacts registry with
 
-740
+732
 00:34:09,760 --> 00:34:14,720
-ACDC technology so we've already if you
+ACDC technology. If you
+
+733
+00:34:14,720 --> 00:34:17,839
+were attending Sam's talk
+
+734
+00:34:17,839 --> 00:34:20,399
+earlier this week on the
+
+735
+00:34:20,399 --> 00:34:22,960
+registry architecture, you noticed
+
+736
+00:34:22,960 --> 00:34:25,280
+that there was the
+
+737
+00:34:25,280 --> 00:34:29,520
+notion of a
+
+738
+00:34:29,520 --> 00:34:32,480
+set of 
+
+739
+00:34:32,480 --> 00:34:36,240
+the witness-watcher
+
+740
+00:34:36,240 --> 00:34:39,200
+pattern associated there. Which
 
 741
-00:34:14,720 --> 00:34:17,839
-if you're attending Sam's talk on the on
+00:34:39,200 --> 00:34:41,679
+is to say: I could have a registry
 
 742
-00:34:17,839 --> 00:34:20,399
-the earlier here this week on the
+00:34:41,679 --> 00:34:45,040
+a bifurcated
 
 743
-00:34:20,399 --> 00:34:22,960
-registry architecture. You notice
-
-744
-00:34:22,960 --> 00:34:25,280
-that there was an there was the
-
-745
-00:34:25,280 --> 00:34:29,520
-notion of a of a
-
-746
-00:34:29,520 --> 00:34:32,480
-a set of what I what I would think of
-
-747
-00:34:32,480 --> 00:34:36,240
-as the you know the witness
-
-748
-00:34:36,240 --> 00:34:39,200
-watcher pattern associated there which
-
-749
-00:34:39,200 --> 00:34:41,679
-is to say I could have a registry
-
-750
-00:34:41,679 --> 00:34:45,040
-which is I could have a bifurcated
-
-751
 00:34:45,040 --> 00:34:48,159
 registry where one registry is
 
-752
+744
 00:34:48,159 --> 00:34:51,599
-acting on the on the behalf of the
+acting on the behalf of the
 
-753
+745
 00:34:51,599 --> 00:34:53,280
-gateway way one and then another one is
+gateway way 1 and then another one is
 
-754
+746
 00:34:53,280 --> 00:34:59,910
 acting on behalf of gateway 2.
 
-755
+747
 00:35:02,310 --> 00:35:03,343
-and then the third one is the lei
+and then the third one is the LEI
 
-756
+748
 00:35:03,367 --> 00:35:04,560
-enabled asset transfer. So, so this is
+enabled asset transfer. This
 
-757
+749
 00:35:04,560 --> 00:35:06,400
 builds on work that I've already started
 
-758
+750
 00:35:06,400 --> 00:35:08,400
 in that sense where you know
 
-759
+751
 00:35:08,400 --> 00:35:10,240
 essentially what's what we need to
 
-760
+752
 00:35:10,240 --> 00:35:14,720
 do here is define how to provision
 
-761
+753
 00:35:14,720 --> 00:35:19,200
-the other SATP hosts like the
+the other SATP hosts, like the
 
-762
+754
 00:35:19,200 --> 00:35:21,200
-gateway and the network and so forth
+gateway and the network and so forth,
 
-763
+755
 00:35:21,200 --> 00:35:25,440
 with KERI credentials
 
-764
+756
 00:35:25,440 --> 00:35:27,280
-and so we can have a you know an
+We can have an
 
-765
+757
 00:35:27,280 --> 00:35:29,280
 entire hierarchy that's built around the
 
-766
+758
 00:35:29,280 --> 00:35:33,760
-the KERI credential and the VI a
+the KERI credential and the vLEI
 
-767
+759
 00:35:33,760 --> 00:35:36,320
 ecosystem.
 
-768
-00:35:36,320 --> 00:35:43,670
+760
+00:35:36,320 --> 00:35:40,968
 So that's it. Any questions?
 
-769
-00:35:46,550 --> 00:35:47,806
-So do you think let's say hypothetically
+761
+00:35:40,992 --> 00:35:45,223
+– Do you think let's say hypothetically ..,
 
-770
-00:35:47,830 --> 00:35:48,960
+762
+00:35:45,247 --> 00:35:48,960
 I'm being brought in with a group of
 
-771
+763
 00:35:48,960 --> 00:35:51,920
-advisors to advise on a capp trade
+advisors to advise on a cap 'n trade
 
-772
+764
 00:35:51,920 --> 00:35:54,880
 program where they're looking to have
 
-773
+765
 00:35:54,880 --> 00:35:58,400
 the emissions allowances in a digital
 
-774
+766
 00:35:58,400 --> 00:36:01,359
 form. There are some groups advocating
 
-775
+767
 00:36:01,359 --> 00:36:03,359
 for a tokenized blockchain based
 
-776
+768
 00:36:03,359 --> 00:36:07,200
-approach. There's me arguing for ACDC
+approach. There's me arguing for ACDCs and GLEIF
 
-777
+769
 00:36:07,200 --> 00:36:10,320
-life. This country is interested in
+This country is interested in
 
-778
+770
 00:36:10,320 --> 00:36:11,839
 having a liquid market because
 
-779
+771
 00:36:11,839 --> 00:36:13,920
-allowances could be traded for, you
+allowances could be traded.
 
-780
+772
 00:36:13,920 --> 00:36:15,280
-know, if you can reduce your emissions
+If you can reduce your emissions
 
-781
+773
 00:36:15,280 --> 00:36:17,680
 more, you can sell your allocations
 
-782
+774
 00:36:17,680 --> 00:36:19,520
 to others who cannot. So, they need to
 
-783
+775
 00:36:19,520 --> 00:36:22,800
-buy the market. Could this potentially
+buy in the market. Could this potentially
 
-784
+776
 00:36:22,800 --> 00:36:26,720
 help facilitate a market for
 
-785
+777
 00:36:26,720 --> 00:36:29,200
 trading and represent allowances?
 
-786
+778
 00:36:29,200 --> 00:36:31,920
 Yeah, the major motivation was the
 
-787
-00:36:31,920 --> 00:36:33,680
+779
+00:36:31,920 --> 00:36:35,440
 observation that hey, there's a bunch
 
-788
-00:36:33,680 --> 00:36:35,440
-of,
-
-789
+780
 00:36:35,440 --> 00:36:36,960
-you know, blockchains out there, they're
+of blockchains out there, they're
 
-790
+781
 00:36:36,960 --> 00:36:40,079
 all proprietary in a sense that they
 
-791
+782
 00:36:40,079 --> 00:36:43,040
 have different consensus algorithms and
 
-792
+783
 00:36:43,040 --> 00:36:44,960
-different formats and whatever. But you
+different formats and whatever. But
 
-793
+784
 00:36:44,960 --> 00:36:47,280
-need to people want it to move their
+people want it to move their
 
-794
+785
 00:36:47,280 --> 00:36:49,680
 coin or their tokens from one to one
 
-795
+786
 00:36:49,680 --> 00:36:52,560
-network to the other and there's no you
+network to the other and there's no
 
-796
+787
 00:36:52,560 --> 00:36:54,400
-know industry standard way to do that.
+industry standard way to do that.
 
-797
+788
 00:36:54,400 --> 00:36:57,119
 So SATP was designed with that
 
-798
+789
 00:36:57,119 --> 00:37:01,359
-motivation at heart. So if a cap trade
+motivation at heart. If a cap 'n trade
 
-799
+790
 00:37:01,359 --> 00:37:04,000
-is try is trying to essentially move one
+is trying to essentially move one
 
-800
+791
 00:37:04,000 --> 00:37:06,720
 kind of asset from one kind of
 
-801
+792
 00:37:06,720 --> 00:37:08,480
 blockchain to another kind of blockchain
 
-802
+793
 00:37:08,480 --> 00:37:12,160
-and maybe backwards the other way. then
+and maybe backwards the other way, then
 
-803
+794
 00:37:12,160 --> 00:37:16,640
-that's just an asset exchange
+that's just an asset exchange,
 
-804
+795
 00:37:16,640 --> 00:37:18,800
-which is just a which is an extension of
+which is just an extension of
 
-805
+796
 00:37:18,800 --> 00:37:22,079
 the asset transfer. You just do another
 
-806
+797
 00:37:22,079 --> 00:37:23,520
 asset transfer in the other direction
 
-807
+798
 00:37:23,520 --> 00:37:26,560
 and then it's an exchange.
 
-808
+799
 00:37:26,560 --> 00:37:29,920
-But I so I think it would work. It's
+So I think it would work. It's
 
-809
+800
 00:37:29,920 --> 00:37:32,560
 there's no design I don't see any
 
-810
+801
 00:37:32,560 --> 00:37:35,839
 design goals that would prevent it from
 
-811
+802
 00:37:35,839 --> 00:37:38,480
 working but that particular use case
 
-812
+803
 00:37:38,480 --> 00:37:40,880
 might not be in the forefront of the
 
-813
+804
 00:37:40,880 --> 00:37:43,520
 minds of the designers.
 
-814
+805
 00:37:43,520 --> 00:37:44,560
-Yeah, it's probably not.
+– Yeah, it's probably not.
 
-815
+806
 00:37:44,560 --> 00:37:46,400
-Yeah. So,
+Yeah.
 
-816
+807
 00:37:46,400 --> 00:37:47,440
-so I have a question.
+– I have a question.
 
-817
+808
 00:37:47,440 --> 00:37:50,960
-Yeah. So the bias toward X519 is there
+Yeah. 
+– The bias toward X.519, is there
 
-818
+809
 00:37:50,960 --> 00:37:53,680
 any sense in the community that
 
-819
+810
 00:37:53,680 --> 00:37:57,520
 that the risk of the security
 
-820
+811
 00:37:57,520 --> 00:38:01,520
-vulnerabilities of X509 are materially
+vulnerabilities of X.509 are materially
 
-821
-00:38:01,520 --> 00:38:04,560
-problematic for
+812
+00:38:01,520 --> 00:38:05,040
+problematic?
 
-822
-00:38:04,560 --> 00:38:05,040
-just
-
-823
+813
 00:38:05,040 --> 00:38:07,599
-so the question is given the bias
+The question is given the bias
 
-824
+814
 00:38:07,599 --> 00:38:11,520
-towards X509 is there any sense of the
+towards X.509 is there any sense of the
 
-825
+815
 00:38:11,520 --> 00:38:14,880
-problematic aspects of using X509 in the
+problematic aspects of using X.509 in the
 
-826
+816
 00:38:14,880 --> 00:38:16,640
-forefront of the minds of the various
+ forefront of the minds of the various
 
-827
+817
 00:38:16,640 --> 00:38:18,800
 other designers? And the answer is no. I
 
-828
+818
 00:38:18,800 --> 00:38:21,119
 don't think they thought about it.
 
-829
+819
 00:38:21,119 --> 00:38:23,440
 Okay.
 
-830
+820
 00:38:23,440 --> 00:38:25,119
-Right. So that's a conversation that
+So that's a conversation that
 
-831
+821
 00:38:25,119 --> 00:38:27,599
 will come up in the context of stage
 
-832
+822
 00:38:27,599 --> 00:38:29,599
-zero discussion.
+0 discussion.
 
-833
+823
 00:38:29,599 --> 00:38:32,160
-So it's a it's a great timing for this
+It's a great timing for this
 
-834
+824
 00:38:32,160 --> 00:38:34,240
 group to engage with that effort. That's
 
-835
+825
 00:38:34,240 --> 00:38:37,920
 what it boils down to.
 
-836
+826
 00:38:37,920 --> 00:38:39,920
-We're having conversations with
+– We're having conversations with
 
-837
+827
 00:38:39,920 --> 00:38:41,359
 the certificate authority about
 
-838
+828
 00:38:41,359 --> 00:38:46,800
-integrating VI into group certificates.
+integrating vLEI into group certificates.
 
-839
+829
 00:38:46,800 --> 00:38:49,599
 Would that make this implementation
 
-840
+830
 00:38:49,599 --> 00:38:52,079
 easier if the actual certificate was
 
-841
+831
 00:38:52,079 --> 00:38:54,320
 there was being added if you still
 
-842
+832
 00:38:54,320 --> 00:38:56,560
-needed to be integrated down to the
+needed to be integrated down to the gate? 
 
-843
+833
 00:38:56,560 --> 00:38:59,760
-gate? So it would make it easier if
+It would make it easier if
 
-844
+834
 00:38:59,760 --> 00:39:03,040
 somehow the working group decided that
 
-845
+835
 00:39:03,040 --> 00:39:05,599
 they didn't need to do the extra work to
 
-846
-00:39:05,599 --> 00:39:07,119
-allow
+836
+00:39:05,599 --> 00:39:09,280
+allow extensibility where extensibility is
 
-847
-00:39:07,119 --> 00:39:09,280
-Extensibility where extensibility is
-
-848
+837
 00:39:09,280 --> 00:39:11,920
 needed on the credential type because
 
-849
+838
 00:39:11,920 --> 00:39:16,160
-right now there's some you know
+right now there's some
 
-850
+839
 00:39:16,160 --> 00:39:19,119
 high-level wording and then some precise
 
-851
+840
 00:39:19,119 --> 00:39:24,630
-examples based on
+examples based on [inaudible]
 
-852
-00:39:27,030 --> 00:39:28,358
-something in the middle that says Hey,
+841
+00:39:24,654 --> 00:39:28,358
+something in the middle that says "Hey,
 
-853
+842
 00:39:28,382 --> 00:39:29,359
 this credential structure is
 
-854
+843
 00:39:29,359 --> 00:39:31,440
 extensible and here's how you extend it
 
-855
+844
 00:39:31,440 --> 00:39:33,839
 and here's how you say that it's a
 
-856
+845
 00:39:33,839 --> 00:39:35,200
 different type of credential and here's
 
-857
+846
 00:39:35,200 --> 00:39:36,880
-the type
+the type.."
 
-858
+847
 00:39:36,880 --> 00:39:38,480
-and that's something that I'm trying to
+And that's something that I'm trying to
 
-859
+848
 00:39:38,480 --> 00:39:41,440
-get in there but they said no you're not
+get in there but they said "No, you're not
 
-860
+849
 00:39:41,440 --> 00:39:43,680
-going to do it in stage one it's already
+going to do it in stage 1; it's already
 
-861
+850
 00:39:43,680 --> 00:39:46,480
-it's already working group last call
+working group last call.
 
-862
+851
 00:39:46,480 --> 00:39:49,440
-right but like I said there are stage
+Right? But like I said 
 
-863
+852
 00:39:49,440 --> 00:39:51,920
-two stage zero might say well we're
+stage 0 might say "Well, we're
 
-864
+853
 00:39:51,920 --> 00:39:53,280
 going to put all that information into
 
-865
+854
 00:39:53,280 --> 00:39:55,359
-the registry and so all you really need
+the registry and all you really need
 
-866
+855
 00:39:55,359 --> 00:39:57,599
-is
+is..  [abrupt end]
 
