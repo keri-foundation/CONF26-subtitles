@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:02,000
-Phil Feairheller ｜ ACDCs for Authorization ｜ KERI Conference 2026
+ ｜ KERI Conference 2026
 
 2
 00:00:03,135 --> 00:00:04,025
@@ -84,7 +84,7 @@ talk through what we did.
 
 22
 00:00:56,559 --> 00:00:58,559
-Let me get it started. So, in this demo,
+Let me get it started. In this demo, 
 
 23
 00:00:58,559 --> 00:01:00,559
@@ -284,7 +284,7 @@ this form of authorization can be just
 
 72
 00:02:44,640 --> 00:02:46,560
-as easy as using a pass key, for
+as easy as using a passkey, for
 
 73
 00:02:46,560 --> 00:02:48,720
@@ -312,7 +312,7 @@ use this AID in this account,
 
 79
 00:03:01,280 --> 00:03:04,319
-how do I go next? There we go. If you
+(how do I go next? There we go.) If you
 
 80
 00:03:04,319 --> 00:03:06,720
@@ -704,11 +704,11 @@ was our opportunity and what gave us the
 
 177
 00:06:39,680 --> 00:06:42,319
-idea actually Mark the idea that we
+idea, actually Mark the idea, that we
 
 178
 00:06:42,319 --> 00:06:44,880
-could integrate the vLEI into this to
+could integrate the vLEI into this, to
 
 179
 00:06:44,880 --> 00:06:47,039
@@ -756,11 +756,11 @@ implement.
 
 190
 00:07:07,360 --> 00:07:09,680
-So OAuth 2.0, I don't really need to go
+OAuth 2.0, I don't really need to go
 
 191
 00:07:09,680 --> 00:07:11,520
-into this most of you probably are aware
+into this, most of you probably are aware
 
 192
 00:07:11,520 --> 00:07:14,240
@@ -772,7 +772,7 @@ using the word legacy, authorization
 
 194
 00:07:16,000 --> 00:07:18,160
-authentication protocols
+authentication protocols, 
 
 195
 00:07:18,160 --> 00:07:19,840
@@ -812,7 +812,7 @@ KERI. I like making acronyms, too.
 
 204
 00:07:42,319 --> 00:07:45,790
-And what that was is a API gateway
+And what that was, is a API gateway
 
 205
 00:07:45,815 --> 00:07:49,199
@@ -892,7 +892,7 @@ six, I only mentioned four here, new
 
 224
 00:08:33,599 --> 00:08:37,279
-profiles that allowed the use of X509s
+profiles that allowed the use of X.509s
 
 225
 00:08:37,279 --> 00:08:40,800
@@ -964,7 +964,7 @@ solve this problem in a very similar way
 
 242
 00:09:16,160 --> 00:09:18,800
-that UDEP did, but replace X509's with
+that UDAP did, but replace X.509s with
 
 243
 00:09:18,800 --> 00:09:20,560
@@ -972,7 +972,7 @@ the vLEI.
 
 244
 00:09:20,560 --> 00:09:22,320
-And there's there's quite a bit more
+And there's quite a bit more
 
 245
 00:09:22,320 --> 00:09:24,160
@@ -1000,7 +1000,7 @@ talking about, but we don't need to
 
 251
 00:09:34,480 --> 00:09:37,040
-go to that level of detail. So these are
+go to that level of detail. So  these are
 
 252
 00:09:37,040 --> 00:09:39,760
@@ -1012,11 +1012,11 @@ were defined in UDAP that we are
 
 254
 00:09:42,320 --> 00:09:46,000
-going to be augmenting or replacing. So
+going to be augmenting or replacing.
 
 255
 00:09:46,000 --> 00:09:47,680
-the first one and this is where we were
+The first one and this is where we were
 
 256
 00:09:47,680 --> 00:09:49,600
@@ -1064,7 +1064,7 @@ RFC that allows for that to be dynamic.
 
 267
 00:10:14,640 --> 00:10:16,800
-And so what UDEAP had done was say okay
+And so what UDAP had done was say "Okay,
 
 268
 00:10:16,800 --> 00:10:19,680
@@ -1080,7 +1080,7 @@ if we have an ecosystem of CAs that we
 
 271
 00:10:25,760 --> 00:10:28,079
-trust for this purpose we can allow a
+trust for this purpose, we can allow a
 
 272
 00:10:28,079 --> 00:10:30,320
@@ -1088,23 +1088,23 @@ client to be registered dynamically and
 
 273
 00:10:30,320 --> 00:10:32,640
-and automatically. So we saw that and
+and automatically." We saw that and
 
 274
 00:10:32,640 --> 00:10:35,040
-said okay cool works great just replace
+said "Okay, cool, works great, just replace
 
 275
 00:10:35,040 --> 00:10:37,519
-X509s with vLEIs and now we're on to
+X.509s with vLEIs and now we're on to
 
 276
 00:10:37,519 --> 00:10:39,279
-something. So that's the first thing we
+something." So that's the first thing we
 
 277
 00:10:39,279 --> 00:10:41,680
-did. So we automated the ability payer-to-
+did. So we automated the ability, payer-to-
 
 278
 00:10:41,680 --> 00:10:42,800
@@ -1120,11 +1120,11 @@ for one payer to submit a credential to
 
 281
 00:10:46,959 --> 00:10:48,560
-another payer and without any human
+another payer, and without any human
 
 282
 00:10:48,560 --> 00:10:50,640
-involved be registered to start
+involved, be registered to start
 
 283
 00:10:50,640 --> 00:10:54,000
@@ -1132,7 +1132,7 @@ interacting payer-to-payer APIs and from
 
 284
 00:10:54,000 --> 00:10:57,040
-that point down the rest of their
+that point down, the rest of their
 
 285
 00:10:57,040 --> 00:10:59,440
@@ -1152,11 +1152,11 @@ because this is client
 
 289
 00:11:04,560 --> 00:11:05,600
-authentication. So there's no
+authentication, so there's no
 
 290
 00:11:05,600 --> 00:11:08,560
-authorization code step first. And so
+authorization-code step first. And so
 
 291
 00:11:08,560 --> 00:11:11,920
@@ -1172,11 +1172,11 @@ works great. There's a real good
 
 294
 00:11:15,120 --> 00:11:18,560
-opportunity here to insert ahead of or
+opportunity here to insert ahead of, or
 
 295
 00:11:18,560 --> 00:11:20,720
-after client authentication after client
+after client authentication, after client
 
 296
 00:11:20,720 --> 00:11:21,600
@@ -1184,7 +1184,7 @@ registration and then client
 
 297
 00:11:21,600 --> 00:11:23,680
-authentication to do user
+authentication, to do user
 
 298
 00:11:23,680 --> 00:11:26,000
@@ -1224,7 +1224,7 @@ replaced that with vLEI as well and that's
 
 307
 00:11:42,560 --> 00:11:45,920
-what I demoed here. The last step was
+what I demoed here. The last step was,
 
 308
 00:11:45,920 --> 00:11:47,760
@@ -1244,7 +1244,7 @@ was still one problem left to solve and
 
 312
 00:11:54,560 --> 00:11:56,959
-that was okay, if we're using these
+that was "Okay, if we're using these
 
 313
 00:11:56,959 --> 00:11:58,560
@@ -1252,7 +1252,7 @@ credentials, how do we still know that
 
 314
 00:11:58,560 --> 00:12:00,160
-our data is being protected? And that's
+our data is being protected?" And that's
 
 315
 00:12:00,160 --> 00:12:02,160
@@ -1260,11 +1260,11 @@ when we added a new step that's not part
 
 316
 00:12:02,160 --> 00:12:04,640
-of OAuth, the credential offer. And so
+of OAuth, the <i>credential offer</i>. 
 
 317
 00:12:04,640 --> 00:12:06,320
-doing the credential offer allows us to
+Doing the credential offer allows us to
 
 318
 00:12:06,320 --> 00:12:08,639
@@ -1328,7 +1328,7 @@ credentials flow with UDAP and vLEI
 
 333
 00:12:38,320 --> 00:12:39,920
-involved you know like I said dynamic
+involved, like I said, dynamic
 
 334
 00:12:39,920 --> 00:12:42,320
@@ -1352,11 +1352,11 @@ the OAuth registration request itself the
 
 339
 00:12:54,160 --> 00:12:56,000
-flip side of this one of the things that
+flip side of this, one of the things that
 
 340
 00:12:56,000 --> 00:12:57,858
-UDAP had that we borrowed from is a
+UDAP had that we borrowed from, is a
 
 341
 00:12:57,883 --> 00:13:00,800
@@ -1400,11 +1400,11 @@ most importantly in this case, the
 
 351
 00:13:18,959 --> 00:13:21,360
-client ID is mapped to the set of the
+client ID is mapped to the SAID of the
 
 352
 00:13:21,360 --> 00:13:23,680
-presented credential. The set of the
+presented credential. The SAID of the
 
 353
 00:13:23,680 --> 00:13:25,440
@@ -1451,1374 +1451,1350 @@ requests and then we'll start selling
 them RACK.
 
 364
-00:13:47,519 --> 00:13:49,519
-So then I just
+00:13:47,519 --> 00:13:50,880
+I just touched on the client credentials
 
 365
-00:13:49,519 --> 00:13:50,880
-touched on the client credentials
-
-366
 00:13:50,880 --> 00:13:53,600
 flow. Every other request after that
 
-367
+366
 00:13:53,600 --> 00:13:56,160
-is present is a IPEX presentation
+is a IPEX presentation
 
-368
+367
 00:13:56,160 --> 00:13:58,160
 signed and the client and server key
 
-369
+368
 00:13:58,160 --> 00:14:00,320
 rotations are supported by the watcher
 
-370
+369
 00:14:00,320 --> 00:14:01,920
 network and I'll talk about how we
 
-371
+370
 00:14:01,920 --> 00:14:04,880
 implemented that to enable connectedness
 
-372
+371
 00:14:04,880 --> 00:14:08,240
 as trust at scale specifically for
 
-373
+372
 00:14:08,240 --> 00:14:10,399
 purpose of use and these extensions to
 
-374
+373
 00:14:10,399 --> 00:14:13,920
 the OAuth protocol.
 
-375
+374
 00:14:13,920 --> 00:14:16,160
 So then the logical next step
 
-376
+375
 00:14:16,160 --> 00:14:18,240
 authorization code flow. Let the
 
-377
+376
 00:14:18,240 --> 00:14:21,199
 user now leverage what we've done to log
 
-378
+377
 00:14:21,199 --> 00:14:23,600
 in with their vLEI credentials. Okay,
 
-379
+378
 00:14:23,600 --> 00:14:25,440
 good. So we extended the model to
 
-380
+379
 00:14:25,440 --> 00:14:28,000
 support user authentication with data
 
-381
+380
 00:14:28,000 --> 00:14:31,760
 privacy of doing the offer ahead of the
 
-382
+381
 00:14:31,760 --> 00:14:33,873
 actual credential presentation. So this
 
-383
+382
 00:14:33,898 --> 00:14:37,120
 is a typical OAuth flow. The user
 
-384
+383
 00:14:37,120 --> 00:14:39,040
 the resource owner goes to the client
 
-385
+384
 00:14:39,040 --> 00:14:40,880
 application. The user gets redirected to
 
-386
+385
 00:14:40,880 --> 00:14:42,480
 the authorization server. They say
 
-387
+386
 00:14:42,480 --> 00:14:45,279
 approve. It comes back here. The client
 
-388
+387
 00:14:45,279 --> 00:14:47,839
 then says, "Okay, here's the code. Can I
 
-389
+388
 00:14:47,839 --> 00:14:50,240
 have a token?" You get the token and
 
-390
+389
 00:14:50,240 --> 00:14:51,760
 then you send that over to the FHIR
 
-391
+390
 00:14:51,760 --> 00:14:53,360
 resource server and you get your data
 
-392
+391
 00:14:53,360 --> 00:14:55,040
 because the resource server is able to
 
-393
+392
 00:14:55,040 --> 00:14:56,639
 talk to the authorization server behind
 
-394
+393
 00:14:56,639 --> 00:14:57,564
 the scenes and say, "Is this a valid
 
-395
+394
 00:14:57,589 --> 00:14:59,519
-token?" So that's how it works. This is
+token!" So that's how it works. This is
 
-396
+395
 00:14:59,519 --> 00:15:00,886
 a… I stole this diagram. Actually I
 
-397
+396
 00:15:00,911 --> 00:15:04,399
 made it but I looked at someone else's.
 
-398
+397
 00:15:04,399 --> 00:15:05,187
 This is what it looks like with KERI
 
-399
+398
 00:15:05,212 --> 00:15:08,880
-and the vLEI. Well. KERI and ACDC.
+and the vLEI. Well, KERI and ACDC.
+
+399
+00:15:08,880 --> 00:15:10,800
+In this case the resource owner has a
 
 400
-00:15:08,880 --> 00:15:10,800
-So in this case the resource owner has a
-
-401
 00:15:10,800 --> 00:15:13,519
 KERI database. The client application
 
-402
+401
 00:15:13,519 --> 00:15:15,680
 has a KERI database and the
 
-403
+402
 00:15:15,680 --> 00:15:17,120
 authorization server has a KERI
 
-404
+403
 00:15:17,120 --> 00:15:20,800
 database. So in this case when he is
 
-405
+404
 00:15:20,800 --> 00:15:23,680
 redirected over there he submits a
 
-406
+405
 00:15:23,680 --> 00:15:24,925
 credential instead of username and
 
-407
+406
 00:15:24,950 --> 00:15:27,120
 password. You've all done this with log
 
-408
+407
 00:15:27,120 --> 00:15:28,800
 on with Google, right? This is the exact
 
-409
+408
 00:15:28,800 --> 00:15:31,040
 same thing but it's now log on with your
 
-410
+409
 00:15:31,040 --> 00:15:33,760
 ACDC credential.
 
-411
+410
 00:15:33,760 --> 00:15:34,959
 So then you get redirected and
 
-412
+411
 00:15:34,959 --> 00:15:36,560
 everything works the same. But the
 
-413
+412
 00:15:36,560 --> 00:15:38,399
 really important part here is these
 
-414
+413
 00:15:38,399 --> 00:15:42,399
 arrows. Everybody is watching the
 
-415
+414
 00:15:42,399 --> 00:15:44,000
 watcher network and each other's
 
-416
+415
 00:15:44,000 --> 00:15:46,240
 witnesses so that when he decides to
 
-417
+416
 00:15:46,240 --> 00:15:47,760
 rotate his keys, he can do it every hour
 
-418
+417
 00:15:47,760 --> 00:15:49,440
 if he wants to. We actually did that in
 
-419
+418
 00:15:49,440 --> 00:15:50,800
 a in a pilot we were running. It was
 
-420
+419
 00:15:50,800 --> 00:15:52,480
 really fun. He can rotate every hour if
 
-421
+420
 00:15:52,480 --> 00:15:54,560
 he wants to. It'll get propagated to his
 
-422
+421
 00:15:54,560 --> 00:15:56,480
 witnesses. Everyone else's watchers will
 
-423
+422
 00:15:56,480 --> 00:15:58,240
 pick it up and now it's still fully
 
-424
+423
 00:15:58,240 --> 00:15:59,920
 secure and you have new keys as
 
-425
+424
 00:15:59,920 --> 00:16:01,610
 frequently as you want.
 
-426
+425
 00:16:10,310 --> 00:16:11,680
 Yes, you can hyper churn your
 
-427
+426
 00:16:11,680 --> 00:16:13,199
 credentials.
 
-428
+427
 00:16:13,199 --> 00:16:15,314
-And Sam, your voice is sounding better.
+And Sam, your voice is sounding better. [laughter]
+
+428
+00:16:18,198 --> 00:16:20,953
+IPEX issuance and
 
 429
-00:16:18,198 --> 00:16:20,953
-Okay, so IPEX issuance and
-
-430
 00:16:20,977 --> 00:16:23,120
 presentation exchange protocol. It's a
 
-431
+430
 00:16:23,120 --> 00:16:25,360
 protocol built on top of KERI EXN
 
-432
+431
 00:16:25,360 --> 00:16:28,639
 messages and it allows this flow…
 
-433
+432
 00:16:28,639 --> 00:16:30,639
 I stole this table from the
 
-434
+433
 00:16:30,639 --> 00:16:33,839
-KERI spec, the ACDC spec, sorry.
+the ACDC spec.
 
-435
+434
 00:16:33,839 --> 00:16:37,040
 It allows this flow of messages to
 
-436
+435
 00:16:37,040 --> 00:16:40,079
 negotiate credential exchange between
 
-437
+436
 00:16:40,079 --> 00:16:42,880
 two parties. So we are only starting at
 
-438
+437
 00:16:42,880 --> 00:16:44,880
 the offer phase and you can see where
 
-439
+438
 00:16:44,880 --> 00:16:47,839
-you can start. That's the Y's in here.
+you can start. That's the Ys in here.
 
-440
+439
 00:16:47,839 --> 00:16:50,720
 And you can see after an apply you can
 
-441
+440
 00:16:50,720 --> 00:16:52,959
 spurn it. I love that you use the word
 
-442
+441
 00:16:52,959 --> 00:16:55,920
-spurn. I don't know why I just do.
+spurn. (I don't know why I just do.)
 
-443
+442
 00:16:55,920 --> 00:16:57,519
 You can offer it. You can either spurn
 
-444
+443
 00:16:57,544 --> 00:16:59,680
 or agree to the offer and then you can
 
-445
+444
 00:16:59,680 --> 00:17:01,440
 grant the credential. And then once you
 
-446
+445
 00:17:01,440 --> 00:17:03,120
 grant the credential, this is an
 
-447
+446
 00:17:03,120 --> 00:17:04,959
 important step, you admit it, which
 
-448
+447
 00:17:04,959 --> 00:17:06,640
 sends the admission back to the person.
 
-449
+448
 00:17:06,640 --> 00:17:08,240
 So you have a receipt that they accepted
 
-450
+449
 00:17:08,240 --> 00:17:10,720
 your credential.
 
-451
+450
 00:17:10,720 --> 00:17:13,919
 And so what we've leveraged with IPEX,
 
-452
+451
 00:17:13,919 --> 00:17:15,520
 one of the I think the driving factors
 
-453
+452
 00:17:15,520 --> 00:17:18,720
 for IPEX was graduated disclosure, chain
 
-454
+453
 00:17:18,720 --> 00:17:20,880
 link confidentiality, and contingent
 
-455
+454
 00:17:20,880 --> 00:17:23,839
 disclosure on them accepting your offer,
 
-456
+455
 00:17:23,839 --> 00:17:25,760
 assigned acceptance of your offer. And
 
-457
+456
 00:17:25,760 --> 00:17:28,559
 then once you embed the rules inside of
 
-458
+457
 00:17:28,559 --> 00:17:30,720
 your credential, the metadata credential
 
-459
+458
 00:17:30,720 --> 00:17:32,080
 that you exchange back and forth during
 
-460
+459
 00:17:32,080 --> 00:17:34,799
 these exchanges, you get
 
-461
+460
 00:17:34,799 --> 00:17:36,720
 contractually protected disclosure as
 
-462
+461
 00:17:36,720 --> 00:17:38,559
 well. And that's what we're leveraging
 
-463
+462
 00:17:38,559 --> 00:17:41,200
 here
 
-464
+463
 00:17:41,200 --> 00:17:43,840
 and I just said that. So this just
 
-465
+464
 00:17:43,840 --> 00:17:45,120
 details the contractually protected
 
-466
+465
 00:17:45,120 --> 00:17:46,720
 disclosure. The user offers the terms
 
-467
+466
 00:17:46,720 --> 00:17:49,280
 and conditions, no data exposed. You get
 
-468
+467
 00:17:49,280 --> 00:17:50,960
 a cryptographic commitment in the offer
 
-469
+468
 00:17:50,960 --> 00:17:52,640
 to the structure of the data hash of
 
-470
+469
 00:17:52,640 --> 00:17:54,720
 what the data will be and then terms and
 
-471
+470
 00:17:54,720 --> 00:17:57,039
 conditions which are being enforced. I
 
-472
+471
 00:17:57,039 --> 00:17:59,200
 I think in the future we can see sites
 
-473
+472
 00:17:59,200 --> 00:18:00,559
-offering a couple of just like when you
+offering a couple of .., just like when you
 
-474
+473
 00:18:00,559 --> 00:18:01,919
 create a GitHub account you can pick
 
-475
+474
 00:18:01,919 --> 00:18:03,760
 your license for the new
 
-476
+475
 00:18:03,760 --> 00:18:06,640
 GitHub repo. I can see a world where
 
-477
+476
 00:18:06,640 --> 00:18:08,000
 sites are offering different terms and
 
-478
+477
 00:18:08,000 --> 00:18:10,480
 conditions and the user can select which
 
-479
+478
 00:18:10,480 --> 00:18:12,480
 one best suits their needs for giving
 
-480
+479
 00:18:12,480 --> 00:18:14,799
-the data to the site and if none then
+the data to the site. And if none then
 
-481
+480
 00:18:14,799 --> 00:18:16,960
 they don't give the data.
 
-482
+481
 00:18:16,960 --> 00:18:18,559
 the site agrees, returns the signed
 
-483
+482
 00:18:18,559 --> 00:18:20,400
 agreement, and then the user saves the
 
-484
+483
 00:18:20,400 --> 00:18:22,160
 receipt and grants the full credential.
 
-485
+484
 00:18:22,160 --> 00:18:24,320
 And that's what the flow that we showed
 
-486
+485
 00:18:24,320 --> 00:18:27,280
 in the demo.
 
-487
+486
 00:18:27,280 --> 00:18:29,200
 So, this is just further detailing.
 
-488
+487
 00:18:29,200 --> 00:18:32,160
 The credential offer comes back or
 
-489
+488
 00:18:32,160 --> 00:18:33,919
 I'm sorry, the site comes back
 
-490
+489
 00:18:33,919 --> 00:18:35,280
 and says, "We'll accept an offer, you
 
-491
+490
 00:18:35,280 --> 00:18:36,880
 make the offer, you get to see what
 
-492
+491
 00:18:36,880 --> 00:18:38,240
 terms and conditions are there before
 
-493
+492
 00:18:38,240 --> 00:18:39,447
 you agree to it."
 
-494
+493
 00:18:41,774 --> 00:18:43,037
 And then the signed agreement comes back
 
-495
+494
 00:18:43,062 --> 00:18:45,143
 from the server. We use our plugin to
 
-496
+495
 00:18:45,168 --> 00:18:47,679
 validate it. But again, at any point if
 
-497
+496
 00:18:47,679 --> 00:18:48,880
 you don't have our plugin, you want to
 
-498
+497
 00:18:48,880 --> 00:18:50,160
 do it yourself, you just download the
 
-499
+498
 00:18:50,160 --> 00:18:51,919
 signed agreement, you send it through
 
-500
+499
 00:18:51,919 --> 00:18:54,480
 KERIpy, if you want to or any tool
 
-501
+500
 00:18:54,480 --> 00:18:56,880
 that supports this flow with KERI
 
-502
+501
 00:18:56,880 --> 00:18:58,720
 and you can then upload your offer or
 
-503
+502
 00:18:58,720 --> 00:19:00,240
 your full grant, sorry, you upload your
 
-504
+503
 00:19:00,240 --> 00:19:02,080
 full grant, which we do with the submit
 
-505
+504
 00:19:02,080 --> 00:19:04,000
 full credential and now the site gets
 
-506
+505
 00:19:04,000 --> 00:19:06,320
 your information. And when we did this,
 
-507
+506
 00:19:06,320 --> 00:19:08,559
 it really did hit home that the
 
-508
+507
 00:19:08,559 --> 00:19:09,919
 user benefits greatly for all the
 
-509
+508
 00:19:09,919 --> 00:19:11,360
 reasons I just talked about, but the
 
-510
+509
 00:19:11,360 --> 00:19:12,799
 site benefits from it is something I
 
-511
+510
 00:19:12,799 --> 00:19:14,400
 think George said in one of his talks.
 
-512
+511
 00:19:14,400 --> 00:19:16,160
 They get cryptographically verifiable
 
-513
+512
 00:19:16,160 --> 00:19:18,080
 data. They're not going to get typos.
 
-514
+513
 00:19:18,080 --> 00:19:19,200
 That's going to halt that's going to
 
-515
+514
 00:19:19,200 --> 00:19:20,720
 slow down the process of users signing
 
-516
+515
 00:19:20,720 --> 00:19:22,400
 onto your site and getting access to the
 
-517
+516
 00:19:22,400 --> 00:19:25,520
 data that they need.
 
-518
+517
 00:19:25,520 --> 00:19:28,000
 Okay, so this is how we did it. We built
 
-519
+518
 00:19:28,000 --> 00:19:30,320
 an ACDC authorization server. It acts
 
-520
+519
 00:19:30,320 --> 00:19:32,960
 as both an OAuth 2.0 authorization service as
 
-521
+520
 00:19:32,960 --> 00:19:35,520
 well as an OIDC Identity Provider. So
 
-522
+521
 00:19:35,520 --> 00:19:38,080
 we're doing it with ACDC schema
 
-523
+522
 00:19:38,080 --> 00:19:39,600
 configuration.
 
-524
+523
 00:19:39,600 --> 00:19:41,600
 You can configure both the client
 
-525
+524
 00:19:41,600 --> 00:19:44,080
 registration schema that you'll accept
 
-526
+525
 00:19:44,080 --> 00:19:46,799
 and it can be a list and you also
 
-527
+526
 00:19:46,799 --> 00:19:49,360
 specify the user authentication schema
 
-528
+527
 00:19:49,360 --> 00:19:52,080
 that you'll accept and it can be a list.
 
-529
+528
 00:19:52,080 --> 00:19:54,240
 Each of those supports a base schema
 
-530
+529
 00:19:54,240 --> 00:19:57,039
 specification which allows you to
 
-531
+530
 00:19:57,039 --> 00:20:00,080
 enforce what issuers you will accept at
 
-532
+531
 00:20:00,080 --> 00:20:02,480
 any chain in your credential
 
-533
+532
 00:20:02,480 --> 00:20:05,679
-hierarchy. So, for example, an oversight
+hierarchy. For example, an oversight
 
-534
+533
 00:20:05,679 --> 00:20:08,640
 we did with GLEIF. I can
 
-535
+534
 00:20:08,640 --> 00:20:10,400
 issue vLEI credentials. They're not valid
 
-536
+535
 00:20:10,400 --> 00:20:11,919
 because they don't come from GLEIF root,
 
-537
+536
 00:20:11,919 --> 00:20:13,360
 but you can enforce that it has to come
 
-538
+537
 00:20:13,360 --> 00:20:14,960
 from GLEIF Root in here by putting the
 
-539
+538
 00:20:14,960 --> 00:20:17,300
 issuer of the GLEIF Root AID.
 
-540
+539
 00:20:19,200 --> 00:20:21,200
 This was a fun part. ACDC payload to
 
-541
+540
 00:20:21,200 --> 00:20:25,280
 OIDC claims mapping. We used a pretty
 
-542
+541
 00:20:25,280 --> 00:20:26,960
 simple template syntax (Jinja2 for
 
-543
+542
 00:20:26,960 --> 00:20:27,760
 those of you who are familiar with
 
-544
+543
 00:20:27,760 --> 00:20:30,799
 Python) to create complex field mappings
 
-545
+544
 00:20:30,799 --> 00:20:32,960
 between the credential payload and the
 
-546
+545
 00:20:32,960 --> 00:20:35,679
 OIDC claims that come out the other end.
 
-547
+546
 00:20:35,679 --> 00:20:37,919
 So when you put all this together, what
 
-548
+547
 00:20:37,919 --> 00:20:40,000
 you're really doing is you're creating a
 
-549
+548
 00:20:40,000 --> 00:20:42,720
 truly distributed identity provider
 
-550
+549
 00:20:42,720 --> 00:20:45,280
 appliance. I can put one of these up,
 
-551
+550
 00:20:45,280 --> 00:20:46,799
 specify a list of credentials, I'll
 
-552
+551
 00:20:46,799 --> 00:20:48,880
 accept, specify how I want the data to
 
-553
+552
 00:20:48,880 --> 00:20:50,960
 look in OIDC.
 
-554
+553
 00:20:50,960 --> 00:20:52,480
 Someone will submit their credential to
 
-555
+554
 00:20:52,480 --> 00:20:55,520
 me and I'll let him in. Sam can do the
 
-556
+555
 00:20:55,520 --> 00:20:57,760
 same thing. We never have to talk. Our
 
-557
+556
 00:20:57,760 --> 00:20:59,360
 systems aren't federated. We don't share
 
-558
+557
 00:20:59,360 --> 00:21:01,760
 data. If he specifies the same schema as
 
-559
+558
 00:21:01,760 --> 00:21:03,600
 me, he'll let the person in the same. It
 
-560
+559
 00:21:03,600 --> 00:21:05,520
 looks exactly the same to the user. The
 
-561
+560
 00:21:05,520 --> 00:21:08,000
-data comes back to the relying
+data comes back to
+
+561
+00:21:08,000 --> 00:21:10,000
+the client application,
 
 562
-00:21:08,000 --> 00:21:10,000
-party, no, to the client application,
+00:21:10,000 --> 00:21:13,600
+of who that user is. But
 
 563
-00:21:10,000 --> 00:21:13,600
-sorry, of who that user is. But
-
-564
 00:21:13,600 --> 00:21:15,280
 there's no federation. You're not
 
-565
+564
 00:21:15,280 --> 00:21:17,440
 relying on Google to hold your Gmail
 
-566
+565
 00:21:17,440 --> 00:21:18,640
 account. You're doing it with a
 
-567
+566
 00:21:18,640 --> 00:21:20,799
 decentralized credential issuance from
 
-568
+567
 00:21:20,799 --> 00:21:22,320
 anyone.
 
-569
+568
 00:21:22,320 --> 00:21:23,760
 So then these are the flows I've already
 
-570
+569
 00:21:23,760 --> 00:21:25,520
 talked about that we worked with, dynamic
 
-571
+570
 00:21:25,520 --> 00:21:28,000
 client registration, secret lists, the
 
-572
+571
 00:21:28,000 --> 00:21:29,600
 client authentication flow, this is for
 
-573
+572
 00:21:29,600 --> 00:21:32,080
-our payer-to-payer model so that the pairs
+our payer-to-payer model so that the payers
 
-574
+573
 00:21:32,080 --> 00:21:33,520
 can then just start as soon as they do
 
-575
+574
 00:21:33,520 --> 00:21:35,520
-the DCR the pairs can start exchanging
+the DCR the payers can start exchanging
 
-576
+575
 00:21:35,520 --> 00:21:38,000
 data by getting the token and then user
 
-577
+576
 00:21:38,000 --> 00:21:41,669
 authentication.
 
-578
+577
 00:21:41,694 --> 00:21:44,097
-Okay, so the last part. I talked about
+The last part. I talked about
 
-579
+578
 00:21:44,121 --> 00:21:46,720
 integration into the watcher network and
 
-580
+579
 00:21:46,720 --> 00:21:49,280
 the witness network. For those of
 
-581
+580
 00:21:49,280 --> 00:21:51,200
 you who know me, I do actually own a
 
-582
+581
 00:21:51,200 --> 00:21:53,120
 Great Dane and a Bull Mastiff, but these
 
-583
+582
 00:21:53,120 --> 00:21:55,360
 aren't my dogs.
 
-584
+583
 00:21:55,360 --> 00:21:57,919
 So we called it HK Tracker and it's
 
-585
+584
 00:21:57,919 --> 00:21:59,919
 what Sam has been calling forever a
 
-586
+585
 00:21:59,919 --> 00:22:02,960
 local watcher. And so anywhere where we
 
-587
+586
 00:22:02,960 --> 00:22:05,919
 deploy a server or a system
 
-588
+587
 00:22:05,919 --> 00:22:08,400
 that needs access to the KERI watcher
 
-589
+588
 00:22:08,400 --> 00:22:10,480
 network, it's going to be resolving AIDs
 
-590
+589
 00:22:10,480 --> 00:22:11,840
 and it's going to need to keep track of
 
-591
+590
 00:22:11,840 --> 00:22:14,880
 key state. Any enterprise system we can
 
-592
+591
 00:22:14,880 --> 00:22:17,520
 put as a sidecar. So think of a sidecar
 
-593
+592
 00:22:17,520 --> 00:22:19,200
 pod inside of Kubernetes or just running
 
-594
+593
 00:22:19,200 --> 00:22:21,919
 along in a VM. We put a local watcher
 
-595
+594
 00:22:21,919 --> 00:22:26,720
 service which is configured to our SaaS
 
-596
+595
 00:22:26,720 --> 00:22:29,919
 platform to be able to ask our platform
 
-597
+596
 00:22:29,919 --> 00:22:31,760
 to start watching new AIDs. So the
 
-598
+597
 00:22:31,760 --> 00:22:33,039
 situation where someone authenticates
 
-599
+598
 00:22:33,039 --> 00:22:34,880
 for the first time and then continue to
 
-600
+599
 00:22:34,880 --> 00:22:37,120
 keep track of their key state changes. So
 
-601
+600
 00:22:37,120 --> 00:22:39,120
 it adjudicates the key state changes
 
-602
+601
 00:22:39,120 --> 00:22:41,039
 locally and integrates with the KERI
 
-603
+602
 00:22:41,039 --> 00:22:43,840
 watcher network. It uses our ESSR
 
-604
+603
 00:22:43,840 --> 00:22:46,799
 secure connections to our APIs to get
 
-605
+604
 00:22:46,799 --> 00:22:49,280
 the updates for the AIDs that it cares
 
-606
+605
 00:22:49,280 --> 00:22:50,880
 about. And the cool thing is it doesn't
 
-607
+606
 00:22:50,880 --> 00:22:52,559
 have to do it for any ids that have
 
-608
+607
 00:22:52,559 --> 00:22:54,640
 registered with Sam's server because I
 
-609
+608
 00:22:54,640 --> 00:22:55,840
 don't care about those only the ones
 
-610
+609
 00:22:55,840 --> 00:22:58,400
 that I have authenticated against. And
 
-611
+610
 00:22:58,400 --> 00:23:01,360
 so we use, borrowed very heavily
 
-612
+611
 00:23:01,360 --> 00:23:02,640
 from Tailscale if any of you are
 
-613
+612
 00:23:02,640 --> 00:23:04,640
-familiar with that VPN company. They
+familiar with that VPN company, t hey
 
-614
+613
 00:23:04,640 --> 00:23:07,120
 have a model for when you want to get a
 
-615
+614
 00:23:07,120 --> 00:23:09,840
 headless server on the system you
 
-616
+615
 00:23:09,840 --> 00:23:11,200
 go into the site and you get a
 
-617
+616
 00:23:11,200 --> 00:23:12,480
 authentication code onetime
 
-618
+617
 00:23:12,480 --> 00:23:14,720
 authentication code that you use. And
 
-619
+618
 00:23:14,720 --> 00:23:18,080
 so that's how we do it down there.
 
-620
+619
 00:23:18,080 --> 00:23:20,640
 And so these are my actual dogs. I just
 
-621
+620
 00:23:20,640 --> 00:23:22,720
 wanted to show this. That's Zoe, my
 
-622
+621
 00:23:22,720 --> 00:23:26,159
 Great Dean. That's Jackson, our Bull
 
-623
+622
 00:23:26,159 --> 00:23:28,799
 Mastiff. And that's Remy
 
-624
+623
 00:23:28,799 --> 00:23:32,080
 rescue Pit Bull.
 
-625
+624
 00:23:32,080 --> 00:23:34,000
-Okay. And then this is the diagram that
+This is the diagram that
 
-626
+625
 00:23:34,000 --> 00:23:35,360
 we've created. I think Jared already
 
-627
+626
 00:23:35,360 --> 00:23:36,480
 showed this in one of his talks, but
 
-628
+627
 00:23:36,480 --> 00:23:38,320
 this is the diagram we created when we
 
-629
+628
 00:23:38,320 --> 00:23:40,080
 were first trying to conceptualize this.
 
-630
+629
 00:23:40,080 --> 00:23:42,799
 And the idea here is that when you look
 
-631
+630
 00:23:42,799 --> 00:23:44,320
 at the convergence of what's happening
 
-632
+631
 00:23:44,320 --> 00:23:45,653
 here, DirectTrust is working very
 
-633
+632
 00:23:45,678 --> 00:23:49,679
 closely with GLEIF
 
-634
+633
 00:23:49,679 --> 00:23:53,120
 to help facilitate bringing the vLEI
 
-635
+634
 00:23:53,120 --> 00:23:56,320
 ecosystem into healthcare.
 
-636
+635
 00:23:56,320 --> 00:23:57,760
-And so you can have these credentials
+You can have these credentials
 
-637
+636
 00:23:57,760 --> 00:23:59,360
 issued into a payer and a provider
 
-638
+637
 00:23:59,360 --> 00:24:02,240
 wallet, dynamic client registration,
 
-639
+638
 00:24:02,240 --> 00:24:04,080
 client authentication.
 
-640
+639
 00:24:04,080 --> 00:24:05,679
 They can issue vLEIs down to their
 
-641
+640
 00:24:05,679 --> 00:24:08,559
 members. State of Utah can issue SEDI
 
-642
+641
 00:24:08,559 --> 00:24:10,960
 credentials and then all of them can now
 
-643
+642
 00:24:10,960 --> 00:24:12,320
 authenticate against the site and get
 
-644
+643
 00:24:12,320 --> 00:24:14,000
 the data they need using this exact same
 
-645
+644
 00:24:14,000 --> 00:24:15,520
 method. So that's what we're trying to
 
-646
+645
 00:24:15,520 --> 00:24:19,029
 get at here.
 
-647
+646
 00:24:19,123 --> 00:24:21,637
 And that's it. Any questions? Yes. Do we
 
-648
+647
 00:24:21,662 --> 00:24:22,510
 have a microphone?
 
-649
+648
 00:24:32,257 --> 00:24:33,616
 – Just a quick question. Can you say
 
-650
+649
 00:24:33,640 --> 00:24:35,120
 more about the difference between the
 
-651
+650
 00:24:35,120 --> 00:24:37,600
 payer and the provider wallets?
 
+651
+00:24:37,600 --> 00:24:40,240
+So, like what they're meant for.
+
 652
-00:24:37,600 --> 00:24:38,080
-So,
+00:24:40,240 --> 00:24:42,559
+Oh, like the purpose of use, like
 
 653
-00:24:38,080 --> 00:24:40,240
-like what they're meant for.
-
-654
-00:24:40,240 --> 00:24:42,559
-– Oh like the purpose of use, like
-
-655
 00:24:42,559 --> 00:24:44,159
 why a payer would be accessing another
 
-656
+654
 00:24:44,159 --> 00:24:45,679
 payer versus why they'd be accessing a
 
-657
+655
 00:24:45,679 --> 00:24:46,880
 provider. Is that what you mean?
 
-658
+656
 00:24:46,880 --> 00:24:48,960
-– Yeah. Yeah. And what the wallets do,
+– Yeah, and what the wallets do;
+
+657
+00:24:48,960 --> 00:24:51,600
+what's their provider mean?
+
+658
+00:24:51,600 --> 00:24:56,799
+In this case this was just meant to
 
 659
-00:24:48,960 --> 00:24:51,600
-like what's their provider mean?
-
-660
-00:24:51,600 --> 00:24:53,919
-– Oh, well, so yeah, I'll go back. So,
-
-661
-00:24:53,919 --> 00:24:56,799
-in this case this was just meant to
-
-662
 00:24:56,799 --> 00:24:59,600
 represent the fact that you have
 
-663
+660
 00:24:59,600 --> 00:25:01,440
 this the same type of wallet.
 
-664
+661
 00:25:01,440 --> 00:25:02,799
-– Got it. – The payer would be holding his
+– Got it. The payer would be holding his
 
-665
+662
 00:25:02,799 --> 00:25:04,640
 vLEI credential and use it to access
 
-666
+663
 00:25:04,640 --> 00:25:06,400
 anyone else in the ecosystem. Literally
 
-667
+664
 00:25:06,400 --> 00:25:07,840
 anyone else in the ecosystem access
 
-668
+665
 00:25:07,840 --> 00:25:08,640
 their data.
 
-669
+666
 00:25:08,640 --> 00:25:10,159
 – Got it. Those are just roles, not
 
-670
+667
 00:25:10,159 --> 00:25:11,520
 different wallets. Okay. Got it. I
 
-671
+668
 00:25:11,520 --> 00:25:13,919
 misunderstood.
 
-672
+669
 00:25:13,919 --> 00:25:16,000
-– Okay. So, my question is about the
+– My question is about the
+
+670
+00:25:16,000 --> 00:25:21,440
+authorization server flow. [adjusting volume]
+
+671
+00:25:21,440 --> 00:25:23,919
+So, the authorization server waits
+
+672
+00:25:23,919 --> 00:25:26,720
+for an ACDC presentation. Does
 
 673
-00:25:16,000 --> 00:25:17,760
-authorization server flow. Wow. I'll
-
-674
-00:25:17,760 --> 00:25:19,120
-hold the mic a little further away from
-
-675
-00:25:19,120 --> 00:25:21,440
-my mouth.
-
-676
-00:25:21,440 --> 00:25:23,919
-So, so the authorization server waits
-
-677
-00:25:23,919 --> 00:25:26,720
-for an ACDC presentation. So that does
-
-678
 00:25:26,720 --> 00:25:30,000
 that make the ACDC essentially
 
-679
+674
 00:25:30,000 --> 00:25:32,080
 the identity provider?
 
-680
+675
 00:25:32,080 --> 00:25:33,360
-– Yeah. Yeah. That's why I call it a
+Yeah. That's why I call it a
 
-681
+676
 00:25:33,360 --> 00:25:35,840
 dynamic identity provider appliance
 
-682
+677
 00:25:35,840 --> 00:25:37,279
-because it's it's just you install
+because it's just you install
 
-683
+678
 00:25:37,279 --> 00:25:39,440
 anyone anywhere and you say trust these
 
-684
+679
 00:25:39,440 --> 00:25:40,240
 credentials.
 
-685
+680
 00:25:40,240 --> 00:25:40,559
 – Okay.
 
-686
+681
 00:25:40,559 --> 00:25:41,840
-– And it just works.
+And it just works.
 
-687
+682
 00:25:41,840 --> 00:25:42,480
 – Cool.
 
-688
-00:25:42,480 --> 00:25:42,964
-– Yeah.
-
-689
-00:25:52,651 --> 00:25:56,960
+683
+00:25:42,480 --> 00:25:56,960
 – Is it limited to person
 
-690
+684
 00:25:56,960 --> 00:26:00,320
 to business or can also be used in API
 
-691
+685
 00:26:00,320 --> 00:26:02,080
 situations business to business?
 
-692
+686
 00:26:02,080 --> 00:26:03,600
 Yeah, the client authentication
 
-693
+687
 00:26:03,600 --> 00:26:05,120
 flow, dynamic client registration and
 
-694
+688
 00:26:05,120 --> 00:26:07,360
 then client authentication flow supports
 
-695
+689
 00:26:07,360 --> 00:26:09,919
 business to business.
 
-696
+690
 00:26:12,235 --> 00:26:16,240
-So, in OAuth you can do just client
+In OAuth you can do just client
 
-697
+691
 00:26:16,240 --> 00:26:18,320
 client authentication where you skip the
 
-698
+692
 00:26:18,320 --> 00:26:19,679
 authentication flow you get you don't
 
-699
+693
 00:26:19,679 --> 00:26:20,880
 get the authentication code that's just
 
-700
+694
 00:26:20,880 --> 00:26:22,240
 pair to pair that's business to business
 
-701
+695
 00:26:22,240 --> 00:26:24,880
 so it does support that as well.
 
-702
+696
 00:26:24,880 --> 00:26:26,799
 That's why I guess you have a client ID
 
-703
+697
 00:26:26,799 --> 00:26:28,080
 because the client can get the data
 
-704
+698
 00:26:28,080 --> 00:26:30,098
 themselves not on behalf of a user.
 
-705
+699
 00:26:33,350 --> 00:26:35,091
 All right, thank you very much. [Applause]
 
-706
+700
 00:26:35,116 --> 00:26:36,206
 – Thank you.
 
