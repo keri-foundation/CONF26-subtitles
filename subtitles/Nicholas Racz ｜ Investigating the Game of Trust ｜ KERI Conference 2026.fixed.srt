@@ -252,7 +252,7 @@ open.
 
 64
 00:02:41,135 --> 00:02:45,920
-So in essence, when we first started,
+In essence, when we first started,
 
 65
 00:02:45,920 --> 00:02:48,560
@@ -280,7 +280,7 @@ built out the essential infrastructure.
 
 71
 00:02:58,560 --> 00:03:00,319
-And when we started actually and
+And when we started actually and [via] 
 
 72
 00:03:00,319 --> 00:03:02,879
@@ -292,7 +292,7 @@ us). We got pitched the idea of
 
 74
 00:03:06,879 --> 00:03:10,640
-Provenant. Provenant was a an idea
+Provenant. Provenant was an idea
 
 75
 00:03:10,640 --> 00:03:12,720
@@ -328,7 +328,7 @@ the KERI ecosystem.
 
 83
 00:03:39,200 --> 00:03:41,599
-So, the three actual approaches we
+The three actual approaches we
 
 84
 00:03:41,599 --> 00:03:43,519
@@ -1052,7 +1052,7 @@ happens with startups and by the way the
 
 264
 00:11:23,440 --> 00:11:25,920
-co-founder of [inaudible]
+co-founder of Credential Master
 
 265
 00:11:25,920 --> 00:11:28,399
@@ -1108,7 +1108,7 @@ It wasn't.
 
 278
 00:11:56,320 --> 00:11:57,600
-it was a good thing. It was an important
+It was a good thing. It was an important
 
 279
 00:11:57,600 --> 00:11:59,680
@@ -1156,15 +1156,15 @@ right. I think that
 
 290
 00:12:22,800 --> 00:12:27,040
-they did pivot away from oh my
+they did pivot away from .., oh my
 
 291
 00:12:27,040 --> 00:12:28,240
-goodness this is failing me but
+goodness this is failing me, but
 
 292
 00:12:28,240 --> 00:12:29,760
-anyways but they did pivot from their
+anyways but, they did pivot from their
 
 293
 00:12:29,760 --> 00:12:31,920
@@ -1260,7 +1260,7 @@ Verifiable Voice Protocol, which is what
 
 316
 00:13:22,079 --> 00:13:26,240
-OBC itself is using to have branded
+OVC itself is using to have branded
 
 317
 00:13:26,240 --> 00:13:30,629
@@ -1344,7 +1344,7 @@ STIR/SHAKEN as well was just insufficient.
 
 337
 00:14:21,760 --> 00:14:23,839
-It's built on X509 based
+It's built on X.509-based
 
 338
 00:14:23,839 --> 00:14:25,760
@@ -2144,7 +2144,7 @@ useless.
 
 537
 00:22:37,440 --> 00:22:39,600
-I have watched videos of people just
+- I have watched videos of people just
 
 538
 00:22:39,600 --> 00:22:41,919
@@ -2195,1966 +2195,1970 @@ community, let the, not the AI brain, but
 the human brain and collective make that
 
 550
-00:23:11,520 --> 00:23:13,600
-code more valuable. – Jared's pointing
+00:23:11,520 --> 00:23:12,637
+code more valuable.
 
 551
-00:23:13,600 --> 00:23:15,919
-at something very essential that
+00:23:12,661 --> 00:23:13,735
+Jared's pointing
 
 552
+00:23:13,759 --> 00:23:15,919
+at something very essential that
+
+553
 00:23:15,919 --> 00:23:18,400
 Key State understood getting into this,
 
-553
+554
 00:23:18,400 --> 00:23:21,120
 that most of these funds that we
 
-554
+555
 00:23:21,120 --> 00:23:22,400
 put into these companies would be going
 
-555
+556
 00:23:22,400 --> 00:23:24,320
 to open source development. And
 
-556
+557
 00:23:24,320 --> 00:23:25,840
 there's a fine balance.
 
-557
+558
 00:23:25,840 --> 00:23:28,799
 Not everything should be open source.
 
-558
+559
 00:23:28,799 --> 00:23:30,998
 There's a time and a place for IP to
 
-559
+560
 00:23:30,998 --> 00:23:32,400
 be leveraged. (IP = Intellectual Property)
 
-560
+561
 00:23:32,400 --> 00:23:34,000
 – Our gateways are not open source.
 
-561
+562
 00:23:34,000 --> 00:23:35,760
 – Right.
 
-562
+563
 00:23:35,760 --> 00:23:37,520
 And exactly like the open
 
-563
+564
 00:23:37,520 --> 00:23:38,960
 source is to invite people to
 
-564
+565
 00:23:38,960 --> 00:23:40,880
 participate in the ecosystem and you can
 
-565
+566
 00:23:40,880 --> 00:23:43,679
 provide what is uniquely yours on top.
 
-566
+567
 00:23:45,840 --> 00:23:48,320
 – Just wanted to follow up to that source
 
-567
+568
 00:23:48,320 --> 00:23:51,600
 code is not patentable. It's
 
-568
+569
 00:23:51,600 --> 00:23:52,559
 copyrightable.
 
-569
+570
 00:23:54,880 --> 00:23:57,039
 It's a big difference.
 
-570
+571
 00:23:57,039 --> 00:23:58,720
 – I think you are the foremost
 
-571
+572
 00:23:58,720 --> 00:24:00,640
 authority in making that declarative
 
-572
+573
 00:24:00,640 --> 00:24:04,159
 statement. – Anyway, the issue is
 
-573
+574
 00:24:04,159 --> 00:24:06,240
 that's how open source works is by
 
-574
+575
 00:24:06,240 --> 00:24:06,960
 copyright.
 
-575
+576
 00:24:07,520 --> 00:24:09,520
 Because since you assert the
 
-576
+577
 00:24:09,520 --> 00:24:11,001
 copyright, you can decide what to do
 
-577
+578
 00:24:11,026 --> 00:24:11,467
 with it.
 
-578
+579
 00:24:11,760 --> 00:24:13,440
 – Sure. And it depends on the license you
 
-579
+580
 00:24:13,440 --> 00:24:16,400
 use for said copyright, right?
 
-580
+581
 00:24:16,400 --> 00:24:17,520
 – Well, yeah, that's your choice.
 
-581
+582
 00:24:18,159 --> 00:24:19,840
 – But you're asserting
 
-582
+583
 00:24:19,840 --> 00:24:23,200
 ownership in order to give it away. But
 
-583
+584
 00:24:23,200 --> 00:24:25,520
 you have to assert the ownership first.
 
-584
+585
 00:24:30,397 --> 00:24:32,160
 – I want to throw something out in an
 
-585
+586
 00:24:32,185 --> 00:24:35,360
 assertion that I would love to have
 
-586
+587
 00:24:35,360 --> 00:24:38,159
 challenged if someone disagrees with it
 
-587
+588
 00:24:38,159 --> 00:24:39,919
 and it's about where open source is
 
-588
+589
 00:24:39,919 --> 00:24:41,679
 appropriate and where capturing IP is
 
-589
+590
 00:24:41,679 --> 00:24:43,200
 appropriate where the line is and I
 
-590
+591
 00:24:43,200 --> 00:24:45,279
 think there's actually a new line a new
 
-591
+592
 00:24:45,279 --> 00:24:46,880
 bright line because of AI
 
-592
+593
 00:24:46,880 --> 00:24:48,559
 and I think it's bright
 
-593
+594
 00:24:48,559 --> 00:24:50,159
 and let me just throw it out there as an
 
-594
+595
 00:24:50,159 --> 00:24:51,360
 idea
 
-595
+596
 00:24:51,360 --> 00:24:54,640
 and that is if your
 
-596
+597
 00:24:54,640 --> 00:24:58,000
 code, your protocol is something that
 
-597
+598
 00:24:58,000 --> 00:25:01,760
 you need multiple parties to adopt.
 
-598
+599
 00:25:01,760 --> 00:25:04,000
 There's an issuer holder verifier or
 
-599
+600
 00:25:04,000 --> 00:25:05,919
 there's two sides. If it's a two side,
 
-600
+601
 00:25:05,919 --> 00:25:08,880
 if it's multi-sided at all,
 
-601
+602
 00:25:08,880 --> 00:25:10,799
 I don't think there's a choice anymore.
 
-602
+603
 00:25:10,799 --> 00:25:12,720
 But you have to open source
 
-603
+604
 00:25:12,720 --> 00:25:13,840
 – From strategic necessity.
 
-604
+605
 00:25:13,840 --> 00:25:14,960
 – Otherwise, you're trying to be the
 
-605
+606
 00:25:14,960 --> 00:25:17,279
 platform, what I call EUM: “Everybody Use
 
-606
+607
 00:25:17,279 --> 00:25:18,960
 Me” and I will be in the middle and
 
-607
+608
 00:25:18,960 --> 00:25:20,559
 everybody use me to be the bridge of
 
-608
+609
 00:25:20,559 --> 00:25:22,960
 everything. But that's only if it's
 
-609
+610
 00:25:22,960 --> 00:25:24,480
 multi-sided.
 
-610
+611
 00:25:24,480 --> 00:25:26,799
 I think it's 180 degrees different if
 
-611
+612
 00:25:26,799 --> 00:25:28,480
 it's single-sided.
 
-612
+613
 00:25:28,480 --> 00:25:31,520
 I think if you do not protect
 
-613
+614
 00:25:31,520 --> 00:25:34,720
 your architecture, you copyright
 
-614
+615
 00:25:34,720 --> 00:25:37,600
 code, but you can patent architecture,
 
-615
+616
 00:25:37,600 --> 00:25:40,640
 right? So, you can patent architecture
 
-616
+617
 00:25:40,640 --> 00:25:42,880
 and if it's single-sided
 
-617
+618
 00:25:42,880 --> 00:25:44,400
 architecture
 
-618
+619
 00:25:44,400 --> 00:25:47,760
 and you do not patent it, you're going
 
-619
+620
 00:25:47,760 --> 00:25:50,320
 to be destroyed in a New York minute by
 
-620
+621
 00:25:50,320 --> 00:25:54,480
 every AI copier… it's
 
-621
+622
 00:25:54,480 --> 00:25:56,320
 too easy for them to just take it and do
 
-622
+623
 00:25:56,320 --> 00:25:58,960
 it. And I used to feel that everything
 
-623
+624
 00:25:58,960 --> 00:26:00,320
 was open source and make fun of
 
-624
+625
 00:26:00,320 --> 00:26:01,360
 everything IP,
 
-625
+626
 00:26:01,360 --> 00:26:03,600
 But now I'm starting a company to
 
-626
+627
 00:26:03,600 --> 00:26:05,120
 take advantage of the SEDI momentum
 
-627
+628
 00:26:05,120 --> 00:26:07,600
 and I started doing product design and I
 
-628
+629
 00:26:07,600 --> 00:26:09,279
 invented something and I'm like, "Holy
 
-629
+630
 00:26:09,279 --> 00:26:11,840
 cow, this is single-sided. If I come to
 
-630
+631
 00:26:11,840 --> 00:26:14,720
 market with this product without any IP,
 
-631
+632
 00:26:14,720 --> 00:26:17,760
 I'm going to get exploded in a minute."
 
-632
+633
 00:26:17,760 --> 00:26:20,240
 And so I just defensively, apologies to
 
-633
+634
 00:26:20,240 --> 00:26:22,080
 you, Steve, because I've been
 
-634
+635
 00:26:22,080 --> 00:26:25,760
 criticizing you for your very pro-IP
 
-635
+636
 00:26:25,760 --> 00:26:28,000
 perspective, but I realize the
 
-636
+637
 00:26:28,000 --> 00:26:29,600
 distinction. It's whether it's a
 
-637
+638
 00:26:29,600 --> 00:26:32,000
 single-sided product or multi-sided.
 
-638
+639
 00:26:32,000 --> 00:26:34,799
 Multi-sided, open source, single-sided,
 
-639
+640
 00:26:34,799 --> 00:26:36,559
 you got to patent it any way
 
-640
+641
 00:26:36,559 --> 00:26:38,799
 you can or you're going to get raped as
 
-641
+642
 00:26:38,799 --> 00:26:39,840
 soon as it gets public.
 
-642
+643
 00:26:39,840 --> 00:26:41,279
 – Robert.
 
-643
+644
 00:26:41,279 --> 00:26:44,159
 – Just a question to your challenge,
 
-644
+645
 00:26:44,159 --> 00:26:45,919
 and I'm not saying it's either way, but
 
-645
+646
 00:26:45,919 --> 00:26:48,080
 would you say the FICO score has to be
 
-646
+647
 00:26:48,080 --> 00:26:51,120
 open source now since that's proprietary
 
-647
+648
 00:26:51,120 --> 00:26:52,480
 yet multiple sides?
 
-648
+649
 00:26:52,480 --> 00:26:54,880
 – No, it's singlesided.
 
-649
+650
 00:26:54,880 --> 00:26:58,320
 Each one of those credit rating
 
-650
+651
 00:26:58,320 --> 00:27:00,320
 authorities has their own proprietary
 
-651
+652
 00:27:00,320 --> 00:27:02,320
 way of doing it single-sided to them in
 
-652
+653
 00:27:02,320 --> 00:27:03,600
 their own environment. That's why they
 
-653
+654
 00:27:03,600 --> 00:27:05,039
 keep it proprietary.
 
-654
+655
 00:27:05,520 --> 00:27:07,600
 That's why there's three. If it was open
 
-655
+656
 00:27:07,600 --> 00:27:08,960
 source, everyone would use the same one,
 
-656
+657
 00:27:08,960 --> 00:27:11,600
 but they each have a proprietary one.
 
-657
+658
 00:27:11,600 --> 00:27:12,799
 That's a good example,
 
-658
+659
 00:27:12,799 --> 00:27:13,520
 – Steve.
 
-659
+660
 00:27:13,520 --> 00:27:16,159
 – So, let me follow on to answer your
 
-660
+661
 00:27:16,159 --> 00:27:19,200
 question, but I agree with Timothy.
 
-661
+662
 00:27:19,200 --> 00:27:20,080
 – We agree.
 
-662
+663
 00:27:20,080 --> 00:27:22,320
 – Yes.
 
-663
-00:27:22,320 --> 00:27:26,159
-But the issue is the reason
-
 664
+00:27:22,320 --> 00:27:26,159
+But the issue is: the reason
+
+665
 00:27:26,159 --> 00:27:29,039
 it's good to have KERI open source is
 
-665
+666
 00:27:29,039 --> 00:27:33,120
 because your goal is uniform adoption.
 
-666
+667
 00:27:33,840 --> 00:27:34,799
 – Multi-sided.
 
-667
+668
 00:27:34,799 --> 00:27:37,120
 – Yes multi-sided. I'm just trying
 
-668
+669
 00:27:37,120 --> 00:27:39,440
 to put it in a different language that
 
-669
+670
 00:27:39,440 --> 00:27:42,240
 you want everybody to use it because
 
-670
+671
 00:27:42,240 --> 00:27:44,159
 then you become interoperable
 
-671
+672
 00:27:44,799 --> 00:27:47,520
 and that's different than coming up
 
-672
+673
 00:27:47,520 --> 00:27:51,760
 with secret sauce to do something
 
-673
+674
 00:27:51,760 --> 00:27:54,080
 and you want to keep that protected. And
 
-674
+675
 00:27:54,080 --> 00:27:57,919
 so both the app world and the open-
 
-675
+676
 00:27:57,919 --> 00:28:01,440
 source world are indispensable
 
-676
+677
 00:28:01,440 --> 00:28:03,520
 tools. We use a different time.
 
-677
+678
 00:28:03,520 --> 00:28:06,000
 – Right. Exactly. The timing matters and
 
-678
+679
 00:28:06,000 --> 00:28:08,000
 to what degree.
 
-679
+680
 00:28:08,000 --> 00:28:10,159
 So, and honestly, it's still
 
-680
+681
 00:28:10,159 --> 00:28:12,399
 something that I think we're working on
 
-681
+682
 00:28:12,399 --> 00:28:15,120
 in terms of our understanding, but
 
-682
+683
 00:28:15,120 --> 00:28:18,799
 Jared and the healthKERI team, I think,
 
-683
+684
 00:28:18,799 --> 00:28:22,000
 have the right approach. A lot of this
 
-684
+685
 00:28:22,000 --> 00:28:23,679
 sort of SEDI support for
 
-685
+686
 00:28:23,679 --> 00:28:26,559
 example with the watchers the witnesses,
 
-686
+687
 00:28:26,559 --> 00:28:31,520
 the wallets, it needs this level of
 
-687
+688
 00:28:31,520 --> 00:28:35,360
 open-source licensing to allow for
 
-688
+689
 00:28:35,360 --> 00:28:37,039
 that network effect to propagate and
 
-689
+690
 00:28:37,039 --> 00:28:38,480
 again we knew that coming in
 
-690
+691
 00:28:38,480 --> 00:28:39,760
 that this was going to be a little bit
 
-691
+692
 00:28:39,760 --> 00:28:44,080
 of this sort of allowing the fruits
 
-692
+693
 00:28:44,080 --> 00:28:46,239
 of our labor to be freely appreciated.
 
-693
+694
 00:28:48,254 --> 00:28:50,715
 On healthcare in particular
 
-694
+695
 00:28:50,739 --> 00:28:53,200
 to speak on what the opportunity was.
 
-695
+696
 00:28:53,200 --> 00:28:54,960
 If breaches were a contest, healthcare
 
-696
+697
 00:28:54,960 --> 00:28:58,240
 would be numero uno. The third party
 
-697
+698
 00:28:58,240 --> 00:29:02,080
 ransomware origin is pretty
 
-698
+699
 00:29:02,080 --> 00:29:04,480
 extensively documented. There's hundreds
 
-699
+700
 00:29:04,480 --> 00:29:06,559
 of millions of US patient healthcare
 
-700
+701
 00:29:06,559 --> 00:29:09,679
 records stolen. And the most serious
 
-701
+702
 00:29:09,679 --> 00:29:13,360
 of attacks actually affect real life
 
-702
+703
 00:29:13,360 --> 00:29:16,000
 care environments. Jared, I think
 
-703
+704
 00:29:16,000 --> 00:29:17,840
 didn't we have the first case of someone
 
-704
+705
 00:29:17,840 --> 00:29:20,240
 dying from ransomware?
 
-705
+706
 00:29:20,240 --> 00:29:21,919
 – There have been a number of cases where
 
-706
+707
 00:29:21,919 --> 00:29:24,320
 they said this probably was because of
 
-707
+708
 00:29:24,320 --> 00:29:26,880
 ransomware. This last year BBC
 
-708
+709
 00:29:26,880 --> 00:29:28,480
 finally put out an article and said,
 
-709
-00:29:28,480 --> 00:29:31,200
-"No, no, we can clearly state that
-
 710
+00:29:28,480 --> 00:29:31,200
+"No, we can clearly state that
+
+711
 00:29:31,200 --> 00:29:33,440
 this person died to the hospital they
 
-711
+712
 00:29:33,440 --> 00:29:35,600
 were supposed to go to but couldn't."
 
-712
+713
 00:29:36,080 --> 00:29:38,320
 They would have survived. So,
 
-713
+714
 00:29:38,320 --> 00:29:41,360
 Yes, ransonware, and it's worse than that.
 
-714
+715
 00:29:41,360 --> 00:29:43,360
 Most of these attacks are not
 
-715
+716
 00:29:43,360 --> 00:29:45,360
 individuals looking [inaudible]
 
-716
+717
 00:29:45,360 --> 00:29:47,120
 Most of these attacks are nation state
 
-717
+718
 00:29:47,120 --> 00:29:48,960
 actors that look at healthcare as a
 
-718
+719
 00:29:48,960 --> 00:29:51,120
 critical infrastructure.
 
-719
+720
 00:29:51,120 --> 00:29:52,320
 It's the cyberwar.
 
-720
+721
 00:29:52,320 --> 00:29:54,159
 – And this is a key thing as
 
-721
+722
 00:29:54,159 --> 00:29:56,240
 well. One of the big and we're going
 
-722
+723
 00:29:56,240 --> 00:29:58,240
 to talk about macroeconomics in a bit.
 
-723
+724
 00:29:58,240 --> 00:29:59,840
 One of the big investment thesises
 
-724
+725
 00:29:59,840 --> 00:30:03,440
 that's emerging as we speak is defense.
 
-725
+726
 00:30:03,440 --> 00:30:06,399
 We are literally as we're in
 
-726
+727
 00:30:06,399 --> 00:30:08,559
 World War III right now. It's not
 
-727
+728
 00:30:08,559 --> 00:30:11,120
 completely physical. It's not ballistic
 
-728
+729
 00:30:11,120 --> 00:30:13,760
 necessarily. It's more information based,
 
-729
+730
 00:30:13,760 --> 00:30:15,760
 state-based actors have been performing
 
-730
-00:30:15,760 --> 00:30:18,559
-these attacks for decades now I
-
 731
+00:30:15,760 --> 00:30:18,559
+these attacks for decades now. I
+
+732
 00:30:18,559 --> 00:30:21,919
 mean North Korea, Iran, classic examples
 
-732
+733
 00:30:21,919 --> 00:30:25,440
 this is not just like fanning the fear
 
-733
+734
 00:30:25,440 --> 00:30:27,200
 flames but it's actually these are real
 
-734
+735
 00:30:27,200 --> 00:30:30,320
 outcomes that we have to protect against.
 
-735
+736
 00:30:30,320 --> 00:30:33,760
 So here's a table so to speak of sort
 
-736
+737
 00:30:33,760 --> 00:30:36,880
 of where the capital has been moved.
 
-737
+738
 00:30:38,983 --> 00:30:39,840
 We still have
 
-738
+739
 00:30:39,840 --> 00:30:44,320
 some gaps that we've identified. I
 
-739
+740
 00:30:44,320 --> 00:30:45,760
 think we're addressing the wallets at
 
-740
+741
 00:30:45,760 --> 00:30:48,880
 the edge with Locksmith in particular. I
 
-741
+742
 00:30:48,880 --> 00:30:51,679
 want to see more use cases emerge that
 
-742
+743
 00:30:51,679 --> 00:30:53,679
 feature wallets and credentials being
 
-743
-00:30:53,679 --> 00:30:57,039
-used in production. I honestly I
-
 744
+00:30:53,679 --> 00:30:57,039
+used in production. I honestly
+
+745
 00:30:57,039 --> 00:30:58,720
 think the gap in supply chain is
 
-745
+746
 00:30:58,720 --> 00:31:02,080
 massive. Verifiable.Trade Foundation,
 
-746
+747
 00:31:02,080 --> 00:31:05,360
 led by Stephan Wolf has been
 
-747
+748
 00:31:05,360 --> 00:31:08,000
 spearheading this sort of approach now
 
-748
+749
 00:31:08,000 --> 00:31:10,960
 for three years now. Yeah. ever since
 
-749
+750
 00:31:10,960 --> 00:31:13,440
 Stephan Wolf left GLEIF and what
 
-750
+751
 00:31:13,440 --> 00:31:15,360
 they're building to will be a
 
-751
+752
 00:31:15,360 --> 00:31:18,320
 multi-billion dollar opportunity. It
 
-752
+753
 00:31:18,320 --> 00:31:19,919
 just needs to be realized and the
 
-753
+754
 00:31:19,919 --> 00:31:22,320
 problem of verifiable bills of lading
 
-754
+755
 00:31:22,320 --> 00:31:24,399
 is one in particular that's quite hairy.
 
-755
+756
 00:31:24,399 --> 00:31:26,240
 Getting that recognized across
 
-756
-00:31:26,240 --> 00:31:29,520
-different domains of trust. And so
-
 757
-00:31:29,520 --> 00:31:33,600
-and then again having capital allotments
+00:31:26,240 --> 00:31:29,520
+different domains of trust. 
 
 758
+00:31:29,520 --> 00:31:33,600
+And then again having capital allotments
+
+759
 00:31:33,600 --> 00:31:36,480
 to future SEDI initiatives is something
 
-759
+760
 00:31:36,480 --> 00:31:40,240
 that will open the floodgates for
 
-760
+761
 00:31:40,240 --> 00:31:43,760
 startups and also KERI as a whole.
 
-761
+762
 00:31:43,760 --> 00:31:47,519
 So Utah is just the start.
 
-762
+763
 00:31:47,519 --> 00:31:50,000
 So we're going to go into what
 
-763
+764
 00:31:50,000 --> 00:31:52,880
 this taught us.
 
-764
-00:31:52,880 --> 00:31:54,960
-Again when we first started most of
-
 765
+00:31:52,880 --> 00:31:54,960
+When we first started most of
+
+766
 00:31:54,960 --> 00:31:57,440
 the members of Key State Capital were very
 
-766
+767
 00:31:57,440 --> 00:32:01,440
 asset-rich. The crypto boom had
 
-767
+768
 00:32:01,440 --> 00:32:05,440
 just finished in 2020. We were
 
-768
+769
 00:32:05,440 --> 00:32:08,159
 sitting on our laurels. We have
 
-769
+770
 00:32:08,159 --> 00:32:09,840
 this incredible technology in form of
 
-770
+771
 00:32:09,840 --> 00:32:13,279
 KERI and we actually did not properly
 
-771
+772
 00:32:13,279 --> 00:32:16,960
 allocate resources in a way that was
 
-772
+773
 00:32:16,960 --> 00:32:19,600
 considering the fact that this flood of
 
-773
+774
 00:32:19,600 --> 00:32:22,159
 capital was going to subside and it did.
 
-774
+775
 00:32:22,159 --> 00:32:24,399
 It did in a way that was substantial.
 
-775
+776
 00:32:24,399 --> 00:32:25,679
 We're talking about an order of
 
-776
+777
 00:32:25,679 --> 00:32:28,799
 magnitude less capital available just in
 
-777
+778
 00:32:28,799 --> 00:32:30,880
 terms of depreciation of assets and
 
-778
+779
 00:32:30,880 --> 00:32:34,159
 how we allocated risk. For me that's
 
-779
+780
 00:32:34,159 --> 00:32:37,120
 unacceptable going forward. It's not
 
-780
+781
 00:32:37,120 --> 00:32:40,080
 something that I can do for myself, I
 
-781
+782
 00:32:40,080 --> 00:32:42,240
 can't do it for my family, I can't do it
 
-782
+783
 00:32:42,240 --> 00:32:44,880
 for my founders and the industry
 
-783
+784
 00:32:44,880 --> 00:32:47,279
 as a whole. When capital actually
 
-784
+785
 00:32:47,279 --> 00:32:50,000
 creates opportunities and we're
 
-785
+786
 00:32:50,000 --> 00:32:53,039
 allocating capital irresponsibly, it
 
-786
+787
 00:32:53,039 --> 00:32:55,600
 creates danger for our entire ecosystem.
 
-787
+788
 00:32:55,600 --> 00:32:59,679
 So, we need to actually have a means of
 
-788
+789
 00:32:59,679 --> 00:33:01,360
 measuring
 
-789
+790
 00:33:01,360 --> 00:33:03,440
 the risks we take in an appropriate
 
-790
+791
 00:33:03,440 --> 00:33:06,640
 fashion. Another thing that we've
 
-791
+792
 00:33:06,640 --> 00:33:09,039
 learned is that before the contract is
 
-792
+793
 00:33:09,039 --> 00:33:12,320
 set, no one's your friend. I mean, it's
 
-793
+794
 00:33:12,320 --> 00:33:14,240
 really easy, especially when you're in
 
-794
+795
 00:33:14,240 --> 00:33:15,919
 these sort of highly intellectual
 
-795
+796
 00:33:15,919 --> 00:33:19,679
 pursuits where you have to share
 
-796
+797
 00:33:19,679 --> 00:33:21,519
 ideas in order to validate and verify
 
-797
+798
 00:33:21,519 --> 00:33:25,360
 their authenticity. But when
 
-798
+799
 00:33:25,360 --> 00:33:28,000
 you're in a business negotiation, all
 
-799
+800
 00:33:28,000 --> 00:33:31,039
 all hats are off. It's a matter of
 
-800
+801
 00:33:31,039 --> 00:33:34,000
 survival in many ways. And you two are
 
-801
+802
 00:33:34,000 --> 00:33:36,799
 feeling each other out in real time as
 
-802
+803
 00:33:36,799 --> 00:33:40,000
 to the integrity of each one. And so
 
-803
+804
 00:33:40,000 --> 00:33:42,559
 that respect is established in the
 
-804
+805
 00:33:42,559 --> 00:33:45,519
 negotiation process. If you can't stand
 
-805
+806
 00:33:45,519 --> 00:33:48,799
 up for yourself and have, as Timothy
 
-806
+807
 00:33:48,799 --> 00:33:51,440
 says, the crucial conversations,
 
-807
+808
 00:33:51,440 --> 00:33:54,399
 then there is just no basis of trust.
 
-808
+809
 00:33:54,399 --> 00:33:56,159
 And when the deluge becomes the
 
-809
+810
 00:33:56,159 --> 00:33:58,480
 desert, then people are pointing
 
-810
+811
 00:33:58,480 --> 00:33:59,919
 fingers. You're like, why is this
 
-811
+812
 00:33:59,919 --> 00:34:01,679
 happening? There's a lot of confusion,
 
-812
+813
 00:34:01,679 --> 00:34:03,360
 and you don't have a relationship that
 
-813
+814
 00:34:03,360 --> 00:34:06,480
 can actually stand the test of time. So
 
-814
+815
 00:34:06,480 --> 00:34:08,552
 a lesson there.
 
-815
+816
 00:34:08,552 --> 00:34:10,720
 Knowing your founders. So this is
 
-816
+817
 00:34:10,720 --> 00:34:12,320
 something that I've really learned
 
-817
+818
 00:34:12,320 --> 00:34:16,720
 personally. It's amazing how
 
-818
+819
 00:34:16,720 --> 00:34:20,879
 distinct every single one of our
 
-819
+820
 00:34:20,879 --> 00:34:23,679
 entrepreneurs are and understanding
 
-820
+821
 00:34:23,679 --> 00:34:25,520
 their nuances, understanding what makes
 
-821
+822
 00:34:25,520 --> 00:34:28,320
 them tick, understanding their
 
-822
+823
 00:34:28,320 --> 00:34:30,879
 strengths and their weaknesses both
 
-823
+824
 00:34:30,879 --> 00:34:34,000
 while you're evaluating and also after
 
-824
+825
 00:34:34,000 --> 00:34:35,520
 you've placed capital. You don't
 
-825
+826
 00:34:35,520 --> 00:34:38,720
 just go away after you place money.
 
-826
+827
 00:34:38,720 --> 00:34:42,639
 Having equity in a company means being
 
-827
+828
 00:34:42,639 --> 00:34:45,520
 part of that company. If you're
 
-828
+829
 00:34:45,520 --> 00:34:48,879
 not actively contributing to the value
 
-829
+830
 00:34:48,879 --> 00:34:50,560
 generating process,
 
-830
+831
 00:34:50,560 --> 00:34:52,320
 you're not boots on the
 
-831
+832
 00:34:52,320 --> 00:34:54,480
 ground necessarily selling this stuff,
 
-832
+833
 00:34:54,480 --> 00:34:56,800
 but you can open opportunities, you can
 
-833
+834
 00:34:56,800 --> 00:34:59,359
 introduce new capital. And you
 
-834
+835
 00:34:59,359 --> 00:35:02,960
 can learn how to speak with your
 
-835
+836
 00:35:02,960 --> 00:35:05,839
 founders. Communication is so key. And
 
-836
+837
 00:35:05,839 --> 00:35:07,839
 so maintaining that dialogue and
 
-837
+838
 00:35:07,839 --> 00:35:09,200
 checking in and keeping things
 
-838
+839
 00:35:09,200 --> 00:35:12,240
 accountable is the way we've kept this
 
-839
+840
 00:35:12,240 --> 00:35:15,119
 ship afloat. We've kept this
 
-840
+841
 00:35:15,119 --> 00:35:16,720
 thing on track. So whenever something is
 
-841
+842
 00:35:16,720 --> 00:35:18,800
 needed, we always have an ability to
 
-842
+843
 00:35:18,800 --> 00:35:22,880
 call each other and that's essential. So
 
-843
+844
 00:35:22,880 --> 00:35:25,839
 knowing your founders, communicating.
 
-844
+845
 00:35:25,839 --> 00:35:28,640
 We heard this like two distinct
 
-845
+846
 00:35:28,640 --> 00:35:32,640
 times. So obviously you invest to allow
 
-846
+847
 00:35:32,640 --> 00:35:35,440
 people to create something new, but you
 
-847
+848
 00:35:35,440 --> 00:35:37,359
 cannot be attached necessarily to the
 
-848
+849
 00:35:37,359 --> 00:35:39,440
 first iteration of that vision. You have
 
-849
+850
 00:35:39,440 --> 00:35:42,160
 to be able to pivot what you've created
 
-850
+851
 00:35:42,160 --> 00:35:44,560
 and formed an emotional attachment with
 
-851
+852
 00:35:44,560 --> 00:35:46,400
 when you get enough signals from the
 
-852
+853
 00:35:46,400 --> 00:35:50,160
 marketplace that you're not going to
 
-853
+854
 00:35:50,160 --> 00:35:53,920
 make it or this is not working.
 
-854
+855
 00:35:53,920 --> 00:35:57,280
 So essentially when you have creativity
 
-855
+856
 00:35:57,280 --> 00:35:58,960
 without flexibility it's just an
 
-856
+857
 00:35:58,960 --> 00:36:01,991
 attachment and this is…
 
-857
+858
 00:36:02,105 --> 00:36:02,800
 sorry go ahead Jared
 
-858
+859
 00:36:02,800 --> 00:36:05,359
 – So one of the things that I, one of
 
-859
+860
 00:36:05,359 --> 00:36:07,680
 my mantras is that creation is a
 
-860
+861
 00:36:07,680 --> 00:36:09,599
 destructive process
 
-861
+862
 00:36:09,599 --> 00:36:12,079
 by virtue of creating you will tear down
 
-862
+863
 00:36:12,079 --> 00:36:15,990
 and try again,
 
-863
+864
 00:36:16,013 --> 00:36:17,977
 creation is a destructive process.
 
-864
+865
 00:36:18,002 --> 00:36:20,295
 – Right to make an omelet you got to break
 
-865
+866
 00:36:20,320 --> 00:36:21,280
 a few eggs.
 
-866
+867
 00:36:24,495 --> 00:36:26,388
 And finally, I think the key thing is
 
-867
+868
 00:36:26,413 --> 00:36:31,280
 patience. When you have a vision for
 
-868
+869
 00:36:31,280 --> 00:36:33,760
 something that is special, when you've
 
-869
+870
 00:36:33,760 --> 00:36:36,400
 you've tested it and you know it's true,
 
-870
+871
 00:36:36,400 --> 00:36:39,520
 you've done what you can. Having the
 
-871
+872
 00:36:39,520 --> 00:36:42,720
 wisdom to know
 
-872
+873
 00:36:42,720 --> 00:36:45,359
 when not to do things, when to just wait
 
-873
+874
 00:36:45,359 --> 00:36:48,400
 for things to mature over time, and to
 
-874
+875
 00:36:48,400 --> 00:36:51,280
 let your founders do what they do best,
 
-875
+876
 00:36:51,280 --> 00:36:54,560
 I think is the key. We're only
 
-876
+877
 00:36:54,560 --> 00:36:57,119
 just now after five years of investing,
 
-877
+878
 00:36:57,119 --> 00:36:59,839
 seeing fruits from this labor. And I
 
-878
+879
 00:36:59,839 --> 00:37:01,599
 think it's going to be accelerated
 
-879
+880
 00:37:01,599 --> 00:37:03,680
 growth. I think we're in our teenage
 
-880
+881
 00:37:03,680 --> 00:37:07,200
 years, so to speak. And we'll see
 
-881
+882
 00:37:07,200 --> 00:37:09,440
 how far our core
 
-882
+883
 00:37:09,440 --> 00:37:12,480
 companies go but I think being
 
-883
+884
 00:37:12,480 --> 00:37:14,480
 patient is one of the best virtues you
 
-884
+885
 00:37:14,480 --> 00:37:15,963
 can have as an investor.
 
-885
+886
 00:37:18,735 --> 00:37:20,296
 So and these are the three principles
 
-886
+887
 00:37:20,321 --> 00:37:22,880
 I'm looking at, right: identifying the
 
-887
+888
 00:37:22,880 --> 00:37:25,680
 right market
 
-888
+889
 00:37:25,680 --> 00:37:28,880
 finding the right technical ecosystem
 
-889
+890
 00:37:28,880 --> 00:37:32,240
 and then having the right team. And
 
-890
+891
 00:37:32,240 --> 00:37:33,760
 so when you have all these three things,
 
-891
+892
 00:37:33,760 --> 00:37:35,920
 you have a recipe for success, I
 
-892
+893
 00:37:35,920 --> 00:37:38,079
 think, in terms of finding an
 
-893
+894
 00:37:38,079 --> 00:37:41,407
 investable opportunity in this space.
 
-894
+895
 00:37:44,276 --> 00:37:46,479
 So we've been funding the teams from the
 
-895
+896
 00:37:46,504 --> 00:37:50,000
 front lines. We're seeing that KERI
 
-896
+897
 00:37:50,000 --> 00:37:51,920
 becoming the trust spanning layer of the
 
-897
+898
 00:37:51,920 --> 00:37:55,040
 internet. And the job is to keep
 
-898
+899
 00:37:55,040 --> 00:37:56,880
 filling in the gaps, recruiting new
 
-899
+900
 00:37:56,880 --> 00:37:59,680
 Roots of Trust and
 
-900
+901
 00:37:59,680 --> 00:38:02,240
 sharpening our filter, making sure that
 
-901
+902
 00:38:02,240 --> 00:38:04,079
 we can understand what is a good
 
-902
+903
 00:38:04,079 --> 00:38:05,440
 founder, what is a bad founder, a good
 
-903
+904
 00:38:05,440 --> 00:38:06,720
 opportunity, a bad opportunity, and so
 
-904
+905
 00:38:06,720 --> 00:38:09,359
 on and so forth. So we're still
 
-905
+906
 00:38:09,359 --> 00:38:11,280
 looking for investable opportunities. If
 
-906
+907
 00:38:11,280 --> 00:38:14,880
 you have any, please come my way.
 
-907
+908
 00:38:14,880 --> 00:38:17,200
 I'll give you a card and we'll talk.
 
-908
+909
 00:38:17,200 --> 00:38:19,232
 So, thank you all for your time.
 
-909
+910
 00:38:19,256 --> 00:38:21,256
 [Applause]
 
-910
+911
 00:38:25,458 --> 00:38:27,227
 Any questions?
 
-911
+912
 00:38:29,851 --> 00:38:32,143
 – You work with other
 
-912
+913
 00:38:32,167 --> 00:38:36,640
 try and help them understand what
 
-913
+914
 00:38:36,640 --> 00:38:39,920
 the import of the digital
 
-914
+915
 00:38:39,920 --> 00:38:42,640
 identity ecosystem is. What are some of
 
-915
+916
 00:38:42,640 --> 00:38:44,560
 the biggest things that you hear in
 
-916
+917
 00:38:44,560 --> 00:38:48,800
 terms of reticence to invest?
 
-917
+918
 00:38:48,800 --> 00:38:51,040
 What are the complaints you hear from
 
-918
+919
 00:38:51,040 --> 00:38:53,839
 other investors when you bring to them
 
-919
+920
 00:38:53,839 --> 00:38:56,560
 identity based deals like…
 
-920
+921
 00:38:56,560 --> 00:38:58,240
 – Well I think the uncertainty the
 
-921
+922
 00:38:58,240 --> 00:39:00,960
 technical barrier is big, having an
 
-922
+923
 00:39:00,960 --> 00:39:02,560
 ability to communicate what this is in
 
-923
+924
 00:39:02,560 --> 00:39:04,079
 plain language to someone that isn't
 
-924
+925
 00:39:04,079 --> 00:39:06,560
 technical is
 
-925
+926
 00:39:06,560 --> 00:39:08,480
 one of the biggest barriers, I think
 
-926
+927
 00:39:08,480 --> 00:39:10,560
 also
 
-927
+928
 00:39:10,560 --> 00:39:13,440
 liquidity is an unconscious
 
-928
+929
 00:39:13,440 --> 00:39:15,839
 limiting factor in a lot of this right
 
-929
+930
 00:39:15,839 --> 00:39:19,200
 right now, it's not the best time
 
-930
+931
 00:39:19,200 --> 00:39:21,520
 to raise money. I mean, if you have
 
-931
+932
 00:39:21,520 --> 00:39:23,280
 adoption, if you have proven
 
-932
+933
 00:39:23,280 --> 00:39:26,560
 revenue streams, you can raise, but
 
-933
+934
 00:39:26,560 --> 00:39:28,000
 it's this is not a zero interest rate
 
-934
+935
 00:39:28,000 --> 00:39:31,440
 environment any longer. So, I
 
-935
+936
 00:39:31,440 --> 00:39:33,280
 think a lot of this comes down to trust.
 
-936
+937
 00:39:33,280 --> 00:39:34,720
 You have to build a relationship
 
-937
+938
 00:39:34,720 --> 00:39:36,960
 actually with the person you're
 
-938
+939
 00:39:36,960 --> 00:39:39,440
 introducing the idea to. If someone
 
-939
+940
 00:39:39,440 --> 00:39:41,520
 knows that you're a smart guy, they
 
-940
+941
 00:39:41,520 --> 00:39:43,280
 trust you. They may not know what you're
 
-941
+942
 00:39:43,280 --> 00:39:44,640
 talking about. They may not know what a
 
-942
+943
 00:39:44,640 --> 00:39:48,079
 key rotation is, what a KEL is, any
 
-943
+944
 00:39:48,079 --> 00:39:50,960
 of this stuff, but if they have your
 
-944
+945
 00:39:50,960 --> 00:39:52,960
 trust, then I think you can convince
 
-945
+946
 00:39:52,960 --> 00:39:54,880
 them to place. And that's how
 
-946
+947
 00:39:54,880 --> 00:39:56,560
 literally what it comes down to. But…
 
-947
+948
 00:39:56,560 --> 00:39:57,440
 what's up, Will?
 
-948
+949
 00:39:57,440 --> 00:40:00,160
 – Yeah, I was going to add to that for
 
-949
+950
 00:40:00,160 --> 00:40:02,880
 Jared's question here, too. From my
 
-950
+951
 00:40:02,880 --> 00:40:05,119
 experience, conversations and trying to
 
-951
+952
 00:40:05,119 --> 00:40:08,560
 persuade investors to take a leap into
 
-952
+953
 00:40:08,560 --> 00:40:11,359
 this industry and this ecosystem, the
 
-953
+954
 00:40:11,359 --> 00:40:14,160
 largest hesitation has been
 
-954
+955
 00:40:14,160 --> 00:40:17,359
 just the vast scope of the problem that
 
-955
+956
 00:40:17,359 --> 00:40:20,800
 is trying to be addressed and solved and
 
-956
+957
 00:40:20,800 --> 00:40:24,000
 convincing them of the idea that
 
-957
+958
 00:40:24,000 --> 00:40:26,480
 there is a technology, or
 
-958
+959
 00:40:26,480 --> 00:40:28,720
 a protocol
 
-959
+960
 00:40:28,720 --> 00:40:31,359
 that has the ability to address that
 
-960
+961
 00:40:31,359 --> 00:40:34,320
 issue that they see as just almost
 
-961
+962
 00:40:34,320 --> 00:40:35,599
 unsolvable.
 
-962
+963
 00:40:35,599 --> 00:40:37,119
 – Right, or they just presume that it's
 
-963
+964
 00:40:37,119 --> 00:40:38,720
 always going to be this way…
 
-964
+965
 00:40:38,720 --> 00:40:40,320
 – And then there are so many others trying
 
-965
+966
 00:40:40,320 --> 00:40:40,880
 to do it
 
-966
+967
 00:40:40,880 --> 00:40:41,200
 right
 
-967
+968
 00:40:41,200 --> 00:40:42,640
 the fact that there are so many that
 
-968
+969
 00:40:42,640 --> 00:40:44,640
 have tried and failed or have
 
-969
+970
 00:40:44,640 --> 00:40:47,520
 tried and succeeded at various levels.
 
-970
+971
 00:40:47,520 --> 00:40:49,760
 So, that's been the largest
 
-971
+972
 00:40:49,760 --> 00:40:53,040
 amount of hesitancy that I've seen.
 
-972
+973
 00:40:55,440 --> 00:40:57,680
 – Two questions that probably are related,
 
-973
+974
 00:40:57,680 --> 00:40:59,839
 a lot of times
 
-974
+975
 00:40:59,839 --> 00:41:02,640
 investors during a pitch or
 
-975
+976
 00:41:02,640 --> 00:41:05,200
 whatever will ask about exit strategy.
 
-976
+977
 00:41:05,440 --> 00:41:06,800
 Meaning when are they going
 
-977
+978
 00:41:06,800 --> 00:41:08,160
 to get paid back as an investor
 
-978
+979
 00:41:08,160 --> 00:41:08,720
 basically,
 
-979
+980
 00:41:08,720 --> 00:41:12,400
 and this is the
 
-980
+981
 00:41:12,400 --> 00:41:14,800
 kind of bet that may take a
 
-981
+982
 00:41:14,800 --> 00:41:16,775
 while to pay off [inaudible]
 
-982
+983
 00:41:16,800 --> 00:41:18,240
 …investor perspective and so be
 
-983
+984
 00:41:18,240 --> 00:41:19,839
 … your color on that. And
 
-984
+985
 00:41:19,839 --> 00:41:22,240
 then the other one especially you
 
-985
+986
 00:41:22,240 --> 00:41:24,640
 know perhaps with healthKERI and Provenant
 
-986
+987
 00:41:24,640 --> 00:41:27,119
 that are starting to gain some traction.
 
-987
+988
 00:41:27,119 --> 00:41:28,640
 It's not going to be too long before
 
-988
+989
 00:41:28,640 --> 00:41:30,160
 they're looking for A rounds.
 
-989
+990
 00:41:30,560 --> 00:41:32,640
 And so how do you see your role in
 
-990
+991
 00:41:32,640 --> 00:41:34,400
 helping secure A rounds?
 
-991
+992
 00:41:34,400 --> 00:41:35,870
 – Well I think one of the
 
-992
+993
 00:41:35,870 --> 00:41:39,440
 interesting things that…
 
-993
+994
 00:41:39,440 --> 00:41:41,119
 In a traditional equity
 
-994
+995
 00:41:41,119 --> 00:41:43,440
 market, exit is a binary, right? You
 
-995
+996
 00:41:43,440 --> 00:41:45,520
 either have an exit or you're waiting
 
-996
+997
 00:41:45,520 --> 00:41:48,800
 for one. You can be bought out. In
 
-997
+998
 00:41:48,800 --> 00:41:49,520
 private markets…
 
-998
+999
 00:41:49,520 --> 00:41:50,720
 – Also a valid exit.
 
-999
+1000
 00:41:50,720 --> 00:41:52,880
 – Not really, honestly. Dividends are a
 
-1000
+1001
 00:41:52,880 --> 00:41:54,960
 bad, they're a poor choice. Every time
 
-1001
+1002
 00:41:54,960 --> 00:41:56,319
 you take a dividend, you're taking away
 
-1002
+1003
 00:41:56,319 --> 00:41:57,839
 from the reinvestment opportunity of the
 
-1003
+1004
 00:41:57,839 --> 00:41:59,440
 company to actually push it forward.
 
-1004
+1005
 00:41:59,440 --> 00:42:02,160
 – Going public is a long shot for
 
-1005
+1006
 00:42:02,160 --> 00:42:04,160
 many companies. So, what do you
 
-1006
+1007
 00:42:04,160 --> 00:42:07,440
 look for an exit strategies pitch?
 
-1007
+1008
 00:42:08,800 --> 00:42:11,440
 – Well, in this case, it's like just
 
-1008
+1009
 00:42:11,440 --> 00:42:13,359
 building as much value as you possibly
 
-1009
+1010
 00:42:13,359 --> 00:42:16,319
 can as an acquisition target is
 
-1010
+1011
 00:42:16,319 --> 00:42:18,319
 smart. I think there's a lot of
 
-1011
+1012
 00:42:18,319 --> 00:42:20,319
 potential innovations we can actually
 
-1012
+1013
 00:42:20,319 --> 00:42:23,200
 leverage around
 
-1013
+1014
 00:42:23,200 --> 00:42:25,599
 tokenized revenue
 
-1014
+1015
 00:42:25,599 --> 00:42:28,240
 that I think are fascinating.
 
-1015
+1016
 00:42:28,240 --> 00:42:29,839
 In this case, if you actually have
 
-1016
+1017
 00:42:29,839 --> 00:42:32,319
 market adoption in terms of
 
-1017
+1018
 00:42:32,319 --> 00:42:35,760
 infrastructure that has a longterm
 
-1018
+1019
 00:42:35,760 --> 00:42:40,000
 productive yield and that's an
 
-1019
+1020
 00:42:40,000 --> 00:42:42,720
 asset and if you can actually sell that
 
-1020
+1021
 00:42:42,720 --> 00:42:44,720
 up front, right,
 
-1021
+1022
 00:42:44,720 --> 00:42:47,280
 you can have
 
-1022
+1023
 00:42:47,280 --> 00:42:49,359
 liquidity without necessarily having an
 
-1023
+1024
 00:42:49,359 --> 00:42:52,079
 exit. And I think within five
 
-1024
+1025
 00:42:52,079 --> 00:42:54,000
 years there will be plenty of these sort
 
-1025
+1026
 00:42:54,000 --> 00:42:56,480
 of new sort of levers that companies can
 
-1026
+1027
 00:42:56,480 --> 00:42:58,480
 actually pull that previously they would
 
-1027
+1028
 00:42:58,480 --> 00:43:00,960
 never even dream of doing, right? So I
 
-1028
+1029
 00:43:00,960 --> 00:43:02,480
 think it's going to be less of a binary
 
-1029
+1030
 00:43:02,480 --> 00:43:04,640
 thing and more of a… it'll be more of
 
-1030
+1031
 00:43:04,640 --> 00:43:07,440
 a liquidity friendly equity
 
-1031
+1032
 00:43:07,440 --> 00:43:08,480
 investment market.
 
-1032
+1033
 00:43:08,800 --> 00:43:10,720
 But that's out of
 
-1033
+1034
 00:43:10,720 --> 00:43:12,160
 my scope. I don't know whether or not
 
-1034
+1035
 00:43:12,160 --> 00:43:13,839
 that's coming.
 
-1035
+1036
 00:43:13,839 --> 00:43:15,440
 – And then with the A round, if you have
 
-1036
+1037
 00:43:15,440 --> 00:43:17,040
 just a thought, or we can take this
 
-1037
-00:43:17,040 --> 00:43:19,599
-offline if we're out of time. – I'll
-
 1038
-00:43:19,599 --> 00:43:20,480
-get back to you on that.
+00:43:17,040 --> 00:43:18,748
+offline if we're out of time.
 
 1039
+00:43:18,772 --> 00:43:20,480
+I'll get back to you on that.
+
+1040
 00:43:20,480 --> 00:43:22,626
 – Okay, cool.
 
-1040
+1041
 00:43:22,651 --> 00:43:27,825
 [Applause]
 

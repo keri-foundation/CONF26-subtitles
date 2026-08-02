@@ -4,15 +4,15 @@ Daniel Hardman ｜ Open Verifiable Communications ｜ KERI Conference 2026
 
 2
 00:00:03,464 --> 00:00:05,598
-Daniel, you will introduce yourself?
+- Daniel, you will introduce yourself?
 
 3
 00:00:05,623 --> 00:00:07,358
-– Sure.
+Sure.
 
 4
 00:00:07,359 --> 00:00:09,678
-So I'm Daniel Hardman and I'm the
+I'm Daniel Hardman and I'm the
 
 5
 00:00:09,679 --> 00:00:12,959
@@ -456,7 +456,7 @@ what I'm here to talk about
 
 115
 00:05:00,988 --> 00:05:02,239
-is I'm just going to let this narrator
+is .., I'm just going to let this narrator
 
 116
 00:05:02,240 --> 00:05:03,839
@@ -1292,7 +1292,7 @@ follow the QR code.
 
 324
 00:13:16,054 --> 00:13:19,276
-Okay. So there was a lot of detail
+Okay. There was a lot of detail
 
 325
 00:13:19,300 --> 00:13:21,679
@@ -2312,7 +2312,7 @@ Not about whether it's human or not.
 
 579
 00:24:20,320 --> 00:24:23,999
-However, however, we could certainly
+However, we could certainly
 
 580
 00:24:24,000 --> 00:24:26,239
@@ -2532,7 +2532,7 @@ for these JWTs.
 
 634
 00:26:53,440 --> 00:26:57,038
-So this passport contains
+So this passport contains ..,
 
 635
 00:26:57,039 --> 00:26:58,879
@@ -2540,11 +2540,11 @@ and the blue with the underscore
 
 636
 00:26:58,880 --> 00:27:00,639
-here is supposed to suggest this to you.
+here is supposed to suggest this to you,
 
 637
 00:27:00,640 --> 00:27:02,959
-It contains a hyperlink
+contains a hyperlink
 
 638
 00:27:02,960 --> 00:27:06,079
@@ -2736,7 +2736,7 @@ criteria and their own revocation
 
 685
 00:29:04,960 --> 00:29:07,918
-SLAs's. So we can't put all of this in a
+SLAs. So we can't put all of this in a
 
 686
 00:29:07,919 --> 00:29:10,639
@@ -2776,11 +2776,11 @@ And then you can use it in ongoing
 
 695
 00:29:30,159 --> 00:29:33,678
-use. Now some of you may be wondering
+use. Now some of you may be wondering,
 
 696
 00:29:33,679 --> 00:29:36,319
-here we are at a KERI conference can
+here we are at a KERI conference, can
 
 697
 00:29:36,320 --> 00:29:39,839
@@ -2788,7 +2788,7 @@ this technique be used without
 
 698
 00:29:39,840 --> 00:29:45,519
-ACDCs without KERI. No it can't. You
+ACDCs without KERI. No, it can't. You
 
 699
 00:29:45,520 --> 00:29:47,519
@@ -3616,7 +3616,7 @@ endpoint where the URL goes?
 
 905
 00:39:01,440 --> 00:39:03,838
-– Well, the URL is an OOBI. So it's it's
+– Well, the URL is an OOBI. So it's
 
 906
 00:39:03,839 --> 00:39:07,358
@@ -3832,7 +3832,7 @@ every case.
 
 959
 00:41:22,080 --> 00:41:24,639
-Oh no, no, no, no. Provenant
+Oh no, no. Provenant
 
 960
 00:41:24,640 --> 00:41:27,439
