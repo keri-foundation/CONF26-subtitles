@@ -18,6 +18,7 @@ https://github.com/SubtitleEdit
 
 - `scripts/remove-rolling-subtitles.js` — cleans YouTube rolling-caption artefacts from the `.srt` files in `subtitles/`.
 - `scripts/build-transcript-pdf.js` — assembles every `*.fixed.srt` file into a beautifully designed PDF book of transcripts.
+- `scripts/upload-youtube-subs.sh` / `src/youtube-uploader.js` — uploads `.fixed.srt` files from `subtitles/` back to a YouTube playlist.
 
 ### Building the transcripts PDF
 
@@ -37,3 +38,51 @@ The generated PDF includes:
 - A full-bleed cover page
 - A table of contents listing all talks with runtimes
 - One chapter per talk with a dark opener page and a flowing, timestamped transcript body
+
+### Uploading subtitles to YouTube
+
+> First-time setup required. See [YOUTUBE_UPLOADER_SETUP.md](YOUTUBE_UPLOADER_SETUP.md) for OAuth2 credentials configuration.
+
+Upload edited subtitles from `subtitles/` to a YouTube playlist:
+
+```bash
+npm install
+npm run upload -- 'https://www.youtube.com/playlist?list=XYZ'
+```
+
+Upload only one subtitle file (quota-friendly):
+
+```bash
+npm run upload -- 'https://www.youtube.com/playlist?list=XYZ' --file 'Ari Argoud ｜ KRAM IT! with Ari ｜ KERI Conference 2026.fixed.srt'
+```
+
+You can also pass a custom subtitles directory plus one file:
+
+```bash
+npm run upload -- 'https://www.youtube.com/playlist?list=XYZ' subtitles --file 'Ari Argoud ｜ KRAM IT! with Ari ｜ KERI Conference 2026.fixed.srt'
+```
+
+The uploader:
+
+- Fetches all videos in the playlist
+- Matches each `.fixed.srt` file in `subtitles/` to a video by title
+- Uploads or updates the subtitle on each video
+- Supports uploading exactly one selected `.fixed.srt` file with `--file`
+- Skips unchanged subtitle files automatically using local hash history in `.youtube-upload-state.json`
+- Supports forcing upload of unchanged files with `--force`
+- Automatically retries authentication when a saved OAuth token is invalid (`invalid_grant`)
+- Supports forcing manual re-authentication with `--reauth`
+- Supports 2FA authentication on first run
+- Saves credentials locally for future uploads
+
+Force upload even if file hash is unchanged:
+
+```bash
+npm run upload -- 'https://www.youtube.com/playlist?list=XYZ' --force
+```
+
+Force OAuth re-consent:
+
+```bash
+npm run upload -- 'https://www.youtube.com/playlist?list=XYZ' --reauth
+```

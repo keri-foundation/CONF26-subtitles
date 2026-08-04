@@ -5,3 +5,7 @@ node_modules/
 .transcripts-build.html
 .chrome-profile/
 .preview/
+.youtube-credentials.json
+.youtube-client-secret.json
+.youtube-upload-state.json
+*.log
