@@ -4,7 +4,7 @@ Kent Bull ｜ KERIpy Async Architecture ｜ KERI Conference 2026
 
 2
 00:00:03,630 --> 00:00:07,319
-All right, so this is a developer focus
+This is a developer focus
 
 3
 00:00:07,344 --> 00:00:10,240
@@ -92,11 +92,11 @@ or to potentially extend it.
 
 24
 00:00:49,520 --> 00:00:51,200
-So, all right, we're going
+We're going
 
 25
 00:00:51,200 --> 00:00:53,000
-to go over a lot what structured
+to go over a lot: What structured
 
 26
 00:00:53,000 --> 00:00:55,800
@@ -131,112 +131,112 @@ things are done the way they are.
 All right, so
 
 34
-00:01:10,040 --> 00:01:12,760
-hello is it's Evan, right? No, no.
+00:01:10,040 --> 00:01:14,000
+hello is it's Evan, right? No, Keanu!
 
 35
-00:01:12,760 --> 00:01:14,000
-Keanu.
+00:01:14,000 --> 00:01:15,400
+You probably know a
 
 36
-00:01:14,000 --> 00:01:15,400
-All right, so you probably know a
-
-37
 00:01:15,400 --> 00:01:19,030
 fair bit of this already.
 
-38
+37
 00:01:19,127 --> 00:01:20,872
-All right, so I know I've talked to you
+I know I've talked to you
+
+38
+00:01:20,896 --> 00:01:22,000
+about this before, Joe. I was just
 
 39
-00:01:20,896 --> 00:01:22,000
-about this before Joe. I was just
-
-40
 00:01:22,000 --> 00:01:23,360
 probably talking to you when we say
 
-41
+40
 00:01:23,360 --> 00:01:26,360
 stuff about structured concurrency.
 
-42
+41
 00:01:26,360 --> 00:01:27,920
 How many would say they're familiar
 
-43
+42
 00:01:27,920 --> 00:01:28,840
-enough with [inaudible]
+enough with structured
 
-44
+43
 00:01:28,840 --> 00:01:30,903
 concurrency to be able to explain it?
 
-45
+44
 00:01:33,591 --> 00:01:34,671
-Keanu.
+Keanu?
 
-46
+45
 00:01:34,695 --> 00:01:37,960
 You work at the KERI Foundation.
 
-47
+46
 00:01:40,160 --> 00:01:41,378
 – I think, HIO,
 
-48
+47
 00:01:41,402 --> 00:01:45,080
 the only time I've really dove into the
 
-49
+48
 00:01:45,080 --> 00:01:48,880
-code was when we had to port
+code, was when we had to port
 
-50
+49
 00:01:48,880 --> 00:01:51,080
 into the web
 
-51
+50
 00:01:51,080 --> 00:01:53,680
 base there. Because we had to use
 
-52
+51
 00:01:53,680 --> 00:01:56,480
 HIO because it was async. It was
 
-53
+52
 00:01:56,480 --> 00:01:58,880
 asynchronous so we had to adapt it
 
-54
+53
 00:01:58,880 --> 00:02:01,080
 because in the web it was sync, so
 
-55
+54
 00:02:01,080 --> 00:02:03,320
 we had to convert it and that's what
 
-56
+55
 00:02:03,320 --> 00:02:05,479
 we did in the tutorial,
 
-57
+56
 00:02:05,479 --> 00:02:07,040
 but I don't want to
 
-58
+57
 00:02:07,040 --> 00:02:08,679
 say something that is completely
 
+58
+00:02:08,679 --> 00:02:09,987
+wrong, so ..
+
 59
-00:02:08,679 --> 00:02:11,320
-wrong, so… – Okay, I see.
+00:02:10,011 --> 00:02:11,320
+Okay, I see.
 
 60
 00:02:12,920 --> 00:02:14,440
-So this is this will be valuable for you
+This will be valuable for you
 
 61
 00:02:14,440 --> 00:02:16,080
@@ -312,7 +312,7 @@ with Go co-routines?
 
 79
 00:02:45,840 --> 00:02:48,200
-– Not in Python, no. – So it's a lightweight
+– Not in Python. So, it's a lightweight
 
 80
 00:02:48,200 --> 00:02:51,400
@@ -324,7 +324,7 @@ just said the Go co-routines.
 
 82
 00:02:53,320 --> 00:02:55,000
-One of the reasons why go became
+One of the reasons why Go became
 
 83
 00:02:55,000 --> 00:02:57,120
@@ -348,7 +348,7 @@ way Sam uses them in HIO.
 
 88
 00:03:06,880 --> 00:03:09,600
-So if you want to think about what the
+If you want to think about what the
 
 89
 00:03:09,600 --> 00:03:11,560
@@ -368,7 +368,7 @@ that is cooperative with the other
 
 93
 00:03:19,000 --> 00:03:21,800
-co-routines. Usually a thread
+co-routines. Usually a thread ..,
 
 94
 00:03:21,800 --> 00:03:23,959
@@ -516,7 +516,7 @@ Okay. So,
 
 130
 00:04:38,400 --> 00:04:39,520
-we're we're still at the first two
+we're still at the first two
 
 131
 00:04:39,520 --> 00:04:42,040
@@ -596,7 +596,7 @@ science space. There's a Dijkstra
 
 150
 00:05:18,080 --> 00:05:19,600
-pathfinding algorithm and lot lots of
+pathfinding algorithm and lots of
 
 151
 00:05:19,600 --> 00:05:20,880
@@ -780,7 +780,7 @@ slides,
 
 196
 00:06:45,160 --> 00:06:49,320
-so goto, the go statement in go for go
+so goto, the go statement in Go for go
 
 197
 00:06:49,320 --> 00:06:51,280
@@ -1000,7 +1000,7 @@ making it explode and blow up and look
 
 251
 00:08:35,200 --> 00:08:36,065
-ugly? This right here,
+ugly. This right here,
 
 252
 00:08:36,065 --> 00:08:39,000
@@ -1020,7 +1020,7 @@ digest that Kim's going to give
 
 256
 00:08:42,760 --> 00:08:44,360
-everybody later. This link is in the
+everybody later [site keri.foundation]. This link is in the
 
 257
 00:08:44,360 --> 00:08:45,800
@@ -1048,7 +1048,7 @@ JavaScript, also TypeScript, they both
 
 263
 00:08:59,000 --> 00:09:01,920
-cite this article as their inspiration.
+cite this article [Nathaniel J. Smith] as their inspiration.
 
 264
 00:09:01,920 --> 00:09:04,400
@@ -1176,7 +1176,7 @@ talk about root Python, the async/await.”
 
 295
 00:10:13,840 --> 00:10:15,560
-What it is the async hio has an
+What it is the async HIO has an
 
 296
 00:10:15,560 --> 00:10:18,000
@@ -1220,7 +1220,7 @@ can run
 
 306
 00:10:36,320 --> 00:10:37,720
-This is not hio. This is just regular
+This is not HIO. This is just regular
 
 307
 00:10:37,720 --> 00:10:39,520
@@ -1244,7 +1244,7 @@ the signal to the Python runtime to plop
 
 312
 00:10:49,520 --> 00:10:52,120
-it into the async hio event loop,
+it into the async HIO event loop,
 
 313
 00:10:52,120 --> 00:10:54,240
@@ -1268,7 +1268,7 @@ kind of that mental model, and let's do
 
 318
 00:11:01,240 --> 00:11:03,360
-the hio version of it.
+the HIO version of it.
 
 319
 00:11:03,360 --> 00:11:06,880
@@ -1284,7 +1284,7 @@ async tasks. There are two kinds of
 
 322
 00:11:11,400 --> 00:11:14,080
-async tasks in hio.
+async tasks in HIO.
 
 323
 00:11:14,080 --> 00:11:17,120
@@ -1328,7 +1328,7 @@ itself. You'll see a little bit of
 
 333
 00:11:37,800 --> 00:11:40,200
-similarity between hio's structured
+similarity between HIO's structured
 
 334
 00:11:40,200 --> 00:11:42,840
@@ -1376,7 +1376,7 @@ This is the fundamental unit of
 
 345
 00:12:00,960 --> 00:12:03,200
-execution in hio.
+execution in HIO.
 
 346
 00:12:03,200 --> 00:12:05,720
@@ -1680,7 +1680,7 @@ finish before their parent returns. And
 
 421
 00:14:41,400 --> 00:14:43,240
-hio enforces this with the dot done
+HIO enforces this with the dot done
 
 422
 00:14:43,240 --> 00:14:44,280
@@ -1712,11 +1712,11 @@ of scope,
 
 429
 00:14:58,520 --> 00:15:00,640
-the task outflow is also complete. – Yes,
+the task outflow is also complete.
 
 430
 00:15:00,640 --> 00:15:02,800
-exactly. Precisely.
+Yes, exactly. Precisely.
 
 431
 00:15:02,800 --> 00:15:04,800
@@ -1772,7 +1772,7 @@ make sense, this seems much more simple.
 
 444
 00:15:25,640 --> 00:15:27,240
-– Exactly.
+Exactly.
 
 445
 00:15:27,240 --> 00:15:29,640
@@ -1792,11 +1792,11 @@ structured concurrency.
 
 449
 00:15:33,880 --> 00:15:35,880
-reason. – It will Well, well, you know
+reason. 
 
 450
 00:15:35,880 --> 00:15:37,440
-Venkat Subramaniam, he's one of the most
+Well, Venkat Subramaniam, he's one of the most
 
 451
 00:15:37,440 --> 00:15:39,720
@@ -1852,7 +1852,7 @@ Is that a like a task?
 
 464
 00:16:00,760 --> 00:16:02,080
-– So, they're they're trying to do I think
+They're trying to do I think
 
 465
 00:16:02,080 --> 00:16:03,720
@@ -1888,7 +1888,7 @@ very nice.
 
 473
 00:16:16,480 --> 00:16:19,160
-hio is the best Python
+HIO is the best Python
 
 474
 00:16:19,160 --> 00:16:21,240
@@ -1940,7 +1940,7 @@ It's not the most usable as far as
 
 486
 00:16:44,040 --> 00:16:45,320
-like there's there's nice wrapper
+like there's nice wrapper
 
 487
 00:16:45,320 --> 00:16:46,880
@@ -1983,1388 +1983,1388 @@ Or
 dumpster fire. It's too bad that
 
 497
-00:17:02,760 --> 00:17:05,439
-it infected Python. – It's future. I think
+00:17:02,760 --> 00:17:03,989
+it infected Python.
 
 498
-00:17:05,439 --> 00:17:07,280
-that's where it is. – async/await, the
+00:17:04,013 --> 00:17:05,439
+– It's future. I think
 
 499
+00:17:05,439 --> 00:17:06,347
+that's where it is.
+
+500
+00:17:06,371 --> 00:17:07,280
+Aasync/await, the
+
+501
 00:17:07,280 --> 00:17:10,120
 JavaScript form of async/await, was
 
-500
+502
 00:17:10,120 --> 00:17:11,839
 forced upon the world because of the
 
-501
+503
 00:17:11,839 --> 00:17:13,560
 limitations of the browser execution
 
-502
+504
 00:17:13,560 --> 00:17:15,560
 engine. It was a mistake to put that
 
-503
+505
 00:17:15,560 --> 00:17:17,720
 into the Python runtime itself. They
 
-504
+506
 00:17:17,720 --> 00:17:19,800
 should have done structured concurrency.
 
-505
+507
 00:17:19,800 --> 00:17:21,240
 If there's any mistake that
 
-506
+508
 00:17:21,240 --> 00:17:23,199
 Guido made, the benevolent dictator
 
-507
+509
 00:17:23,199 --> 00:17:25,040
 for life until he resigned
 
-508
+510
 00:17:25,040 --> 00:17:26,839
 in Python, it was putting async/await
 
-509
+511
 00:17:26,839 --> 00:17:28,199
 into Python.
 
-510
+512
 00:17:28,199 --> 00:17:29,240
 They shouldn't have done that. It's
 
-511
+513
 00:17:29,240 --> 00:17:32,600
 really ugly and garish. It works, but
 
-512
+514
 00:17:32,600 --> 00:17:35,120
 it's overly simplified.
 
-513
+515
 00:17:36,000 --> 00:17:38,120
 Because people were complaining about
 
-514
+516
 00:17:38,120 --> 00:17:39,520
 generators. They were saying they're too
 
-515
+517
 00:17:39,520 --> 00:17:40,880
 hard.
 
-516
+518
 00:17:40,880 --> 00:17:42,840
 But you can
 
-517
+519
 00:17:42,840 --> 00:17:44,520
 make frameworks that abstract the hard
 
-518
+520
 00:17:44,520 --> 00:17:46,480
 parts and still preserve the structured
 
-519
+521
 00:17:46,480 --> 00:17:48,800
 concurrency guarantees. So, Python had
 
-520
+522
 00:17:48,800 --> 00:17:50,240
 an opportunity
 
-521
+523
 00:17:50,240 --> 00:17:51,640
 the whole language ecosystem had an
 
-522
+524
 00:17:51,640 --> 00:17:53,160
 opportunity to do adopt structured
 
-523
+525
 00:17:53,160 --> 00:17:55,280
 concurrency and they missed it. And now
 
-524
+526
 00:17:55,280 --> 00:17:57,200
-there's there's libraries.
+there's libraries.
 
-525
+527
 00:17:57,200 --> 00:18:00,200
 Okay, so other important guarantees of
 
-526
+528
 00:18:00,200 --> 00:18:02,480
 structured concurrency, if you spawn in
 
-527
+529
 00:18:02,480 --> 00:18:05,200
 a lexical scope, you will join before
 
-528
+530
 00:18:05,200 --> 00:18:07,760
 that lexical scope returns. And
 
-529
+531
 00:18:07,760 --> 00:18:09,800
-in hio that means
+in HIO that means
 
-530
+532
 00:18:09,800 --> 00:18:11,880
 if you have a DoDoer and you spin up
 
-531
+533
 00:18:11,880 --> 00:18:13,880
 some child processes, those will get
 
-532
+534
 00:18:13,880 --> 00:18:16,160
 to the done state before the DoDoer
 
-533
+535
 00:18:16,160 --> 00:18:18,760
 finishes. So, the Doist
 
-534
+536
 00:18:18,760 --> 00:18:20,920
 will own all of its children will
 
-535
+537
 00:18:20,920 --> 00:18:25,150
 complete before the Doist returns.
 
-536
+538
 00:18:25,175 --> 00:18:29,120
 And some nice consequences of this is
 
-537
+539
 00:18:29,120 --> 00:18:30,920
 then we have straightforward execution
 
-538
+540
 00:18:30,920 --> 00:18:33,080
 handling. Failure cancellation
 
-539
+541
 00:18:33,080 --> 00:18:34,760
 propagation throughout the task tree is
 
-540
+542
 00:18:34,760 --> 00:18:37,480
 very intuitive from child tasks up to
 
-541
+543
 00:18:37,480 --> 00:18:39,080
 parent tasks.
 
-542
+544
 00:18:39,080 --> 00:18:41,160
 And now you can intelligently respond to
 
-543
+545
 00:18:41,160 --> 00:18:44,120
 both failures and cancellation signals.
 
-544
+546
 00:18:44,120 --> 00:18:46,040
 And there's actually a
 
-545
+547
 00:18:46,040 --> 00:18:47,960
 sister article to the one that I
 
-546
+548
 00:18:47,960 --> 00:18:49,400
 mentioned earlier, the note the notes on
 
-547
+549
 00:18:49,400 --> 00:18:50,920
 structured concurrency goto statement
 
-548
+550
 00:18:50,920 --> 00:18:52,360
 considered harmful. There's one on
 
-549
+551
 00:18:52,360 --> 00:18:53,960
 timeouts and cancellations. And then
 
-550
+552
 00:18:53,960 --> 00:18:55,800
 there's one on control C and interrupts.
 
-551
+553
 00:18:55,800 --> 00:18:57,320
 You want to read all three. They're so
 
-552
+554
 00:18:57,320 --> 00:18:59,040
 well written.
 
-553
+555
 00:18:59,040 --> 00:19:01,440
 Okay, so and exceptions are carried all
 
-554
+556
 00:19:01,440 --> 00:19:02,680
 the way up through the scheduling tree.
 
-555
+557
 00:19:02,680 --> 00:19:04,360
 This is one of the major benefits of
 
-556
+558
 00:19:04,360 --> 00:19:07,080
 structured concurrency, is that you can
 
-557
+559
 00:19:07,080 --> 00:19:09,240
 have error propagation all the way up to
 
-558
+560
 00:19:09,240 --> 00:19:11,400
 the root scheduler and handle it there
 
-559
+561
 00:19:11,400 --> 00:19:14,160
 or in any of the parents. It's an
 
-560
+562
 00:19:14,160 --> 00:19:16,080
 intuitive, straightforward way to handle
 
-561
+563
 00:19:16,080 --> 00:19:18,000
 exceptions.
 
-562
+564
 00:19:18,000 --> 00:19:19,480
 So, consistent, predictable exception
 
-563
+565
 00:19:19,480 --> 00:19:20,960
-behavior. Very, very awesome and
+behavior. Very awesome and
 
-564
+566
 00:19:20,960 --> 00:19:22,320
 amazing.
 
-565
+567
 00:19:22,320 --> 00:19:24,360
-Okay, so there's Trio and Nurseries from the
+There's Trio and Nurseries from the
 
-566
+568
 00:19:24,360 --> 00:19:25,520
 guy who wrote the article that you're
 
-567
+569
 00:19:25,520 --> 00:19:27,440
 going to go read. And this is
 
-568
+570
 00:19:27,440 --> 00:19:29,920
 an example from his article…
 
-569
+571
 00:19:29,920 --> 00:19:32,680
 So, he uses “async with”, his
 
-570
+572
 00:19:32,680 --> 00:19:35,120
 async with is essentially a Doist or a
 
-571
+573
 00:19:35,120 --> 00:19:36,880
 DoDoer, just think
 
-572
+574
 00:19:36,880 --> 00:19:39,360
 of it as a Doist.
 
-573
+575
 00:19:39,360 --> 00:19:41,240
 So, you start one task, which might
 
-574
+576
 00:19:41,240 --> 00:19:42,680
 have a child task, which might have a
 
-575
+577
 00:19:42,680 --> 00:19:44,560
 child task.
 
-576
+578
 00:19:44,560 --> 00:19:46,320
 And all of those complete before the
 
-577
+579
 00:19:46,320 --> 00:19:48,320
 outer bounding lexical scope of the
 
-578
+580
 00:19:48,320 --> 00:19:51,040
-async with returns.
+<i>async with</i> returns.
 
-579
+581
 00:19:51,040 --> 00:19:53,640
 And because it's a context manager, that
 
-580
+582
 00:19:53,640 --> 00:19:55,440
 means you can have startup and teardown
 
-581
+583
 00:19:55,440 --> 00:19:57,640
 logic that will complete predictably for
 
-582
+584
 00:19:57,640 --> 00:19:59,560
 all these tasks, for any resources that
 
-583
+585
 00:19:59,560 --> 00:20:01,760
 you need to open or close. It's kind of
 
-584
+586
 00:20:01,760 --> 00:20:03,520
 Java started to go in this direction
 
-585
+587
 00:20:03,520 --> 00:20:04,920
 with the try with resources, with the
 
-586
-00:20:04,920 --> 00:20:06,680
-auto closeable interfaces, but they
-
-587
-00:20:06,680 --> 00:20:08,600
-didn't go to full structured concurrency
-
 588
+00:20:04,920 --> 00:20:06,680
+auto-closeable interfaces, but they
+
+589
+00:20:06,680 --> 00:20:08,600
+didn't go to fully-structured concurrency
+
+590
 00:20:08,600 --> 00:20:10,880
 like this.
 
-589
+591
 00:20:10,880 --> 00:20:12,400
-Okay, so I talked about hio and Doers
+Okay, so I talked about HIO and Doers
 
-590
+592
 00:20:12,400 --> 00:20:13,440
 a bit. We went here. We'll sort of
 
-591
+593
 00:20:13,440 --> 00:20:14,800
 breeze past this. You already know the
 
-592
+594
 00:20:14,800 --> 00:20:16,320
 Doist, Doer, DoDoer. Let me
 
-593
+595
 00:20:16,320 --> 00:20:17,880
 double-check our time here. Oh, we've
 
-594
+596
 00:20:17,880 --> 00:20:19,920
 only got 19 minutes left.
 
-595
+597
 00:20:19,920 --> 00:20:21,240
-So, now we're getting into the hio
+So, now we're getting into the HIO
 
-596
+598
 00:20:21,240 --> 00:20:23,840
 internals. You get some of the high
 
-597
+599
 00:20:23,840 --> 00:20:25,160
 level and an object level, what the
 
-598
+600
 00:20:25,160 --> 00:20:26,720
 benefits are. Let's anchor this in
 
-599
+601
 00:20:26,720 --> 00:20:28,280
 some code.
 
-600
+602
 00:20:28,280 --> 00:20:29,640
 So, we mentioned the Doist is the root
 
-601
+603
 00:20:29,640 --> 00:20:31,200
 scheduler, the code routine tasks are
 
-602
+604
 00:20:31,200 --> 00:20:32,760
 the Doers and DoDoers.
 
-603
+605
 00:20:32,760 --> 00:20:35,400
 We won't get into the details of time.
 
-604
+606
 00:20:35,400 --> 00:20:36,720
 It's really fascinating. It's really
 
-605
+607
 00:20:36,720 --> 00:20:38,080
 interesting. I highly recommend you read
 
-606
+608
 00:20:38,080 --> 00:20:39,280
 the source. I had to read it a couple of
 
-607
+609
 00:20:39,280 --> 00:20:40,600
 times.
 
-608
+610
 00:20:40,600 --> 00:20:42,360
 And this is before AI came out, by the
 
-609
+611
 00:20:42,360 --> 00:20:43,360
 way.
 
-610
+612
 00:20:43,360 --> 00:20:45,000
 Now you can ask AI and it'll walk you
 
-611
+613
 00:20:45,000 --> 00:20:46,440
 through it much faster than I learned
 
-612
+614
 00:20:46,440 --> 00:20:48,640
 it. But you need to
 
-613
+615
 00:20:48,640 --> 00:20:51,440
 understand the outer scheduler has
 
-614
+616
 00:20:51,440 --> 00:20:54,440
 its own concept of time.
 
-615
+617
 00:20:54,440 --> 00:20:56,160
 And it accumulates time.
 
-616
+618
 00:20:56,160 --> 00:20:58,320
 You'll see the one sleep in the entire
 
-617
+619
 00:20:58,320 --> 00:21:00,400
-system. There's only one sleep, and it's
+system. There's only one "sleep", and it's
 
-618
+620
 00:21:00,400 --> 00:21:02,480
 in the Doist, the root scheduler. And it
 
-619
+621
 00:21:02,480 --> 00:21:05,360
 keeps track of its own cycle time, so
 
-620
+622
 00:21:05,360 --> 00:21:06,760
-that and you don't need to worry about
+that .., and you don't need to worry about
 
-621
+623
 00:21:06,760 --> 00:21:08,360
 completely understanding this, but just
 
-622
+624
 00:21:08,360 --> 00:21:09,640
 anchored in your brain somewhere, the
 
-623
+625
 00:21:09,640 --> 00:21:11,520
 Doist keeps track of time so it can have
 
-624
+626
 00:21:11,520 --> 00:21:13,800
 deterministic scheduling of its array of
 
-625
+627
 00:21:13,800 --> 00:21:15,920
 tasks.
 
-626
+628
 00:21:15,920 --> 00:21:18,160
 In order to make it deterministic, it
 
-627
+629
 00:21:18,160 --> 00:21:19,800
 has to keep track of its own sense of
 
-628
+630
 00:21:19,800 --> 00:21:22,040
 elapsed time from the start. You always
 
-629
+631
 00:21:22,040 --> 00:21:24,160
 start at zero and increase.
 
-630
+632
 00:21:24,160 --> 00:21:25,560
 If you keep track of your own time and
 
-631
+633
 00:21:25,560 --> 00:21:27,760
 your own sort of talk, essentially your
 
-632
+634
 00:21:27,760 --> 00:21:29,880
 your next… how long you're going to
 
-633
+635
 00:21:29,880 --> 00:21:32,520
 sleep before you advance to your next
 
-634
+636
 00:21:32,520 --> 00:21:34,360
 execution of your array of
 
-635
+637
 00:21:34,360 --> 00:21:36,400
-coroutines. You have to have an internal
+coroutines, you have to have an internal
 
-636
+638
 00:21:36,400 --> 00:21:38,680
 concept of time. This came and bit me
 
-637
+639
 00:21:38,680 --> 00:21:41,800
 and cost me 40 to 80 dollars in
 
-638
+640
 00:21:41,800 --> 00:21:44,560
 in AI tokens with Codex.
 
-639
+641
 00:21:44,560 --> 00:21:46,320
 Because it wasn't able to model
 
-640
-00:21:46,320 --> 00:21:48,040
-reality and realized that oh, hio has
-
-641
-00:21:48,040 --> 00:21:49,720
-its own concept of time and I actually
-
 642
+00:21:46,320 --> 00:21:48,040
+reality and realized that "Oh, HIO has
+
+643
+00:21:48,040 --> 00:21:49,720
+its own concept of time" and I actually
+
+644
 00:21:49,720 --> 00:21:50,670
 hit that as a bug.
 
-643
+645
 00:21:50,670 --> 00:21:51,360
 [laughter]
 
-644
+646
 00:21:51,360 --> 00:21:53,320
 So, you realize LLMs are going to
 
-645
+647
 00:21:53,320 --> 00:21:55,640
 struggle with structured concurrency.
 
-646
+648
 00:21:55,640 --> 00:21:56,560
 And if you don't know how to tell it to
 
-647
+649
 00:21:56,560 --> 00:21:58,920
 do the right thing, you might waste tens
 
-648
+650
 00:21:58,920 --> 00:22:00,200
 of dollars of tokens like I did. I'm
 
-649
+651
 00:22:00,200 --> 00:22:01,560
 glad it wasn't hundreds.
 
-650
+652
 00:22:01,560 --> 00:22:03,400
 So, remember, Doist has its own concept
 
-651
+653
 00:22:03,400 --> 00:22:04,680
 of time, but we won't get into that
 
-652
+654
 00:22:04,680 --> 00:22:06,920
 here. It's another presentation.
 
-653
+655
 00:22:06,920 --> 00:22:08,760
-All right, so we're going to anchor this
+We're going to anchor this
 
-654
+656
 00:22:08,760 --> 00:22:10,880
 in with some actual
 
-655
+657
 00:22:10,880 --> 00:22:12,280
 commands. And we're going to go through
 
-656
+658
 00:22:12,280 --> 00:22:14,080
 the KERIpy code base. If you've used
 
-657
+659
 00:22:14,080 --> 00:22:15,320
 KERIpy,
 
-658
+660
 00:22:15,320 --> 00:22:17,200
 you've done KLI incept.
 
-659
+661
 00:22:17,200 --> 00:22:19,880
 What this does is it calls into what's
 
-660
+662
 00:22:19,880 --> 00:22:22,520
 called kli.py this main function. This
 
-661
+663
 00:22:22,520 --> 00:22:24,760
 is the entry point for the command line.
 
-662
+664
 00:22:24,760 --> 00:22:26,440
 The important part is it says
 
-663
+665
 00:22:26,440 --> 00:22:27,880
 runController.
 
-664
+666
 00:22:27,880 --> 00:22:29,480
 That's important because it calls the
 
-665
+667
 00:22:29,480 --> 00:22:30,880
 root scheduler.
 
-666
+668
 00:22:30,880 --> 00:22:32,800
 Here, runController has these three
 
-667
+669
 00:22:32,800 --> 00:22:34,840
 lines, defines the tock, which is the
 
-668
+670
 00:22:34,840 --> 00:22:36,920
 run rate of the cycle time, how
 
-669
+671
 00:22:36,920 --> 00:22:38,920
 quickly the root scheduler iterates over
 
-670
+672
 00:22:38,920 --> 00:22:41,120
 all of its tasks.
 
-671
+673
 00:22:41,120 --> 00:22:43,520
 Which means this is 1/32 of a second, so
 
-672
+674
 00:22:43,520 --> 00:22:45,440
 it'll 32 times a second it'll run its
 
-673
+675
 00:22:45,440 --> 00:22:47,920
 entire task list. Unless there's like
 
-674
+676
 00:22:47,920 --> 00:22:49,880
 something that takes some time to
 
-675
+677
 00:22:49,880 --> 00:22:52,040
 execute. Here's the instantiation of the
 
-676
+678
 00:22:52,040 --> 00:22:54,000
 root scheduler. And then we say root
 
-677
+679
 00:22:54,000 --> 00:22:56,360
 scheduler.do. This is a life cycle
 
-678
+680
 00:22:56,360 --> 00:22:58,760
 function. This is the life cycle
 
-679
+681
 00:22:58,760 --> 00:23:01,120
 function that runs the system.
 
-680
+682
 00:23:01,120 --> 00:23:03,000
-So, this is the entry point of the hio
+So, this is the entry point of the HIO
 
-681
+683
 00:23:03,000 --> 00:23:05,000
 runtime.
 
-682
+684
 00:23:05,000 --> 00:23:06,320
 Okay, we don't have to worry about those
 
-683
+685
 00:23:06,320 --> 00:23:08,320
 other parameters just yet. Let's get
 
-684
+686
 00:23:08,320 --> 00:23:09,270
 through this.
 
-685
+687
 00:23:09,280 --> 00:23:11,371
 And so, here's the whole class outline
 
-686
+688
 00:23:11,395 --> 00:23:13,320
 of the Doist. Here's the Do. The Do
 
-687
+689
 00:23:13,320 --> 00:23:14,800
 calls all of these other functions.
 
-688
+690
 00:23:14,800 --> 00:23:17,760
 These enter, recur, exit.
 
-689
+691
 00:23:17,760 --> 00:23:19,880
 So, think if for enter think
 
-690
+692
 00:23:19,880 --> 00:23:22,080
 resource allocation and exit resource
 
-691
+693
 00:23:22,080 --> 00:23:23,960
 closing. That's what the enter and exit
 
-692
+694
 00:23:23,960 --> 00:23:27,320
 context is. There's an enter and an exit
 
-693
+695
 00:23:27,320 --> 00:23:29,560
 for every task
 
-694
+696
 00:23:29,560 --> 00:23:31,880
-in the hio ecosystem. So, every Doer has
+in the HIO ecosystem. So, every Doer has
 
-695
+697
 00:23:31,880 --> 00:23:33,640
 an enter and an exit.
 
-696
-00:23:33,640 --> 00:23:35,480
-Which think about it. Now, that means it
-
-697
-00:23:35,480 --> 00:23:37,080
-can be used as a context manager. Cuz
-
 698
-00:23:37,080 --> 00:23:38,800
-what does a context manager do? When you
+00:23:33,640 --> 00:23:35,480
+Now, that means it
 
 699
-00:23:38,800 --> 00:23:40,280
-do with this,
+00:23:35,480 --> 00:23:37,080
+can be used as a context manager. 
 
 700
-00:23:40,280 --> 00:23:42,350
-what you're doing is you're saying,
+00:23:37,080 --> 00:23:38,800
+What does a context manager do? 
 
 701
+00:23:38,800 --> 00:23:42,350
+What you're saying is
+
+702
 00:23:42,360 --> 00:23:44,277
 "Give me a before and an before to
 
-702
+703
 00:23:44,301 --> 00:23:46,560
 allocate resources and an after to clean
 
-703
+704
 00:23:46,560 --> 00:23:47,880
 up." That's why people use context
 
-704
+705
 00:23:47,880 --> 00:23:50,040
 managers or try with resources in Java
 
-705
+706
 00:23:50,040 --> 00:23:52,000
 or languages like that, so that you can
 
-706
-00:23:52,000 --> 00:23:54,760
-have automated cleanup.
-
 707
+00:23:52,000 --> 00:23:54,760
+have automated cleanup [of processes, red.]
+
+708
 00:23:54,760 --> 00:23:57,000
 And so, what the enter and the exit do
 
-708
+709
 00:23:57,000 --> 00:23:58,640
 is it allows you to make arbitrarily
 
-709
+710
 00:23:58,640 --> 00:24:00,720
 smart your coroutines.
 
-710
+711
 00:24:00,720 --> 00:24:02,480
 Python coroutines by themselves are dumb
 
-711
+712
 00:24:02,480 --> 00:24:04,600
 and stupid. You can't add this nice cool
 
-712
+713
 00:24:04,600 --> 00:24:06,320
 logic to it. This is a big selling point
 
-713
-00:24:06,320 --> 00:24:07,680
-of hio
-
 714
+00:24:06,320 --> 00:24:07,680
+of HIO
+
+715
 00:24:07,680 --> 00:24:09,360
 is that your tasks have an enter and an
 
-715
+716
 00:24:09,360 --> 00:24:10,720
 exit.
 
-716
+717
 00:24:10,720 --> 00:24:11,880
 Just about everything else in the
 
-717
+718
 00:24:11,880 --> 00:24:14,520
 space only has a recur.
 
-718
+719
 00:24:14,520 --> 00:24:16,600
 Go ahead. – Can you
 
-719
+720
 00:24:16,600 --> 00:24:18,880
 implement handlers to those… They're
 
-720
-00:24:18,880 --> 00:24:20,920
-essentially events, you know, when you
-
 721
+00:24:18,880 --> 00:24:20,920
+essentially events, when you
+
+722
 00:24:20,920 --> 00:24:22,520
 enter or when you exit then you can
 
-722
+723
 00:24:22,520 --> 00:24:25,440
 attach handlers and then react to it?
 
-723
+724
 00:24:25,440 --> 00:24:27,480
 – Think of in terms of
 
-724
+725
 00:24:27,480 --> 00:24:30,280
 subclass. You subclass the Doer. You
 
-725
+726
 00:24:30,280 --> 00:24:31,680
 override those
 
-726
+727
 00:24:31,680 --> 00:24:33,800
 functions. That would be equivalent of
 
-727
+728
 00:24:33,800 --> 00:24:35,840
 handlers. Okay, so now let's go deeper
 
-728
+729
 00:24:35,840 --> 00:24:37,840
 into the Do function. You'll see.
 
-729
+730
 00:24:37,840 --> 00:24:39,920
 So, the red arrows
 
-730
+731
 00:24:39,920 --> 00:24:41,400
 are the life cycle functions. Remember I
 
-731
+732
 00:24:41,400 --> 00:24:43,400
 said enter, exit, recur?
 
-732
+733
 00:24:43,400 --> 00:24:45,550
 Enter.
 
-733
+734
 00:24:45,560 --> 00:24:47,189
 Where are we? Recur, I guess I made this
 
-734
+735
 00:24:47,213 --> 00:24:48,720
 one special cuz I'm going to go there
 
-735
+736
 00:24:48,720 --> 00:24:50,840
 next. There's enter and exit, startup,
 
-736
+737
 00:24:50,840 --> 00:24:52,160
 teardown.
 
-737
+738
 00:24:52,160 --> 00:24:53,440
 We've got the recur, which we're going
 
-738
+739
 00:24:53,440 --> 00:24:55,200
 to jump into later. Here's the only
 
-739
+740
 00:24:55,200 --> 00:24:58,400
 sleep in the system. There is one sleep
 
-740
+741
 00:24:58,400 --> 00:25:00,480
 in the entire Doist run time. It's this
 
-741
+742
 00:25:00,480 --> 00:25:02,280
 right here. This is what accumulates
 
-742
+743
 00:25:02,280 --> 00:25:04,160
 time, so essentially starts to
 
-743
+744
 00:25:04,160 --> 00:25:05,840
 track the time elapsed to know when to
 
-744
+745
 00:25:05,840 --> 00:25:08,480
 schedule the next co-routine.
 
-745
+746
 00:25:11,320 --> 00:25:12,840
 One thing to be aware of, that self.that
 
-746
+747
 00:25:12,840 --> 00:25:15,560
 enter, what it does is it takes all of
 
-747
+748
 00:25:15,560 --> 00:25:18,440
 your tasks and runs enter on every task.
 
-748
+749
 00:25:18,440 --> 00:25:20,520
 So, by the time that finishes, all your
 
-749
+750
 00:25:20,520 --> 00:25:22,000
 resources have been provisioned for all
 
-750
+751
 00:25:22,000 --> 00:25:24,040
 the tasks that are going to run. – After
 
-751
+752
 00:25:24,040 --> 00:25:26,520
 that one line? – After that one line, yes.
 
-752
+753
 00:25:26,520 --> 00:25:28,840
 And what it does,
 
-753
+754
 00:25:28,840 --> 00:25:30,680
 it advances every single
 
-754
+755
 00:25:30,680 --> 00:25:32,880
 co-routine to be primed to be ready,
 
-755
+756
 00:25:32,880 --> 00:25:34,120
 essentially.
 
-756
+757
 00:25:34,120 --> 00:25:35,360
 So, that readies all the tasks for
 
-757
+758
 00:25:35,360 --> 00:25:38,200
 execution, and then recur begins the
 
-758
+759
 00:25:38,200 --> 00:25:39,880
 infinite while loop to run all of your
 
-759
+760
 00:25:39,880 --> 00:25:42,320
 tasks until you get a an abort an
 
-760
+761
 00:25:42,320 --> 00:25:44,000
 interrupt signal, which will then
 
-761
+762
 00:25:44,000 --> 00:25:46,000
 trigger exit. Like control-C will
 
-762
+763
 00:25:46,000 --> 00:25:48,120
 trigger exit, and it'll exit all of the
 
-763
+764
 00:25:48,120 --> 00:25:50,120
 child tasks, and then their nested
 
-764
+765
 00:25:50,120 --> 00:25:51,600
 tasks, and then it'll finally exit the
 
-765
+766
 00:25:51,600 --> 00:25:53,520
 Doist.
 
-766
+767
 00:25:53,520 --> 00:25:54,720
 That's one of the cool
 
-767
+768
 00:25:54,720 --> 00:25:57,480
 things about structured concurrency.
 
-768
+769
 00:25:57,480 --> 00:25:58,680
 Okay, so we're going to jump in. Let's
 
-769
+770
 00:25:58,680 --> 00:26:00,200
 jump in. So, now this is recur,
 
-770
+771
 00:26:00,200 --> 00:26:02,440
 remember?
 
-771
+772
 00:26:02,440 --> 00:26:03,880
 We're going into the blue arrow, or
 
-772
+773
 00:26:03,880 --> 00:26:06,880
 the teal green arrow.
 
-773
+774
 00:26:06,880 --> 00:26:08,440
 This is the recur function. The main
 
-774
+775
 00:26:08,440 --> 00:26:10,840
 So, what actually runs…
 
-775
+776
 00:26:10,840 --> 00:26:12,640
 We're still in the scheduler. When are
 
-776
+777
 00:26:12,640 --> 00:26:14,400
 we going to get to the task? Well, right
 
-777
+778
 00:26:14,400 --> 00:26:15,920
 here, this send. And that send right
 
-778
+779
 00:26:15,920 --> 00:26:19,600
 there, that's the Python generator API.
 
-779
+780
 00:26:19,600 --> 00:26:21,080
 Cuz remember, the
 
-780
+781
 00:26:21,080 --> 00:26:24,480
 co-routines are just generators.
 
-781
+782
 00:26:24,480 --> 00:26:26,800
 And the syntax to run a
 
-782
+783
 00:26:26,800 --> 00:26:28,480
 generator
 
-783
-00:26:28,480 --> 00:26:30,680
-is this send right here.
-
 784
+00:26:28,480 --> 00:26:30,680
+is this "send" right here.
+
+785
 00:26:30,680 --> 00:26:32,400
 You can ask
 
-785
+786
 00:26:32,400 --> 00:26:34,400
 Claude or Codex about it.
 
-786
+787
 00:26:34,400 --> 00:26:36,600
 There's also a really excellent… So,
 
-787
+788
 00:26:36,600 --> 00:26:38,240
 Luciano Ramalho, the guy who wrote the
 
-788
+789
 00:26:38,240 --> 00:26:40,480
 Python reference manual,
 
-789
+790
 00:26:40,480 --> 00:26:42,560
 his 2016 version of the book has a
 
-790
+791
 00:26:42,560 --> 00:26:44,960
 really great chapter on co-routines. And
 
-791
+792
 00:26:44,960 --> 00:26:46,200
 then when the whole Python language
 
-792
+793
 00:26:46,200 --> 00:26:47,680
 community went the wrong direction to
 
-793
+794
 00:26:47,680 --> 00:26:49,800
 the oversimplified async/await,
 
-794
+795
 00:26:49,800 --> 00:26:51,640
 for the 2022 version of the Python
 
-795
+796
 00:26:51,640 --> 00:26:53,720
 reference manual, he did not include
 
-796
+797
 00:26:53,720 --> 00:26:56,320
 that awesome content on co-routines, but
 
-797
+798
 00:26:56,320 --> 00:26:58,280
 it's on his website. So, you can go to I
 
-798
-00:26:58,280 --> 00:27:00,680
-think it's flupy.com [TODO: find URL]
-
 799
+00:26:58,280 --> 00:27:00,680
+think it's [https://www.fluentpython.com/]
+
+800
 00:27:00,680 --> 00:27:02,600
 and you'll find the chapter 16, I think,
 
-800
+801
 00:27:02,600 --> 00:27:04,160
 on the co-routines. It'll go
 
-801
+802
 00:27:04,160 --> 00:27:05,760
 through that in exhaustively in-depth.
 
-802
+803
 00:27:05,760 --> 00:27:07,000
 It'll teach you everything you want to
 
-803
+804
 00:27:07,000 --> 00:27:08,880
 know about Python co-routines.
 
-804
+805
 00:27:08,880 --> 00:27:10,960
 High-density, high-value content.
 
-805
+806
 00:27:10,960 --> 00:27:12,680
 Anyway, so this is what runs it. We
 
-806
+807
 00:27:12,680 --> 00:27:13,840
 won't worry about the rest of the stuff.
 
-807
+808
 00:27:13,840 --> 00:27:15,480
 So, this interest interestingly enough,
 
-808
+809
 00:27:15,480 --> 00:27:17,480
 last note on the root scheduler, this
 
-809
+810
 00:27:17,480 --> 00:27:20,880
 tick advances you forward that next 1/32
 
-810
+811
 00:27:20,880 --> 00:27:22,800
 of a second. It starts the next time it
 
-811
+812
 00:27:22,800 --> 00:27:26,000
 schedules the time sleep, after which
 
-812
+813
 00:27:26,000 --> 00:27:27,600
 the next iteration of all the tasks will
 
-813
+814
 00:27:27,600 --> 00:27:29,320
 occur.
 
-814
+815
 00:27:29,320 --> 00:27:30,440
 Okay, so now let's go into the
 
-815
-00:27:30,440 --> 00:27:33,240
-individual task. What it does, that dot
-
 816
-00:27:33,240 --> 00:27:35,360
-send calls you might be familiar with
+00:27:30,440 --> 00:27:33,240
+individual task. What it does, that ".send"
 
 817
+00:27:33,240 --> 00:27:35,360
+calls .., you might be familiar with
+
+818
 00:27:35,360 --> 00:27:37,200
 other Dunder methods, the underscore
 
-818
+819
 00:27:37,200 --> 00:27:39,360
 underscore methods in Python.
 
-819
+820
 00:27:39,360 --> 00:27:42,640
 It calls the call method of a Doer.
 
-820
+821
 00:27:42,640 --> 00:27:44,440
 And what the Doer does is it says
 
-821
+822
 00:27:44,440 --> 00:27:48,080
 self.do. So, what that send does,
 
-822
+823
 00:27:48,080 --> 00:27:49,200
 this
 
-823
+824
 00:27:49,200 --> 00:27:50,960
 the and it's dog, I won't get into the
 
-824
+825
 00:27:50,960 --> 00:27:53,120
 syntax here. Dog stands for Doer
 
-825
+826
 00:27:53,120 --> 00:27:55,200
 generator. There's some
 
-826
+827
 00:27:55,200 --> 00:27:56,960
 Sam-isms here that it takes a little bit
 
-827
+828
 00:27:56,960 --> 00:27:59,520
 of time to get accustomed to,
 
-828
+829
 00:27:59,520 --> 00:28:01,120
 but this is essentially the generator
 
-829
+830
 00:28:01,120 --> 00:28:03,120
 that is the subtask.
 
-830
-00:28:03,120 --> 00:28:05,120
-The dog. So, we're doing the send
-
 831
+00:28:03,120 --> 00:28:05,120
+The "dog". So, we're doing the send
+
+832
 00:28:05,120 --> 00:28:07,520
 and that eventually results in self.do.
 
-832
+833
 00:28:07,520 --> 00:28:09,800
 Now, why is that important?
 
-833
+834
 00:28:09,800 --> 00:28:12,320
 The Doer.do is the entry point into the
 
-834
+835
 00:28:12,320 --> 00:28:15,520
 life cycle of one task. And let's
 
-835
+836
 00:28:15,520 --> 00:28:17,840
 look at that. Here's the Doer.do.
 
-836
+837
 00:28:17,840 --> 00:28:19,600
 So, look at that. We've got an enter,
 
-837
+838
 00:28:19,600 --> 00:28:21,200
 exit, and a couple of other life cycle
 
-838
+839
 00:28:21,200 --> 00:28:23,520
 functions for different reasons that we
 
-839
-00:28:23,520 --> 00:28:24,440
-can get
-
 840
-00:28:24,440 --> 00:28:25,400
-we don't have time to get into, but
+00:28:23,520 --> 00:28:25,400
+don't have time to get into, but
 
 841
 00:28:25,400 --> 00:28:26,760
-there's a clean, there's an
+there's a <i>clean</i>, there's an
 
 842
 00:28:26,760 --> 00:28:28,240
-abort, there's a cease.
+<i>abort</i>, there's a <i>cease</i>.
 
 843
 00:28:28,240 --> 00:28:30,840
@@ -3376,11 +3376,11 @@ that
 
 845
 00:28:31,800 --> 00:28:33,240
-Okay, you see the enter and the exit,
+Okay, you see the <i>enter</i> and the <i>exit</i>,
 
 846
 00:28:33,240 --> 00:28:35,720
-startup teardown, and you see the recur.
+startup teardown, and you see the <i>recur</i>.
 
 847
 00:28:35,720 --> 00:28:37,840
@@ -3400,7 +3400,7 @@ that you need to know a little bit about
 
 851
 00:28:42,640 --> 00:28:44,080
-Python generators to know how this
+Python generators, to know how this
 
 852
 00:28:44,080 --> 00:28:45,240
@@ -3412,7 +3412,7 @@ See how we say isgeneratorfunction,
 
 854
 00:28:47,320 --> 00:28:48,680
-Self dot recur.
+Self.recur.
 
 855
 00:28:48,680 --> 00:28:50,560
@@ -3444,7 +3444,7 @@ IO, the network, files,
 
 862
 00:29:02,729 --> 00:29:05,880
-that's usually some where
+that's usually where
 
 863
 00:29:05,880 --> 00:29:08,200
@@ -3492,7 +3492,7 @@ and it'll never execute unless you have
 
 874
 00:29:26,720 --> 00:29:28,080
-a yield from.
+a "yield from."
 
 875
 00:29:28,080 --> 00:29:30,240
@@ -3512,19 +3512,19 @@ network call or a file call, you need
 
 879
 00:29:36,000 --> 00:29:39,440
-this yield from. This is what runs
+this yield from. This is what runs ..,
 
 880
 00:29:39,440 --> 00:29:41,440
-you can put synchronous logic in here
+you can put synchronous logic in here,
 
 881
 00:29:41,440 --> 00:29:43,520
-and the in your recur and it'll
+in your recur, and it'll
 
 882
 00:29:43,520 --> 00:29:44,680
-it'll execute this line, but when you
+execute this line, but when you
 
 883
 00:29:44,680 --> 00:29:47,200
@@ -3560,7 +3560,7 @@ aren't quite tracking, it's okay. Let's
 
 891
 00:29:59,200 --> 00:30:00,880
-get to the end and then we'll we'll get
+get to the end and then we'll get
 
 892
 00:30:00,880 --> 00:30:02,800
@@ -3760,11 +3760,11 @@ true, and it's done.
 
 941
 00:31:39,760 --> 00:31:42,640
-So, this is a basic task. If I do CLI
+So, this is a basic task. If I do
 
 942
 00:31:42,640 --> 00:31:44,720
-migrate run,
+"kli migrate run"
 
 943
 00:31:44,720 --> 00:31:46,880
@@ -3795,7 +3795,7 @@ DoDoers, but not many Doers?"
 And it's because
 
 950
-00:31:58,520 --> 00:32:03,092
+00:31:58,544 --> 00:32:03,115
 of one function, doing.doify.
 
 951
@@ -4424,7 +4424,7 @@ function.
 
 1107
 00:37:21,720 --> 00:37:24,080
-You can have as many yields yield stars,
+You can have as many yield stars,
 
 1108
 00:37:24,080 --> 00:37:26,000
@@ -4440,7 +4440,7 @@ an execution chain in one function.
 
 1111
 00:37:30,160 --> 00:37:31,560
-And so you'll see I'm saying yield from
+You'll see I'm saying yield from
 
 1112
 00:37:31,560 --> 00:37:33,000
@@ -4472,7 +4472,7 @@ thing that I think is sort of missing
 
 1119
 00:37:43,800 --> 00:37:45,520
-from hio that we could add to it.
+from HIO that we could add to it.
 
 1120
 00:37:45,520 --> 00:37:46,760
@@ -4492,7 +4492,7 @@ More recently with trying to
 
 1124
 00:37:51,600 --> 00:37:54,120
-integrate async/await into hio. It's
+integrate async/await into HIO. It's
 
 1125
 00:37:54,120 --> 00:37:56,280
@@ -4644,7 +4644,7 @@ Oh, we'll cut it there.
 
 1162
 00:39:02,800 --> 00:39:04,927
-That's hio.
+That's HIO.
 
 1163
 00:39:04,927 --> 00:39:06,947
