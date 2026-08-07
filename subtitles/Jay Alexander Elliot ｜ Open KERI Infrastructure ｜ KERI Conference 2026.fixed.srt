@@ -100,7 +100,7 @@ the key event life cycle.
 
 26
 00:01:24,000 --> 00:01:26,000
-If that userfacing wallet gets absorbed
+If that user-facing wallet gets absorbed
 
 27
 00:01:26,000 --> 00:01:27,680
@@ -112,7 +112,7 @@ stack, the system may still look open on
 
 29
 00:01:30,400 --> 00:01:31,840
-paper but it becomes less open in
+paper, but it becomes less open in
 
 30
 00:01:31,840 --> 00:01:33,920
@@ -192,7 +192,7 @@ it but they do not become the wallet.
 
 49
 00:02:16,160 --> 00:02:18,400
-And by providers I mean the real
+And by "providers" I mean the real
 
 50
 00:02:18,400 --> 00:02:21,280
@@ -204,7 +204,7 @@ operators, credential services, workflow
 
 52
 00:02:23,680 --> 00:02:25,440
-services, and other KERI adjacent
+services, and other KERI-adjacent
 
 53
 00:02:25,440 --> 00:02:26,635
@@ -228,7 +228,7 @@ vaults and local first storage and
 
 58
 00:02:46,319 --> 00:02:48,800
-controller owned state on disk. That
+controller-owned state on disk. That
 
 59
 00:02:48,800 --> 00:02:50,239
@@ -239,16 +239,16 @@ matters because portability could come
 later. The first proof is local control.
 
 61
-00:02:52,319 --> 00:02:53,920
-– So what are you defining as portability
+00:02:52,319 --> 00:02:53,896
+– What are you defining as portability here?
 
 62
 00:02:53,920 --> 00:02:58,720
-here? – You could deploy it to any
+You could deploy it to any
 
 63
 00:02:58,720 --> 00:03:00,720
-location I suppose.
+location, I suppose?
 
 64
 00:03:00,720 --> 00:03:02,560
@@ -280,10 +280,10 @@ ownership?
 
 71
 00:03:11,040 --> 00:03:16,949
-– Yeah.
+Yeah.
 
 72
-00:03:23,459 --> 00:03:24,239
+00:03:16,973 --> 00:03:24,239
 The identifier
 
 73
@@ -372,11 +372,11 @@ it. More provider side integrations
 
 94
 00:04:14,319 --> 00:04:16,639
-and the KERI Foundation's work to KERI
+and the KERI Foundation's work to carry
 
 95
 00:04:16,639 --> 00:04:18,639
-that pattern more through more
+that pattern through more
 
 96
 00:04:18,639 --> 00:04:21,440
@@ -384,7 +384,7 @@ completely. So the architecture for now
 
 97
 00:04:21,440 --> 00:04:24,080
-is real now, and the full provider
+is real, and the full provider
 
 98
 00:04:24,080 --> 00:04:27,680
@@ -432,7 +432,7 @@ stays available without turning the
 
 109
 00:04:53,360 --> 00:04:57,360
-whole system into one provider owned. If
+whole system into one provider-owned stack.
 
 110
 00:04:57,360 --> 00:05:00,000
@@ -440,7 +440,7 @@ if somebody wants implementation detail,
 
 111
 00:05:00,000 --> 00:05:02,160
-I could go there, at the at the highest
+I could go there, at the highest
 
 112
 00:05:02,160 --> 00:05:06,400
@@ -464,7 +464,7 @@ vault, local vault and the identifier
 
 117
 00:05:19,520 --> 00:05:21,840
-workflows a plug-in boundary encode and
+workflows, a plug-in boundary encode and
 
 118
 00:05:21,840 --> 00:05:23,919
@@ -503,598 +503,593 @@ proof say and what it's still in
 progress.
 
 127
-00:05:46,560 --> 00:05:50,639
+00:05:46,560 --> 00:05:48,270
 And then for getting started with the…
 
 128
+00:05:48,294 --> 00:05:50,040
+[Can we ask question now or at the end?]
+
+129
+00:05:50,064 --> 00:05:57,175
+[At the end]
+
+130
 00:05:57,199 --> 00:05:58,720
 And then for getting started with
 
-129
+131
 00:05:58,720 --> 00:06:02,936
 the code I have a demo repo
 
-130
+132
 00:06:02,961 --> 00:06:05,919
 that I've forked and I have commands
 
-131
+133
 00:06:05,943 --> 00:06:11,039
 for Unix, it'll work on Mac OS or Linux and
 
-132
+134
 00:06:11,039 --> 00:06:14,240
 for Windows; that script is
 
-133
+135
 00:06:14,240 --> 00:06:15,520
 just a PowerShell script you could
 
-134
+136
 00:06:15,520 --> 00:06:18,400
 execute.
 
-135
+137
 00:06:18,400 --> 00:06:22,160
 Demo bridge.
 
-136
+138
 00:06:22,160 --> 00:06:26,000
 The Locksmith gives KERI a
 
-137
+139
 00:06:26,000 --> 00:06:30,000
 real control side wallet surface. I
 
-138
+140
 00:06:30,000 --> 00:06:32,800
 wanted to show the a smallest life path
 
-139
+141
 00:06:32,800 --> 00:06:34,880
 of this setup can honestly support.
 
-140
+142
 00:06:34,880 --> 00:06:36,400
 I'm not going to try to turn this into a
 
-141
+143
 00:06:36,400 --> 00:06:39,360
 full network demo is the…
 
-142
+144
 00:06:39,360 --> 00:06:42,240
-Work that we had to do to remove the
+The work that we had to do to remove the
 
-143
+145
 00:06:42,240 --> 00:06:45,120
 the healthKERI code kind of
 
-144
+146
 00:06:45,120 --> 00:06:47,440
 made that part still a work in
 
-145
+147
 00:06:47,440 --> 00:06:50,469
 progress.
 
-146
+148
 00:06:54,206 --> 00:07:00,142
 So, in order to install this
 
-147
+149
 00:07:00,166 --> 00:07:03,809
 just run the script where it'll
 
-148
+150
 00:07:03,834 --> 00:07:04,720
 detect if something's
 
-149
+151
 00:07:04,720 --> 00:07:06,800
 ready there. If it is, it'll get
 
-150
+152
 00:07:06,800 --> 00:07:09,120
 rid of it and then it'll set up the
 
-151
+153
 00:07:09,120 --> 00:07:12,400
 environment and then I'll deploy it.
 
-152
+154
 00:07:32,737 --> 00:07:35,139
 – I came in late. This Locksmith
 
-153
+155
 00:07:35,164 --> 00:07:37,039
 is the wallet in KERI?
 
-154
+156
 00:07:37,039 --> 00:07:39,919
 – Yes.
 
-155
+157
 00:07:39,919 --> 00:07:41,120
 – What's the relation between
 
-156
+158
 00:07:41,120 --> 00:07:43,840
 Locksmith and KERIpy 1 that was in
 
-157
+159
 00:07:43,840 --> 00:07:47,599
 the session description? – The KERIpy 1
 
-158
+160
 00:07:47,599 --> 00:07:50,720
 is that this is the KERI
 
-159
-00:07:50,720 --> 00:07:54,160
-pie one's just my fork or the pie is
-
-160
-00:07:54,160 --> 00:07:57,120
-The
-
 161
-00:07:57,120 --> 00:07:58,639
-wait
+00:07:50,720 --> 00:07:54,160
+Py one's just my fork or KERIPy is
 
 162
-00:07:58,639 --> 00:08:07,589
-and the other one's my fork
+00:07:54,160 --> 00:07:58,639
+Wait,
 
 163
-00:09:04,470 --> 00:09:16,230
-Sorry. For whatever reason, I selected
-the wrong command.
+00:07:58,639 --> 00:09:04,446
+the other one's my fork
 
 164
-00:09:19,829 --> 00:09:26,870
-Python scripts demo day. Come on, please
-work.
+00:09:04,470 --> 00:09:10,338
+Sorry. For whatever reason,
 
 165
-00:09:28,949 --> 00:09:31,680
-Sorry, my
-it takes my
+00:09:10,362 --> 00:09:16,230
+I selected the wrong command.
 
 166
-00:09:31,680 --> 00:09:35,990
-Sorry, this is taking a while.
+00:09:16,254 --> 00:09:21,903
+Python scripts demo day.
 
 167
-00:09:39,910 --> 00:09:43,120
-And then we could initial initialize
-a vault and
+00:09:21,927 --> 00:09:26,870
+Come on, please work.
 
 168
+00:09:28,949 --> 00:09:35,990
+Sorry, this is taking a while.
+
+169
+00:09:39,910 --> 00:09:42,305
+And then we could initialize
+
+170
+00:09:42,329 --> 00:09:43,120
+a vault and
+
+171
 00:09:43,120 --> 00:09:46,160
 a lot of this stuff is still work in
 
-169
+172
 00:09:46,160 --> 00:09:49,360
-progress. The a lot of the functionality
+progress. A lot of the functionality
 
-170
+173
 00:09:49,360 --> 00:09:50,880
 is
 
-171
+174
 00:09:50,880 --> 00:09:53,120
 not there because it was stripped out
 
-172
-00:09:53,120 --> 00:09:57,120
-from the from the healthcare wallet.
-
-173
-00:09:57,120 --> 00:10:02,800
-But this when it we have
-
-174
-00:10:02,800 --> 00:10:04,240
-when we when we have the full
-
 175
+00:09:53,120 --> 00:09:57,120
+from the healthKERI wallet.
+
+176
+00:09:57,120 --> 00:10:04,240
+When we have the full
+
+177
 00:10:04,240 --> 00:10:07,760
 functionality built out, it'll have
 
-176
-00:10:07,760 --> 00:10:10,720
-large par with largely at par with the
-
-177
-00:10:10,720 --> 00:10:12,959
-healthcare wallet
-
 178
+00:10:07,760 --> 00:10:10,720
+largely at parity with the
+
+179
+00:10:10,720 --> 00:10:12,959
+healthKERI wallet
+
+180
 00:10:12,959 --> 00:10:16,160
 and we could create our own identifiers.
 
-179
+181
 00:10:16,160 --> 00:10:17,760
 We could set the cryptographic
 
-180
-00:10:17,760 --> 00:10:19,760
-strength a I don't have a remote
-
-181
-00:10:19,760 --> 00:10:21,279
-identifier that I could connect to right
-
 182
-00:10:21,279 --> 00:10:23,200
-now.
+00:10:17,760 --> 00:10:19,760
+strength. I don't have a remote
 
 183
+00:10:19,760 --> 00:10:23,200
+identifier that I could connect to right now.
+
+184
 00:10:23,200 --> 00:10:25,680
 Same thing for a group identifier.
 
-184
-00:10:25,680 --> 00:10:28,240
-issue a credential.
-
 185
-00:10:28,240 --> 00:10:32,160
-No schemas to
+00:10:25,680 --> 00:10:28,240
+Issue a credential.
 
 186
-00:10:32,160 --> 00:10:33,839
-I don't I don't have anything for that
+00:10:28,240 --> 00:10:32,160
+No schemas to ..,
 
 187
+00:10:32,160 --> 00:10:33,839
+I don't have anything for that
+
+188
 00:10:33,839 --> 00:10:35,760
 yet.
 
-188
+189
 00:10:35,760 --> 00:10:37,839
 Add a schema.
 
-189
+190
 00:10:37,839 --> 00:10:43,120
 And set this. I could change
 
-190
-00:10:43,120 --> 00:10:46,240
-the settings for the cryptographics
-
 191
+00:10:43,120 --> 00:10:46,240
+the settings for the cryptographic
+
+192
 00:10:46,240 --> 00:10:48,640
 Key strength settings or other stuff
 
-192
+193
 00:10:48,640 --> 00:10:52,800
 for the cryptography. But this is
 
-193
-00:10:52,800 --> 00:10:54,320
-The open source version of the code
-
 194
+00:10:52,800 --> 00:10:54,320
+the open source version of the code
+
+195
 00:10:54,320 --> 00:10:57,360
 that you guys can go and explore.
 
-195
-00:10:57,360 --> 00:10:59,440
-And sorry I'm just I'm not good at
-
 196
-00:10:59,440 --> 00:11:02,320
-public speaking. So and that's all I've
+00:10:57,360 --> 00:10:59,440
+And sorry, I'm just not good at
 
 197
+00:10:59,440 --> 00:11:02,320
+public speaking. That's all I've
+
+198
 00:11:02,320 --> 00:11:05,120
 got. What questions do you guys
 
-198
+199
 00:11:05,120 --> 00:11:05,920
 have?
 
-199
+200
 00:11:05,920 --> 00:11:08,399
 Yeah. So essentially is what you've
 
-200
+201
 00:11:08,399 --> 00:11:12,399
 showed us the KERI Foundation using the
 
-201
+202
 00:11:12,399 --> 00:11:14,480
 plug-in API with Locksmith to run
 
-202
+203
 00:11:14,480 --> 00:11:16,240
 against their own infrastructure.
 
-203
+204
 00:11:16,240 --> 00:11:16,720
 Yes.
 
-204
+205
 00:11:17,680 --> 00:11:18,640
 In this demo.
 
-205
+206
 00:11:18,640 --> 00:11:23,030
 That's not in this demo. Okay.
 
-206
-00:11:26,550 --> 00:11:29,760
-So this is the open- source wallet that
-we got originally from healthcare. We've
-
 207
+00:11:26,550 --> 00:11:28,143
+So this is the open- source wallet that
+
+208
+00:11:28,167 --> 00:11:29,760
+we got originally from healthKERI. We've
+
+209
 00:11:29,760 --> 00:11:32,160
 debranded it. This is available now for
 
-208
+210
 00:11:32,160 --> 00:11:34,240
 anybody to go and fork this, download
 
-209
+211
 00:11:34,240 --> 00:11:36,240
 it, use it, build out more if you want
 
-210
+212
 00:11:36,240 --> 00:11:38,240
 other features if you want. The plugin
 
-211
+213
 00:11:38,240 --> 00:11:41,440
 itself is not shown here.
 
-212
+214
 00:11:41,440 --> 00:11:43,279
 You'll see that in my demo, but you and
 
-213
+215
 00:11:43,279 --> 00:11:44,720
 I are competing with each other. So now
 
-214
+216
 00:11:44,720 --> 00:11:45,600
 we're not
 
-215
+217
 00:11:45,600 --> 00:11:47,040
 now we're not gonna now you're not going
 
-216
+218
 00:11:47,040 --> 00:11:52,470
 to see it ever. Ah,
 
-217
+219
 00:11:54,790 --> 00:11:58,000
 thanks man. Hey Joseph,
 does so does this sorry this is a dumb
 
-218
+220
 00:11:58,000 --> 00:12:00,720
 question but does this wallet here have
 
-219
+221
 00:12:00,720 --> 00:12:05,040
 the KEL on in this whatever device is
 
-220
+222
 00:12:05,040 --> 00:12:06,880
 installing the wallet does is the KEL
 
-221
+223
 00:12:06,880 --> 00:12:08,320
 also there
 
-222
+224
 00:12:08,320 --> 00:12:09,040
 you're local
 
-223
+225
 00:12:09,040 --> 00:12:09,920
 yeah local
 
-224
+226
 00:12:09,920 --> 00:12:10,959
 yeah locally
 
-225
+227
 00:12:10,959 --> 00:12:13,040
 so this creates the manages the keys and
 
-226
+228
 00:12:13,040 --> 00:12:14,399
 the KEL
 
-227
+229
 00:12:14,399 --> 00:12:15,440
 in that environment
 
-228
+230
 00:12:15,440 --> 00:12:17,839
 and you publish the KEL to a witness
 
-229
+231
 00:12:17,839 --> 00:12:20,480
 yes to one or more witnesses right
 
-230
+232
 00:12:20,480 --> 00:12:22,800
 so you would configure the witness here
 
-231
+233
 00:12:22,800 --> 00:12:24,560
 Yeah, you'll see that in my demo if you
 
-232
+234
 00:12:24,560 --> 00:12:25,519
 come to my demo.
 
-233
+235
 00:12:25,519 --> 00:12:27,040
 When did you demo?
 
-234
+236
 00:12:27,040 --> 00:12:28,079
 3:15.
 
-235
+237
 00:12:28,079 --> 00:12:32,079
 It's Yeah, big
 
-236
-00:12:32,079 --> 00:12:35,279
-sorry. And then and then also the
-
-237
-00:12:35,279 --> 00:12:36,880
-tell stuff is that
-
 238
-00:12:36,880 --> 00:12:38,560
-no that's ACDC related. We're not going
+00:12:32,079 --> 00:12:35,279
+– And then also the
 
 239
-00:12:38,560 --> 00:12:40,560
-to cover that in this
+00:12:35,279 --> 00:12:36,880
+TEL stuff is that ..?
 
 240
-00:12:40,560 --> 00:12:42,959
-but it would it be on in this on this
+00:12:36,880 --> 00:12:38,560
+No, that's ACDC related. We're not going
 
 241
-00:12:42,959 --> 00:12:44,160
-local just
+00:12:38,560 --> 00:12:40,560
+to cover that in this.
 
 242
-00:12:44,160 --> 00:12:45,279
-that's a good question. I don't know
+00:12:40,560 --> 00:12:44,160
+Would it be on his local ..,
 
 243
-00:12:45,279 --> 00:12:48,079
-where theoretically I guess probably
+00:12:44,160 --> 00:12:45,279
+That's a good question. I don't know
 
 244
-00:12:48,079 --> 00:12:49,920
-so but I don't I don't know that's a
+00:12:45,279 --> 00:12:48,079
+where theoretically, I guess probably,
 
 245
+00:12:48,079 --> 00:12:49,920
+but I don't know that's a
+
+246
 00:12:49,920 --> 00:12:52,800
 little bit outside of scope of
 
-246
+247
 00:12:52,800 --> 00:12:53,600
 dealt with yet.
 
-247
-00:12:53,600 --> 00:12:54,959
-I know they defined the tell this
-
 248
+00:12:53,600 --> 00:12:54,959
+– I know they defined the TEL this
+
+249
 00:12:54,959 --> 00:12:56,079
 morning, but I forgot what it stands
 
-249
+250
 00:12:56,079 --> 00:12:56,480
 for.
 
-250
-00:12:56,480 --> 00:12:57,839
-Transaction event log
-
 251
-00:12:57,839 --> 00:13:00,399
-and that's for the recipient to detect
+00:12:56,480 --> 00:12:57,839
+[TEL = ] Transaction event log
 
 252
-00:13:00,399 --> 00:13:02,079
-that's for the holder to detect if their
+00:12:57,839 --> 00:13:00,399
+- And that's for the recipient to detect
 
 253
+00:13:00,399 --> 00:13:02,079
+That's for the holder to detect if their
+
+254
 00:13:02,079 --> 00:13:05,200
 credentials are being used in the non
 
-254
-00:13:05,200 --> 00:13:08,000
-Not necessarily tells are
-
 255
+00:13:05,200 --> 00:13:08,000
+Not necessarily, TELs are
+
+256
 00:13:08,000 --> 00:13:09,360
 specifically related to a different
 
-256
-00:13:09,360 --> 00:13:13,600
-construct in AC or in KERI ecosystem
-
 257
-00:13:13,600 --> 00:13:15,680
-called ACDC which is more about
+00:13:09,360 --> 00:13:13,600
+construct in the KERI ecosystem
 
 258
+00:13:13,600 --> 00:13:15,680
+called ACDC, which is more about
+
+259
 00:13:15,680 --> 00:13:17,120
 credential issuing.
 
-259
-00:13:17,120 --> 00:13:20,079
-Yeah. So the benefit of the tell you're
-
 260
+00:13:17,120 --> 00:13:20,079
+Yeah. So the benefit of the TEL you're
+
+261
 00:13:20,079 --> 00:13:21,680
 publishing the transaction event so that
 
-261
+262
 00:13:21,680 --> 00:13:22,959
 you can
 
-262
+263
 00:13:22,959 --> 00:13:24,160
 I'm going to get anchored to the key
 
-263
+264
 00:13:24,160 --> 00:13:25,519
 event log
 
-264
+265
 00:13:25,519 --> 00:13:26,639
 I can't keep track of the state
 
-265
+266
 00:13:26,639 --> 00:13:30,240
 I think a good way is the KEL is the
 
-266
+267
 00:13:30,240 --> 00:13:33,839
 state of your keys and the TEL is the
 
-267
+268
 00:13:33,839 --> 00:13:36,000
 state of your credentials
 
-268
-00:13:36,000 --> 00:13:39,120
-question like how what the state of
-
 269
+00:13:36,000 --> 00:13:39,120
+Question what the state of
+
+270
 00:13:39,120 --> 00:13:40,399
 because they can be in multiple
 
-270
+271
 00:13:40,399 --> 00:13:41,760
 different kind of states depending on
 
-271
-00:13:41,760 --> 00:13:43,760
-what the credential is
-
 272
-00:13:43,760 --> 00:13:44,639
-and so
+00:13:41,760 --> 00:13:44,639
+what the credential is ..,
 
 273
 00:13:44,639 --> 00:13:48,000
-like revocation status state Yeah. Yeah.
+– Like revocation status state Yeah. Yeah.
 
 274
 00:13:48,000 --> 00:13:50,240
@@ -1158,7 +1153,7 @@ that's the
 
 289
 00:14:16,880 --> 00:14:18,399
-healthy is proprietary.
+healthKERI is proprietary.
 
 290
 00:14:18,399 --> 00:14:19,199
@@ -1178,7 +1173,7 @@ we still have like all the core KERI
 
 294
 00:14:25,680 --> 00:14:29,920
-stuff like identify creationing.
+stuff like identify creation,
 
 295
 00:14:29,920 --> 00:14:32,399
@@ -1194,7 +1189,7 @@ witnesses and watchers you need to
 
 298
 00:14:36,079 --> 00:14:39,120
-connect to a provider such as healthcare
+connect to a provider such as healthKERI
 
 299
 00:14:39,120 --> 00:14:41,120
@@ -1202,11 +1197,11 @@ through a plugin. So the KERI
 
 300
 00:14:41,120 --> 00:14:42,720
-Foundation is going to create is
+Foundation is going to create
 
 301
 00:14:42,720 --> 00:14:44,720
-creating our own plugin where you can
+our own plugin, where you can
 
 302
 00:14:44,720 --> 00:14:46,160
@@ -1218,15 +1213,15 @@ witnesses and watchers and then in
 
 304
 00:14:49,440 --> 00:14:51,360
-theory you could also have in the same
+theory you could also have, in the same
 
 305
 00:14:51,360 --> 00:14:53,279
-UI you can see KERI Foundations plugin
+UI, you can see KERI Foundations plugin
 
 306
 00:14:53,279 --> 00:14:55,279
-and like healthcare's plugin or any
+and like healtKERI's plugin or any
 
 307
 00:14:55,279 --> 00:14:56,800
@@ -1234,23 +1229,23 @@ other provider who wants to create
 
 308
 00:14:56,800 --> 00:14:58,959
-witnesses and watchers
+witnesses and watchers.
 
 309
 00:14:58,959 --> 00:15:01,680
-provide infrastructure for you to
+[It can] provide infrastructure for you to
 
 310
 00:15:01,680 --> 00:15:05,440
-use basic but what does it want started
+So basically what you want is creating
 
 311
 00:15:05,440 --> 00:15:08,320
-with creating a want
+a vault
 
 312
 00:15:08,320 --> 00:15:10,000
-encryption storage right Yeah, it's just
+Encryption storage right Yeah, it's just
 
 313
 00:15:10,000 --> 00:15:11,120
@@ -1318,11 +1313,11 @@ So you can't move them across.
 
 329
 00:15:33,360 --> 00:15:35,440
-Yeah. That's I don't know. I don't
+Yeah. That's I don't know.
 
 330
 00:15:35,440 --> 00:15:36,480
-think you can move them across yet.
+I don't think you can move them across yet.
 
 331
 00:15:36,480 --> 00:15:37,680
@@ -1362,7 +1357,7 @@ And when you have walls,
 
 340
 00:15:50,560 --> 00:15:52,240
-I mean what would you how would you move
+I mean how would you move ..,
 
 341
 00:15:52,240 --> 00:15:53,839
@@ -1373,710 +1368,730 @@ you can't move the credentials across
 because different ID
 
 343
-00:16:02,790 --> 00:16:04,959
-I would guess that you could probably
-like if you created two vaults I have so
+00:16:00,814 --> 00:16:02,793
+I would guess that you could probably ..,
 
 344
+00:16:02,817 --> 00:16:04,959
+like if you created two vaults I have so
+
+345
 00:16:04,959 --> 00:16:05,920
 I don't know. I'm guessing if you
 
-345
+346
 00:16:05,920 --> 00:16:07,360
 created like a local identifier in one
 
-346
+347
 00:16:07,360 --> 00:16:09,040
 vault, you could OOBI with it from
 
-347
+348
 00:16:09,040 --> 00:16:11,120
 another vault as a remote identifier so
 
-348
+349
 00:16:11,120 --> 00:16:12,320
 you could watch your own vaults. But I
 
-349
+350
 00:16:12,320 --> 00:16:14,560
 don't know why you want to do that.
 
-350
+351
 00:16:14,560 --> 00:16:16,160
 The I was looking at the KERI
 
-351
+352
 00:16:16,160 --> 00:16:18,639
 Foundation GitHub.
 
-352
+353
 00:16:18,639 --> 00:16:20,160
 There's 16 repositories and it looks
 
-353
+354
 00:16:20,160 --> 00:16:21,199
 like there's three different wallet
 
-354
+355
 00:16:21,199 --> 00:16:22,720
 implementations.
 
-355
+356
 00:16:22,720 --> 00:16:25,839
 There's the Fort Web
 
-356
+357
 00:16:25,839 --> 00:16:26,320
 the
 
-357
+358
 00:16:26,320 --> 00:16:28,240
 No, there's the I think those are just
 
-358
+359
 00:16:28,240 --> 00:16:30,639
 different deployment w targets.
 
-359
+360
 00:16:30,639 --> 00:16:32,480
 There's one for iOS, there's a web app,
 
-360
+361
 00:16:32,480 --> 00:16:35,040
 and one for Android. Yeah.
 
-361
+362
 00:16:35,040 --> 00:16:37,920
 Okay. But there's there's the fort
 
-362
+363
 00:16:37,920 --> 00:16:39,680
 for Android and fort for iOS and then
 
-363
+364
 00:16:39,680 --> 00:16:43,279
 there's the key the Locksmith. Are those
 
-364
+365
 00:16:43,279 --> 00:16:45,279
 how are those related?
 
-365
+366
 00:16:45,279 --> 00:16:48,480
 The Locksmith is just what we take
 
-366
+367
 00:16:48,480 --> 00:16:51,360
 and deploy to the different targets.
 
-367
+368
 00:16:51,360 --> 00:16:53,440
 Locksmith is desktop version.
 
-368
+369
 00:16:53,440 --> 00:16:54,800
 Okay.
 
-369
+370
 00:16:54,800 --> 00:16:58,320
 Well, the Fort Web and Locksmith are
 
-370
+371
 00:16:58,320 --> 00:16:59,920
 they're they're they're both desktop
 
-371
+372
 00:16:59,920 --> 00:17:00,959
 versions. They're just different
 
-372
+373
 00:17:00,959 --> 00:17:03,600
 implementations of the desktop version.
 
-373
+374
 00:17:03,600 --> 00:17:05,360
 Essentially, all of them are a wallet,
 
-374
+375
 00:17:05,360 --> 00:17:06,880
 right? They're all the same. They're all
 
-375
+376
 00:17:06,880 --> 00:17:08,319
 wallet. You make identifiers. You can
 
-376
+377
 00:17:08,319 --> 00:17:08,799
 UI.
 
-377
+378
 00:17:08,799 --> 00:17:09,919
 So, my question is, why would you pick
 
-378
+379
 00:17:09,919 --> 00:17:10,880
 one versus the other?
 
-379
+380
 00:17:10,880 --> 00:17:12,160
 Whatever platform you want to use it on.
 
-380
+381
 00:17:12,160 --> 00:17:12,319
 Are
 
-381
+382
 00:17:12,319 --> 00:17:13,919
 you trying to deploy to a desktop or to
 
-382
+383
 00:17:13,919 --> 00:17:14,880
 an iOS?
 
-383
+384
 00:17:14,880 --> 00:17:16,319
 But Locksmith is web.
 
-384
+385
 00:17:16,319 --> 00:17:18,240
 No, lockmith is just desktop.
 
-385
+386
 00:17:18,240 --> 00:17:18,640
 It's
 
-386
+387
 00:17:18,640 --> 00:17:19,919
 Oh, this is native desktop.
 
-387
+388
 00:17:19,919 --> 00:17:22,799
 Yeah, it's a PIDE 6 applic. Okay, that
 
-388
+389
 00:17:22,799 --> 00:17:24,640
 makes sense. Are they coming from the
 
-389
+390
 00:17:24,640 --> 00:17:25,919
 same?
 
-390
+391
 00:17:25,919 --> 00:17:28,319
 It's multiplatform source bundle. It's
 
-391
+392
 00:17:28,319 --> 00:17:32,240
 it's all it the web or yeah they
 
-392
+393
 00:17:32,240 --> 00:17:34,480
 they all are getting deploy the same
 
-393
+394
 00:17:34,480 --> 00:17:36,000
 stuff the same code is getting deployed
 
-394
+395
 00:17:36,000 --> 00:17:37,919
 to all those all those different
 
-395
+396
 00:17:37,919 --> 00:17:40,880
 platforms. So for web is just the
 
-396
+397
 00:17:40,880 --> 00:17:44,240
 web SaaS
 
-397
+398
 00:17:44,240 --> 00:17:47,039
 app of Fort
 
-398
+399
 00:17:47,039 --> 00:17:48,640
 also have multiple local identifiers
 
-399
+400
 00:17:48,640 --> 00:17:51,520
 right in a single one have multiple
 
-400
+401
 00:17:51,520 --> 00:17:52,000
 local
 
-401
+402
 00:17:52,000 --> 00:17:53,760
 yes
 
-402
+403
 00:17:53,760 --> 00:17:56,400
 that's just talking about
 
-403
+404
 00:17:56,400 --> 00:17:58,799
 issuing credential to many identifiers
 
-404
+405
 00:17:58,799 --> 00:18:02,080
 some Josh was talking about
 
-405
+406
 00:18:02,080 --> 00:18:04,559
 Evan be talking more about the web wall
 
-406
+407
 00:18:04,559 --> 00:18:06,880
 tomorrow
 
-407
+408
 00:18:06,880 --> 00:18:08,080
 or whatever you want.
 
-408
+409
 00:18:08,080 --> 00:18:10,400
 Wow.
 
-409
+410
 00:18:10,400 --> 00:18:11,440
 People have other things they want to
 
-410
+411
 00:18:11,440 --> 00:18:11,840
 hear about
 
-411
+412
 00:18:11,840 --> 00:18:13,919
 or whatever suggestions.
 
-412
+413
 00:18:13,919 --> 00:18:15,039
 Basically, he's just going to stand up
 
-413
+414
 00:18:15,039 --> 00:18:18,160
 there and let you ask him anything.
 
-414
+415
 00:18:18,160 --> 00:18:20,799
 Ask me anything session with that.
 
-415
+416
 00:18:20,799 --> 00:18:22,400
 Cool.
 
-416
+417
 00:18:22,400 --> 00:18:26,480
 I think that's kind of it.
 
-417
+418
 00:18:26,480 --> 00:18:28,720
 Do you guys have any other questions or
 
-418
+419
 00:18:28,720 --> 00:18:30,000
 I guess we're kind of still kind of
 
-419
+420
 00:18:30,000 --> 00:18:32,080
 pretty early
 
-420
+421
 00:18:32,080 --> 00:18:38,950
 tomorrow.
 
-421
-00:18:40,549 --> 00:18:42,240
+422
+00:18:40,549 --> 00:18:41,382
 Yeah, I guess I mean the question I have
+
+423
+00:18:41,406 --> 00:18:42,240
 that might be answered tomorrow probably
 
-422
+424
 00:18:42,240 --> 00:18:44,160
 in your session.
 
-423
-00:18:44,160 --> 00:18:47,840
-Is there is it is it clear based on what
-
-424
-00:18:47,840 --> 00:18:50,160
-the what code that's open source what a
-
 425
+00:18:44,160 --> 00:18:47,840
+Is it clear, based on
+
+426
+00:18:47,840 --> 00:18:50,160
+what code that's open source what a
+
+427
 00:18:50,160 --> 00:18:52,320
 provider has to do in order to do their
 
-426
+428
 00:18:52,320 --> 00:18:53,760
 own plug-in implementation and what they
 
-427
+429
 00:18:53,760 --> 00:18:55,679
 have to sort of implement on the
 
-428
+430
 00:18:55,679 --> 00:18:58,000
 infrastructure side
 
-429
+431
 00:18:58,000 --> 00:18:59,600
 for the plugin kind of. Yeah.
 
-430
+432
 00:18:59,600 --> 00:19:01,679
 Yeah. Because I want to do I want I'm
 
-431
+433
 00:19:01,679 --> 00:19:03,200
 going to do a blog about it and sort of
 
-432
+434
 00:19:03,200 --> 00:19:04,240
 show people how to do it.
 
-433
+435
 00:19:04,240 --> 00:19:05,679
 I can make my session how to make your
 
-434
+436
 00:19:05,679 --> 00:19:06,559
 own plug-in demo.
 
-435
+437
 00:19:06,559 --> 00:19:08,080
 Yeah, that'd be great.
 
-436
+438
 00:19:08,080 --> 00:19:10,080
-Yeah, it's pretty cool. a good idea
+Yeah, it's pretty cool. A good idea
 
-437
+439
 00:19:10,080 --> 00:19:11,760
 because I will definitely be doing it.
 
-438
+440
 00:19:11,760 --> 00:19:13,120
 I want to help other people learn too.
 
-439
+441
 00:19:13,120 --> 00:19:14,960
 I mean it's it's all there in the repo
 
-440
+442
 00:19:14,960 --> 00:19:17,200
 so you could obviously learn how it's
 
-441
+443
 00:19:17,200 --> 00:19:18,160
 built but
 
-442
+444
 00:19:18,160 --> 00:19:19,200
 I don't think we haven't done
 
-443
+445
 00:19:19,200 --> 00:19:21,440
 anything formally yet to describe how to
 
-444
+446
 00:19:21,440 --> 00:19:22,240
 build a plugin.
 
-445
+447
 00:19:22,240 --> 00:19:23,120
 Okay.
 
-446
+448
 00:19:23,120 --> 00:19:24,320
 So that would be a good thing.
 
-447
+449
 00:19:24,320 --> 00:19:26,160
-There is yeah healthcare shipped like a
+There is yeah healthKERI shipped like a
 
-448
+450
 00:19:26,160 --> 00:19:27,679
 plug-in based flask. So they basically
 
-449
+451
 00:19:27,679 --> 00:19:29,600
 like define the set of functions
 
-450
+452
 00:19:29,600 --> 00:19:31,280
 you need to define in order to make your
 
-451
+453
 00:19:31,280 --> 00:19:32,080
 own plugin.
 
-452
+454
 00:19:32,080 --> 00:19:34,480
-Awesome. Yeah that's what I wanted
+Awesome. Yeah,
 
-453
+455
 00:19:34,480 --> 00:19:37,360
 that's what I want to know.
 
-454
+456
 00:19:37,360 --> 00:19:38,559
-time to go through that sort of thing
+Time to go through that sort of thing
 
-455
+457
 00:19:38,559 --> 00:19:40,320
 tomorrow.
 
-456
+458
 00:19:40,320 --> 00:19:41,120
 Was interesting.
 
-457
+459
 00:19:41,120 --> 00:19:42,720
 There are other open source KERI
 
-458
+460
 00:19:42,720 --> 00:19:45,440
-wallets besides the Fort Locket one,
+wallets besides the Fort and Locksmith one,
 
-459
+461
 00:19:45,440 --> 00:19:46,240
 isn't there?
 
-460
+462
 00:19:46,240 --> 00:19:48,480
 Yeah. From so I'll talk a little bit
 
-461
+463
 00:19:48,480 --> 00:19:49,840
 about this in my session, but there's
 
-462
+464
 00:19:49,840 --> 00:19:51,120
 heavyweight wallets and lightweight
 
-463
+465
 00:19:51,120 --> 00:19:53,280
 wallets. Lightweight or Signify wallets.
 
-464
+466
 00:19:53,280 --> 00:19:54,640
 This is a heavyweight wallet. It's the
 
-465
+467
 00:19:54,640 --> 00:19:57,919
 most complete one in the world by far.
 
-466
-00:19:57,919 --> 00:19:59,280
-Well, health carries is
-
-467
-00:19:59,280 --> 00:20:00,640
-Yeah, health carries is I guess
-
 468
+00:19:57,919 --> 00:19:59,280
+Well, health KERI's is
+
+469
+00:19:59,280 --> 00:20:00,640
+Yeah, healthKERI's is I guess
+
+470
 00:20:00,640 --> 00:20:02,799
 this is sort of a stripped down
 
-469
+471
 00:20:02,799 --> 00:20:05,200
 slightest. So I guess health carries is
 
-470
+472
 00:20:05,200 --> 00:20:06,720
 the most complete and then this is
 
-471
+473
 00:20:06,720 --> 00:20:08,559
-stripped down version of but it's it's
+stripped-down version of but it's
 
-472
+474
 00:20:08,559 --> 00:20:09,760
 the furthest of all
 
-473
+475
 00:20:09,760 --> 00:20:11,280
 but that's your session tomorrow not
 
-474
+476
 00:20:11,280 --> 00:20:12,160
 your session today.
 
-475
+477
 00:20:12,160 --> 00:20:14,640
 No I have two sessions today. One is
 
-476
+478
 00:20:14,640 --> 00:20:17,280
-the last one is on the KERI stuff
+the last one is on the KERIA stuff
 
-477
+479
 00:20:17,280 --> 00:20:19,280
 about lightweight wall. The first one is
 
-478
+480
 00:20:19,280 --> 00:20:24,070
-going to be on the Root of Trust.
+going to be on the GLEIF Root of Trust.
 
-479
-00:20:25,830 --> 00:20:27,360
+481
+00:20:24,094 --> 00:20:24,898
 Cool. Wow.
+
+482
+00:20:24,922 --> 00:20:27,360
 Well thank you. Do you guys have any
 
-480
+483
 00:20:27,360 --> 00:20:31,270
 other questions?
 
-481
-00:20:33,510 --> 00:20:35,120
-Who wants to speedrun building a
+484
+00:20:33,510 --> 00:20:34,705
+– Who wants to speedrun building a
+
+485
+00:20:34,729 --> 00:20:35,120
 provider
 
-482
+486
 00:20:35,120 --> 00:20:36,159
-right now?
+Right now?
 
-483
+487
 00:20:36,159 --> 00:20:36,799
 Let's do it.
 
-484
+488
 00:20:36,799 --> 00:20:39,600
 Evan can coach you through it.
 
-485
+489
 00:20:39,600 --> 00:20:40,000
 All right.
 
-486
+490
 00:20:40,000 --> 00:20:46,950
 I just copy our
 
-487
+491
 00:20:48,870 --> 00:20:51,760
-done 40 minutes.
-No.
+Done; 40 minutes? No.
 
-488
+492
 00:20:51,760 --> 00:20:54,400
 Sorry that this wasn't very long.
 
-489
+493
 00:20:54,400 --> 00:20:56,880
 Good.
 
-490
-00:20:56,880 --> 00:21:08,630
+494
+00:20:56,880 --> 00:20:59,080
 See,
 
-491
-00:21:10,710 --> 00:21:13,440
-we got a little time. Jay, you can
+495
+00:20:59,104 --> 00:21:05,731
+We got a little time, Jay, you can
+
+496
+00:21:05,755 --> 00:21:13,440
 launch the iOS thing if you want.
 
-492
+497
 00:21:13,440 --> 00:21:14,000
 Sure.
 
-493
+498
 00:21:14,000 --> 00:21:16,240
 Just to show it.
 
-494
+499
 00:21:16,240 --> 00:21:20,240
 Yep. So, this is the iOS app.
 
-495
-00:21:20,240 --> 00:21:31,350
+500
+00:21:20,240 --> 00:21:24,253
 Suppose I should
 
-496
-00:21:33,110 --> 00:21:35,360
-So yeah, it's it's functionally speaking
+501
+00:21:24,277 --> 00:21:30,338
+So yeah, it's functionally speaking
+
+502
+00:21:30,362 --> 00:21:35,360
 just it's the same code just it's
 
-497
+503
 00:21:35,360 --> 00:21:38,240
-deployed to a w the mobile apps
+deployed to a the mobile apps
 
-498
+504
 00:21:38,240 --> 00:21:41,200
 are just wrappers that will run the
 
-499
+505
 00:21:41,200 --> 00:21:43,440
 Locksmith code
 
-500
+506
 00:21:43,440 --> 00:21:46,480
 and yeah it's just this functionally
 
-501
+507
 00:21:46,480 --> 00:21:50,400
 the same experience on any of the
 
-502
+508
 00:21:50,400 --> 00:21:53,120
 devices and that's right I have not
 
-503
+509
 00:21:53,120 --> 00:21:54,480
 fixed this yet.
 
-504
+510
 00:21:54,480 --> 00:21:56,320
 So, I'm noticing that this looks very
 
-505
+511
 00:21:56,320 --> 00:21:59,520
 similar to the flat UI. It's And I know
 
-506
+512
 00:21:59,520 --> 00:22:01,039
 it's Pyite 6.
 
-507
+513
 00:22:01,039 --> 00:22:02,640
 Mhm.
 
-508
+514
 00:22:02,640 --> 00:22:05,200
-Yeah. Well, healthcare basically just
+Yeah. Well, healthKERI basically just
 
-509
+515
 00:22:05,200 --> 00:22:07,520
 translated the flat app into Pyite 6.
 
-510
+516
 00:22:07,520 --> 00:22:11,039
 Okay. So, the flat app is,
 
-511
+517
 00:22:11,039 --> 00:22:13,280
 right? I just wondered if it was I guess
 
-512
+518
 00:22:13,280 --> 00:22:16,000
 did they lift the CSS styling when they
 
-513
+519
 00:22:16,000 --> 00:22:18,559
 This is CS. Yeah, I just I left it as
 
-514
+520
 00:22:18,559 --> 00:22:22,240
 close as it to what it was.
 
-515
+521
 00:22:22,240 --> 00:22:37,990
 Okay.
 
-516
-00:22:39,990 --> 00:22:41,039
+522
+00:22:39,990 --> 00:22:40,502
 Good jokes.
+
+523
+00:22:40,526 --> 00:22:41,039
 Nice work.
 
-517
+524
 00:22:41,039 --> 00:22:43,520
 Thank you.
 
