@@ -3820,11 +3820,11 @@ And so it's if you needed the Java
 
 956
 00:33:20,520 --> 00:33:22,600
-implementation, it's very doable to if
+implementation, it's very doable to, if
 
 957
 00:33:22,600 --> 00:33:23,800
-you wanted to use the WebOfTrust
+you wanted to, use the WebOfTrust
 
 958
 00:33:23,800 --> 00:33:26,840
@@ -3976,7 +3976,7 @@ web app, can I just store it in indexDB
 
 995
 00:34:33,000 --> 00:34:36,560
-or localStorage? That's a big no-no.
+or localStorage?" That's a big no-no.
 
 996
 00:34:36,560 --> 00:34:38,280
@@ -4044,7 +4044,7 @@ don't have hot module reloading figured
 
 1012
 00:35:10,360 --> 00:35:11,720
-out for whatever stack you're working
+out, for whatever stack you're working
 
 1013
 00:35:11,720 --> 00:35:13,440
@@ -4136,7 +4136,7 @@ Capacitor.
 
 1035
 00:35:53,200 --> 00:35:54,800
-Okay, where are the keys stored? We beat
+Where are the keys stored? We beat
 
 1036
 00:35:54,800 --> 00:35:56,480
@@ -4475,298 +4475,294 @@ And this name right
 here matters.
 
 1120
-00:38:40,160 --> 00:38:42,080
-Let me just sort of go forward to
+00:38:40,160 --> 00:38:44,520
+Let me go forward to that.
 
 1121
-00:38:42,080 --> 00:38:44,520
-that.
+00:38:44,520 --> 00:38:47,120
+This name has to correspond to the name ..,
 
 1122
-00:38:44,520 --> 00:38:47,120
-This name has to correspond to the name
+00:38:47,120 --> 00:38:48,960
+when you do “keria start --name "keria",”
 
 1123
-00:38:47,120 --> 00:38:48,960
-when you do “keria start --name "keria"”
+00:38:48,960 --> 00:38:51,200
+these two names need to match up.
 
 1124
-00:38:48,960 --> 00:38:51,200
-name. These two names need to match up.
-
-1125
 00:38:51,200 --> 00:38:53,240
 That's the hardest part.
 
-1126
+1125
 00:38:53,240 --> 00:38:55,040
-And then the other hardest part is
+And then the other hard part is
 
-1127
+1126
 00:38:55,040 --> 00:38:58,000
 that you must have a value here so
 
-1128
+1127
 00:38:58,000 --> 00:38:59,680
 that it can pull out the host and the
 
-1129
+1128
 00:38:59,680 --> 00:39:01,840
 port to bind to that port. That's what
 
-1130
+1129
 00:39:01,840 --> 00:39:04,510
 Python reads to do the port binding.
 
-1131
+1130
 00:39:04,535 --> 00:39:06,575
 As long as you've got the port open, the
 
-1132
+1131
 00:39:06,599 --> 00:39:08,640
 host right, you can use 0000 if you need to.
 
-1133
+1132
 00:39:09,800 --> 00:39:11,000
 And these names match, then you're good
 
-1134
+1133
 00:39:11,000 --> 00:39:12,040
 to go.
 
-1135
+1134
 00:39:12,040 --> 00:39:13,400
 Now, the other parts of the config, you
 
-1136
+1135
 00:39:13,400 --> 00:39:14,480
 might say, "What would I use
 
-1137
+1136
 00:39:14,480 --> 00:39:16,120
 the other parts for?" So, IURLs are
 
-1138
+1137
 00:39:16,120 --> 00:39:19,440
-essentially identifier or AID URLs. Who
+essentially identifier or AID URLs.
 
-1139
+1138
 00:39:19,440 --> 00:39:21,200
 Who are the contacts
 
-1140
+1139
 00:39:21,200 --> 00:39:23,680
 that I want to resolve on startup for
 
-1141
+1140
 00:39:23,680 --> 00:39:27,120
 every single agent? Cuz this config is
 
-1142
+1141
 00:39:27,120 --> 00:39:29,320
 the agency config.
 
-1143
+1142
 00:39:29,320 --> 00:39:31,680
 The way that config works in KERIA is
 
-1144
+1143
 00:39:31,680 --> 00:39:33,760
 you configure the agency,
 
-1145
+1144
 00:39:33,760 --> 00:39:36,000
 and then it copies its config to every
 
-1146
+1145
 00:39:36,000 --> 00:39:39,000
-agent. So, if you want to bootstrap
+agent. So, if you want to bootstrap ..,
+
+1146
+00:39:39,000 --> 00:39:40,920
+Let's say you have preferred
 
 1147
-00:39:39,000 --> 00:39:40,920
-So, let's say you have preferred
-
-1148
 00:39:40,920 --> 00:39:42,800
 witness infrastructure and preferred
 
-1149
+1148
 00:39:42,800 --> 00:39:45,200
 credential schemas that you want every
 
-1150
+1149
 00:39:45,200 --> 00:39:47,560
 agent in your agency to know about, you
 
-1151
+1150
 00:39:47,560 --> 00:39:49,200
 put them in your IURLs section, and
 
-1152
+1151
 00:39:49,200 --> 00:39:51,240
 there's actually a DURLs section
 
-1153
+1152
 00:39:51,240 --> 00:39:54,560
 specifically designed for credential
 
-1154
+1153
 00:39:54,560 --> 00:39:57,720
 schemas and partial ACDCs. Like if you
 
-1155
+1154
 00:39:57,720 --> 00:39:59,600
 have a trust chain like the GLEIF trust
 
-1156
+1155
 00:39:59,600 --> 00:40:01,120
 chain, and you want your agents to
 
-1157
+1156
 00:40:01,120 --> 00:40:02,760
 pre-resolve it,
 
-1158
+1157
 00:40:02,760 --> 00:40:04,240
 there's an IURLs
 
-1159
+1158
 00:40:04,240 --> 00:40:05,640
 section for identifiers, and you'll
 
-1160
+1159
 00:40:05,640 --> 00:40:07,080
 notice
 
-1161
+1160
 00:40:07,080 --> 00:40:08,720
 these are all witnesses. So, what I'm
 
-1162
+1161
 00:40:08,720 --> 00:40:13,120
 saying is I want every single agent
 
-1163
+1162
 00:40:13,120 --> 00:40:15,240
 that boots up here to resolve these
 
-1164
+1163
 00:40:15,240 --> 00:40:17,360
 three witnesses so that I don't have to
 
-1165
+1164
 00:40:17,360 --> 00:40:18,600
 through the steps of resolving them
 
-1166
+1165
 00:40:20,040 --> 00:40:21,800
 every single time.
 
-1167
+1166
 00:40:21,800 --> 00:40:23,600
 Anyway, so there's some tocks. This is
 
-1168
+1167
 00:40:23,600 --> 00:40:25,200
 some more some more advanced stuff if
 
-1169
+1168
 00:40:25,200 --> 00:40:26,920
 you need to do some CPU tuning and IO
 
-1170
+1169
 00:40:26,920 --> 00:40:28,440
 tuning. This is where you're getting
 
-1171
+1170
 00:40:28,440 --> 00:40:30,920
 more low-level into the async. So,
 
-1172
+1171
 00:40:30,920 --> 00:40:33,120
 tomorrow I have a talk, HIO async
 
-1173
+1172
 00:40:33,120 --> 00:40:34,920
 frameworks. It's even lower level
 
-1174
+1173
 00:40:34,920 --> 00:40:36,160
 than this. This is where we'll get more
 
-1175
+1174
 00:40:36,160 --> 00:40:38,360
 into tocks, but this is more into the
 
-1176
+1175
 00:40:38,360 --> 00:40:41,240
 KERIpy
 
-1177
+1176
 00:40:41,240 --> 00:40:44,240
 async framework called HIO, hierarchical
 
-1178
+1177
 00:40:44,240 --> 00:40:46,000
-IO that […] design. That's what these
+IO that Sam [Smith] designed. That's what these
 
-1179
+1178
 00:40:46,000 --> 00:40:47,000
 are refer… As long as you know
 
-1180
+1179
 00:40:47,000 --> 00:40:48,600
 what it's for
 
-1181
+1180
 00:40:48,600 --> 00:40:50,160
-that's enough to sort of start to ask
+that's enough to sort of start to ask her 
+
+1181
+00:40:50,160 --> 00:40:52,480
+off and that sort things. Okay.
 
 1182
-00:40:50,160 --> 00:40:52,480
-[…] things. Okay.
+00:40:52,480 --> 00:40:55,280
+We kind of understand
 
 1183
-00:40:52,480 --> 00:40:55,280
-Now, we are So, we kind of understand
-
-1184
 00:40:55,280 --> 00:40:57,040
 why to use KERIA. Use KERIA when you
 
-1185
+1184
 00:40:57,040 --> 00:40:58,720
 need a lightweight wallet. KERIA is
 
-1186
+1185
 00:40:58,720 --> 00:40:59,600
 signified when you need a lightweight
 
-1187
+1186
 00:40:59,600 --> 00:41:01,640
 wallet. When to not use KERIA? When
 
-1188
+1187
 00:41:01,640 --> 00:41:03,483
 you need a heavyweight wallet.
 
-1189
+1188
 00:41:03,483 --> 00:41:05,000
 [laughter]
 
-1190
+1189
 00:41:05,000 --> 00:41:07,360
 And we talked about configuring. Now, go
 
-1191
+1190
 00:41:07,360 --> 00:41:10,200
 build your AI agents with security
 
-1192
+1191
 00:41:10,200 --> 00:41:13,963
 behind them and your steady agents.
 
-1193
+1192
 00:41:13,963 --> 00:41:15,983
 [applause]
 
