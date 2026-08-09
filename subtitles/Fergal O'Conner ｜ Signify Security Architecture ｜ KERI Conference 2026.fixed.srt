@@ -80,7 +80,7 @@ KERIA and Signify-ts. And throughout
 
 21
 00:00:49,680 --> 00:00:52,375
-the years, you know, we've put a lot of
+the years, we've put a lot of
 
 22
 00:00:52,399 --> 00:00:54,456
@@ -108,7 +108,7 @@ software that was required to deliver
 
 28
 00:01:04,479 --> 00:01:06,856
-that user experience he wanted. And
+that user experience we wanted. And
 
 29
 00:01:06,880 --> 00:01:09,816
@@ -120,11 +120,11 @@ kind of operationally that we had to add
 
 31
 00:01:11,280 --> 00:01:15,576
-in to align with our pentesting.
+in, to align with our pentesting.
 
 32
 00:01:15,600 --> 00:01:17,735
-So today I'm going to be going over
+Today I'm going to be going over
 
 33
 00:01:17,759 --> 00:01:19,415
@@ -172,7 +172,7 @@ And kind of in line with everything
 
 44
 00:01:45,600 --> 00:01:47,095
-that Sam was speaking about this
+that Sam [Smith, red.] was speaking about this
 
 45
 00:01:47,119 --> 00:01:49,415
@@ -564,7 +564,7 @@ event generation and signing as well.
 
 142
 00:05:31,360 --> 00:05:33,440
-So it understands bits of CSER and so
+So it understands bits of CESR and so
 
 143
 00:05:33,464 --> 00:05:36,615
@@ -1268,7 +1268,7 @@ path and the Argon2id function.
 
 318
 00:12:41,200 --> 00:12:44,375
-Okay, so this allows you to drive
+This allows you to drive
 
 319
 00:12:44,399 --> 00:12:48,296
@@ -1276,7 +1276,7 @@ keys, ed25519 keys specifically.
 
 320
 00:12:48,320 --> 00:12:50,615
-So at index zero, you get your first
+At index zero, you get your first
 
 321
 00:12:50,639 --> 00:12:52,696
@@ -1492,7 +1492,7 @@ just explained it, but I needed to hear
 
 374
 00:14:53,440 --> 00:14:56,856
-it again. Is what who's
+it again. Is who's
 
 375
 00:14:56,880 --> 00:14:59,016
@@ -1872,7 +1872,7 @@ you might be able to see that work
 
 469
 00:18:41,360 --> 00:18:44,216
-is a link to the markdown file from Phil
+is a link to the markdown file from Phil [Feairheller, red.]
 
 470
 00:18:44,240 --> 00:18:46,376
@@ -2024,7 +2024,7 @@ It's what is used by SPAC and the
 
 507
 00:20:18,720 --> 00:20:21,256
-trust spanning protocol. So Phil (Feairheller, red)
+trust spanning protocol. So Phil [Feairheller, red.]
 
 508
 00:20:21,280 --> 00:20:23,736
@@ -2044,11 +2044,11 @@ something like this. I won't
 
 512
 00:20:31,840 --> 00:20:33,256
-spend too long on this, but it's kind of
+spend too long on this, but it's 
 
 513
 00:20:33,280 --> 00:20:35,576
-like it is designed with SAM. It's
+designed with Sam [Smith, red.]. It's
 
 514
 00:20:35,600 --> 00:20:39,576
@@ -2080,7 +2080,7 @@ We serialize it into a HTTP string
 
 521
 00:20:57,919 --> 00:21:01,416
-and then we in we do a cryptobox seal
+and then we do a cryptobox seal
 
 522
 00:21:01,440 --> 00:21:03,816
@@ -2260,7 +2260,7 @@ be how you use KERIA to interact with
 
 566
 00:22:50,240 --> 00:22:52,775
-the rest of the world. So up until
+the rest of the world. Up until
 
 567
 00:22:52,799 --> 00:22:54,696
@@ -2275,1863 +2275,1858 @@ wallet and onboarded onto your cloud
 agent and done nothing else.
 
 570
-00:22:59,520 --> 00:23:01,736
-So,
+00:22:59,520 --> 00:23:05,416
+The first thing you'll probably do
 
 571
-00:23:01,760 --> 00:23:05,416
-the first thing you probably do
-
-572
 00:23:05,440 --> 00:23:08,056
 is create an identifier, maybe resolve a
 
-573
+572
 00:23:08,080 --> 00:23:09,096
-newbie, but probably create an
+OOBI, but probably create an
 
-574
+573
 00:23:09,120 --> 00:23:12,135
 identifier. In the codebase these are
 
-575
+574
 00:23:12,159 --> 00:23:15,176
 known as managed AIDs because the client
 
-576
+575
 00:23:15,200 --> 00:23:17,496
 AID we created earlier is only used
 
-577
+576
 00:23:17,520 --> 00:23:20,056
 indirect mode to talk to your agent.
 
-578
+577
 00:23:20,080 --> 00:23:21,576
-Okay, it's only for that communication.
+It's only for that communication.
 
-579
+578
 00:23:21,600 --> 00:23:23,655
 It's not used to receive credentials,
 
+579
+00:23:23,679 --> 00:23:29,096
+issue credentials or anything else.
+
 580
-00:23:23,679 --> 00:23:25,736
-issue credentials or anything
+00:23:29,120 --> 00:23:33,416
+We can use the '/' identifiers endpoint on
 
 581
-00:23:25,760 --> 00:23:29,096
-else; okay? So
+00:23:33,440 --> 00:23:37,015
+KERIA to create managed AIDs. And
 
 582
-00:23:29,120 --> 00:23:33,416
-we can use the '/' identifiers endpoint on
+00:23:37,039 --> 00:23:39,015
+these are, 
 
 583
-00:23:33,440 --> 00:23:37,015
-KERIA to create managed AIDs. Okay. And
+00:23:39,039 --> 00:23:40,535
+well, they may be private or public
 
 584
-00:23:37,039 --> 00:23:39,015
-these are
+00:23:40,559 --> 00:23:41,816
+bur these are AIDs you would use to interact
 
 585
-00:23:39,039 --> 00:23:40,535
-well they may be private or public but
-
-586
-00:23:40,559 --> 00:23:41,816
-these are AIDs you would use to interact
-
-587
 00:23:41,840 --> 00:23:42,936
 with the rest of the world or use in
 
-588
+586
 00:23:42,960 --> 00:23:44,696
 your use case, they're more user facing.
 
-589
+587
 00:23:44,720 --> 00:23:47,736
-Okay. But once again the keys remain
+But once again the keys remain
 
-590
+588
 00:23:47,760 --> 00:23:51,496
 at the edge. Now this is a bit
 
-591
+589
 00:23:51,520 --> 00:23:54,296
 technical but for those of you
 
-592
+590
 00:23:54,320 --> 00:23:58,135
 who know KERIPy: In KERIPy you
 
-593
+591
 00:23:58,159 --> 00:24:02,535
 have a 'Hab', which represents an AID and
 
-594
+592
 00:24:02,559 --> 00:24:04,456
 you can incept a Hab and you can sign
 
-595
+593
 00:24:04,480 --> 00:24:05,816
 with a Hab and so forth. You can have
 
-596
+594
 00:24:05,840 --> 00:24:08,296
 group Habs. Also within KERIPy
 
-597
+595
 00:24:08,320 --> 00:24:09,895
 there are Signify Habs and Signify group
 
-598
+596
 00:24:09,919 --> 00:24:11,895
 Habs. It's just so the code knows that
 
-599
+597
 00:24:11,919 --> 00:24:14,296
 the keys are not readily available. The
 
-600
+598
 00:24:14,320 --> 00:24:16,616
 keys exist somewhere else at the edge.
 
-601
+599
 00:24:16,640 --> 00:24:18,376
 So if you see that in the code that's
 
-602
+600
 00:24:18,400 --> 00:24:22,296
 why it exists. Now,
 
-603
+601
 00:24:22,320 --> 00:24:23,895
 you might be asking where did the keys
 
-604
+602
 00:24:23,919 --> 00:24:25,843
 come from?
 
-605
+603
 00:24:25,867 --> 00:24:31,663
 Maybe a naive approach would be to use
 
-606
+604
 00:24:31,687 --> 00:24:32,616
 the passcode that we used to create the
 
-607
+605
 00:24:32,640 --> 00:24:36,856
 client AID and derive more keys.
 
-608
+606
 00:24:36,880 --> 00:24:39,255
 That would be problematic because of
 
-609
+607
 00:24:39,280 --> 00:24:42,135
 passcode rotation and it also would go
 
-610
+608
 00:24:42,159 --> 00:24:43,655
 against what Sam said this morning of
 
-611
+609
 00:24:43,679 --> 00:24:45,336
 being able to use just your KEL to
 
-612
+610
 00:24:45,360 --> 00:24:48,376
 derive exactly which sequence number
 
-613
+611
 00:24:48,400 --> 00:24:51,976
 on the derivation paths is required.
 
-614
+612
 00:24:52,000 --> 00:24:55,416
 So actually for
 
-615
+613
 00:24:55,440 --> 00:24:57,736
 for each new AID you actually create
 
-616
+614
 00:24:57,760 --> 00:24:59,816
 a new salt. They're fully
 
-617
+615
 00:24:59,840 --> 00:25:01,416
 separated.
 
-618
+616
 00:25:01,440 --> 00:25:03,736
 It's of course randomly generated by
 
-619
+617
 00:25:03,760 --> 00:25:07,496
 Signify at the edge. And it's stored
 
-620
+618
 00:25:07,520 --> 00:25:09,655
 encrypted on KERIA. This is the default
 
-621
+619
 00:25:09,679 --> 00:25:14,216
 mode in Signify.
 
-622
+620
 00:25:14,240 --> 00:25:16,480
 It's of course encrypted with the client
 
-623
+621
 00:25:18,047 --> 00:25:19,255
 AID. And you have a salty keeper
 
-624
+622
 00:25:19,279 --> 00:25:21,176
 which tracks
 
-625
+623
 00:25:21,200 --> 00:25:23,336
 you know, for this AID, what encrypted
 
-626
+624
 00:25:23,360 --> 00:25:25,176
 salt does it have, what derivation pad
 
-627
+625
 00:25:25,200 --> 00:25:26,696
 is it currently on, how many rotation
 
-628
+626
 00:25:26,720 --> 00:25:30,535
 events is done, and so forth.
 
-629
+627
 00:25:30,559 --> 00:25:32,775
 The main reason you would want to split
 
-630
+628
 00:25:32,800 --> 00:25:34,775
 these is if you did a passcode rotation
 
-631
+629
 00:25:34,799 --> 00:25:36,696
 and your one passcode had all your keys
 
-632
+630
 00:25:36,720 --> 00:25:38,616
 for all of your identifiers when you
 
-633
+631
 00:25:38,640 --> 00:25:40,135
 want to rotate that passcode for
 
-634
+632
 00:25:40,159 --> 00:25:42,216
 whatever reason, you would have to issue
 
-635
+633
 00:25:42,240 --> 00:25:44,696
 a rotation event for every single AID.
 
-636
+634
 00:25:44,720 --> 00:25:46,775
 And that would get very cumbersome as
 
-637
+635
 00:25:46,799 --> 00:25:48,616
 well if you also had group AIDs. You had
 
-638
+636
 00:25:48,640 --> 00:25:50,296
 to coordinate that. So this way there's
 
-639
+637
 00:25:50,320 --> 00:25:54,230
 a kind of a clean separation kept from them.
 
-640
+638
 00:25:54,469 --> 00:26:00,017
 You can also .., I think Phil had this in
 
-641
+639
 00:26:00,851 --> 00:26:02,216
 his last presentation as
 
-642
+640
 00:26:02,240 --> 00:26:04,775
 well, you can also use' Randy', which
 
-643
+641
 00:26:04,799 --> 00:26:06,535
 means, just instead of a salt, which is
 
-644
+642
 00:26:06,559 --> 00:26:09,176
 used to be stretched with argon 2 ID
 
-645
+643
 00:26:09,200 --> 00:26:10,936
 to generate keys, you can just randomly
 
-646
+644
 00:26:10,960 --> 00:26:12,856
 generate keys directly and store them
 
-647
+645
 00:26:12,880 --> 00:26:16,616
 encrypted in KERIA; same idea.
 
-648
+646
 00:26:16,640 --> 00:26:18,056
 this is kind of goes back to that first
 
-649
+647
 00:26:18,080 --> 00:26:19,976
 slide I had where from the spec that
 
-650
+648
 00:26:20,000 --> 00:26:22,135
 your keypair storage can be done
 
-651
+649
 00:26:22,159 --> 00:26:26,376
 by your agent.
 
-652
+650
 00:26:26,400 --> 00:26:29,848
 Now in case you don't want to sign with
 
-653
+651
 00:26:29,872 --> 00:26:30,400
 Signify.
 
-654
+652
 00:26:48,870 --> 00:26:50,769
 In case you don't want to sign
 
-655
+653
 00:26:50,793 --> 00:26:52,456
 with Signify or expose your salt
 
-656
+654
 00:26:52,480 --> 00:26:54,135
 over the internet like that, you can
 
-657
+655
 00:26:54,159 --> 00:26:56,775
 also use an external source for
 
-658
+656
 00:26:56,799 --> 00:27:01,255
 signing such as a HSM. This, I
 
-659
+657
 00:27:01,279 --> 00:27:03,176
 believe there's a current open
 
-660
+658
 00:27:03,200 --> 00:27:06,135
 PR in the community to fix that on
 
-661
+659
 00:27:06,159 --> 00:27:09,736
 KERIA. But you can use HSMs and
 
-662
+660
 00:27:09,760 --> 00:27:12,936
 directly sign all of your key events
 
-663
+661
 00:27:12,960 --> 00:27:15,655
 externally.
 
-664
+662
 00:27:15,679 --> 00:27:17,576
 Now once you've created an identifier so
 
-665
+663
 00:27:17,600 --> 00:27:19,496
 you would generate that
 
-666
+664
 00:27:19,520 --> 00:27:21,255
 inception event generate the salt
 
-667
+665
 00:27:21,279 --> 00:27:24,775
 whatever post that to KERIA,
 
-668
+666
 00:27:24,799 --> 00:27:25,895
 to communicate with the rest of the
 
-669
+667
 00:27:25,919 --> 00:27:27,096
 world you would need to generate an
 
-670
+668
 00:27:27,120 --> 00:27:29,336
 OOBI. So each managed ID can now set up
 
-671
+669
 00:27:29,360 --> 00:27:31,496
 their OOBI. This is probably going to
 
-672
+670
 00:27:31,520 --> 00:27:35,096
 get a bit technical now but
 
-673
+671
 00:27:35,120 --> 00:27:36,936
 if you know how OOBIs work this will
 
-674
+672
 00:27:36,960 --> 00:27:38,056
 make sense. If you don't, this is
 
-675
+673
 00:27:38,080 --> 00:27:41,496
 probably too much information, but in
 
-676
+674
 00:27:41,520 --> 00:27:44,535
 KERI nodes or whatever can have
 
-677
+675
 00:27:44,559 --> 00:27:46,376
 various roles in the system such as
 
-678
+676
 00:27:46,400 --> 00:27:49,816
 witness, watcher, agent, controller.
 
-679
+677
 00:27:49,840 --> 00:27:52,135
 If you were to build a wallet with just
 
-680
+678
 00:27:52,159 --> 00:27:54,936
 just KERIPy and not have the split of
 
-681
+679
 00:27:54,960 --> 00:27:57,336
 controller, agent, your OOBI would look
 
-682
+680
 00:27:57,360 --> 00:27:59,576
 something like, you know,  /OOBI,
 
-683
+681
 00:27:59,600 --> 00:28:01,496
 your AID/controller.
 
-684
+682
 00:28:01,520 --> 00:28:03,336
 Okay, you have the controller role by
 
-685
+683
 00:28:03,360 --> 00:28:06,535
 default over your AID. But there are
 
-686
+684
 00:28:06,559 --> 00:28:10,216
 other roles in the ecosystem.
 
-687
+685
 00:28:10,240 --> 00:28:14,296
 One is Agent of course. So you may
 
-688
+686
 00:28:14,320 --> 00:28:17,976
 As the controller of your managed AID
 
-689
+687
 00:28:18,000 --> 00:28:21,976
 authorize your agent in KERIA to
 
-690
+688
 00:28:22,000 --> 00:28:24,696
 act on your behalf in the agent role
 
-691
+689
 00:28:24,720 --> 00:28:26,456
 essentially. So this indicates to
 
-692
+690
 00:28:26,480 --> 00:28:28,135
 everyone else in the world if you want
 
-693
+691
 00:28:28,159 --> 00:28:31,096
 to talk to me, direct all traffic to
 
-694
+692
 00:28:31,120 --> 00:28:33,816
 the agent. The agent will handle that
 
-695
+693
 00:28:33,840 --> 00:28:35,015
 essentially and this is called an
 
-696
+694
 00:28:35,039 --> 00:28:39,976
 endroll authorization.
 
-697
+695
 00:28:40,000 --> 00:28:42,827
 Again, this is a bit low level, but the
 
-698
+696
 00:28:42,851 --> 00:28:45,655
 agent itself needs to say where its
 
-699
+697
 00:28:45,679 --> 00:28:48,535
 endpoint is which is the two 3902 port.
 
-700
+698
 00:28:48,559 --> 00:28:50,456
 it needs to create a signature over that
 
-701
+699
 00:28:50,480 --> 00:28:55,655
 to commit to say "I'm at this URL" Veridian.id,
 
-702
+700
 00:28:55,679 --> 00:28:58,216
 or whatever. That's called a location
 
-703
+701
 00:28:58,240 --> 00:29:01,895
 scheme in the code
 
-704
+702
 00:29:01,919 --> 00:29:07,176
 And additionally
 
-705
+703
 00:29:07,200 --> 00:29:08,787
 another thing that came out of our
 
-706
+704
 00:29:08,811 --> 00:29:10,375
 pentest was actually securing the
 
-707
+705
 00:29:10,399 --> 00:29:11,816
 communication not just between the
 
-708
+706
 00:29:11,840 --> 00:29:14,456
 Signify client and the agent but
 
-709
+707
 00:29:14,480 --> 00:29:17,655
 agent to agent.
 
-710
+708
 00:29:17,679 --> 00:29:21,015
 What we've implemented on our fork is
 
-711
+709
 00:29:21,039 --> 00:29:23,176
 we've added full ESSR support that's
 
-712
+710
 00:29:23,200 --> 00:29:25,255
 also in line with SPAC and the trust
 
-713
+711
 00:29:25,279 --> 00:29:27,255
 banning protocol. So all of the CESR
 
-714
+712
 00:29:27,279 --> 00:29:31,655
 streams inbound and outbound
 
-715
+713
 00:29:31,679 --> 00:29:32,936
 essentially wrapped in the most basic
 
-716
+714
 00:29:32,960 --> 00:29:35,255
 form of the trust spanning protocol.
 
-717
+715
 00:29:35,279 --> 00:29:39,096
 The work for that in KERIPy I merged a
 
-718
+716
 00:29:39,120 --> 00:29:41,496
 while ago with Phil that's done. The
 
-719
+717
 00:29:41,520 --> 00:29:43,176
 KERI work I still need to open a PR
 
-720
+718
 00:29:43,200 --> 00:29:45,576
 for but we'll be contributing that
 
-721
+719
 00:29:45,600 --> 00:29:50,775
 back soon. And finally, this is
 
-722
+720
 00:29:50,799 --> 00:29:52,856
 probably the most technical part, but
 
-723
+721
 00:29:52,880 --> 00:29:54,535
 this is only if you understand OOBIs. If
 
-724
+722
 00:29:54,559 --> 00:29:56,375
 you don't, then it's probably too
 
-725
+723
 00:29:56,399 --> 00:29:58,296
 much, but just to kind of show the
 
-726
+724
 00:29:58,320 --> 00:29:59,976
 relationship between all of the AIDs
 
-727
+725
 00:30:00,000 --> 00:30:03,176
 that we mentioned today. There's
 
-728
+726
 00:30:03,200 --> 00:30:07,096
 kind of six slots here. The top
 
-729
+727
 00:30:07,120 --> 00:30:10,375
 one is a managed ID I created using the
 
-730
+728
 00:30:10,399 --> 00:30:14,135
 admin endpoint. This is its key
 
-731
+729
 00:30:14,159 --> 00:30:17,576
 event log. So it ends in two 'z's
 
-732
+730
 00:30:17,600 --> 00:30:21,096
 that's its AID. It has the three demo
 
-733
+731
 00:30:21,120 --> 00:30:24,775
 witnesses from KERIPy. These are
 
-734
+732
 00:30:24,799 --> 00:30:28,056
 the signatures and the witness receipts.
 
-735
+733
 00:30:28,080 --> 00:30:31,655
 If you look at the very bottom I give
 
-736
+734
 00:30:31,679 --> 00:30:34,216
 the end-roll authorization
 
-737
+735
 00:30:34,240 --> 00:30:36,216
 from
 
-738
+736
 00:30:36,240 --> 00:30:39,655
 my controllerAID that ends in two 'z's
 
-739
+737
 00:30:39,679 --> 00:30:42,696
 to this endpoint AID that ends in 'XA'. I
 
-740
+738
 00:30:42,720 --> 00:30:46,775
 gave it the role of agent.
 
-741
+739
 00:30:46,799 --> 00:30:50,775
 So this over here, see the cursor?, Yeah,
 
-742
+740
 00:30:50,799 --> 00:30:53,736
 This is my managed AID. This is my
 
-743
+741
 00:30:53,760 --> 00:30:57,416
 cloud agent 'XA'.
 
-744
+742
 00:30:57,440 --> 00:31:00,456
 I can also see that my cloud agent here.
 
-745
+743
 00:31:00,480 --> 00:31:03,176
 It signed a location scheme to say you
 
-746
+744
 00:31:03,200 --> 00:31:05,576
 can find me at this URL and no other
 
-747
+745
 00:31:05,600 --> 00:31:07,576
 URL. That's how OOBIs work. It's very
 
-748
+746
 00:31:07,600 --> 00:31:12,216
 very particular.
 
-749
+747
 00:31:12,240 --> 00:31:17,380
-and if you look at the
+If you look at the
 
-750
+748
 00:31:17,404 --> 00:31:19,110
 one up
 
-751
-00:31:21,190 --> 00:31:25,895
+749
+00:31:21,190 --> 00:31:23,530
 here, this is the Key Event Log of the
+
+750
+00:31:23,554 --> 00:31:25,895
 agent. You can see it's a delegated AID.
 
-752
+751
 00:31:25,919 --> 00:31:28,375
 It's delegated to this AID here, which
 
-753
+752
 00:31:28,399 --> 00:31:30,936
 is my client AID from the initial
 
-754
+753
 00:31:30,960 --> 00:31:33,816
 sequence diagram. The second one is my
 
-755
+754
 00:31:33,840 --> 00:31:35,336
 client AID KEL. And here's the
 
-756
+755
 00:31:35,360 --> 00:31:36,696
 interaction event that approved the
 
-757
+756
 00:31:36,720 --> 00:31:38,296
 delegation. So you can actually look in
 
-758
+757
 00:31:38,320 --> 00:31:39,895
 the KEL and see the full kind of
 
-759
+758
 00:31:39,919 --> 00:31:42,296
 sequence of what I mentioned end to end
 
-760
+759
 00:31:42,320 --> 00:31:46,535
 essentially. But yeah, that's
 
-761
+760
 00:31:46,559 --> 00:31:52,050
 all I had. I think I have seven more minutes
 
-762
+761
 00:31:52,074 --> 00:31:55,987
 So I will very quickly go back to this.
 
-763
+762
 00:32:06,342 --> 00:32:08,375
 When we created the client AID, it had
 
-764
+763
 00:32:08,399 --> 00:32:11,176
 a signing key and a rotation key
 
-765
+764
 00:32:11,200 --> 00:32:14,216
 on sequence number 0.
 
-766
+765
 00:32:14,240 --> 00:32:16,056
 If you were to drive more keys and do
 
-767
+766
 00:32:16,080 --> 00:32:18,296
 a rotation event on that same passcode,
 
-768
+767
 00:32:18,320 --> 00:32:19,576
 it would just look like a normal
 
-769
+768
 00:32:19,600 --> 00:32:21,816
 rotation event where the next key
 
-770
+769
 00:32:21,840 --> 00:32:24,135
 becomes the current key and there
 
-771
+770
 00:32:24,159 --> 00:32:25,895
 would be a new next key that's blinded
 
-772
+771
 00:32:25,919 --> 00:32:28,296
 for postquantum security. But if you
 
-773
+772
 00:32:28,320 --> 00:32:32,056
 want to switch from an old passcode to a
 
-774
+773
 00:32:32,080 --> 00:32:34,696
 new passcode, okay, in such a way that
 
-775
+774
 00:32:34,720 --> 00:32:35,816
 you don't need to remember the old
 
-776
+775
 00:32:35,840 --> 00:32:38,216
 passcode when you're done and you don't
 
-777
+776
 00:32:38,240 --> 00:32:40,056
 want to because someone's going to
 
-778
+777
 00:32:40,080 --> 00:32:42,056
 compromise it,
 
-779
+778
 00:32:42,080 --> 00:32:44,375
 then you need to generate your new
 
-780
+779
 00:32:44,399 --> 00:32:47,015
 signing key and new rotation key on the
 
-781
+780
 00:32:47,039 --> 00:32:51,895
 new passcode. All right, so here's the
 
-782
+781
 00:32:51,919 --> 00:32:54,056
 rotation key hashed from the new
 
-783
+782
 00:32:54,080 --> 00:32:57,416
 passcode. Here's the one
 
-784
+783
 00:32:57,440 --> 00:33:00,216
 from the new passcode as well. And
 
-785
+784
 00:33:00,240 --> 00:33:01,895
 here's the unblinded one from the old
 
-786
+785
 00:33:01,919 --> 00:33:04,856
 passcode. So if you issue a rotation
 
-787
+786
 00:33:04,880 --> 00:33:07,576
 event, you have to unblind a threshold
 
-788
+787
 00:33:07,600 --> 00:33:09,576
 amount of next keys from the previous
 
-789
+788
 00:33:09,600 --> 00:33:11,816
 event. So this one from the old passcode
 
-790
+789
 00:33:11,840 --> 00:33:13,976
 has to be here. Otherwise, it's not a
 
-791
+790
 00:33:14,000 --> 00:33:16,616
-valid rotation (red.) event. And this or a
+valid rotation [red.] event. And this or a
 
-792
+791
 00:33:16,640 --> 00:33:18,296
 rotation event, sorry. And this rotation
 
-793
+792
 00:33:18,320 --> 00:33:20,216
 event has to be signed by both of these
 
-794
+793
 00:33:20,240 --> 00:33:23,655
 keys. Okay? Because each new event
 
-795
+794
 00:33:23,679 --> 00:33:25,336
 has to be signed by a threshold number
 
-796
+795
 00:33:25,360 --> 00:33:30,135
 of new signing keys. And it also
 
-797
+796
 00:33:30,159 --> 00:33:32,375
 needs to be signed by a threshold amount
 
-798
+797
 00:33:32,399 --> 00:33:36,216
 of previous rotation keys. So,
 
-799
+798
 00:33:36,240 --> 00:33:37,255
 that's why it needs to be signed with
 
-800
+799
 00:33:37,279 --> 00:33:41,096
 both of these. And the trick here
 
-801
+800
 00:33:41,120 --> 00:33:43,655
 is if you look at the threshold, the
 
-802
+801
 00:33:43,679 --> 00:33:46,135
 threshold is splitting away 1 and 0.
 
-803
+802
 00:33:46,159 --> 00:33:49,096
 So the old passcode even though
 
-804
+803
 00:33:49,120 --> 00:33:51,015
 the key is inside the rotation event, it
 
-805
+804
 00:33:51,039 --> 00:33:53,176
 has no authority from this point on. It
 
-806
+805
 00:33:53,200 --> 00:33:55,336
 has a weight of 0. It can do nothing
 
-807
+806
 00:33:55,360 --> 00:33:57,336
 essentially. But it just fits the
 
-808
+807
 00:33:57,360 --> 00:33:59,495
 validation logic of rotation events but
 
-809
+808
 00:33:59,519 --> 00:34:01,495
 completely gets rid of the old passcode.
 
-810
+809
 00:34:01,519 --> 00:34:03,576
 Okay. So it's kind of a it's a partial
 
-811
+810
 00:34:03,600 --> 00:34:06,135
 rotation, essentially, for a single-sig identifier,
 
-812
+811
 00:34:06,159 --> 00:34:08,696
 which is kind of unique.
 
-813
+812
 00:34:08,720 --> 00:34:13,416
 Yeah that's it. Any questions?
 
-814
+813
 00:34:13,440 --> 00:34:14,855
 Have you mentioned anything
 
-815
+814
 00:34:14,879 --> 00:34:18,216
 about retiring an AID? Could you discuss
 
-816
+815
 00:34:18,240 --> 00:34:20,936
 that if that's okay?
 
-817
+816
 00:34:20,960 --> 00:34:23,496
 Yeah, I mean it's not really
 
-818
+817
 00:34:23,520 --> 00:34:28,869
 specific to KERI and Signify but
 
-819
+818
 00:34:31,510 --> 00:34:32,311
 If you want to
 
-820
+819
 00:34:32,335 --> 00:34:35,035
 abandon an AID, as Sam (Smith, red.) calls it,
 
-821
+820
 00:34:35,040 --> 00:34:38,855
 You have to do a rotation event which
 
-822
+821
 00:34:38,879 --> 00:34:40,776
 just sets all the thresholds to zero I
 
-823
+822
 00:34:40,800 --> 00:34:42,855
 believe. So at that point there's no
 
-824
+823
 00:34:42,879 --> 00:34:45,575
 more signing authority of also of the
 
-825
+824
 00:34:45,599 --> 00:34:47,256
 the signing keys and the rotation
 
-826
+825
 00:34:47,280 --> 00:34:49,016
 keys essentially. So it's just dead. It
 
-827
+826
 00:34:49,040 --> 00:34:52,296
 can't do anything. It's called
 
-828
+827
 00:34:52,320 --> 00:34:54,216
 abandoned at that point. But I don't
 
-829
+828
 00:34:54,240 --> 00:34:55,895
 believe anyone's done abandoned AIDs.
 
-830
+829
 00:34:55,919 --> 00:34:57,575
 It's probably in KERI core and KERIPy
 
-831
+830
 00:34:57,599 --> 00:35:03,349
 but it's not exposed in Signify.
 
-832
+831
 00:35:05,589 --> 00:35:07,510
-So I have some questions that may
+– I have some questions that may
 
-833
+832
 00:35:07,534 --> 00:35:09,256
 be tough for you to answer and
 
-834
+833
 00:35:09,280 --> 00:35:11,416
 because I've struggled with these over a
 
-835
+834
 00:35:11,440 --> 00:35:13,416
 long period of time looking for an
 
-836
+835
 00:35:13,440 --> 00:35:17,335
 answer. So the one might be simple
 
-837
+836
 00:35:17,359 --> 00:35:19,256
 the first one might be simple is what
 
-838
+837
 00:35:19,280 --> 00:35:23,815
 could work offline in a wallet without
 
-839
+838
 00:35:23,839 --> 00:35:27,095
 the agent being online.
 
-840
+839
 00:35:27,119 --> 00:35:29,656
 You know can you sign things?
 
-841
+840
 00:35:29,680 --> 00:35:31,880
 Can you issue credentials?
 
-842
+841
 00:35:31,904 --> 00:35:36,793
 In the current model? No. You could sign them
 
-843
+842
 00:35:37,327 --> 00:35:38,626
 and cue them up, but they wouldn't
 
-844
+843
 00:35:38,650 --> 00:35:39,656
 actually be effective on the network.
 
-845
+844
 00:35:39,680 --> 00:35:42,055
 They need to be on the KEL or TEL or
 
-846
+845
 00:35:42,079 --> 00:35:43,815
 witnesses, etc.
 
-847
+846
 00:35:43,839 --> 00:35:43,996
 Yeah.
 
-848
+847
 00:35:44,160 --> 00:35:46,936
 So, you need some infrastructure.
 
-849
+848
 00:35:46,960 --> 00:35:49,416
 But you might be able to prove ..,
 
-850
+849
 00:35:49,440 --> 00:35:51,256
 you might be able to sign something, but
 
-851
+850
 00:35:51,280 --> 00:35:54,376
 it couldn't be logged
 
-852
+851
 00:35:54,400 --> 00:35:55,815
 anywhere. Could you sign
 
-853
+852
 00:35:55,839 --> 00:35:56,536
 something, right?
 
-854
+853
 00:35:56,560 --> 00:35:58,055
 You could sign something. Yeah.
 
-855
+854
 00:35:58,079 --> 00:35:59,896
 Okay. And if you're using direct mode
 
-856
+855
 00:35:59,920 --> 00:36:01,095
 KERI where there's no witnesses and
 
-857
+856
 00:36:01,119 --> 00:36:02,696
 watchers, then you don't need the
 
-858
+857
 00:36:02,720 --> 00:36:05,016
 infrastructure level. So you
 
-859
+858
 00:36:05,040 --> 00:36:07,016
 you could sign something and send it.
 
-860
+859
 00:36:07,040 --> 00:36:07,496
 Yeah.
 
-861
+860
 00:36:07,520 --> 00:36:09,656
 Okay. So one of one of my concerns with
 
-862
+861
 00:36:09,680 --> 00:36:12,536
 KERIA in general is that to my
 
-863
+862
 00:36:12,560 --> 00:36:15,815
 knowledge it doesn't support high
 
-864
+863
 00:36:15,839 --> 00:36:18,136
 availability and disaster recovery kind
 
-865
+864
 00:36:18,160 --> 00:36:19,256
 of modes
 
-866
+865
 00:36:19,280 --> 00:36:21,256
 today. Right. So if the hard disk
 
-867
+866
 00:36:21,280 --> 00:36:23,896
 crashes or sorry: solid state disc drive
 
-868
+867
 00:36:23,920 --> 00:36:27,256
-crashes
+crashes,
 
-869
+868
 00:36:27,280 --> 00:36:31,165
 you're out of luck on your KERI
 
-870
+869
 00:36:31,189 --> 00:36:33,976
 service. Is that correct? And
 
-871
+870
 00:36:34,000 --> 00:36:37,095
 what is the roadmap, if any to
 
-872
+871
 00:36:37,119 --> 00:36:40,136
 make it high available or
 
-873
+872
 00:36:40,160 --> 00:36:43,095
 disaster recovery of KERIA
 
-874
+873
 00:36:43,119 --> 00:36:45,095
 I have a whole talk about that tomorrow
 
-875
+874
 00:36:45,119 --> 00:36:45,416
 about the
 
-876
+875
 00:36:45,440 --> 00:36:48,776
 road map. – Oh awesome. I know that's a
 
-877
+876
 00:36:48,800 --> 00:36:51,335
 tough question, but it's an
 
-878
+877
 00:36:51,359 --> 00:36:53,976
 important one, I think.
 
-879
+878
 00:36:54,000 --> 00:36:56,696
 And then there's a similar question is
 
-880
+879
 00:36:58,439 --> 00:36:59,976
 Sort of with vendor lock in. So you
 
-881
+880
 00:37:00,000 --> 00:37:04,616
 host your own KERIA or use
 
-882
+881
 00:37:04,640 --> 00:37:07,016
 another one from one of the
 
-883
+882
 00:37:07,040 --> 00:37:10,776
 QVIs or providers.  And you
 
-884
+883
 00:37:10,800 --> 00:37:13,256
 have some vendor lock in at that point,
 
-885
+884
 00:37:13,280 --> 00:37:15,976
 what can you do to move to another KERIA,
 
-886
+885
 00:37:16,000 --> 00:37:18,616
 hosted by someone else? Has that been
 
-887
+886
 00:37:18,640 --> 00:37:20,536
 discussed?
 
-888
+887
 00:37:20,560 --> 00:37:22,136
 Again, that's something that's more on
 
-889
+888
 00:37:22,160 --> 00:37:24,216
 the road map.
 
-890
+889
 00:37:24,240 --> 00:37:25,815
 Like
 
-891
+890
 00:37:25,839 --> 00:37:27,575
 you can do that. You have control of all
 
-892
+891
 00:37:27,599 --> 00:37:29,496
 the keys. More of a problem would be
 
-893
+892
 00:37:29,520 --> 00:37:32,696
 the data. So, you would have to have,
 
-894
+893
 00:37:32,720 --> 00:37:34,055
 the previous provider would
 
-895
+894
 00:37:34,079 --> 00:37:36,216
 need to be okay with moving that unless
 
-896
+895
 00:37:36,240 --> 00:37:38,696
 you're going to sync down to Signify,
 
-897
+896
 00:37:38,720 --> 00:37:40,696
 but it's not all available
 
-898
+897
 00:37:40,720 --> 00:37:44,296
 on the KERI interfaces, right?
 
-899
+898
 00:37:44,320 --> 00:37:45,496
 Yeah. But you could make it available,
 
-900
+899
 00:37:45,520 --> 00:37:46,936
 right? So, that doesn't exist yet. Yeah.
 
-901
+900
 00:37:46,960 --> 00:37:48,856
 what you're exact asking for it.
 
-902
+901
 00:37:48,880 --> 00:37:49,256
 Okay.
 
-903
+902
 00:37:49,280 --> 00:37:49,815
 Yeah.
 
-904
+903
 00:37:49,839 --> 00:37:50,136
 Okay.
 
-905
+904
 00:37:50,160 --> 00:37:51,736
 Yeah. But it is something that
 
-906
+905
 00:37:51,760 --> 00:37:54,616
 we've been thinking about. It's just
 
-907
+906
 00:37:54,640 --> 00:37:57,976
 again on the road map. One problem I
 
-908
+907
 00:37:58,000 --> 00:38:00,376
 have with the
 
-909
+908
 00:38:00,400 --> 00:38:03,016
 if it's
 
-910
+909
 00:38:03,040 --> 00:38:05,016
 with this
 
-911
+910
 00:38:05,040 --> 00:38:06,856
 Is if you lose your KERI instance,
 
-912
+911
 00:38:06,880 --> 00:38:10,536
 you lose all of your AIDs.
 
-913
+912
 00:38:10,560 --> 00:38:12,136
 The passcode that you have, that
 
-914
+913
 00:38:12,160 --> 00:38:13,976
 you're entering only gives you access to
 
-915
+914
 00:38:14,000 --> 00:38:16,296
-KERI essentially. So if you lose
+KERIA essentially. So if you lose
 
-916
+915
 00:38:16,320 --> 00:38:18,376
 your encrypted salts, you've lost your AID.
 
-917
+916
 00:38:18,400 --> 00:38:19,976
 I didn't realize that was
 
-918
+917
 00:38:20,000 --> 00:38:22,856
 that those things were
 
-919
+918
 00:38:22,880 --> 00:38:25,976
-"salty". I thought those were the
+"salty". I thought those were .., 
+
+919
+00:38:26,000 --> 00:38:28,376
+the encryption key was also derived from 
 
 920
-00:38:26,000 --> 00:38:28,376
-encryption key was also derived from the
+00:38:28,400 --> 00:38:29,815
+the passcode, but no, it's
 
 921
-00:38:28,400 --> 00:38:29,815
-passcode, but no, it's
-
-922
 00:38:29,839 --> 00:38:32,456
 the encryption key is, but having the
 
-923
+922
 00:38:32,480 --> 00:38:35,736
 actual cipher text to decrypt,
 
-924
+923
 00:38:35,760 --> 00:38:38,856
 it's stored on KERIA. So you do use
 
-925
+924
 00:38:38,880 --> 00:38:41,335
 your client AID. Oh, you use using
 
-926
+925
 00:38:41,359 --> 00:38:44,296
 asymmetric encryption or symmetric
 
-927
+926
 00:38:44,320 --> 00:38:45,416
 encryption.
 
-928
+927
 00:38:45,440 --> 00:38:46,456
 Asymmetric.
 
-929
+928
 00:38:46,480 --> 00:38:46,696
 Oh,
 
-930
+929
 00:38:46,720 --> 00:38:48,055
 it doesn't need to be fast. Okay. It's
 
-931
+930
 00:38:48,079 --> 00:38:49,976
 just salts,
 
-932
+931
 00:38:50,000 --> 00:38:52,936
 I believe. Anyhow, but these are
 
-933
+932
 00:38:52,960 --> 00:38:54,296
 stored encrypted on KERIA. So, if your
 
-934
+933
 00:38:54,320 --> 00:38:57,256
 KERIA provider went .., disappeared,
 
-935
+934
 00:38:57,280 --> 00:38:58,936
 you've lost all your AIDs, unless you
 
-936
+935
 00:38:58,960 --> 00:38:59,656
 have backups to these.
 
-937
+936
 00:38:59,680 --> 00:39:00,296
 Yeah.
 
-938
+937
 00:39:00,320 --> 00:39:04,136
 the combination of .., without
 
-939
+938
 00:39:04,160 --> 00:39:06,456
 redundancy of data,
 
-940
+939
 00:39:06,480 --> 00:39:09,416
 ideally across regions, and so forth, and
 
-941
+940
 00:39:09,440 --> 00:39:11,095
 without this recovery, it really
 
-942
+941
 00:39:11,119 --> 00:39:13,656
 makes KERIA vulnerable in production
 
-943
+942
 00:39:13,680 --> 00:39:14,216
 today.
 
-944
+943
 00:39:14,240 --> 00:39:15,359
 Yeah. Yeah. Well
 
-945
+944
 00:39:15,383 --> 00:39:16,856
 yeah there's the path
 
-946
+945
 00:39:16,880 --> 00:39:18,296
 to production is kind of long
 
-947
+946
 00:39:18,320 --> 00:39:20,536
 It's not really production ready at
 
-948
+947
 00:39:20,560 --> 00:39:23,416
 scale or at any trust level in my
 
-949
+948
 00:39:23,440 --> 00:39:25,496
 opinion ; is that a fair
 
-950
+949
 00:39:25,520 --> 00:39:27,335
 statement?
 
-951
+950
 00:39:27,359 --> 00:39:29,176
 It depends. I mean we've done
 
-952
+951
 00:39:29,200 --> 00:39:30,776
 mitigations on that. I mean for example
 
-953
+952
 00:39:30,800 --> 00:39:32,376
 these encrypted salts are also in our
 
-954
+953
 00:39:32,400 --> 00:39:33,575
 wallet
 
-955
+954
 00:39:33,599 --> 00:39:35,176
 and we have our own backups of those
 
-956
+955
 00:39:35,200 --> 00:39:36,296
 because
 
-957
+956
 00:39:36,320 --> 00:39:37,976
 I mean okay the data is one thing like
 
-958
+957
 00:39:38,000 --> 00:39:39,736
 if you lose all your ACDCs you can go
 
-959
+958
 00:39:39,760 --> 00:39:40,856
 back to the issuer. Okay.
 
-960
+959
 00:39:40,880 --> 00:39:41,176
 Right.
 
-961
+960
 00:39:41,200 --> 00:39:42,536
 The main thing you need to keep is your
 
-962
+961
 00:39:42,560 --> 00:39:43,896
 keys. You know,
 
-963
+962
 00:39:43,920 --> 00:39:45,416
 it would be annoying to have to do that
 
-964
+963
 00:39:45,440 --> 00:39:47,656
 and build it all back up, but
 
-965
+964
 00:39:47,680 --> 00:39:49,656
 And of course, our deployments have
 
-966
+965
 00:39:49,680 --> 00:39:51,736
 backups every few minutes.
 
-967
+966
 00:39:51,760 --> 00:39:53,736
 And I know you're in on the same
 
-968
+967
 00:39:53,760 --> 00:39:55,656
 channel, but just for everyone's ears,
 
-969
+968
 00:39:55,680 --> 00:39:58,376
 it be nice to see road maps, you know,
 
-970
+969
 00:39:58,400 --> 00:40:01,016
 from WebOfTrust to say, "Yeah, we're
 
-971
+970
 00:40:01,040 --> 00:40:02,696
 intending on doing these things this
 
-972
+971
 00:40:02,720 --> 00:40:04,696
 quarter or whatever."
 
-973
+972
 00:40:04,720 --> 00:40:07,335
 I know. Yeah. The same.
 
-974
+973
 00:40:07,359 --> 00:40:10,870
 Thank you.
 
-975
+974
 00:40:13,270 --> 00:40:13,669
 three minutes.
 
-976
+975
 00:40:13,693 --> 00:40:14,216
 Any more questions?
 
-977
+976
 00:40:14,240 --> 00:40:17,256
 Maybe one thing to mention as well is
 
-978
+977
 00:40:17,280 --> 00:40:20,376
 what we are working on with regards to
 
-979
+978
 00:40:20,400 --> 00:40:22,616
 migration for the road map
 
-980
+979
 00:40:22,640 --> 00:40:25,496
 discussion is how the Veridian wallet
 
-981
+980
 00:40:25,520 --> 00:40:27,736
 can request the cloud agent to provide a
 
-982
+981
 00:40:27,760 --> 00:40:30,616
 backup file. So then you can migrate to
 
-983
+982
 00:40:30,640 --> 00:40:32,456
 your own KERIA or a different KERIA
 
-984
+983
 00:40:32,480 --> 00:40:34,856
 provider. So you can actually trigger
 
-985
+984
 00:40:34,880 --> 00:40:36,456
 that
 
-986
+985
 00:40:36,480 --> 00:40:37,176
 exactly
 
-987
+986
 00:40:37,200 --> 00:40:39,736
 export and then as long as a KERI
 
-988
+987
 00:40:39,760 --> 00:40:42,936
 provider is able to accept that import.
 
-989
+988
 00:40:42,960 --> 00:40:44,696
 I mean this is also an element of the
 
-990
+989
 00:40:44,720 --> 00:40:46,376
 GLEIF ecosystem, right, you can move from
 
-991
+990
 00:40:46,400 --> 00:40:48,616
 QVI to QVI. So there are ways to
 
-992
+991
 00:40:48,640 --> 00:40:53,656
 migrate but it does require there to be
 
-993
+992
 00:40:53,680 --> 00:40:54,776
 it's also not trivial because you have
 
-994
+993
 00:40:54,800 --> 00:40:56,616
 to update all the OOBIs and everything
 
-995
+994
 00:40:56,640 --> 00:40:58,696
 like that and so forth. There's
 
-996
+995
 00:40:58,720 --> 00:41:01,335
 some work to be done.
 
-997
+996
 00:41:01,359 --> 00:41:03,095
 But yeah, it's definitely something to
 
-998
+997
 00:41:03,119 --> 00:41:03,575
 think about.
 
-999
+998
 00:41:03,599 --> 00:41:05,815
 Cool. But this is why we put a lot of
 
-1000
+999
 00:41:05,839 --> 00:41:08,856
 cost and resources into
 
-1001
+1000
 00:41:08,880 --> 00:41:11,496
 actually how we back up the KERI data.
 
-1002
+1001
 00:41:11,520 --> 00:41:14,216
 So, we assume that there will be a catch
 
-1003
+1002
 00:41:14,240 --> 00:41:16,776
 failure and we pay a lot of money to
 
-1004
+1003
 00:41:16,800 --> 00:41:19,575
 have high availability of that data. So
 
-1005
+1004
 00:41:19,599 --> 00:41:21,496
 for the production services that we use
 
-1006
+1005
 00:41:21,520 --> 00:41:24,136
 in our own organization foundation and
 
-1007
+1006
 00:41:24,160 --> 00:41:27,335
 for any clients a lot of cost goes into
 
-1008
+1007
 00:41:27,359 --> 00:41:31,750
 high available to data center
 
-1009
+1008
 00:41:33,750 --> 00:41:34,274
 (inaudible, red) .. disaster ..
 
-1010
+1009
 00:41:34,298 --> 00:41:35,896
 But that is an implementation choice and
 
-1011
+1010
 00:41:35,920 --> 00:41:39,335
 how you deploy. Are you describing
 
-1012
+1011
 00:41:39,359 --> 00:41:43,335
 how your cloud provider and your
 
-1013
+1012
 00:41:43,359 --> 00:41:47,815
 EC2 kind of things are set up from a
 
-1014
+1013
 00:41:47,222 --> 00:41:48,055
 data storage
 
-1015
+1014
 00:41:48,079 --> 00:41:50,295
 How we're making sure KERI does
 
-1016
+1015
 00:41:50,319 --> 00:41:51,815
 get wiped
 
-1017
+1016
 00:41:51,839 --> 00:41:54,936
 Frequent snapshots.
 
-1018
+1017
 00:41:54,960 --> 00:41:56,055
 Yes
 
-1019
+1018
 00:41:56,079 --> 00:41:57,896
 But that isn't really a protocol-based
 
-1020
+1019
 00:41:57,920 --> 00:41:58,456
 thing.
 
-1021
+1020
 00:41:58,480 --> 00:42:00,216
 Right
 
-1022
+1021
 00:42:00,240 --> 00:42:02,456
 Yeah, there's no protocol issues with
 
-1023
+1022
 00:42:02,480 --> 00:42:04,295
 KERIA, really, it's more of an operational
 
-1024
+1023
 00:42:04,319 --> 00:42:06,456
 thing you know that's where the gap is
 
-1025
+1024
 00:42:06,480 --> 00:42:09,256
 <i>immaturity</i>.
 
-1026
+1025
 00:42:09,280 --> 00:42:11,176
 But yeah, snapshotting is not
 
-1027
+1026
 00:42:11,200 --> 00:42:12,616
 necessarily the most elegant way to
 
-1028
+1027
 00:42:12,640 --> 00:42:14,295
 provide that high availability
 
-1029
+1028
 00:42:14,319 --> 00:42:15,496
 redundancy,
 
-1030
+1029
 00:42:15,520 --> 00:42:16,055
 especially.
 
-1031
+1030
 00:42:16,079 --> 00:42:17,496
 No, but that's disaster recovery.
 
-1032
+1031
 00:42:17,520 --> 00:42:20,376
 That's not for high availability.
 
-1033
+1032
 00:42:22,720 --> 00:42:24,376
 Yeah. So like horizontal scaling is a
 
-1034
+1033
 00:42:24,400 --> 00:42:28,440
 different thing. (Aplause)
 
