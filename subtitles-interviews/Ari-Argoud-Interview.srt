@@ -1,0 +1,49 @@
+1
+00:00:00,000 --> 00:00:05,420
+Hi, my name is Ari Rgoode. I am a full
+-stack Python developer with HealthKERI,
+
+2
+00:00:05,680 --> 00:00:10,660
+and my presentation was on KRAM, which is
+KERI Request Authentication Mechanism. I
+
+3
+00:00:10,660 --> 00:00:18,760
+think what I do and see differently is I'm
+really engaged with moving the healthcare
+
+4
+00:00:18,760 --> 00:00:27,920
+industry specifically towards a
+repudiable, individually owned mode of
+
+5
+00:00:27,920 --> 00:00:34,040
+data governance and transmission. So if
+KRAM disappeared tomorrow, we would lose a
+
+6
+00:00:34,040 --> 00:00:38,720
+huge step towards replay attack
+protections in the KERI ecosystem.
+
+7
+00:00:39,000 --> 00:00:42,520
+Previously, everybody had their own
+bespoke methods for doing this when
+
+8
+00:00:42,520 --> 00:00:48,680
+implementing with ShareAPI, and it is very
+beneficial for the ecosystem to leave
+
+9
+00:00:48,680 --> 00:00:58,680
+everybody into the same modality of
+protection that is proven and trusted
+
+10
+00:00:58,680 --> 00:01:01,720
+throughout the different implementers.
+

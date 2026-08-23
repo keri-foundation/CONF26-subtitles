@@ -1,0 +1,145 @@
+1
+00:00:00,000 --> 00:00:05,080
+So my presentation was about why
+decentralized identity, first-person
+
+2
+00:00:05,080 --> 00:00:11,740
+identity as I like to call it, needs a
+legal foundation. And I spoke to the idea
+
+3
+00:00:11,740 --> 00:00:18,940
+that SEDI, recent legislation that has
+been passed in Utah, SEDI stands for State
+
+4
+00:00:18,940 --> 00:00:24,200
+Endorsed Digital Identity, can provide a
+lot of that legal foundation that we need
+
+5
+00:00:24,200 --> 00:00:28,240
+to make digital identity work. I don't
+think it necessarily would surprise many
+
+6
+00:00:28,240 --> 00:00:34,520
+people at this conference, but one thing I
+see differently than many is the need for
+
+7
+00:00:34,520 --> 00:00:40,040
+first-person identity, for identity that
+is controlled by the individual rather
+
+8
+00:00:40,040 --> 00:00:46,420
+than provided to them by some other
+organization. We've been working on self
+
+9
+00:00:46,420 --> 00:00:55,000
+-sovereign, decentralized identity, first
+-person identity for since 2015, so 10, 11
+
+10
+00:00:55,000 --> 00:01:01,780
+years at this point. What has been missing
+is the legal foundation that makes it
+
+11
+00:01:01,780 --> 00:01:08,080
+possible. I believe that what I talked
+about, the legal foundation for digital
+
+12
+00:01:08,080 --> 00:01:14,920
+identity is not just a nice to have, but a
+necessary component of a functioning
+
+13
+00:01:14,920 --> 00:01:20,740
+digital ecosystem where people have
+dignity and the right to act for
+
+14
+00:01:20,740 --> 00:01:23,720
+themselves. rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+15
+00:01:23,720 --> 00:01:23,720
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+16
+00:01:23,720 --> 00:01:23,920
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+17
+00:01:23,920 --> 00:01:23,920
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+18
+00:01:23,920 --> 00:01:23,980
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+19
+00:01:23,980 --> 00:01:23,980
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+20
+00:01:23,980 --> 00:01:24,000
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+21
+00:01:24,000 --> 00:01:24,000
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+22
+00:01:24,000 --> 00:01:24,000
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+23
+00:01:24,000 --> 00:01:24,000
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+24
+00:01:24,000 --> 00:01:24,000
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+25
+00:01:24,000 --> 00:01:24,020
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+26
+00:01:24,020 --> 00:01:24,020
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+27
+00:01:24,020 --> 00:01:24,020
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+28
+00:01:24,020 --> 00:01:24,020
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules rules
+
+29
+00:01:24,020 --> 00:01:24,240
+rules rules rules rules rules rules rules
+rules rules rules rules rules rules
+

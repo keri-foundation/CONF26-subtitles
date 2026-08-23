@@ -1,0 +1,345 @@
+1
+00:00:00,000 --> 00:00:05,300
+My name is Jared Jeffrey. I'm CEO and
+founder at HealthKERI. Really excited to
+
+2
+00:00:05,300 --> 00:00:10,920
+be here at the KERI conference today. We
+just did a session on using the VLEI in
+
+3
+00:00:10,920 --> 00:00:15,880
+healthcare to basically solve the problem
+of organizational identity. So with
+
+4
+00:00:15,880 --> 00:00:20,840
+healthcare organizations, there's really
+not a good identifier to help you
+
+5
+00:00:20,840 --> 00:00:25,320
+understand which organization you're
+talking to. So as just a quick example, if
+
+6
+00:00:25,320 --> 00:00:31,820
+you talk about St. Mary's, well, which St.
+Mary's? There's, you know, 17 of them. And
+
+7
+00:00:31,820 --> 00:00:35,060
+which St. Mary's owned by which
+organization? Because several St. Mary's
+
+8
+00:00:35,060 --> 00:00:38,580
+are owned by the same organization.
+Several are owned, you know, by other
+
+9
+00:00:38,580 --> 00:00:44,180
+organizations. So really what we're trying
+to solve here is can we bootstrap rapid
+
+10
+00:00:44,180 --> 00:00:49,480
+connectivity using KERI and the VLEI?
+Yeah, so I think one of the things that I
+
+11
+00:00:49,480 --> 00:00:54,160
+see maybe differently than the rest of the
+world here is that everybody else has kind
+
+12
+00:00:54,160 --> 00:01:00,240
+of adopted now 25-year-old security
+technology, you know, tokens, OAuth,
+
+13
+00:01:00,740 --> 00:01:06,200
+OAuth, things of that nature that were
+really never designed for an ecosystem
+
+14
+00:01:06,200 --> 00:01:11,780
+that exists here today. So we've kind of
+carried this legacy architecture into the
+
+15
+00:01:11,780 --> 00:01:16,900
+modern world where not only do you have
+way more organizations doing connections,
+
+16
+00:01:17,220 --> 00:01:23,840
+you know, real time, but you also have
+things like not just AI internally being
+
+17
+00:01:23,840 --> 00:01:30,480
+used in LLMs, but agentic AI. So you have
+kind of created an entirely new entity
+
+18
+00:01:30,480 --> 00:01:35,660
+class for connectivity. And I think a lot
+of people are still trying to take this
+
+19
+00:01:35,660 --> 00:01:41,740
+round hole and fill it with the old square
+peg of last year's cybersecurity
+
+20
+00:01:41,740 --> 00:01:48,360
+protocols. So what would the decentralized
+identity system lose if all of our work at
+
+21
+00:01:48,360 --> 00:01:54,360
+HealthKERI had evaporated? Well, I think
+the easiest answer is as of today, we put
+
+22
+00:01:54,360 --> 00:02:00,540
+a ton of code into the open source. So one
+of the biggest complaints we heard about
+
+23
+00:02:00,540 --> 00:02:04,440
+people that didn't want to adopt KERI or
+were slow to move into a KERI-based
+
+24
+00:02:04,440 --> 00:02:09,860
+ecosystem was that KERI was too
+complicated and the infrastructure wasn't
+
+25
+00:02:09,860 --> 00:02:15,280
+there. We recognize that a rising tide
+raises all boats. And so we just recently
+
+26
+00:02:15,280 --> 00:02:21,100
+put into open source a production ready
+wallet that can handle KERI identifiers.
+
+27
+00:02:21,380 --> 00:02:26,440
+We put into open source witnesses and
+watcher code as well. Those three
+
+28
+00:02:26,440 --> 00:02:30,900
+components are three of the five Ws that
+are being asked for from the KERI that are
+
+29
+00:02:30,900 --> 00:02:33,420
+being asked for from the KERI Foundation.
+So by putting those into open source,
+
+30
+00:02:33,680 --> 00:02:37,900
+we're really putting a commitment into
+this ecosystem saying we want all of the
+
+31
+00:02:37,900 --> 00:02:42,720
+parties that are interested in seeing KERI
+be successful come to the table and
+
+32
+00:02:42,720 --> 00:02:48,540
+collaborate with us. So if all of that
+went away today, you would lose probably
+
+33
+00:02:48,540 --> 00:02:54,740
+two years worth of solid work from one of
+the best developers, Phil Therheller on
+
+34
+00:02:54,740 --> 00:02:59,640
+bringing health KERI or KERI at large into
+existence. S nicotine nicotine nicotine
+
+35
+00:02:59,640 --> 00:03:01,160
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine
+
+36
+00:03:01,160 --> 00:03:01,180
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine
+
+37
+00:03:01,180 --> 00:03:01,180
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine
+
+38
+00:03:01,180 --> 00:03:01,180
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine
+
+39
+00:03:01,180 --> 00:03:01,180
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine
+
+40
+00:03:01,180 --> 00:03:01,220
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine
+
+41
+00:03:01,220 --> 00:03:01,220
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine
+
+42
+00:03:01,220 --> 00:03:01,220
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine
+
+43
+00:03:01,220 --> 00:03:01,220
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine
+
+44
+00:03:01,220 --> 00:03:01,220
+nicotine nicotine nicotine nicotine
+nicotine nicotine nicotine nicotine nic
+
+45
+00:03:01,220 --> 00:03:01,220
+nic nic nic nic nic nic nic nic nic nic
+nic nic nic nic nic nic nic nic nic nic
+
+46
+00:03:01,220 --> 00:03:01,220
+nic nic nic nic nic nic nic nic nic nic
+nic nic nic nic nic nic nic nic nic nic
+
+47
+00:03:01,220 --> 00:03:01,240
+nic nic nic nic nic nic nic nic nic nic
+nic nic nic Imagine Imagine Imagine
+
+48
+00:03:01,240 --> 00:03:01,240
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+49
+00:03:01,240 --> 00:03:01,240
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+50
+00:03:01,240 --> 00:03:01,240
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+51
+00:03:01,240 --> 00:03:01,240
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+52
+00:03:01,240 --> 00:03:01,240
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+53
+00:03:01,240 --> 00:03:01,240
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+54
+00:03:01,240 --> 00:03:01,240
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+55
+00:03:01,240 --> 00:03:01,240
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+56
+00:03:01,240 --> 00:03:01,240
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+57
+00:03:01,240 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+58
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+59
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+60
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+61
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+62
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+63
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+64
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+65
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+66
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+67
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+68
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+
+69
+00:03:01,260 --> 00:03:01,260
+Imagine Imagine Imagine Imagine Imagine
+Imagine Imagine Imagine Imagine Imagine
+

@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:00:06,540
+So my name is Keanu Pahio. I'm one of the
+developer of the KERI Foundation and my
+
+2
+00:00:06,540 --> 00:00:11,940
+presentation today was about deploying
+KERI infrastructure. So including
+
+3
+00:00:11,940 --> 00:00:17,980
+witnesses, watchers, and the wallet. I
+think it's about making connections
+
+4
+00:00:17,980 --> 00:00:24,260
+together. So through my presentation, we
+can see how you can deploy both watchers,
+
+5
+00:00:24,400 --> 00:00:29,980
+witnesses, and also the wallet, but also
+the boot server that we developed and how
+
+6
+00:00:29,980 --> 00:00:36,800
+it all works together and how this
+infrastructure is relevant for a
+
+7
+00:00:36,800 --> 00:00:40,380
+production or also development
+environment. I think it would lose the
+
+8
+00:00:40,380 --> 00:00:46,360
+connection and how it all works together,
+how it's related. And I think it's a good
+
+9
+00:00:46,360 --> 00:00:51,160
+step for beginners because it's really
+easy to understand. So I think new people
+
+10
+00:00:51,160 --> 00:00:56,020
+who come into KERI could benefit. So if we
+lose it, it might be harder for people to
+
+11
+00:00:56,020 --> 00:00:59,620
+get into it. I think it's really easy to
+understand.
+

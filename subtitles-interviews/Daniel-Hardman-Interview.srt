@@ -1,0 +1,65 @@
+1
+00:00:00,000 --> 00:00:05,180
+My name is Daniel Hardman and I'm the CTO
+of Provenant, which is a small startup in
+
+2
+00:00:05,180 --> 00:00:12,240
+the telco industry. My presentation was on
+open verifiable calling. That acronym OVC
+
+3
+00:00:12,240 --> 00:00:17,060
+is changing into open verifiable
+communication and it's all about proving
+
+4
+00:00:17,060 --> 00:00:22,460
+who is making some kind of a communication
+flow to somebody else. So the big thing
+
+5
+00:00:22,460 --> 00:00:28,320
+that we're doing that I think is crucial
+is we're providing evidence for the first
+
+6
+00:00:28,320 --> 00:00:34,800
+time about who is involved in
+communication. Up until now, most efforts
+
+7
+00:00:34,800 --> 00:00:41,900
+to eliminate fraud have basically proved
+somebody's opinion, but now we're actually
+
+8
+00:00:41,900 --> 00:00:48,040
+able to prove hard facts about the parties
+involved. I think without the OVC
+
+9
+00:00:48,040 --> 00:00:54,100
+initiative, the entire telco industry is
+missing an important insight and an
+
+10
+00:00:54,100 --> 00:01:00,400
+opportunity. Fraud is driving down the
+usefulness of all of our communication
+
+11
+00:01:00,400 --> 00:01:04,560
+technologies and unless they come up with
+an answer, people are going to stop
+
+12
+00:01:04,560 --> 00:01:10,740
+answering their phones. They're going to
+stop texting and we need to have strong
+
+13
+00:01:10,740 --> 00:01:16,080
+evidence so that these technologies remain
+viable and deliver real value.!
+

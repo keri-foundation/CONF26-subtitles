@@ -1,0 +1,189 @@
+1
+00:00:00,000 --> 00:00:04,400
+My name is Ryan Hanson. I'm one of the
+core developers for the KERI Foundation
+
+2
+00:00:04,400 --> 00:00:09,420
+development team. Presentation today was
+about witnesses and watchers and our boot
+
+3
+00:00:09,420 --> 00:00:13,620
+service in the KERI infrastructure that
+we're deploying and making open to the
+
+4
+00:00:13,620 --> 00:00:19,540
+world. Witnesses and watchers are a key
+part of a crucial part of the KERI
+
+5
+00:00:19,540 --> 00:00:26,300
+ecosystem the way it's designed to be used
+and without them there's some value in key
+
+6
+00:00:26,300 --> 00:00:32,340
+management at least in terms of being able
+to have somewhat self-sovereign keys but
+
+7
+00:00:32,340 --> 00:00:36,300
+without the witness and watcher
+infrastructure to prove that those things
+
+8
+00:00:36,300 --> 00:00:42,500
+are still valid, that your keys are still
+yours, the kind of the whole principle
+
+9
+00:00:42,500 --> 00:00:47,840
+underlying what KERI is all about falls
+apart. For me personally when I first got
+
+10
+00:00:47,840 --> 00:00:50,860
+introduced to KERI, the witness and
+watcher idea was the thing that really
+
+11
+00:00:50,860 --> 00:00:56,000
+hooked me in because it doesn't really
+matter what assertion is made if there's
+
+12
+00:00:56,000 --> 00:01:00,220
+not something that can prove that that
+assertion is true, then it ultimately
+
+13
+00:01:00,220 --> 00:01:07,000
+doesn't matter. So in practice the witness
+and watcher network infrastructure is
+
+14
+00:01:07,000 --> 00:01:10,560
+critical
+
+15
+00:01:10,560 --> 00:01:17,420
+for being able to assert and prove that
+something is true and therefore to make
+
+16
+00:01:17,420 --> 00:01:19,700
+the KERI ecosystem actually work. through
+through through through through through
+
+17
+00:01:19,700 --> 00:01:19,700
+through through through through through
+through through through through through
+
+18
+00:01:19,700 --> 00:01:19,700
+through through through through through
+through through through through through
+
+19
+00:01:19,700 --> 00:01:19,700
+through through through through through
+through through through through through
+
+20
+00:01:19,700 --> 00:01:19,700
+through through through through through
+through through through through through
+
+21
+00:01:19,700 --> 00:01:19,720
+through through through through through
+through through through through through
+
+22
+00:01:19,720 --> 00:01:19,720
+through through through through through
+through through through through through
+
+23
+00:01:19,720 --> 00:01:19,720
+through through through through through
+through through through through through
+
+24
+00:01:19,720 --> 00:01:19,720
+through through through through through
+through through through through through
+
+25
+00:01:19,720 --> 00:01:19,760
+through through through through through
+through through through through through
+
+26
+00:01:19,760 --> 00:01:19,980
+through through through through through
+through through through through through
+
+27
+00:01:19,980 --> 00:01:20,100
+through through through through through
+through through through through through
+
+28
+00:01:20,100 --> 00:01:20,100
+through through through through through
+through through through through through
+
+29
+00:01:20,100 --> 00:01:20,100
+through through through through through
+through through through through through
+
+30
+00:01:20,100 --> 00:01:20,100
+through through through through through
+through through through through through
+
+31
+00:01:20,100 --> 00:01:20,220
+through through through through through
+through through through through through
+
+32
+00:01:20,220 --> 00:01:20,220
+through through through through through
+through through through through through
+
+33
+00:01:20,220 --> 00:01:20,220
+through through through through through
+through through through through through
+
+34
+00:01:20,220 --> 00:01:20,220
+through through through through through
+through through through through through
+
+35
+00:01:20,220 --> 00:01:20,220
+through through through through through
+through through through through through
+
+36
+00:01:20,220 --> 00:01:20,220
+through through through through through
+through through through through through
+
+37
+00:01:20,220 --> 00:01:20,320
+through through through through through
+through through through through through
+
+38
+00:01:20,320 --> 00:01:21,680
+through through through through through
+Thank you.
+

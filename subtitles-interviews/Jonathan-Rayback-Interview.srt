@@ -1,0 +1,74 @@
+1
+00:00:00,000 --> 00:00:05,540
+Hi, I'm Jonathan Reibach. My presentation
+was on DIDWebs and the connection between
+
+2
+00:00:05,540 --> 00:00:12,000
+KERI and the decentralized identifier
+ecosystem. Well, I think KERI offers some
+
+3
+00:00:12,000 --> 00:00:19,860
+unique qualities that really help DIDWebs
+be the strongest version of the DIDWeb
+
+4
+00:00:19,860 --> 00:00:27,860
+family of identifiers. Specifically, it
+allows for the controller to explicitly
+
+5
+00:00:27,860 --> 00:00:33,820
+authorize information like host
+information, path information. And it also
+
+6
+00:00:33,820 --> 00:00:38,840
+allows for much more convenience when
+dealing with very, very long-lived
+
+7
+00:00:38,840 --> 00:00:44,380
+identifiers like over the span of decades,
+a lifetime. I think those two advantages
+
+8
+00:00:44,380 --> 00:00:48,520
+are really strong for DIDWebs. I think if
+the work that we're doing on DIDWebs
+
+9
+00:00:48,520 --> 00:00:58,320
+disappeared tomorrow, it would be too bad.
+I think that there as long as there's a
+
+10
+00:00:58,320 --> 00:01:04,180
+decentralized identified identifier market
+and infrastructure out there, having a
+
+11
+00:01:04,180 --> 00:01:09,500
+bridge between that ecosystem and the KERI
+ecosystem makes a lot of sense. There are
+
+12
+00:01:09,500 --> 00:01:16,280
+going to be consumers of KERI information
+that want to get that via a DID document
+
+13
+00:01:16,280 --> 00:01:20,880
+because their infrastructure is set up
+that way. And I think if we lost DIDWebs,
+
+14
+00:01:21,300 --> 00:01:26,040
+KERI would lose a foothold in the
+interoperability space. That would be too
+
+15
+00:01:26,040 --> 00:01:26,600
+bad.!
+

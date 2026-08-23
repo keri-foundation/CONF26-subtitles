@@ -1,0 +1,110 @@
+1
+00:00:00,000 --> 00:00:05,320
+I'm Cole Davis. I am the founder and CEO
+of SwitchCord. I'm a lawyer and
+
+2
+00:00:05,320 --> 00:00:10,800
+technologist and I spoke today on what do
+we call it? Contract credentials and
+
+3
+00:00:10,800 --> 00:00:15,540
+verifiable legal authority. So modeling
+legal relationships stuck in paper-based
+
+4
+00:00:15,540 --> 00:00:21,420
+agreements, PDFs, Word documents into
+KERI, ACDC spec to be proving your
+
+5
+00:00:21,420 --> 00:00:27,600
+contractual authority to third parties. So
+I see things differently now after living
+
+6
+00:00:27,600 --> 00:00:33,740
+in this world for the past six, seven
+years. That contractual authority and your
+
+7
+00:00:33,740 --> 00:00:40,460
+ability to go through life and do things
+depends on legal contracts and authority
+
+8
+00:00:40,460 --> 00:00:43,580
+from the state and you can't get away from
+it. And so I stopped viewing these things
+
+9
+00:00:43,580 --> 00:00:47,760
+as separate and it's all sort of this
+interrelated mix of identity and legal.
+
+10
+00:00:48,280 --> 00:00:52,480
+And that led to me also seeing finance
+accounting, legal finance and accounting
+
+11
+00:00:52,480 --> 00:00:55,540
+is not separate disciplines like I was
+taught and have degrees in, but it's
+
+12
+00:00:55,540 --> 00:00:59,780
+really a spectrum. And identity, I found,
+is the one thing that ties all of them to
+
+13
+00:00:59,780 --> 00:01:05,720
+together. It is the backbone of commercial
+transactions. And I think people are
+
+14
+00:01:05,720 --> 00:01:09,320
+starting to come around to that idea. I've
+been saying it for a long time and it's
+
+15
+00:01:09,320 --> 00:01:13,040
+exciting to see people, their eyes light
+up when they realize what I'm talking
+
+16
+00:01:13,040 --> 00:01:21,640
+about. So if my work and research were to
+just disappear, I think it would be I've
+
+17
+00:01:21,640 --> 00:01:26,720
+been working to push this society towards
+Ronald Koest's magical world of zero
+
+18
+00:01:26,720 --> 00:01:31,880
+transaction costs. So I'm using identity
+and AI and every tool at my disposal to
+
+19
+00:01:31,880 --> 00:01:36,240
+reduce the cost of doing commercial
+transactions to bring shared economic
+
+20
+00:01:36,240 --> 00:01:41,080
+prosperity. If it were to go away, I think
+we'd be stuck with centralized databases,
+
+21
+00:01:41,320 --> 00:01:47,580
+centralized processes that don't scale and
+are not they're beholden to the existing
+
+22
+00:01:47,580 --> 00:01:51,520
+gatekeepers and it does not allow us to
+push forward as a society. Thank you.
+

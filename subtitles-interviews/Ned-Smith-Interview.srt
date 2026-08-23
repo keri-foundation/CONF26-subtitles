@@ -1,0 +1,74 @@
+1
+00:00:00,000 --> 00:00:08,080
+Hi, I'm Ned Smith and I am a researcher in
+trusted computing. I've spent 30 years
+
+2
+00:00:08,080 --> 00:00:15,520
+doing hardware trusted computing and I'm
+also interested in secure asset transfers
+
+3
+00:00:15,520 --> 00:00:19,620
+based on protocols that are being defined
+in the Internet Engineering Task Force.
+
+4
+00:00:20,300 --> 00:00:26,520
+And my presentation today was to overview
+where we're at with the definition of the
+
+5
+00:00:26,520 --> 00:00:36,060
+SATP protocol. In particular, how a SATP
+protocol is tied to authorization
+
+6
+00:00:36,060 --> 00:00:42,620
+mechanisms that are important for legal
+responsibility when assets are
+
+7
+00:00:42,620 --> 00:00:50,680
+transferred. Yeah, so one of the things
+that sets me apart as a researcher in
+
+8
+00:00:50,680 --> 00:00:57,480
+trusted computing is my experience working
+with trust both from a hardware side but
+
+9
+00:00:57,480 --> 00:01:03,320
+also from an infrastructure side. And
+focused a lot of my career around this
+
+10
+00:01:03,320 --> 00:01:08,920
+notion of device attestation which is
+providing evidence about the environment
+
+11
+00:01:08,920 --> 00:01:16,680
+in which applications or workloads run so
+that a remote entity can verify that the
+
+12
+00:01:16,680 --> 00:01:22,120
+environment is trustworthy not only that
+the workload is trustworthy. And so I'm
+
+13
+00:01:22,120 --> 00:01:27,840
+incorporating that kind of thinking into
+to not only the work that's being done in
+
+14
+00:01:27,840 --> 00:01:34,520
+the ITF in the RATS working group which I
+chair but also in other standards and
+
+15
+00:01:34,520 --> 00:01:37,080
+architectures that I influence.
+

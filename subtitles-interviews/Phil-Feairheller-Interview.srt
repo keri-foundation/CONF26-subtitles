@@ -1,0 +1,54 @@
+1
+00:00:00,000 --> 00:00:04,120
+– Sure. So, hi. My name is Phil
+Fairheller. I am the CTO and co-founder of
+
+2
+00:00:04,120 --> 00:00:08,620
+HealthKERI. And today I will be presenting
+on KERI infrastructure, focusing mainly on
+
+3
+00:00:08,620 --> 00:00:11,900
+the components that HealthKERI just
+donated to open source to the KERI
+
+4
+00:00:11,900 --> 00:00:16,160
+Foundation, that being the wallet
+witnesses and watchers. Sure. So, if our
+
+5
+00:00:16,160 --> 00:00:21,040
+work in HealthKERI disappeared tomorrow,
+the decentralized identity system would
+
+6
+00:00:21,040 --> 00:00:24,660
+lose its foothold in healthcare. Right
+now, we are making a big difference in
+
+7
+00:00:24,660 --> 00:00:27,980
+bringing this technology into healthcare
+to help secure data exchange between
+
+8
+00:00:27,980 --> 00:00:32,700
+providers, payers, and patients. And we
+would miss out on that opportunity. So,
+
+9
+00:00:32,760 --> 00:00:36,900
+what we at HealthKERI see differently is
+the impact that this technology can have
+
+10
+00:00:36,900 --> 00:00:40,720
+to facilitate rapid connections that are
+needed to make healthcare move more
+
+11
+00:00:40,720 --> 00:00:41,860
+smoothly. Thank you.
+
