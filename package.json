@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "build:pdf": "node scripts/build-transcript-pdf.js",
+    "build:transcript-pages": "node scripts/generate-transcript-pages.js --config /Users/kor/webdev/wordpress-sites/kerifoundation/confs/2026/videos/index.json && node scripts/generate-transcript-pages.js --config /Users/kor/webdev/wordpress-sites/kerifoundation/confs/2026/videos/SEDI/2025-11-SEDI/index.json",
+    "deploy:subtitles": "bash ./scripts/deploy-subtitles.sh",
     "upload": "bash ./scripts/upload-youtube-subs.sh"
   },
   "dependencies": {

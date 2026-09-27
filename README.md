@@ -18,6 +18,8 @@ https://github.com/SubtitleEdit
 
 - `scripts/remove-rolling-subtitles.js` — cleans YouTube rolling-caption artefacts from the `.srt` files in `subtitles/`.
 - `scripts/build-transcript-pdf.js` — assembles every `*.fixed.srt` file into a beautifully designed PDF book of transcripts.
+- `scripts/generate-transcript-pages.js` — builds static, crawlable HTML transcript pages for the keri.foundation video galleries (relative links back to the player).
+- `scripts/deploy-subtitles.sh` — copies `.srt` files to the local kerifoundation mirror and the live server, then regenerates and rsyncs transcript HTML.
 - `scripts/upload-youtube-subs.sh` / `src/youtube-uploader.js` — uploads `.fixed.srt` files from `subtitles/` back to a YouTube playlist.
 
 ### Building the transcripts PDF
@@ -27,6 +29,19 @@ npm install
 npm run build:pdf        # writes KERI-Conference-2026-Transcripts.pdf to the repo root
 npm run build:pdf -- --open   # build and open in the default viewer
 ```
+
+### Static HTML transcript pages (SEO)
+
+```bash
+npm run build:transcript-pages   # write HTML into the local kerifoundation videos tree
+npm run deploy:subtitles         # .srt + transcript HTML → local mirror + live server
+```
+
+Output (relative links inside each page):
+
+- `…/videos/KERICONF26/transcripts/`
+- `…/videos/KERICONF26-interviews/transcripts/`
+- `…/videos/SEDI/2025-11-SEDI/transcripts/`
 
 The PDF is rendered by the locally installed Google Chrome via `puppeteer-core`
 (no Chromium download required). On macOS it auto-detects Chrome at
