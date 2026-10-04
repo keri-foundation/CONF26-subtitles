@@ -1,3 +1,13 @@
+# Moved
+
+This repository is retired. Conference subtitles, transcript tools, and deploy scripts now live in the keri.foundation site repo:
+
+`/Users/kor/webdev/wordpress-sites/kerifoundation`
+
+Edit `.srt` files under `confs/<ORG>/<YEAR>/<month>/`. Do not deploy from here (`scripts/deploy-subtitles.sh` still targets the old `confs/2026/videos/` paths).
+
+---
+
 # KERI Conference 2026 Subtitles
 
 ## General info
